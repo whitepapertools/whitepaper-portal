@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="298" height="259" viewBox="0 0 298 259">
+  <defs>
+    <linearGradient id="a" x1="79.014%" x2="50%" y1="17.103%" y2="100%">
+      <stop stop-color="#23419D" offset="0%"/>
+      <stop stop-color="#0F1E64" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="b" x1="107.43%" x2="50%" y1="0%" y2="100%">
+      <stop stop-color="#5B97FF" offset="0%"/>
+      <stop stop-color="#2E5EFF" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="c" x1="94.485%" x2="50%" y1="-29.223%" y2="100%">
+      <stop stop-color="#54E1FF" offset="0%"/>
+      <stop stop-color="#2AC0FF" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(139)">
+      <ellipse cx="79.5" cy="175.974" fill="url(#a)" rx="79.5" ry="83.026"/>
+      <ellipse cx="79.5" cy="83.026" fill="url(#b)" rx="79.5" ry="83.026"/>
+    </g>
+    <rect width="140" height="257" fill="url(#c)" rx="70"/>
+  </g>
+</svg>

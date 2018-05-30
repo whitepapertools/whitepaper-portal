@@ -1,0 +1,249 @@
+.input {
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+.input_theme_spotify {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	position: relative;
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.2);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* Decorative element (inner background) */
+.input_theme_spotify:before {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	left: 1px;
+	content: '';
+	background: #fff;
+	border-radius: 99em;
+}
+.input_theme_spotify .input__box {
+	position: relative;
+	display: block;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.input_theme_spotify .input__control {
+	font: inherit;
+	line-height: inherit;
+	position: relative;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	width: 100%;
+	border: 0;
+	outline: none;
+	background: none;
+	-webkit-appearance: none;
+}
+/*лишние отступы у текста*/
+.input_theme_spotify .input__control::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+/*нативный крестик*/
+.input_theme_spotify .input__control::-webkit-search-cancel-button {
+	display: none;
+}
+.input_theme_spotify .input__control::-webkit-input-placeholder {
+	color: var(--color-typo-inverse);
+	text-indent: 0;
+}
+.input_theme_spotify .input__control::-moz-placeholder {
+	opacity: 1;
+	color: #999;
+}
+.input_theme_spotify .input__control::-ms-clear {
+	display: none;
+}
+.input_theme_spotify .input__control::-webkit-autofill {
+	border: 1px solid transparent;
+	background-clip: padding-box;
+}
+.input_theme_spotify.input_has-clear .input__control {
+	text-overflow: ellipsis;
+}
+.input_theme_spotify .input__clear {
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: text;
+	-webkit-transition: opacity 0.1s ease-out;
+	transition: opacity 0.1s ease-out;
+	opacity: 0;
+	background: 50% 50% no-repeat;
+}
+.input_theme_spotify .input__clear_visible {
+	opacity: 0.3;
+}
+.input_theme_spotify .input__clear_visible:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+.input_theme_spotify.input_focused {
+	z-index: 1;
+}
+.input_theme_spotify.input_focused .input__control {
+	text-overflow: clip; /* fix ellipsis bug in Chrome */
+}
+.input_theme_spotify.input_size_s {
+	font-size: var(--size-typo-s);
+	line-height: 16px;
+}
+.input_theme_spotify.input_size_s .input__control {
+	height: 26px;
+	padding: 0 var(--space-s);
+}
+.input_theme_spotify.input_size_s.input_has-clear .input__control {
+	padding-right: 24px;
+}
+.button_width_full {
+	width: 100%;
+}
+.button_border-radius_full {
+	border-radius: 999em !important;
+}
+.button {
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+.button_theme_spotify {
+	font-family: "ibm-plex-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: var(--color-typo-primary);
+	border: 0;
+	border-radius: 999em;
+	outline: 0;
+	background: transparent;
+	-webkit-transition: background-color .15s;
+	transition: background-color .15s;
+	text-align: center;
+	white-space: nowrap;
+	text-transform: uppercase;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.button_theme_spotify::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+.button_theme_spotify .button__text {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: top;
+}
+.button_theme_spotify .icon {
+	position: relative;
+}
+.button_theme_spotify.button_type_link {
+	text-decoration: none;
+}
+.button_theme_spotify.button_font_mono {
+	font-family: "ibm-plex-mono", monospace;
+}
+.button_theme_spotify.button_font_serif {
+	font-family: "ibm-plex-serif", Georgia, serif;
+}
+.button_theme_spotify.button_style_italic {
+	font-style: italic;
+}
+.button_theme_spotify.button_weight_bold {
+	font-weight: bold;
+}
+.button_theme_spotify:before {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	left: 1px;
+	content: '';
+	border-radius: 2px;
+	background: #fff;
+}
+.button_theme_spotify.button_hovered {
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.3);
+}
+.button_theme_spotify.button_view_action {
+	background: var(--color-action);
+	color: var(--color-typo-primary);
+}
+.button_theme_spotify.button_view_action:before {
+	display: none;
+}
+.button_theme_spotify.button_view_action.button_hovered {
+	background: var(--color-hover);
+}
+.button_theme_spotify.button_view_action.button_pressed {
+	background: var(--color-action);
+}
+.button_theme_spotify.button_view_pseudo {
+	overflow: hidden;
+	background: var(--color-default);
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid var(--color-border-control);
+}
+.button_theme_spotify.button_view_pseudo:before {
+	background: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.button_theme_spotify.button_view_pseudo.button_hovered {
+	border: 1px solid var(--color-inverse);
+}
+.button_theme_spotify.button_view_pseudo.button_pressed:before {
+	border: 1px solid var(--color-inverse);
+}
+.button_theme_spotify.button_size_s {
+	font-size: var(--size-typo-xs);
+	line-height: 24px;
+}
+.button_theme_spotify.button_size_s .icon {
+	width: var(--space-m);
+	margin: 0 var(--space-xxs);
+	top: var(--space-xxs);
+}
+.button_theme_spotify.button_size_s .button__text {
+	margin: 0 var(--space-xl);
+}
+.button_theme_spotify.button_size_m {
+	font-size: var(--size-typo-s);
+	line-height: 36px;
+}
+.button_theme_spotify.button_size_m .icon {
+	width: var(--space-m);
+	margin: 0 calc(var(--space-s) - var(--space-xxxs));
+	top: calc(var(--space-s) - var(--space-xxxs));
+}
+.button_theme_spotify.button_size_m .button__text {
+	margin: 0 var(--space-xxxl);
+}
+.button_theme_spotify .icon + .button__text {
+	margin-left: 0;
+}
+.button_theme_spotify .button__text:not(:last-child) {
+	margin-right: 0;
+}
+.progressbar_theme_spotify {
+	overflow: hidden;
+	background: var(--color-border);
+	border-radius: var(--space-xxs);
+}
+.progressbar_theme_spotify .progressbar__bar {
+	height: var(--space-xxs);
+	background: var(--color-border-control);
+}

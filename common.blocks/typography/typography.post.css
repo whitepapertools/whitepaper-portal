@@ -1,0 +1,12 @@
+.typography {
+	&__view {
+		margin-bottom: var(--space-s);
+		box-sizing: border-box;
+		padding: var(--space-l);
+		position: relative;
+		height: 96px;
+		display: flex;
+		align-items: center;
+		background-color: var(--color-bg-ghost);
+	}
+}

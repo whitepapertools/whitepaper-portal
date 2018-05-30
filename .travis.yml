@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - "node"
+  - "6"
+  - "4"
+  
+script:
+  - npm run-script build
+
+before_deploy:
+  - mkdir deploy
+  - find desktop.bundles/ \( -name '*.min.css' -or -name '*.html' -or -name '*.min.js' \) -exec mv {} deploy/ \;
+  - mv assets docs .nojekyll CNAME favicon.ico deploy/
+  
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  local_dir: deploy
+  on:
+    branch: master
+    node_js: "node"

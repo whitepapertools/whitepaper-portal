@@ -1,0 +1,11 @@
+.layout-item {
+  &__name {
+    display: flex;
+  }
+  &__view {
+    margin-bottom: var(--space-s);
+  }
+  .image {
+    width: 100%;
+  }
+}
