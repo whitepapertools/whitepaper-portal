@@ -1,0 +1,22 @@
+.layers {
+	margin-top: calc(3*var(--space-xxxl));
+	height: 56vh;
+}
+
+@media screen and (max-width: $screen-s-max) {
+	.layers {
+		display: none;
+	}
+}
+
+@media screen and (min-width: $screen-m) and (max-width: $screen-m-max) {
+	.layers {
+		margin-top: calc(2*var(--space-xxxl));
+	}
+}
+
+/* @media screen and (min-width: $screen-l) {
+	.layers {
+		height: 65vh;
+	}
+} */

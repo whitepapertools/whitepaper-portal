@@ -1,0 +1,97 @@
+([
+	{
+		shouldDeps: [
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+			{ block: 'tpl-grid', mods: { 'xs-ratio': '1', 'm-ratio': '1-1', 'col-gap': 'full', 'row-gap': 'full', 'vertical-align': 'top' }},
+			{ block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+			{ block: 'tpl-grid', elem: 'fraction', mods: { col: '5' }},
+			{ block: 'text', mods: { size: 'xxxxl', weight: 'bold', view: 'primary' }},
+			{ block: 'text', mods: { size: 'l', view: 'secondary' }},
+			{ block: 'decorator', mods: { 'space-t': 'm' }},
+			{ block: 'text', mods: { size: 'm', view: 'ghost' }},
+			{ block: 'decorator', mods: { 'space-t': 's' }},
+			{ block: 'tpl-grid', elem: 'fraction', mods: { col: '7' }},
+			{ block: 'decorator', mods: { 'indent-l': 'xxl', 'indent-t': 'l' }},
+			{ block: 'decorator', mods: { 'space-b': 'l' }},
+			{ block: 'text', mods: { size: 'xxl', view: 'primary' }},
+			{ block: 'decorator', mods: { 'indent-t': 'xs' }},
+			{ block: 'decorator', mods: { 'indent-b': 'm' }},
+			{ block: 'pt-list', elem: 'item', mods: { 'space-b': 'm' }},
+			{ block: 'text', mods: { view:'secondary' }},
+			{ block: 'decorator', mods: { 'indent-b': 'l' }},
+			{ block: 'text', mods: { size: 'xl', view: 'primary' }},
+
+			{ block: 'decorator', mods: { 'space-r': 'xl' }},
+			{ block: 'decorator', mods: { 'space-l': 'xs' }},
+=======
+=======
+>>>>>>> 07c4803... Revert "Removes changelog"
+=======
+>>>>>>> 5e3bd4c... Revert "Revert "Revert "Removes changelog"""
+			{ block: 'tpl-grid', mods: {columns: '12', 'col-gap': 'two-thirds' } },
+      { block: 'tpl-grid', elem: 'fraction', mods: {col: '5'} },
+      { block: 'tpl-grid', elem: 'fraction', mods: {col: '7'} },
+      { block: 'decorator', mods: {'indent-b': 'xxxxxl'} },
+      { block: 'text', mods: {size: 'xxxxl', weight: 'bold'} },
+      { block: 'text', mods: {size: 'l'} },
+      { block: 'decorator', mods: { 'space-t': 'm'} },
+      { block: 'text', mods: {size: 'm', view: 'secondary'} },
+      { block: 'decorator', mods: {'space-t': 'xxs'} },
+      { block: 'decorator', mods: {'indent-l': 'l'} },
+      { block: 'text', mods: {size: 'xl', view: 'primary'} },
+      // { block: 'pt-list', mods: {view: 'default'} },
+      // { block: 'pt-list', elem: 'list', mods: {'space-v': 'l'} },
+      { block: 'pt-list', mods: { border: 'all', view: 'default' } },
+      { block: 'pt-list', elem: 'item', mods: { 'space-a': 'xl' } },
+      // { block: 'textlist', mods: { type: 'bullet' } },
+      // { block: 'textlist', elem: 'item' },
+
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      // { block: 'demo', elem: 'plug-content' },
+			// { block: 'demo', elem: 'plug-illustration' },
+			// { block: 'demo', elem: 'plug-description' },
+			// { block: 'demo', elem: 'plug-action' },
+			// { block: 'demo', elem: 'plug-button' },
+			// { block: 'demo', elem: 'plug-soclink', mods: { icon: ['telegram', 'twitter'] } },
+
+>>>>>>> 75c6df0... Revert "Changelog improved"
+			// { block: 'pt-card' },
+			// { block: 'pt-card', elem: 'content', mods: { 'space-a': 'xl' } },
+			// { block: 'pt-card', elem: 'image' },
+			// { block: 'pt-card', elem: 'footer', mods: {'space-a': 'xl', 'align': 'between' } },
+      //
+			// { block: 'decorator', mods: {'indent-b': 'xxl'} },
+      //
+			// { block: 'text', mods: { font: 'mono', size: 'xxl', weight: 'bold' } },
+      //
+			// { block: 'button', mods: { theme: 'promo', 'size': 'xl', type: 'link', view: 'action', font: 'mono', weight: 'bold', shadow: 'action' } },
+      //
+			// { block: 'text', mods: { font: 'mono', style: 'italic', display: 'inline'} },
+      //
+			// { block: 'theme', mods: { color: 'whitepaper-inverse' } }
+<<<<<<< HEAD
+>>>>>>> ac7b338... Changelog files added
+=======
+      { block: 'pt-list', mods: { border: 'all', view: 'default' } },
+      { block: 'pt-list', elem: 'item', mods: { 'space-b': 'm' } },
+>>>>>>> 36b0069... Changelog improved
+=======
+      { block: 'pt-list', mods: { border: 'all', view: 'default' } },
+      { block: 'pt-list', elem: 'item', mods: { 'space-b': 'm' } },
+>>>>>>> 07c4803... Revert "Removes changelog"
+=======
+      { block: 'pt-list', mods: { border: 'all', view: 'default' } },
+      { block: 'pt-list', elem: 'item', mods: { 'space-b': 'm' } },
+>>>>>>> 5e3bd4c... Revert "Revert "Revert "Removes changelog"""
+=======
+>>>>>>> 75c6df0... Revert "Changelog improved"
+		]
+	}
+])

@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="https://whitepaper.tools/whitepaper.min.css">
+		<link rel="stylesheet" href="https://whitepaper.tools/cdn/whitepaper-1.0.0.min.css">
 	</head>
 	<body></body>
 </html>
@@ -25,3 +25,7 @@ npm install whitepaper-bem
 ```
 
 На данный момент мы ориентируемся только на БЭМ-стек. Далее мы возможно сделаем реализации для других фреймворков. Либо ты можешь сделать свою реализацию и прислать pull-request нам.
+
+## Проект-шаблон
+
+Перед установкой библиотеки на свой проект, можете "поиграть" с [проектом-шаблоном](https://github.com/whitepapertools/whitepaper-stub)

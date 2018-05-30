@@ -1,10 +1,27 @@
-# Обвязки
+<style>
+	.example .tpl-layout {
+		grid-template-rows: auto;
+	}
+	.example .tpl-layout__section {
+		background: var(--color-bg-brand);
+		height: 200px;
+	}
+	.example .tpl-layout__section:nth-child(2n) {
+		background: var(--color-bg-action);
+	}
+	.example .tpl-layout__container {
+		border: 1px solid var(--color-bg-hover);
+		background-image: linear-gradient(45deg, var(--color-bg-hover) 8.33%, rgba(255,255,255,0) 8.33%, rgba(255,255,255,0) 50%, var(--color-bg-hover) 50%, var(--color-bg-hover) 58.33%, rgba(255,255,255,0) 58.33%, rgba(255,255,255,0) 100%);
+		background-size: 8.49px 8.49px;
+		height: 100%;
+	}
+</style>
 
 `tpl-layout` – блок для описания обвязок.
 
 Сначала сетке нужно задать правила деления страницы по вертикали в процентном соотношении. Для этого нужно задать модификатору `structure` нужное значение. Если на странице должно быть боковое менюю, выбирай значение с префиксом `fold` (свернутое) или `unfold` (развернутое).
 
-Размер меню контролируется [темой](http://bem.design/doc.html#/theme).
+Размер меню контролируется [темой](theme.md).
 
 Модификатор | Значение                                                                  | Описание
 ----------- | ------------------------------------------------------------------------- | --------------------------------------
@@ -14,25 +31,15 @@ structure   | unfold-100 / unfold-25-50-25 / unfold-30-70 / unfold-50-50 / unfol
 
 Дальше можно уже складывать в получившийся каркас смысловые элементы сетки: `content`, `heading`, `container`, `section`.
 
-```js 
-{
-	block: 'tpl-layout',
-	content: [
-	{
-		elem: 'section', // разделитель страницы, работает по правилам, заданным значением модификатора structure
-		content: [
-		{
-			elem: 'heading' // контейнер для шапки
-		},
-		{
-			elem: 'content', // элемент для сохранных полей
-			content: [
-			{
-				elem: 'container' // контейнер для конента секции
-			}]
-		}]
-	}]
-}
+```html
+<div class="tpl-layout">
+	<div class="tpl-layout__section">
+		<div class="tpl-layout__heading"></div>
+		<div class="tpl-layout__content">
+			<div class="tpl-layout__container"></div>
+		</div>
+	</div>
+</div>
 ```
 
 
@@ -41,17 +48,86 @@ structure   | unfold-100 / unfold-25-50-25 / unfold-30-70 / unfold-50-50 / unfol
 Разделитель страницы, работает по правилам, заданным значением модификатора structure.
 Если значение `structure` `10-90`, то элементов `section` должно быть два. Если `20-60-20`, то три.
 
-<iframe height='500' scrolling='no' title='tpl-layout. Теория 1' src='//codepen.io/bem_design/embed/5fb0110753046cb867663e3d03ee7a2f/?height=265&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/5fb0110753046cb867663e3d03ee7a2f/'>tpl-layout. Теория 1</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+### Примеры
+<div class="example">
+	<div class="tpl-layout tpl-layout_structure_100">
+		<div class="tpl-layout__section"></div>
+	</div>
+</div>
+
+```html
+<div class="tpl-layout tpl-layout_structure_100">
+	<div class="tpl-layout__section">
+		...
+	</div>
+</div>
+```
+
+<div class="example">
+	<div class="tpl-layout tpl-layout_structure_50-50">
+		<div class="tpl-layout__section"></div>
+		<div class="tpl-layout__section"></div>
+	</div>
+</div>
+
+```html
+<div class="tpl-layout tpl-layout_structure_50-50">
+	<div class="tpl-layout__section">
+		...
+	</div>
+	<div class="tpl-layout__section">
+		...
+	</div>
+</div>
+```
+
+<div class="example">
+	<div class="tpl-layout tpl-layout_structure_fold-70-30 theme_menu_default">
+		<div class="tpl-layout__section"></div>
+		<div class="tpl-layout__section"></div>
+		<div class="tpl-layout__section"></div>
+	</div>
+</div>
+
+```html
+<div class="tpl-layout tpl-layout_structure_fold-70-30">
+	<div class="tpl-layout__section">
+		...
+	</div>
+	<div class="tpl-layout__section">
+		...
+	</div>
+	<div class="tpl-layout__section">
+		...
+	</div>
+</div>
+```
 
 ## Элемент container
 
-Контейнер для контента секции. К нему можно миксовать блок `tpl-grid` (о нем написано ниже). 
+Контейнер для контента секции. К нему можно миксовать блок [tpl-grid](layout-inner.md).
 
 Модификатор | Значение          | Описание
 ----------- | ----------------- | -------------------------------------
 size	    | xs / s / m / full | Максимальная ширина контейнера
 align       | center            | Выравнивание конейнера по горизонтали
 
-<iframe height='250' scrolling='no' title='tpl-layout. Теория 2' src='//codepen.io/bem_design/embed/b58013dbbaed8f6b0a81ea123c32f789/?height=265&theme-id=0&default-tab=result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/b58013dbbaed8f6b0a81ea123c32f789/'>tpl-layout. Теория 2</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+<div class="example">
+	<div class="tpl-layout tpl-layout_structure_fold-100 theme_menu_default">
+		<div class="tpl-layout__section"></div>
+		<div class="tpl-layout__section">
+			<div class="tpl-layout__container tpl-layout__container_size_xs tpl-layout__container_align_center theme_color_whitepaper-inverse" style="display: flex; align-items: center; justify-content: center; color: var(--color-typo-primary)">Контейнер</div>
+		</div>
+	</div>
+</div>
+
+```html
+<div class="tpl-layout tpl-layout_structure_fold-70-30">
+	<div class="tpl-layout__section">
+		...
+	</div>
+	<div class="tpl-layout__section">
+		<div class="tpl-layout__container tpl-layout__container_size_xs">Контейнер</div>
+	</div>
+</div>
+```

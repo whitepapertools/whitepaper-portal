@@ -1,12 +1,56 @@
 # Иконки
 
-![Иконки](_images/icons.png)
+<div class="preview">
+	<div class="icon icon_name_preview icon_view_brand icon_size_m">
+		<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+		<path d="M12 2L13.4617 8.47109L19.0711 4.92893L15.5289 10.5383L22 12L15.5289 13.4617L19.0711 19.0711L13.4617 15.5289L12 22L10.5383 15.5289L4.92893 19.0711L8.47109 13.4617L2 12L8.47109 10.5383L4.92893 4.92893L10.5383 8.47109L12 2Z"/>
+		</svg>
+	</div>
+</div>
 
-В библиотеке [bem-icons](https://github.com/bemdesign/bem-icons) иконки предусмотрены для использования, как самостоятельно в интерфейсе, так и в паре с текстовым блоком. Поэтому все иконки существуют в тех же цветах, что и текст.
+* [Модификаторы блока](#Модификаторы-блока)
+* [Пример](#Пример)
 
-Размеров всего два: `s` – 16х16px и `m` – 20x20px.
+___
 
-Чтобы вставить иконку, нужно знать название иконки, размер и необходимый цвет. Название модификатора будет именем иконки, а значение 'размер-цвет'. Соответственно, чтобы вставить маленькую зеленую иконку фотоаппарата, надо написать `'photo': 's-success'`
+В whitepaper на уровне контента предусмотрен блок `icon` для вставки иконок. Иконки тематизируются аналогично тексту с помощью модификаторов. Иконки можно вставлять инлайново, или с помощью шаблонизаторов.
 
-<iframe height='500' scrolling='no' title='Графика. Иконки' src='//codepen.io/bem_design/embed/4dbf86f3563611eae9a2f6b447e7e818/?height=265&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/4dbf86f3563611eae9a2f6b447e7e818/'>Графика. Иконки</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+## Модификаторы блока
+
+| Модификатор   | Значение                            | Описание
+|---------------|-------------------------------------| ---------------------------------
+| round         | default / disable / primary / secondary / ghost / success / warning / alert | Добавляет круглую подложку
+| view          | default / disable / primary / secondary / ghost / success / warning / alert | Тема иконки
+| size          | s / m | Размер иконки
+
+___
+
+## Пример
+
+<div class="icon icon_name_preview icon_view_brand icon_size_m">
+	<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+		<path d="M12 2L13.4617 8.47109L19.0711 4.92893L15.5289 10.5383L22 12L15.5289 13.4617L19.0711 19.0711L13.4617 15.5289L12 22L10.5383 15.5289L4.92893 19.0711L8.47109 13.4617L2 12L8.47109 10.5383L4.92893 4.92893L10.5383 8.47109L12 2Z"/>
+	</svg>
+</div>
+
+``` html
+<div class="icon icon_name_preview icon_view_brand icon_size_m">
+	<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+		<path d="M12 2L13.4617 8.47109L19.0711 4.92893L15.5289 10.5383L22 12L15.5289 13.4617L19.0711 19.0711L13.4617 15.5289L12 22L10.5383 15.5289L4.92893 19.0711L8.47109 13.4617L2 12L8.47109 10.5383L4.92893 4.92893L10.5383 8.47109L12 2Z"/>
+	</svg>
+</div>
+```
+
+
+
+<!-- В библиотеке иконки предусмотрены для использования, как самостоятельно в интерфейсе, так и в паре с текстовым блоком. Поэтому все иконки существуют в тех же цветах, что и текст. Визуально модификации текста можно посмотреть в разделе [Типографика](http://whitepaper.tools/icon.html).
+
+Размеров всего два: `s` – 16×16px и `m` – 20×20px.
+
+Чтобы вставить иконку, нужно знать название иконки, размер и необходимый цвет. Иконки вставляются в разметку шаблоном инлайново. Это позволяет перекрашивать их на лету. -->
+
+<!-- | Модификаторы `icon` | Значения                                                          |
+|---------------------|-------------------------------------------------------------------|
+| size                | s / m                                                             |
+| view                | alert / disable / ghost / primary / secondary / success / warning |
+| name                | add-1 / add-2 / user / album / allert-2 / anchor / arrow-down / arrow-left-circle / arrow-left / arrow-right-circle / arrow-right / arrow-up / attention-circle / attention / back / blog / bug / cancel / canceled / check-circle / check / cheque-fail / cheque-progress / cheque-success / close-circle / close / comment / connect-circle / crop / devices / double-arrow-down / double-arrow-up / enter / export / fail / fave-1 / filter / front / globe / hamburger / help / list / lock-circle / lock / mail-1 / marker / minus / next / output / part / pause / phone-1 / photo / picture / play / playlist / previous / protect / refresh / repeat-song / repeat / save / search / shuffle / statistic / swap / target / time / track / trash / upload / user / volume / wait-2 / wait | -->

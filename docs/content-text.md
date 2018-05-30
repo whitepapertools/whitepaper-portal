@@ -1,42 +1,374 @@
 # Текст
 
-![Текст](_images/text.png 'Текст')
-
-## Текст в интерфейсе
+<div class="preview">
+	<div class="text text_size_xxxl text_view_secondary text_weight_bold">Some nice text</div>
+</div>
 
 В основе любого интерфейса лежит типографика. В вебе у текстовых блоков есть много разных свойств, влияющих на отображение.
 
-Для манипуляции всеми этими свойствами у нас есть библиотека [bem-typo](https://github.com/bemdesign/bem-typo). С ее помощью каждый текстовый блок можно обернуть в блок `text` и применять его модификаторы.
+Для манипуляции всеми этими свойствами у нас есть блок `text`. С его помощью каждый текстовый блок можно обернуть и применять модификаторы.
 
-Визуально модификации текста можно посмотреть в разделе [Типографика](http://bem.design/typo.html).
+Кегль, межстрочное расстояние и цвет текста, задаются через переменные, которые описываются в [теме](http://whitepaper.tools/doc.html#/theme-text).
 
-<iframe height='500' scrolling='no' title='TEXT. Теория 1' src='//codepen.io/bem_design/embed/7c49bf8d1c1457a7643d880e6250f3b9/?height=265&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/7c49bf8d1c1457a7643d880e6250f3b9/'>TEXT. Теория 1</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+* [Модификаторы блока](#Модификаторы)
+* [Пример](#Пример)
+
+___
+
+## Модификаторы блока
 
 Модификатор | Значение                                         | Описание
 ----------- | ------------------------------------------------ | ------------------------------------
-align       | center / left / right                            | Горизонтальное выравнивание текста
-decoration  | underline                                        | Подчеркивание
-display     | block / inline-block / inline                    | Способ отображения блока на странице
-font        | mono / sans / serif                              | Семейство шрифтов
-size        | xs / s / m / l / xl / xxl / xxxl / xxxxl         | Размер
-spacing     | xs / s / m                                       | Межбуквенное расстояние
-style       | italic                                           | Курсив
-transform   | uppercase                                        | Верхний регистр
-type        | h1 / h2 / h3 / p / blockquote                    | Стиль текста
-view        | alert / brand / disable / ghost / link-minor / link / primary / promo / secondary / success / warning | Цвет
-weight      | black / bold / semibold / regular / light / thin | Жирность шрифта
+align | center / left / right                        | Горизонтальное выравнивание текста
+[decoration](#decoration) | underline                          | Подчеркивание
+display | block / inline-block / inline            | Способ отображения блока на странице
+[size](#size) | xs / s / m / l / xl / xxl / xxxl / xxxxl       | Размер
+[spacing](#spacing) | xs / s / m                               | Межбуквенное расстояние
+[style](#style) | italic                                       | Курсив
+[transform](#transform) | uppercase                            | Верхний регистр
+type | h1 / h2 / h3 / p / blockquote                  | Стиль текста
+[view](#view) | alert / brand / disable / ghost / link-minor / link / primary / promo / secondary / success / warning | Цвет
+[weight](#view) | black / bold / semibold / regular / light / thin | Жирность шрифта
 
-## Текст на инфо-страницах
+### decoration:
 
-Для простого манипулирования уровнями иерархии для инфо-страниц в блоке `text` есть модификаторы `type`
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl ">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">не указан</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl">Typography</div>
+	</div>
+</div>
 
-<iframe height='500' scrolling='no' title='TEXT. Теория 2' src='//codepen.io/bem_design/embed/6ade0a2ae7f41842e8492859f21baf4d/?height=265&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/6ade0a2ae7f41842e8492859f21baf4d/'>TEXT. Теория 2</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">underline</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_decoration_underline">Typography</div>
+	</div>
+</div>
 
-## Задание
+### size:
 
-Cобрать статью блоком `text`
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl ">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">xxxxl</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xxxxl">Typography</div>
+	</div>
+</div>
 
-<iframe height='500' scrolling='no' title='TEXT. Задание 1' src='//codepen.io/bem_design/embed/34678253a890f3e45bc9449602a4abc4/?height=265&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/34678253a890f3e45bc9449602a4abc4/'>TEXT. Задание 1</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">xxxl</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xxxl">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">xxl</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xxl">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">xl</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">l</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_l">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">m</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_m">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">s</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_s">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">xs</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xs">Typography</div>
+	</div>
+</div>
+
+### spacing:
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl ">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">xs</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_transform_uppercase text_spacing_xs">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">s</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_transform_uppercase text_spacing_s">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">m</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_transform_uppercase text_spacing_m">Typography</div>
+	</div>
+</div>
+
+### style:
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl ">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">не указан</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">italic</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_style_italic">Typography</div>
+	</div>
+</div>
+
+### transform:
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl ">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">не указан</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">uppercase</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_transform_uppercase">Typography</div>
+	</div>
+</div>
+
+### view:
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl ">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">primary</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_primary">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">secondary</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_secondary">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">ghost</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_ghost">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">disable</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_disable">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">success</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_success">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">warning</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_warning">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">alert</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_alert">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">link</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_link">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">link-minor</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_link-minor">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">brand</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_brand">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">promo</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_promo">Typography</div>
+	</div>
+</div>
+
+### weight:
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl ">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">thin</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_weight_thin">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">light</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_weight_light">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">regular</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_weight_regular">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">semibold</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_weight_semibold">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">bold</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_weight_bold">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">black</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_weight_black">Typography</div>
+	</div>
+</div>
+
+___
+
+## Пример
+
+<div>
+	<div class="text text_size_xxl text_type_h2 text_view_brand text_weight_bold text_align_center">
+	  Заголовок второго уровня
+	</div>
+	<div class="text text_size_l text_view_primary text_type_p text_align_center">
+	  Пример текста для первого параграфа, следующего после заголовка, изображающий возможные стили текста, а вот кстати <div class="text text_display_inline text_view_link">ссылка</div>
+	</div>
+</div>
+
+
+```html
+<div class="text text_size_xxl text_view_brand text_weight_bold text_type_h2 text_align_center">
+  Заголовок второго уровня
+</div>
+<div class="text text_size_l text_view_primary text_type_p text_align_center">
+  Пример текста для первого параграфа, следующего после заголовка, изображающий возможные стили текста, а вот кстати <div class="text text_display_inline text_view_link">ссылка</div>
+</div>
+```

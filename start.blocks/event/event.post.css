@@ -1,0 +1,27 @@
+.event {
+	&__photo {
+		height: 151px;
+		overflow: hidden;
+	}
+	&__description {
+		background-color: var(--color-bg-default);
+	}
+	&__date {
+		height: 64px;
+		width: 64px;
+		background: var(--color-bg-ghost);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	&__announce {
+		padding-top: 87px !important;
+		background: var(--color-bg-default);
+	}
+	&__wrap {
+		width: 100%;
+	}
+}

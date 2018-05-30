@@ -1,0 +1,23 @@
+.subscribe {
+	#mc_embed_signup_scroll {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-flow: row wrap;
+	}
+
+	#mce-responses {
+		order: 1;
+		width: 100%;
+		margin-top: var(--space-m);
+		font-family: var(--font-sans);
+		font-size: var(--size-typo-m);
+	}
+
+	#mce-error-response { color: var(--color-typo-alert); }
+	#mce-success-response { color: var(--color-typo-success); }
+
+	#mc-embedded-subscribe {
+		margin: 0;
+	}
+}

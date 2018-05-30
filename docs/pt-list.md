@@ -1,46 +1,202 @@
 # pt-list
 
-![pt-list](_images/pt-list.png)
+<div class="preview">
+	<div class="pt-list pt-list_border_all pt-list_view_default" style="min-width: 280px">
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Первая операция
+		</div>
+		<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+			+1000 ₽
+		</div>
+	</div>
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Вторая операция
+		</div>
+		<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+			-500 ₽
+		</div>
+	</div>
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Третья операция
+		</div>
+		<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+			+2000 ₽
+		</div>
+	</div>
+	</div>
+</div>
 
-`pt-list` – это описание списка похожих друг на друга вертикально перечисленных сущностей.
+`pt-list` используется для вертикального представления повторяющихся сущностей. Отлично подходит для отображения истории, контактов, вертикальных меню.
 
-Структура блока очень простая:
+* [Модификаторы блока](#Модификаторы)
+* [Элементы](#Элементы)
+* [Пример](#Пример)
 
-```js
-{
-	block: 'pt-list',
-	content: [
-	{
-		elem: 'item'
-	},
-	{
-		elem: 'item'
-	}]
-}
-```
+___
 
-Пример списка.
+## Модификаторы блока
 
-<iframe height='500' scrolling='no' title='pt-list. Теория 1' src='//codepen.io/bem_design/embed/138d1417680b2e1e4c75f9f5fffb7d39/?height=265&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/138d1417680b2e1e4c75f9f5fffb7d39/'>pt-list. Теория 1</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+Модификатор        | Значение        | Описание
+------------------ | --------------- | ---------------
+[border](#border)  | all             | Устанавливает границу вокруг блока
+[view](#view)      | default / ghost | Управляет фоном списка
 
-Модификатор | Значение
------------ | ---------------
-border      | all
-shadow      | cloud
-view        | default / ghost
+### border
 
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">не задан</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_default">
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-Элементы `item` могут включать в себя друг друга.
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">all</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_default pt-list_border_all">
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-<iframe height='500' scrolling='no' title='pt-list. Теория 2' src='//codepen.io/bem_design/embed/60834c80ab573c6afdd1ed88f6b71f1f/?height=265&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/60834c80ab573c6afdd1ed88f6b71f1f/'>pt-list. Теория 2</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+### view
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">default</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_default">
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">ghost</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_ghost">
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+___
+
+## Элементы
+
+### Элемент item
+
+Единственный элемент паттерна, который определяет строку списка. Является контейнером для контента строки. Элементы `item` могут включать в себя друг друга.
 
 Модификаторы элемента `item` | Значение                         | Описание
 ---------------------------- | -------------------------------- | -------------------------------------
-border                       | all                              | Обводка
-distribute                   | default / between                | Распределение контента по горизонтали
-vertical-align               | center / top                     | Вертикальное выравнивание контента
+[border](#border)            | bottom / top                     | Обводка
+[distribute](#distribute)    | default / between                | Распределение контента по горизонтали
+vertical-align               | center / top / baseline          | Вертикальное выравнивание контента
 indent-a                     | xs / s / m / l / xl / xxl / xxxl | Внешние отступы со всех сторон
 indent-h                     | xs / s / m / l / xl / xxl / xxxl | Внешние отступы по горизонтали
 indent-v                     | xs / s / m / l / xl / xxl / xxxl | Внешние отступы по вертикали
@@ -56,9 +212,236 @@ space-r                      | xxs / xs / s / m / l / xl / xxl  | Внутрен
 space-b                      | xxs / xs / s / m / l / xl / xxl  | Внутренний отступ снизу
 space-l                      | xxs / xs / s / m / l / xl / xxl  | Внутренний отступ слева
 
-## Задание
+#### border
 
-В заданиии уже есть контент и структура. По подсказкам подставь нужные блоки и элементы
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">не задан</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_default">
+			<div class="pt-list__item pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-<iframe height='500' scrolling='no' title='pt-list. Задание 1' src='//codepen.io/bem_design/embed/b146550375f1f00852515500865da5b1/?height=265&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/b146550375f1f00852515500865da5b1/'>pt-list. Задание 1</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">bottom</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_default">
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">top</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_default">
+			<div class="pt-list__item pt-list__item_border_top pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_top pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_top pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+#### distribute
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">default</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_default">
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_default pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s" style="padding-right: var(--space-l);">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_default pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s" style="padding-right: var(--space-l);">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_default pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s" style="padding-right: var(--space-l);">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">between</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_default">
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+___
+
+## Пример
+
+<div class="pt-list pt-list_border_all pt-list_view_default">
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Первая операция
+		</div>
+		<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+			+1000 ₽
+		</div>
+	</div>
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Вторая операция
+		</div>
+		<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+			-500 ₽
+		</div>
+	</div>
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Третья операция
+		</div>
+		<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+			+2000 ₽
+		</div>
+	</div>
+</div>
+
+```html
+<div class="pt-list pt-list_border_all pt-list_view_default">
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Первая операция
+		</div>
+		<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+			+1000 ₽
+		</div>
+	</div>
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Вторая операция
+		</div>
+		<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+			-500 ₽
+		</div>
+	</div>
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Третья операция
+		</div>
+		<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+			+2000 ₽
+		</div>
+	</div>
+</div>
+```

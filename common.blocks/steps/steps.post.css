@@ -1,0 +1,5 @@
+@media screen and (max-width: $screen-xs-max) {
+	.steps {
+		padding: var(--space-m) 0px;
+	}
+}

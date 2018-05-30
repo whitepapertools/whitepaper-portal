@@ -1,20 +1,98 @@
 .menu {
-	&__view {
-		height: 240px;
-		background: var(--color-bg-ghost);
-		margin-bottom: var(--space-xs);
+	box-sizing: border-box;
+	width: 100%;
+	z-index: 100;
+	background-color: var(--color-bg-default);
+	margin-bottom: var(--space-xxxxxxl);
+	&__logo {
+		display: block;
+		width: 180px;
+		height: 52px;
+		background-size: 100%;
+		background-image: url('logo.svg');
+		background-repeat: no-repeat;
 	}
-	&__menu-image {
-		height: 240px;
-		background: #1a1a1a;
-		&_size {
-			&_unfold {
-				width: var(--menu-unfold);
-			}
-			&_fold {
-				width: var(--menu-fold);
-			}
+	&__item {
+		position: relative;
+		padding-left: var(--space-xxxl);
+		text-decoration: none;
+		opacity: 0.6;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 80px;
+	}
+	&__nav {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: baseline;
+	}
+	&__paper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__download {
+		padding-left: var(--space-xxxl);
+		margin-right: 14px;
+	}
+}
+
+@media screen and (max-width: $screen-xs-max) {
+	.menu {
+		&__nav {
+			flex-wrap: wrap;
+		}
+		&__paper {
+			padding-top: var(--space-xl);
+			margin-bottom: var(--space-xl); 
+		}
+		&__inner {
+			display: block;
+		}
+		&__item {
+			box-sizing: border-box;
+			padding: var(--space-s) 0px; 
+			width: 50%;
 		}
 	}
 }
 
+@media screen and (min-width: $screen-s) and (max-width: $screen-s-max) {
+	.menu {
+		&__paper {
+			padding-top: var(--space-l);
+			margin-bottom: var(--space-l); 
+		}
+		&__inner {
+			display: block;
+		}
+		&__item {
+			position: relative;
+			padding-left: 0px;
+			padding-right: var(--space-xxxl);
+		}
+	}
+}
+
+@media screen and (min-width: $screen-m) and (max-width: $screen-m-max) {
+	.menu {
+		&__paper {
+			padding-top: var(--space-l);
+			margin-bottom: var(--space-l); 
+		}
+		&__inner {
+			display: block;
+		}
+		&__item {
+			position: relative;
+			padding-left: 0px;
+			padding-right: var(--space-xxxl);
+		}
+	}
+}

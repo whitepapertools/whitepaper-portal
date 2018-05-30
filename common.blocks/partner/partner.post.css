@@ -1,0 +1,25 @@
+.partner {
+    position: relative;
+	padding: var(--space-m) 0px;
+	height: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.7;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: $screen-xs-max) {
+	.partner {
+		padding: 0px 0px var(--space-m) 0px;
+		justify-content: flex-start;
+	}
+}
+
+@media screen and (min-width: $screen-s) and (max-width: $screen-s-max) {
+	.partner {
+		justify-content: flex-start;
+	}
+}
