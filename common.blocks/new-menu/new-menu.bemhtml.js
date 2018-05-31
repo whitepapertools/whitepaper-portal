@@ -166,6 +166,7 @@ block('new-menu')(
 								}
 							]
 						},
+						
 						{
 							block: 'text',
 							mods: { size: 'm', view: 'primary' },
@@ -178,7 +179,7 @@ block('new-menu')(
 							block: 'text',
 							mods: { size: 'm', view: 'primary' },
 							tag: 'a',
-							attrs: { href: '/themes.html' },
+							attrs: { href: 'https://ui8.net/products/kit-bill', target: '_blank' },
 							mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 							content: 'Материалы'
 						}

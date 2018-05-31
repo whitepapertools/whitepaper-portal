@@ -17,9 +17,11 @@
 
 	&__logo {
 		display: block;
-		width: 96px;
-		height: 32px;
-		background: #000;
+		width: 260px;
+		height: 43px;
+		background-size: 100%;
+		background-image: url('logo.svg');
+		background-repeat: no-repeat;
 	}
 
 	&__nav {

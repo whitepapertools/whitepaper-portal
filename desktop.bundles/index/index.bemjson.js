@@ -59,14 +59,21 @@ module.exports = {
 														{
 															block: 'text',
 															mods: { view: 'primary', weight: 'bold' },
-															attrs: { 'style': 'font-size: 120px; line-height: 140px; margin-bottom: 90px;' },
-															content: 'Декларативная дизайн-система'
+															mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+															attrs: { 'style': 'font-size: 120px; line-height: 140px;' },
+															content: 'whitepaper'
+														},
+														{
+															block: 'text',
+															mods: { size: 'xxl', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' }},
+															content: 'Некомпонентная декларативная открытая дизайн-система'
 														},
 														{
 															block: 'text',
 															mods: { size: 'xxl', view: 'primary', weight: 'bold' },
 															content: [
-															'witepaper на ',
+															'whitepaper на ',
 															{
 																tag: 'a',
 																block: 'text',
@@ -433,7 +440,7 @@ module.exports = {
 																					attrs: {
 																						'href': '/patterns.html#pt-table'
 																					},
-																					content: 'Таблицы'
+																					content: 'Table'
 																				}
 																			]
 																		},
@@ -448,7 +455,7 @@ module.exports = {
 																					attrs: {
 																						'href': '/patterns.html#pt-list'
 																					},
-																					content: 'Списки'
+																					content: 'List'
 																				}
 																			]
 																		},
@@ -463,7 +470,7 @@ module.exports = {
 																					attrs: {
 																						'href': '/patterns.html#pt-form'
 																					},
-																					content: 'Формы'
+																					content: 'Form'
 																				}
 																			]
 																		},
@@ -478,7 +485,7 @@ module.exports = {
 																					attrs: {
 																						'href': '/patterns.html#pt-informer'
 																					},
-																					content: 'Информеры'
+																					content: 'Informer'
 																				}
 																			]
 																		},
@@ -493,7 +500,7 @@ module.exports = {
 																					attrs: {
 																						'href': '/patterns.html#pt-icon-plus'
 																					},
-																					content: 'Айкон плюс'
+																					content: 'Icon Plus'
 																				}
 																			]
 																		},
@@ -508,7 +515,7 @@ module.exports = {
 																					attrs: {
 																						'href': '/patterns.html#pt-surface'
 																					},
-																					content: 'Сюрфейс'
+																					content: 'Surface'
 																				}
 																			]
 																		}
@@ -607,27 +614,27 @@ module.exports = {
 																					mods: { size: 'l', view: 'link' },
 																					tag: 'a',
 																					attrs: {
-																						'href': '/article-icons.html'
+																						'href': '/doc.html#/install'
 																					},
 																					content: 'Как рисовать иконки'
 																				}
 																			]
 																		},
-																		{
-																			elem: 'item',
-																			elemMods: { 'space-b': 'm', border: 'bottom'  },
-																			content: [
-																				{
-																					block: 'text',
-																					mods: { size: 'l', view: 'link' },
-																					tag: 'a',
-																					attrs: {
-																						'href': '/article-vectors.html'
-																					},
-																					content: 'Как рисовать «векторы»'
-																				}
-																			]
-																		}
+																		// {
+																		// 	elem: 'item',
+																		// 	elemMods: { 'space-b': 'm', border: 'bottom'  },
+																		// 	content: [
+																		// 		{
+																		// 			block: 'text',
+																		// 			mods: { size: 'l', view: 'link' },
+																		// 			tag: 'a',
+																		// 			attrs: {
+																		// 				'href': '/article-vectors.html'
+																		// 			},
+																		// 			content: 'Как рисовать «векторы»'
+																		// 		}
+																		// 	]
+																		// }
 																	]
 																}
 															]
@@ -672,21 +679,21 @@ module.exports = {
 																				}
 																			]
 																		},
-																		{
-																			elem: 'item',
-																			elemMods: { 'space-b': 'l', border: 'bottom' },
-																			content: [
-																				{
-																					block: 'text',
-																					mods: { size: 'l', view: 'link' },
-																					content: 'BEM Starter Kit',
-																					tag: 'a',
-																					attrs: {
-																						'href': '/bem-starter-kit.html'
-																					}
-																				}
-																			]
-																		}
+																		// {
+																		// 	elem: 'item',
+																		// 	elemMods: { 'space-b': 'l', border: 'bottom' },
+																		// 	content: [
+																		// 		{
+																		// 			block: 'text',
+																		// 			mods: { size: 'l', view: 'link' },
+																		// 			content: 'BEM Starter Kit',
+																		// 			tag: 'a',
+																		// 			attrs: {
+																		// 				'href': '/bem-starter-kit.html'
+																		// 			}
+																		// 		}
+																		// 	]
+																		// }
 																	]
 																}
 															]
@@ -836,7 +843,7 @@ module.exports = {
 																				{
 																					block: 'text',
 																					mods: { view: 'primary', size: 'l', weight: 'light' },
-																					content: 'Карточки отлично подходят для высокой детализации прототипов. Они помогают расширять и масштабировать интерфейсы.'
+																					content: 'Карточки отлично подходят для высокой детализации прототипов. Они помогают расширять и масштабировать интерфейсы.'
 																				}
 																			]
 																		}
@@ -1019,7 +1026,7 @@ module.exports = {
 															content: [
 																{
 																	block: 'text',
-																	content: 'Мы проводим серии лекций на разработчиских и дизайн мероприятих'
+																	content: 'Мы проводим серии лекций на разработчиских и дизайн мероприятих'
 																},
 																{
 																	block: 'text',
