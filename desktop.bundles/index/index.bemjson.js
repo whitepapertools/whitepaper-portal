@@ -1288,7 +1288,7 @@ module.exports = {
 																<form action="https://tools.us18.list-manage.com/subscribe/post?u=3b7792c268dda402a67b1ad99&amp;id=1f8e40a20f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 																		<div id="mc_embed_signup_scroll">
 																			<div class="mc-field-group">
-																				<span class="input input_theme_islands input_size_xl i-bem decorator decorator_indent-r_xs" data-bem='{"input":{}}'><span type="email" value="" name="EMAIL" class="input__box required email"><input class="input__control" placeholder="Электронная почта"></span></span>
+																				<span class="input input_theme_islands input_size_xl i-bem decorator decorator_indent-r_xs" data-bem='{"input":{}}'><span class="input__box"><input type="email" value="" name="EMAIL"  class="input__control required email" id="mce-EMAIL" placeholder="Электронная почта"></span></span>
 																			</div>
 																			<div id="mce-responses" class="clear">
 																				<div class="response" id="mce-error-response" style="display:none"></div>
