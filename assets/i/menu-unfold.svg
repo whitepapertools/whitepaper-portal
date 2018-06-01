@@ -17,7 +17,7 @@
       </text>
     </g>
     <text fill="#FFFFFF" font-family="MuseoSansCyrl-700, Museo Sans Cyrl" font-size="20" font-weight="500" letter-spacing="1.222">
-      <tspan x="20" y="39">Whitepape</tspan> <tspan x="132.74" y="39" letter-spacing="1.358">r</tspan>
+      <tspan x="20" y="39">whitepaper</tspan>
     </text>
     <path fill="#FFFFFF" fill-rule="nonzero" d="M16,0 L0,0 L0,20 L16,20 L16,0 Z M2,2 L7,2 L7,10 L4.5,8.5 L2,10 L2,2 Z" transform="translate(24 83)"/>
     <g transform="translate(20 118)">
@@ -42,6 +42,5 @@
         <tspan x="44" y="30">Тема</tspan>
       </text>
     </g>
-    <rect width="300" height="50" y="190" fill="url(#a)"/>
   </g>
 </svg>

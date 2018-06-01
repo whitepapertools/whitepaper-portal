@@ -123,6 +123,13 @@ block('new-menu')(
 											tag: 'a', attrs: { href: '/badge.html' },
 											mix: { block: 'new-menu', elem: 'dropdown-link' },
 											content: 'Бейджи'
+										},
+										{	
+											block: 'text',
+											mods: { size: 'm', view: 'primary' },
+											tag: 'a', attrs: { href: '/tag.html' },
+											mix: { block: 'new-menu', elem: 'dropdown-link' },
+											content: 'Тэги'
 										}
 									]
 								}

@@ -58,5 +58,7 @@
     "build": "enb make"
   },
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "npm": "^6.1.0"
+  }
 }

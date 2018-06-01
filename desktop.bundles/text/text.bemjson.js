@@ -44,17 +44,23 @@ module.exports = {
 							mods: { size: 'l' },
 							mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
 							content: [
+							{
+								elem: 'row',
+								content: [
+								'Для текста используется блок ',
 								{
-									elem: 'row',
-									content: 'Для легкой манипуляции внешним видом любой текст в интерфейсе выводится'
+									block: 'text',
+									mods: { size: 'l', weight: 'bold', display: 'inline' },
+									content: 'text'
 								},
-								{
-									elem: 'row',
-									content: 'в { block: \'text\' }'
-								}
-							]
+								'. С помощью модификаций можно '
+								],
+							},
+							{
+								elem: 'row',
+								content: 'менять размер, цвет, начертание и другие свойства шрифта'
+							}]
 						},
-
 						{
 							elem: 'row',
 							mix: [
@@ -77,7 +83,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: "mods: { size: 'xxxl' }"
+										content: "size: 'xxxl'"
 									}]
 								},
 								{
@@ -95,7 +101,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: " mods: { size: 'xxl' } "
+										content: "size: 'xxl'"
 									}]
 								},
 								{
@@ -113,7 +119,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: " mods: { size: 'xl' } "
+										content: "size: 'xl'"
 									}]
 								},
 								{
@@ -131,7 +137,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: "mods: { size: 'l' }"
+										content: "size: 'l'"
 									}]
 								},
 								{
@@ -149,7 +155,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: "mods: { size: 'm' }"
+										content: "size: 'm'"
 									}]
 								},
 								{
@@ -167,7 +173,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: "mods: { size: 's' }"
+										content: "size: 's'"
 									}]
 								},
 								{
@@ -185,7 +191,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: "mods: { size: 'xs' }"
+										content: "size: 'xs'"
 									}]
 								}
 							]
@@ -212,7 +218,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: " mods: { view: 'primary' } "
+										content: "view: 'primary'"
 									}]
 								},
 								{
@@ -230,7 +236,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: " mods: { view: 'promo' } "
+										content: "view: 'promo'"
 									}]
 								},
 								{
@@ -248,7 +254,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: " mods: { view: 'secondary' } "
+										content: "view: 'secondary'"
 									}]
 								},
 								{
@@ -266,7 +272,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: " mods: { view: 'ghost' } "
+										content: "view: 'ghost'"
 									}]
 								},
 								{
@@ -284,7 +290,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: " mods: { view: 'disable' }"
+										content: "view: 'disable'"
 									}]
 								},
 								{
@@ -302,7 +308,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: " mods: { view: 'link' }"
+										content: "view: 'link'"
 									}]
 								}
 
@@ -330,7 +336,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: " mods: { weight: 'bold' } "
+										content: "weight: 'bold'"
 									}]
 								}
 							]
@@ -357,7 +363,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: " mods: { transform: 'uppercase' } "
+										content: "transform: 'uppercase'"
 									}]
 								}
 							]
@@ -384,7 +390,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: " mods: { spacing: 's' } "
+										content: "spacing: 's'"
 									}]
 								},
 								{
@@ -402,7 +408,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'm', weight: 'bold' },
-										content: " mods: { spacing: 'm' } "
+										content: "spacing: 'm'"
 									}]
 								}
 							]
@@ -430,7 +436,7 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { size: 'm', weight: 'bold' },
-											content: " mods: { style: 'italic' } "
+											content: "style: 'italic'"
 										}]
 									}]
 								}

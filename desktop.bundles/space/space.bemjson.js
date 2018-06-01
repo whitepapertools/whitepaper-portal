@@ -54,7 +54,7 @@ module.exports = {
 								},
 								{
 									elem: 'row',
-									content: 'внутри паттернов.'
+									content: 'внутри паттернов'
 								}
 							]
 						},

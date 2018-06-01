@@ -13,7 +13,6 @@
       <polygon points="0 0 24 0 24 24 0 24"/>
       <path fill="#FFFFFF" fill-rule="nonzero" d="M3.87,18.21 L3.87,9.18 L0.68,16.88 L3.87,18.21 Z M22.79,15.78 L16.31,0.14 L5.26,4.71 L11.74,20.35 L22.79,15.78 Z M7.88,6.75 C7.33,6.75 6.88,6.3 6.88,5.75 C6.88,5.2 7.33,4.75 7.88,4.75 C8.43,4.75 8.88,5.2 8.88,5.75 C8.88,6.3 8.43,6.75 7.88,6.75 Z M5.88,19.75 L9.33,19.75 L5.88,11.41 L5.88,19.75 Z" transform="translate(0 2)"/>
     </g>
-    <rect width="56" height="50" y="190" fill="url(#a)"/>
     <g transform="translate(16 131)">
       <polygon points="0 0 24 0 24 24 0 24"/>
       <path fill="#FFFFFF" fill-rule="nonzero" d="M4,10.18 L4,14.18 L11,18 L18,14.18 L18,10.18 L11,14 L4,10.18 Z M11,0 L0,6 L11,12 L20,7.09 L20,14 L22,14 L22,6 L11,0 Z" transform="translate(1 3)"/>
