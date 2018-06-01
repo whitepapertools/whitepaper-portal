@@ -44,15 +44,28 @@ module.exports = {
 							mods: { size: 'l' },
 							mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
 							content: [
+							{
+								elem: 'row',
+								content: [
+								'Аватарки создаются блоком ',
 								{
-									elem: 'row',
-									content: 'Для отображения фотографий пользователей используется { block: \'avatar\' }, сами'
+									block: 'text',
+									mods: { size: 'l', weight: 'bold', display: 'inline' },
+									content: 'avatar'
 								},
+								'. Сами фотографии '
+								],
+							},
+							{
+								elem: 'row',
+								content: [
+								'вносятся в элементе ',
 								{
-									elem: 'row',
-									content: 'фотографии размещаются в { elem: \'photo\' }'
-								}
-							]
+									block: 'text',
+									mods: { size: 'l', weight: 'bold', display: 'inline' },
+									content: 'photo'
+								}]
+							}]
 						},
 						{
 							elem: 'row',

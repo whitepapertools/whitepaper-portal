@@ -44,11 +44,22 @@ module.exports = {
 							mods: { size: 'l' },
 							mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
 							content: [
+							{
+								elem: 'row',
+								content: [
+								'Иконки выводятся через блок ',
 								{
-									elem: 'row',
-									content: 'Для отображения иконок используется { block: \'icon\' }.'
-								}
-							]
+									block: 'text',
+									mods: { size: 'l', weight: 'bold', display: 'inline' },
+									content: 'icon'
+								},
+								'. Модификациии определяют '
+								],
+							},
+							{
+								elem: 'row',
+								content: 'вид, размер и цвет иконки'
+							}]
 						},
 						{
 							block: 'icon-list',

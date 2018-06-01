@@ -31,7 +31,7 @@ module.exports = {
 				/* Content */
 				{
 					elem: 'content',
-					elemMods: { size: 'l' },
+					elemMods: { size: 'm' },
 					content: [
 						{
 							block: 'text',
@@ -44,11 +44,22 @@ module.exports = {
 							mods: { size: 'l' },
 							mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
 							content: [
+							{
+								elem: 'row',
+								content: [
+								'Для отображения логотипов используется блок ',
 								{
-									elem: 'row',
-									content: 'Для отображения упрощенной версии логотипа используется { block: \'brand-logo\' }'
-								}
-							]
+									block: 'text',
+									mods: { size: 'l', weight: 'bold', display: 'inline' },
+									content: 'brand-logo'
+								},
+								'.'
+								],
+							},
+							{
+								elem: 'row',
+								content: 'Через модификации указывается вид и размер логотипа'
+							}]
 						},
 						{
 							elem: 'row',
@@ -73,22 +84,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'iTunes'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'http://www.apple.com/ru/itunes'
 													},
-													content: 'http://www.apple.com/ru/itunes'
+													content: 'iTunes'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'itunes' }"
+													content: "name: 'itunes'"
 												}
 											]
 										}
@@ -113,22 +119,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Steam'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'http://store.steampowered.com'
 													},
-													content: 'http://store.steampowered.com'
+													content: 'Steam'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'steam' }"
+													content: "name: 'steam'"
 												}
 											]
 										}
@@ -153,22 +154,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Skype'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'https://www.skype.com/ru'
 													},
-													content: 'https://www.skype.com/ru'
+													content: 'Skype'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'skype' }"
+													content: "name: 'skype'"
 												}
 											]
 										}
@@ -193,22 +189,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Фогейм'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'https://4game.com'
 													},
-													content: 'https://4game.com'
+													content: 'Фогейм'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'forgame' }"
+													content: "name: 'forgame'"
 												}
 											]
 										}
@@ -233,22 +224,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Warthunder'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'http://warthunder.ru'
 													},
-													content: 'http://warthunder.ru'
+													content: 'Warthunder'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'warthunder' }"
+													content: "name: 'warthunder'"
 												}
 											]
 										}
@@ -273,22 +259,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Warface'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'https://wf.mail.ru'
 													},
-													content: 'https://wf.mail.ru'
+													content: 'Warface'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'warface' }"
+													content: "name: 'warface'"
 												}
 											]
 										}
@@ -313,22 +294,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Wargaming.net'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'http://ru.wargaming.net'
 													},
-													content: 'http://ru.wargaming.net'
+													content: 'Wargaming.net'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'wargaming' }"
+													content: "name: 'wargaming'"
 												}
 											]
 										}
@@ -353,22 +329,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Blizzard'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'http://blizzard.com'
 													},
-													content: 'http://blizzard.com'
+													content: 'Blizzard'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'blizzard' }"
+													content: "name: 'blizzard'"
 												}
 											]
 										}
@@ -394,22 +365,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Yota'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'http://www.yota.ru'
 													},
-													content: 'http://www.yota.ru'
+													content: 'Yota'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'yota' }"
+													content: "name: 'yota'"
 												}
 											]
 										}
@@ -434,22 +400,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Tele2'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'http://ru.tele2.ru'
 													},
-													content: 'http://ru.tele2.ru'
+													content: 'Tele2'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'tele2' }"
+													content: "name: 'tele2'"
 												}
 											]
 										}
@@ -475,22 +436,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Beeline'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'http://beeline.ru'
 													},
-													content: 'http://beeline.ru'
+													content: 'Beeline'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { view: 'beeline' }"
+													content: "view: 'beeline'"
 												}
 											]
 										}
@@ -515,22 +471,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Megafon'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'https://megafon.ru'
 													},
-													content: 'https://megafon.ru'
+													content: 'Megafon'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { view: 'beeline' }"
+													content: "view: 'beeline'"
 												}
 											]
 										}
@@ -555,22 +506,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'МТС'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'http://www.mts.ru'
 													},
-													content: 'http://www.mts.ru'
+													content: 'МТС'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'mts' }"
+													content: "name: 'mts'"
 												}
 											]
 										}
@@ -596,22 +542,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Kcell'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'https://www.kcell.kz/ru'
 													},
-													content: 'https://www.kcell.kz/ru'
+													content: 'Kcell'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'kcell' }"
+													content: "name: 'kcell'"
 												}
 											]
 										}
@@ -636,22 +577,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Activ'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'https://activ.kz'
 													},
-													content: 'https://activ.kz'
+													content: 'Activ'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'activ' }"
+													content: "name: 'activ'"
 												}
 											]
 										}
@@ -676,22 +612,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Одноклассники'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'https://ok.ru'
 													},
-													content: 'https://ok.ru'
+													content: 'Одноклассники'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'ok' }"
+													content: "name: 'ok'"
 												}
 											]
 										}
@@ -716,22 +647,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Вконтакте'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'https://vk.com'
 													},
-													content: 'https://vk.com'
+													content: 'Вконтакте'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'vk' }"
+													content: "name: 'vk'"
 												}
 											]
 										}
@@ -756,22 +682,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Reg.ru'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'https://www.reg.ru'
 													},
-													content: 'https://www.reg.ru'
+													content: 'Reg.ru'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'regru' }"
+													content: "name: 'regru'"
 												}
 											]
 										}
@@ -796,22 +717,17 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													content: 'Ru-Center'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', view: 'link'},
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													attrs: {
 														href: 'https://www.nic.ru'
 													},
-													content: 'https://www.nic.ru'
+													content: 'Ru-Center'
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'ru-center' }"
+													content: "name: 'ru-center'"
 												}
 											]
 										}
@@ -837,19 +753,14 @@ module.exports = {
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
+													mods: { size: 'm', view: 'link'},
+													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
 													content: 'Нет логотипа'
 												},
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'link'},
-													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-													content: 'нет адреса'
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { name: 'no-logo' }"
+													content: "name: 'no-logo'"
 												}
 											]
 										}
