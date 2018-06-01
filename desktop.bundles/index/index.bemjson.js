@@ -6,6 +6,7 @@ module.exports = {
 	head: [
 		{ elem: 'meta', attrs: { name: 'description', content: '' } },
 		{ elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
+		{ elem: 'css', url: '//cdn-images.mailchimp.com/embedcode/classic-10_7.css' },
 		{ elem: 'css', url: 'index.min.css' },
 		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
 	],
@@ -30,13 +31,13 @@ module.exports = {
 					block: 'tpl-layout',
 					attrs: { style: 'position: relative; top: 60px' },
 					content: [
-					
+
 						/* Menu */
 						{
 							block: 'new-menu',
 						},
 						/* Menu */
-						
+
 						/* Start */
 						{
 							elem: 'section',
@@ -92,7 +93,7 @@ module.exports = {
 							]
 						},
 						/* /Start  */
-		
+
 						/* Tools */
 						{
 							elem: 'section',
@@ -700,7 +701,7 @@ module.exports = {
 							]
 						},
 						/* /Tools */
-		
+
 						/* Community */
 						{
 							elem: 'section',
@@ -986,7 +987,7 @@ module.exports = {
 							]
 						},
 						/* /Community */
-		
+
 						/* Product */
 						{
 							elem: 'section',
@@ -1228,7 +1229,7 @@ module.exports = {
 							]
 						},
 						/* /Product */
-		
+
 						/* Subscribe */
 						{
 							elem: 'section',
@@ -1270,14 +1271,43 @@ module.exports = {
 															]
 														},
 														{
+															block: 'subscribe',
+															content: {
+																html: `<!-- Begin MailChimp Signup Form -->
+																<!-- <style type="text/css">
+																	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+																</style> -->
+																<div>
+																<form action="https://tools.us18.list-manage.com/subscribe/post?u=3b7792c268dda402a67b1ad99&amp;id=1f8e40a20f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+																		<div id="mc_embed_signup_scroll">
+																			<div class="mc-field-group">
+																				<span class="input input_theme_islands input_size_xl i-bem decorator decorator_indent-r_xs" data-bem='{"input":{}}'><span type="email" value="" name="EMAIL" class="input__box required email"><input class="input__control" placeholder="Электронная почта"></span></span>
+																			</div>
+																			<div id="mce-responses" class="clear">
+																				<div class="response" id="mce-error-response" style="display:none"></div>
+																				<div class="response" id="mce-success-response" style="display:none"></div>
+																			</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+																			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3b7792c268dda402a67b1ad99_1f8e40a20f" tabindex="-1" value=""></div>
+																			<!-- <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div> -->
+																			<button class="button button_theme_islands button_size_xl button_type_submit button_view_action button__control i-bem" data-bem='{"button":{}}' role="button" type="submit" name="subscribe" id="mc-embedded-subscribe"><span class="button__text">Подписаться</span></button>
+																		</div>
+																</form>
+																</div>
+																<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+																<!--End mc_embed_signup-->`
+															}
+														},
+														{
 															block: 'input',
 															mods: { theme: 'islands', size: 'xl'},
 															mix: { block: 'decorator', mods: { 'indent-r': 'xs' } },
+															attrs: { style: 'display: none' },
 															placeholder: 'Электронная почта'
 														},
 														{
 															block: 'button',
 															mods: { theme: 'islands', size: 'xl', view: 'action' },
+															attrs: { style: 'display: none' },
 															text: 'Подписаться',
 															url: 'http://google.com'
 														}
@@ -1290,17 +1320,17 @@ module.exports = {
 							]
 						},
 						/* /Subscribe */
-		
+
 						/* Footer */
 						{
 							block: 'footer',
 						},
 						/* /Footer */
-		
-		
+
+
 					]
 				}
-	
+
 			]
 		}
 	]
