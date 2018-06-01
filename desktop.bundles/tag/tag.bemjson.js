@@ -1,6 +1,6 @@
 module.exports = {
 	block: 'page',
-	title: 'Тэг',
+	title: 'Тэги',
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
@@ -44,11 +44,22 @@ module.exports = {
 							mods: { size: 'l' },
 							mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
 							content: [
+							{
+								elem: 'row',
+								content: [
+								'Для классификации сущностей используется блок ',
 								{
-									elem: 'row',
-									content: 'Для классификации различных сущностей используется { block: \'tag\' }'
-								}
-							]
+									block: 'text',
+									mods: { size: 'l', weight: 'bold', display: 'inline' },
+									content: 'tag'
+								},
+								'.'
+								],
+							},
+							{
+								elem: 'row',
+								content: 'Модификации определяют состояние и размеры тегов'
+							}]
 						},
 						{
 							elem: 'row',
@@ -76,12 +87,12 @@ module.exports = {
 													block: 'text',
 													mods: { size: 'm', view: 'primary' },
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-													content: "Дефолтный"
+													content: "Обычный"
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { view: 'default' }"
+													content: "view: 'default'"
 												}
 											]
 										}
@@ -109,12 +120,12 @@ module.exports = {
 													block: 'text',
 													mods: { size: 'm', view: 'primary' },
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-													content: "Дизейбл"
+													content: "Неактивный"
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { view: 'disable' }"
+													content: "view: 'disable'"
 												}
 											]
 										}
@@ -142,12 +153,12 @@ module.exports = {
 													block: 'text',
 													mods: { size: 'm', view: 'primary' },
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-													content: "Ссылочный"
+													content: "Активный"
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { view: 'link' }"
+													content: "view: 'link'"
 												}
 											]
 										}
@@ -175,12 +186,12 @@ module.exports = {
 													block: 'text',
 													mods: { size: 'm', view: 'primary' },
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-													content: "Дефолтный"
+													content: "Обычный"
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { view: 'default' }"
+													content: "view: 'default'"
 												}
 											]
 										}
@@ -208,12 +219,12 @@ module.exports = {
 													block: 'text',
 													mods: { size: 'm', view: 'primary' },
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-													content: "Дизейбл"
+													content: "Неактивный"
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { view: 'disable' }"
+													content: "view: 'disable'"
 												}
 											]
 										}
@@ -241,12 +252,12 @@ module.exports = {
 													block: 'text',
 													mods: { size: 'm', view: 'primary' },
 													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-													content: "Ссылочный"
+													content: "Активный"
 												},
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { view: 'link' }"
+													content: "view: 'link'"
 												}
 											]
 										}

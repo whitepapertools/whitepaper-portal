@@ -1,6 +1,6 @@
 module.exports = {
 	block: 'page',
-	title: 'Текст',
+	title: 'Типографика',
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [

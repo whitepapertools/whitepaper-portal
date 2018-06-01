@@ -1,6 +1,6 @@
 module.exports = {
 	block: 'page',
-	title: 'Бейдж',
+	title: 'Бейджи',
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
@@ -44,11 +44,21 @@ module.exports = {
 							mods: { size: 'l' },
 							mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
 							content: [
+							{
+								elem: 'row',
+								content: 'Для отображения статуса каких-либо сущностей используется'
+							},
+							{
+								elem: 'row',
+								content: [
+								'блок ',
 								{
-									elem: 'row',
-									content: 'Для отображения статусов используется { block: \'badge\' }'
-								}
-							]
+									block: 'text',
+									mods: { size: 'l', weight: 'bold', display: 'inline' },
+									content: 'badge. '
+								},
+								'Статус определяется через модификацию']
+							}]
 						},
 						{
 							elem: 'row',
@@ -71,17 +81,12 @@ module.exports = {
 										},
 										{
 											elem: 'block',
+											mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-													content: "Алертный"
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { view: 'alert' }"
+													content: "view: 'alert'"
 												}
 											]
 										}
@@ -104,17 +109,12 @@ module.exports = {
 										},
 										{
 											elem: 'block',
+											mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-													content: "Ворнинг"
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { view: 'warning' }"
+													content: "view: 'warning'"
 												}
 											]
 										}
@@ -137,17 +137,12 @@ module.exports = {
 										},
 										{
 											elem: 'block',
+											mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-													content: "Успех"
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { view: 'success' }"
+													content: "view: 'success'"
 												}
 											]
 										}
@@ -170,17 +165,12 @@ module.exports = {
 										},
 										{
 											elem: 'block',
+											mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
 											content: [
 												{
 													block: 'text',
-													mods: { size: 'm', view: 'primary' },
-													mix: { block: 'decorator', mods: { 'space-b': 'xxs'} },
-													content: "Дефолтный"
-												},
-												{
-													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "mods: { view: 'default' }"
+													content: "view: 'default'"
 												}
 											]
 										}

@@ -58,7 +58,7 @@ module.exports = {
 															block: 'text',
 															mods: { size: 'xxxl', weight: 'bold'  },
 															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-															content: 'Карточка',
+															content: 'Card',
 														},
 														{
 															block: 'text',
@@ -69,7 +69,11 @@ module.exports = {
 														{
 															block: 'text',
 															mods: { view: 'link', size: 'l' },
-															content: 'Подробнее'
+															tag: 'a',
+															attrs: {
+																'href': 'https://github.com/whitepapertools/whitepaper-bem/blob/master/pt-card/pt-card.md'
+															},
+															content: 'Посмотреть документацию'
 														}
 													] 
 												}
@@ -110,7 +114,7 @@ module.exports = {
 															block: 'text',
 															mods: { size: 'xxxl', weight: 'bold'  },
 															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-															content: 'Список',
+															content: 'List',
 														},
 														{
 															block: 'text',
@@ -121,7 +125,10 @@ module.exports = {
 														{
 															block: 'text',
 															mods: { view: 'link', size: 'l' },
-															content: 'Подробнее'
+															attrs: {
+																'href': 'https://github.com/whitepapertools/whitepaper-bem/blob/master/pt-list/pt-list.md'
+															},
+															content: 'Посмотреть документацию'
 														}
 													] 
 												}
@@ -152,18 +159,22 @@ module.exports = {
 															block: 'text',
 															mods: { size: 'xxxl', weight: 'bold'  },
 															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-															content: 'Таблица',
+															content: 'Table',
 														},
 														{
 															block: 'text',
 															mods: { view: 'primary', size: 'l' },
 															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-															content: 'Используется для представления однотипной, повторяющейся информации. Набор модификаторов покрывает максимальное количество как стилистических так и структурных потребностей. Также есть возможность маркеровать строки по статусу.'
+															content: 'Используется для представления однотипной, повторяющейся информации. Набор модификаций покрывает максимальное количество как стилистических, так и структурных потребностей. Также есть возможность маркировать строки по статусу.'
 														},
 														{
 															block: 'text',
 															mods: { view: 'link', size: 'l' },
-															content: 'Подробнее'
+															tag: 'a',
+															attrs: {
+																'href': 'https://github.com/whitepapertools/whitepaper-bem/blob/master/pt-table/pt-table.md'
+															},
+															content: 'Посмотреть документацию'
 														}
 													] 
 												}
@@ -204,7 +215,7 @@ module.exports = {
 															block: 'text',
 															mods: { size: 'xxxl', weight: 'bold'  },
 															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-															content: 'Информер',
+															content: 'Informer',
 														},
 														{
 															block: 'text',
@@ -215,7 +226,11 @@ module.exports = {
 														{
 															block: 'text',
 															mods: { view: 'link', size: 'l' },
-															content: 'Подробнее'
+															tag: 'a',
+															attrs: {
+																'href': 'https://github.com/whitepapertools/whitepaper-bem/blob/master/pt-informer/pt-informer.md'
+															},
+															content: 'Посмотреть документацию'
 														}
 													] 
 												}
@@ -246,7 +261,7 @@ module.exports = {
 															block: 'text',
 															mods: { size: 'xxxl', weight: 'bold'  },
 															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-															content: 'Айконплюс',
+															content: 'Icon Plus',
 														},
 														{
 															block: 'text',
@@ -257,7 +272,11 @@ module.exports = {
 														{
 															block: 'text',
 															mods: { view: 'link', size: 'l' },
-															content: 'Подробнее'
+															tag: 'a',
+															attrs: {
+																'href': 'https://github.com/whitepapertools/whitepaper-bem/blob/master/pt-icon-plus/pt-icom-plus.md'
+															},
+															content: 'Посмотреть документацию'
 														}
 													] 
 												}
@@ -298,18 +317,22 @@ module.exports = {
 															block: 'text',
 															mods: { size: 'xxxl', weight: 'bold'  },
 															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-															content: 'Сюрфейс',
+															content: 'Surface',
 														},
 														{
 															block: 'text',
 															mods: { view: 'primary', size: 'l' },
 															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-															content: 'Используется для представления перекрывающего слоя / модального блока.'
+															content: 'Используется для представления перекрывающего слоя / модального окна.'
 														},
 														{
 															block: 'text',
 															mods: { view: 'link', size: 'l' },
-															content: 'Подробнее'
+															tag: 'a',
+															attrs: {
+																'href': 'https://github.com/whitepapertools/whitepaper-bem/blob/master/pt-surface/pt-surface.md'
+															},
+															content: 'Посмотреть документацию'
 														}
 													] 
 												}
@@ -340,18 +363,22 @@ module.exports = {
 															block: 'text',
 															mods: { size: 'xxxl', weight: 'bold'  },
 															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-															content: 'Форма',
+															content: 'Form',
 														},
 														{
 															block: 'text',
 															mods: { view: 'primary', size: 'l' },
 															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-															content: 'Используется для представления информаци, которая помогает получать данные от пользователя (инпуты, селекты, чекбоксы, ...). Наиболее частая структара: набор пунктов с лейблом и контроллом + акцентная кнопка.'
+															content: 'Используется для представления информации, которая помогает получать данные от пользователя (инпуты, селекты, чекбоксы, ...). Наиболее частая структара: набор пунктов с лейблом и контроллом и акцентная кнопка.'
 														},
 														{
 															block: 'text',
 															mods: { view: 'link', size: 'l' },
-															content: 'Подробнее'
+															tag: 'a',
+															attrs: {
+																'href': 'https://github.com/whitepapertools/whitepaper-bem/blob/master/pt-form/pt-form.md'
+															},
+															content: 'Посмотреть документацию'
 														}
 													] 
 												}

@@ -49,7 +49,7 @@ module.exports = {
 								},
 								{
 									elem: 'row',
-									content: 'общих обвязок каркаса/проектов.'
+									content: 'общих обвязок каркаса/проектов'
 								}
 							]
 						},
@@ -80,7 +80,7 @@ module.exports = {
 										// 	target: '_blank'
 										// },
 										mods: { size: 'm', view: 'primary', weight: 'bold' },
-										content: "mods: { structure: '50-50' }"
+										content: "structure: '50-50'"
 									}]
 								}]
 							},
@@ -107,7 +107,7 @@ module.exports = {
 										// 	target: '_blank'
 										// },
 										mods: { size: 'm', view: 'primary', weight: 'bold' },
-										content: "mods: { structure: '70-30' }"
+										content: "structure: '70-30'"
 									}]
 								}]
 							},
@@ -134,7 +134,7 @@ module.exports = {
 										// 	target: '_blank'
 										// },
 										mods: { size: 'm', view: 'primary', weight: 'bold' },
-										content: "mods: { structure: '90-10' }"
+										content: "structure: '90-10'"
 									}]
 								}]
 							},
@@ -188,7 +188,7 @@ module.exports = {
 										// 	target: '_blank'
 										// },
 										mods: { size: 'm', view: 'primary', weight: 'bold' },
-										content: "mods: { structure: 'fold-25-50-25' }"
+										content: "structure: 'fold-25-50-25'"
 									}]
 								}]
 							},
@@ -215,7 +215,7 @@ module.exports = {
 										// 	target: '_blank'
 										// },
 										mods: { size: 'm', view: 'primary', weight: 'bold' },
-										content: "mods: { structure: 'unfold-25-50-25' }"
+										content: "structure: 'unfold-25-50-25'"
 									}]
 								}]
 							},
@@ -242,7 +242,7 @@ module.exports = {
 										// 	target: '_blank'
 										// },
 										mods: { size: 'm', view: 'primary', weight: 'bold' },
-										content: "mods: { structure: 'fold-100' }"
+										content: "structure: 'fold-100'"
 									}]
 								}]
 							},
@@ -269,7 +269,7 @@ module.exports = {
 										// 	target: '_blank'
 										// },
 										mods: { size: 'm', view: 'primary', weight: 'bold' },
-										content: "mods: { structure: 'unfold-100' }"
+										content: "structure: 'unfold-100'"
 									}]
 								}]
 							}]
