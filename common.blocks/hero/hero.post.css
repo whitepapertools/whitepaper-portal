@@ -1,0 +1,40 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url('hero-bg.svg');
+  background-color: var(--color-bg-default);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 530px;
+
+  &__intro {
+    margin-top: 140px;
+    align-self: center;
+  }
+  &__description {
+    width: 530px;
+    margin: var(--space-xxxl) auto 0;
+  }
+  &__contacts {
+    margin-bottom: var(--space-xl);
+    margin-top: var(--space-xxxl);
+    align-self: center;
+  }
+
+  @media screen and (max-width: 1199px) {
+    height: 100vh;
+    width: 100vw;
+    max-width: 320px;
+    max-height: 568px;
+    border-radius: 8px;
+
+    &__description {
+      width: 280px;
+    }
+    .image {
+      width: 280px;
+    }
+  }
+}

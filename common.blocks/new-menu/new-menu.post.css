@@ -7,7 +7,7 @@
 	width: 100%;
 	top: 0;
 	z-index: 100;
-	
+
 	&__container {
 		height: 100%;
 		display: flex;
@@ -18,8 +18,8 @@
 
 	&__logo {
 		display: block;
-		width: 260px;
-		height: 43px;
+		width: 56px;
+		height: 34px;
 		background-size: 100%;
 		background-image: url('logo.svg');
 		background-repeat: no-repeat;

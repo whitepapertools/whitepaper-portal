@@ -20,6 +20,7 @@
 			width: 100vw;
 			max-width: 320px;
 			max-height: 568px;
+			background-color: var(--color-bg-default);
 		}
 
 		&-illustration {
