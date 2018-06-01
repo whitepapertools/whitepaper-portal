@@ -2,9 +2,7 @@
 
 BEMJSON – формат, в котором описывается разметка в БЭМ-терминах. 
 
-Давай опишем [задание из раздела БЭМ нейминг](/doc/doc.html#/naming?id=Задание) в bemjson'е.
-
-<iframe height='500' scrolling='no' title='BEMJSON. Теория 1' src='//codepen.io/bem_design/embed/67a82ac26b21dcfd27d0af62fdbb7f0b/?height=265&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/67a82ac26b21dcfd27d0af62fdbb7f0b/'>BEMJSON. Теория 1</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='500' scrolling='no' title='BEMJSON' src='//codepen.io/whitepapertools/embed/67a82ac26b21dcfd27d0af62fdbb7f0b/?height=500&theme-id=0&default-tab=css,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/whitepapertools/pen/67a82ac26b21dcfd27d0af62fdbb7f0b/'>BEMJSON</a> by whitepaper (<a href='https://codepen.io/whitepapertools'>@whitepapertools</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ## Блок
@@ -154,5 +152,5 @@ BEMJSON – формат, в котором описывается размет�
 ```
 
 ```html
-<a href="bem.design" class="link">Click me!</a>
+<a href="whitepaper.tools" class="link">Click me!</a>
 ```

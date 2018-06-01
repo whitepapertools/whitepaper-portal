@@ -23,25 +23,12 @@
 }
 ```
 
-<iframe height='500' scrolling='no' title='pt-card. Теория 1' src='//codepen.io/bem_design/embed/6dfa7d09f4c412333aa70bf475064679/?height=265&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/6dfa7d09f4c412333aa70bf475064679/'>pt-card. Теория 1</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='500' scrolling='no' title='pt-card' src='//codepen.io/whitepapertools/embed/6dfa7d09f4c412333aa70bf475064679/?height=500&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/whitepapertools/pen/6dfa7d09f4c412333aa70bf475064679/'>pt-card</a> by whitepaper (<a href='https://codepen.io/whitepapertools'>@whitepapertools</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
-Модификатор | Значение
------------ | ----------
-border      | all
-shadow      | cloud
-view        | default
 
 ## Элемент header
 
 Располагается поверх всего контента и висит в верху карточки. Выполняет роль шапки. Может использоваться, как шапка карточки, так и как шапка контента.
-
-Модификаторы `pt-card__header` | Значение
------------------------------- | -------------------------
-align                          | center / right
-space-a                        | xs / s / m / l / xl / xxl
-space-h                        | xs / s / m / l / xl / xxl
-space-v                        | xs / s / m / l / xl / xxl
 
 Модификаторы `pt-card__header` | Значение
 ------------------------------ | -------------------------
@@ -57,6 +44,7 @@ space-v                        | xs / s / m / l / xl / xxl
 Модификаторы `pt-card__content` | Значение
 ------------------------------- | -------------------------
 align                           | center
+vertical-align                  | center
 space-a                         | xs / s / m / l / xl / xxl
 space-h                         | xs / s / m / l / xl / xxl
 space-v                         | xs / s / m / l / xl / xxl
@@ -71,27 +59,19 @@ space-l                         | xs / s / m / l / xl / xxl
 
 Модификаторы элемента `footer`  | Значение
 ------------------------------- | -------------------------
-align                           | center / right / between
+align                           | center / top / bottom
+distribute                      | right / between
 space-a                         | xs / s / m / l / xl / xxl
 space-h                         | xs / s / m / l / xl / xxl
 space-v                         | xs / s / m / l / xl / xxl
-space-b                         | xs / s / m / l / xl / xxl
-
-Модификаторы `pt-card__footer` | Значение
-------------------------------- | -------------------------
-align                           | center / right / between
-space-a                         | xs / s / m / l / xl / xxl
-space-h                         | xs / s / m / l / xl / xxl
-space-v                         | xs / s / m / l / xl / xxl
-space-b                         | xs / s / m / l / xl / xxl
 
 ## Элемент image
 
 Элемент для отображения изображения.
 
 Модификаторы элемента `image` | Значение
------------------------------ | -----------------------------------------------------------
-shadow                        | bottom-default / bottom-inverse / top-default / top-inverse
+----------------------------- | -------------
+shadow                        | bottom / top
 size                          | cover
 
 ## Элемент play

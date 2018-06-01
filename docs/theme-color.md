@@ -9,7 +9,7 @@
 + **Цвета текста**. С префиксом --color-typo-
 + **Цвета ссылок**. С префиксом --color-link
 
-<iframe height='500' scrolling='no' title='289dd885a6773907fdff0546ce3a820a' src='//codepen.io/bem_design/embed/289dd885a6773907fdff0546ce3a820a/?height=265&theme-id=0&default-tab=css&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/289dd885a6773907fdff0546ce3a820a/'>289dd885a6773907fdff0546ce3a820a</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='300' scrolling='no' title='theme. color' src='//codepen.io/whitepapertools/embed/289dd885a6773907fdff0546ce3a820a/?height=300&theme-id=0&default-tab=css,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/whitepapertools/pen/289dd885a6773907fdff0546ce3a820a/'>theme. color</a> by whitepaper (<a href='https://codepen.io/whitepapertools'>@whitepapertools</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 Чтобы применить цвет к своему локальном ублоку, используй [custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*).

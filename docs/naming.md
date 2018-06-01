@@ -125,5 +125,5 @@ Cущность, определяющая внешний вид, состоян�
 
 Попробуй задать классы для каждой сущности согласно БЭМ-неймингу и комментариям.
 
-<iframe height='500' scrolling='no' title='Нейминг. Задание 1' src='//codepen.io/bem_design/embed/c5e063fcec26185979811b63556f67f5/?height=265&theme-id=0&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/c5e063fcec26185979811b63556f67f5/'>Нейминг. Задание 1</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='500' scrolling='no' title='bem-naming' src='//codepen.io/whitepapertools/embed/c5e063fcec26185979811b63556f67f5/?height=500&theme-id=0&default-tab=css,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/whitepapertools/pen/c5e063fcec26185979811b63556f67f5/'>bem-naming</a> by whitepaper (<a href='https://codepen.io/whitepapertools'>@whitepapertools</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>

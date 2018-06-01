@@ -30,15 +30,14 @@ view         | default / ghost | Фон
 
 Каждый логический блок формы – элемент `item`. Их вложенность может быть любой глубины.
 
-<iframe height='500' scrolling='no' title='pt-form. Теория 1' src='//codepen.io/bem_design/embed/ff8d206dcb0f5670c6072825ed74968a/?height=265&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/ff8d206dcb0f5670c6072825ed74968a/'>pt-form. Теория 1</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='500' scrolling='no' title='pt-form' src='//codepen.io/whitepapertools/embed/ff8d206dcb0f5670c6072825ed74968a/?height=500&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/whitepapertools/pen/ff8d206dcb0f5670c6072825ed74968a/'>pt-form</a> by whitepaper (<a href='https://codepen.io/whitepapertools'>@whitepapertools</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 Модификаторы элемента`item`  | Значение                         | Описание
 ---------------------------- | -------------------------------- | -------------------------------------
 border                       | all / bottom / top               | Обводка
-distribute                   | default / between                | Распределение контента по горизонтали
-vertical-align               | default / center                 | Выравнивание конента по вертикали
-type                         | action                           | Тип строки
+distribute                   | default / between / right        | Распределение контента по горизонтали
+vertical-align               | default / center / baseline      | Выравнивание конента по вертикали
 indent-a                     | xs / s / m / l / xl / xxl / xxxl | Внешние отступы по всем сторонам
 indent-h                     | xs / s / m / l / xl / xxl / xxxl | Внешние отступы по горизонтали
 indent-v                     | xs / s / m / l / xl / xxl / xxxl | Внешние отступы по вертикали
