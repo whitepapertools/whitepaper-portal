@@ -28,4 +28,4 @@ CDN
 
 ## Project-stub
 
-Чтобы попробовать поработать с библиотекой, можно склонировать (проект-заглушку)[https://github.com/whitepapertools/whitepaper-stub]
+Чтобы попробовать поработать с библиотекой, можно склонировать [проект-заглушку](https://github.com/whitepapertools/whitepaper-stub)

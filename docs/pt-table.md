@@ -2,7 +2,7 @@
 
 <!-- ![pt-table](_images/pt-table.png) -->
 
-Паттерн для создания простых плоских таблиц.
+Паттерн для создания простых плоских таблиц. Набор модификаторов покрывает максимальное количество как стилистических так и структурных потребностей. Также есть возможность маркеровать строки по статусу.
 
 ```js
 {
@@ -28,7 +28,7 @@
 ------------ | --------------- | ---------------------------------------------
 border       | all             | Обводка всей таблицы
 stripe       | even / odd      | Зебрирование строк
-view         | default / ghost | Фон таблицы
+view         | default         | Фон таблицы
 space-a      | xs / s / m / l  | Внутренние отступы в ячейках по всем сторонам
 space-h      | xs / s / m / l  | Внутренние отступы в ячейках по горизонтали
 space-v      | xs / s / m / l  | Внутренние отступы в ячейках по вертикали
@@ -40,10 +40,10 @@ space-v      | xs / s / m / l  | Внутренние отступы в ячей
 Модификаторы элемента `row`  | Значение                            | Описание
 ---------------------------- | ----------------------------------- | -------------
 border                       | bottom / top                        | Обводка
-status                       | default / success / warning / error | Статус строки
+status                       | default / success / warning / alert | Статус строки
 view                         | head                                | Тип строки
 
-<iframe height='500' scrolling='no' title='pt-table. Теория 1' src='//codepen.io/bem_design/embed/46f6702042e554a1c7fd17c2ee775f92/?height=500&theme-id=0&default-tab=result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/bem_design/pen/46f6702042e554a1c7fd17c2ee775f92/'>pt-table. Теория 1</a> by BEM DESIGN (<a href='https://codepen.io/bem_design'>@bem_design</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='500' scrolling='no' title='pt-table' src='//codepen.io/whitepapertools/embed/46f6702042e554a1c7fd17c2ee775f92/?height=500&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/whitepapertools/pen/46f6702042e554a1c7fd17c2ee775f92/'>pt-table</a> by whitepaper (<a href='https://codepen.io/whitepapertools'>@whitepapertools</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ## Элемент col

@@ -29,7 +29,8 @@
 	* [Иконки. Гайд](content-icon-guide.md)
 	* [Векторы](content-vectors.md)
 	<!-- * [Векторы. Гайд](content-vectors-guide.md) -->
-	* [Аватар](content-avatar.md)
+    * [Аватар](content-avatar.md)
+	* [Логотипы](content-logo.md)
 	* [Бейдж](content-badge.md)
 	* [Тэг](content-tag.md)
 
