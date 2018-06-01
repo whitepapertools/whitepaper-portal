@@ -38,68 +38,61 @@ module.exports = {
 						},
 						/* Menu */
 
-						/* Start */
+						/* Hero */
 						{
-							elem: 'section',
-							attrs: {
-								style: 'padding: 120px 0px;'
-							},
+							block: 'hero',
+							mix: { block: 'theme', mods: { color: 'whitepaper-inverse' } },
 							content: [
 								{
-									elem: 'container',
-									elemMods: { size: 'm', align: 'center' },
+									elem: 'intro',
 									content: [
 										{
-											block: 'tpl-grid',
-											mods: { columns: '12' },
-											content: [
-												{
-													elem: 'fraction',
-													elemMods: { col: '10'},
-													content: [
-														{
-															block: 'text',
-															mods: { view: 'primary', weight: 'bold' },
-															mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
-															attrs: { 'style': 'font-size: 120px; line-height: 140px;' },
-															content: 'whitepaper'
-														},
-														{
-															block: 'text',
-															mods: { size: 'xxl', view: 'primary' },
-															mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' }},
-															content: 'Некомпонентная декларативная открытая дизайн-система'
-														},
-														{
-															block: 'text',
-															mods: { size: 'xxl', view: 'primary', weight: 'bold' },
-															content: [
-															'whitepaper на ',
-															{
-																tag: 'a',
-																block: 'text',
-																mods: { view: 'link' },
-																attrs: { href: 'https://github.com/whitepapertools', style: 'text-decoration: none' },
-																content: 'GitHub'
-															},
-															' и в ',
-															{
-																tag: 'a',
-																block: 'text',
-																mods: { view: 'link' },
-																attrs: { href: 'https://t.me/whitepapertools', style: 'text-decoration: none' },
-																content: 'Telegram'
-															}]
-														}
-													]
-												}
-											]
-										}
+											block: 'image',
+											url: '../../assets/i/wp-logo_hero.svg'
+										},
+										{
+											elem: 'description',
+											content: {
+												block: 'text',
+												mods: { size: 'xxl', view: 'primary', align: 'center' },
+												content: 'Некомпонентная декларативаная открытая дизайн-система'
+											}
+										},
+									]
+								},
+								{
+									elem: 'contacts',
+									content: [
+										{
+											block: 'text',
+											mods: { view: 'primary', size: 'l', display: 'inline' },
+											content: 'Мы на '
+										},
+										{
+											block: 'text',
+											tag: 'a',
+											attrs: { href: 'https://github.com/whitepapertools', style: 'color: #0070F0;' },
+											mods: { size: 'l', view: 'link', display: 'inline' },
+											content: 'github'
+										},
+										{
+											block: 'text',
+											mods: { view: 'primary', size: 'l', display: 'inline' },
+											content: ' и в '
+										},
+										{
+											block: 'text',
+											tag: 'a',
+											attrs: { href: 'https://t.me/bem_design', style: 'color: #0070F0;' },
+											mods: { size: 'l', view: 'link', display: 'inline' },
+											content: 'telegram'
+										},
 									]
 								}
 							]
 						},
-						/* /Start  */
+
+						/* /Hero  */
 
 						/* Tools */
 						{

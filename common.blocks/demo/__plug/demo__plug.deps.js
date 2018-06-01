@@ -20,7 +20,9 @@
 
 			{ block: 'button', mods: { theme: 'promo', 'size': 'xl', type: 'link', view: 'action', font: 'mono', weight: 'bold', shadow: 'action' } },
 
-			{ block: 'text', mods: { font: 'mono', style: 'italic', display: 'inline'} }
+			{ block: 'text', mods: { font: 'mono', style: 'italic', display: 'inline'} },
+
+			{ block: 'theme', mods: { color: 'whitepaper-inverse' } }
 		]
 	}
 ])
