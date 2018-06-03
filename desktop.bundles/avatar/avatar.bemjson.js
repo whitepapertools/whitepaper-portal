@@ -1,6 +1,6 @@
 module.exports = {
 	block: 'page',
-	title: 'Аватар',
+	title: 'Аватарки',
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
@@ -53,18 +53,19 @@ module.exports = {
 									mods: { size: 'l', weight: 'bold', display: 'inline' },
 									content: 'avatar'
 								},
-								'. Сами фотографии '
+								'. Сами фотографии вносятся'
 								],
 							},
 							{
 								elem: 'row',
 								content: [
-								'вносятся в элементе ',
+								' в элемент ',
 								{
 									block: 'text',
 									mods: { size: 'l', weight: 'bold', display: 'inline' },
-									content: 'photo'
-								}]
+									content: 'photo. '
+								},
+								'Модификации управляют размером аватара']
 							}]
 						},
 						{
@@ -102,7 +103,7 @@ module.exports = {
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "elemMods: { size: 'l' }"
+													content: "size: 'l'"
 												}
 											]
 										}
@@ -139,7 +140,7 @@ module.exports = {
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "elemMods: { size: 'm' }"
+													content: "size: 'm'"
 												}
 											]
 										}
@@ -176,7 +177,7 @@ module.exports = {
 												{
 													block: 'text',
 													mods: { size: 'm', weight: 'bold' },
-													content: "elemMods: { size: 's' }"
+													content: "size: 's'"
 												}
 											]
 										}

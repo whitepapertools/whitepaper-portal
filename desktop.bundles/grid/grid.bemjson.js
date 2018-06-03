@@ -45,13 +45,26 @@ module.exports = {
 							content: [
 								{
 									elem: 'row',
-									content: 'Управляет ритмом и композицией (расположением блоков) внутри секций.'
+									content: 'С помощью модифкаиций управляет ритмом и композицией (расположением '
+								},
+								{
+									elem: 'row',
+									content: 'блоков) внутри секций'
 								}
 							]
 						},
 						{
+							block: 'text',
+							mods: { size: 'xxxl', weight: 'bold'  },
+							mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
+							content: 'Блок tpl-grid'
+						},
+						{
 							block: 'layout-list',
-							mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'two-thirds', 'row-gap': 'full' } },
+							mix: [
+							{ block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'two-thirds', 'row-gap': 'full' } },
+							{ block: 'decorator', mods: { 'indent-b': 'xxxl' } }
+							],
 							content: [
 								{
 									block: 'layout-item',
@@ -76,7 +89,7 @@ module.exports = {
 											// 	target: '_blank'
 											// },
 											mods: { size: 'm', view: 'primary', weight: 'bold' },
-											content: "mods: { ratio: '1-1' }"
+											content: "ratio: '1-1'"
 										}]
 									}]
 								},
@@ -103,7 +116,7 @@ module.exports = {
 											// 	target: '_blank'
 											// },
 											mods: { size: 'm', view: 'primary', weight: 'bold' },
-											content: "mods: { ratio: '1-1-1' }"
+											content: "ratio: '1-1-1'"
 										}]
 									}]
 								},
@@ -130,10 +143,22 @@ module.exports = {
 											// 	target: '_blank'
 											// },
 											mods: { size: 'm', view: 'primary', weight: 'bold' },
-											content: "mods: { ratio: '1-1-1-1' }"
+											content: "ratio: '1-1-1-1'"
 										}]
 									}]
-								},
+								}
+							],
+						},
+						{
+							block: 'text',
+							mods: { size: 'xxxl', weight: 'bold'  },
+							mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
+							content: 'Элемент Fraction'
+						},
+						{
+							block: 'layout-list',
+							mix: { block: 'tpl-grid', mods: { ratio: '1-1-1', 'col-gap': 'two-thirds', 'row-gap': 'full' } },
+							content: [
 								{
 									block: 'layout-item',
 									content: [
@@ -155,26 +180,19 @@ module.exports = {
 												content: [
 													{
 														elem: 'row',
-														content: "elem: 'fraction'"
-													},
-													{
-														elem: 'row',
-														content: "elemMods: { col: '9' }"
+														content: "col: '9'"
 													}
 												]
 											},
 											{
 												block: 'text',
-												mix: { block: 'decorator', mods: { 'indent-l': 'xxl' } },
+												mix: { block: 'decorator', mods: { 'indent-l': 'xxxxxxl' } },
 												mods: { size: 'm', view: 'primary', weight: 'bold' },
 												content: [
+
 													{
 														elem: 'row',
-														content: "elem: 'fraction'"
-													},
-													{
-														elem: 'row',
-														content: "elemMods: { col: '3' }"
+														content: "col: '3'"
 													}
 												]
 											}
@@ -200,28 +218,22 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', view: 'primary', weight: 'bold' },
 												content: [
+
 													{
 														elem: 'row',
-														content: "elem: 'fraction'"
-													},
-													{
-														elem: 'row',
-														content: "elemMods: { col: '4' }"
+														content: "col: '4'"
 													}
 												]
 											},
 											{
 												block: 'text',
-												mix: { block: 'decorator', mods: { 'indent-l': 'xxl' } },
+												mix: { block: 'decorator', mods: { 'indent-l': 'xxxxxxl' } },
 												mods: { size: 'm', view: 'primary', weight: 'bold' },
 												content: [
+
 													{
 														elem: 'row',
-														content: "elem: 'fraction'"
-													},
-													{
-														elem: 'row',
-														content: "elemMods: { col: '8' }"
+														content: "col: '8'"
 													}
 												]
 											}
@@ -247,28 +259,22 @@ module.exports = {
 												block: 'text',
 												mods: { size: 'm', view: 'primary', weight: 'bold' },
 												content: [
+
 													{
 														elem: 'row',
-														content: "elem: 'fraction'"
-													},
-													{
-														elem: 'row',
-														content: "elemMods: { col: '7' }"
+														content: "col: '7'"
 													}
 												]
 											},
 											{
 												block: 'text',
-												mix: { block: 'decorator', mods: { 'indent-l': 'xxl' } },
+												mix: { block: 'decorator', mods: { 'indent-l': 'xxxxxxl' } },
 												mods: { size: 'm', view: 'primary', weight: 'bold' },
 												content: [
+
 													{
 														elem: 'row',
-														content: "elem: 'fraction'"
-													},
-													{
-														elem: 'row',
-														content: "elemMods: { col: '5' }"
+														content: "col: '5'"
 													}
 												]
 											}
