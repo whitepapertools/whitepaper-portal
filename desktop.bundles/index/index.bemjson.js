@@ -129,7 +129,7 @@ module.exports = {
 																{
 																	block: 'text',
 																	mods: { size: 'xxl', view: 'primary', weight: 'bold' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																	content: 'Тема'
 																},
 																{
@@ -262,13 +262,13 @@ module.exports = {
 																{
 																	block: 'text',
 																	mods: { size: 'xxl', view: 'primary', weight: 'bold' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																	content: 'Контент'
 																},
 																{
 																	block: 'text',
 																	mods: { size: 'l', view: 'primary' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 																	content: 'Контентом являются мельчайшие блоки, позволяющие выразить смысл интерфейсной сущности'
 																},
 																{
@@ -410,13 +410,13 @@ module.exports = {
 																{
 																	block: 'text',
 																	mods: { size: 'xxl', view: 'primary', weight: 'bold' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																	content: 'Паттерны'
 																},
 																{
 																	block: 'text',
 																	mods: { size: 'l', view: 'primary' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 																	content: 'Паттерны позволяют представить контент в осмысленной форме для целостного восприятия интерфейса'
 																},
 																{
@@ -528,7 +528,7 @@ module.exports = {
 																{
 																	block: 'text',
 																	mods: { size: 'xxl', view: 'primary', weight: 'bold' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 																	content: 'Шаблоны'
 																},
 																{
@@ -586,7 +586,7 @@ module.exports = {
 																{
 																	block: 'text',
 																	mods: { size: 'xxl', view: 'primary', weight: 'bold' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 																	content: 'Обучение'
 																},
 																{
@@ -644,13 +644,13 @@ module.exports = {
 																{
 																	block: 'text',
 																	mods: { size: 'xxl', view: 'primary', weight: 'bold' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 																	content: 'Материалы'
 																},
 																{
 																	block: 'text',
 																	mods: { size: 'l', view: 'primary' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																	content: 'Инструменты, киты и шаблоны, помогающие быстро собирать интерфейсы'
 																},
 																{
@@ -770,7 +770,7 @@ module.exports = {
 																				{
 																					block: 'text',
 																					mods: { view: 'primary', size: 'xxxl', weight: 'light' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																					content: 'BEM Design'
 																				},
 																				{
@@ -830,7 +830,7 @@ module.exports = {
 																				{
 																					block: 'text',
 																					mods: { view: 'primary', size: 'xxxl', weight: 'light' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																					content: 'Kit Bill'
 																				},
 																				{
@@ -859,7 +859,7 @@ module.exports = {
 															],
 															tag: 'a',
 															attrs: {
-																href: 'http://codepen.io',
+																href: 'https://codepen.io/whitepapertools/pens/public/',
 																target: '_blank'
 															},
 															content: [
@@ -889,7 +889,7 @@ module.exports = {
 																				{
 																					block: 'text',
 																					mods: { view: 'primary', size: 'xxxl', weight: 'light' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																					content: 'CodePen'
 																				},
 																				{
@@ -1009,13 +1009,13 @@ module.exports = {
 														{
 															block: 'text',
 															mods: { size: 'xxxxl', view: 'primary', align: 'center' },
-															mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 															content: 'Мероприятия'
 														},
 														{
 															block: 'text',
 															mods: { size: 'l', view: 'primary', align: 'center' },
-															mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 															content: [
 																{
 																	block: 'text',
@@ -1042,18 +1042,18 @@ module.exports = {
 															],
 															tag: 'a',
 															attrs: {
-																href: 'http://dribbblemeetup.ru/',
+																href: 'http://youtu.be/dhHlaiD0NZc?t=7h37m1s',
 																target: '_blank'
 															},
 															content: [
 																{
 																	block: 'image',
-																	mix: { block: 'pt-card', elem: 'image', elemMods: { 'size': 'cover' } },
+																	mix: { block: 'pt-card', elem: 'image', elemMods: { 'size': 'cover' }},
 																	url: '../../assets/i/train.png'
 																},
 																{
 																	elem: 'header',
-																	mix: { block: 'pt-card', elem: 'header', elemMods: { 'space-a': 'xxl' } },
+																	mix: { block: 'pt-card', elem: 'header', elemMods: { 'space-a': 'xxl' }},
 																	content: [
 																		{
 																			elem: 'info',
@@ -1097,14 +1097,14 @@ module.exports = {
 																				{
 																					block: 'text',
 																					mods: { view: 'primary', size: 'xxxl', weight: 'light' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
-																					content: 'Суббота, Июнь 2е'
+																					mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+																					content: 'Dribbble Meetup'
 																				},
 																				{
 																					block: 'text',
 																					mods: { view: 'primary', size: 'l', weight: 'light' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
-																					content: 'Cерия конференций по дизайну Dribbble Meetup. Декларативный дизайн. Юлия Музафарова'
+																					mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
+																					content: 'Серия конференций по продуктовому дизайну. Декларативный дизайн. Юлия Музафарова'
 																				}
 																			]
 																		}
@@ -1112,7 +1112,7 @@ module.exports = {
 																},
 																{
 																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' } },
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -1144,19 +1144,19 @@ module.exports = {
 															content: [
 																{
 																	block: 'image',
-																	mix: { block: 'pt-card', elem: 'image', elemMods: { 'size': 'cover' } },
+																	mix: { block: 'pt-card', elem: 'image', elemMods: { 'size': 'cover' }},
 																	url: '../../assets/i/palm.png'
 																},
 																{
 																	elem: 'header',
-																	mix: { block: 'pt-card', elem: 'header', elemMods: { 'space-a': 'xxl' } },
+																	mix: { block: 'pt-card', elem: 'header', elemMods: { 'space-a': 'xxl' }},
 																	content: [
 																		{
 																			elem: 'info',
 																			content: [
 																				{
 																					elem: 'speaker',
-																					mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 																					content: [
 																						{
 																							elem: 'persone',
@@ -1193,13 +1193,13 @@ module.exports = {
 																				{
 																					block: 'text',
 																					mods: { view: 'primary', size: 'xxxl', weight: 'light' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 																					content: 'Веб-стандарты'
 																				},
 																				{
 																					block: 'text',
 																					mods: { view: 'primary', size: 'l', weight: 'light' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																					content: 'Конференция по фронтенду. Прототипирование на продакшн технологиях. Михаил Колосков'
 																				}
 																			]
@@ -1208,7 +1208,7 @@ module.exports = {
 																},
 																{
 																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' } },
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -1274,7 +1274,7 @@ module.exports = {
 															content: {
 																html: `<!-- Begin MailChimp Signup Form -->
 																<!-- <style type="text/css">
-																	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+																	#mc_embed_signup{ clear:left; font:13px; }
 																</style> -->
 																<div>
 																<form action="https://tools.us18.list-manage.com/subscribe/post?u=3b7792c268dda402a67b1ad99&amp;id=1f8e40a20f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

@@ -1,6 +1,7 @@
 .subscribe {
 	#mc_embed_signup_scroll {
 		display: flex;
+		align-items: flex-start;
 		justify-content: center;
 		flex-flow: row wrap;
 	}
