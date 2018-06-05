@@ -44,7 +44,7 @@ block('demo').elem('plug')(
 						{
 							block: 'text',
 							tag: 'a',
-							attrs: { href: 'https://t.me/bem_design', style: 'color: #0070F0;' },
+							attrs: { href: 'https://t.me/whitepapertools', style: 'color: #0070F0;' },
 							mods: { size: 'l', view: 'link', display: 'inline' },
 							content: 'telegram'
 						},
