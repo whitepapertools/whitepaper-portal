@@ -1,6 +1,6 @@
 module.exports = {
 	block: 'page',
-	title: 'Whitepaper Tools',
+	title: 'whitepaper',
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
@@ -26,7 +26,6 @@ module.exports = {
 		{
 			block: 'demo',
 			content: [
-
 				{
 					block: 'tpl-layout',
 					attrs: { style: 'position: relative; top: 60px' },
@@ -1324,13 +1323,11 @@ module.exports = {
 						/* Footer */
 						{
 							block: 'footer',
-						},
+						}
 						/* /Footer */
-
 
 					]
 				}
-
 			]
 		}
 	]
