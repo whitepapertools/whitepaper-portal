@@ -34,21 +34,21 @@ block('new-menu')(
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', attrs: { href: '/color.html' },
+											tag: 'a', attrs: { href: '/space.html' },
 											mix: { block: 'new-menu', elem: 'dropdown-link' },
 											content: 'Отступы'
 										},
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', attrs: { href: '/space.html' },
+											tag: 'a', attrs: { href: '/size.html' },
 											mix: { block: 'new-menu', elem: 'dropdown-link' },
 											content: 'Размеры'
 										},
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
-											tag: 'a', attrs: { href: '/breakpoints.html' },
+											tag: 'a', attrs: { href: '/breakpoint.html' },
 											mix: { block: 'new-menu', elem: 'dropdown-link' },
 											content: 'Точки перестроения'
 										},
