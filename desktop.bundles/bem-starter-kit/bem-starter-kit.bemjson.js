@@ -4,8 +4,8 @@ module.exports = {
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
-		{ elem: 'meta', attrs: { name: 'description', content: '' } },
-		{ elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
+		{ elem: 'meta', attrs: { name: 'description', content: '' }},
+		{ elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' }},
 		{ elem: 'css', url: 'bem-starter-kit.min.css' },
 		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
 	],
@@ -22,10 +22,9 @@ module.exports = {
 		}
 	],
 	content: [
-
 		{
 			block: 'tpl-layout',
-			mix: { block: 'decorator',mods: { 'space-v': 'xxxxxxl' } },
+			mix: { block: 'decorator',mods: { 'space-v': 'xxxxxxl' }},
 			attrs: {
 				'style': 'background: rgba(0,0,0,0.04);'
 			},
@@ -34,7 +33,7 @@ module.exports = {
 				/* История */
 				{
 					elem: 'section',
-					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' } },
+					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
 					content: [
 						{
 							elem: 'container',
@@ -53,184 +52,183 @@ module.exports = {
 											content: [
 												{
 													block: 'history',
-													mix: [
-														{ block: 'decorator', mods: { 'space-t': 'xxxxl', 'space-h': 'l', 'space-b': 'l' } },
-														{ block: 'pt-list', mods: { view: 'default' } },
-													],
+													mix: { block: 'pt-card', mods: { view: 'default' }},
 													content: [
 														{
-															elem: 'header',
-															mix: { block: 'decorator', mods: { 'space-b': 'xxl' } },
+															elem: 'content',
+															mix: { block: 'pt-card', elem: 'content', elemMods: {'space-a': 'l' }},
 															content: [
 																{
 																	block: 'text',
 																	mods: { size: 'xxxl', view: 'primary', weight: 'black' },
+																	mix: { block: 'decorator', mods: { 'space-b': 'xxl', 'space-t': 'xxl' }},
 																	content: 'History'
-																}
-															]
-														},
-														{
-															elem: 'content',
-															content: [
-																{
-																	elem: 'section',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'xxl' } },
-																	content: [
-																		{
-																			block: 'text',
-																			mix: { block: 'decorator', mods: { 'space-b': 'm' } },
-																			mods: { size: 'xl', view: 'primary', weight: 'black' },
-																			content: 'Today'
-																		},
-																		{
-																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', 'distribute': 'between', 'vertical-align': 'center' } },
-																			content: [
-																				{
-																					block: 'pt-icon-plus',
-																					mods: { 'vertical-align': 'center' },
-																					mix: { block: 'decorator', mods: { 'indent-r': 'l' } },
-																					content: [
-																						{
-																							elem: 'icon',
-																							elemMods: { 'indent-r': 's' },
-																							mix: { block: 'brand-logo', mods: { name: 'tele2', size: 'xs' } }
-																						},
-																						{
-																							elem: 'block',
-																							mix: { block: 'text', mods: { view: 'primary', size: 'm', weight: 'semibold' } },
-																							content: 'Tele2'
-																						}
-																					]
-																				},
-																				{
-																					block: 'text',
-																					mods: { size: 'm', view: 'primary', weight: 'semibold', align: 'right' },
-																					content: '− 500 ₽'
-																				}
-																			]
-																		},
-																		{
-																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', 'distribute': 'between', 'vertical-align': 'center' } },
-																			content: [
-																				{
-																					block: 'pt-icon-plus',
-																					mods: { 'vertical-align': 'center' },
-																					mix: { block: 'decorator', mods: { 'indent-r': 'l' } },
-																					content: [
-																						{
-																							elem: 'icon',
-																							elemMods: { 'indent-r': 's' },
-																							mix: { block: 'brand-logo', mods: { name: 'mts', size: 'xs' } }
-																						},
-																						{
-																							elem: 'block',
-																							mix: { block: 'text', mods: { view: 'primary', size: 'm', weight: 'semibold' } },
-																							content: 'МТС'
-																						}
-																					]
-																				},
-																				{
-																					block: 'text',
-																					mods: { size: 'm', view: 'primary', weight: 'semibold', align: 'right' },
-																					content: '− 420 ₽'
-																				}
-																			]
-																		},
-																		{
-																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', 'distribute': 'between', 'vertical-align': 'center' } },
-																			content: [
-																				{
-																					block: 'pt-icon-plus',
-																					mods: { 'vertical-align': 'center' },
-																					mix: { block: 'decorator', mods: { 'indent-r': 'l' } },
-																					content: [
-																						{
-																							elem: 'icon',
-																							elemMods: { 'indent-r': 's' },
-																							mix: { block: 'brand-logo', mods: { name: 'itunes', size: 'xs' } }
-																						},
-																						{
-																							elem: 'block',
-																							mix: { block: 'text', mods: { view: 'primary', weight: 'semibold', size: 'm' } },
-																							content: 'iTunes'
-																						}
-																					]
-																				},
-																				{
-																					block: 'text',
-																					mods: { size: 'm', view: 'primary', weight: 'semibold', align: 'right' },
-																					content: '− 1 490 ₽'
-																				}
-																			]
-																		}
-																	]
 																},
 																{
-																	elem: 'section',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'xxl' } },
+																	elem: 'list',
+																	mix: { block: 'pt-list' },
 																	content: [
 																		{
-																			block: 'text',
-																			mix: { block: 'decorator', mods: { 'space-b': 'm' } },
-																			mods: { size: 'xl', view: 'primary', weight: 'black' },
-																			content: '19 May'
-																		},
-																		{
-																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', 'distribute': 'between', 'vertical-align': 'center' } },
+																			elem: 'section',
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
 																			content: [
 																				{
-																					block: 'pt-icon-plus',
-																					mods: { 'vertical-align': 'center' },
-																					mix: { block: 'decorator', mods: { 'indent-r': 'l' } },
+																					block: 'text',
+																					mix: { block: 'decorator', mods: { 'space-b': 'm' }},
+																					mods: { size: 'xl', view: 'primary', weight: 'black' },
+																					content: 'Today'
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', 'distribute': 'between', 'vertical-align': 'center' }},
 																					content: [
 																						{
-																							elem: 'icon',
-																							elemMods: { 'indent-r': 's' },
-																							mix: { block: 'brand-logo', mods: { name: 'mts', size: 'xs' } }
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							mix: { block: 'decorator', mods: { 'indent-r': 'l' }},
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									mix: { block: 'brand-logo', mods: { name: 'tele2', size: 'xs' } }
+																								},
+																								{
+																									elem: 'block',
+																									mix: { block: 'text', mods: { view: 'primary', size: 'm', weight: 'semibold' }},
+																									content: 'Tele2'
+																								}
+																							]
 																						},
 																						{
-																							elem: 'block',
-																							mix: { block: 'text', mods: { view: 'primary', size: 'm', weight: 'semibold' } },
-																							content: 'МТС'
+																							block: 'text',
+																							mods: { size: 'm', view: 'primary', weight: 'semibold', align: 'right' },
+																							content: '− 500 ₽'
 																						}
 																					]
 																				},
 																				{
-																					block: 'text',
-																					mods: { size: 'm', view: 'primary', weight: 'semibold', align: 'right' },
-																					content: '− 1 000 ₽'
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', 'distribute': 'between', 'vertical-align': 'center' }},
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							mix: { block: 'decorator', mods: { 'indent-r': 'l' }},
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									mix: { block: 'brand-logo', mods: { name: 'mts', size: 'xs' } }
+																								},
+																								{
+																									elem: 'block',
+																									mix: { block: 'text', mods: { view: 'primary', size: 'm', weight: 'semibold' }},
+																									content: 'МТС'
+																								}
+																							]
+																						},
+																						{
+																							block: 'text',
+																							mods: { size: 'm', view: 'primary', weight: 'semibold', align: 'right' },
+																							content: '− 420 ₽'
+																						}
+																					]
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', 'distribute': 'between', 'vertical-align': 'center' }},
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							mix: { block: 'decorator', mods: { 'indent-r': 'l' }},
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									mix: { block: 'brand-logo', mods: { name: 'itunes', size: 'xs' } }
+																								},
+																								{
+																									elem: 'block',
+																									mix: { block: 'text', mods: { view: 'primary', weight: 'semibold', size: 'm' }},
+																									content: 'iTunes'
+																								}
+																							]
+																						},
+																						{
+																							block: 'text',
+																							mods: { size: 'm', view: 'primary', weight: 'semibold', align: 'right' },
+																							content: '− 1 490 ₽'
+																						}
+																					]
 																				}
 																			]
 																		},
 																		{
-																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', 'distribute': 'between', 'vertical-align': 'center' } },
+																			elem: 'section',
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
 																			content: [
 																				{
-																					block: 'pt-icon-plus',
-																					mods: { 'vertical-align': 'center' },
-																					mix: { block: 'decorator', mods: { 'indent-r': 'l' } },
+																					block: 'text',
+																					mix: { block: 'decorator', mods: { 'space-b': 'm' }},
+																					mods: { size: 'xl', view: 'primary', weight: 'black' },
+																					content: '19 May'
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', 'distribute': 'between', 'vertical-align': 'center' }},
 																					content: [
 																						{
-																							elem: 'icon',
-																							elemMods: { 'indent-r': 's' },
-																							mix: { block: 'brand-logo', mods: { name: 'yota', size: 'xs' } }
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							mix: { block: 'decorator', mods: { 'indent-r': 'l' }},
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									mix: { block: 'brand-logo', mods: { name: 'mts', size: 'xs' } }
+																								},
+																								{
+																									elem: 'block',
+																									mix: { block: 'text', mods: { view: 'primary', size: 'm', weight: 'semibold' }},
+																									content: 'МТС'
+																								}
+																							]
 																						},
 																						{
-																							elem: 'block',
-																							mix: { block: 'text', mods: { view: 'primary', weight: 'semibold', size: 'm' } },
-																							content: 'Yota'
+																							block: 'text',
+																							mods: { size: 'm', view: 'primary', weight: 'semibold', align: 'right' },
+																							content: '− 1 000 ₽'
 																						}
 																					]
 																				},
 																				{
-																					block: 'text',
-																					mods: { size: 'm', view: 'primary', weight: 'semibold', align: 'right' },
-																					content: '− 360 ₽'
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', 'distribute': 'between', 'vertical-align': 'center' }},
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							mix: { block: 'decorator', mods: { 'indent-r': 'l' }},
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									mix: { block: 'brand-logo', mods: { name: 'yota', size: 'xs' } }
+																								},
+																								{
+																									elem: 'block',
+																									mix: { block: 'text', mods: { view: 'primary', weight: 'semibold', size: 'm' }},
+																									content: 'Yota'
+																								}
+																							]
+																						},
+																						{
+																							block: 'text',
+																							mods: { size: 'm', view: 'primary', weight: 'semibold', align: 'right' },
+																							content: '− 360 ₽'
+																						}
+																					]
 																				}
 																			]
 																		}
@@ -253,7 +251,7 @@ module.exports = {
 				/* Платежи */
 				{
 					elem: 'section',
-					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' } },
+					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
 					content: [
 						{
 							elem: 'container',
@@ -272,80 +270,85 @@ module.exports = {
 											content: [
 												{
 													block: 'payment',
-													mods: { view: 'whole' },
-													mix: { block: 'decorator', mods: { 'space-t': 'xxxxl', 'space-h': 'l', 'space-b': 'l' } },
+													mix: { block: 'pt-card', mods: { view: 'default' }},
 													content: [
 														{
-															elem: 'header',
-															mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
+															elem: 'content',
+															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' }},
 															content: [
 																{
-																	block: 'text',
-																	mods: { size: 'xxxl', view: 'primary', weight: 'black' },
-																	content: 'Steam Wallet'
-																}
-															]
-														},
-														{
-															block: 'pt-form',
-															mods: { view: 'default' },
-															mix: { block: 'payment', elem: 'form' },
-															content: [
-																{
-																	elem: 'item',
-																	elemMods: { 'indent-b': 'xl' },
+																	elem: 'header',
+																	mix: { block: 'decorator', mods: { 'indent-t': 'xxl', 'indent-b': 'xl' }},
 																	content: [
 																		{
-																			block: 'text', mods: { view: 'ghost', size: 's' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 'xs' } },
-																			content: 'Identifacation'
-																		},
-																		{
-																			block: 'input',
-																			mods: { theme: 'islands', width: 'available', size: 'l'},
-																			val: '3023281048110009'
+																			block: 'text',
+																			mods: { size: 'xxxl', view: 'primary', weight: 'black' },
+																			content: 'Steam Wallet'
 																		}
 																	]
 																},
 																{
-																	elem: 'item',
-																	elemMods: { 'indent-b': 'xl' },
+																	block: 'pt-form',
+																	mods: { view: 'default' },
+																	mix: { block: 'payment', elem: 'form' },
 																	content: [
 																		{
-																			block: 'text', mods: { view: 'ghost', size: 's' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 'xs' } },
-																			content: 'Number'
+																			elem: 'item',
+																			elemMods: { 'indent-b': 'xl' },
+																			content: [
+																				{
+																					block: 'text', mods: { view: 'ghost', size: 's' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
+																					content: 'Identifacation'
+																				},
+																				{
+																					block: 'input',
+																					mods: { theme: 'islands', width: 'available', size: 'l'},
+																					val: '3023281048110009'
+																				}
+																			]
 																		},
 																		{
-																			block: 'input',
-																			mods: { theme: 'islands', width: 'available', size: 'l'},
-																			val: '6-10'
-																		}
-																	]
-																},
-																{
-																	elem: 'item',
-																	elemMods: { 'indent-b': 'xxl' },
-																	content: [
-																		{
-																			block: 'text', mods: { view: 'ghost', size: 's' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 'xs' } },
-																			content: 'Price'
+																			elem: 'item',
+																			elemMods: { 'indent-b': 'xl' },
+																			content: [
+																				{
+																					block: 'text', mods: { view: 'ghost', size: 's' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
+																					content: 'Number'
+																				},
+																				{
+																					block: 'input',
+																					mods: { theme: 'islands', width: 'available', size: 'l'},
+																					val: '6-10'
+																				}
+																			]
 																		},
 																		{
-																			block: 'input',
-																			mods: { theme: 'islands', width: 'available', size: 'l'},
-																			val: 'RUB'
+																			elem: 'item',
+																			elemMods: { 'indent-b': 'xxl' },
+																			content: [
+																				{
+																					block: 'text', mods: { view: 'ghost', size: 's' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
+																					content: 'Price'
+																				},
+																				{
+																					block: 'input',
+																					mods: { theme: 'islands', width: 'available', size: 'l'},
+																					val: 'RUB'
+																				}
+																			]
+																		},
+																		{
+																			elem: 'item',
+																			content: {
+																				block: 'button',
+																				mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
+																				text: 'PAY'
+																			}
 																		}
 																	]
-																},
-																{
-																	elem: 'item',
-																	content: {
-																		block: 'button',
-																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
-																		text: 'PAY'
-																	}
 																}
 															]
 														}
@@ -364,17 +367,17 @@ module.exports = {
 													content: [
 														{
 															elem: 'header',
-															mix: { block: 'decorator', mods: { 'space-t': 'xxxxl', 'space-h': 'l', 'space-b': 'l', 'indent-b': 'xs' } },
+															mix: { block: 'decorator', mods: { 'space-t': 'xxxxl', 'space-h': 'l', 'space-b': 'l', 'indent-b': 'xs' }},
 															content: [
 																{
 																	block: 'text',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																	mods: { size: 'xxxl', view: 'primary', weight: 'black' },
 																	content: 'Steam Wallet'
 																},
 																{
 																	elem: 'info',
-																	mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -397,17 +400,17 @@ module.exports = {
 														},
 														{
 															elem: 'methods',
-															mix: { block: 'decorator', mods: { 'space-t': 'l', 'space-b': 'xl', 'space-h': 'l', 'indent-b': 'xs' } },
+															mix: { block: 'decorator', mods: { 'space-t': 'l', 'space-b': 'xl', 'space-h': 'l', 'indent-b': 'xs' }},
 															content: [
 																{
 																	block: 'text',
 																	mods: { view: 'primary', size: 'xl', weight: 'black' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 'm'} },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'm'}},
 																	content: 'Payment method'
 																},
 																{
 																	block: 'payment-methods',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																	content: [
 																		{
 																			elem: 'item',
@@ -473,7 +476,7 @@ module.exports = {
 																{
 																	block: 'text',
 																	mods: { view: 'primary', weight: 'bold', size: 's' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																	content: 'About'
 																},
 																{
@@ -485,7 +488,7 @@ module.exports = {
 														},
 														{
 															elem: 'button',
-															mix: { block: 'decorator', mods: { 'space-h': 'l', 'space-v': 'xl' } },
+															mix: { block: 'decorator', mods: { 'space-h': 'l', 'space-v': 'xl' }},
 															content: [
 																{
 																	block: 'button',
@@ -509,17 +512,17 @@ module.exports = {
 													content: [
 														{
 															elem: 'header',
-															mix: { block: 'decorator', mods: { 'space-t': 'xxxxl', 'space-h': 'l', 'space-b': 'l', 'indent-b': 'xs' } },
+															mix: { block: 'decorator', mods: { 'space-t': 'xxxxl', 'space-h': 'l', 'space-b': 'l', 'indent-b': 'xs' }},
 															content: [
 																{
 																	block: 'text',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																	mods: { size: 'xxxl', view: 'primary', weight: 'black' },
 																	content: 'Steam Wallet'
 																},
 																{
 																	elem: 'info',
-																	mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -542,17 +545,17 @@ module.exports = {
 														},
 														{
 															elem: 'methods',
-															mix: { block: 'decorator', mods: { 'space-t': 'l', 'space-b': 'xl', 'space-h': 'l', 'indent-b': 'xs' } },
+															mix: { block: 'decorator', mods: { 'space-t': 'l', 'space-b': 'xl', 'space-h': 'l', 'indent-b': 'xs' }},
 															content: [
 																{
 																	block: 'text',
 																	mods: { view: 'primary', size: 'xl', weight: 'black' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 'm'} },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'm'}},
 																	content: 'Payment method'
 																},
 																{
 																	block: 'payment-methods',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																	content: [
 																		{
 																			elem: 'item',
@@ -621,7 +624,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'payment-methods', elem: 'user',
-																							mix: { block: 'decorator', mods: { 'indent-b': 'xxs'} },
+																							mix: { block: 'decorator', mods: { 'indent-b': 'xxs'}},
 																							content: [
 																								{
 																									block: 'avatar',
@@ -660,7 +663,7 @@ module.exports = {
 																{
 																	block: 'text',
 																	mods: { view: 'primary', weight: 'bold', size: 's' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																	content: 'About'
 																},
 																{
@@ -672,7 +675,7 @@ module.exports = {
 														},
 														{
 															elem: 'button',
-															mix: { block: 'decorator', mods: { 'space-h': 'l', 'space-v': 'xl' } },
+															mix: { block: 'decorator', mods: { 'space-h': 'l', 'space-v': 'xl' }},
 															content: [
 																{
 																	block: 'button',
@@ -696,17 +699,17 @@ module.exports = {
 													content: [
 														{
 															elem: 'header',
-															mix: { block: 'decorator', mods: { 'space-t': 'xxxxl', 'space-h': 'l', 'space-b': 'l', 'indent-b': 'xs' } },
+															mix: { block: 'decorator', mods: { 'space-t': 'xxxxl', 'space-h': 'l', 'space-b': 'l', 'indent-b': 'xs' }},
 															content: [
 																{
 																	block: 'text',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																	mods: { size: 'xxxl', view: 'primary', weight: 'black' },
 																	content: 'Steam Wallet'
 																},
 																{
 																	elem: 'info',
-																	mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -729,21 +732,21 @@ module.exports = {
 														},
 														{
 															elem: 'methods',
-															mix: { block: 'decorator', mods: { 'space-t': 'l', 'space-b': 'xl', 'space-h': 'l', 'indent-b': 'xs' } },
+															mix: { block: 'decorator', mods: { 'space-t': 'l', 'space-b': 'xl', 'space-h': 'l', 'indent-b': 'xs' }},
 															content: [
 																{
 																	block: 'text',
 																	mods: { view: 'primary', size: 'xl', weight: 'black' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 'm'} },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'm'}},
 																	content: 'Payment method'
 																},
 																{
 																	block: 'payment-methods',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																	content: [
 																		{
 																			block: 'payment-methods',
-																			mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
+																			mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 																			content: [
 																				{
 																					elem: 'item',
@@ -857,7 +860,7 @@ module.exports = {
 																{
 																	block: 'text',
 																	mods: { view: 'primary', weight: 'bold', size: 's' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																	content: 'About'
 																},
 																{
@@ -869,7 +872,7 @@ module.exports = {
 														},
 														{
 															elem: 'button',
-															mix: { block: 'decorator', mods: { 'space-h': 'l', 'space-v': 'xl' } },
+															mix: { block: 'decorator', mods: { 'space-h': 'l', 'space-v': 'xl' }},
 															content: [
 																{
 																	block: 'button',
@@ -893,7 +896,7 @@ module.exports = {
 				/* Медиа */
 				{
 					elem: 'section',
-					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' } },
+					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
 					content: [
 						{
 							elem: 'container',
@@ -912,7 +915,7 @@ module.exports = {
 											content: [
 												{
 													block: 'digital-item',
-													mix: { block: 'pt-card', mods: { view: 'default' } },
+													mix: { block: 'pt-card', mods: { view: 'default' }},
 													content: [
 														{
 															elem: 'cover',
@@ -920,14 +923,14 @@ module.exports = {
 															content: [
 																{
 																	block: 'image',
-																	mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' } },
+																	mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
 																	url: '/assets/bem-starter-kit/uncharted_horizontal.jpg'
 																}
 															]
 														},
 														{
 															elem: 'info',
-															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl' } },
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl' }},
 															content: [
 																{
 																	elem: 'wrap',
@@ -940,7 +943,7 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mods: { view: 'ghost', 'size': 'm', align: 'center' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 'xxl' } },
+																			mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
 																			content: 'from Nauchty Dog'
 																		},
 																		{
@@ -965,7 +968,7 @@ module.exports = {
 													content: [
 														{
 															elem: 'cover',
-															mix: { block: 'decorator', mods: { 'indent-b': 'xxl' } },
+															mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
 															content: [
 																{
 																	block: 'image',
@@ -975,34 +978,34 @@ module.exports = {
 														},
 														{
 															elem: 'content',
-															mix: { block: 'decorator', mods: { 'indent-h': 'l', 'space-b': 'l' } },
+															mix: { block: 'decorator', mods: { 'indent-h': 'l', 'space-b': 'l' }},
 															content: [
 																{
 																	elem: 'info',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'xxl' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
 																	content: [
 																		{
 																			block: 'text',
 																			mods: { view: 'primary', size: 'xxxl', weight: 'black' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
+																			mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
 																			content: 'Uncharted 4'
 																		},
 																		{
 																			block: 'text',
 																			mods: { view: 'link', size: 'm' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																			content: 'from Nauchty Dog'
 																		},
 																		{
 																			block: 'text',
 																			mods: { view: 'primary', size: 's' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+																			mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																			content: 'Uncharted 4: A Thiefs End is an action-adventure game developed by Naughty Dog and published by Sony Computer Entertainment for PlayStation 4 in May 2016.'
 																		},
 																		{
 																			block: 'text',
 																			mods: { view: 'primary', size: 's', weight: 'bold' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																			content: 'Information'
 																		},
 																		{
@@ -1014,11 +1017,11 @@ module.exports = {
 																},
 																{
 																	elem: 'buy',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'xxl' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
 																	content: [
 																		{
 																			block: 'text',
-																			mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
+																			mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 																			mods: { size: 'xl', view: 'primary', weight: 'black' },
 																			content: 'Buy'
 																		},
@@ -1092,7 +1095,7 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'title',
-																			mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+																			mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																			content: [
 																				{
 																					block: 'text',
@@ -1103,7 +1106,7 @@ module.exports = {
 																		},
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																			content: [
 																				{
 																					block: 'pt-icon-plus',
@@ -1112,10 +1115,9 @@ module.exports = {
 																						{
 																							elem: 'icon',
 																							elemMods: { 'indent-r': 's' },
-																							mix: { block: 'icon-circle' },
 																							content: {
 																								block: 'icon',
-																								mods: { name: 'marker', size: 's', view: 'primary' }
+																								mods: { name: 'marker', size: 's', view: 'primary', round: 'ghost' }
 																							}
 																						},
 																						{
@@ -1134,7 +1136,7 @@ module.exports = {
 																		},
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																			content: [
 																				{
 																					block: 'pt-icon-plus',
@@ -1143,7 +1145,10 @@ module.exports = {
 																						{
 																							elem: 'icon',
 																							elemMods: { 'indent-r': 's' },
-																							mix: { block: 'icon-circle' },
+																							content: {
+																								block: 'icon',
+																								mods: { name: 'marker', size: 's', view: 'primary', round: 'ghost' }
+																							}
 																						},
 																						{
 																							elem: 'block',
@@ -1161,17 +1166,20 @@ module.exports = {
 																		},
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																			content: [
 																				{
 																					block: 'pt-icon-plus',
 																					mods: { 'vertical-align': 'center' },
-																					mix: { block: 'decorator', mods: { 'indent-r': 'l' } },
+																					mix: { block: 'decorator', mods: { 'indent-r': 'l' }},
 																					content: [
 																						{
 																							elem: 'icon',
 																							elemMods: { 'indent-r': 's' },
-																							mix: { block: 'icon-circle' },
+																							content: {
+																								block: 'icon',
+																								mods: { name: 'marker', size: 's', view: 'primary', round: 'ghost' }
+																							}
 																						},
 																						{
 																							elem: 'block',
@@ -1206,7 +1214,7 @@ module.exports = {
 				/* Музыка */
 				{
 					elem: 'section',
-					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' } },
+					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
 					content: [
 						{
 							elem: 'container',
@@ -1226,7 +1234,7 @@ module.exports = {
 												{
 													block: 'play-list',
 													mix: [
-														{ block: 'pt-card', mods: { view: 'default' } },
+														{ block: 'pt-card', mods: { view: 'default' }},
 														{ block: 'decorator', mods: { 'space-a': 'l' }}
 													],
 													content: [
@@ -1239,7 +1247,7 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'icon',
-																			mix: { block: 'playlist-cover', mods: { size: 'big' } },
+																			mix: { block: 'playlist-cover', mods: { size: 'big' }},
 																			elemMods: { 'indent-r': 'l' },
 																			content: {
 																				block: 'image',
@@ -1252,8 +1260,8 @@ module.exports = {
 																			content: [
 																				{
 																					block: 'text',
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' } },
-																					mods: { view: 'primary', size: 'xl', weight: 'black' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																					mods: { view: 'primary', size: 'xl', weight: 'black'},
 																					content: "Pitchfork's Best New Music"
 																				},
 																				{
@@ -1269,7 +1277,7 @@ module.exports = {
 														},
 														{
 															block: 'text',
-															mix: { block: 'decorator', mods: { 'indent-v': 'm' } },
+															mix: { block: 'decorator', mods: { 'indent-v': 'm' }},
 															mods: { view: 'primary', size: 'xs' },
 															content: 'Here’s a shining example of an Inspired By playlist based around an album. With Kanye West performing his melancholy, Auto-Tune–heavy 2008 album in full lately, it’s worth taking a look at its influence on Drake, Lorde, the xx, and Raury.'
 														},
@@ -1281,7 +1289,7 @@ module.exports = {
 															// TRACK-1
 																{
 																	elem: 'track',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' } },
+																	mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' }},
 																	content: [
 																		{
 																			block: 'pt-icon-plus',
@@ -1289,7 +1297,7 @@ module.exports = {
 																			content: [
 																				{
 																					elem: 'icon',
-																					mix: { block: 'playlist-cover', mods: { size: 'small' } },
+																					mix: { block: 'playlist-cover', mods: { size: 'small' }},
 																					elemMods: { 'indent-r': 's' },
 																					content: {
 																						block: 'image',
@@ -1325,7 +1333,7 @@ module.exports = {
 															// TRACK-2
 																{
 																	elem: 'track',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' } },
+																	mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' }},
 																	content: [
 																		{
 																			block: 'pt-icon-plus',
@@ -1333,7 +1341,7 @@ module.exports = {
 																			content: [
 																				{
 																					elem: 'icon',
-																					mix: { block: 'playlist-cover', mods: { size: 'small' } },
+																					mix: { block: 'playlist-cover', mods: { size: 'small' }},
 																					elemMods: { 'indent-r': 's' },
 																					content: {
 																						block: 'image',
@@ -1367,7 +1375,7 @@ module.exports = {
 																},
 																{
 																	elem: 'track',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' } },
+																	mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' }},
 																	content: [
 																		{
 																			block: 'pt-icon-plus',
@@ -1375,7 +1383,7 @@ module.exports = {
 																			content: [
 																				{
 																					elem: 'icon',
-																					mix: { block: 'playlist-cover', mods: { size: 'small' } },
+																					mix: { block: 'playlist-cover', mods: { size: 'small' }},
 																					elemMods: { 'indent-r': 's' },
 																					content: {
 																						block: 'image',
@@ -1419,168 +1427,174 @@ module.exports = {
 											content: [
 												{
 													block: 'album',
-													mix: { block: 'decorator', mods: { 'space-a': 'l' } },
+													mix: { block: 'pt-card', mods: { view: 'default' }},
 													content: [
 														{
-															elem: 'info',
+															elem: 'content',
+															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' }},
 															content: [
 																{
-																	block: 'image',
-																	mix: [
-																		{ block: 'decorator', mods: { 'indent-h': 'auto', 'indent-b': 'xs' } },
-																		{ block: 'playlist-cover', mods: { size: 'big' } }
-																	],
-																	url: '/assets/bem-starter-kit/music-album-cover.png',
-																	width: 100
-																},
-																{
-																	block: 'text',
-																	mods: { view: 'primary', size: 'xxl', weight: 'black', align: 'center' },
-																	content: 'Damn'
-																},
-																{
-																	block: 'text',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-																	mods: { view: 'link', size: 'm', weight: 'semibold', align: 'center' },
-																	content: 'Kendrick Lamar'
-																},
-																{
-																	block: 'button',
-																	mods: { theme: 'islands', size: 's', view: 'action' },
-																	text: 'Shuffle'
-																}
-															]
-														},
-														{
-															elem: 'playlist',
-															mix: { block: 'pt-list' },
-															content : [
-																{
-																	elem: 'track',
-																	mix: [
-																		{ block: 'decorator', mods: { 'indent-t': 's' } },
-																		{ block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' } }
-																	],
+																	elem: 'info',
 																	content: [
 																		{
-																			block: 'pt-icon-plus',
-																			mods: { 'vertical-align': 'bottom' },
-																			content: [
-																				{
-																					elem: 'icon',
-																					mix: { block: 'playlist-cover', mods: { size: 'small' } },
-																					elemMods: { 'indent-r': 's' },
-																					content: {
-																						block: 'image',
-																						url: '/assets/bem-starter-kit/music-album-cover.png',
-																						width: 32
-																					}
-																				},
-																				{
-																					elem: 'block',
-																					content: [
-																						{
-																							block: 'text',
-																							mods: { view: 'primary', size: 's', weight: 'semibold' },
-																							content: 'London'
-																						},
-																						{
-																							block: 'text',
-																							mods: { view: 'secondary', size: 'xs' },
-																							content: 'Benjamin Clementine • At Least for Now'
-																						}
-																					]
-																				}
-																			]
+																			block: 'image',
+																			mix: [
+																				{ block: 'decorator', mods: { 'indent-h': 'auto', 'indent-b': 'xs' }},
+																				{ block: 'playlist-cover', mods: { size: 'big' }}
+																			],
+																			url: '/assets/bem-starter-kit/music-album-cover.png',
+																			width: 100
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'ghost', size: 's' },
-																			content: '4:20'
+																			mods: { view: 'primary', size: 'xxl', weight: 'black', align: 'center' },
+																			content: 'Damn'
+																		},
+																		{
+																			block: 'text',
+																			mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
+																			mods: { view: 'link', size: 'm', weight: 'semibold', align: 'center' },
+																			content: 'Kendrick Lamar'
+																		},
+																		{
+																			block: 'button',
+																			mods: { theme: 'islands', size: 's', view: 'action' },
+																			text: 'Shuffle'
 																		}
 																	]
 																},
 																{
-																	elem: 'track',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' } },
-																	content: [
+																	elem: 'playlist',
+																	mix: { block: 'pt-list' },
+																	content : [
 																		{
-																			block: 'pt-icon-plus',
-																			mods: { 'vertical-align': 'bottom' },
+																			elem: 'track',
+																			mix: [
+																				{ block: 'decorator', mods: { 'indent-t': 's' }},
+																				{ block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' } }
+																			],
 																			content: [
 																				{
-																					elem: 'icon',
-																					mix: { block: 'playlist-cover', mods: { size: 'small' } },
-																					elemMods: { 'indent-r': 's' },
-																					content: {
-																						block: 'image',
-																						url: '/assets/bem-starter-kit/music-album-cover.png',
-																						width: 32
-																					}
-																				},
-																				{
-																					elem: 'block',
+																					block: 'pt-icon-plus',
+																					mods: { 'vertical-align': 'bottom' },
 																					content: [
 																						{
-																							block: 'text',
-																							mods: { view: 'primary', size: 's', weight: 'semibold' },
-																							content: 'London'
+																							elem: 'icon',
+																							mix: { block: 'playlist-cover', mods: { size: 'small' }},
+																							elemMods: { 'indent-r': 's' },
+																							content: {
+																								block: 'image',
+																								url: '/assets/bem-starter-kit/music-album-cover.png',
+																								width: 32
+																							}
 																						},
 																						{
-																							block: 'text',
-																							mods: { view: 'secondary', size: 'xs' },
-																							content: 'Benjamin Clementine • At Least for Now'
+																							elem: 'block',
+																							content: [
+																								{
+																									block: 'text',
+																									mods: { view: 'primary', size: 's', weight: 'semibold' },
+																									content: 'London'
+																								},
+																								{
+																									block: 'text',
+																									mods: { view: 'secondary', size: 'xs' },
+																									content: 'Benjamin Clementine • At Least for Now'
+																								}
+																							]
 																						}
 																					]
+																				},
+																				{
+																					block: 'text',
+																					mods: { view: 'ghost', size: 's' },
+																					content: '4:20'
 																				}
 																			]
 																		},
 																		{
-																			block: 'text',
-																			mods: { view: 'ghost', size: 's' },
-																			content: '4:20'
-																		}
-																	]
-																},
-																{
-																	elem: 'track',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' } },
-																	content: [
-																		{
-																			block: 'pt-icon-plus',
-																			mods: { 'vertical-align': 'bottom' },
+																			elem: 'track',
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' }},
 																			content: [
 																				{
-																					elem: 'icon',
-																					mix: { block: 'playlist-cover', mods: { size: 'small' } },
-																					elemMods: { 'indent-r': 's' },
-																					content: {
-																						block: 'image',
-																						url: '/assets/bem-starter-kit/music-album-cover.png',
-																						width: 32
-																					}
-																				},
-																				{
-																					elem: 'block',
+																					block: 'pt-icon-plus',
+																					mods: { 'vertical-align': 'bottom' },
 																					content: [
 																						{
-																							block: 'text',
-																							mods: { view: 'primary', size: 's', weight: 'semibold' },
-																							content: 'London'
+																							elem: 'icon',
+																							mix: { block: 'playlist-cover', mods: { size: 'small' }},
+																							elemMods: { 'indent-r': 's' },
+																							content: {
+																								block: 'image',
+																								url: '/assets/bem-starter-kit/music-album-cover.png',
+																								width: 32
+																							}
 																						},
 																						{
-																							block: 'text',
-																							mods: { view: 'secondary', size: 'xs' },
-																							content: 'Benjamin Clementine • At Least for Now'
+																							elem: 'block',
+																							content: [
+																								{
+																									block: 'text',
+																									mods: { view: 'primary', size: 's', weight: 'semibold' },
+																									content: 'London'
+																								},
+																								{
+																									block: 'text',
+																									mods: { view: 'secondary', size: 'xs' },
+																									content: 'Benjamin Clementine • At Least for Now'
+																								}
+																							]
 																						}
 																					]
+																				},
+																				{
+																					block: 'text',
+																					mods: { view: 'ghost', size: 's' },
+																					content: '4:20'
 																				}
 																			]
 																		},
 																		{
-																			block: 'text',
-																			mods: { view: 'ghost', size: 's' },
-																			content: '4:20'
+																			elem: 'track',
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' }},
+																			content: [
+																				{
+																					block: 'pt-icon-plus',
+																					mods: { 'vertical-align': 'bottom' },
+																					content: [
+																						{
+																							elem: 'icon',
+																							mix: { block: 'playlist-cover', mods: { size: 'small' }},
+																							elemMods: { 'indent-r': 's' },
+																							content: {
+																								block: 'image',
+																								url: '/assets/bem-starter-kit/music-album-cover.png',
+																								width: 32
+																							}
+																						},
+																						{
+																							elem: 'block',
+																							content: [
+																								{
+																									block: 'text',
+																									mods: { view: 'primary', size: 's', weight: 'semibold' },
+																									content: 'London'
+																								},
+																								{
+																									block: 'text',
+																									mods: { view: 'secondary', size: 'xs' },
+																									content: 'Benjamin Clementine • At Least for Now'
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					block: 'text',
+																					mods: { view: 'ghost', size: 's' },
+																					content: '4:20'
+																				}
+																			]
 																		}
 																	]
 																}
@@ -1596,20 +1610,20 @@ module.exports = {
 											content: [
 												{
 													block: 'track',
-													mix: { block: 'pt-card', mods: { view: 'default' } },
+													mix: { block: 'pt-card', mods: { view: 'default' }},
 													content: [
 														{
 															elem: 'about',
-															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-h': 'xxl', 'space-t': 'xl' } },
+															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-h': 'xxl', 'space-t': 'xl' }},
 															content: [
 																{
 																	block: 'image',
-																	mix: { block: 'playlist-cover', mods: { size: 'big' } },
+																	mix: { block: 'playlist-cover', mods: { size: 'big' }},
 																	url: '/assets/bem-starter-kit/music-album-cover.png'
 																},
 																{
 																	block: 'text',
-																	mix: { block: 'decorator', mods: { 'indent-t': 'xxl' } },
+																	mix: { block: 'decorator', mods: { 'indent-t': 'xxl' }},
 																	mods: { view: 'primary', size: 'xl', weight: 'black' },
 																	content: 'All Down Hill From Here'
 																},
@@ -1622,7 +1636,7 @@ module.exports = {
 														},
 														{
 															elem: 'controls',
-															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl'} },
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl'}},
 															content: [
 																{
 															    block: 'progressbar',
@@ -1663,7 +1677,7 @@ module.exports = {
 				/* Друзья */
 				{
 					elem: 'section',
-					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' } },
+					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
 					content: [
 						{
 							elem: 'container',
@@ -1683,20 +1697,20 @@ module.exports = {
 												{
 													block: 'friendlist',
 													mix: [
-														{ block: 'pt-list', mods: { view: 'default' } },
-														{ block: 'decorator', mods: { 'space-a': 'l' } }
+														{ block: 'pt-list', mods: { view: 'default' }},
+														{ block: 'decorator', mods: { 'space-a': 'l' }}
 													],
 													content: [
 														{
 															elem: 'group',
-															mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'default', 'space-v': 's'} },
+															mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'default', 'space-v': 's'}},
 															content: [
 																{
 																	elem: 'item',
 																	content: [
 																		{
 																			elem: 'avatar',
-																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' } } ],
+																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' }} ],
 																			content: [
 																				{
 																					block: 'avatar',
@@ -1725,7 +1739,7 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'avatar',
-																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' } } ],
+																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' }} ],
 																			content: [
 																				{
 																					block: 'avatar',
@@ -1753,13 +1767,13 @@ module.exports = {
 														},
 														{
 															elem: 'group',
-															mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'default', 'space-v': 's'} },
+															mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'default', 'space-v': 's'}},
 															content: [
 																{
 																	elem: 'letter',
 																	mix: [
-																		{ block: 'text', mods: { view: 'primary', size: 'xl', weight: 'black' } },
-																		{ block: 'decorator', mods: { 'indent-b': 'xs', 'space-l': 'xs' } }
+																		{ block: 'text', mods: { view: 'primary', size: 'xl', weight: 'black' }},
+																		{ block: 'decorator', mods: { 'indent-b': 'xs', 'space-l': 'xs' }}
 																	],
 																	content: 'A'
 																},
@@ -1768,7 +1782,7 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'avatar',
-																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' } } ],
+																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' }} ],
 																			content: [
 																				{
 																					block: 'avatar',
@@ -1793,7 +1807,7 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'avatar',
-																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' } } ],
+																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' }} ],
 																			content: [
 																				{
 																					block: 'avatar',
@@ -1817,13 +1831,13 @@ module.exports = {
 														},
 														{
 															elem: 'group',
-															mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'default', 'space-v': 's'} },
+															mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'default', 'space-v': 's'}},
 															content: [
 																{
 																	elem: 'letter',
 																	mix: [
-																		{ block: 'text', mods: { view: 'primary', size: 'xl', weight: 'black' } },
-																		{ block: 'decorator', mods: { 'indent-b': 'xs', 'space-l': 'xs' } }
+																		{ block: 'text', mods: { view: 'primary', size: 'xl', weight: 'black' }},
+																		{ block: 'decorator', mods: { 'indent-b': 'xs', 'space-l': 'xs' }}
 																	],
 																	content: 'B'
 																},
@@ -1832,7 +1846,7 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'avatar',
-																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' } } ],
+																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' }} ],
 																			content: [
 																				{
 																					block: 'avatar',
@@ -1857,7 +1871,7 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'avatar',
-																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' } } ],
+																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' }} ],
 																			content: [
 																				{
 																					block: 'avatar',
@@ -1879,11 +1893,11 @@ module.exports = {
 																},
 																{
 																	elem: 'item',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																	content: [
 																		{
 																			elem: 'avatar',
-																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' } } ],
+																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' }} ],
 																			content: [
 																				{
 																					block: 'avatar',
@@ -1908,7 +1922,7 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'avatar',
-																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' } } ],
+																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' }} ],
 																			content: [
 																				{
 																					block: 'avatar',
@@ -1933,7 +1947,7 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'avatar',
-																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' } } ],
+																			mix: [{ block: 'avatar' }, { block: 'decorator', mods: { 'indent-b': 'xs' }} ],
 																			content: [
 																				{
 																					block: 'avatar',
@@ -1967,8 +1981,8 @@ module.exports = {
 													block: 'activities',
 													attrs: { style: 'height: 456px; overflow: hidden;'},
 													mix: [
-														{ block: 'pt-list', mods: { view: 'default' } },
-														{ block: 'decorator', mods: { 'space-a': 'l' } },
+														{ block: 'pt-list', mods: { view: 'default' }},
+														{ block: 'decorator', mods: { 'space-a': 'l' }},
 													],
 													content: [
 														{
@@ -2396,7 +2410,7 @@ module.exports = {
 				/* Событие */
 				{
 					elem: 'section',
-					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' } },
+					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
 					content: [
 						{
 							elem: 'container',
@@ -2415,7 +2429,7 @@ module.exports = {
 											content: [
 												{
 													block: 'meetup',
-													mix: { block: 'pt-list', mods: { 'view': 'ghost' } },
+													mix: { block: 'pt-list' },
 													content: [
 														{
 															elem: 'photo',
@@ -2432,12 +2446,12 @@ module.exports = {
 															mix: [
 																{ block: 'theme', mods: { color: 'whitepaper-brand' }},
 																{ block: 'component', mods: { whitepaper: 'brand' }},
-																{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' } },
+																{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' }},
 															],
 															content: [
 																{
 																	elem: 'name',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'xxs', distribute: 'between' } },
+																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'xxs', distribute: 'between' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -2453,7 +2467,7 @@ module.exports = {
 																},
 																{
 																	elem: 'rating',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'xl', distribute: 'between' } },
+																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'xl', distribute: 'between' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -2469,7 +2483,7 @@ module.exports = {
 																},
 																{
 																	elem: 'action',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm', distribute: 'between' } },
+																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm', distribute: 'between' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -2487,7 +2501,7 @@ module.exports = {
 														},
 														{
 															elem: 'feedback',
-															mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l', 'indent-b': 'xs' } },
+															mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l', 'indent-b': 'xs' }},
 															content: [
 																{
 																	block: 'text',
@@ -2497,7 +2511,7 @@ module.exports = {
 																{
 																	block: 'text',
 																	mods: { view: 'ghost', size: 's' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																	content: '5h ago'
 																},
 																{
@@ -2509,11 +2523,11 @@ module.exports = {
 														},
 														{
 															elem: 'info',
-															mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l', 'indent-b': 's' } },
+															mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l', 'indent-b': 's' }},
 															content: [
 																{
 																	elem: 'title',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -2524,7 +2538,7 @@ module.exports = {
 																},
 																{
 																	elem: 'item',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																	content: [
 																		{
 																			block: 'pt-icon-plus',
@@ -2536,7 +2550,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																							mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																						}
 																					]
 																				},
@@ -2556,12 +2570,12 @@ module.exports = {
 																},
 																{
 																	elem: 'item',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																	content: [
 																		{
 																			block: 'pt-icon-plus',
 																			mods: { 'vertical-align': 'center' },
-																			mix: { block: 'decorator', mods: { 'indent-r': 'l' } },
+																			mix: { block: 'decorator', mods: { 'indent-r': 'l' }},
 																			content: [
 																				{
 																					elem: 'icon',
@@ -2569,7 +2583,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																							mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																						}
 																					]
 																				},
@@ -2589,12 +2603,12 @@ module.exports = {
 																},
 																{
 																	elem: 'item',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																	content: [
 																		{
 																			block: 'pt-icon-plus',
 																			mods: { 'vertical-align': 'center' },
-																			mix: { block: 'decorator', mods: { 'indent-r': 'l' } },
+																			mix: { block: 'decorator', mods: { 'indent-r': 'l' }},
 																			content: [
 																				{
 																					elem: 'icon',
@@ -2602,7 +2616,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																							mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																						}
 																					]
 																				},
@@ -2632,7 +2646,7 @@ module.exports = {
 											content: [
 												{
 													block: 'place',
-													mix: { block: 'pt-list', mods: { 'view': 'ghost' } },
+													mix: { block: 'pt-list'},
 													content: [
 														{
 															elem: 'description',
@@ -2649,17 +2663,17 @@ module.exports = {
 																},
 																{
 																	elem: 'type',
-																	mix: [ { block: 'text', mods: { size: 'm', view: 'primary', weight: 'bold' } },  { block: 'decorator', mods: { 'indent-b': 'xs' } } ],
+																	mix: [ { block: 'text', mods: { size: 'm', view: 'primary', weight: 'bold' }},  { block: 'decorator', mods: { 'indent-b': 'xs' } } ],
 																	content: 'Event'
 																},
 																{
 																	elem: 'event',
-																	mix: [ { block: 'text', mods: { size: 'xxl', view: 'primary', weight: 'bold' } }, { block: 'decorator', mods: { 'indent-b': 's' } } ],
+																	mix: [ { block: 'text', mods: { size: 'xxl', view: 'primary', weight: 'bold' }}, { block: 'decorator', mods: { 'indent-b': 's' } } ],
 																	content: '3rd Annual Innate Killer Summit'
 																},
 																{
 																	elem: 'type',
-																	mix: [ { block: 'text', mods: { size: 's', view: 'primary' } }, { block: 'decorator', mods: { 'indent-b': 'm' } } ],
+																	mix: [ { block: 'text', mods: { size: 's', view: 'primary' }}, { block: 'decorator', mods: { 'indent-b': 'm' } } ],
 																	content: 'Gary Tatinashvily Gallery'
 																},
 																{
@@ -2675,12 +2689,12 @@ module.exports = {
 														},
 														{
 															elem: 'feedback',
-															mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l', 'indent-b': 'xs' } },
+															mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l', 'indent-b': 'xs' }},
 															content: [
 																{
 																	block: 'text',
 																	mods: { view: 'primary', size: 's', weight: 'bold' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																	content: 'Information'
 																},
 																{
@@ -2692,11 +2706,11 @@ module.exports = {
 														},
 														{
 															elem: 'info',
-															mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' } },
+															mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' }},
 															content: [
 																{
 																	elem: 'item',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																	content: [
 																		{
 																			block: 'pt-icon-plus',
@@ -2708,7 +2722,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																							mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																						}
 																					]
 																				},
@@ -2728,12 +2742,12 @@ module.exports = {
 																},
 																{
 																	elem: 'item',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																	content: [
 																		{
 																			block: 'pt-icon-plus',
 																			mods: { 'vertical-align': 'center' },
-																			mix: { block: 'decorator', mods: { 'indent-r': 'l' } },
+																			mix: { block: 'decorator', mods: { 'indent-r': 'l' }},
 																			content: [
 																				{
 																					elem: 'icon',
@@ -2741,7 +2755,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																							mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																						}
 																					]
 																				},
@@ -2761,7 +2775,7 @@ module.exports = {
 																},
 																{
 																	elem: 'item',
-																	mix: [{ block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } }, { block: 'decorator', mods: { 'indent-t': 'l' }  }],
+																	mix: [{ block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }}, { block: 'decorator', mods: { 'indent-t': 'l' }  }],
 																	content: [
 																		{
 																			block: 'button',
@@ -2787,7 +2801,7 @@ module.exports = {
 				/* Статьи */
 				{
 					elem: 'section',
-					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' } },
+					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
 					content: [
 						{
 							elem: 'container',
@@ -2806,111 +2820,118 @@ module.exports = {
 											content: [
 												{
 													block: 'publication',
-													mix: { block: 'decorator', mods: { 'space-h': 'l', 'space-v': 'm' } },
+													mix: { block: 'pt-card', mods: { 'view': 'default' }},
 													content: [
 														{
-															elem: 'header',
+															elem: 'content',
+															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' }},
 															content: [
 																{
-																	block: 'text',
-																	mods: { view: 'primary', size: 'm', weight: 'black' },
-																	content: 'Hive'
-																},
-																{
-																	block: 'text',
-																	mods: { view: 'link', size: 'xs', weight: 'bold', transform: 'uppercase' },
-																	content: 'Technology'
-																}
-															]
-														},
-														{
-															block: 'text',
-															mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
-															mods: { view: 'link', size: 'xxl' },
-															content: [
-																{
-																	block: 'text',
-																	mods: { weight: 'black' },
-																	content: 'This is a slow roll: '
-																},
-																'silicon valley insiders think that facebook will never be the same '
-															]
-														},
-														{
-															block: 'pt-icon-plus',
-															mix: { block: 'decorator', mods: { 'indent-b': 'xxl' } },
-															mods: { 'vertical-align': 'center' },
-															content: [
-																{
-																	elem: 'icon',
-																	elemMods: { 'indent-r': 's' },
-																	content: {
-																		block: 'avatar',
-																		content: {
-																			elem: 'photo',
-																			elemMods: { size: 's'}
-																		}
-																	}
-																},
-																{
-																	elem: 'block',
+																	elem: 'header',
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { view: 'primary', size: 's', weight: 'semibold' },
-																			content: 'Luke Appleyard'
+																			mods: { view: 'primary', size: 'm', weight: 'black' },
+																			content: 'Hive'
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'ghost', size: 'xs' },
-																			content: '2h ago'
+																			mods: { view: 'link', size: 'xs', weight: 'bold', transform: 'uppercase' },
+																			content: 'Technology'
 																		}
 																	]
-																}
-															]
-														},
-														{
-															block: 'text',
-															mods: { view: 'primary', size: 'm' },
-															content: 'The scandal, the latest in Facebook’s tortured history with privacy concerns, has eroded the potential for any of the company’s leaders to ever credibly run for public office. And it’s made Zuckerberg’s Chinese dreams a lot more fraught. One tech investor put it more succinctly: “They’re fucked.”',
-														},
-														{
-															elem: 'image',
-															mix: { block: 'decorator', mods: { 'indent-b': 'xxl' } },
-															content: [
-																{
-																	block: 'image',
-																	url: '/assets/bem-starter-kit/publication.png'
 																},
 																{
 																	block: 'text',
-																	mods: { view: 'secondary', size: 's' },
-																	content: 'Mark Zuckerberg at Cortex Innovation Community technology hub in St. Louis.'
-																}
-															]
-														},
-														{
-															elem: 'article-content',
-															mix: { block: 'text', mods: { size: 's' } },
-															content: `Late last Friday, Paul Grewal, Facebook’s vice president and deputy general counsel, wrote a seemingly straightforward blog post on the company’s newsroom page indicating that Facebook was suspending the data firm Strategic Communications Laboratory, and its political unit, Cambridge Analytica, for policy violations—in particular, for obtaining user information without corporate approval. It was an egregious breach, but it appeared as though Facebook was handling it responsibly. Rather than fumbling around for an articulate response, as the company had in the wake of revelations that its platform facilitated the dissemination of fake news that influenced Donald Trump’s election, Facebook was trying to get ahead of the bad press, to get “out front,” as they say in the lingua franca of corporate communications. “We are committed to vigorously enforcing our policies to protect people’s information,” Grewal wrote. “We will take whatever steps are required to see that this happens. We will take legal action if necessary to hold them responsible and accountable for any unlawful behavior.”`
-														},
-														{
-															block: 'text',
-															mix: { block: 'decorator', mods: { 'indent-v': 'xxl', 'indent-l': 'l' } },
-															mods: { view: 'primary', size: 'xl', weight: 'bold', style: 'italic' },
-															content: [
+																	mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+																	mods: { view: 'link', size: 'xxl' },
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { weight: 'black' },
+																			content: 'This is a slow roll: '
+																		},
+																		'silicon valley insiders think that facebook will never be the same '
+																	]
+																},
+																{
+																	block: 'pt-icon-plus',
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+																	mods: { 'vertical-align': 'center' },
+																	content: [
+																		{
+																			elem: 'icon',
+																			elemMods: { 'indent-r': 's' },
+																			content: {
+																				block: 'avatar',
+																				content: {
+																					elem: 'photo',
+																					elemMods: { size: 's'}
+																				}
+																			}
+																		},
+																		{
+																			elem: 'block',
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { view: 'primary', size: 's', weight: 'semibold' },
+																					content: 'Luke Appleyard'
+																				},
+																				{
+																					block: 'text',
+																					mods: { view: 'ghost', size: 'xs' },
+																					content: '2h ago'
+																				}
+																			]
+																		}
+																	]
+																},
 																{
 																	block: 'text',
-																	mods: { weight: 'black' },
-																	content: 'We are committed'
+																	mods: { view: 'primary', size: 'm' },
+																	content: 'The scandal, the latest in Facebook’s tortured history with privacy concerns, has eroded the potential for any of the company’s leaders to ever credibly run for public office. And it’s made Zuckerberg’s Chinese dreams a lot more fraught. One tech investor put it more succinctly: “They’re fucked.”',
 																},
-																' to vigorously enforcing our policies to protect people’s information'
+																{
+																	elem: 'image',
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+																	content: [
+																		{
+																			block: 'image',
+																			url: '/assets/bem-starter-kit/publication.png'
+																		},
+																		{
+																			block: 'text',
+																			mods: { view: 'secondary', size: 's' },
+																			content: 'Mark Zuckerberg at Cortex Innovation Community technology hub in St. Louis.'
+																		}
+																	]
+																},
+																{
+																	elem: 'article-content',
+																	mix: { block: 'text', mods: { size: 's' }},
+																	content: `Late last Friday, Paul Grewal, Facebook’s vice president and deputy general counsel, wrote a seemingly straightforward blog post on the company’s newsroom page indicating that Facebook was suspending the data firm Strategic Communications Laboratory, and its political unit, Cambridge Analytica, for policy violations—in particular, for obtaining user information without corporate approval. It was an egregious breach, but it appeared as though Facebook was handling it responsibly. Rather than fumbling around for an articulate response, as the company had in the wake of revelations that its platform facilitated the dissemination of fake news that influenced Donald Trump’s election, Facebook was trying to get ahead of the bad press, to get “out front,” as they say in the lingua franca of corporate communications. “We are committed to vigorously enforcing our policies to protect people’s information,” Grewal wrote. “We will take whatever steps are required to see that this happens. We will take legal action if necessary to hold them responsible and accountable for any unlawful behavior.”`
+																},
+																{
+																	block: 'text',
+																	mix: { block: 'decorator', mods: { 'indent-v': 'xxl', 'indent-l': 'l' }},
+																	mods: { view: 'primary', size: 'xl', weight: 'bold', style: 'italic' },
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { weight: 'black' },
+																			content: 'We are committed'
+																		},
+																		' to vigorously enforcing our policies to protect people’s information'
+																	]
+																},
+																{
+																	block: 'text',
+																	mods: { view: 'primary', size: 's' },
+																	content: `As we all now know, of course, Facebook wasn’t offering a bare-chested confessional. Instead, a day later, The New York Times, in partnership with The Guardian, published a blockbuster exposé that accused Cambridge Analytica of exploiting the Facebook data of some 50 million people. Grewal’s note, it appeared, was simply a dastardly attempt to forestall yet another calamitous story about Facebook surrounding the election. “This attempt to appear ‘out front’ is totally disingenuous,” the Times’s Gabriel J.X. Dance, who worked on the initial story, wrote on Twitter.`
+																}
+
 															]
-														},
-														{
-															block: 'text',
-															mods: { view: 'primary', size: 's' },
-															content: `As we all now know, of course, Facebook wasn’t offering a bare-chested confessional. Instead, a day later, The New York Times, in partnership with The Guardian, published a blockbuster exposé that accused Cambridge Analytica of exploiting the Facebook data of some 50 million people. Grewal’s note, it appeared, was simply a dastardly attempt to forestall yet another calamitous story about Facebook surrounding the election. “This attempt to appear ‘out front’ is totally disingenuous,” the Times’s Gabriel J.X. Dance, who worked on the initial story, wrote on Twitter.`
 														}
 													]
 												}
@@ -2930,7 +2951,7 @@ module.exports = {
 													content: [
 														{
 															elem: 'footer-wrapper',
-															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l' } },
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l' }},
 															content: [
 																{
 																	elem: 'footer',
@@ -2948,7 +2969,7 @@ module.exports = {
 																		{
 																			block: 'pt-icon-plus',
 																			mods: { 'vertical-align': 'center' },
-																			mix: { block: 'decorator', mods: { 'indent-t': 'l' } },
+																			mix: { block: 'decorator', mods: { 'indent-t': 'l' }},
 																			content: [
 																				{
 																					elem: 'icon',
@@ -2978,7 +2999,7 @@ module.exports = {
 														},
 														{
 															block: 'image',
-															mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' } },
+															mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
 															url: '/assets/bem-starter-kit/article-preview.png'
 														}
 													]
@@ -2996,7 +3017,7 @@ module.exports = {
 				/* Комментарии */
 				{
 					elem: 'section',
-					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' } },
+					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
 					content: [
 						{
 							elem: 'container',
@@ -3023,12 +3044,12 @@ module.exports = {
 													content: [
 														{
 															elem: 'content',
-															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' } },
+															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' }},
 															content: [
 																{
 																	block: 'pt-icon-plus',
 																	mods: { 'vertical-align': 'center' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																	content: [
 																		{
 																			elem: 'icon',
@@ -3062,7 +3083,7 @@ module.exports = {
 																},
 																{
 																	block: 'text',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																	mods: { size: 'xl', view: 'primary', weight: 'black' },
 																	content: [
 																		'No individual colour making up this wave travels ',
@@ -3077,7 +3098,7 @@ module.exports = {
 														},
 														{
 															elem: 'logo',
-															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-b': 'l', 'space-a': 'xl' } },
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-b': 'l', 'space-a': 'xl' }},
 															content: {
 																block: 'social-icon',
 																mods: { size: 'm', clear: 'twitter-inverse' }
@@ -3089,166 +3110,169 @@ module.exports = {
 										},
 										{
 											elem: 'fraction',
-											attrs: {
-												'style': 'background-color: var(--color-default);'
-											},
 											elemMods: { col: '4'},
 											content: [
 												{
 													block: 'comments',
-													mix: { block: 'decorator', mods: { 'space-a': 'l' } },
+													mix: { block: 'pt-card', mods: { 'view': 'default' }},
 													content: [
 														{
-															block: 'text',
-															mix: { block: 'decorator', mods: { 'indent-b': 'xs' } },
-															mods: { size: 'xxxl', view: 'primary', weight: 'black', },
-															content: 'This is a slow roll: silicon valley insiders '
-														},
-														{
-															block: 'text',
-															mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
-															mods: { size: 'm', view: 'primary' },
-															content: 'The scandal, the latest in Facebook’s tortured history with privacy concerns, has eroded the potential for any of the company’s leaders to ever credibly run for public office'
-														},
-														{
-															block: 'pt-icon-plus',
-															mods: { 'vertical-align': 'center' },
+															elem: 'content',
+															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' }},
 															content: [
 																{
-																	elem: 'icon',
-																	elemMods: { 'indent-r': 's'},
-																	content: {
-																		block: 'avatar',
-																		content: {
-																			elem: 'photo',
-																			elemMods: { size: 's' }
-																		}
-																	}
+																	block: 'text',
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
+																	mods: { size: 'xxxl', view: 'primary', weight: 'black', },
+																	content: 'This is a slow roll: silicon valley insiders '
 																},
 																{
-																	elem: 'block',
+																	block: 'text',
+																	mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
+																	mods: { size: 'm', view: 'primary' },
+																	content: 'The scandal, the latest in Facebook’s tortured history with privacy concerns, has eroded the potential for any of the company’s leaders to ever credibly run for public office'
+																},
+																{
+																	block: 'pt-icon-plus',
+																	mods: { 'vertical-align': 'center' },
 																	content: [
 																		{
-																			block: 'text',
-																			mods: { size: 'm', view: 'primary', weight: 'bold', display: 'inline' },
-																			content: 'Hive '
+																			elem: 'icon',
+																			elemMods: { 'indent-r': 's'},
+																			content: {
+																				block: 'avatar',
+																				content: {
+																					elem: 'photo',
+																					elemMods: { size: 's' }
+																				}
+																			}
 																		},
 																		{
-																			block: 'text',
-																			mods: { size: 'm', view: 'primary', weight: 'light', display: 'inline' },
-																			content: 'Nick Bilton'
-																		}
-																	]
-																}
-															]
-														},
-														{
-															block: 'comments-section',
-															content: [
-																{
-																	elem: 'header',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
-																	content: [
-																		{
-																			block: 'text',
-																			mods: { size: 'xl', view: 'primary', weight: 'black', },
-																			content: '20 Comments'
-																		},
-																		{
-																			block: 'text',
-																			tag: 'a',
-																			attrs: { href: ''},
-																			mods: { size: 's', view: 'link', },
-																			content: 'Sort by Best'
-																		}
-																	]
-																},
-																{
-																	elem: 'field',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
-																	content: [
-																		{
-																			block: 'textarea',
-																			mods: { theme: 'islands', size: 'm', width: 'available' },
-																			placeholder : 'Ваш текст должен быть здесь'
-																		}
-																	]
-																},
-																{
-																	block: 'comment',
-																	content: [
-																		{
-																			block: 'pt-icon-plus',
-																			mods: { 'vertical-align': 'top' },
+																			elem: 'block',
 																			content: [
 																				{
-																					elem: 'icon',
-																					elemMods: { 'indent-r': 's'},
-																					content: {
-																						block: 'avatar',
-																						content: {
-																							elem: 'photo',
-																							elemMods: { size: 's' }
-																						}
-																					}
+																					block: 'text',
+																					mods: { size: 'm', view: 'primary', weight: 'bold', display: 'inline' },
+																					content: 'Hive '
 																				},
 																				{
-																					elem: 'block',
+																					block: 'text',
+																					mods: { size: 'm', view: 'primary', weight: 'light', display: 'inline' },
+																					content: 'Nick Bilton'
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	block: 'comments-section',
+																	content: [
+																		{
+																			elem: 'header',
+																			mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'xl', view: 'primary', weight: 'black', },
+																					content: '20 Comments'
+																				},
+																				{
+																					block: 'text',
+																					tag: 'a',
+																					attrs: { href: ''},
+																					mods: { size: 's', view: 'link', },
+																					content: 'Sort by Best'
+																				}
+																			]
+																		},
+																		{
+																			elem: 'field',
+																			mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+																			content: [
+																				{
+																					block: 'textarea',
+																					mods: { theme: 'islands', size: 'm', width: 'available' },
+																					placeholder : 'Ваш текст должен быть здесь'
+																				}
+																			]
+																		},
+																		{
+																			block: 'comment',
+																			content: [
+																				{
+																					block: 'pt-icon-plus',
+																					mods: { 'vertical-align': 'top' },
 																					content: [
 																						{
-																							block: 'text',
-																							mods: { size: 's', view: 'link', weigh: 'bold' },
-																							content: 'Broun Andvild'
+																							elem: 'icon',
+																							elemMods: { 'indent-r': 's'},
+																							content: {
+																								block: 'avatar',
+																								content: {
+																									elem: 'photo',
+																									elemMods: { size: 's' }
+																								}
+																							}
 																						},
 																						{
-																							block: 'text',
-																							mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
-																							mods: { size: 'xs', view: 'ghost' },
-																							content: '5h ago'
-																						},
-																						{
-																							block: 'text',
-																							mods: { size: 's', view: 'primary', weight: 'light' },
-																							content: 'Just visited the best beach for surfing. The waves are awesome.'
-																						},
-																						{
-																							elem: 'answers',
-																							mix: { block: 'decorator', mods: { 'indent-t': 'xxl' } },
+																							elem: 'block',
 																							content: [
 																								{
-																									block: 'pt-icon-plus',
-																									mods: { 'vertical-align': 'top' },
+																									block: 'text',
+																									mods: { size: 's', view: 'link', weigh: 'bold' },
+																									content: 'Broun Andvild'
+																								},
+																								{
+																									block: 'text',
+																									mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+																									mods: { size: 'xs', view: 'ghost' },
+																									content: '5h ago'
+																								},
+																								{
+																									block: 'text',
+																									mods: { size: 's', view: 'primary', weight: 'light' },
+																									content: 'Just visited the best beach for surfing. The waves are awesome.'
+																								},
+																								{
+																									elem: 'answers',
+																									mix: { block: 'decorator', mods: { 'indent-t': 'xxl' }},
 																									content: [
 																										{
-																											elem: 'icon',
-																											elemMods: { 'indent-r': 's'},
-																											content: {
-																												block: 'avatar',
-																												content: {
-																													elem: 'photo',
-																													elemMods: { size: 's' }
-																												}
-																											}
-																										},
-																										{
-																											elem: 'block',
+																											block: 'pt-icon-plus',
+																											mods: { 'vertical-align': 'top' },
 																											content: [
 																												{
-																													block: 'text',
-																													mods: { size: 's', view: 'link', weigh: 'bold' },
-																													content: 'Shervy Jonson'
+																													elem: 'icon',
+																													elemMods: { 'indent-r': 's'},
+																													content: {
+																														block: 'avatar',
+																														content: {
+																															elem: 'photo',
+																															elemMods: { size: 's' }
+																														}
+																													}
 																												},
 																												{
-																													block: 'text',
-																													mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
-																													mods: { size: 'xs', view: 'ghost' },
-																													content: '5h ago'
-																												},
-																												{
-																													block: 'text',
-																													mods: { size: 's', view: 'primary', weight: 'light' },
-																													content: 'Just visited the best beach for surfing. The waves are awesome.'
-																												},
+																													elem: 'block',
+																													content: [
+																														{
+																															block: 'text',
+																															mods: { size: 's', view: 'link', weigh: 'bold' },
+																															content: 'Shervy Jonson'
+																														},
+																														{
+																															block: 'text',
+																															mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+																															mods: { size: 'xs', view: 'ghost' },
+																															content: '5h ago'
+																														},
+																														{
+																															block: 'text',
+																															mods: { size: 's', view: 'primary', weight: 'light' },
+																															content: 'Just visited the best beach for surfing. The waves are awesome.'
+																														}
+																													]
+																												}
 																											]
 																										}
 																									]
@@ -3278,7 +3302,7 @@ module.exports = {
 				/* Информер */
 				{
 					elem: 'section',
-					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' } },
+					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
 					content: [
 						{
 							elem: 'container',
@@ -3302,7 +3326,7 @@ module.exports = {
 													content: [
 														{
 															elem: 'content',
-															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' } },
+															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' }},
 															content: [
 																{
 																	elem: 'icon-wrapper',
@@ -3320,7 +3344,7 @@ module.exports = {
 																},
 																{
 																	block: 'text',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' }},
 																	mods: { size: 'm', align: 'center' },
 																	content: 'Currently payments not available'
 																},
@@ -3329,7 +3353,7 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'text',
-																			mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
+																			mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 																			mods: { size: 's', weight: 'bold' },
 																			content: 'Information'
 																		},
@@ -3363,7 +3387,7 @@ module.exports = {
 														},
 														{
 															elem: 'button',
-															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' } },
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' }},
 															content: {
 																block: 'button',
 																mods: { theme: 'islands', size: 'l', width: 'available' },
@@ -3385,7 +3409,7 @@ module.exports = {
 													content: [
 														{
 															elem: 'content',
-															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' } },
+															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' }},
 															content: [
 																{
 																	elem: 'icon-wrapper',
@@ -3403,7 +3427,7 @@ module.exports = {
 																},
 																{
 																	block: 'text',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' }},
 																	mods: { size: 'm', align: 'center' },
 																	content: 'Currently payments not available'
 																},
@@ -3412,7 +3436,7 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'text',
-																			mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
+																			mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 																			mods: { size: 's', weight: 'bold' },
 																			content: 'Transfer to card'
 																		},
@@ -3446,7 +3470,7 @@ module.exports = {
 														},
 														{
 															elem: 'button',
-															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' } },
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' }},
 															content: {
 																block: 'button',
 																mods: { theme: 'islands', size: 'l', width: 'available' },
@@ -3468,7 +3492,7 @@ module.exports = {
 													content: [
 														{
 															elem: 'content',
-															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' } },
+															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' }},
 															content: [
 																{
 																	elem: 'icon-wrapper',
@@ -3486,7 +3510,7 @@ module.exports = {
 																},
 																{
 																	block: 'text',
-																	mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' }},
 																	mods: { size: 'm', align: 'center' },
 																	content: 'Payment completed'
 																},
@@ -3495,7 +3519,7 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'text',
-																			mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
+																			mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 																			mods: { size: 's', weight: 'bold' },
 																			content: 'Information'
 																		},
@@ -3510,7 +3534,7 @@ module.exports = {
 														},
 														{
 															elem: 'button',
-															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' } },
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' }},
 															content: {
 																block: 'button',
 																mods: { theme: 'islands', size: 'l', width: 'available' },
@@ -3532,7 +3556,7 @@ module.exports = {
 				/* Коммерческая */
 				{
 					elem: 'section',
-					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' } },
+					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
 					content: [
 						{
 							elem: 'container',
@@ -3557,7 +3581,7 @@ module.exports = {
 														{
 															elem: 'footer',
 															elemMods: { state: 'fold' },
-															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l', align: 'between', 'vertical-align': 'bottom' } },
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l', align: 'between', 'vertical-align': 'bottom' }},
 															content: [
 																{
 																	elem: 'about',
@@ -3574,7 +3598,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																			mods: { view: 'secondary', size: 'm' },
 																			content: 'Jeans skinny jacket by Levi Brand'
 																		},
@@ -3638,7 +3662,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																			mods: { view: 'primary', size: 'm' },
 																			content: 'Jeans skinny jacket by Levi Brand'
 																		},
@@ -3681,7 +3705,7 @@ module.exports = {
 				/* Авторизация */
 				{
 					elem: 'section',
-					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' } },
+					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
 					content: [
 						{
 							elem: 'container',
@@ -3700,7 +3724,7 @@ module.exports = {
 											content: [
 												{
 													block: 'auth',
-													mix: { block: 'decorator', mods: { 'space-a': 'l' } },
+													mix: { block: 'decorator', mods: { 'space-a': 'l' }},
 													attrs: { style: 'height: 456px; box-sizing: border-box'},
 													content: [
 														{
@@ -3710,7 +3734,7 @@ module.exports = {
 																	block: 'text',
 																	mods: { view: 'primary', size: 'xxxxl', weight: 'black' },
 																	attrs: { style: 'font-weight: 900' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
 																	content: 'Log in'
 																},
 																{
@@ -3780,7 +3804,7 @@ module.exports = {
 											content: [
 												{
 													block: 'auth',
-													mix: { block: 'decorator', mods: { 'space-a': 'l' } },
+													mix: { block: 'decorator', mods: { 'space-a': 'l' }},
 													attrs: { style: 'height: 456px; box-sizing: border-box; background: #fff;'},
 													content: [
 														{
@@ -3790,7 +3814,7 @@ module.exports = {
 																	block: 'text',
 																	mods: { view: 'primary', size: 'xxxxl', weight: 'black' },
 																	attrs: { style: 'font-weight: 900' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
 																	content: 'Sign in'
 																},
 																{
@@ -3860,7 +3884,7 @@ module.exports = {
 											content: [
 												{
 													block: 'auth',
-													mix: { block: 'decorator', mods: { 'space-a': 'l' } },
+													mix: { block: 'decorator', mods: { 'space-a': 'l' }},
 													attrs: { style: 'height: 456px; box-sizing: border-box; background: #fff;'},
 													content: [
 														{
@@ -3870,7 +3894,7 @@ module.exports = {
 																	block: 'text',
 																	mods: { view: 'primary', size: 'xxxxl', weight: 'black' },
 																	attrs: { style: 'font-weight: 900; line-height: 1em' },
-																	mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
 																	content: 'Forgot Password'
 																},
 																{
@@ -3919,7 +3943,7 @@ module.exports = {
 				/* Настройки карты */
 				{
 					elem: 'section',
-					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' } },
+					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
 					content: [
 						{
 							elem: 'container',
@@ -3938,7 +3962,7 @@ module.exports = {
 											content: [
 												{
 													block: 'feed',
-													mix: { block: 'pt-list', mods: { view: 'ghost' } },
+													mix: { block: 'pt-list' },
 													content: [
 														{
 															elem: 'item',
@@ -4012,7 +4036,7 @@ module.exports = {
 																{
 																	elem: 'action',
 																	mix: [
-																		{ block: 'pt-list', elem: 'item', elemMods: { distribute: 'between' } },
+																		{ block: 'pt-list', elem: 'item', elemMods: { distribute: 'between' }},
 																		{ block: 'decorator', mods: { 'space-b': 'x,s' }}
 																	],
 																	content: [
@@ -4158,7 +4182,7 @@ module.exports = {
 																		{
 																			elem: 'action',
 																			mix: [
-																				{ block: 'pt-list', elem: 'item', elemMods: { distribute: 'between' } },
+																				{ block: 'pt-list', elem: 'item', elemMods: { distribute: 'between' }},
 																				{ block: 'decorator', mods: { 'space-b': 'x,s' }}
 																			],
 																			content: [
@@ -4204,10 +4228,11 @@ module.exports = {
 											content: [
 												{
 													block: 'card',
+													mix: { block: 'pt-card', mods: { view: 'default' }},
 													content: [
 														{
-															block: 'decorator',
-															mods: { 'space-t': 'xl' },
+															elem: 'content',
+															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' }},
 															content: [
 																{
 																	block: 'text',
@@ -4265,7 +4290,7 @@ module.exports = {
 																},
 																{
 																	block: 'dots',
-																	mix: { block: 'decorator', mods: { 'indent-t': 'm', 'indent-b': 'xl' } },
+																	mix: { block: 'decorator', mods: { 'indent-t': 'm', 'indent-b': 'xl' }},
 																	content: {
 																		elem: 'wrapper',
 																		content: [
@@ -4288,7 +4313,7 @@ module.exports = {
 																		{
 																			elem: 'item',
 																			elemMods: { 'space-h': 'l', 'space-v': 's'},
-																			mix: { block: 'pt-icon-plus', mods: { 'vertical-align': 'center' } },
+																			mix: { block: 'pt-icon-plus', mods: { 'vertical-align': 'center' }},
 																			content: [
 																				{
 																					block: 'pt-icon-plus',
@@ -4297,7 +4322,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																							mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																						}
 																					]
 																				},
@@ -4314,7 +4339,7 @@ module.exports = {
 																		{
 																			elem: 'item',
 																			elemMods: { 'space-h': 'l', 'space-v': 's'},
-																			mix: { block: 'pt-icon-plus', mods: { 'vertical-align': 'center' } },
+																			mix: { block: 'pt-icon-plus', mods: { 'vertical-align': 'center' }},
 																			content: [
 																				{
 																					block: 'pt-icon-plus',
@@ -4323,7 +4348,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																							mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																						}
 																					]
 																				},
@@ -4340,7 +4365,7 @@ module.exports = {
 																		{
 																			elem: 'item',
 																			elemMods: { 'space-h': 'l', 'space-v': 's'},
-																			mix: { block: 'pt-icon-plus', mods: { 'vertical-align': 'center' } },
+																			mix: { block: 'pt-icon-plus', mods: { 'vertical-align': 'center' }},
 																			content: [
 																				{
 																					block: 'pt-icon-plus',
@@ -4349,7 +4374,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																							mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																						}
 																					]
 																				},
@@ -4366,7 +4391,7 @@ module.exports = {
 																		{
 																			elem: 'item',
 																			elemMods: { 'space-h': 'l', 'space-v': 's'},
-																			mix: { block: 'pt-icon-plus', mods: { 'vertical-align': 'center' } },
+																			mix: { block: 'pt-icon-plus', mods: { 'vertical-align': 'center' }},
 																			content: [
 																				{
 																					block: 'pt-icon-plus',
@@ -4375,7 +4400,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																							mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																						}
 																					]
 																				},
@@ -4408,7 +4433,7 @@ module.exports = {
 				/* Тариф */
 				{
 					elem: 'section',
-					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' } },
+					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
 					content: [
 						{
 							elem: 'container',
@@ -4431,30 +4456,30 @@ module.exports = {
 													content: [
 														{
 															elem: 'content',
-															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' } },
+															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' }},
 															content: [
 																{
 																	elem: 'type',
-																	mix: [ { block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' } }, { block: 'decorator', mods: { 'indent-b': 'xxs' } } ],
+																	mix: [ { block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }}, { block: 'decorator', mods: { 'indent-b': 'xxs' } } ],
 																	content: 'Standard'
 																},
 																{
 																	elem: 'type',
-																	mix: [ { block: 'text', mods: { view: 'primary', size: 'm', align: 'center' } }, { block: 'decorator', mods: { 'indent-b': 'xl' } } ],
+																	mix: [ { block: 'text', mods: { view: 'primary', size: 'm', align: 'center' }}, { block: 'decorator', mods: { 'indent-b': 'xl' } } ],
 																	content: 'For large companies'
 																},
 																{
 																	elem: 'sale',
-																	mix: [{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', weight: 'bold' } }, { block: 'decorator', mods: { 'indent-b': 'l' } }],
+																	mix: [{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', weight: 'bold' }}, { block: 'decorator', mods: { 'indent-b': 'l' } }],
 																	content: '$89'
 																},
 																{
 																	elem: 'assets',
-																	mix: { block: 'decorator', mods: { 'space-h': 'm' } },
+																	mix: { block: 'decorator', mods: { 'space-h': 'm' }},
 																	content: [
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																			content: [
 																				{
 																					block: 'pt-icon-plus',
@@ -4466,7 +4491,7 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																									mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																								}
 																							]
 																						},
@@ -4486,7 +4511,7 @@ module.exports = {
 																		},
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																			content: [
 																				{
 																					block: 'pt-icon-plus',
@@ -4498,7 +4523,7 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																									mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																								}
 																							]
 																						},
@@ -4518,7 +4543,7 @@ module.exports = {
 																		},
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																			content: [
 																				{
 																					block: 'pt-icon-plus',
@@ -4530,7 +4555,7 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																									mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																								}
 																							]
 																						},
@@ -4554,7 +4579,7 @@ module.exports = {
 														},
 														{
 															elem: 'footer',
-															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l' } },
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l' }},
 															content: [
 																{
 																	block: 'button',
@@ -4581,30 +4606,30 @@ module.exports = {
 													content: [
 														{
 															elem: 'content',
-															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' } },
+															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' }},
 															content: [
 																{
 																	elem: 'type',
-																	mix: [ { block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' } }, { block: 'decorator', mods: { 'indent-b': 'xxs' } } ],
+																	mix: [ { block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }}, { block: 'decorator', mods: { 'indent-b': 'xxs' } } ],
 																	content: 'Standard'
 																},
 																{
 																	elem: 'type',
-																	mix: [ { block: 'text', mods: { view: 'primary', size: 'm', align: 'center' } }, { block: 'decorator', mods: { 'indent-b': 'xl' } } ],
+																	mix: [ { block: 'text', mods: { view: 'primary', size: 'm', align: 'center' }}, { block: 'decorator', mods: { 'indent-b': 'xl' } } ],
 																	content: 'For large companies'
 																},
 																{
 																	elem: 'sale',
-																	mix: [{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', weight: 'bold' } }, { block: 'decorator', mods: { 'indent-b': 'l' } }],
+																	mix: [{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', weight: 'bold' }}, { block: 'decorator', mods: { 'indent-b': 'l' } }],
 																	content: '$89'
 																},
 																{
 																	elem: 'assets',
-																	mix: { block: 'decorator', mods: { 'space-h': 'm' } },
+																	mix: { block: 'decorator', mods: { 'space-h': 'm' }},
 																	content: [
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																			content: [
 																				{
 																					block: 'pt-icon-plus',
@@ -4616,7 +4641,7 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																									mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																								}
 																							]
 																						},
@@ -4636,7 +4661,7 @@ module.exports = {
 																		},
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																			content: [
 																				{
 																					block: 'pt-icon-plus',
@@ -4648,7 +4673,7 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																									mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																								}
 																							]
 																						},
@@ -4668,7 +4693,7 @@ module.exports = {
 																		},
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																			content: [
 																				{
 																					block: 'pt-icon-plus',
@@ -4680,7 +4705,7 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																									mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																								}
 																							]
 																						},
@@ -4704,7 +4729,7 @@ module.exports = {
 														},
 														{
 															elem: 'footer',
-															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l' } },
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l' }},
 															content: [
 																{
 																	block: 'button',
@@ -4732,30 +4757,30 @@ module.exports = {
 													content: [
 														{
 															elem: 'content',
-															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' } },
+															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' }},
 															content: [
 																{
 																	elem: 'type',
-																	mix: [ { block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' } }, { block: 'decorator', mods: { 'indent-b': 'xxs' } } ],
+																	mix: [ { block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }}, { block: 'decorator', mods: { 'indent-b': 'xxs' } } ],
 																	content: 'Standard'
 																},
 																{
 																	elem: 'type',
-																	mix: [ { block: 'text', mods: { view: 'primary', size: 'm', align: 'center' } }, { block: 'decorator', mods: { 'indent-b': 'xl' } } ],
+																	mix: [ { block: 'text', mods: { view: 'primary', size: 'm', align: 'center' }}, { block: 'decorator', mods: { 'indent-b': 'xl' } } ],
 																	content: 'For large companies'
 																},
 																{
 																	elem: 'sale',
-																	mix: [{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', weight: 'bold' } }, { block: 'decorator', mods: { 'indent-b': 'l' } }],
+																	mix: [{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', weight: 'bold' }}, { block: 'decorator', mods: { 'indent-b': 'l' } }],
 																	content: '$89'
 																},
 																{
 																	elem: 'assets',
-																	mix: { block: 'decorator', mods: { 'space-h': 'm' } },
+																	mix: { block: 'decorator', mods: { 'space-h': 'm' }},
 																	content: [
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																			content: [
 																				{
 																					block: 'pt-icon-plus',
@@ -4767,7 +4792,7 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																									mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																								}
 																							]
 																						},
@@ -4787,7 +4812,7 @@ module.exports = {
 																		},
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																			content: [
 																				{
 																					block: 'pt-icon-plus',
@@ -4799,7 +4824,7 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																									mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																								}
 																							]
 																						},
@@ -4819,7 +4844,7 @@ module.exports = {
 																		},
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' } },
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																			content: [
 																				{
 																					block: 'pt-icon-plus',
@@ -4831,7 +4856,7 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'arrow-left', size: 's', view: 'primary' }
+																									mods: { name: 'arrow-left', size: 's', view: 'primary', round: 'ghost' }
 																								}
 																							]
 																						},
@@ -4855,7 +4880,7 @@ module.exports = {
 														},
 														{
 															elem: 'footer',
-															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l' } },
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l' }},
 															content: [
 																{
 																	block: 'button',
