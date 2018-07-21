@@ -1112,7 +1112,7 @@ module.exports = {
 																},
 																{
 																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'center' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -1208,7 +1208,7 @@ module.exports = {
 																},
 																{
 																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'center' }},
 																	content: [
 																		{
 																			block: 'text',
