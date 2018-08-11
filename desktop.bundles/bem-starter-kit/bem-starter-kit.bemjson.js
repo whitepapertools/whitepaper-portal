@@ -1117,7 +1117,7 @@ module.exports = {
 																							elemMods: { 'indent-r': 's' },
 																							content: {
 																								block: 'icon',
-																								mods: { name: 'marker', size: 's', view: 'primary', round: 'brand' },
+																								mods: { name: 'marker', size: 's', view: 'primary', round: 'default' },
 																								mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
 																							}
 																						},
@@ -1148,7 +1148,7 @@ module.exports = {
 																							elemMods: { 'indent-r': 's' },
 																							content: {
 																								block: 'icon',
-																								mods: { name: 'protect', size: 's', view: 'primary', round: 'brand' },
+																								mods: { name: 'protect', size: 's', view: 'primary', round: 'default' },
 																								mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
 																							}
 																						},
@@ -1180,7 +1180,7 @@ module.exports = {
 																							elemMods: { 'indent-r': 's' },
 																							content: {
 																								block: 'icon',
-																								mods: { name: 'lock', size: 's', view: 'primary', round: 'brand' },
+																								mods: { name: 'lock', size: 's', view: 'primary', round: 'default' },
 																								mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
 																							}
 																						},
@@ -2526,7 +2526,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'marker', size: 's', view: 'primary', round: 'brand' },
+																							mods: { name: 'marker', size: 's', view: 'primary', round: 'default' },
 																							mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
 																						}
 																					]
@@ -2559,7 +2559,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'phone-1', size: 's', view: 'primary', round: 'brand' },
+																							mods: { name: 'phone-1', size: 's', view: 'primary', round: 'default' },
 																							mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
 																						}
 																					]
@@ -2592,7 +2592,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'comment', size: 's', view: 'primary', round: 'brand' },
+																							mods: { name: 'comment', size: 's', view: 'primary', round: 'default' },
 																							mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
 																						}
 																					]
@@ -2699,7 +2699,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'marker', size: 's', view: 'primary', round: 'brand' },
+																							mods: { name: 'marker', size: 's', view: 'primary', round: 'default' },
 																							mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
 																						}
 																					]
@@ -2732,7 +2732,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'phone-1', size: 's', view: 'primary', round: 'brand' },
+																							mods: { name: 'phone-1', size: 's', view: 'primary', round: 'default' },
 																							mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
 																						}
 																					]
@@ -3614,7 +3614,7 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'icon',
-																			mods: { name: 'fave-1', size: 's', view: 'primary', round: 'brand' },
+																			mods: { name: 'fave-1', size: 's', view: 'primary', round: 'default' },
 																			mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
 																		}
 																	]
@@ -3679,8 +3679,8 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'icon',
-																			mods: { name: 'fave-1', size: 's', view: 'primary', round: 'primary' },
-																			mix: { block: 'theme', mods: { color: 'whitepaper-inverse' }}
+																			mods: { name: 'fave-1', size: 's', view: 'brand', round: 'default' },
+																			mix: { block: 'theme', mods: { color: 'whitepaper-default' }}
 																		}
 																	]
 																}
@@ -4323,7 +4323,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'protect', size: 's', view: 'primary', round: 'brand' },
+																							mods: { name: 'protect', size: 's', view: 'primary', round: 'default' },
 																							mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
 																						}
 																					]
@@ -4350,7 +4350,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'protect', size: 's', view: 'primary', round: 'brand' },
+																							mods: { name: 'protect', size: 's', view: 'primary', round: 'default' },
 																							mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
 																						}
 																					]
@@ -4377,7 +4377,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'lock', size: 's', view: 'primary', round: 'brand' },
+																							mods: { name: 'lock', size: 's', view: 'primary', round: 'default' },
 																							mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
 																						}
 																					]
@@ -4404,7 +4404,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'icon',
-																							mods: { name: 'canceled', size: 's', view: 'primary', round: 'brand' },
+																							mods: { name: 'canceled', size: 's', view: 'primary', round: 'default' },
 																							mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
 																						}
 																					]
@@ -4496,7 +4496,7 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'marker', size: 's', view: 'primary', round: 'brand' },
+																									mods: { name: 'part', size: 's', view: 'primary', round: 'default' },
 																									mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
 																								}
 																							]
@@ -4529,7 +4529,7 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'phone-1', size: 's', view: 'primary', round: 'brand' },
+																									mods: { name: 'wait-2', size: 's', view: 'primary', round: 'default' },
 																									mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
 																								}
 																							]
@@ -4562,7 +4562,7 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'comment', size: 's', view: 'primary', round: 'brand' },
+																									mods: { name: 'statistic', size: 's', view: 'primary', round: 'default' },
 																									mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
 																								}
 																							]
@@ -4649,8 +4649,8 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'marker', size: 's', view: 'primary', round: 'brand' },
-																									mix: { block: 'theme', mods: { color: 'whitepaper-inverse' }}
+																									mods: { name: 'part', size: 's', view: 'brand', round: 'default' },
+																									mix: { block: 'theme', mods: { color: 'whitepaper-default' }}
 																								}
 																							]
 																						},
@@ -4682,8 +4682,8 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'marker', size: 's', view: 'primary', round: 'brand' },
-																									mix: { block: 'theme', mods: { color: 'whitepaper-inverse' }}
+																									mods: { name: 'wait-2', size: 's', view: 'brand', round: 'default' },
+																									mix: { block: 'theme', mods: { color: 'whitepaper-default' }}
 																								}
 																							]
 																						},
@@ -4715,8 +4715,8 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'marker', size: 's', view: 'primary', round: 'brand' },
-																									mix: { block: 'theme', mods: { color: 'whitepaper-inverse' }}
+																									mods: { name: 'statistic', size: 's', view: 'brand', round: 'default' },
+																									mix: { block: 'theme', mods: { color: 'whitepaper-default' }}
 																								}
 																							]
 																						},
@@ -4803,8 +4803,8 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'marker', size: 's', view: 'primary', round: 'brand' },
-																									mix: { block: 'theme', mods: { color: 'whitepaper-inverse' }}
+																									mods: { name: 'part', size: 's', view: 'primary', round: 'default' },
+																									mix: { block: 'theme', mods: { color: 'whitepaper-default' }}
 																								}
 																							]
 																						},
@@ -4836,8 +4836,8 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'marker', size: 's', view: 'primary', round: 'brand' },
-																									mix: { block: 'theme', mods: { color: 'whitepaper-inverse' }}
+																									mods: { name: 'wait-2', size: 's', view: 'primary', round: 'default' },
+																									mix: { block: 'theme', mods: { color: 'whitepaper-default' }}
 																								}
 																							]
 																						},
@@ -4869,8 +4869,8 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'icon',
-																									mods: { name: 'marker', size: 's', view: 'primary', round: 'brand' },
-																									mix: { block: 'theme', mods: { color: 'whitepaper-inverse' }}
+																									mods: { name: 'statistic', size: 's', view: 'primary', round: 'default' },
+																									mix: { block: 'theme', mods: { color: 'whitepaper-default' }}
 																								}
 																							]
 																						},
