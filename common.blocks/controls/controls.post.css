@@ -1,0 +1,20 @@
+.controls {
+	padding: var(--space-xxxxl) 0;
+	&__item {
+		margin-bottom: var(--space-s);
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&_width {
+			&_s {
+				width: 230px;
+			}
+		}
+	}
+	&__section {
+		margin-bottom: var(--space-xxxl);
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
