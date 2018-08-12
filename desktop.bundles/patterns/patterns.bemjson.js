@@ -125,6 +125,7 @@ module.exports = {
 														{
 															block: 'text',
 															mods: { view: 'link', size: 'l' },
+                                                            tag: 'a',
 															attrs: {
 																'href': 'https://github.com/whitepapertools/whitepaper-bem/blob/master/pt-list/pt-list.md'
 															},
