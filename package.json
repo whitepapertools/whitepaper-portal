@@ -46,7 +46,7 @@
     "postcss-nested": "^2.0.2",
     "postcss-reporter": "^4.0.0",
     "postcss-simple-vars": "^4.0.0",
-    "postcss-url": "^7.3.2",
+    "postcss-url": "^8.0.0",
     "rebem-css": "^0.2.0",
     "through2-filter": "^2.0.0",
     "whitepaper-bem": "^0.0.14",
