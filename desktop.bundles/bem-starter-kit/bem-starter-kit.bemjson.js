@@ -14,7 +14,7 @@ module.exports = {
 	mix: [
 		{
 			block: 'theme',
-			mods: { color: 'whitepaper-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
+			mods: { color: 'whitepaper-default', space: 'default', breakpoint: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
 		},
 		{
 			block: 'component',
@@ -3305,8 +3305,8 @@ module.exports = {
 													block: 'informer',
 													mods: { view: 'alert' },
 													mix: [
-														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-														{ block: 'component', mods: { whitepaper: 'inverse' }},
+														{ block: 'theme', mods: { color: 'whitepaper-alert' }},
+														{ block: 'component', mods: { whitepaper: 'alert' }},
 														{ block: 'pt-card' },
 														{ block: 'pt-informer', mods: { view: 'alert' }}
 													],
@@ -3394,8 +3394,8 @@ module.exports = {
 													block: 'informer',
 													mods: { view: 'warning' },
 													mix: [
-														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-														{ block: 'component', mods: { whitepaper: 'inverse' }},
+														{ block: 'theme', mods: { color: 'whitepaper-warning' }},
+														{ block: 'component', mods: { whitepaper: 'warning' }},
 														{ block: 'pt-card' },
 														{ block: 'pt-informer', mods: { view: 'warning' }}
 													],
@@ -3483,8 +3483,8 @@ module.exports = {
 													block: 'informer',
 													mods: { view: 'success' },
 													mix: [
-														{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-														{ block: 'component', mods: { whitepaper: 'inverse' }},
+														{ block: 'theme', mods: { color: 'whitepaper-success' }},
+														{ block: 'component', mods: { whitepaper: 'success' }},
 														{ block: 'pt-card' },
 														{ block: 'pt-informer', mods: { view: 'success' }}
 													],
