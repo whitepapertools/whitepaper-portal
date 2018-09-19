@@ -17,7 +17,7 @@
     left: 50%;
     top: var(--space-xl);
     border-radius: 50%;
-    background: var(--color-inverse);
+    background: var(--color-bg-tone);
   }
   &__goods-price {
     position: absolute;
@@ -27,7 +27,7 @@
     font-size: 150px;
     line-height: 195px;
     z-index: 2;
-    -webkit-text-stroke: 1px var(--color-typo-letter);
+    -webkit-text-stroke: 1px #FD2443;
     -webkit-text-fill-color: transparent;
   }
   &__goods-item {
