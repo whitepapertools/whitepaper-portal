@@ -595,7 +595,7 @@ module.exports = {
 						{
 							elem: 'action',
 							mix: [
-								{ block: 'pt-card', elem: 'footer', elemMods: { 'space-v': 'xl', align: 'center' } },
+								{ block: 'pt-card', elem: 'footer', elemMods: { 'space-v': 'xl', distribute: 'center' } },
 								{ block: 'promo-cards', elem: 'offer-goods-action'},
 							],
 							content: [
@@ -701,7 +701,7 @@ module.exports = {
 						{
 							elem: 'title',
 							mix: [
-								{ block: 'pt-card', elem: 'header', elemMods: { 'space-v': 'xxl', align: 'center' } },
+								{ block: 'pt-card', elem: 'header', elemMods: { 'space-v': 'xxl', distribute: 'center' } },
 								{ block: 'promo-cards', elem: 'offer-service-title'},
 							],
 							content: [
@@ -1002,7 +1002,10 @@ module.exports = {
 						content: [
 						{
 							elem: 'cover',
-							mix: [{ block: 'pt-card', elem: 'image', elemMods: { shadow: 'bottom-inverse', size: 'cover' } }, { block: 'promo-cards', elem: 'media-video' }],
+							mix: [
+								{ block: 'pt-card', elem: 'image', elemMods: { shadow: 'bottom-inverse', size: 'cover' } },
+								{ block: 'promo-cards', elem: 'media-video' },
+							],
 							content: [
 								{
 									block: 'image',
@@ -1016,31 +1019,30 @@ module.exports = {
 							content: [
 							{
 								block: 'image',
-								mix: { block: 'promo-cards', elem: 'apps-recommendation-photo' },
+								mix: [
+									{ block: 'promo-cards', elem: 'apps-recommendation-photo' },
+									{ block: 'decorator', mods: { 'indent-b': 'xxxxxl' } },
+								],
 								url: '/assets/i/ustwo.svg',
-								attrs: {
-									'style': 'margin: auto'
-								}
+								// attrs: {
+								// 	'style': 'margin: auto'
+								// }
 							},
 							{
 								elem: 'about',
-								mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl' }},
+								mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl', distribute: 'center' }},
 								content: [
 								{
-									block: 'wrap',
-									content: [
-									{
-										block: 'text',
-										mods: { size: 'xxxl', view: 'primary', align: 'center', weight: 'bold' },
-										mix: [{ block: 'decorator', mods: { 'space-b': 'l' }}, { block: 'promo-cards', elem: 'apps-recommendation-info' }],
-										content: 'From our Bafta award winning hit!'
-									},
-									{
-										block: 'text',
-										mix: { block: 'promo-cards', elem: 'apps-recommendation-info' },
-										mods: { size: 'm', view: 'primary', align: 'center' },
-										content: 'Enjoy beautiful levels filled with illusory, meditative puzzles'
-									}]
+									block: 'text',
+									mods: { size: 'xxxl', view: 'primary', align: 'center', weight: 'bold' },
+									mix: [{ block: 'decorator', mods: { 'space-b': 's' }}, { block: 'promo-cards', elem: 'apps-recommendation-info' }],
+									content: 'From our Bafta award winning hit!'
+								},
+								{
+									block: 'text',
+									mix: { block: 'promo-cards', elem: 'apps-recommendation-info' },
+									mods: { size: 'm', view: 'secondary', align: 'center' },
+									content: 'Enjoy beautiful meditative puzzle game'
 								}]
 							}]
 						},
@@ -1285,8 +1287,6 @@ module.exports = {
 					{
 						block: 'donate',
 						mix: [
-							{ block: 'theme', mods: { color: 'whitepaper-default' }},
-							{ block: 'component', mods: { whitepaper: 'default' }},
 							{ block: 'pt-card', mods: { view: 'default' } },
 							{ block: 'promo-cards', elem: 'hover' },
 							{ block: 'promo-cards', elem: 'donate-person' },
@@ -1309,23 +1309,23 @@ module.exports = {
 							}]
 						},
 						{
+							elem: 'person-avatar-wrapper',
+							mix: [
+								{ block: 'pt-card', elem: 'header' },
+							],
+							content: [
+							{
+								elem: 'person-avatar',
+								mix: [
+									{ block: 'avatar', elem: 'photo', elemMods: { size: 'm' } },
+									{ block: 'promo-cards', elem: 'donate-person-avatar'},
+								]
+							}]
+						},
+						{
 							elem: 'person-info',
 							mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-h': 'l', 'space-t': 'xxl' } },
 							content: [
-							{
-								elem: 'person-avatar-wrapper',
-								mix: [
-									{ block: 'pt-card', elem: 'header' },
-								],
-								content: [
-								{
-									elem: 'person-avatar',
-									mix: [
-										{ block: 'avatar', elem: 'photo', elemMods: { size: 'm' } },
-										{ block: 'promo-cards', elem: 'donate-person-avatar'},
-									]
-								}]
-							},
 							{
 								block: 'text',
 								mix: [
@@ -1520,7 +1520,7 @@ module.exports = {
 						},
 						{
 							elem: 'event-header',
-							mix: { block: 'pt-card', elem: 'header', elemMods: { align: 'center' } },
+							mix: { block: 'pt-card', elem: 'header', elemMods: { distribute: 'center' } },
 							content: [
 							{
 								elem: 'wrap',
