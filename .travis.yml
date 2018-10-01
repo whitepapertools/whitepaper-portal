@@ -3,15 +3,15 @@ node_js:
   - "node"
   - "6"
   - "4"
-  
+
 script:
   - npm run-script build
 
 before_deploy:
   - mkdir deploy
   - find desktop.bundles/ \( -name '*.min.css' -or -name '*.html' -or -name '*.min.js' \) -exec mv {} deploy/ \;
-  - mv assets docs static .nojekyll CNAME favicon.ico deploy/
-  
+  - mv assets docs static cdn .nojekyll CNAME favicon.ico deploy/
+
 deploy:
   provider: pages
   skip_cleanup: true

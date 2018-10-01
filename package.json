@@ -38,7 +38,7 @@
     "gulp-postcss": "^7.0.1",
     "gulp-uglify": "^3.0.1",
     "merge2": "^1.2.2",
-    "postcss-calc": "^6.0.0",
+    "postcss-calc": "^6.0.2",
     "postcss-color-function": "^4.0.0",
     "postcss-each": "^0.10.0",
     "postcss-for": "^2.1.1",
@@ -49,7 +49,7 @@
     "postcss-url": "^8.0.0",
     "rebem-css": "^0.2.0",
     "through2-filter": "^2.0.0",
-    "whitepaper-bem": "^0.0.20",
+    "whitepaper-bem": "^1.0.0",
     "ym": "^0.1.2"
   },
   "scripts": {
