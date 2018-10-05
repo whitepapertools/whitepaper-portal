@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="https://whitepaper.tools/whitepaper.min.css">
+		<link rel="stylesheet" href="https://whitepaper.tools/cdn/whitepaper-1.0.0.min.css">
 	</head>
 	<body></body>
 </html>
