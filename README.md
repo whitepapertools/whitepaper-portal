@@ -2,6 +2,8 @@
 
 Репозиторий портала whitepaper.tools
 
+[![Build Status](https://travis-ci.org/whitepapertools/whitepaper-portal.svg?branch=master)](https://travis-ci.org/whitepapertools/whitepaper-portal)
+
 ## Дизайн система
 
 Whirepaper – открытая некомпонентная декларативная дизайн-система. В ее основе лежит БЭМ-методология.
