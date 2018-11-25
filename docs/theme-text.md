@@ -1,7 +1,36 @@
 # Типографика
 
+Переменные размеров используются в текстовых блоках и подчёркивают информационную иерархию.
+
 Задает размеры и высоты строк для контентного блока [text](content-text.md).
 Эти переменные могут использоваться в локальных стилях, но только когда нет возможности использовать блок [text](content-text.md).
 
-<iframe height='300' scrolling='no' title='theme. size' src='//codepen.io/whitepapertools/embed/ada0df54d5ab15b80076cb883f81fe08/?height=300&theme-id=0&default-tab=css,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/whitepapertools/pen/ada0df54d5ab15b80076cb883f81fe08/'>theme. size</a> by whitepaper (<a href='https://codepen.io/whitepapertools'>@whitepapertools</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+```CSS
+:root {
+	/* Размер текста */
+	--size-typo-xs: 11px;
+	--size-typo-s: 13px;
+	--size-typo-m: 15px;
+	--size-typo-l: 18px;
+	--size-typo-xl: 20px;
+	--size-typo-xxl: 24px;
+	--size-typo-xxxl: 32px;
+	--size-typo-xxxxl: 48px;
+	--size-typo-xxxxxl: 72px;
+	--size-typo-xxxxxxl: 96px;
+
+	/* Межстрочный интервал */
+	--line-height-typo-xs: 15px;
+	--line-height-typo-s: 18px;
+	--line-height-typo-m: 21px;
+	--line-height-typo-l: 25px;
+	--line-height-typo-xl: 28px;
+	--line-height-typo-xxl: 34px;
+	--line-height-typo-xxxl: 42px;
+	--line-height-typo-xxxxl: 62px;
+	--line-height-typo-xxxxxl: 82px;
+	--line-height-typo-xxxxxxl: 115px;
+}
+```
+
+Стили модфикаторов на блоке текст можно посмотреть [здесь](http://whitepaper.tools/doc.html#/content-text).
