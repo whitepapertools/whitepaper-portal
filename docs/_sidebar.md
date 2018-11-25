@@ -1,7 +1,7 @@
 * [Нейминг](naming.md)
 * [BEMJSON](bemjson.md)
 
-* [Основы White Paper](whitepaper.md)
+* [Основы Whitepaper](whitepaper.md)
 
 * [Тема](theme.md)
 	* [Цвета](theme-color.md)
