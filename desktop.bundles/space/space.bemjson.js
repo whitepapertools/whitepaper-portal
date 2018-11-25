@@ -62,7 +62,7 @@ module.exports = {
 							elem: 'row',
 							mix: { block: 'tpl-grid', mods: { ratio: '1-1-1-1', 'col-gap': 'two-thirds', 'row-gap': 'two-thirds' }},
 							content: [
-								
+
 								{
 									block: 'space',
 									content: [

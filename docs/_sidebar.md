@@ -7,7 +7,8 @@
 	* [Цвета](theme-color.md)
 	* [Отступы](theme-space.md)
 	* [Типографика](theme-text.md)
-	* [Сеточные правила](theme-layout.md)
+	* [Брейкпоинты](theme-breakpoint.md)
+	* [Сеточные правила](theme-gap.md)
 
 * [Сетка](layout.md)
 	* [Обвязки](layout-outer.md)

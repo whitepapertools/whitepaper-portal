@@ -2,7 +2,7 @@
 	height: 96px;
 	width: 96px;
 	background: var(--color-bg-border);
-	margin-bottom: var(--space-s);	
+	margin-bottom: var(--space-s);
 }
 
 .space-image {
@@ -47,6 +47,14 @@
 		&_xxxxl {
 			width: var(--space-xxxxl);
 			height: var(--space-xxxxl);
+		}
+		&_xxxxxl {
+			width: var(--space-xxxxxl);
+			height: var(--space-xxxxxl);
+		}
+		&_xxxxxxl {
+			width: var(--space-xxxxxxl);
+			height: var(--space-xxxxxxl);
 		}
 	}
 }
