@@ -1,0 +1,11 @@
+.doc-view {
+		box-sizing: border-box;
+		position: relative;
+		display: flex;
+		align-items: center;
+		margin-bottom: var(--space-xs);
+	&__mod-name {
+		width: 120px;
+		padding-right: var(--space-l);
+	}
+}

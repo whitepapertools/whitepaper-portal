@@ -3,8 +3,10 @@
 		shouldDeps: [
 			{ block: 'color' },
 			{ block: 'color', elem: 'image' },
-			{ block: 'typography' },
-			{ block: 'typography', elem: 'view' },
+			{ block: 'doc-view' },
+			{ block: 'badge', mods: { view: ['default', 'alert', 'warning', 'success'] } },
+			{ block: 'icon' },
+			{ block: 'icon', mods: { name: 'close', size: 's', view: 'ghost' } }
 		]
 	}
 ])
