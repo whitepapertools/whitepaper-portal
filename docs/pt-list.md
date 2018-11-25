@@ -1,44 +1,193 @@
 # pt-list
 
-![pt-list](_images/pt-list.png)
+<div class="pt-list pt-list_border_all pt-list_view_default">
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Первая операция
+		</div>
+		<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+			+1000 ₽
+		</div>
+	</div>
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Вторая операция
+		</div>
+		<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+			-500 ₽
+		</div>
+	</div>
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Третья операция
+		</div>
+		<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+			+2000 ₽
+		</div>
+	</div>
+</div>
 
-`pt-list` – это описание списка похожих друг на друга вертикально перечисленных сущностей.
+`pt-list` используется для вертикального представления повторяющихся сущностей. Отлично подходит для отображения истории, контактов, вертикальных меню.
 
-Структура блока очень простая:
+* [Модификаторы блока](#Модификаторы)
+* [Элементы](#Элементы)
+* [Пример](#Пример)
 
-```js
-{
-	block: 'pt-list',
-	content: [
-	{
-		elem: 'item'
-	},
-	{
-		elem: 'item'
-	}]
-}
-```
+___
 
-Пример списка.
+## Модификаторы блока
 
-<iframe height='500' scrolling='no' title='pt-list. flat' src='//codepen.io/whitepapertools/embed/138d1417680b2e1e4c75f9f5fffb7d39/?height=500&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/whitepapertools/pen/138d1417680b2e1e4c75f9f5fffb7d39/'>pt-list. flat</a> by whitepaper (<a href='https://codepen.io/whitepapertools'>@whitepapertools</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+Модификатор        | Значение        | Описание
+------------------ | --------------- | ---------------
+[border](#border)  | all             | Устанавливает границу вокруг блока
+[view](#view)      | default / ghost | Управляет фоном списка
 
-Модификатор | Значение
------------ | ---------------
-border      | all
-view        | default / ghost
+### border
 
+<div class="demo__row">
+	<div class="doc-view" style="margin-bottom: var(--space-xl);">
+		<div class="doc-view__mod-name">
+			<div class="text text_size_xl text_view_ghost">не задан</div>
+		</div>
+		<div class="pt-list pt-list_view_default" style="min-width: 400px;">
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="doc-view">
+		<div class="doc-view__mod-name">
+			<div class="text text_size_xl text_view_ghost">all</div>
+		</div>
+		<div class="pt-list pt-list_border_all pt-list_view_default" style="min-width: 400px;">
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-Элементы `item` могут включать в себя друг друга.
+### view
 
-<iframe height='500' scrolling='no' title='pt-list. nested' src='//codepen.io/whitepapertools/embed/60834c80ab573c6afdd1ed88f6b71f1f/?height=500&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/whitepapertools/pen/60834c80ab573c6afdd1ed88f6b71f1f/'>pt-list. nested</a> by whitepaper (<a href='https://codepen.io/whitepapertools'>@whitepapertools</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+<div class="demo__row">
+	<div class="doc-view" style="margin-bottom: var(--space-xl);">
+		<div class="doc-view__mod-name">
+			<div class="text text_size_xl text_view_ghost">default</div>
+		</div>
+		<div class="pt-list pt-list_view_default" style="min-width: 400px;">
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="doc-view">
+		<div class="doc-view__mod-name">
+			<div class="text text_size_xl text_view_ghost">ghost</div>
+		</div>
+		<div class="pt-list pt-list_view_ghost" style="min-width: 400px;">
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+___
+
+## Элементы
+
+### item
+
+Элемент определяет строку списка. Является контейнером для контента строки. Элементы `item` могут включать в себя друг друга.
 
 Модификаторы элемента `item` | Значение                         | Описание
 ---------------------------- | -------------------------------- | -------------------------------------
-border                       | bottom / top                     | Обводка
-distribute                   | default / between                | Распределение контента по горизонтали
+[border](#border)            | bottom / top                     | Обводка
+[distribute](#distribute)    | default / between                | Распределение контента по горизонтали
 vertical-align               | center / top / baseline          | Вертикальное выравнивание контента
 indent-a                     | xs / s / m / l / xl / xxl / xxxl | Внешние отступы со всех сторон
 indent-h                     | xs / s / m / l / xl / xxl / xxxl | Внешние отступы по горизонтали
@@ -54,3 +203,228 @@ space-t                      | xxs / xs / s / m / l / xl / xxl  | Внутрен
 space-r                      | xxs / xs / s / m / l / xl / xxl  | Внутренний отступ справа
 space-b                      | xxs / xs / s / m / l / xl / xxl  | Внутренний отступ снизу
 space-l                      | xxs / xs / s / m / l / xl / xxl  | Внутренний отступ слева
+
+#### border
+
+<div class="demo__row">
+	<div class="doc-view" style="margin-bottom: var(--space-xl);">
+		<div class="doc-view__mod-name">
+			<div class="text text_size_xl text_view_ghost">не задан</div>
+		</div>
+		<div class="pt-list pt-list_view_default" style="min-width: 400px;">
+			<div class="pt-list__item pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="doc-view">
+		<div class="doc-view__mod-name">
+			<div class="text text_size_xl text_view_ghost">bottom</div>
+		</div>
+		<div class="pt-list pt-list_view_default" style="min-width: 400px;">
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="doc-view">
+		<div class="doc-view__mod-name">
+			<div class="text text_size_xl text_view_ghost">top</div>
+		</div>
+		<div class="pt-list pt-list_view_default" style="min-width: 400px;">
+			<div class="pt-list__item pt-list__item_border_top pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_top pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_top pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+#### distribute
+
+<div class="demo__row">
+	<div class="doc-view">
+		<div class="doc-view__mod-name">
+			<div class="text text_size_xl text_view_ghost">default</div>
+		</div>
+		<div class="pt-list pt-list_view_default" style="min-width: 400px;">
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_default pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s" style="padding-right: var(--space-l);">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_default pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s" style="padding-right: var(--space-l);">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_default pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s" style="padding-right: var(--space-l);">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="doc-view">
+		<div class="doc-view__mod-name">
+			<div class="text text_size_xl text_view_ghost">between</div>
+		</div>
+		<div class="pt-list pt-list_view_default" style="min-width: 400px;">
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Первая операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+1000 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Вторая операция
+				</div>
+				<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+					-500 ₽
+				</div>
+			</div>
+			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
+				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+					Третья операция
+				</div>
+				<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+					+2000 ₽
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+___
+
+## Пример
+
+<div class="pt-list pt-list_border_all pt-list_view_default">
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Первая операция
+		</div>
+		<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+			+1000 ₽
+		</div>
+	</div>
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Вторая операция
+		</div>
+		<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+			-500 ₽
+		</div>
+	</div>
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Третья операция
+		</div>
+		<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+			+2000 ₽
+		</div>
+	</div>
+</div>
+
+```html
+<div class="pt-list pt-list_border_all pt-list_view_default">
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Первая операция
+		</div>
+		<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+			+1000 ₽
+		</div>
+	</div>
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Вторая операция
+		</div>
+		<div class="text text_size_m text_view_alert text_weight_bold text_transform_uppercase text_spacing_s">
+			-500 ₽
+		</div>
+	</div>
+	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
+		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
+			Третья операция
+		</div>
+		<div class="text text_size_m text_view_success text_weight_bold text_transform_uppercase text_spacing_s">
+			+2000 ₽
+		</div>
+	</div>
+</div>
+```
