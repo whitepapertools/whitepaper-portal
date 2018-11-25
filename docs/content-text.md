@@ -4,7 +4,13 @@
 
 Для манипуляции всеми этими свойствами у нас есть блок `text`. С его помощью каждый текстовый блок можно обернуть и применять модификаторы.
 
-## Модификаторы
+Кегль, межстрочное расстояние и цвет текста, задаются через переменные, которые описываются в [теме](http://whitepaper.tools/doc.html#/theme-text).
+
+[Модификаторы](#Модификаторы)
+
+[Пример](#Пример)
+
+## Модификаторы блока
 
 Модификатор | Значение                                         | Описание
 ----------- | ------------------------------------------------ | ------------------------------------
@@ -16,7 +22,7 @@ display | block / inline-block / inline            | Способ отображ
 [style](#style) | italic                                       | Курсив
 [transform](#transform) | uppercase                            | Верхний регистр
 type | h1 / h2 / h3 / p / blockquote                  | Стиль текста
-[view](#view) | alert / brand / disable / ghost / link-minor / link / primary / promo / secondary / success / letter / income | Цвет
+[view](#view) | alert / brand / disable / ghost / link-minor / link / primary / promo / secondary / success / warning | Цвет
 [weight](#view) | black / bold / semibold / regular / light / thin | Жирность шрифта
 
 ### decoration:
@@ -135,70 +141,6 @@ type | h1 / h2 / h3 / p / blockquote                  | Стиль текста
     </div>
 </div>
 
-<!-- ### type:
-<div class="demo__row tpl-grid_row-gap_one-thirds">
-    <div class="doc-view">
-
-            <div class="doc-view__mod-name">
-                <div class="text text_size_xl text_view_ghost">h1</div>
-            </div>
-            <div>
-                <div class="text text_size_xl text_view_ghost">Часть текста предыдушего параграфа</div>
-                <div class="text text_size_xl text_type_h1">Typography</div>
-                <div class="text text_size_xl text_view_ghost">Начало нового параграфа</div>
-            </div>
-        </div>
-    </div>
-    <div class="doc-view">
-
-            <div class="doc-view__mod-name">
-                <div class="text text_size_xl text_view_ghost">h2</div>
-            </div>
-            <div>
-                <div class="text text_size_xl text_view_ghost">Часть текста предыдушего параграфа</div>
-                <div class="text text_size_xl text_type_h2">Typography</div>
-                <div class="text text_size_xl text_view_ghost">Начало нового параграфа</div>
-            </div>
-        </div>
-    </div>
-    <div class="doc-view">
-
-            <div class="doc-view__mod-name">
-                <div class="text text_size_xl text_view_ghost">h3</div>
-            </div>
-            <div>
-                <div class="text text_size_xl text_view_ghost">Часть текста предыдушего параграфа</div>
-                <div class="text text_size_xl text_type_h3">Typography</div>
-                <div class="text text_size_xl text_view_ghost">Начало нового параграфа</div>
-            </div>
-        </div>
-    </div>
-    <div class="doc-view">
-
-            <div class="doc-view__mod-name">
-                <div class="text text_size_xl text_view_ghost">p</div>
-            </div>
-            <div>
-                <div class="text text_size_xl text_view_ghost">Часть текста предыдушего параграфа</div>
-                <div class="text text_size_xl text_type_p">Typography</div>
-                <div class="text text_size_xl text_view_ghost">Начало нового параграфа</div>
-            </div>
-        </div>
-    </div>
-    <div class="doc-view">
-
-            <div class="doc-view__mod-name">
-                <div class="text text_size_xl text_view_ghost">blockquote</div>
-            </div>
-            <div>
-                <div class="text text_size_xl text_view_ghost">Часть текста предыдушего параграфа</div>
-                <div class="text text_size_xl text_type_blockquote">Typography</div>
-                <div class="text text_size_xl text_view_ghost">Начало нового параграфа</div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
 ### view:
 <div class="demo__row">
     <div class="doc-view">
@@ -233,15 +175,9 @@ type | h1 / h2 / h3 / p / blockquote                  | Стиль текста
     </div>
     <div class="doc-view">
         <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">income</div>
+            <div class="text text_size_xl text_view_ghost">warning</div>
         </div>
-        <div class="text text_size_xl text_view_income">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">letter</div>
-        </div>
-        <div class="text text_size_xl text_view_letter">Typography</div>
+        <div class="text text_size_xl text_view_warning">Typography</div>
     </div>
     <div class="doc-view">
         <div class="doc-view__mod-name">
