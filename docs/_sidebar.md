@@ -9,6 +9,7 @@
 	* [Типографика](theme-text.md)
 	* [Брейкпоинты](theme-breakpoint.md)
 	* [Сеточные правила](theme-gap.md)
+	* [Шрифты](theme-font.md)
 
 * [Сетка](layout.md)
 	* [Обвязки](layout-outer.md)
