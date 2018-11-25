@@ -6,9 +6,8 @@
 
 Кегль, межстрочное расстояние и цвет текста, задаются через переменные, которые описываются в [теме](http://whitepaper.tools/doc.html#/theme-text).
 
-[Модификаторы](#Модификаторы)
-
-[Пример](#Пример)
+* [Модификаторы](#Модификаторы)
+* [Пример](#Пример)
 
 ## Модификаторы блока
 
@@ -43,6 +42,12 @@ type | h1 / h2 / h3 / p / blockquote                  | Стиль текста
 
 ### size:
 <div class="demo__row">
+    <div class="doc-view">
+        <div class="doc-view__mod-name">
+            <div class="text text_size_xl text_view_ghost">xxxxl</div>
+        </div>
+        <div class="text text_size_xxxxl">Typography</div>
+    </div>
     <div class="doc-view">
         <div class="doc-view__mod-name">
             <div class="text text_size_xl text_view_ghost">xxxl</div>
