@@ -79,6 +79,3 @@
 	</div>
 </div>
 ```
-
-<!-- <iframe height='500' scrolling='no' title='tag' src='//codepen.io/whitepapertools/embed/093f2fd999b676a1986b847dc827945d/?height=500&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/whitepapertools/pen/093f2fd999b676a1986b847dc827945d/'>tag</a> by whitepaper (<a href='https://codepen.io/whitepapertools'>@whitepapertools</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe> -->
