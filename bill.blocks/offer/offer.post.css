@@ -1,7 +1,7 @@
 .offer {
-  width: 296px;
+	min-width: 296px;
+	min-height: 456px;
   overflow: hidden;
-  border-radius: 12px;
 
   /* Goods-offer */
   &__goods-header {

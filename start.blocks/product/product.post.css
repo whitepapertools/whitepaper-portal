@@ -11,7 +11,7 @@
 				background: var(--color-bg-default);
 			}
 			&_unfold {
-				background: var(--color-link);
+				background: var(--color-bg-default);
 			}
 		}
 	}
