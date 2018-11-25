@@ -43,6 +43,8 @@ ___
 	</div>
 </div>
 
+___
+
 ## Пример
 
 <div class="badge badge_view_success">Успешный статус</div>

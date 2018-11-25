@@ -258,6 +258,8 @@ type | h1 / h2 / h3 / p / blockquote                  | Стиль текста
     </div>
 </div>
 
+___
+
 ## Пример
 
 <div class="text text_size_xxl text_view_brand text_weight_bold text_type_h2 text_align_center">
