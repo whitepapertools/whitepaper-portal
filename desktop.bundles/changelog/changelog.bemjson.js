@@ -12,7 +12,7 @@ module.exports = {
 	],
 	scripts: [
 		{ elem: 'js', url: '//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js' },
-		// { elem: 'js', url: '//unpkg.com/docsify/lib/plugins/search.min.js' },
+		/* { elem: 'js', url: '//unpkg.com/docsify/lib/plugins/search.min.js' }, */   /* скрипт подключает поиск в боковое меню */
 		{ elem: 'js', url: 'changelog.min.js' },
 	],
 	mods: { theme: 'islands' },
@@ -32,27 +32,6 @@ module.exports = {
 				},
 				/* /Menu */
 
-				/*
-				// заголовок
-				{
-					block: 'text',
-					mods: { size: 'xxxxl', weight: 'bold', font: 'sans' },
-					mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-					content: 'История обновлений'
-				},
-				// подзаголовок
-				{
-					block: 'text',
-					mods: { size: 'l' },
-					mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
-					content: [
-						{
-							elem: 'row',
-							content: 'Пока оставил строку, мб пригодится'
-						}
-					]
-				},
-				*/
 
 				{
 					elem: 'docsify-content',
@@ -60,7 +39,9 @@ module.exports = {
 					content: [
 						{
 							block: 'docsify',
-							attrs: { id: 'app' }
+							attrs: { id: 'app' },
+							mix: { block: 'docsify-modifier' },
+							// модифаер убирает контрол sidebar-toggle из боковой панели доксифая
 						},
 						{
 							elem: 'section',
@@ -79,22 +60,22 @@ module.exports = {
 				},
 
 				/* Content */
-				{
-					elem: 'content',
-					// elemMods: { size: 'm' },
-					content: [
-
-					]
-				},
+				// {
+				// 	elem: 'content',
+				// 	// elemMods: { size: 'm' },
+				// 	content: [
+				//
+				// 	]
+				// },
 				/* /Content */
 
 				/* Footer */
-				/*
-				{
-					block: 'footer',
-					mix: { block: 'demo', elem: 'footer' }
-				}
-				*/
+
+				// {
+				// 	block: 'footer',
+				// 	mix: { block: 'demo', elem: 'footer' }
+				// }
+
 				/* /Footer */
 			]
 		}
