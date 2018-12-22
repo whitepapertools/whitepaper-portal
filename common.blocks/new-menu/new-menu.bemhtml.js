@@ -124,7 +124,7 @@ block('new-menu')(
 											mix: { block: 'new-menu', elem: 'dropdown-link' },
 											content: 'Бейджи'
 										},
-										{	
+										{
 											block: 'text',
 											mods: { size: 'm', view: 'primary' },
 											tag: 'a', attrs: { href: '/tag.html' },
@@ -173,7 +173,7 @@ block('new-menu')(
 								}
 							]
 						},
-						
+
 						{
 							block: 'text',
 							mods: { size: 'm', view: 'primary' },
@@ -189,6 +189,14 @@ block('new-menu')(
 							attrs: { href: 'https://ui8.net/products/kit-bill', target: '_blank' },
 							mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
 							content: 'Материалы'
+						},
+						{
+							block: 'text',
+							mods: { size: 'm', view: 'primary' },
+							tag: 'a',
+							attrs: { href: '/changelog.html' },
+							mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' }, },
+							content: 'Версии'
 						}
 
 
