@@ -1,12 +1,12 @@
 .colorizer {
 	display: flex;
-	justify-content: flex-end;
+	height: 100%;
+	align-items: center;
 	&__color {
 		height: 48px;
 		width: 48px;
 		border-radius: 50%;
 		margin-left: 16px;
-		/* box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.05); */
 		position: relative;
 		&:hover {
 			cursor: pointer;
@@ -24,7 +24,7 @@
 		}
 		&_view {
 			&_whitepaper {
-				background: rgb(0, 112, 240);
+				background: #0070F0;
 			}
 			&_megafon {
 				background: #00b956;
@@ -36,9 +36,16 @@
 		&_state {
 			&_active {
 				&::after { 
-					background: #fff;
+					background: var(--color-bg-default);
 				}
 			}
 		}
+	}
+}
+
+@media screen and (min-width: $screen-m) {
+	.colorizer {
+		display: flex;
+		justify-content: flex-end;
 	}
 }
