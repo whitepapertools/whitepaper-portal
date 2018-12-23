@@ -85,17 +85,6 @@
     align-items: center;
     height: 72px;
   }
-  &__control {
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 500;
-    width: 32px;
-    text-align: center;
-    color: #69CD95;
-    padding-bottom: 4px;
-    background-color: rgba(105,205,149,.22);
-    border-radius: 999em;
-  }
   &__event-avatar-group {
     display: inline-flex;
     align-items: center;
@@ -120,13 +109,4 @@
       }
     }
   }
-}
-
-.text {
-  &_size {
-    &_4xl {
-      font-size: 52px;
-    }
-  }
-
 }

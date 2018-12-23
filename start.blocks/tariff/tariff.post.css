@@ -9,6 +9,7 @@
 	&_view {
 		&_image {
 			background-image: url('cover.png');
+			background-size: cover;
 		}
 	}
 }

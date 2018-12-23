@@ -59,12 +59,4 @@
       transition: transform .35s cubic-bezier(0.25, 0.1, 0, 3), background-color .2s;
     }
   }
-
-  /* Brand-offer */
-	/* &__brand-image-wrapper {
-		height: 248px;
-		overflow: hidden;
-	} */
-
-  /* Service-offer */
 }
