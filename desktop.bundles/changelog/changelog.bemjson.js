@@ -50,7 +50,7 @@ module.exports = {
 									tag: 'script',
 									content: 'window.$docsify = { '
 												+ 'loadSidebar: true, '
-												+ 'basePath: \'/docs-versions/\', '
+												+ 'basePath: \'/docs-changelog/\', '
 												+ 'mergeNavbar: true, '
 												+ '}'
 								}
