@@ -1,0 +1,6 @@
+.preview {
+	display: flex;
+	justify-content: center;
+	padding: var(--space-xl);
+	background-color: var(--color-base-project)
+}

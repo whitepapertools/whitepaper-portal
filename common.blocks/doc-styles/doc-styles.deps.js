@@ -8,8 +8,10 @@
 			{ block: 'icon' },
 			{ block: 'icon', mods: { name: 'close', size: 's', view: ['ghost', 'link'] } },
 			{ block: 'tpl-grid' },
+			{ block: 'tpl-grid', mods: {'row-gap': 'third'} },
 			{ block: 'space', elem: 'image' },
-			{ block: 'space-image' }
+			{ block: 'space-image' },
+			{ block: 'preview' }
 		]
 	}
 ])

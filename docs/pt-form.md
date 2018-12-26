@@ -1,10 +1,19 @@
 # pt-form
 
-![pt-form](_images/pt-form.png)
+<!-- ![pt-form](_images/pt-form.png) -->
+
+<div class="preview">
+	<img src="../../docs/_images/pt-form.png" alt="pt-form example" height="300" width="200">
+</div>
 
 Этот паттерн используется для представления информации, требующей ввода данных или выбора настроек, для дальнейшей отправки.
 
-```js
+* [Модификаторы блока](#Модификаторы)
+* [Элементы](#Элементы)
+* [Пример кода](#Пример)
+
+
+<!-- ```js
 {
 	block: 'pt-form',
 	content: [
@@ -18,13 +27,79 @@
 		elem: 'item'
 	}]
 }
-```
+``` -->
+
+## Модификаторы блока
 
 Модификаторы | Значение        | Описание
 ------------ | --------------- | ------------------
-border       | all             | Обводка всей формы
-shadow       | cloud           | Тень от формы
-view         | default / ghost | Фон
+[border](#border)     | all             | Обводка всей формы
+[shadow](#shadow)     | cloud           | Тень от формы
+[view](#view)         | default / ghost | Фон
+
+
+### border:
+
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+ <div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+  <div class="text text_size_xl text_view_ghost">border</div>
+ </div>
+ <div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+	 <div class="pt-form pt-form_border_all">
+		 <div class="pt-form__label text text_size_m">First name</div>
+		 <div class="pt-form__control">
+		 	<div class="input input__theme_islands input__size_m input__width_available"></div>
+		 </div>
+	 </div>
+ </div>
+</div>
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+ <div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+  <div class="text text_size_xl text_view_ghost">between</div>
+ </div>
+ <div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+  <div class="pt-informer pt-informer_view_success theme theme_color_whitepaper-success" >
+   <div class="text text_size_xl text_view_primary text_weight_bold decorator decorator_space-h_l decorator_space-t_l">Success message</div>
+   <div class="pt-informer__content pt-informer__content_space-a_l pt-informer__content_distribute_between">
+    <div class="text text_size_m text_view_primary decorator decorator_indent-b_xxxs">First column with small message description</div>
+    <div class="text text_size_m text_view_primary decorator decorator_indent-b_xxxs">Second column with small message description</div>
+   </div>
+  </div>
+ </div>
+</div>
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+ <div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+  <div class="text text_size_xl text_view_ghost">center</div>
+ </div>
+ <div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+  <div class="pt-informer pt-informer_view_success theme theme_color_whitepaper-success" >
+   <div class="pt-informer__content pt-informer__content_space-a_l pt-informer__content_distribute_center">
+    <div class="text text_size_xl text_view_primary text_weight_bold decorator decorator_indent-b_xxxs">Success message</div>
+    <div class="text text_size_m text_view_primary decorator decorator_indent-b_xxxs">Small message description</div>
+   </div>
+  </div>
+ </div>
+</div>
+
+
+
+
+
+
+
+<div class="tpl-grid tpl-grid_m-solumns_6 tpl-grid_l-columns_6">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_3 tpl-grid__fraction_l-col_3">
+		<div class="text text_size_xl text_view_ghost">border</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_7 tpl-grid__fraction_l-col_7">
+		<div class="pt-form pt-form_border_all">
+			<div class="pt-form__label text text_size_m">First name</div>
+			<div clas="pt-form__control "></div>
+		</div>
+	</div>
+</div>
+
 
 ## Элемент item
 
