@@ -141,16 +141,22 @@ module.exports = {
 															content: [
 																{
 																	elem: 'content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
 																	content: [
 																		{
 																			elem: 'type',
-																			mix: [ { block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }}, { block: 'decorator', mods: { 'indent-b': 'xxs' } } ],
+																			mix: [ 
+																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }}, 
+																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }} 
+																			],
 																			content: 'Light'
 																		},
 																		{
 																			elem: 'type',
-																			mix: [ { block: 'text', mods: { view: 'primary', size: 'm', align: 'center' }}, { block: 'decorator', mods: { 'indent-b': 'xl' } } ],
+																			mix: [ 
+																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center' }}, 
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }} 
+																			],
 																			content: 'For large companies'
 																		},
 																		{
@@ -160,7 +166,6 @@ module.exports = {
 																		},
 																		{
 																			elem: 'assets',
-																			mix: { block: 'decorator', mods: { 'space-h': 'm' }},
 																			content: [
 																				{
 																					elem: 'item',
@@ -267,7 +272,7 @@ module.exports = {
 																},
 																{
 																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
 																	content: [
 																		{
 																			block: 'button',
@@ -294,7 +299,7 @@ module.exports = {
 															content: [
 																{
 																	elem: 'content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
 																	content: [
 																		{
 																			elem: 'type',
@@ -306,7 +311,10 @@ module.exports = {
 																		},
 																		{
 																			elem: 'type',
-																			mix: [ { block: 'text', mods: { view: 'primary', size: 'm', align: 'center' }}, { block: 'decorator', mods: { 'indent-b': 'xl' } } ],
+																			mix: [ 
+																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center' }}, 
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }} 
+																			],
 																			content: 'For large companies'
 																		},
 																		{
@@ -319,7 +327,6 @@ module.exports = {
 																		},
 																		{
 																			elem: 'assets',
-																			mix: { block: 'decorator', mods: { 'space-h': 'm' }},
 																			content: [
 																				{
 																					elem: 'item',
@@ -426,7 +433,7 @@ module.exports = {
 																},
 																{
 																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
 																	content: [
 																		{
 																			block: 'button',
@@ -454,16 +461,22 @@ module.exports = {
 															content: [
 																{
 																	elem: 'content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
 																	content: [
 																		{
 																			elem: 'type',
-																			mix: [ { block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }}, { block: 'decorator', mods: { 'indent-b': 'xxs' } } ],
+																			mix: [ 
+																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }}, 
+																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }} 
+																			],
 																			content: 'Premium'
 																		},
 																		{
 																			elem: 'type',
-																			mix: [ { block: 'text', mods: { view: 'primary', size: 'm', align: 'center' }}, { block: 'decorator', mods: { 'indent-b': 'xl' } } ],
+																			mix: [ 
+																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center' }}, 
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }} 
+																			],
 																			content: 'For large companies'
 																		},
 																		{
@@ -473,7 +486,6 @@ module.exports = {
 																		},
 																		{
 																			elem: 'assets',
-																			mix: { block: 'decorator', mods: { 'space-h': 'm' }},
 																			content: [
 																				{
 																					elem: 'item',
@@ -580,7 +592,7 @@ module.exports = {
 																},
 																{
 																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
 																	content: [
 																		{
 																			block: 'button',
@@ -627,7 +639,7 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'image',
-																			mix: { block: 'pt-card', elem: 'image', elemMods: { shadow: 'bottom-inverse' }},
+																			mix: { block: 'pt-card', elem: 'image' },
 																			attrs: {
 																				'style': 'max-height: 340px; overflow: hidden'
 																			},
@@ -751,14 +763,18 @@ module.exports = {
 																			content: [
 																				{
 																					elem: 'icon',
-																					elemMods: { 'indent-r': 'xs' },
+																					elemMods: { 'indent-r': 's' },
+																					mix: { block: 'avatar' },
 																					content: [
 																						{
 																							block: 'avatar',
+																							elem: 'photo',
+																							elemMods: { size: 's'},
 																							content: [
 																								{
-																									elem: 'photo',
-																									elemMods: { size: 'xs', view: 'example' },
+																									block: 'image',
+																									width: 40,
+																									url: '/assets/bem-starter-kit/Tory Turk.jpg'
 																								}
 																							]
 																						}
@@ -769,8 +785,8 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'text',
-																							mods: { view: 'primary', size: 'm' },
-																							content: 'James Bridle'
+																							mods: { view: 'primary', size: 'm', weight: 'semibold' },
+																							content: 'T.T.'
 																						}
 																					]
 																				}
@@ -784,8 +800,8 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'image',
-																			mix: [{ block: 'pt-card', elem: 'image', elemMods: { shadow: 'top-inverse' } } ],
-																			url: '/assets/i/heroes.png',
+																			mix: { block: 'pt-card', elem: 'image' },
+																			url: '/assets/bem-starter-kit/mag.jpg',
 																		}
 																	]
 																},
@@ -847,11 +863,10 @@ module.exports = {
 															content: [
 																{
 																	elem: 'cover',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { shadow: 'bottom-inverse' }},
+																	mix: { block: 'pt-card', elem: 'content' },
 																	content: [
 																		{
 																			elem: 'image',
-																			mix: { block: 'pt-card', elem: 'image', elemMods: { shadow: 'bottom-inverse' }},
 																			content: [
 																				{
 																					block: 'image',
@@ -869,17 +884,18 @@ module.exports = {
 																				{
 																					elem: 'wrap',
 																					content: [
-																					{
-																						block: 'text',
-																						mods: { view: 'primary', size: 'xxxl', align: 'center', weight: 'bold' },
-																						mix: { block: 'decorator', mods: { 'indent-b': 's' } },
-																						content: 'Pitchfork\'s Best New Music',
-																					},
-																					{
-																						block: 'text',
-																						mods: { view: 'primary', size: 'm', align: 'center', font: 'mono', style: 'italic' },
-																						content: 'Pitchfork',
-																					}]
+																						{
+																							block: 'text',
+																							mods: { view: 'primary', size: 'xxxl', align: 'center', weight: 'bold' },
+																							mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																							content: 'Pitchfork\'s Best New Music',
+																						},
+																						{
+																							block: 'text',
+																							mods: { view: 'primary', size: 'm', align: 'center', font: 'mono', style: 'italic' },
+																							content: 'Pitchfork',
+																						}
+																					]
 																				}
 																			]
 																		}
@@ -1245,67 +1261,6 @@ module.exports = {
 															content: [
 																{
 																	elem: 'footer',
-																	elemMods: { state: 'fold' },
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl', align: 'between', 'vertical-align': 'bottom' }},
-																	content: [
-																		{
-																			elem: 'about',
-																			content: [
-																				{
-																					block: 'text',
-																					mods: { view: 'primary', size: 'xl', weight: 'black', display: 'inline-block' },
-																					content: '$'
-																				},
-																				{
-																					block: 'text',
-																					mods: { view: 'primary', size: 'xxxxl' ,weight: 'black', display: 'inline-block' },
-																					content: '79'
-																				},
-																				{
-																					block: 'text',
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																					mods: { view: 'secondary', size: 'm' },
-																					content: 'Jeans skinny jacket by Levi Brand'
-																				},
-																				{
-																					block: 'button',
-																					mods: { theme: 'islands', size: 'l' },
-																					text: 'Choose size'
-																				}
-																			]
-																		},
-																		{
-																			elem: 'icon',
-																			elemMods: { 'indent-r': 's' },
-																			content: [
-																				{
-																					block: 'icon',
-																					mods: { name: 'fave-1', size: 's', view: 'primary', round: 'default' },
-																					mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	block: 'image',
-																	mix: { block: 'pt-card', elem: 'image' },
-																	url: '/assets/bem-starter-kit/ecommerce-product.png'
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'fraction',
-													elemMods: { 's-col': '3', 'm-col': '2' },
-													content: [
-														{
-															block: 'product',
-															mix: { block: 'pt-card' },
-															content: [
-																{
-																	elem: 'footer',
 																	mix: [
 																		{ block: 'theme', mods: { color: 'whitepaper-brand' }},
 																		{ block: 'component', mods: { whitepaper: 'brand' }},
@@ -1324,13 +1279,13 @@ module.exports = {
 																				{
 																					block: 'text',
 																					mods: { view: 'primary', size: 'xxxxl' ,weight: 'black', display: 'inline-block' },
-																					content: '79'
+																					content: '2.99'
 																				},
 																				{
 																					block: 'text',
 																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																					mods: { view: 'primary', size: 'm' },
-																					content: 'Jeans skinny jacket by Levi Brand'
+																					content: 'Jeans skinny jacket by Reebok Brand'
 																				},
 																				{
 																					block: 'button',
@@ -1355,7 +1310,68 @@ module.exports = {
 																{
 																	block: 'image',
 																	mix: { block: 'pt-card', elem: 'image' },
-																	url: '/assets/bem-starter-kit/ecommerce-product.png'
+																	url: '/assets/bem-starter-kit/fung-1.jpg'
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'fraction',
+													elemMods: { 's-col': '3', 'm-col': '2' },
+													content: [
+														{
+															block: 'product',
+															mix: { block: 'pt-card' },
+															content: [
+																{
+																	elem: 'footer',
+																	elemMods: { state: 'fold' },
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl', align: 'between', 'vertical-align': 'bottom' }},
+																	content: [
+																		{
+																			elem: 'about',
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { view: 'primary', size: 'xl', weight: 'black', display: 'inline-block' },
+																					content: '$'
+																				},
+																				{
+																					block: 'text',
+																					mods: { view: 'primary', size: 'xxxxl' ,weight: 'black', display: 'inline-block' },
+																					content: '6.99'
+																				},
+																				{
+																					block: 'text',
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																					mods: { view: 'secondary', size: 'm' },
+																					content: 'Jeans skinny jacket by Reebok Brand'
+																				},
+																				{
+																					block: 'button',
+																					mods: { theme: 'islands', size: 'l' },
+																					text: 'Choose size'
+																				}
+																			]
+																		},
+																		{
+																			elem: 'icon',
+																			elemMods: { 'indent-r': 's' },
+																			content: [
+																				{
+																					block: 'icon',
+																					mods: { name: 'fave-1', size: 's', view: 'primary', round: 'default' },
+																					mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	block: 'image',
+																	mix: { block: 'pt-card', elem: 'image' },
+																	url: '/assets/bem-starter-kit/fung-2.jpg'
 																}
 															]
 														}
@@ -1389,13 +1405,13 @@ module.exports = {
 																				{
 																					block: 'text',
 																					mods: { view: 'primary', size: 'xxxxl' ,weight: 'black', display: 'inline-block' },
-																					content: '79'
+																					content: '8.99'
 																				},
 																				{
 																					block: 'text',
 																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																					mods: { view: 'primary', size: 'm' },
-																					content: 'Jeans skinny jacket by Levi Brand'
+																					content: 'Jeans skinny jacket by Reebok Brand'
 																				},
 																				{
 																					block: 'button',
@@ -1420,7 +1436,7 @@ module.exports = {
 																{
 																	block: 'image',
 																	mix: { block: 'pt-card', elem: 'image' },
-																	url: '/assets/bem-starter-kit/ecommerce-product.png'
+																	url: '/assets/bem-starter-kit/fung-3.jpg'
 																}
 															]
 														}
@@ -1455,47 +1471,44 @@ module.exports = {
 															],
 															content: [
 																{
+																	elem: 'cover',
+																	mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
+																	content: [
+																		{
+																			block: 'image',
+																			url: '/assets/i/monument2.png',
+																		}
+																	]
+																},
+																{
 																	elem: 'info',
-																	mix: { block: 'pt-card', elem: 'header', elemMods: { 'space-a': 'xl' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl', distribute: 'center', }},
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { size: 'm', view: 'primary', transform: 'uppercase', align: 'center', spacing: 'm' },
-																			content: 'Bundle'
+																			mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+																			mods: { size: 'xxl', weight: 'bold', align: 'center', view: 'primary' },
+																			content: 'Holiday Bundle'
 																		},
 																		{
 																			block: 'image',
-																			mix: [{ block: 'decorator', mods: { 'indent-v': 'xl' } } ],
 																			url: '/assets/i/group.png',
-																		},
-																		{
-																			elem: 'price',
-																			content: [
-																				{
-																					block: 'text',
-																					mods: { size: 'l', view: 'primary', font: 'mono', with: 'semibold' },
-																					content: '$299'
-																				}
-																			]
 																		}
 																	]
 																},
 																{
 																	elem: 'developer-list',
-																	mix: [ { block: 'pt-list' }, { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl' } }],
+																	mix: [ 
+																		{ block: 'pt-list' }, 
+																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }}
+																	],
 																	content: [
 																		{
 																			elem: 'wrap',
-																			attrs: {
-																				'style': 'width: 100%'
-																			},
 																			content: [
 																				{
 																					elem: 'item',
-																					mix: [
-																						{ block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', distribute: 'between' }}, 
-																						{ block: 'pt-card', elem: 'item' }
-																					],
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', distribute: 'between', 'vertical-align': 'center' }},
 																					content: [
 																						{
 																							block: 'pt-icon-plus',
@@ -1505,10 +1518,11 @@ module.exports = {
 																									elem: 'icon',
 																									elemMods: { 'indent-r': 's' },
 																									content: [
-																									{
-																										block: 'brand-logo',
-																										mods: { 'name': 'monument-valley', size: 's', form: 'mask' }
-																									}]
+																										{
+																											block: 'brand-logo',
+																											mods: { 'name': 'monument-valley', size: 's', form: 'mask' }
+																										}
+																									]
 																								},
 																								{
 																									elem: 'block',
@@ -1536,10 +1550,7 @@ module.exports = {
 																				},
 																				{
 																					elem: 'item',
-																					mix: [
-																						{ block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', distribute: 'between' }}, 
-																						{ block: 'pt-card', elem: 'item' }
-																					],
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', distribute: 'between', 'vertical-align': 'center' }},
 																					content: [
 																						{
 																							block: 'pt-icon-plus',
@@ -1593,6 +1604,86 @@ module.exports = {
 													content: [
 														{
 															block: 'app',
+															mix: [
+																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+																{ block: 'component', mods: { whitepaper: 'inverse' }},
+																{ block: 'pt-card', mods: { view: 'default' }}, 
+															],
+															content: [
+																{
+																	elem: 'good-info',
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
+																	content: [
+																		{
+																			block: 'image',
+																			mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+																			url: '/assets/i/good-cover.png'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'xxxl', view: 'primary', weight: 'bold' },
+																			mix: { block: 'decorator', mods: { 'space-b': 'l' }},
+																			content: 'From our Bafta award winning hit'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'm', view: 'secondary' },
+																			content: 'Enjoy beautiful levels filled with illusory, meditative puzzles'
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'between' }}, 
+																	content: [
+																		{
+																			block: 'pt-icon-plus',
+																			mods: { 'vertical-align': 'center' },
+																			content: [
+																				{
+																					elem: 'icon',
+																					elemMods: { 'indent-r': 's' },
+																					content: [
+																						{
+																							block: 'brand-logo',
+																							mods: { 'name': 'ustwo', size: 's'}
+																						}
+																					]
+																				},
+																				{
+																					elem: 'block',
+																					content: [
+																						{
+																							block: 'text',
+																							mods: { view: 'primary', size: 'm' },
+																							content: 'Monument Valley'
+																						},
+																						{
+																							block: 'text',
+																							mods: { size: 's', view: 'ghost' },
+																							content: 'by ustwo games'
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			block: 'badge',
+																			mods: { view: 'default' },
+																			content: '$99'
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'fraction',
+													elemMods: { 's-col': '3', 'm-col': '2' },
+													content: [
+														{
+															block: 'app',
 															mods: { view: 'monument' },
 															mix: [
 																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
@@ -1602,7 +1693,7 @@ module.exports = {
 															content: [
 																{
 																	elem: 'cover',
-																	mix: { block: 'pt-card', elem: 'image', elemMods: { shadow: 'bottom-inverse', size: 'cover' }},
+																	mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
 																	content: [
 																		{
 																			block: 'image',
@@ -1612,24 +1703,23 @@ module.exports = {
 																},
 																{
 																	elem: 'preview',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' } },
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl', 'distribute': 'center' }},
 																	content: [
 																		{
 																			block: 'image',
 																			mix: [
-																				{ block: 'decorator', mods: { 'indent-b': 'xxxxxl' } },
+																				{ block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
 																			],
-																			url: '/assets/i/ustwo.svg',
-
+																			url: '/assets/i/ustwo.svg'
 																		},
 																		{
 																			elem: 'about',
-																			mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl', distribute: 'center' }},
+																			mix: { block: 'pt-card', elem: 'content', elemMods: {distribute: 'center' }},
 																			content: [
 																				{
 																					block: 'text',
 																					mods: { size: 'xxxl', view: 'primary', align: 'center', weight: 'bold' },
-																					mix: [{ block: 'decorator', mods: { 'space-b': 's' }}],
+																					mix: { block: 'decorator', mods: { 'space-b': 's' }},
 																					content: 'From our Bafta award winning hit!'
 																				},
 																				{
@@ -1644,7 +1734,7 @@ module.exports = {
 																{
 																	elem: 'item',
 																	mix: [
-																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl', distribute: 'between' } },  
+																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'between' } },  
 																		{ block: 'pt-card', elem: 'item' }
 																	],
 																	content: [
@@ -1674,89 +1764,6 @@ module.exports = {
 																							block: 'text',
 																							mods: { size: 's', view: 'ghost' },
 																							content: 'by ustwo games'
-																						}
-																					]
-																				}
-																			]
-																		},
-																		{
-																			block: 'badge',
-																			mods: { view: 'default' },
-																			content: '$99'
-																		}
-																	]
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'fraction',
-													elemMods: { 's-col': '3', 'm-col': '2' },
-													content: [
-														{
-															block: 'app',
-															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-																{ block: 'component', mods: { whitepaper: 'inverse' }},
-																{ block: 'pt-card', mods: { view: 'default' }}, 
-															],
-															content: [
-																{
-																	elem: 'good-info',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' }},
-																	content: [
-																		{
-																			block: 'image',
-																			mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
-																			url: '/assets/i/good-cover.png'
-																		},
-																		{
-																			block: 'text',
-																			mods: { size: 'xxxl', view: 'primary', weight: 'bold' },
-																			mix: { block: 'decorator', mods: { 'space-b': 'l' }},
-																			content: 'From our Bafta award winning hit'
-																		},
-																		{
-																			block: 'text',
-																			mods: { size: 'm', view: 'ghost' },
-																			content: 'Enjoy beautiful levels filled with illusory, meditative puzzles'
-																		}
-																	]
-																},
-																{
-																	elem: 'item',
-																	mix: [
-																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl', distribute: 'between' } }, 
-																		{ block: 'pt-card', elem: 'item' }
-																	],
-																	content: [
-																		{
-																			block: 'pt-icon-plus',
-																			mods: { 'vertical-align': 'center' },
-																			content: [
-																				{
-																					elem: 'icon',
-																					elemMods: { 'indent-r': 's' },
-																					content: [
-																						{
-																							block: 'brand-logo',
-																							mods: { 'name': 'ustwo', size: 's'}
-																						}
-																					]
-																				},
-																				{
-																					elem: 'block',
-																					content: [
-																						{
-																							block: 'text',
-																							mods: { view: 'primary', size: 'm' },
-																							content: 'Monument Valley'
-																						},
-																						{
-																								block: 'text',
-																								mods: { size: 's', view: 'ghost' },
-																								content: 'by ustwo games'
 																						}
 																					]
 																				}
@@ -1825,53 +1832,60 @@ module.exports = {
 																			mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' }},
 																			mods: { size: 'm', align: 'center', view: 'primary' },
 																			content: 'Currently payments not available'
-																		},
-																		{
-																			elem: 'info',
-																			content: [
-																				{
-																					block: 'text',
-																					mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-																					mods: { size: 's', weight: 'bold', view: 'primary' },
-																					content: 'Information'
-																				},
-																				{
-																					block: 'pt-icon-plus',
-																					mods: { 'vertical-align': 'center' },
-																					content: [
-																						{
-																							elem: 'icon',
-																							elemMods: { 'indent-r': 'l' },
-																							content: [
-																								{
-																									block: 'image',
-																									url: '/assets/bem-starter-kit/mastercard.svg',
-																									width: 36
-																								}
-																							]
-																						},
-																						{
-																							elem: 'block',
-																							content: {
-																								block: 'text',
-																								mods: { mods: 'm', view: 'primary' },
-																								content: '4276 55•• •••• 5371'
-																							}
-																						}
-																					]
-																				}
-																			]
 																		}
 																	]
 																},
 																{
-																	elem: 'button',
+																	elem: 'footer',
 																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' }},
 																	content: [
 																		{
-																			block: 'button',
-																			mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
-																			text: 'Done'
+																			elem: 'account',
+																			content: [
+																				{
+																					elem: 'info',
+																					content: [
+																						{
+																							block: 'text',
+																							mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+																							mods: { size: 'xs', weight: 'bold', view: 'primary', transform: 'uppercase', spacing: 's' },
+																							content: 'Information'
+																						},
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 'l' },
+																									content: [
+																										{
+																											block: 'image',
+																											url: '/assets/bem-starter-kit/mastercard.svg',
+																											width: 36
+																										}
+																									]
+																								},
+																								{
+																									elem: 'block',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { mods: 'm', view: 'primary' },
+																											content: '4276 55•• •••• 5371'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					block: 'button',
+																					mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
+																					text: 'Done'
+																				}
+																			]
 																		}
 																	]
 																}
@@ -1917,52 +1931,59 @@ module.exports = {
 																			mods: { size: 'm', align: 'center', view: 'primary' },
 																			content: 'Currently payments not available'
 																		},
+																	]
+																},
+																{
+																	elem: 'footer',
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' }},
+																	content: [
 																		{
-																			elem: 'info',
+																			elem: 'account',
 																			content: [
 																				{
-																					block: 'text',
-																					mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-																					mods: { size: 's', weight: 'bold', view: 'primary' },
-																					content: 'Transfer to card'
-																				},
-																				{
-																					block: 'pt-icon-plus',
-																					mods: { 'vertical-align': 'center' },
+																					elem: 'info',
 																					content: [
 																						{
-																							elem: 'icon',
-																							elemMods: { 'indent-r': 'l' },
-																							content: [
-																								{
-																									block: 'image',
-																									url: '/assets/bem-starter-kit/mastercard.svg',
-																									width: 36
-																								}
-																							]
+																							block: 'text',
+																							mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+																							mods: { size: 'xs', weight: 'bold', view: 'primary', transform: 'uppercase', spacing: 's' },
+																							content: 'Transfer to card'
 																						},
 																						{
-																							elem: 'block',
-																							content: {
-																								block: 'text',
-																								mods: { mods: 'm', view: 'primary' },
-																								content: '4276 55•• •••• 5371'
-																							}
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 'l' },
+																									content: [
+																										{
+																											block: 'image',
+																											url: '/assets/bem-starter-kit/mastercard.svg',
+																											width: 36
+																										}
+																									]
+																								},
+																								{
+																									elem: 'block',
+																									content: {
+																										block: 'text',
+																										mods: { mods: 'm', view: 'primary' },
+																										content: '4276 55•• •••• 5371'
+																									}
+																								}
+																							]
 																						}
 																					]
+																				},
+																				{
+																					block: 'button',
+																					mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
+																					text: 'Done'
 																				}
 																			]
 																		}
 																	]
-																},
-																{
-																	elem: 'button',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' }},
-																	content: {
-																		block: 'button',
-																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
-																		text: 'Done'
-																	}
 																}
 															]
 														}
@@ -2005,33 +2026,40 @@ module.exports = {
 																			mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' }},
 																			mods: { size: 'm', align: 'center', view: 'primary' },
 																			content: 'Payment completed'
-																		},
-																		{
-																			elem: 'info',
-																			content: [
-																				{
-																					block: 'text',
-																					mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-																					mods: { size: 's', weight: 'bold', view: 'primary' },
-																					content: 'Information'
-																				},
-																				{
-																					block: 'text',
-																					mods: { size: 's', view: 'primary' },
-																					content: 'Just visited the best beach for surfing. The waves are awesome.'
-																				}
-																			]
 																		}
 																	]
 																},
 																{
-																	elem: 'button',
+																	elem: 'footer',
 																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' }},
-																	content: {
-																		block: 'button',
-																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
-																		text: 'Done'
-																	}
+																	content: [
+																		{
+																			elem: 'acoount',
+																			content: [
+																				{
+																					elem: 'info',
+																					content: [
+																						{
+																							block: 'text',
+																							mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+																							mods: { size: 'xs', weight: 'bold', view: 'primary', transform: 'uppercase', spacing: 's' },
+																							content: 'Information'
+																						},
+																						{
+																							block: 'text',
+																							mods: { size: 's', view: 'primary' },
+																							content: 'Just visited the best beach for surfing. The waves are awesome.'
+																						}
+																					]
+																				},
+																				{
+																					block: 'button',
+																					mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
+																					text: 'Done'
+																				}
+																			]
+																		}
+																	]
 																}
 															]
 														}
@@ -2052,6 +2080,141 @@ module.exports = {
 											block: 'tpl-grid',
 											mods: { 'col-gap': 'full', 'row-gap': 'full', 's-columns': '6' },
 											content: [
+												{
+													elem: 'fraction',
+													elemMods: { 's-col': '3', 'm-col': '2' },
+													content: [
+														{
+															block: 'offer',
+															mix: [
+																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+																{ block: 'component', mods: { whitepaper: 'inverse' }},
+																{ block: 'pt-card', mods: { view: 'default' } },
+															],
+															content: [
+																{
+																	elem: 'service-image-wrapper',
+																	mix: { block: 'pt-card', elem: 'content' },
+																	content: [
+																		{
+																			block: 'image',
+																			mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
+																			url: '/assets/i/offer-service-image.png'
+																		}
+																	]
+																},
+																{
+																	elem: 'title',
+																	mix: { block: 'pt-card', elem: 'header', elemMods: { 'space-v': 'xxl', distribute: 'center' }},
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'xl', font: 'serif', weight: 'bold', transform: 'uppercase', align: 'center', display: 'block', spacing: 'm' },
+																			content: 'Porsche'
+																		}
+																	]
+																},
+																{
+																	elem: 'service-info',
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
+																	content: [
+																		{
+																			elem: 'wrap',
+																			content: [
+																				{
+																					block: 'text',
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xl'}},
+																					mods: { view: 'primary', size: 'm', weight: 'semibold' },
+																					content: 'Porsche and comfort never comprised. The Porsche will lead to an unforgettable journey'
+																				},
+																				{
+																					elem: 'price',
+																					content: [
+																						{
+																							block: 'text',
+																							mods: { view: 'primary', size: 's', weight: 'semibold' },
+																							content: 'from'
+																						},
+																						{
+																							block: 'text',
+																							mods: { view: 'primary', size: 'xxxl', weight: 'semibold' },
+																							content: '$1200'
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'fraction',
+													elemMods: { 's-col': '3', 'm-col': '2' },
+													content: [
+														{
+															block: 'offer',
+															mix: { block: 'pt-card', mods: { view: 'default' }},
+															content: [
+																{
+																	elem: 'brand-content',
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' } },
+																	content: [
+																		{
+																			elem: 'brand-image-wrapper',
+																			mix: { block: 'pt-card', elem: 'content' },
+																			content: [
+																				{
+																					elem: 'image',
+																					mix: { block: 'pt-card', elem: 'image' },
+																					content: [
+																						{
+																							block: 'image',
+																							attrs: {
+																								'style': 'width: 100%'
+																							},
+																							url: '/assets/i/offer-brand-image.png'
+																						
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'xxl', align: 'center', transform: 'uppercase', weight: 'bold', spacing: 's' },
+																			mix: { block: 'decorator', mods: { 'indent-t': 's', 'indent-b': 'xs' }},
+																			content: 'Ape shall never kill'
+																		},
+																		{
+																			elem: 'brand-logo-wrapper',
+																			mix: { block: 'text', mods: { align: 'center' } },
+																			content: [
+																				{
+																					block: 'brand-logo',
+																					mods: { name: 'bape', size: 's' },
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	elem: 'brand-action',
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-v': 'xxl', distribute: 'center' }},
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { view: 'secondary', size: 'm', weight: 'bold', align: 'center' },
+																			content: 'Learn More'
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
@@ -2098,10 +2261,8 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'text',
-																			mix: [
-																				{ block: 'decorator', mods: { 'indent-b': 'xs' } },
-																			],
-																			mods: { view: 'primary', font: 'mono', weight: 'bold', size: 'xl', align: 'center', transform: 'uppercase', spacing: 's' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
+																			mods: { view: 'primary', font: 'mono', weight: 'black', size: 'xl', align: 'center', transform: 'uppercase', spacing: 's' },
 																			content: 'Nike Gyakusou Gaiter Boot'
 																		},
 																		{
@@ -2113,152 +2274,12 @@ module.exports = {
 																},
 																{
 																	elem: 'action',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-v': 'xl', distribute: 'center' }},
-																	content: [
-																		{
-																			elem: 'wrap',
-																			content: [
-																				{
-																					block: 'text',
-																					mods: { view: 'secondary', size: 'm', weight: 'bold', align: 'center' },
-																					content: 'Shop Now'
-																				}
-																			]
-																		}
-																	]
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'fraction',
-													elemMods: { 's-col': '3', 'm-col': '2' },
-													content: [
-														{
-															block: 'offer',
-															mix: { block: 'pt-card', mods: { view: 'default' }},
-															content: [
-																{
-																	elem: 'brand-content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' } },
-																	content: [
-																		{
-																			elem: 'brand-image-wrapper',
-																			mix: { block: 'pt-card', elem: 'content' },
-																			content: [
-																				{
-																					elem: 'image',
-																					mix: { block: 'pt-card', elem: 'image' },
-																					content: [
-																						{
-																							block: 'image',
-																							attrs: {
-																								'style': 'width: 100%'
-																							},
-																							url: '/assets/i/offer-brand-image.png'
-																						
-																						}
-																					]
-																				}
-																			]
-																		},
-																		{
-																			block: 'text',
-																			mods: { view: 'primary', size: 'xxl', align: 'center', transform: 'uppercase', weight: 'bold', spacing: 's' },
-																			mix: { block: 'decorator', mods: { 'indent-t': 's', 'indent-b': 'xs' }},
-																			content: 'Ape shall never kill ape'
-																		},
-																		{
-																			elem: 'brand-logo-wrapper',
-																			mix: { block: 'text', mods: { align: 'center' } },
-																			content: [
-																				{
-																					block: 'brand-logo',
-																					mods: { name: 'bape', size: 's' },
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	elem: 'brand-action',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-v': 'xl', distribute: 'center' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-v': 'xxl', distribute: 'center' }},
 																	content: [
 																		{
 																			block: 'text',
 																			mods: { view: 'secondary', size: 'm', weight: 'bold', align: 'center' },
-																			content: 'Learn More'
-																		}
-																	]
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'fraction',
-													elemMods: { 's-col': '3', 'm-col': '2' },
-													content: [
-														{
-															block: 'offer',
-															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-																{ block: 'component', mods: { whitepaper: 'inverse' }},
-																{ block: 'pt-card', mods: { view: 'default' } },
-															],
-															content: [
-																{
-																	elem: 'service-image-wrapper',
-																	mix: { block: 'pt-card', elem: 'content' },
-																	content: [
-																		{
-																			block: 'image',
-																			mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
-																			url: '/assets/i/offer-service-image.png'
-																		}
-																	]
-																},
-																{
-																	elem: 'title',
-																	mix: { block: 'pt-card', elem: 'header', elemMods: { 'space-v': 'xxl', distribute: 'center' }},
-																	content: [
-																		{
-																			block: 'text',
-																			mods: { view: 'primary', size: 'xl', font: 'serif', weight: 'bold', transform: 'uppercase', align: 'center', display: 'block' },
-																			content: 'Brabus'
-																		}
-																	]
-																},
-																{
-																	elem: 'service-info',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl' }},
-																	content: [
-																		{
-																			elem: 'wrap',
-																			content: [
-																				{
-																					block: 'text',
-																					mix: { block: 'decorator', mods: { 'indent-b': 'xl'}},
-																					mods: { view: 'primary', size: 'm', weight: 'semibold' },
-																					content: 'Luxury and comfort never comprised. The BRABUS GLE 700 Coupe will lead to an unforgettable journey'
-																				},
-																				{
-																					elem: 'price',
-																					content: [
-																						{
-																							block: 'text',
-																							mods: { view: 'primary', size: 's', weight: 'semibold' },
-																							content: 'from'
-																						},
-																						{
-																							block: 'text',
-																							mods: { view: 'primary', size: 'xxxl', weight: 'semibold' },
-																							content: '$1200'
-																						}
-																					]
-																				}
-																			]
+																			content: 'Shop Now'
 																		}
 																	]
 																}
@@ -2300,7 +2321,7 @@ module.exports = {
 																			content: [
 																				{
 																					block: 'text',
-																					mods: { weight: 'black' },
+																					mods: { weight: 'bold' },
 																					content: 'This is a slow roll: '
 																				},
 																				'facebook will be the same '
@@ -2314,13 +2335,21 @@ module.exports = {
 																				{
 																					elem: 'icon',
 																					elemMods: { 'indent-r': 's' },
-																					content: {
-																						block: 'avatar',
-																						content: {
+																					mix: { block: 'avatar' },
+																					content: [
+																						{
+																							block: 'avatar',
 																							elem: 'photo',
-																							elemMods: { size: 's'}
+																							elemMods: { size: 's'},
+																							content: [
+																								{
+																									block: 'image',
+																									width: 40,
+																									url: '/assets/bem-starter-kit/Aaron Poe.jpg'
+																								}
+																							]
 																						}
-																					}
+																					]
 																				},
 																				{
 																					elem: 'block',
@@ -2328,11 +2357,11 @@ module.exports = {
 																						{
 																							block: 'text',
 																							mods: { view: 'primary', size: 's', weight: 'semibold' },
-																							content: 'Luke Appleyard'
+																							content: 'Aaron Poe'
 																						},
 																						{
 																							block: 'text',
-																							mods: { view: 'ghost', size: 'xs' },
+																							mods: { view: 'secondary', size: 's' },
 																							content: '2h ago'
 																						}
 																					]
@@ -2387,7 +2416,7 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { view: 'primary', size: 'm', weight: 'black' },
+																			mods: { view: 'primary', size: 'm', weight: 'bold' },
 																			content: 'Hive'
 																		},
 																		{
@@ -2422,7 +2451,20 @@ module.exports = {
 																						{
 																							elem: 'icon',
 																							elemMods: { 'indent-r': 's' },
-																							mix: { block: 'brand-logo', mods: { name: 'itunes', size: 'xs' } }
+																							content: [
+																								{
+																									block: 'avatar',
+																									elem: 'photo',
+																									elemMods: { size: 's' },
+																									content: [
+																										{
+																											block: 'image',
+																											width: 40,
+																											url: '/assets/bem-starter-kit/Nick Bilton.jpg'
+																										}
+																									]
+																								}
+																							]
 																						},
 																						{
 																							elem: 'block',
@@ -2430,12 +2472,12 @@ module.exports = {
 																								{
 																									block: 'text',
 																									mods: { view: 'primary', size: 'm', weight: 'bold', display: 'inline' },
-																									content: 'Hive '
+																									content: 'Nick '
 																								},
 																								{
 																									block: 'text',
 																									mods: { view: 'primary', size: 'm', weight: 'light', display: 'inline' },
-																									content: 'Nick Bilton'
+																									content: 'Bilton'
 																								}
 																							]
 																						}
@@ -2453,59 +2495,50 @@ module.exports = {
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
 													content: [
-
 														{
 															block: 'feed',
-															mix: { block: 'pt-list' },
+															mix: { block: 'pt-card' },
 															content: [
 																{
 																	elem: 'item',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
 																	content: [
 																		{
-																			elem: 'header',
-																			elemMods: { align: 'center' },
-																			mix: [
-																				{ block: 'pt-list', elem: 'item', elemMods: { 'distribute': 'between' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'm' }}
-																			],
+																			block: 'pt-icon-plus',
+																			mods: { 'vertical-align': 'center' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																			content: [
 																				{
-																					block: 'pt-icon-plus',
-																					mods: { 'vertical-align': 'center' },
+																					elem: 'icon',
+																					elemMods: { 'indent-r': 's' },
+																					mix: { block: 'avatar' },
 																					content: [
 																						{
-																							elem: 'icon',
-																							elemMods: { 'indent-r': 's' },
-																							mix: { block: 'avatar' },
+																							block: 'avatar',
+																							elem: 'photo',
+																							elemMods: { size: 's'},
 																							content: [
 																								{
-																									block: 'avatar',
-																									elem: 'photo',
-																									elemMods: { size: 's'},
-																									content: {
-																										block: 'activities',
-																										elem: 'avatar-img',
-																										tag: 'img',
-																										attrs: { src: '/assets/bem-starter-kit/ava9.png' }
-																									}
+																									block: 'image',
+																									width: 40,
+																									url: '/assets/bem-starter-kit/Kyle Caruso.jpg'
 																								}
 																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'block',
+																					content: [
+																						{
+																							block: 'text',
+																							mods: { view: 'primary', size: 's', weight: 'semibold' },
+																							content: 'Kyle Caruso'
 																						},
 																						{
-																							elem: 'block',
-																							content: [
-																								{
-																									block: 'text',
-																									mods: { view: 'primary', size: 's', weight: 'semibold' },
-																									content: 'Tony Montana'
-																								},
-																								{
-																									block: 'text',
-																									mods: { view: 'secondary', size: 'xs' },
-																									content: '2h ago'
-																								}
-																							]
+																							block: 'text',
+																							mods: { view: 'secondary', size: 's' },
+																							content: '2h ago'
 																						}
 																					]
 																				}
@@ -2515,85 +2548,39 @@ module.exports = {
 																			block: 'text',
 																			mods: { view: 'primary', size: 's' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																			content: 'How does he do it? 😵😵😵'
+																			content: 'Just visited the best beach for surfing. The waves are awesome. Just visited the best beach for surfing. The waves are awesome. Just visited the best beach for surfing. The waves are awesome. How does he do it? 😵😵😵'
 																		},
 																		{
-																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { border: 'top', 'space-t': 's' }},
+																			block: 'image',
+																			url: '/assets/bem-starter-kit/feed-photo.png',
+																			width: '100%',
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'between' }},
+																	content: [
+																		{
+																			elem: 'actiion',
 																			content: [
 																				{
-																					elem: 'header',
-																					elemMods: { align: 'baseline' },
-																					mix: [
-																						{ block: 'pt-list', elem: 'item', elemMods: { 'distribute': 'between' }},
-																						{ block: 'decorator', mods: { 'indent-b': 'm' }}
-																					],
-																					content: [
-																						{
-																							block: 'text',
-																							content: [
-																								{
-																									block: 'text',
-																									mods: { view: 'primary', size: 'xs', weight: 'semibold'  },
-																									content: 'Garry Tornthon'
-																								}
-																							]
-																						},
-																						{
-																							block: 'text',
-																							mods: { view: 'secondary', size: 'xs' },
-																							content: '5h ago'
-																						}
-																					]
+																					block: 'text',
+																					mods: { view: 'link', weight: 'semibold', size: 's', display: 'inline-block' },
+																					mix: { block: 'decorator', mods: { 'indent-r': 'm' }},
+																					content: 'Add comment'
 																				},
 																				{
 																					block: 'text',
-																					mods: { view: 'primary', size: 's' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																					content: 'Just visited the best beach for surfing. The waves are awesome.'
-																				},
-																				{
-																					block: 'image',
-																					url: '/assets/bem-starter-kit/feed-photo.png',
-																					width: '100%',
-																					mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
-																				},
-																				{
-																					elem: 'action',
-																					mix: [
-																						{ block: 'pt-list', elem: 'item', elemMods: { distribute: 'between' }},
-																						{ block: 'decorator', mods: { 'space-b': 'x,s' }}
-																					],
-																					content: [
-																						{
-																							block: 'pt-list',
-																							elem: 'item',
-																							content: [
-																								{
-																									block: 'text',
-																									mods: { view: 'link', size: 's', display: 'inline-block' },
-																									mix: { block: 'decorator', mods: { 'indent-r': 'm' }},
-																									content: 'Add comment'
-																								},
-																								{
-																									block: 'text',
-																									mods: { view: 'link', size: 's', display: 'inline-block' },
-																									content: 'Share'
-																								}
-																							]
-																						},
-																						{
-																							block: 'pt-list',
-																							elem: 'item',
-																							content: {
-																								block: 'text',
-																								mods: { view: 'link', size: 's', display: 'inline-block' },
-																								content: 'Like'
-																							}
-																						}
-																					]
+																					mods: { view: 'link', weight: 'semibold', size: 's', display: 'inline-block' },
+																					content: 'Share'
 																				}
 																			]
+																		},
+																		{
+																			block: 'text',
+																			mods: { view: 'link', weight: 'semibold', size: 's', display: 'inline-block' },
+																			content: 'Like'
 																		}
 																	]
 																}
@@ -2624,150 +2611,170 @@ module.exports = {
 													content: [
 														{
 															block: 'meetup',
-															mix: { block: 'pt-list' },
+															mix: [
+																{ block: 'pt-list' },
+																{ block: 'pt-card' },
+															],
 															content: [
 																{
-																	elem: 'photo',
+																	elem: 'content',
+																	mix: { block: 'pt-card', elem: 'content' },
 																	content: [
 																		{
-																			block: 'image',
-																			width: 320,
-																			url: '../../../../assets/bem-starter-kit/subzero-cover.png',
-																		}
-																	]
-																},
-																{
-																	elem: 'description',
-																	mix: [
-																		{ block: 'theme', mods: { color: 'whitepaper-brand' }},
-																		{ block: 'component', mods: { whitepaper: 'brand' }},
-																		{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' }},
-																	],
-																	content: [
-																		{
-																			elem: 'name',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'xxs', distribute: 'between' }},
+																			elem: 'photo',
 																			content: [
 																				{
-																					block: 'text',
-																					mods: { view: 'primary', size: 'xl', weight: 'black' },
-																					content: 'Subzero!'
-																				},
-																				{
-																					block: 'text',
-																					mods: { view: 'primary', size: 'xl', weight: 'black' },
-																					content: '4.5'
+																					block: 'image',
+																					url: '../../../../assets/bem-starter-kit/subzero-cover.png',
 																				}
 																			]
 																		},
 																		{
-																			elem: 'rating',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'l', distribute: 'between' }},
+																			elem: 'description',
+																			mix: [
+																				{ block: 'theme', mods: { color: 'whitepaper-brand' }},
+																				{ block: 'component', mods: { whitepaper: 'brand' }},
+																				{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' }},
+																			],
 																			content: [
 																				{
-																					block: 'text',
-																					mods: { view: 'secondary', size: 'm', weight: 'semibold' },
-																					content: 'Cafe'
-																				},
-																				{
-																					block: 'text',
-																					mods: { view: 'secondary', size: 'm', weight: 'semibold' },
-																					content: '324 reviews'
-																				}
-																			]
-																		},
-																		{
-																			elem: 'action',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm', distribute: 'between' }},
-																			content: [
-																				{
-																					block: 'text',
-																					mods: { view: 'primary', size: 's' },
-																					content: 'Get directions'
-																				},
-																				{
-																					block: 'text',
-																					mods: { view: 'primary', size: 's' },
-																					content: 'Call'
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	elem: 'info',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l', 'indent-b': 's' }},
-																	content: [
-																		{
-																			elem: 'title',
-																			mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-																			content: [
-																				{
-																					block: 'text',
-																					mods: { view: 'primary', size: 'xl', weight: 'bold' },
-																					content: 'Information'
-																				}
-																			]
-																		},
-																		{
-																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
-																			content: [
-																				{
-																					block: 'pt-icon-plus',
-																					mods: { 'vertical-align': 'center' },
+																					elem: 'name',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'xxs', distribute: 'between' }},
 																					content: [
 																						{
-																							elem: 'icon',
-																							elemMods: { 'indent-r': 's' },
-																							content: [
-																								{
-																									block: 'icon',
-																									mods: { name: 'marker', size: 's', view: 'primary', round: 'default' },
-																									mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
-																								}
-																							]
+																							block: 'text',
+																							mods: { view: 'primary', size: 'xl', weight: 'bold' },
+																							content: 'Subzero!'
 																						},
 																						{
-																							block: 'content',
-																							content: [
-																								{
-																									block: 'text',
-																									mods: { size: 'm', weight: 'light', display: 'inline' },
-																									content: 'Kaigandori, Naka-ku 23 Japan'
-																								}
-																							]
+																							block: 'text',
+																							mods: { view: 'primary', size: 'xl', weight: 'bold' },
+																							content: '4.5'
+																						}
+																					]
+																				},
+																				{
+																					elem: 'rating',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'l', distribute: 'between' }},
+																					content: [
+																						{
+																							block: 'text',
+																							mods: { view: 'secondary', size: 'm', weight: 'semibold' },
+																							content: 'Cafe'
+																						},
+																						{
+																							block: 'text',
+																							mods: { view: 'secondary', size: 'm', weight: 'semibold' },
+																							content: '324 reviews'
 																						}
 																					]
 																				}
 																			]
-																		},
+																		}
+																	]
+																},
+																{
+																	elem: 'footer',
+																	mix: { block: 'pt-card', elem: 'footer' },
+																	content: [
 																		{
-																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																			elem: 'info',
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l', 'indent-b': 's' }},
 																			content: [
 																				{
-																					block: 'pt-icon-plus',
-																					mods: { 'vertical-align': 'center' },
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																					content: [
 																						{
-																							elem: 'icon',
-																							elemMods: { 'indent-r': 's' },
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
 																							content: [
 																								{
-																									block: 'icon',
-																									mods: { name: 'comment', size: 's', view: 'primary', round: 'default' },
-																									mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'marker', size: 's', view: 'primary', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', display: 'inline' },
+																											content: 'Kaigandori, Naka-ku 23 Japan'
+																										}
+																									]
 																								}
 																							]
-																						},
+																						}
+																					]
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					content: [
 																						{
-																							block: 'content',
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
 																							content: [
 																								{
-																									block: 'text',
-																									mods: { size: 'm', weight: 'light', display: 'inline' },
-																									content: 'www.subzero.com'
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'phone-1', size: 's', view: 'primary', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', display: 'inline' },
+																											content: '81 45-662-1099'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'comment', size: 's', view: 'primary', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', display: 'inline' },
+																											content: 'www.subzero.com'
+																										}
+																									]
 																								}
 																							]
 																						}
@@ -2787,7 +2794,10 @@ module.exports = {
 													content: [
 														{
 															block: 'place',
-															mix: { block: 'pt-list'},
+															mix: [
+																{ block: 'pt-list' },
+																{ block: 'pt-card' }
+															],
 															content: [
 																{
 																	elem: 'description',
@@ -2795,6 +2805,7 @@ module.exports = {
 																		{ block: 'theme', mods: { color: 'whitepaper-brand' }},
 																		{ block: 'component', mods: { whitepaper: 'brand' }},
 																		{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' }},
+																		{ block: 'pt-card', elem: 'content' }
 																	],
 																	content: [
 																		{
@@ -2804,7 +2815,7 @@ module.exports = {
 																		},
 																		{
 																			elem: 'type',
-																			mix: [ { block: 'text', mods: { size: 'm', view: 'primary', weight: 'bold' }},  { block: 'decorator', mods: { 'indent-b': 'xs' } } ],
+																			mix: [ { block: 'text', mods: { size: 'm', view: 'secondary', weight: 'bold' }},  { block: 'decorator', mods: { 'indent-b': 'xs' } } ],
 																			content: 'Event'
 																		},
 																		{
@@ -2813,16 +2824,14 @@ module.exports = {
 																			content: '3rd Annual Innate Killer'
 																		},
 																		{
-																			elem: 'type',
-																			mix: [ { block: 'text', mods: { size: 's', view: 'primary' }}, { block: 'decorator', mods: { 'indent-b': 'm' } } ],
-																			content: 'Gary Tatinashvily Gallery'
-																		},
-																		{
 																			block: 'avatar',
+																			elem: 'photo',
+																			elemMods: { size: 's'},
 																			content: [
 																				{
-																					elem: 'photo',
-																					elemMods: { size: 's' }
+																					block: 'image',
+																					width: 40,
+																					url: '/assets/bem-starter-kit/Carolyn Z.jpg'
 																				}
 																			]
 																		}
@@ -2830,78 +2839,89 @@ module.exports = {
 																},
 																{
 																	elem: 'info',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' }},
+																	mix: [
+																		{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' }},
+																		{ block: 'pt-card', elem: 'footer' }
+																	],
 																	content: [
 																		{
-																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																			elem: 'wrap',
 																			content: [
 																				{
-																					block: 'pt-icon-plus',
-																					mods: { 'vertical-align': 'center' },
+																					elem: 'contacts',
+																					mix: [
+																						{ block: 'pt-list' },
+																						{ block: 'decorator', mods: { 'indent-b': 'xxl' }}
+																					],
 																					content: [
 																						{
-																							elem: 'icon',
-																							elemMods: { 'indent-r': 's' },
+																							elem: 'item',
+																							mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																							content: [
 																								{
-																									block: 'icon',
-																									mods: { name: 'marker', size: 's', view: 'primary', round: 'default' },
-																									mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																									block: 'pt-icon-plus',
+																									mods: { 'vertical-align': 'center' },
+																									content: [
+																										{
+																											elem: 'icon',
+																											elemMods: { 'indent-r': 's' },
+																											content: [
+																												{
+																													block: 'icon',
+																													mods: { name: 'marker', size: 's', view: 'primary', round: 'default' },
+																													mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																												}
+																											]
+																										},
+																										{
+																											block: 'content',
+																											content: [
+																												{
+																													block: 'text',
+																													mods: { size: 'm', display: 'inline' },
+																													content: 'Kaigandori, Naka-ku 23 Japan'
+																												}
+																											]
+																										}
+																									]
 																								}
 																							]
 																						},
 																						{
-																							block: 'content',
+																							elem: 'item',
+																							mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
 																							content: [
 																								{
-																									block: 'text',
-																									mods: { size: 'm', weight: 'light', display: 'inline' },
-																									content: 'Kaigandori, Naka-ku 23 Japan'
+																									block: 'pt-icon-plus',
+																									mods: { 'vertical-align': 'center' },
+																									content: [
+																										{
+																											elem: 'icon',
+																											elemMods: { 'indent-r': 's' },
+																											content: [
+																												{
+																													block: 'icon',
+																													mods: { name: 'phone-1', size: 's', view: 'primary', round: 'default' },
+																													mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																												}
+																											]
+																										},
+																										{
+																											block: 'content',
+																											content: [
+																												{
+																													block: 'text',
+																													mods: { size: 'm', display: 'inline' },
+																													content: '81 45-662-1099'
+																												}
+																											]
+																										}
+																									]
 																								}
 																							]
 																						}
 																					]
-																				}
-																			]
-																		},
-																		{
-																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
-																			content: [
-																				{
-																					block: 'pt-icon-plus',
-																					mods: { 'vertical-align': 'center' },
-																					content: [
-																						{
-																							elem: 'icon',
-																							elemMods: { 'indent-r': 's' },
-																							content: [
-																								{
-																									block: 'icon',
-																									mods: { name: 'phone-1', size: 's', view: 'primary', round: 'default' },
-																									mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
-																								}
-																							]
-																						},
-																						{
-																							block: 'content',
-																							content: [
-																								{
-																									block: 'text',
-																									mods: { size: 'm', weight: 'light', display: 'inline' },
-																									content: '81 45-662-1099'
-																								}
-																							]
-																						}
-																					]
-																				}
-																			]
-																		},
-																		{
-																			elem: 'item',
-																			mix: [{ block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }}, { block: 'decorator', mods: { 'indent-t': 'l' }}],
-																			content: [
+																				},
 																				{
 																					block: 'button',
 																					mods: { theme: 'islands', size: 'l', view: 'action', width: 'available' },
@@ -2940,13 +2960,19 @@ module.exports = {
 																				{
 																					elem: 'icon',
 																					elemMods: { 'indent-r': 's' },
+																					mix: { block: 'avatar' },
 																					content: [
 																						{
 																							block: 'avatar',
-																							content: {
-																								elem: 'photo',
-																								elemMods: { size: 's' }
-																							}
+																							elem: 'photo',
+																							elemMods: { size: 's'},
+																							content: [
+																								{
+																									block: 'image',
+																									width: 40,
+																									url: '/assets/bem-starter-kit/Steph Jeong.jpg'
+																								}
+																							]
 																						}
 																					]
 																				},
@@ -2955,13 +2981,13 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'text',
-																							mods: { size: 's', view: 'primary', weight: 'bold' },
-																							content: 'Luke Appleyard'
+																							mods: { view: 'primary', size: 's', weight: 'semibold' },
+																							content: 'Steph Jeong'
 																						},
 																						{
 																							block: 'text',
-																							mods: { size: 'xs', view: 'primary', },
-																							content: '@lukeappeyard'
+																							mods: { view: 'secondary', size: 's' },
+																							content: '@jeongsteph'
 																						}
 																					]
 																				}
@@ -2970,7 +2996,7 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-																			mods: { size: 'xl', view: 'primary', weight: 'black' },
+																			mods: { size: 'xl', view: 'primary', weight: 'bold' },
 																			content: [
 																				'No individual colour making up this wave travels ',
 																				{
@@ -3038,6 +3064,13 @@ module.exports = {
 																		{
 																			elem: 'person-avatar',
 																			mix: { block: 'avatar', elem: 'photo', elemMods: { size: 'm' }},
+																			content: [
+																				{
+																					block: 'image',
+																					width: 64,
+																					url: '/assets/bem-starter-kit/Nick Bilton.jpg'
+																				}
+																			]
 																		}
 																	]
 																},
@@ -3119,7 +3152,7 @@ module.exports = {
 																					block: 'text',
 																					mods: { view: 'primary', size: 'xxxl', weight: 'bold', style: 'italic', align: 'center', transform: 'uppercase' },
 																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
-																					content: 'Ann’s B-day'
+																					content: 'Inna’s B-day'
 																				},
 																				{
 																					block: 'text',
@@ -3198,11 +3231,8 @@ module.exports = {
 																		},
 																		{
 																			block: 'button',
-																			mix: [
-																				{ block: 'text', mods: { view: 'inverse', weight: 'bold', transform: 'uppercase', style: 'italic' } },
-																				{ block: 'decorator', mods: { 'indent-l': 'xl' }}
-																			],
-																			mods: { theme: 'islands', size: 'l', type: 'submit', view: 'event-donate', 'border-radius': 'full' },
+																			mix: { block: 'decorator', mods: { 'indent-l': 'xl' }},
+																			mods: { theme: 'islands', view: 'action', size: 'l' },
 																			text: 'Make a party'
 																		}
 																	]
@@ -3309,7 +3339,7 @@ module.exports = {
 																					block: 'text',
 																					mods: { view: 'primary', size: 'xl', weight: 'bold' },
 																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-																					content: 'MIRAGE: A Feature-Packed Delay Pedal by RedShift Effects'
+																					content: 'Feature-Packed Delay Pedal by RedShift Effects'
 																				}
 																			]
 																		},

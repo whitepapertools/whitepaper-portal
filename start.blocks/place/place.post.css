@@ -2,13 +2,11 @@
 	position: relative;
 	min-height: 456px;
 	box-sizing: border-box;
-	&__type {
-		opacity: 0.7;
-	}
+	background: var(--color-bg-default);
 	&__date {
 		height: 80px;
 		width: 80px;
-		background: #449FFF; /* */
+		background: var(--color-bg-ghost);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -20,13 +18,7 @@
 		padding-top: 96px !important;
 		background: var(--color-bg-default);
 	}
-	&__feedback {
-		background: var(--color-bg-default);
-	}
-	&__info {
-		background: var(--color-bg-default);
-	}
-	&__action {
-		background: var(--color-bg-default);
+	&__wrap {
+		width: 100%;
 	}
 }

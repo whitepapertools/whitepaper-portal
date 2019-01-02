@@ -1,18 +1,10 @@
 .product {
-	min-height: 456px;
+	height: 456px;
 	box-sizing: border-box;
-	align-items: flex-end;
-	border-radius: 8px;
+	overflow: hidden;
 	&__footer {
 		width: auto;
-		margin: var(--space-l);
-		&_state {
-			&_fold {
-				background: var(--color-bg-default);
-			}
-			&_unfold {
-				background: var(--color-bg-default);
-			}
-		}
+		margin: var(--space-xl);
+		background: var(--color-bg-default);
 	}
 }

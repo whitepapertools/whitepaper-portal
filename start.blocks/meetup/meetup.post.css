@@ -1,9 +1,13 @@
 .meetup {
 	min-height: 456px;
 	box-sizing: border-box;
+	background-color: var(--color-bg-default);
 	&__photo {
 		height: 170px;
 		overflow: hidden;
+	}
+	&__info {
+		width: 100%;
 	}
 	&__description {
 		background-color: var(--color-bg-default);
@@ -13,17 +17,10 @@
 			width: 40px;
 			height: 6px;
 			left: 50%;
-			/* margin-top: calc(-1*var(--space-xl)); */
 			margin-left: calc(-1*var(--space-l));
 			background-color: var(--color-typo-secondary);
 			border-radius: 3px;
 		}
-	}
-	&__feedback {
-		background-color: var(--color-bg-default);
-	}
-	&__info {
-		background-color: var(--color-bg-default);
 	}
 	&__rating {
 		opacity: 0.7;

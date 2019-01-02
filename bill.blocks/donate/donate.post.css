@@ -2,17 +2,26 @@
   min-width: 296px;
 	height: 456px;
   overflow: hidden;
+  &__control {
+    font-size: var(--size-typo-xxl);
+    font-weight: 500;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-typo-primary);
+    background-color: var(--color-bg-ghost);
+    border-radius: 50%;
+  }
   
   /* Person-donate */
   &__person-image {
     height: 114px;
   }
   &__person-avatar {
-    border: 2px solid var(--color-default);
-    margin-left: var(--space-m);
+    margin-left: var(--space-l);
     margin-top: 82px;
-    background-image: url('person-avatar.png');
-    background-size: 100%;
     border-radius: 50%;
   }
 
@@ -21,7 +30,7 @@
     height: 152px;
   }
   &__project-progress-bar {
-    background-color: rgba(0,165,255,.3);
+    background-color: var(--color-bg-selection);
     width: 100%;
     height: 7px;
     position: relative;
@@ -31,7 +40,7 @@
       width: 80px;
       height: 2px;
       margin-top: 5px;
-      background-color: #00A5FF;
+      background-color: var(--color-bg-brand);
     }
   }
   &__amount-wrapper {
@@ -95,17 +104,17 @@
 
     &_view {
       &_1 {
-        background-image: url('person-avatar.png');
+        background-image: url('../../assets/bem-starter-kit/Jenny Johannesson.jpg');
         margin-left: 0;
       }
       &_2 {
-        background-image: url('event-mini-avatar-2.png');
+        background-image: url('../../assets/bem-starter-kit/Steph Jeong.jpg');
       }
       &_3 {
-        background-image: url('event-mini-avatar-3.png');
+        background-image: url('../../assets/bem-starter-kit/Aaron Poe.jpg');
       }
       &_4 {
-        background-image: url('event-mini-avatar-4.png');
+        background-image: url('../../assets/bem-starter-kit/Carolyn Z.jpg');
       }
     }
   }
