@@ -104,17 +104,17 @@
 
     &_view {
       &_1 {
-        background-image: url('../../assets/bem-starter-kit/Jenny Johannesson.jpg');
+        background-image: url('../../assets/starter-kit/Jenny Johannesson.jpg');
         margin-left: 0;
       }
       &_2 {
-        background-image: url('../../assets/bem-starter-kit/Steph Jeong.jpg');
+        background-image: url('../../assets/starter-kit/Steph Jeong.jpg');
       }
       &_3 {
-        background-image: url('../../assets/bem-starter-kit/Aaron Poe.jpg');
+        background-image: url('../../assets/starter-kit/Aaron Poe.jpg');
       }
       &_4 {
-        background-image: url('../../assets/bem-starter-kit/Carolyn Z.jpg');
+        background-image: url('../../assets/starter-kit/Carolyn Z.jpg');
       }
     }
   }

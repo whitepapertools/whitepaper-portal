@@ -6,10 +6,10 @@ module.exports = {
 	head: [
 		{ elem: 'meta', attrs: { name: 'description', content: '' }},
 		{ elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' }},
-		{ elem: 'css', url: 'final-kit.min.css' },
+		{ elem: 'css', url: 'starter-kit.min.css' },
 		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
 	],
-	scripts: [{ elem: 'js', url: 'final-kit.min.js' }],
+	scripts: [{ elem: 'js', url: 'starter-kit.min.js' }],
 	mods: { theme: 'islands' },
 	mix: [
 		{
@@ -774,7 +774,7 @@ module.exports = {
 																								{
 																									block: 'image',
 																									width: 40,
-																									url: '/assets/bem-starter-kit/Tory Turk.jpg'
+																									url: '/assets/starter-kit/Tory Turk.jpg'
 																								}
 																							]
 																						}
@@ -801,7 +801,7 @@ module.exports = {
 																		{
 																			block: 'image',
 																			mix: { block: 'pt-card', elem: 'image' },
-																			url: '/assets/bem-starter-kit/mag.jpg',
+																			url: '/assets/starter-kit/mag.jpg',
 																		}
 																	]
 																},
@@ -916,7 +916,7 @@ module.exports = {
 																							block: 'text',
 																							mods: { view: 'primary', size: 's', weight: 'bold' },
 																							mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-																							content: 'London',
+																							content: 'Travis Scott',
 																						},
 																						{
 																							elem: 'description',
@@ -924,7 +924,7 @@ module.exports = {
 																								{
 																									block: 'text',
 																									mods: { view: 'secondary', size: 'xs', weight: 'light', font: 'mono' },
-																									content: 'Benjamin Clementine • At Least',
+																									content: 'Sicko Mode • Hip-Hop',
 																								}
 																							]
 																						}
@@ -933,7 +933,7 @@ module.exports = {
 																				{
 																					block: 'text',
 																					mods: { view: 'primary', size: 's', weight: 'bold' },
-																					content: '7:25'
+																					content: '4:25'
 																				}
 																			]
 																		},
@@ -948,7 +948,7 @@ module.exports = {
 																							block: 'text',
 																							mods: { view: 'primary', size: 's', weight: 'bold' },
 																							mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-																							content: 'London',
+																							content: 'Sunflower',
 																						},
 																						{
 																							elem: 'description',
@@ -956,7 +956,7 @@ module.exports = {
 																								{
 																									block: 'text',
 																									mods: { view: 'secondary', size: 'xs', weight: 'light', font: 'mono' },
-																									content: 'Benjamin Clementine • At Least',
+																									content: 'Post Malone • Hip-Hop',
 																								}
 																							]
 																						}
@@ -965,7 +965,7 @@ module.exports = {
 																				{
 																					block: 'text',
 																					mods: { view: 'primary', size: 's', weight: 'bold' },
-																					content: '7:25'
+																					content: '5:15'
 																				}
 																			]
 																		},
@@ -980,7 +980,7 @@ module.exports = {
 																							block: 'text',
 																							mods: { view: 'primary', size: 's', weight: 'bold' },
 																							mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-																							content: 'London',
+																							content: 'Drip Too Hard ',
 																						},
 																						{
 																							elem: 'description',
@@ -988,7 +988,7 @@ module.exports = {
 																								{
 																									block: 'text',
 																									mods: { view: 'secandary', size: 'xs', weight: 'light', font: 'mono' },
-																									content: 'Benjamin Clementine • At Least',
+																									content: 'Lil Baby & Gunna • Hip-Hop',
 																								}
 																							]
 																						}
@@ -997,7 +997,7 @@ module.exports = {
 																				{
 																					block: 'text',
 																					mods: { view: 'primary', size: 's', weight: 'bold' },
-																					content: '7:25'
+																					content: '3:55'
 																				}
 																			]
 																		}
@@ -1290,7 +1290,7 @@ module.exports = {
 																				{
 																					block: 'button',
 																					mods: { theme: 'islands', size: 'l' },
-																					text: 'Choose size'
+																					text: 'Pre-Order'
 																				}
 																			]
 																		},
@@ -1310,7 +1310,7 @@ module.exports = {
 																{
 																	block: 'image',
 																	mix: { block: 'pt-card', elem: 'image' },
-																	url: '/assets/bem-starter-kit/fung-1.jpg'
+																	url: '/assets/starter-kit/fung-1.jpg'
 																}
 															]
 														}
@@ -1351,7 +1351,7 @@ module.exports = {
 																				{
 																					block: 'button',
 																					mods: { theme: 'islands', size: 'l' },
-																					text: 'Choose size'
+																					text: 'Add to Cart'
 																				}
 																			]
 																		},
@@ -1371,7 +1371,7 @@ module.exports = {
 																{
 																	block: 'image',
 																	mix: { block: 'pt-card', elem: 'image' },
-																	url: '/assets/bem-starter-kit/fung-2.jpg'
+																	url: '/assets/starter-kit/fung-2.jpg'
 																}
 															]
 														}
@@ -1436,7 +1436,7 @@ module.exports = {
 																{
 																	block: 'image',
 																	mix: { block: 'pt-card', elem: 'image' },
-																	url: '/assets/bem-starter-kit/fung-3.jpg'
+																	url: '/assets/starter-kit/fung-3.jpg'
 																}
 															]
 														}
@@ -1844,6 +1844,7 @@ module.exports = {
 																			content: [
 																				{
 																					elem: 'info',
+																					mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																					content: [
 																						{
 																							block: 'text',
@@ -1861,7 +1862,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'image',
-																											url: '/assets/bem-starter-kit/mastercard.svg',
+																											url: '/assets/starter-kit/mastercard.svg',
 																											width: 36
 																										}
 																									]
@@ -1942,6 +1943,7 @@ module.exports = {
 																			content: [
 																				{
 																					elem: 'info',
+																					mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																					content: [
 																						{
 																							block: 'text',
@@ -1959,7 +1961,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'image',
-																											url: '/assets/bem-starter-kit/mastercard.svg',
+																											url: '/assets/starter-kit/mastercard.svg',
 																											width: 36
 																										}
 																									]
@@ -2038,6 +2040,7 @@ module.exports = {
 																			content: [
 																				{
 																					elem: 'info',
+																					mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																					content: [
 																						{
 																							block: 'text',
@@ -2345,7 +2348,7 @@ module.exports = {
 																								{
 																									block: 'image',
 																									width: 40,
-																									url: '/assets/bem-starter-kit/Aaron Poe.jpg'
+																									url: '/assets/starter-kit/Aaron Poe.jpg'
 																								}
 																							]
 																						}
@@ -2398,7 +2401,7 @@ module.exports = {
 													elemMods: { 's-col': '3', 'm-col': '2' },
 													content: [
 														{
-															block: 'article-preview',
+															block: 'publication',
 															mix: [
 																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
 																{ block: 'component', mods: { whitepaper: 'inverse' }},
@@ -2408,7 +2411,7 @@ module.exports = {
 																{
 																	block: 'image',
 																	mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
-																	url: '/assets/bem-starter-kit/article-preview.png'
+																	url: '/assets/starter-kit/article-preview.png'
 																},
 																{
 																	block: 'header',
@@ -2460,7 +2463,7 @@ module.exports = {
 																										{
 																											block: 'image',
 																											width: 40,
-																											url: '/assets/bem-starter-kit/Nick Bilton.jpg'
+																											url: '/assets/starter-kit/Nick Bilton.jpg'
 																										}
 																									]
 																								}
@@ -2496,8 +2499,8 @@ module.exports = {
 													elemMods: { 's-col': '3', 'm-col': '2' },
 													content: [
 														{
-															block: 'feed',
-															mix: { block: 'pt-card' },
+															block: 'publication',
+															mix: { block: 'pt-card', mods: { view: 'default' }},
 															content: [
 																{
 																	elem: 'item',
@@ -2521,7 +2524,7 @@ module.exports = {
 																								{
 																									block: 'image',
 																									width: 40,
-																									url: '/assets/bem-starter-kit/Kyle Caruso.jpg'
+																									url: '/assets/starter-kit/Kyle Caruso.jpg'
 																								}
 																							]
 																						}
@@ -2552,7 +2555,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'image',
-																			url: '/assets/bem-starter-kit/feed-photo.png',
+																			url: '/assets/starter-kit/feed-photo.png',
 																			width: '100%',
 																		}
 																	]
@@ -2594,8 +2597,6 @@ module.exports = {
 								},
 								/* /Статьи */
 
-
-
 								/* Событие */
 								{
 									elem: 'section',
@@ -2625,7 +2626,10 @@ module.exports = {
 																			content: [
 																				{
 																					block: 'image',
-																					url: '../../../../assets/bem-starter-kit/subzero-cover.png',
+																					attrs: {
+																						'style': 'width: 100%'
+																					},
+																					url: '../../../../assets/starter-kit/subzero-cover.png',
 																				}
 																			]
 																		},
@@ -2679,7 +2683,7 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'info',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l', 'indent-b': 's' }},
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'xxl', 'indent-b': 's' }},
 																			content: [
 																				{
 																					elem: 'item',
@@ -2811,7 +2815,7 @@ module.exports = {
 																		{
 																			elem: 'date',
 																			mix: [ { block: 'text', mods: { size: 's', view: 'primary' } } ],
-																			content: '27 may'
+																			content: 'May'
 																		},
 																		{
 																			elem: 'type',
@@ -2820,7 +2824,10 @@ module.exports = {
 																		},
 																		{
 																			elem: 'event',
-																			mix: [ { block: 'text', mods: { size: 'xxl', view: 'primary', weight: 'bold' }}, { block: 'decorator', mods: { 'indent-b': 's' } } ],
+																			mix: [ 
+																				{ block: 'text', mods: { size: 'xxl', view: 'primary', weight: 'bold' }}, 
+																				{ block: 'decorator', mods: { 'indent-b': 's' }} 
+																			],
 																			content: '3rd Annual Innate Killer'
 																		},
 																		{
@@ -2831,7 +2838,7 @@ module.exports = {
 																				{
 																					block: 'image',
 																					width: 40,
-																					url: '/assets/bem-starter-kit/Carolyn Z.jpg'
+																					url: '/assets/starter-kit/Carolyn Z.jpg'
 																				}
 																			]
 																		}
@@ -2840,7 +2847,7 @@ module.exports = {
 																{
 																	elem: 'info',
 																	mix: [
-																		{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' }},
+																		{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'xxl' }},
 																		{ block: 'pt-card', elem: 'footer' }
 																	],
 																	content: [
@@ -2941,7 +2948,7 @@ module.exports = {
 													content: [
 
 														{
-															block: 'answer',
+															block: 'meetup',
 															mix: [
 																{ block: 'theme', mods: { color: 'whitepaper-brand' }},
 																{ block: 'component', mods: { whitepaper: 'brand' }},
@@ -2950,7 +2957,7 @@ module.exports = {
 															content: [
 																{
 																	elem: 'content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
 																	content: [
 																		{
 																			block: 'pt-icon-plus',
@@ -2970,7 +2977,7 @@ module.exports = {
 																								{
 																									block: 'image',
 																									width: 40,
-																									url: '/assets/bem-starter-kit/Steph Jeong.jpg'
+																									url: '/assets/starter-kit/Steph Jeong.jpg'
 																								}
 																							]
 																						}
@@ -2995,7 +3002,6 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																			mods: { size: 'xl', view: 'primary', weight: 'bold' },
 																			content: [
 																				'No individual colour making up this wave travels ',
@@ -3010,12 +3016,12 @@ module.exports = {
 																},
 																{
 																	elem: 'logo',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-b': 'l', 'space-a': 'xl' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { view: 'primary', size: 'm' },
-																			content: 'faster than the grid lines'
+																			mods: { view: 'primary', size: 'm', weight: 'semibold' },
+																			content: 'Twitter'
 																		}
 																	]
 																}
@@ -3068,7 +3074,7 @@ module.exports = {
 																				{
 																					block: 'image',
 																					width: 64,
-																					url: '/assets/bem-starter-kit/Nick Bilton.jpg'
+																					url: '/assets/starter-kit/Nick Bilton.jpg'
 																				}
 																			]
 																		}

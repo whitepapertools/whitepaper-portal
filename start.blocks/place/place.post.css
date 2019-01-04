@@ -4,8 +4,8 @@
 	box-sizing: border-box;
 	background: var(--color-bg-default);
 	&__date {
-		height: 80px;
-		width: 80px;
+		height: 64px;
+		width: 64px;
 		background: var(--color-bg-ghost);
 		display: flex;
 		align-items: center;
@@ -15,7 +15,7 @@
 		left: 0px;
 	}
 	&__description {
-		padding-top: 96px !important;
+		padding-top: 87px !important;
 		background: var(--color-bg-default);
 	}
 	&__wrap {
