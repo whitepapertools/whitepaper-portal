@@ -97,25 +97,10 @@
   &__event-avatar-group {
     display: inline-flex;
     align-items: center;
+    margin-left: 12px;
   }
   &__event-mini-avatar {
     background-size: 100%;
     margin-left: -$space-s;
-
-    &_view {
-      &_1 {
-        background-image: url('../../assets/starter-kit/Jenny Johannesson.jpg');
-        margin-left: 0;
-      }
-      &_2 {
-        background-image: url('../../assets/starter-kit/Steph Jeong.jpg');
-      }
-      &_3 {
-        background-image: url('../../assets/starter-kit/Aaron Poe.jpg');
-      }
-      &_4 {
-        background-image: url('../../assets/starter-kit/Carolyn Z.jpg');
-      }
-    }
   }
 }

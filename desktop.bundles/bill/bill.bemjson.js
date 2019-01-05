@@ -180,11 +180,15 @@ module.exports = {
 									content: [
 									{
 										block: 'avatar',
+										elem: 'photo',
+										elemMods: { size: 's'},
 										content: [
-										{
-											elem: 'photo',
-											elemMods: { size: 'xs', view: 'example' },
-										}]
+											{
+												block: 'image',
+												width: 40,
+												url: '/assets/starter-kit/Tory Turk.jpg'
+											}
+										]
 									}]
 								},
 								{
@@ -193,7 +197,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { view: 'primary', size: 'm' },
-										content: 'James Bridle'
+										content: 'Tory Turk'
 									}]
 								}]
 							}]
@@ -301,7 +305,7 @@ module.exports = {
 										block: 'text',
 										mods: { view: 'primary', size: 's', weight: 'bold' },
 										mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-										content: 'London',
+										content: 'Travis Scott',
 									},
 									{
 										elem: 'description',
@@ -309,14 +313,14 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { view: 'primary', size: 'xs', weight: 'light', font: 'mono' },
-											content: 'Benjamin Clementine • At Least',
+											content: 'Sicko Mode • Hip-Hop',
 										}]
 									}]
 								},
 								{
 									block: 'text',
 									mods: { view: 'primary', size: 's', weight: 'bold' },
-									content: '7:25'
+									content: '4:25'
 								}]
 							},
 							{
@@ -330,7 +334,7 @@ module.exports = {
 										block: 'text',
 										mods: { view: 'primary', size: 's', weight: 'bold' },
 										mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-										content: 'London',
+										content: 'Sunflower',
 									},
 									{
 										elem: 'description',
@@ -338,14 +342,14 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { view: 'primary', size: 'xs', weight: 'light', font: 'mono' },
-											content: 'Benjamin Clementine • At Least',
+											content: 'Post Malone • At Least',
 										}]
 									}]
 								},
 								{
 									block: 'text',
 									mods: { view: 'primary', size: 's', weight: 'bold' },
-									content: '7:25'
+									content: '5:15'
 								}]
 							},
 							{
@@ -359,7 +363,7 @@ module.exports = {
 										block: 'text',
 										mods: { view: 'primary', size: 's', weight: 'bold' },
 										mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-										content: 'London',
+										content: 'Drip Too Hard ',
 									},
 									{
 										elem: 'description',
@@ -367,14 +371,14 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { view: 'primary', size: 'xs', weight: 'light', font: 'mono' },
-											content: 'Benjamin Clementine • At Least',
+											content: 'Lil Baby & Gunna • Hip-Hop',
 										}]
 									}]
 								},
 								{
 									block: 'text',
 									mods: { view: 'primary', size: 's', weight: 'bold' },
-									content: '7:25'
+									content: '3:55'
 								}]
 							},
 							{
@@ -388,7 +392,7 @@ module.exports = {
 										block: 'text',
 										mods: { view: 'primary', size: 's', weight: 'bold' },
 										mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-										content: 'London',
+										content: 'Flipp Dinero',
 									},
 									{
 										elem: 'description',
@@ -396,14 +400,14 @@ module.exports = {
 										{
 											block: 'text',
 											mods: { view: 'primary', size: 'xs', weight: 'light', font: 'mono' },
-											content: 'Benjamin Clementine • At Least',
+											content: 'Leave Me Alone • Hip-Hop',
 										}]
 									}]
 								},
 								{
 									block: 'text',
 									mods: { view: 'primary', size: 's', weight: 'bold' },
-									content: '7:25'
+									content: '4:05'
 								}]
 							}]
 						}]
@@ -875,29 +879,45 @@ module.exports = {
 						mix: [{ block: 'pt-card', mods: { view: 'default' } }, { block: 'promo-cards', elem: 'apps-developer-back' }, { block: 'promo-cards', elem: 'hover' }],
 						content: [
 						{
+							elem: 'cover',
+							mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
+							content: [
+								{
+									block: 'image',
+									url: '/assets/i/monument2.png',
+								}
+							]
+						},
+						{
 							elem: 'info',
-							mix: { block: 'pt-card', elem: 'header', elemMods: { 'space-a': 'l' } },
+							mix: { block: 'pt-card', elem: 'header', elemMods: { 'space-a': 'l', distribute: 'center' } },
 							content: [
 							{
-								block: 'text',
-								mods: { size: 'm', view: 'primary', transform: 'uppercase', align: 'center', spacing: 'm' },
-								mix: { block: 'promo-cards', elem: 'apps-developer-name' },
-								content: 'Bundle'
-							},
-							{
-								block: 'image',
-								mix: [{ block: 'decorator', mods: { 'indent-v': 'xl' } }, { block: 'promo-cards', elem: 'apps-developer-app-cover' }],
-								url: '/assets/i/group.png',
-							},
-							{
-								elem: 'price',
-								mix: { block: 'promo-cards', elem: 'apps-developer-btn' },
+								elem: 'content',
+								mix: { block: 'pt-card', elem: 'content', elemMods: { distribute: 'center' } },
 								content: [
-								{
-									block: 'text',
-									mods: { size: 'l', view: 'primary', font: 'mono', with: 'semibold' },
-									content: '$299'
-								}]
+									{
+										block: 'text',
+										mods: { size: 'm', view: 'primary', transform: 'uppercase', align: 'center', spacing: 'm' },
+										mix: { block: 'promo-cards', elem: 'apps-developer-name' },
+										content: 'Bundle'
+									},
+									{
+										block: 'image',
+										mix: [{ block: 'decorator', mods: { 'indent-v': 'xl' } }, { block: 'promo-cards', elem: 'apps-developer-app-cover' }],
+										url: '/assets/i/group.png',
+									},
+									{
+										elem: 'price',
+										mix: { block: 'promo-cards', elem: 'apps-developer-btn' },
+										content: [
+										{
+											block: 'text',
+											mods: { size: 'l', view: 'primary', font: 'mono', with: 'semibold' },
+											content: '$299'
+										}]
+									}
+								]
 							}]
 						},
 						{
@@ -912,7 +932,7 @@ module.exports = {
 								content: [
 								{
 									elem: 'item',
-									mix: [{ block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', distribute: 'between' }}, { block: 'pt-card', elem: 'item' }],
+									mix: [{ block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', distribute: 'between', 'vertical-align': 'center' }}, { block: 'pt-card', elem: 'item' }],
 									content: [
 									{
 										block: 'pt-icon-plus',
@@ -950,7 +970,7 @@ module.exports = {
 								},
 								{
 									elem: 'item',
-									mix: [{ block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', distribute: 'between' }}, { block: 'pt-card', elem: 'item' }],
+									mix: [{ block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', distribute: 'between', 'vertical-align': 'center' }}, { block: 'pt-card', elem: 'item' }],
 									content: [
 									{
 										block: 'pt-icon-plus',
@@ -1015,7 +1035,7 @@ module.exports = {
 						},
 						{
 							elem: 'preview',
-							mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' } },
+							mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl', distribute: 'center' } },
 							content: [
 							{
 								block: 'image',
@@ -1319,6 +1339,13 @@ module.exports = {
 								mix: [
 									{ block: 'avatar', elem: 'photo', elemMods: { size: 'm' } },
 									{ block: 'promo-cards', elem: 'donate-person-avatar'},
+								],
+								content: [
+									{
+										block: 'image',
+										width: 64,
+										url: '/assets/starter-kit/Nick Bilton.jpg'
+									}
 								]
 							}]
 						},
@@ -1359,8 +1386,7 @@ module.exports = {
 							content: [
 							{
 								block: 'button',
-								mix: { block: 'text', mods: { view: 'inverse', size: 's', transform: 'uppercase' } },
-								mods: { theme: 'islands', size: 'l', type: 'submit', view: 'person-donate', width: 'full' },
+								mods: { theme: 'islands', size: 'l', width: 'available', view: 'action' },
 								text: 'Send $10'
 							}]
 						}]
@@ -1491,8 +1517,7 @@ module.exports = {
 							content: [
 							{
 								block: 'button',
-								mix: { block: 'text', mods: { view: 'inverse', size: 'm' } },
-								mods: { theme: 'islands', size: 'l', type: 'submit', view: 'project-donate', width: 'full', 'border-radius': 'full' },
+								mods: { theme: 'islands', size: 'l', width: 'available', view: 'action' },
 								text: 'Back this project'
 							}]
 						}]
@@ -1591,40 +1616,63 @@ module.exports = {
 							{
 								elem: 'event-avatar-group',
 								content: [
-								{
-									elem: 'event-mini-avatar',
-									elemMods: { view: '1' },
-									mix: { block: 'avatar', elem: 'photo', elemMods: { size: 'xs' } },
-								},
-								{
-									elem: 'event-mini-avatar',
-									elemMods: { view: '2' },
-									mix: { block: 'avatar', elem: 'photo', elemMods: { size: 'xs' } },
-								},
-								{
-									elem: 'event-mini-avatar',
-									elemMods: { view: '3' },
-									mix: { block: 'avatar', elem: 'photo', elemMods: { size: 'xs' } },
-								},
-								{
-									elem: 'event-mini-avatar',
-									elemMods: { view: '4' },
-									mix: { block: 'avatar', elem: 'photo', elemMods: { size: 'xs' } },
-								},
-								{
-									block: 'text',
-									mix: { block: 'decorator', mods: { 'indent-l': 'xxs' } },
-									mods: { view: 'primary', size: 'm', weight: 'semibold' },
-									content: '+6'
-								}]
+									{
+										elem: 'event-mini-avatar',
+										content: [
+											{
+												block: 'avatar',
+												elem: 'photo',
+												elemMods: { size: 's'},
+												content: [
+													{
+														block: 'image',
+														width: 40,
+														url: '/assets/starter-kit/Jenny Johannesson.jpg'
+													}
+												]
+											}
+										]
+									},
+									{
+										elem: 'event-mini-avatar',
+										content: [
+											{
+												block: 'avatar',
+												elem: 'photo',
+												elemMods: { size: 's'},
+												content: [
+													{
+														block: 'image',
+														width: 40,
+														url: '/assets/starter-kit/Steph Jeong.jpg'
+													}
+												]
+											}
+										]
+									},
+									{
+										elem: 'event-mini-avatar',
+										content: [
+											{
+												block: 'avatar',
+												elem: 'photo',
+												elemMods: { size: 's'},
+												content: [
+													{
+														block: 'image',
+														width: 40,
+														url: '/assets/starter-kit/Aaron Poe.jpg'
+													}
+												]
+											}
+										]
+									}
+								]
 							},
 							{
 								block: 'button',
-								mix: [
-									{ block: 'text', mods: { view: 'inverse', weight: 'bold', transform: 'uppercase', style: 'italic' } },
-									{ block: 'decorator', mods: { 'indent-l': 'xl' } }
-								],
-								mods: { theme: 'islands', size: 'l', type: 'submit', view: 'event-donate', 'border-radius': 'full' },
+								mods: { theme: 'islands', view: 'action', size: 'l' },
+								mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
 								text: 'Make a party'
 							}]
 						}]

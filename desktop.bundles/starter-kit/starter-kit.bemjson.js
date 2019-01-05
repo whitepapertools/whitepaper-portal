@@ -460,6 +460,11 @@ module.exports = {
 															],
 															content: [
 																{
+																	block: 'image',
+																	mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
+																	url: '/assets/starter-kit/premium.png'
+																},
+																{
 																	elem: 'content',
 																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
 																	content: [
@@ -3209,23 +3214,71 @@ module.exports = {
 																			content: [
 																				{
 																					elem: 'event-mini-avatar',
-																					elemMods: { view: '1' },
-																					mix: { block: 'avatar', elem: 'photo', elemMods: { size: 'xs' }},
+																					content: [
+																						{
+																							block: 'avatar',
+																							elem: 'photo',
+																							elemMods: { size: 's'},
+																							content: [
+																								{
+																									block: 'image',
+																									width: 40,
+																									url: '/assets/starter-kit/Jenny Johannesson.jpg'
+																								}
+																							]
+																						}
+																					]
 																				},
 																				{
 																					elem: 'event-mini-avatar',
-																					elemMods: { view: '2' },
-																					mix: { block: 'avatar', elem: 'photo', elemMods: { size: 'xs' }},
+																					content: [
+																						{
+																							block: 'avatar',
+																							elem: 'photo',
+																							elemMods: { size: 's'},
+																							content: [
+																								{
+																									block: 'image',
+																									width: 40,
+																									url: '/assets/starter-kit/Steph Jeong.jpg'
+																								}
+																							]
+																						}
+																					]
 																				},
 																				{
 																					elem: 'event-mini-avatar',
-																					elemMods: { view: '3' },
-																					mix: { block: 'avatar', elem: 'photo', elemMods: { size: 'xs' }},
+																					content: [
+																						{
+																							block: 'avatar',
+																							elem: 'photo',
+																							elemMods: { size: 's'},
+																							content: [
+																								{
+																									block: 'image',
+																									width: 40,
+																									url: '/assets/starter-kit/Aaron Poe.jpg'
+																								}
+																							]
+																						}
+																					]
 																				},
 																				{
 																					elem: 'event-mini-avatar',
-																					elemMods: { view: '4' },
-																					mix: { block: 'avatar', elem: 'photo', elemMods: { size: 'xs' }},
+																					content: [
+																						{
+																							block: 'avatar',
+																							elem: 'photo',
+																							elemMods: { size: 's'},
+																							content: [
+																								{
+																									block: 'image',
+																									width: 40,
+																									url: '/assets/starter-kit/Carolyn Z.jpg'
+																								}
+																							]
+																						}
+																					]
 																				},
 																				{
 																					block: 'text',
@@ -3237,7 +3290,6 @@ module.exports = {
 																		},
 																		{
 																			block: 'button',
-																			mix: { block: 'decorator', mods: { 'indent-l': 'xl' }},
 																			mods: { theme: 'islands', view: 'action', size: 'l' },
 																			text: 'Make a party'
 																		}
