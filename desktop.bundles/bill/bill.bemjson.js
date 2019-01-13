@@ -1597,7 +1597,7 @@ module.exports = {
 							},
 							{
 								block: 'text',
-								mods: { view: 'primary', size: '4xl', weight: 'semibold', align: 'center' },
+								mods: { view: 'primary', size: 'xxxxl', weight: 'semibold', align: 'center' },
 								mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
 								content: '$10'
 							},
