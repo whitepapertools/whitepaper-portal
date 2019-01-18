@@ -654,7 +654,7 @@ module.exports = {
 																					attrs: {
 																						style: 'width: 100%'
 																					},
-																					url: '/assets/i/fallon.png',
+																					url: '/assets/starter-kit/fallon.png',
 																				}
 																			]
 																		},
@@ -878,7 +878,7 @@ module.exports = {
 																					attrs: {
 																						style: 'width: 100%'
 																					},
-																					url: '/assets/i/london.png',
+																					url: '/assets/starter-kit/london.png',
 																				}
 																			]
 																		},
@@ -907,12 +907,12 @@ module.exports = {
 																	]
 																},
 																{
-																	block: 'playlist',
+																	elem: 'playlist',
 																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-h': 'xl' }},
 																	content: [
 																		{
-																			elem: 'item',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' } },
+																			elem: 'sound',
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' }},
 																			content: [
 																				{
 																					elem: 'track',
@@ -920,7 +920,7 @@ module.exports = {
 																						{
 																							block: 'text',
 																							mods: { view: 'primary', size: 's', weight: 'bold' },
-																							mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
+																							mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
 																							content: 'Travis Scott',
 																						},
 																						{
@@ -943,7 +943,7 @@ module.exports = {
 																			]
 																		},
 																		{
-																			elem: 'item',
+																			elem: 'sound',
 																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' } },
 																			content: [
 																				{
@@ -975,7 +975,7 @@ module.exports = {
 																			]
 																		},
 																		{
-																			elem: 'item',
+																			elem: 'sound',
 																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' } },
 																			content: [
 																				{
@@ -1481,7 +1481,7 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'image',
-																			url: '/assets/i/monument2.png',
+																			url: '/assets/starter-kit/monument2.png',
 																		}
 																	]
 																},
@@ -1497,7 +1497,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'image',
-																			url: '/assets/i/group.png',
+																			url: '/assets/starter-kit/group.png',
 																		}
 																	]
 																},
@@ -1622,7 +1622,7 @@ module.exports = {
 																		{
 																			block: 'image',
 																			mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
-																			url: '/assets/i/good-cover.png'
+																			url: '/assets/starter-kit/good-cover.png'
 																		},
 																		{
 																			block: 'text',
@@ -1702,7 +1702,7 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'image',
-																			url: '/assets/i/monument.png',
+																			url: '/assets/starter-kit/monument.png',
 																		}
 																	]
 																},
@@ -1715,7 +1715,7 @@ module.exports = {
 																			mix: [
 																				{ block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
 																			],
-																			url: '/assets/i/ustwo.svg'
+																			url: '/assets/starter-kit/ustwo.svg'
 																		},
 																		{
 																			elem: 'about',
@@ -2107,7 +2107,7 @@ module.exports = {
 																		{
 																			block: 'image',
 																			mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
-																			url: '/assets/i/offer-service-image.png'
+																			url: '/assets/starter-kit/offer-service-image.png'
 																		}
 																	]
 																},
@@ -2183,7 +2183,7 @@ module.exports = {
 																							attrs: {
 																								'style': 'width: 100%'
 																							},
-																							url: '/assets/i/offer-brand-image.png'
+																							url: '/assets/starter-kit/offer-brand-image.png'
 																						
 																						}
 																					]
@@ -2257,7 +2257,7 @@ module.exports = {
 																				{
 																					block: 'image',
 																					mix: { block: 'pt-card', elem: 'image' },
-																					url: '/assets/i/offer-goods-image.png'
+																					url: '/assets/starter-kit/offer-goods-image.png'
 																				}
 																			]
 																		}
@@ -2802,14 +2802,14 @@ module.exports = {
 													elemMods: { 's-col': '3', 'm-col': '2' },
 													content: [
 														{
-															block: 'place',
+															block: 'meetup',
 															mix: [
 																{ block: 'pt-list' },
 																{ block: 'pt-card' }
 															],
 															content: [
 																{
-																	elem: 'description',
+																	elem: 'announce',
 																	mix: [
 																		{ block: 'theme', mods: { color: 'whitepaper-brand' }},
 																		{ block: 'component', mods: { whitepaper: 'brand' }},
@@ -3064,7 +3064,7 @@ module.exports = {
 																		{
 																			block: 'image',
 																			mix: { block: 'pt-card', elem: 'image' },
-																			url: '/assets/i/donate-person-image.png'
+																			url: '/assets/starter-kit/donate-person-image.png'
 																		}
 																	]
 																},
@@ -3142,7 +3142,7 @@ module.exports = {
 																			block: 'image',
 																			mix: { block: 'pt-card', elem: 'image' },
 																			attrs: { 'style': 'max-height: 260px;'},
-																			url: '/assets/i/donate-event-image.png'
+																			url: '/assets/starter-kit/donate-event-image.png'
 																		}
 																	]
 																},
@@ -3314,7 +3314,7 @@ module.exports = {
 																		{
 																			block: 'image',
 																			mix: { block: 'pt-card', elem: 'image' },
-																			url: '/assets/i/donate-project-image.png'
+																			url: '/assets/starter-kit/donate-project-image.png'
 																		},
 																		{
 																			elem: 'project-play',
