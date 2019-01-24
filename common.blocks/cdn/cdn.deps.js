@@ -1,6 +1,16 @@
 ([
     {
         shouldDeps: [
+            { block: 'avatar' },
+            { block: 'avatar', elem: 'photo', mods: { size: ['xs', 's', 'm', 'l'] } },
+
+
+            { block: 'badge', mods: { view: ['alert', 'default', 'success', 'warning'] } },
+
+
+            { block: 'brand-logo', mods: { form: ['mask', 'round'], size: ['xxs', 'xs', 's', 'm', 'l', 'xl'] } },
+
+
             { block: 'decorator', mods: {
                                             'indent-a': ['auto', 'l', 'm', 's', 'xl', 'xs', 'xxl', 'xxs', 'xxxl', 'xxxs', 'xxxxl', 'xxxxxl', 'xxxxxxl'],
                                             'indent-b': ['l', 'm', 's', 'xl', 'xs', 'xxl', 'xxs', 'xxxl', 'xxxs', 'xxxxl', 'xxxxxl', 'xxxxxxl'],
