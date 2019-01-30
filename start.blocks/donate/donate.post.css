@@ -1,5 +1,7 @@
 .donate {
-  min-width: 296px;
+	min-width: 296px;
+	max-width: 350px;
+	min-height: 456px;
 	height: 456px;
   overflow: hidden;
   &__control {
@@ -29,7 +31,6 @@
   &__project-image {
     height: 152px;
   }
-
   &__project-progress-bar {
     background-color: var(--color-bg-selection);
     width: 100%;
@@ -44,11 +45,9 @@
       background-color: var(--color-bg-brand);
     }
   }
-
   &__amount-wrapper {
     display: inline-block;
   }
-
   &__days-wrapper {
     display: inline-block;
   }
@@ -59,7 +58,6 @@
     justify-content: space-between;
     align-items: center;
   }
-
   &__event-image-wrapper {
     &::after {
       content: '';
@@ -71,7 +69,6 @@
       background-image: linear-gradient(0deg, #fff 0%, rgba(105,205,149,0.5) 100%), linear-gradient(0deg, #fff 10%, rgba(0,0,0,0.5) 100%);
     }
   }
-
   &__event-avatar {
     width: 88px;
     height: 88px;
@@ -79,7 +76,6 @@
     overflow: hidden;
     margin: calc(18px + var(--space-xxl)) auto calc(18px + var(--space-l));
     box-shadow: -2px 2px 14px 0 rgba(25,28,26,0.31);
-
     &::after {
       content: '';
       position: absolute;
@@ -93,20 +89,17 @@
       background-repeat: no-repeat;
     }
   }
-
   &__event-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 72px;
   }
-
   &__event-avatar-group {
     display: inline-flex;
     align-items: center;
     margin-left: 12px;
   }
-  
   &__event-mini-avatar {
     background-size: 100%;
     margin-left: -$space-s;

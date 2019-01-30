@@ -81,7 +81,7 @@ module.exports = {
 							content: [
 							{
 								block: 'image',
-								url: '/assets/i/fallon.png',
+								url: '/assets/starter-kit/fallon.png',
 							},
 							{
 								elem: 'play',
@@ -208,13 +208,13 @@ module.exports = {
 							content: [
 							{
 								block: 'image',
-								mix: [{ block: 'pt-card', elem: 'image', elemMods: { shadow: 'top-inverse' } } ],
-								url: '/assets/i/heroes.png',
+								mix: [{ block: 'pt-card', elem: 'image', elemMods: { shadow: 'top-inverse' }}],
+								url: '/assets/starter-kit/mag.jpg',
 							}]
 						},
 						{
 							elem: 'article-title',
-							mix: [{ block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' } }, { block: 'promo-cards', elem: 'media-article' }],
+							mix: [{ block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' }}, { block: 'promo-cards', elem: 'media-article' }],
 							content: [
 							{
 								block: 'text',
@@ -262,154 +262,183 @@ module.exports = {
 						content: [
 						{
 							elem: 'cover',
-							mix: [{ block: 'pt-card', elem: 'image', elemMods: { shadow: 'bottom-inverse' } }, { block: 'promo-cards', elem: 'media-music-cover' }],
+							mix: { block: 'pt-card', elem: 'content' },
 							content: [
-							{
-								block: 'image',
-								url: '/assets/i/london.png',
-							},
-							{
-								elem: 'name',
-								mix: [{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l' } }],
-								content: [
-									{
-										elem: 'wrap',
-										content: [
+								{
+									elem: 'image',
+									content: [
 										{
-											block: 'text',
-											mods: { view: 'primary', size: 'xxxl', align: 'center', weight: 'bold' },
-											mix: { block: 'decorator', mods: { 'indent-b': 's' } },
-											content: 'Pitchfork\'s Best New Music',
-										},
+											block: 'image',
+											attrs: {
+												style: 'width: 100%'
+											},
+											url: '/assets/starter-kit/london.png',
+										}
+									]
+								},
+								{
+									elem: 'name',
+									mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l' }},
+									content: [
 										{
-											block: 'text',
-											mods: { view: 'primary', size: 'm', align: 'center', font: 'mono', style: 'italic' },
-											content: 'Pitchfork',
-										}]
-									}
-								]
-							}]
+											elem: 'wrap',
+											content: [
+												{
+													block: 'text',
+													mods: { view: 'primary', size: 'xxxl', align: 'center', weight: 'bold' },
+													mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+													content: 'Pitchfork\'s Best New Music',
+												},
+												{
+													block: 'text',
+													mods: { view: 'primary', size: 'm', align: 'center', font: 'mono', style: 'italic' },
+													content: 'Pitchfork',
+												}
+											]
+										}
+									]
+								}
+							]
 						},
 						{
-							block: 'playlist',
-							mix: [{ block: 'pt-list', elem: 'item', elemMods: { 'space-h': 'l' } }, { block: 'promo-cards', elem: 'media-playlist' }],
+							elem: 'playlist',
+							mix: { block: 'pt-card', elem: 'footer' },
 							content: [
-							{
-								elem: 'item',
-								mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' } },
-								content: [
 								{
-									elem: 'track',
+									elem: 'collection',
+									mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-h': 'xl' }},
 									content: [
-									{
-										block: 'text',
-										mods: { view: 'primary', size: 's', weight: 'bold' },
-										mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-										content: 'Travis Scott',
-									},
-									{
-										elem: 'description',
-										content: [
 										{
-											block: 'text',
-											mods: { view: 'primary', size: 'xs', weight: 'light', font: 'mono' },
-											content: 'Sicko Mode • Hip-Hop',
-										}]
-									}]
-								},
-								{
-									block: 'text',
-									mods: { view: 'primary', size: 's', weight: 'bold' },
-									content: '4:25'
-								}]
-							},
-							{
-								elem: 'item',
-								mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' } },
-								content: [
-								{
-									elem: 'track',
-									content: [
-									{
-										block: 'text',
-										mods: { view: 'primary', size: 's', weight: 'bold' },
-										mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-										content: 'Sunflower',
-									},
-									{
-										elem: 'description',
-										content: [
+											elem: 'sound',
+											mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' }},
+											content: [
+												{
+													elem: 'track',
+													content: [
+														{
+															block: 'text',
+															mods: { view: 'primary', size: 's', weight: 'bold' },
+															mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
+															content: 'London',
+														},
+														{
+															elem: 'description',
+															content: [
+																{
+																	block: 'text',
+																	mods: { view: 'secondary', size: 'xs', weight: 'light', font: 'mono' },
+																	content: 'Benjamin Clementine • At Least',
+																}
+															]
+														}
+													]
+												},
+												{
+													block: 'text',
+													mods: { view: 'primary', size: 's', weight: 'bold' },
+													content: '7:25'
+												}
+											]
+										},
 										{
-											block: 'text',
-											mods: { view: 'primary', size: 'xs', weight: 'light', font: 'mono' },
-											content: 'Post Malone • At Least',
-										}]
-									}]
-								},
-								{
-									block: 'text',
-									mods: { view: 'primary', size: 's', weight: 'bold' },
-									content: '5:15'
-								}]
-							},
-							{
-								elem: 'item',
-								mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' } },
-								content: [
-								{
-									elem: 'track',
-									content: [
-									{
-										block: 'text',
-										mods: { view: 'primary', size: 's', weight: 'bold' },
-										mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-										content: 'Drip Too Hard ',
-									},
-									{
-										elem: 'description',
-										content: [
+											elem: 'sound',
+											mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' }},
+											content: [
+												{
+													elem: 'track',
+													content: [
+														{
+															block: 'text',
+															mods: { view: 'primary', size: 's', weight: 'bold' },
+															mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
+															content: 'Travis Scott',
+														},
+														{
+															elem: 'description',
+															content: [
+																{
+																	block: 'text',
+																	mods: { view: 'secondary', size: 'xs', weight: 'light', font: 'mono' },
+																	content: 'Sicko Mode • Hip-Hop',
+																}
+															]
+														}
+													]
+												},
+												{
+													block: 'text',
+													mods: { view: 'primary', size: 's', weight: 'bold' },
+													content: '4:25'
+												}
+											]
+										},
 										{
-											block: 'text',
-											mods: { view: 'primary', size: 'xs', weight: 'light', font: 'mono' },
-											content: 'Lil Baby & Gunna • Hip-Hop',
-										}]
-									}]
-								},
-								{
-									block: 'text',
-									mods: { view: 'primary', size: 's', weight: 'bold' },
-									content: '3:55'
-								}]
-							},
-							{
-								elem: 'item',
-								mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' } },
-								content: [
-								{
-									elem: 'track',
-									content: [
-									{
-										block: 'text',
-										mods: { view: 'primary', size: 's', weight: 'bold' },
-										mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-										content: 'Flipp Dinero',
-									},
-									{
-										elem: 'description',
-										content: [
+											elem: 'sound',
+											mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' } },
+											content: [
+												{
+													elem: 'track',
+													content: [
+														{
+															block: 'text',
+															mods: { view: 'primary', size: 's', weight: 'bold' },
+															mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
+															content: 'Sunflower',
+														},
+														{
+															elem: 'description',
+															content: [
+																{
+																	block: 'text',
+																	mods: { view: 'secondary', size: 'xs', weight: 'light', font: 'mono' },
+																	content: 'Post Malone • Hip-Hop',
+																}
+															]
+														}
+													]
+												},
+												{
+													block: 'text',
+													mods: { view: 'primary', size: 's', weight: 'bold' },
+													content: '5:15'
+												}
+											]
+										},
 										{
-											block: 'text',
-											mods: { view: 'primary', size: 'xs', weight: 'light', font: 'mono' },
-											content: 'Leave Me Alone • Hip-Hop',
-										}]
-									}]
-								},
-								{
-									block: 'text',
-									mods: { view: 'primary', size: 's', weight: 'bold' },
-									content: '4:05'
-								}]
-							}]
+											elem: 'sound',
+											mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' } },
+											content: [
+												{
+													elem: 'track',
+													content: [
+														{
+															block: 'text',
+															mods: { view: 'primary', size: 's', weight: 'bold' },
+															mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
+															content: 'Drip Too Hard ',
+														},
+														{
+															elem: 'description',
+															content: [
+																{
+																	block: 'text',
+																	mods: { view: 'secandary', size: 'xs', weight: 'light', font: 'mono' },
+																	content: 'Lil Baby & Gunna • Hip-Hop',
+																}
+															]
+														}
+													]
+												},
+												{
+													block: 'text',
+													mods: { view: 'primary', size: 's', weight: 'bold' },
+													content: '3:55'
+												}
+											]
+										}
+									]
+								}
+							]
 						}]
 					}]
 				},
@@ -572,7 +601,7 @@ module.exports = {
 								{
 									block: 'image',
 									mix: { block: 'pt-card', elem: 'image' },
-									url: '/assets/i/offer-goods-image.png'
+									url: '/assets/starter-kit/offer-goods-image.png'
 								}]
 							}]
 						},
@@ -636,7 +665,7 @@ module.exports = {
 								{
 									block: 'image',
 									mix: { block: 'pt-card', elem: 'image' },
-									url: '/assets/i/offer-brand-image.png'
+									url: '/assets/starter-kit/offer-brand-image.png'
 								}]
 							},
 							{
@@ -699,7 +728,7 @@ module.exports = {
 									{ block: 'promo-cards', elem: 'offer-service-photo'},
 									{ block: 'pt-card', elem: 'image', elemMods: { size: 'cover' } },
 								],
-								url: '/assets/i/offer-service-image.png'
+								url: '/assets/starter-kit/offer-service-image.png'
 							}]
 						},
 						{
@@ -884,7 +913,7 @@ module.exports = {
 							content: [
 								{
 									block: 'image',
-									url: '/assets/i/monument2.png',
+									url: '/assets/starter-kit/monument2.png',
 								}
 							]
 						},
@@ -905,7 +934,7 @@ module.exports = {
 									{
 										block: 'image',
 										mix: [{ block: 'decorator', mods: { 'indent-v': 'xl' } }, { block: 'promo-cards', elem: 'apps-developer-app-cover' }],
-										url: '/assets/i/group.png',
+										url: '/assets/starter-kit/group.png',
 									},
 									{
 										elem: 'price',
@@ -1029,7 +1058,7 @@ module.exports = {
 							content: [
 								{
 									block: 'image',
-									url: '/assets/i/monument.png',
+									url: '/assets/starter-kit/monument.png',
 								}
 							]
 						},
@@ -1041,7 +1070,7 @@ module.exports = {
 								block: 'image',
 								mix: [
 									{ block: 'promo-cards', elem: 'apps-recommendation-photo' },
-									{ block: 'decorator', mods: { 'indent-b': 'xxxxxl' } },
+									{ block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
 								],
 								url: '/assets/i/ustwo.svg',
 								// attrs: {
@@ -1056,7 +1085,7 @@ module.exports = {
 									block: 'text',
 									mods: { size: 'xxxl', view: 'primary', align: 'center', weight: 'bold' },
 									mix: [{ block: 'decorator', mods: { 'space-b': 's' }}, { block: 'promo-cards', elem: 'apps-recommendation-info' }],
-									content: 'From our Bafta award winning hit!'
+									content: 'From our Bafta award winning hit'
 								},
 								{
 									block: 'text',
@@ -1125,7 +1154,7 @@ module.exports = {
 							{
 								block: 'image',
 								mix: [{ block: 'promo-cards', elem: 'apps-good-photo' }, { block: 'decorator', mods: { 'indent-b': 'xxl' } }],
-								url: '/assets/i/good-cover.png',
+								url: '/assets/starter-kit/good-cover.png',
 							},
 							{
 								block: 'text',
@@ -1325,7 +1354,7 @@ module.exports = {
 									{ block: 'pt-card', elem: 'image' },
 									{ block: 'promo-cards', elem: 'donate-person-image'}
 								],
-								url: '/assets/i/donate-person-image.png'
+								url: '/assets/starter-kit/donate-person-image.png'
 							}]
 						},
 						{
@@ -1412,7 +1441,7 @@ module.exports = {
 									{ block: 'pt-card', elem: 'image' },
 									{ block: 'promo-cards', elem: 'donate-project-image'}
 								],
-								url: '/assets/i/donate-project-image.png'
+								url: '/assets/starter-kit/donate-project-image.png'
 							},
 							{
 								elem: 'project-play',
@@ -1540,7 +1569,7 @@ module.exports = {
 							{
 								block: 'image',
 								mix: { block: 'pt-card', elem: 'image' },
-								url: '/assets/i/donate-event-image.png'
+								url: '/assets/starter-kit/donate-event-image.png'
 							}]
 						},
 						{

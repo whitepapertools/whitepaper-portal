@@ -1,6 +1,11 @@
 .media {
+	min-width: 296px;
+	max-width: 350px;
 	min-height: 456px;
 	overflow: hidden;
+	&__collection {
+		width: 100%;
+	}
 	&__cover {
 		&:after {
 			content: '';

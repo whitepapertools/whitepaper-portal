@@ -908,101 +908,107 @@ module.exports = {
 																},
 																{
 																	elem: 'playlist',
-																	mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-h': 'xl' }},
+																	mix: { block: 'pt-card', elem: 'footer' },
 																	content: [
 																		{
-																			elem: 'sound',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' }},
+																			elem: 'collection',
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-h': 'xl' }},
 																			content: [
 																				{
-																					elem: 'track',
+																					elem: 'sound',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' }},
 																					content: [
 																						{
-																							block: 'text',
-																							mods: { view: 'primary', size: 's', weight: 'bold' },
-																							mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
-																							content: 'Travis Scott',
-																						},
-																						{
-																							elem: 'description',
+																							elem: 'track',
 																							content: [
 																								{
 																									block: 'text',
-																									mods: { view: 'secondary', size: 'xs', weight: 'light', font: 'mono' },
-																									content: 'Sicko Mode • Hip-Hop',
+																									mods: { view: 'primary', size: 's', weight: 'bold' },
+																									mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
+																									content: 'Travis Scott',
+																								},
+																								{
+																									elem: 'description',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { view: 'secondary', size: 'xs', weight: 'light', font: 'mono' },
+																											content: 'Sicko Mode • Hip-Hop',
+																										}
+																									]
 																								}
 																							]
+																						},
+																						{
+																							block: 'text',
+																							mods: { view: 'primary', size: 's', weight: 'bold' },
+																							content: '4:25'
 																						}
 																					]
 																				},
 																				{
-																					block: 'text',
-																					mods: { view: 'primary', size: 's', weight: 'bold' },
-																					content: '4:25'
-																				}
-																			]
-																		},
-																		{
-																			elem: 'sound',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' } },
-																			content: [
-																				{
-																					elem: 'track',
+																					elem: 'sound',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' } },
 																					content: [
 																						{
-																							block: 'text',
-																							mods: { view: 'primary', size: 's', weight: 'bold' },
-																							mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-																							content: 'Sunflower',
-																						},
-																						{
-																							elem: 'description',
+																							elem: 'track',
 																							content: [
 																								{
 																									block: 'text',
-																									mods: { view: 'secondary', size: 'xs', weight: 'light', font: 'mono' },
-																									content: 'Post Malone • Hip-Hop',
+																									mods: { view: 'primary', size: 's', weight: 'bold' },
+																									mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
+																									content: 'Sunflower',
+																								},
+																								{
+																									elem: 'description',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { view: 'secondary', size: 'xs', weight: 'light', font: 'mono' },
+																											content: 'Post Malone • Hip-Hop',
+																										}
+																									]
 																								}
 																							]
+																						},
+																						{
+																							block: 'text',
+																							mods: { view: 'primary', size: 's', weight: 'bold' },
+																							content: '5:15'
 																						}
 																					]
 																				},
 																				{
-																					block: 'text',
-																					mods: { view: 'primary', size: 's', weight: 'bold' },
-																					content: '5:15'
-																				}
-																			]
-																		},
-																		{
-																			elem: 'sound',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' } },
-																			content: [
-																				{
-																					elem: 'track',
+																					elem: 'sound',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'm' } },
 																					content: [
 																						{
-																							block: 'text',
-																							mods: { view: 'primary', size: 's', weight: 'bold' },
-																							mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-																							content: 'Drip Too Hard ',
-																						},
-																						{
-																							elem: 'description',
+																							elem: 'track',
 																							content: [
 																								{
 																									block: 'text',
-																									mods: { view: 'secandary', size: 'xs', weight: 'light', font: 'mono' },
-																									content: 'Lil Baby & Gunna • Hip-Hop',
+																									mods: { view: 'primary', size: 's', weight: 'bold' },
+																									mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
+																									content: 'Drip Too Hard ',
+																								},
+																								{
+																									elem: 'description',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { view: 'secandary', size: 'xs', weight: 'light', font: 'mono' },
+																											content: 'Lil Baby & Gunna • Hip-Hop',
+																										}
+																									]
 																								}
 																							]
+																						},
+																						{
+																							block: 'text',
+																							mods: { view: 'primary', size: 's', weight: 'bold' },
+																							content: '3:55'
 																						}
 																					]
-																				},
-																				{
-																					block: 'text',
-																					mods: { view: 'primary', size: 's', weight: 'bold' },
-																					content: '3:55'
 																				}
 																			]
 																		}
@@ -1712,9 +1718,7 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'image',
-																			mix: [
-																				{ block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
-																			],
+																			mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
 																			url: '/assets/starter-kit/ustwo.svg'
 																		},
 																		{

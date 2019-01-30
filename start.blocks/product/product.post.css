@@ -1,4 +1,7 @@
 .product {
+	min-width: 296px;
+	max-width: 350px;
+	min-height: 456px;
 	height: 456px;
 	box-sizing: border-box;
 	overflow: hidden;
