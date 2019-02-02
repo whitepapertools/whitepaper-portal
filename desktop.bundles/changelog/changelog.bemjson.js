@@ -28,11 +28,11 @@ module.exports = {
 				/* Menu */
 				{
 					block: 'new-menu',
-					mix: { block: 'demo', elem: 'nav' }
+					// mix: { block: 'demo', elem: 'nav' }
 				},
 				/* /Menu */
 
-
+				/*
 				{
 					elem: 'docsify-content',
 					attrs: { style: 'position: relative; top: 60px' },
@@ -56,6 +56,93 @@ module.exports = {
 								}
 							]
 						},
+					]
+				},
+				*/
+
+				// {
+				// 	// block: 'change-version',
+				// 	block: 'page-content',
+				// 	attrs: { style: 'position: relative; top: 60px' },
+				// 	content: [
+				// 		{
+				// 			block: 'change-version',
+				// 			content: '12345'
+				// 		},
+				// 		{
+				// 			block: 'page-content',
+				// 			content: '67890'
+				// 		}
+				// 	]
+				// },
+				{
+					block: 'demo',
+					elem: 'content',
+					elemMods: { size: 'm' },
+					content: [
+						{
+							block: 'heading',
+							mix: [
+								{ block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+								{ block: 'text', mods: { size: 'xxxxl', weight: 'bold', view: 'primary', font: 'sans' }},
+							],
+							content: 'История изменений'
+						},
+						{ block: 'change-version' },
+						{ block: 'change-version' },
+						// {
+						// 	block: 'tpl-grid',
+						// 	mods: { columns: '12', 'col-gap': 'two-thirds' },
+						// 	// mods: { structure: '50-50' },
+						// 	// mix: { block: 'theme-layout' },
+						// 	content: [
+						//
+						// 		// левая колонка
+						// 		{
+						// 			elem: 'fraction',
+						// 			elemMods: {col: '5'},
+						// 			content: [
+						// 				{
+						// 					block: 'text',
+						// 					mods: {size: 'xxxxl', weight: 'bold'},
+						// 					content: 'Версия 99.99.99'
+						// 				},
+						// 				{
+						// 					block: 'text',
+						// 					mods: {size: 'l'},
+						// 					mix: {block:'decorator', mods:{'space-t': 'm'}},
+						// 					content: 'This release brings a refreshed components panel, a new store publishing experience and more.'
+						// 				},
+						// 				{
+						// 					block: 'text',
+						// 					mods: {size: 'm', view: 'secondary'},
+						// 					mix: {block:'decorator', mods:{'space-t': 'xxs'}},
+						// 					content: '1 января 2019'
+						// 				},
+						// 			]
+						// 		},
+						//
+						// 		// правая колонка
+						// 		{
+						// 			elem: 'fraction',
+						// 			elemMods: {col: '7'},
+						// 			content: [
+						// 				{
+						// 					block: 'info-block-margin',
+						// 					mix: { block: 'decorator', mods: {'indent-l': 'l'}},
+						// 					content: [
+						// 						// мажоры
+						// 						{
+						// 							block: 'text',
+						// 							mods: {size: 'xl', view: 'primary'},
+						// 							content: 'Важные изменения'
+						// 						}
+						// 					]
+						// 				}
+						// 			]
+						// 		},
+						// 	]
+						// }
 					]
 				},
 
