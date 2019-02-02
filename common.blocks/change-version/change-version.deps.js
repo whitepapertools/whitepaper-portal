@@ -18,7 +18,7 @@
 			// { block: 'demo', elem: 'plug-action' },
 			// { block: 'demo', elem: 'plug-button' },
 			// { block: 'demo', elem: 'plug-soclink', mods: { icon: ['telegram', 'twitter'] } },
-      //
+      
 			// { block: 'pt-card' },
 			// { block: 'pt-card', elem: 'content', mods: { 'space-a': 'xl' } },
 			// { block: 'pt-card', elem: 'image' },
