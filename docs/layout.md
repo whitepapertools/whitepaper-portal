@@ -2,7 +2,7 @@
 
 Сетка – очень важная часть интерфейса. Мы делим их на два вида: обвязки страницы (tpl-layout) и сетки контентных секций (tpl-grid).
 
-## [Обвязки](https://whitepaper.tools/doc.html#/layout-outer)
+## Обвязки
 
 <div class="tpl-grid tpl-grid_s-ratio_1-1 tpl-grid_m-ratio_1-1-1 tpl-grid_row-gap_half tpl-grid_col-gap_half">
 	<div class="tpl-grid__fraction">
@@ -39,7 +39,9 @@
 	</div>
 </div>
 
-## [Сетки](https://whitepaper.tools/doc.html#/layout-inner)
+[Посмотреть все примеры](https://whitepaper.tools/doc.html#/layout-outer)
+
+## Сетки
 
 <div class="tpl-grid tpl-grid_s-ratio_1-1 tpl-grid_m-ratio_1-1-1 tpl-grid_row-gap_half tpl-grid_col-gap_half">
 	<div class="tpl-grid__fraction">
@@ -70,3 +72,5 @@
 		<code>tpl-grid__fraction_m-col_5</code>
 	</div>
 </div>
+
+[Посмотреть все примеры](https://whitepaper.tools/doc.html#/layout-inner)

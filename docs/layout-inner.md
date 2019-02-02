@@ -1,27 +1,49 @@
-# Сетки
+<style>
+	.example .tpl-grid__fraction {
+		background: var(--color-bg-brand);
+		height: 100px;
+	}
+</style>
 
-`tpl-grid` – Сетка для контентный блоков. "Дети" такой сетки подчиняются ее правилам, им не надо дополнительно указывать размеры.
+`tpl-grid` – Сетка для контентный блоков. Есть два сценария использования: [сетка с равными секциями](#Сетка-с-равными-секциями) для равнозначных блоков и [колоночная сетка](#Колоночная-сетка) для блоков разной ширины.
 
-```js 
-{
-	block: 'tpl-grid',
-	content: [
-	{ elem: 'fraction' },
-	{ elem: 'fraction' },
-	{ elem: 'fraction' }]
-}
-```
-
-## Сетка с равными секциями
-
-Для такой сетки понадобится указать только количество секций в строке.
+## Отступы
+Для управления отступами используй модификаторы на расстояние между колонками и между строками. В них используются переменные с префиксом `--col-gap-`, `--row-gap-`, которые находятся в теме, где их можно при необходимости переопределить. Перед начало использования сеток, советуем прочитать про [отступы в теме](http://whitepaper.tools/doc.html#/theme-gap).
 
 Модификатор | Значение                                        | Описание
 ----------- | ----------------------------------------------- | --------------------------
-ratio       | 1-1 / 1-1-1 / 1-1-1-1 / 1-1-1-1-1 / 1-1-1-1-1-1 | Колличество секций в сетке
+col-gap     | full / two-thirds / half / third / none         | Отступ между колонками: полный / две-трети / половина / треть / без отступа
+row-gap     | full / two-thirds / half / third / none         | Отступ между строками: полный / две-трети / половина / треть / без отступа
 
-<iframe height='500' scrolling='no' title='tpl-grid. ratio' src='//codepen.io/whitepapertools/embed/5dc797f4ecf179d175ac940ceb11f893/?height=500&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/whitepapertools/pen/5dc797f4ecf179d175ac940ceb11f893/'>tpl-grid. ratio</a> by whitepaper (<a href='https://codepen.io/whitepapertools'>@whitepapertools</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+## Сетка с равными секциями
+Для такой сетки понадобится указать только количество секций в строке. Все прямые «дети» такой секции сами подстроятся по указанному правилу.
+
+Для каждого брейкпоинта из [указанных в теме](http://whitepaper.tools/doc.html#/theme-breakpoint) можно указывать свой модификатор `ratio`, но это необязательно.
+
+?> Помните, что адаптивные правила перестроения наследуются от меньшего брейкпоинта к большему.
+
+Модификатор | Значение                                        | Описание
+----------- | ----------------------------------------------- | --------------------------
+s-ratio       | 1-1 / 1-1-1 / 1-1-1-1 / 1-1-1-1-1 / 1-1-1-1-1-1 | Колличество секций в сетке
+
+### Примеры
+
+<div class="example">
+	<div class="tpl-grid tpl-grid_s-ratio_1-1 tpl-grid_m-ratio_1-1-1 tpl-grid_l-ratio_1-1-1-1 tpl-grid_col-gap_third tpl-grid_row-gap_third">
+		<div class="tpl-grid__fraction"></div>
+		<div class="tpl-grid__fraction"></div>
+		<div class="tpl-grid__fraction"></div>
+		<div class="tpl-grid__fraction"></div>
+	</div>
+</div>
+
+```html
+<div class="tpl-grid tpl-grid_s-ratio_1-1">
+	<div class="tpl-grid__fraction">
+		...
+	</div>
+</div>
+```
 
 ## Колоночная сетка
 

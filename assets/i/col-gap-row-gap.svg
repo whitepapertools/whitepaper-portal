@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="468" height="240" viewBox="0 0 468 240">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="468" height="240"/>
+    <rect width="16" height="16" x="145" y="24" fill="#007BFF"/>
+    <rect width="16" height="16" x="65" y="69" fill="#007BFF"/>
+    <rect width="144" height="63" x="323.5" y=".5" fill="#FEE5ED" stroke="#FF97B7"/>
+    <rect width="145" height="63" x="161.5" y=".5" fill="#FEE5ED" stroke="#FF97B7"/>
+    <rect width="144" height="63" x=".5" y=".5" fill="#FEE5ED" stroke="#FF97B7"/>
+    <g fill="#FEE5ED" stroke="#FF97B7">
+      <rect width="144" height="68" x=".5" y=".5"/>
+      <rect width="144" height="68" x=".5" y="171.5"/>
+      <rect width="144" height="69" x=".5" y="85.5"/>
+    </g>
+    <g fill="#FEE5ED" stroke="#FF97B7" transform="translate(161)">
+      <rect width="145" height="68" x=".5" y=".5"/>
+      <rect width="145" height="68" x=".5" y="171.5"/>
+      <rect width="145" height="69" x=".5" y="85.5"/>
+    </g>
+    <g fill="#FEE5ED" stroke="#FF97B7" transform="translate(323)">
+      <rect width="144" height="68" x=".5" y=".5"/>
+      <rect width="144" height="68" x=".5" y="171.5"/>
+      <rect width="144" height="69" x=".5" y="85.5"/>
+    </g>
+  </g>
+</svg>
