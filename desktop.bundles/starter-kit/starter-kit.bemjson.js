@@ -1039,16 +1039,15 @@ module.exports = {
 													content: [
 														{
 															block: 'auth',
-															mix: { block: 'decorator', mods: { 'space-a': 'l' }},
-															attrs: { style: 'height: 456px; box-sizing: border-box'},
+															mix: { block: 'pt-form', mods: { 'view': 'default' }},
 															content: [
 																{
 																	elem: 'header',
+																	mix: { block: 'pt-form', elem: 'item', elemMods: { 'space-a': 'xxl' }},
 																	content: [
 																		{
 																			block: 'text',
 																			mods: { view: 'primary', size: 'xxxxl', weight: 'black' },
-																			attrs: { style: 'font-weight: 900' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
 																			content: 'Log in'
 																		},
@@ -1060,9 +1059,8 @@ module.exports = {
 																	]
 																},
 																{
-																	block: 'pt-form',
-																	mods: { view: 'default' },
-																	mix: { block: 'auth', elem: 'form' },
+																	elem: 'content',
+																	mix: { block: 'pt-form', elem: 'item', elemMods: { 'space-a': 'xxl' }},
 																	content: [
 																		{
 																			elem: 'item',
@@ -1119,8 +1117,7 @@ module.exports = {
 													content: [
 														{
 															block: 'auth',
-															mix: { block: 'decorator', mods: { 'space-a': 'l' }},
-															attrs: { style: 'height: 456px; box-sizing: border-box; background: #fff;'},
+															mix: { block: 'decorator', mods: { 'space-a': 'xxl' }},
 															content: [
 																{
 																	elem: 'header',
@@ -1199,8 +1196,7 @@ module.exports = {
 													content: [
 														{
 															block: 'auth',
-															mix: { block: 'decorator', mods: { 'space-a': 'l' }},
-															attrs: { style: 'height: 456px; box-sizing: border-box; background: #fff;'},
+															mix: { block: 'decorator', mods: { 'space-a': 'xxl' }},
 															content: [
 																{
 																	elem: 'header',
