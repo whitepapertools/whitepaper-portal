@@ -88,8 +88,18 @@ module.exports = {
 							],
 							content: 'История изменений'
 						},
-						{ block: 'change-version' },
-						{ block: 'change-version' },
+
+						{
+							block: 'change-version',
+							ver: 'Версия 22.22.22',
+							description: 'This release brings a refreshed components panel, a new store publishing experience and more.',
+							date: '1 января 2019',
+						},
+
+
+
+						// {block('version-description').content()('test')},
+
 						// {
 						// 	block: 'tpl-grid',
 						// 	mods: { columns: '12', 'col-gap': 'two-thirds' },

@@ -4,6 +4,7 @@
 			{ block: 'tpl-grid', mods: {columns: '12', 'col-gap': 'two-thirds' } },
       { block: 'tpl-grid', elem: 'fraction', mods: {col: '5'} },
       { block: 'tpl-grid', elem: 'fraction', mods: {col: '7'} },
+      { block: 'decorator', mods: {'indent-b': 'xxxxxl'}},
       { block: 'text', mods: {size: 'xxxxl', weight: 'bold'} },
       { block: 'text', mods: {size: 'l'} },
       { block: 'decorator', mods:{'space-t': 'm'} },
@@ -18,7 +19,7 @@
 			// { block: 'demo', elem: 'plug-action' },
 			// { block: 'demo', elem: 'plug-button' },
 			// { block: 'demo', elem: 'plug-soclink', mods: { icon: ['telegram', 'twitter'] } },
-      
+
 			// { block: 'pt-card' },
 			// { block: 'pt-card', elem: 'content', mods: { 'space-a': 'xl' } },
 			// { block: 'pt-card', elem: 'image' },

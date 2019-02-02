@@ -38,6 +38,7 @@ block('change-version')(
         // {
           block: 'tpl-grid',
           mods: { columns: '12', 'col-gap': 'two-thirds' },
+          mix: { block: 'decorator', mods: {'indent-b': 'xxxxxl'}},
           content: [
             // левая колонка
             {
@@ -45,21 +46,25 @@ block('change-version')(
               elemMods: {col: '5'},
               content: [
                 {
-                  block: 'text',
-                  mods: {size: 'xxxxl', weight: 'bold'},
-                  content: 'Версия 99.99.99'
+                  block: 'version-number',
+                  mix: { block: 'text', mods: {size: 'xxxxl', weight: 'bold' }},
+                  content: this.ctx.number
                 },
                 {
-                  block: 'text',
-                  mods: {size: 'l'},
-                  mix: {block:'decorator', mods:{'space-t': 'm'}},
-                  content: 'This release brings a refreshed components panel, a new store publishing experience and more.'
+                  block: 'version-description',
+                  mix: [
+                    { block: 'text', mods: {size: 'l'}},
+                    { block:'decorator', mods:{'space-t': 'm'}},
+                  ],
+                  content: this.ctx.description
                 },
                 {
-                  block: 'text',
-                  mods: {size: 'm', view: 'secondary'},
-                  mix: {block:'decorator', mods:{'space-t': 'xxs'}},
-                  content: '1 января 2019'
+                  block: 'version-date',
+                  mix: [
+                    { block: 'text', mods: {size: 'm', view: 'secondary'}},
+                    { block: 'decorator', mods:{'space-t': 'xxs'}},
+                  ],
+                  content: this.ctx.date
                 },
               ]
             },
