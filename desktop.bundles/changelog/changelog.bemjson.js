@@ -91,9 +91,13 @@ module.exports = {
 
 						{
 							block: 'change-version',
-							ver: 'Версия 22.22.22',
+							number: 'Версия 22.22.22',
 							description: 'This release brings a refreshed components panel, a new store publishing experience and more.',
 							date: '1 января 2019',
+							major: 'Важные изменения',
+							major1: 'Для текста используется блок text. С помощью модификаций можно менять размер, цвет, начертание и другие свойства шрифта',
+							major2: 'Перед тем, как начать этот курс, тебе надо иметь базовые знания HTML и CSS. Можешь пройти онлайн-курсы, например, в htmlacademy.',
+							major3: 'Для отображения логотипов используется блок brand-logo. Через модификации указывается вид и размер логотипа',
 						},
 
 

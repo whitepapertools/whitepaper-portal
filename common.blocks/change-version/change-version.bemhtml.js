@@ -80,8 +80,29 @@ block('change-version')(
                     // мажоры
                     {
                       block: 'text',
-                      mods: {size: 'xl', view: 'primary'},
-                      content: 'Важные изменения'
+                      mods: { size: 'xl', view: 'primary' },
+                      content: this.ctx.major
+                    },
+                    {
+                      block: 'pt-list',
+                      mods: { border: 'all', view: 'default' },
+                      content: [
+                        {
+                            elem: 'list',
+                            elemMods: { 'space-a': 'xl' },
+                            content: this.ctx.major1
+                        },
+                        {
+                            elem: 'list',
+                            elemMods: { 'space-a': 'xl' },
+                            content: this.ctx.major2
+                        },
+                        {
+                            elem: 'list',
+                            elemMods: { 'space-a': 'xl' },
+                            content: this.ctx.major3
+                        }
+                      ]
                     }
                   ]
                 }
