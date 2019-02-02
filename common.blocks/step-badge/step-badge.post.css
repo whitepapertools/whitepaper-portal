@@ -1,0 +1,41 @@
+.step-badge {
+  position: relative;
+	display: inline-block;
+	max-width: 100%;
+  padding:  var(--space-m) var(--space-xxl);
+  font-size: var(--size-typo-xl);
+  border-radius: 99em;
+  margin-right: 14px;
+  &:last-child {
+    &:after {
+      content: none;
+    }
+  }
+  &_view {
+    &_wp {
+      background-color: var(--color-bg-default);
+      color: var(--color-typo-primary);
+      &:after {
+        content: '';
+        background: url('step-badge-wp.svg');
+      }
+    }
+    &_other {
+      /* box-shadow: inset 0px 0px 0px 1px var(--color-bg-ghost); */
+      background-color: var(--color-bg-ghost);
+      color: var(--color-typo-secondary);
+      &:after {
+        content: '';
+        background: url('step-badge-other.svg') no-repeat;
+      }
+    }
+  }
+  &:after {
+    position: absolute;
+    width: 32px;
+    height: 42px;
+    margin-left: 23px;
+    margin-top: -9px;
+    z-index: 1;
+  }
+}
