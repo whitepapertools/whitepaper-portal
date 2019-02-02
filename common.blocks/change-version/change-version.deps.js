@@ -32,7 +32,7 @@
       //
 			// { block: 'text', mods: { font: 'mono', style: 'italic', display: 'inline'} },
       //
-			{ block: 'theme', mods: { color: 'whitepaper-inverse' } }
+			// { block: 'theme', mods: { color: 'whitepaper-inverse' } }
 		]
 	}
 ])
