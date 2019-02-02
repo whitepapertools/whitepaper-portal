@@ -9,22 +9,17 @@
 	overflow: hidden;
 	-webkit-font-smoothing: antialiased;
 	color: var(--color-typo-primary);
-
 	&_slide {
 		&_first {
 			.promo-cards__card {
 				transform: translate(0);
 			}
-
-
 			.promo-cards__description_slide_second, .promo-cards__description_slide_third {
 				opacity: 0;
 			}
 			.promo-cards__description_slide_first {
 				opacity: 1;
 			}
-
-
 			.promo-cards__theme-name_slide_second, .promo-cards__theme-name_slide_third {
 				opacity: 0;
 			}
@@ -39,16 +34,12 @@
 			.promo-cards__card {
 				transform: translate(328px);
 			}
-
-
 			.promo-cards__description_slide_first, .promo-cards__description_slide_third {
 				opacity: 0;
 			}
 			.promo-cards__description_slide_second {
 				opacity: 1;
 			}
-
-
 			.promo-cards__theme-name_slide_first, .promo-cards__theme-name_slide_third {
 				opacity: 0;
 			}
@@ -63,16 +54,12 @@
 			.promo-cards__card {
 				transform: translate(656px);
 			}
-
-
 			.promo-cards__description_slide_second, .promo-cards__description_slide_first {
 				opacity: 0;
 			}
 			.promo-cards__description_slide_third {
 				opacity: 1;
 			}
-
-
 			.promo-cards__theme-name_slide_second, .promo-cards__theme-name_slide_first {
 				opacity: 0;
 			}
@@ -96,12 +83,10 @@
 			background: #2E3033;	
 		}
 	}
-
 	&__team-member {
 		position: relative;
 		font-size: 48px;
 		text-decoration: none;
-
 		&:after {
 			content: '';
 			position: absolute;
@@ -117,7 +102,6 @@
 		}
 		&:hover {
 			color: #FD4D68;
-
 			&:after {
 				transform: scaleX(1);
 			}
@@ -128,12 +112,10 @@
 		text-decoration: none;
 		margin-left: -72px;
 		transition: .3s ease;
-
 		&:hover {
 			color: var(--color-typo-primary);
 		}
 	}
-
 	&__content {
 		position: relative;
 		margin: auto;
@@ -141,7 +123,6 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-
 		&_align_center {
 			display: flex;
 			justify-content: center;
@@ -154,7 +135,6 @@
 		color: transparent;
 		-webkit-text-stroke: .2px var(--color-typo-alert);
 		transition: transform .4s .3s, opacity .4s .4s, color .4s .4s;
-
 		&_slide {
 			&_first {
 				transform: translate(0) rotate(-90deg);
@@ -175,7 +155,6 @@
 	&__item {
 		position: relative;
 		width: 296px;
-
 		&:before {
 			content: '';
 			position: absolute;
@@ -188,7 +167,6 @@
 			border: 1px solid var(--color-bg-disable);
 			transition: .3s .3s ease;
 		}
-
 		& > div {
 			transition: .3s ease;
 			cursor: pointer;
@@ -208,11 +186,9 @@
 		z-index: 1;
 		transition: transform .4s .3s;
 	}
-
 	&__hover {
 		transition: transform .5s, box-shadow .3s;
 		box-shadow: 0 4px 10px -4px rgba(0, 0, 0, .6);
-
 		&:hover {
 			transform: translateY(-6px);
 			box-shadow: 0 30px 40px -20px rgba(0, 0, 0, .4);
@@ -228,7 +204,6 @@
 		flex-direction: column;
 		justify-content: center;
 		transition: opacity .4s .4s;
-
 		&_slide {
 			&_first {
 				left: 400px;
@@ -254,7 +229,7 @@
 		border-radius: 12px;
 	}
 
-	/*///// OFFER //////////////////////// */
+	/* OFFER */
 	&__offer {
 
 		&_type {
@@ -606,12 +581,11 @@
 			}
 		}
 	}
-	/*//////////////////////// OFFER ///// */
+	/* OFFER */
 
-	/*///// DONATE /////////////////////// */
+	/* DONATE */
 	.promo-cards__donate-person-image-wrapper { overflow: hidden; border-radius: 12px 12px 0 0;}
 	.promo-cards__donate-project-header { overflow: hidden; border-radius: 12px 12px 0 0;}
-
 	&__donate {
 		&_type {
 			&_person {
@@ -939,7 +913,6 @@
 					&:hover {
 						transition-timing-function: cubic-bezier(0.25, 0.1, 0, 1.9);
 					}
-
 					&-image {
 						transform: scale(2);
 						opacity: 0;
@@ -982,19 +955,16 @@
 						transition: transform .6s cubic-bezier(0.75,-0.7, 0.25, 1), opacity .4s .25s;
 					}
 				}
-
 				& .promo-cards__donate-event {
 					transition: transform .5s, box-shadow .3s, background-color .1s .5s;
 					&:hover {
 						transition-timing-function: cubic-bezier(0.25, 0.1, 0, 1.9);
 					}
-
 					&-image {
 						transform: scale(1);
 						opacity: 1;
 						transition: transform .5s .3s, opacity .3s .3s;
 					}
-
 					&-avatar {
 						transform: scale(1);
 						opacity: 1;
@@ -1025,7 +995,7 @@
 			}
 		}
 	}
-	/*/////////////////////// DONATE ///// */
+	/* DONATE */
 
 	/* MEDIA */
 	&__media {
@@ -1044,7 +1014,6 @@
 			transition: .7s ease;
 			transition-delay: .3s;
 		}
-
 		&_type {
 			&_video {
 				.promo-cards__media-video-back {
@@ -1061,8 +1030,6 @@
 					transform: translateY(0);
 					transition-delay: .5s;
 				}
-
-
 				.promo-cards__media-text-back {
 					opacity: 0;
 					pointer-events: none;
@@ -1081,8 +1048,6 @@
 					transform: translateY(100px);
 					transition-delay: .5s;
 				}
-
-
 				.promo-cards__media-music-back {
 					opacity: 0;
 					pointer-events: none;
@@ -1109,8 +1074,6 @@
 					transform: translateY(100px);
 					transition-delay: .5s;
 				}
-
-
 				.promo-cards__media-text-back {
 					opacity: 1;
 					pointer-events: all;
@@ -1129,8 +1092,6 @@
 					transform: translateX(0);
 					transition-delay: .5s;
 				}
-
-
 				.promo-cards__media-music-back {
 					opacity: 0;
 					pointer-events: none;
@@ -1157,8 +1118,6 @@
 					transform: translateY(100px);
 					transition-delay: .5s;
 				}
-
-
 				.promo-cards__media-text-back {
 					opacity: 0;
 					pointer-events: none;
@@ -1177,8 +1136,6 @@
 					transform: translateY(100px);
 					transition-delay: .5s;
 				}
-
-
 				.promo-cards__media-music-back {
 					opacity: 1;
 					pointer-events: all;
@@ -1210,7 +1167,6 @@
 			transition: .7s ease;
 			transition-delay: .3s;
 		}
-
 		&_type {
 			&_developer {
 				.promo-cards__apps-recommendation-back {
@@ -1227,8 +1183,6 @@
 					transform: translateY(100px);
 					transition-delay: .5s;
 				}
-
-
 				.promo-cards__apps-good-back {
 					opacity: 0;
 					pointer-events: none;
@@ -1243,8 +1197,6 @@
 					transform: translateY(100px);
 					transition-delay: .5s;
 				}
-
-
 				.promo-cards__apps-developer-back {
 					opacity: 1;
 					pointer-events: all;
@@ -1279,8 +1231,6 @@
 					transform: translateY(0);
 					transition-delay: .5s;
 				}
-
-
 				.promo-cards__apps-good-back {
 					opacity: 0;
 					pointer-events: none;
@@ -1295,8 +1245,6 @@
 					transform: translateY(100px);
 					transition-delay: .5s;
 				}
-
-
 				.promo-cards__apps-developer-back {
 					opacity: 0;
 					pointer-events: none;
@@ -1331,8 +1279,6 @@
 					transform: translateY(100px);
 					transition-delay: .6s;
 				}
-
-
 				.promo-cards__apps-good-back {
 					opacity: 1;
 					pointer-events: all;
@@ -1347,8 +1293,6 @@
 					transform: translateY(0);
 					transition-delay: .5s;
 				}
-
-
 				.promo-cards__apps-developer-back {
 					opacity: 0;
 					pointer-events: none;

@@ -19,9 +19,7 @@ module.exports = {
 		{
 			block: 'component',
 			mods: { whitepaper: 'default' }
-		},
-
-		
+		}
 	],
 	content: [
 		{
@@ -60,7 +58,6 @@ module.exports = {
 				{
 					elem: 'content',
 					content: [
-
 						{
 							elem: 'container',
 							elemMods: { 'size': 'm', 'align': 'center' },
@@ -81,10 +78,8 @@ module.exports = {
 													content: [
 														{
 															block: 'text',
-															mods: { size: 'xxxxl', weight: 'bold' },
-															attrs: { 
-																'style': 'font-size: 72px;'
-															},
+															mods: { weight: 'bold' },
+															attrs: { 'style': 'font-size: 72px;' },
 															content: 'Starter KIT'
 														}
 													]
@@ -161,7 +156,10 @@ module.exports = {
 																		},
 																		{
 																			elem: 'sale',
-																			mix: [{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'bold' }}, { block: 'decorator', mods: { 'indent-b': 'l' } }],
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: 'xxxxl' }}, 
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
+																			],
 																			content: '$22'
 																		},
 																		{
@@ -320,7 +318,7 @@ module.exports = {
 																		{
 																			elem: 'sale',
 																			mix: [
-																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'bold' }}, 
+																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: 'xxxxl' }},
 																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
 																			],
 																			content: '$66'
@@ -486,7 +484,10 @@ module.exports = {
 																		},
 																		{
 																			elem: 'sale',
-																			mix: [{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'bold' }}, { block: 'decorator', mods: { 'indent-b': 'l' } }],
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: 'xxxxl' }}, 
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
+																			],
 																			content: '$99'
 																		},
 																		{
@@ -582,7 +583,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'text',
-																											mods: { size: 'm', view: 'primary', weight: 'light',  },
+																											mods: { size: 'm', view: 'primary', weight: 'light' },
 																											content: '10 campaigns/month'
 																										}
 																									]
@@ -624,7 +625,6 @@ module.exports = {
 										{
 											block: 'tpl-grid',
 											mods: { 'col-gap': 'full', 'row-gap': 'full', 's-columns': '6' },
-											
 											content: [
 												{
 													elem: 'fraction',
@@ -645,15 +645,11 @@ module.exports = {
 																		{
 																			elem: 'image',
 																			mix: { block: 'pt-card', elem: 'image' },
-																			attrs: {
-																				'style': 'max-height: 340px; overflow: hidden'
-																			},
+																			attrs: { 'style': 'max-height: 340px; overflow: hidden' },
 																			content: [
 																				{
 																					block: 'image',
-																					attrs: {
-																						style: 'width: 100%'
-																					},
+																					attrs: { style: 'width: 100%' },
 																					url: '/assets/starter-kit/fallon.png',
 																				}
 																			]
@@ -812,7 +808,7 @@ module.exports = {
 																},
 																{
 																	elem: 'article-title',
-																	mix: [{ block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' } }],
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -892,13 +888,13 @@ module.exports = {
 																						{
 																							block: 'text',
 																							mods: { view: 'primary', size: 'xxxl', align: 'center', weight: 'bold' },
-																							mix: { block: 'decorator', mods: { 'indent-b': 's' } },
-																							content: 'Pitchfork\'s Best New Music',
+																							mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																							content: 'Pitchfork\'s Best New Music'
 																						},
 																						{
 																							block: 'text',
 																							mods: { view: 'primary', size: 'm', align: 'center', font: 'mono', style: 'italic' },
-																							content: 'Pitchfork',
+																							content: 'Pitchfork'
 																						}
 																					]
 																				}
@@ -1042,68 +1038,172 @@ module.exports = {
 															mix: { block: 'pt-form', mods: { 'view': 'default' }},
 															content: [
 																{
-																	elem: 'header',
+																	elem: 'content',
 																	mix: { block: 'pt-form', elem: 'item', elemMods: { 'space-a': 'xxl' }},
 																	content: [
 																		{
-																			block: 'text',
-																			mods: { view: 'primary', size: 'xxxxl', weight: 'black' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
-																			content: 'Log in'
+																			elem: 'item',
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { view: 'primary', size: 'xxxxl', weight: 'black' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																					content: 'Log in'
+																				},
+																				{
+																					block: 'text',
+																					mods: { view: 'ghost', size: 's' },
+																					content: 'Welcome Back, Andrey Kopeyka'
+																				}
+																			]
 																		},
 																		{
-																			block: 'text',
-																			mods: { view: 'ghost', size: 's' },
-																			content: 'Welcome Back, Andrey Kopeyka'
+																			elem: 'item',
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			content: [
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'l' }},
+																					content: {
+																						block: 'input',
+																						mods: { theme: 'islands', width: 'available', size: 'l'},
+																						placeholder: 'Username'
+																					}
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'l' }},
+																					content: {
+																						block: 'input',
+																						mods: { theme: 'islands', width: 'available', size: 'l'},
+																						placeholder: 'Password'
+																					}
+																				}
+																			]
+																		},
+																		{
+																			elem: 'item',
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			content: [
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					content: {
+																						block: 'button',
+																						mods: { theme: 'islands', width: 'full', size: 'l', view: 'action', width: 'available' },
+																						text: 'Sign in'
+																					}
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					content: {
+																						block: 'button',
+																						mods: { theme: 'islands', width: 'full',  size: 'l', width: 'available' },
+																						text: 'Facebook'
+																					}
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'b' }},
+																					content: {
+																						block: 'text', mods: { view: 'link',  size: 'l', align: 'center', width: 'available' },
+																						content: 'Signup'
+																					}
+																				}
+																			]
 																		}
 																	]
-																},
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'fraction',
+													elemMods: { 's-col': '3', 'm-col': '2' },
+													content: [
+														{
+															block: 'auth',
+															mix: { block: 'pt-form', mods: { 'view': 'default' }},
+															content: [
 																{
 																	elem: 'content',
 																	mix: { block: 'pt-form', elem: 'item', elemMods: { 'space-a': 'xxl' }},
 																	content: [
 																		{
 																			elem: 'item',
-																			elemMods: { 'indent-b': 'l' },
-																			content: {
-																				block: 'input',
-																				mods: { theme: 'islands', width: 'available', size: 'l'},
-																				placeholder: 'Username'
-																			}
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { view: 'primary', size: 'xxxxl', weight: 'black' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																					content: 'Sign in'
+																				},
+																				{
+																					block: 'text',
+																					mods: { view: 'ghost', size: 's' },
+																					content: 'Welcome Back, Andrey Kopeyka'
+																				}
+																			]
 																		},
 																		{
 																			elem: 'item',
-																			elemMods: { 'indent-b': 'xl' },
-																			content: {
-																				block: 'input',
-																				mods: { theme: 'islands', width: 'available', size: 'l'},
-																				placeholder: 'Password'
-																			}
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			content: [
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'l' }},
+																					content: {
+																						block: 'input',
+																						mods: { theme: 'islands', width: 'available', size: 'l'},
+																						placeholder: 'Username'
+																					}
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'l' }},
+																					content: {
+																						block: 'input',
+																						mods: { theme: 'islands', width: 'available', size: 'l' },
+																						placeholder: 'Password'
+																					}
+																				}
+																			]
 																		},
 																		{
 																			elem: 'item',
-																			elemMods: { 'indent-b': 's' },
-																			content: {
-																				block: 'button',
-																				mods: { theme: 'islands', width: 'full', size: 'l', view: 'action', width: 'available' },
-																				text: 'Sign in'
-																			}
-																		},
-																		{
-																			elem: 'item',
-																			elemMods: { 'indent-b': 'm' },
-																			content: {
-																				block: 'button',
-																				mods: { theme: 'islands', width: 'full', size: 'l', width: 'available' },
-																				text: 'Facebook'
-																			}
-																		},
-																		{
-																			elem: 'item',
-																			content: {
-																				block: 'text', mods: { view: 'link', size: 'l', align: 'center', width: 'available' },
-																				content: 'Signup'
-																			}
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			content: [
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					content: {
+																						block: 'button',
+																						mods: { theme: 'islands', width: 'full', size: 'l', view: 'action', width: 'available' },
+																						text: 'Sign in'
+																					}
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					content: {
+																						block: 'button',
+																						mods: { theme: 'islands', width: 'full',  size: 'l', width: 'available' },
+																						text: 'Facebook'
+																					}
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'b' }},
+																					content: {
+																						block: 'text', mods: { view: 'link',  size: 'l', align: 'center', width: 'available' },
+																						content: 'Signup'
+																					}
+																				}
+																			]
 																		}
 																	]
 																}
@@ -1117,125 +1217,58 @@ module.exports = {
 													content: [
 														{
 															block: 'auth',
-															mix: { block: 'decorator', mods: { 'space-a': 'xxl' }},
+															mix: { block: 'pt-form', mods: { 'view': 'default' }},
 															content: [
 																{
-																	elem: 'header',
-																	content: [
-																		{
-																			block: 'text',
-																			mods: { view: 'primary', size: 'xxxxl', weight: 'black' },
-																			attrs: { style: 'font-weight: 900' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
-																			content: 'Sign in'
-																		},
-																		{
-																			block: 'text',
-																			mods: { view: 'ghost', size: 's' },
-																			content: 'Welcome Back, Andrey Kopeyka'
-																		}
-																	]
-																},
-																{
-																	block: 'pt-form',
-																	mods: { view: 'default' },
-																	mix: { block: 'auth', elem: 'form' },
+																	elem: 'content',
+																	mix: { block: 'pt-form', elem: 'item', elemMods: { 'space-a': 'xxl' }},
 																	content: [
 																		{
 																			elem: 'item',
-																			elemMods: { 'indent-b': 'l' },
-																			content: {
-																				block: 'input',
-																				mods: { theme: 'islands', width: 'available', size: 'l'},
-																				placeholder: 'Username'
-																			}
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { view: 'primary', size: 'xxxxl', weight: 'black' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																					content: 'Forgot Password'
+																				},
+																				{
+																					block: 'text',
+																					mods: { view: 'ghost', size: 's' },
+																					content: 'Welcome Back, Andrey Kopeyka'
+																				}
+																			]
 																		},
 																		{
 																			elem: 'item',
-																			elemMods: { 'indent-b': 'xl' },
-																			content: {
-																				block: 'input',
-																				mods: { theme: 'islands', width: 'available', size: 'l'},
-																				placeholder: 'Password'
-																			}
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			content: [
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'l' }},
+																					content: {
+																						block: 'input',
+																						mods: { theme: 'islands', width: 'available', size: 'l' },
+																						placeholder: 'Username'
+																					}
+																				}
+																			]
 																		},
 																		{
 																			elem: 'item',
-																			elemMods: { 'indent-b': 's' },
-																			content: {
-																				block: 'button',
-																				mods: { theme: 'islands', width: 'full', size: 'l', view: 'action', width: 'available'  },
-																				text: 'Sign up'
-																			}
-																		},
-																		{
-																			elem: 'item',
-																			elemMods: { 'indent-b': 'm' },
-																			content: {
-																				block: 'button',
-																				mods: { theme: 'islands', width: 'full', size: 'l', width: 'available' },
-																				text: 'Facebook'
-																			}
-																		},
-																		{
-																			elem: 'item',
-																			content: {
-																				block: 'text', mods: { view: 'link', size: 'l', align: 'center' },
-																				content: 'Login'
-																			}
-																		}
-																	]
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'fraction',
-													elemMods: { 's-col': '3', 'm-col': '2' },
-													content: [
-														{
-															block: 'auth',
-															mix: { block: 'decorator', mods: { 'space-a': 'xxl' }},
-															content: [
-																{
-																	elem: 'header',
-																	content: [
-																		{
-																			block: 'text',
-																			mods: { view: 'primary', size: 'xxxxl', weight: 'black' },
-																			attrs: { style: 'font-weight: 900; line-height: 1em' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
-																			content: 'Forgot Password'
-																		},
-																		{
-																			block: 'text',
-																			mods: { view: 'ghost', size: 's' },
-																			content: 'Please enter you email'
-																		}
-																	]
-																},
-																{
-																	block: 'pt-form',
-																	mods: { view: 'default' },
-																	mix: { block: 'auth', elem: 'form' },
-																	content: [
-																		{
-																			elem: 'item',
-																			elemMods: { 'indent-b': 'l' },
-																			content: {
-																				block: 'input',
-																				mods: { theme: 'islands', width: 'available', size: 'l' },
-																				placeholder: 'Username'
-																			}
-																		},
-																		{
-																			elem: 'item',
-																			content: {
-																				block: 'button',
-																				mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
-																				text: 'Reset'
-																			}
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			content: [
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					content: {
+																						block: 'button',
+																						mods: { theme: 'islands', width: 'full', size: 'l', view: 'action', width: 'available' },
+																						text: 'Reset'
+																					}
+																				}
+																			]
 																		}
 																	]
 																}
@@ -1264,7 +1297,7 @@ module.exports = {
 													content: [
 														{
 															block: 'product',
-															mix: { block: 'pt-card' },
+															mix: { block: 'pt-card', mods: { view: 'default' }},
 															content: [
 																{
 																	elem: 'footer',
@@ -1329,7 +1362,7 @@ module.exports = {
 													content: [
 														{
 															block: 'product',
-															mix: { block: 'pt-card' },
+															mix: { block: 'pt-card', mods: { view: 'default' }},
 															content: [
 																{
 																	elem: 'footer',
@@ -1390,7 +1423,7 @@ module.exports = {
 													content: [
 														{
 															block: 'product',
-															mix: { block: 'pt-card' },
+															mix: { block: 'pt-card', mods: { view: 'default' }},
 															content: [
 																{
 																	elem: 'footer',
@@ -1474,7 +1507,7 @@ module.exports = {
 															mix: [
 																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
 																{ block: 'component', mods: { whitepaper: 'inverse' }},
-																{ block: 'pt-card', mods: { view: 'inverse' } }, 
+																{ block: 'pt-card', mods: { view: 'inverse' }}
 															],
 															content: [
 																{
@@ -1489,7 +1522,7 @@ module.exports = {
 																},
 																{
 																	elem: 'info',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl', distribute: 'center', }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl', distribute: 'center' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -1499,7 +1532,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'image',
-																			url: '/assets/starter-kit/group.png',
+																			url: '/assets/starter-kit/group.png'
 																		}
 																	]
 																},
@@ -1507,7 +1540,7 @@ module.exports = {
 																	elem: 'developer-list',
 																	mix: [ 
 																		{ block: 'pt-list' }, 
-																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }}
+																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'between' }}
 																	],
 																	content: [
 																		{
@@ -1704,7 +1737,7 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'image',
-																			url: '/assets/starter-kit/monument.png',
+																			url: '/assets/starter-kit/monument.png'
 																		}
 																	]
 																},
@@ -1739,7 +1772,7 @@ module.exports = {
 																{
 																	elem: 'item',
 																	mix: [
-																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'between' } },  
+																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'between' }},  
 																		{ block: 'pt-card', elem: 'item' }
 																	],
 																	content: [
@@ -1834,7 +1867,6 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' }},
 																			mods: { size: 'm', align: 'center', view: 'primary' },
 																			content: 'Currently payments not available'
 																		}
@@ -1933,10 +1965,9 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' }},
 																			mods: { size: 'm', align: 'center', view: 'primary' },
 																			content: 'Currently payments not available'
-																		},
+																		}
 																	]
 																},
 																{
@@ -2030,7 +2061,6 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' }},
 																			mods: { size: 'm', align: 'center', view: 'primary' },
 																			content: 'Payment completed'
 																		}
@@ -2097,7 +2127,7 @@ module.exports = {
 															mix: [
 																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
 																{ block: 'component', mods: { whitepaper: 'inverse' }},
-																{ block: 'pt-card', mods: { view: 'default' } },
+																{ block: 'pt-card', mods: { view: 'default' }},
 															],
 															content: [
 																{
@@ -2131,7 +2161,7 @@ module.exports = {
 																			content: [
 																				{
 																					block: 'text',
-																					mix: { block: 'decorator', mods: { 'indent-b': 'xl'}},
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 																					mods: { view: 'primary', size: 'm', weight: 'semibold' },
 																					content: 'Porsche and comfort never comprised. The Porsche will lead to an unforgettable journey'
 																				},
@@ -2168,7 +2198,7 @@ module.exports = {
 															content: [
 																{
 																	elem: 'brand-content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' } },
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' }},
 																	content: [
 																		{
 																			elem: 'brand-image-wrapper',
@@ -2180,11 +2210,8 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'image',
-																							attrs: {
-																								'style': 'width: 100%'
-																							},
+																							attrs: { 'style': 'width: 100%' },
 																							url: '/assets/starter-kit/offer-brand-image.png'
-																						
 																						}
 																					]
 																				}
@@ -2198,7 +2225,7 @@ module.exports = {
 																		},
 																		{
 																			elem: 'brand-logo-wrapper',
-																			mix: { block: 'text', mods: { align: 'center' } },
+																			mix: { block: 'text', mods: { align: 'center' }},
 																			content: [
 																				{
 																					block: 'brand-logo',
@@ -2239,9 +2266,7 @@ module.exports = {
 																		},
 																		{
 																			elem: 'goods-price',
-																			mix: [
-																				{ block: 'text', mods: {font: 'serif', style: 'italic', weight: 'bold'} }
-																			],
+																			mix: { block: 'text', mods: {font: 'serif', style: 'italic', weight: 'bold' }},
 																			content: '$299'
 																		}
 																	]
@@ -2524,7 +2549,7 @@ module.exports = {
 																						{
 																							block: 'avatar',
 																							elem: 'photo',
-																							elemMods: { size: 's'},
+																							elemMods: { size: 's' },
 																							content: [
 																								{
 																									block: 'image',
@@ -2619,7 +2644,7 @@ module.exports = {
 															block: 'meetup',
 															mix: [
 																{ block: 'pt-list' },
-																{ block: 'pt-card' },
+																{ block: 'pt-card', mods: { view: 'default' }},
 															],
 															content: [
 																{
@@ -2631,10 +2656,8 @@ module.exports = {
 																			content: [
 																				{
 																					block: 'image',
-																					attrs: {
-																						'style': 'width: 100%'
-																					},
-																					url: '../../../../assets/starter-kit/subzero-cover.png',
+																					attrs: { 'style': 'width: 100%' },
+																					url: '../../../../assets/starter-kit/subzero-cover.png'
 																				}
 																			]
 																		},
@@ -2688,7 +2711,7 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'info',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'xxl', 'indent-b': 's' }},
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-h': 'l', 'space-v': 'xxl', 'indent-b': 's' }},
 																			content: [
 																				{
 																					elem: 'item',
@@ -2805,7 +2828,7 @@ module.exports = {
 															block: 'meetup',
 															mix: [
 																{ block: 'pt-list' },
-																{ block: 'pt-card' }
+																{ block: 'pt-card', mods: { view: 'default' }},
 															],
 															content: [
 																{
@@ -2819,12 +2842,15 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'date',
-																			mix: [ { block: 'text', mods: { size: 's', view: 'primary' } } ],
+																			mix: { block: 'text', mods: { size: 's', view: 'primary' }},
 																			content: 'May'
 																		},
 																		{
 																			elem: 'type',
-																			mix: [ { block: 'text', mods: { size: 'm', view: 'secondary', weight: 'bold' }},  { block: 'decorator', mods: { 'indent-b': 'xs' } } ],
+																			mix: [ 
+																				{ block: 'text', mods: { size: 'm', view: 'secondary', weight: 'bold' }},  
+																				{ block: 'decorator', mods: { 'indent-b': 'xs' }} 
+																			],
 																			content: 'Event'
 																		},
 																		{
@@ -2951,7 +2977,6 @@ module.exports = {
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
 													content: [
-
 														{
 															block: 'meetup',
 															mix: [
@@ -2977,7 +3002,7 @@ module.exports = {
 																						{
 																							block: 'avatar',
 																							elem: 'photo',
-																							elemMods: { size: 's'},
+																							elemMods: { size: 's' },
 																							content: [
 																								{
 																									block: 'image',
@@ -3087,7 +3112,7 @@ module.exports = {
 																},
 																{
 																	elem: 'person-info',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-h': 'xl', 'space-t': 'xl' } },
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-h': 'xl', 'space-t': 'xl' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -3141,7 +3166,7 @@ module.exports = {
 																		{
 																			block: 'image',
 																			mix: { block: 'pt-card', elem: 'image' },
-																			attrs: { 'style': 'max-height: 260px;'},
+																			attrs: { 'style': 'max-height: 260px;' },
 																			url: '/assets/starter-kit/donate-event-image.png'
 																		}
 																	]
@@ -3155,9 +3180,21 @@ module.exports = {
 																			content: [
 																				{
 																					elem: 'event-avatar-wrapper',
-																					content: {
-																						elem: 'event-avatar',
-																					}
+																					content: [
+																						{
+																							block: 'avatar',
+																							elem: 'photo',
+																							elemMods: { size: 'l' },
+																							mix: { block: 'donate', elem: 'event-avatar' },
+																							content: [
+																								{
+																									block: 'image',
+																									width: 40,
+																									url: '/assets/starter-kit/Jenny Johannesson.jpg'
+																								}
+																							]
+																						}
+																					]
 																				},
 																				{
 																					block: 'text',
@@ -3168,6 +3205,7 @@ module.exports = {
 																				{
 																					block: 'text',
 																					mods: { view: 'primary', size: 's', align: 'center' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 																					content: [
 																						{
 																							block: 'text',
@@ -3180,28 +3218,13 @@ module.exports = {
 																							content: 'until the end'
 																						}
 																					]
+																				},
+																				{
+																					block: 'text',
+																					mods: { view: 'primary', size: 'xxxxl', weight: 'semibold', align: 'center' },
+																					content: '$10.00'
 																				}
 																			]
-																		}
-																	]
-																},
-																{
-																	elem: 'event-info',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-h': 'xxl' }},
-																	content: [
-																		{
-																			elem: 'control',
-																			content: '-'
-																		},
-																		{
-																			block: 'text',
-																			mods: { view: 'primary', size: 'xxxxl', weight: 'semibold', align: 'center' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-																			content: '$10'
-																		},
-																		{
-																			elem: 'control',
-																			content: '+'
 																		}
 																	]
 																},
@@ -3334,31 +3357,21 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'project-countdowns',
-																			mix: { block: 'decorator', mods: { 'indent-v': 'xs' } },
+																			mix: { block: 'decorator', mods: { 'indent-v': 'xs' }},
 																			content: [
 																				{
 																					elem: 'amount-wrapper',
-																					mix: { block: 'decorator', mods: { 'indent-r': 'xxxxl' } },
+																					mix: { block: 'decorator', mods: { 'indent-r': 'xxxxl' }},
 																					content: [
 																						{
-																							elem: 'amount',
-																							content: [
-																								{
-																									block: 'text',
-																									mods: { view: 'primary', size: 'l', weight: 'bold' },
-																									content: '$4,464'
-																								}
-																							]
+																							block: 'text',
+																							mods: { view: 'primary', size: 'l', weight: 'bold' },
+																							content: '$4,464'
 																						},
 																						{
-																							elem: 'description',
-																							content: [
-																								{
-																									block: 'text',
-																									mods: { view: 'secondary', size: 'xs' },
-																									content: 'pledged of 6,217 goal'
-																								}
-																							]
+																							block: 'text',
+																							mods: { view: 'secondary', size: 'xs' },
+																							content: 'pledged of 6,217 goal'
 																						}
 																					]
 																				},
@@ -3366,24 +3379,14 @@ module.exports = {
 																					elem: 'days-wrapper',
 																					content: [
 																						{
-																							elem: 'days',
-																							content: [
-																								{
-																									block: 'text',
-																									mods: { view: 'primary', size: 'l', weight: 'bold' },
-																									content: '32'
-																								}
-																							]
+																							block: 'text',
+																							mods: { view: 'primary', size: 'l', weight: 'bold' },
+																							content: '32'
 																						},
 																						{
-																							elem: 'description',
-																							content: [
-																								{
-																									block: 'text',
-																									mods: { view: 'secondary', size: 'xs' },
-																									content: 'days to go'
-																								}
-																							]
+																							block: 'text',
+																							mods: { view: 'secondary', size: 'xs' },
+																							content: 'days to go'
 																						}
 																					]
 																				}
@@ -3396,7 +3399,7 @@ module.exports = {
 																				{
 																					block: 'text',
 																					mods: { view: 'primary', size: 'xl', weight: 'bold' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
 																					content: 'Feature-Packed Delay Pedal by RedShift Effects'
 																				}
 																			]
@@ -3436,7 +3439,6 @@ module.exports = {
 
 							]
 						}
-
 					]
 				}
 			]

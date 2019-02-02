@@ -2,23 +2,8 @@
 	min-width: 296px;
 	max-width: 350px;
 	min-height: 456px;
-	height: 456px;
 	overflow: hidden;
-	&__price {
-		background: var(--color-bg-default);
-		padding: var(--space-xxs) var(--space-xxl);
-		border-radius: 48px;
-	}
 	&__wrap {
 		width: 100%;
 	}
-	/* &:after {
-		content: '';
-		display: block;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		width: 100%;
-		background: linear-gradient(to bottom, rgba(0,0,0,0) 35%, rgba(0,0,0,1) 75%);
-	} */
 }

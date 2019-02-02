@@ -2,22 +2,9 @@
 	min-width: 296px;
 	max-width: 350px;
 	min-height: 456px;
-	height: 456px;
   overflow: hidden;
   &__control {
-    font-size: var(--size-typo-xxl);
-    font-weight: 500;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-typo-primary);
-    background-color: var(--color-bg-ghost);
-    border-radius: 50%;
   }
-  
-  /* Person-donate */
   &__person-image {
     height: 114px;
   }
@@ -26,8 +13,6 @@
     margin-top: 82px;
     border-radius: 50%;
   }
-
-  /* Project-donate */
   &__project-image {
     height: 152px;
   }
@@ -51,8 +36,6 @@
   &__days-wrapper {
     display: inline-block;
   }
-
-  /* Event-donate */
   &__event-action {
     display: flex;
     justify-content: space-between;
@@ -72,6 +55,7 @@
   &__event-avatar {
     width: 88px;
     height: 88px;
+    border-radius: 0%;
     transform: rotate(45deg);
     overflow: hidden;
     margin: calc(18px + var(--space-xxl)) auto calc(18px + var(--space-l));
@@ -89,19 +73,13 @@
       background-repeat: no-repeat;
     }
   }
-  &__event-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 72px;
-  }
   &__event-avatar-group {
     display: inline-flex;
     align-items: center;
-    margin-left: 12px;
+    margin-left: var(--space-s);
   }
   &__event-mini-avatar {
     background-size: 100%;
-    margin-left: -$space-s;
+    margin-left: calc(-1 * var(--space-s));
   }
 }

@@ -2,18 +2,5 @@
 	min-width: 296px;
 	max-width: 350px;
 	min-height: 456px;
-	box-sizing: border-box;
 	overflow: hidden;
-	&__header {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: var(--space-m);
-	}
-	&__image {
-		margin-top: var(--space-xxxl);
-		img {
-			width: 100%;
-			margin-bottom: var(--space-xs);
-		}
-	}
 }

@@ -3,29 +3,12 @@
 	max-width: 350px;
 	min-height: 456px;
 	box-sizing: border-box;
-	background-color: var(--color-bg-default);
 	&__photo {
 		height: 151px;
 		overflow: hidden;
 	}
-	&__info {
-		width: 100%;
-	}
 	&__description {
 		background-color: var(--color-bg-default);
-		&:before {
-			content: '';
-			position: absolute;
-			width: 40px;
-			height: 6px;
-			left: 50%;
-			margin-left: calc(-1*var(--space-l));
-			background-color: var(--color-typo-secondary);
-			border-radius: 3px;
-		}
-	}
-	&__rating {
-		opacity: 0.7;
 	}
 	&__date {
 		height: 64px;
