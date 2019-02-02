@@ -6,7 +6,7 @@ module.exports = {
 	head: [
 		{ elem: 'meta', attrs: { name: 'description', content: '' } },
 		{ elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
-		{ elem: 'css', url: '../../cdn/whitepaper-1.0.0.min.css' },
+		{ elem: 'css', url: '../../cdn/whitepaper-1.0.1.min.css' },
 		{ elem: 'css', url: 'doc.min.css' }
 	],
 	scripts: [
