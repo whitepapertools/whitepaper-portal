@@ -1,10 +1,23 @@
 # pt-card
 
-![pt-card](_images/pt-card.png)
+<!-- ![pt-card](_images/pt-card.png) -->
 
-Способ представления информации в маленьком формате.
+<div class="card-doc-preview theme theme_color_whitepaper-inverse component component_whitepaper_inverse pt-card" >
+	<img class="image pt-card__image pt-card__image_size_cover" src="../../assets/doc/doc-card-preview.jpg">
+	<div class="card-doc-preview__header pt-card__header pt-card__header_space-a_xxl pt-card__header_distribute_center">
+		<div class="card-doc-preview__info">
+			<div class="text text_view_primary text_size_xxxl text_weight_bold decorator decorator_indent-b_m">Card header</div>
+			<div class="text text_view_primary text_size_l text_weight_regular decorator decorator_indent-b_l">Multi-line paragraph containing a short description of the card</div>
+		</div>
+	</div>
+	<div class="card-doc-preview__footer pt-card__footer pt-card__footer_space-a_xxl pt-card__footer_distribute_center">
+		<div class="text text_view_primary text_size_m">Card footer</div>
+	</div>
+</div>
 
-```js
+Блок `pt-card` — карточка для представления информации в компактном формате.
+
+```html
 {
 	block: 'pt-card',
 	content: [
@@ -22,9 +35,6 @@
 	}]
 }
 ```
-
-<iframe height='500' scrolling='no' title='pt-card' src='//codepen.io/whitepapertools/embed/6dfa7d09f4c412333aa70bf475064679/?height=500&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/whitepapertools/pen/6dfa7d09f4c412333aa70bf475064679/'>pt-card</a> by whitepaper (<a href='https://codepen.io/whitepapertools'>@whitepapertools</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
 
 ## Элемент header
 
