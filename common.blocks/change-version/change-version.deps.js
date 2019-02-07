@@ -15,7 +15,7 @@
       // { block: 'pt-list', mods: {view: 'default'} },
       // { block: 'pt-list', elem: 'list', mods: {'space-v': 'l'} },
       { block: 'pt-list', mods: { border: 'all', view: 'default' } },
-      { block: 'pt-list', elem: 'list', mods: { 'space-a': 'xl' } },
+      { block: 'pt-list', elem: 'item', mods: { 'space-a': 'xl' } },
       // { block: 'textlist', mods: { type: 'bullet' } },
       // { block: 'textlist', elem: 'item' },
 

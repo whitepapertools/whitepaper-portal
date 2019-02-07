@@ -88,17 +88,17 @@ block('change-version')(
                       mods: { border: 'all', view: 'default' },
                       content: [
                         {
-                            elem: 'list',
+                            elem: 'item',
                             elemMods: { 'space-a': 'xl' },
                             content: this.ctx.major1
                         },
                         {
-                            elem: 'list',
+                            elem: 'item',
                             elemMods: { 'space-a': 'xl' },
                             content: this.ctx.major2
                         },
                         {
-                            elem: 'list',
+                            elem: 'item',
                             elemMods: { 'space-a': 'xl' },
                             content: this.ctx.major3
                         }
