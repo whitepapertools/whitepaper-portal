@@ -1,9 +1,11 @@
 # pt-informer
 
-<div class="pt-informer pt-informer_view_success theme theme_color_whitepaper-success">
-	<div class="pt-informer__content pt-informer__content_space-a_l">
-		<div class="text text_size_xl text_view_primary text_weight_bold decorator decorator_indent-b_xxxs">Success message</div>
-		<div class="text text_size_m text_view_primary decorator decorator_indent-b_xxxs">Small message description</div>
+<div class="preview">
+	<div class="pt-informer pt-informer_view_success theme theme_color_whitepaper-success" style="min-width: 240px; width: 50%;">
+		<div class="pt-informer__content pt-informer__content_space-a_l">
+			<div class="text text_size_xl text_view_primary text_weight_bold decorator decorator_indent-b_xxxs">Success message</div>
+			<div class="text text_size_m text_view_primary decorator decorator_indent-b_xxxs">Small message description</div>
+		</div>
 	</div>
 </div>
 

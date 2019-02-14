@@ -1,6 +1,7 @@
 # pt-list
 
-<div class="pt-list pt-list_border_all pt-list_view_default">
+<div class="preview">
+	<div class="pt-list pt-list_border_all pt-list_view_default" style="min-width: 280px">
 	<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_m">
 		<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
 			Первая операция
@@ -25,6 +26,7 @@
 			+2000 ₽
 		</div>
 	</div>
+	</div>
 </div>
 
 `pt-list` используется для вертикального представления повторяющихся сущностей. Отлично подходит для отображения истории, контактов, вертикальных меню.
@@ -44,12 +46,12 @@ ___
 
 ### border
 
-<div class="demo__row">
-	<div class="doc-view" style="margin-bottom: var(--space-xl);">
-		<div class="doc-view__mod-name">
-			<div class="text text_size_xl text_view_ghost">не задан</div>
-		</div>
-		<div class="pt-list pt-list_view_default" style="min-width: 400px;">
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">не задан</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_default">
 			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
 				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
 					Первая операция
@@ -76,11 +78,14 @@ ___
 			</div>
 		</div>
 	</div>
-	<div class="doc-view">
-		<div class="doc-view__mod-name">
-			<div class="text text_size_xl text_view_ghost">all</div>
-		</div>
-		<div class="pt-list pt-list_border_all pt-list_view_default" style="min-width: 400px;">
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">all</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_default pt-list_border_all">
 			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
 				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
 					Первая операция
@@ -111,12 +116,12 @@ ___
 
 ### view
 
-<div class="demo__row">
-	<div class="doc-view" style="margin-bottom: var(--space-xl);">
-		<div class="doc-view__mod-name">
-			<div class="text text_size_xl text_view_ghost">default</div>
-		</div>
-		<div class="pt-list pt-list_view_default" style="min-width: 400px;">
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">default</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_default">
 			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
 				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
 					Первая операция
@@ -143,11 +148,14 @@ ___
 			</div>
 		</div>
 	</div>
-	<div class="doc-view">
-		<div class="doc-view__mod-name">
-			<div class="text text_size_xl text_view_ghost">ghost</div>
-		</div>
-		<div class="pt-list pt-list_view_ghost" style="min-width: 400px;">
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">ghost</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_ghost">
 			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
 				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
 					Первая операция
@@ -206,12 +214,12 @@ space-l                      | xxs / xs / s / m / l / xl / xxl  | Внутрен
 
 #### border
 
-<div class="demo__row">
-	<div class="doc-view" style="margin-bottom: var(--space-xl);">
-		<div class="doc-view__mod-name">
-			<div class="text text_size_xl text_view_ghost">не задан</div>
-		</div>
-		<div class="pt-list pt-list_view_default" style="min-width: 400px;">
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">не задан</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_default">
 			<div class="pt-list__item pt-list__item_distribute_between pt-list__item_space-a_s">
 				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
 					Первая операция
@@ -238,11 +246,14 @@ space-l                      | xxs / xs / s / m / l / xl / xxl  | Внутрен
 			</div>
 		</div>
 	</div>
-	<div class="doc-view">
-		<div class="doc-view__mod-name">
-			<div class="text text_size_xl text_view_ghost">bottom</div>
-		</div>
-		<div class="pt-list pt-list_view_default" style="min-width: 400px;">
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">bottom</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_default">
 			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
 				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
 					Первая операция
@@ -269,11 +280,14 @@ space-l                      | xxs / xs / s / m / l / xl / xxl  | Внутрен
 			</div>
 		</div>
 	</div>
-	<div class="doc-view">
-		<div class="doc-view__mod-name">
-			<div class="text text_size_xl text_view_ghost">top</div>
-		</div>
-		<div class="pt-list pt-list_view_default" style="min-width: 400px;">
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">top</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_default">
 			<div class="pt-list__item pt-list__item_border_top pt-list__item_distribute_between pt-list__item_space-a_s">
 				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
 					Первая операция
@@ -304,12 +318,12 @@ space-l                      | xxs / xs / s / m / l / xl / xxl  | Внутрен
 
 #### distribute
 
-<div class="demo__row">
-	<div class="doc-view">
-		<div class="doc-view__mod-name">
-			<div class="text text_size_xl text_view_ghost">default</div>
-		</div>
-		<div class="pt-list pt-list_view_default" style="min-width: 400px;">
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">default</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_default">
 			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_default pt-list__item_space-a_s">
 				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s" style="padding-right: var(--space-l);">
 					Первая операция
@@ -336,11 +350,14 @@ space-l                      | xxs / xs / s / m / l / xl / xxl  | Внутрен
 			</div>
 		</div>
 	</div>
-	<div class="doc-view">
-		<div class="doc-view__mod-name">
-			<div class="text text_size_xl text_view_ghost">between</div>
-		</div>
-		<div class="pt-list pt-list_view_default" style="min-width: 400px;">
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">between</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="pt-list pt-list_view_default">
 			<div class="pt-list__item pt-list__item_border_bottom pt-list__item_distribute_between pt-list__item_space-a_s">
 				<div class="text text_size_m text_view_primary text_transform_uppercase text_spacing_s">
 					Первая операция

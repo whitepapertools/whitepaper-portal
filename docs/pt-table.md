@@ -1,42 +1,43 @@
 # pt-table
 
-<!-- ![pt-table](_images/pt-table.png) -->
-
-<div class="pt-table pt-table_view_default pt-table_space-h_m pt-table_space-v_s">
-	<div class="pt-table__row pt-table__row_border_bottom">
-		<div class="pt-table__col pt-table__col_width_15">
-			<div class="text text_size_m text_view_primary">FEJKA</div>
+<div class="preview">
+	<div class="pt-table pt-table_view_default pt-table_space-h_m pt-table_space-v_s">
+		<div class="pt-table__row pt-table__row_border_bottom">
+			<div class="pt-table__col pt-table__col_width_15">
+				<div class="text text_size_m text_view_primary">FEJKA</div>
+			</div>
+			<div class="pt-table__col pt-table__col_width_15">
+				<div class="text text_size_m text_view_primary">$4.99</div>
+			</div>
+			<div class="pt-table__col pt-table__col_width_70">
+				<div class="text text_size_m text_view_primary">Liven up your living space with greenery by decorating your walls with the artificial plant panel.</div>
+			</div>
 		</div>
-		<div class="pt-table__col pt-table__col_width_15">
-			<div class="text text_size_m text_view_primary">$4.99</div>
+		<div class="pt-table__row pt-table__row_border_bottom">
+			<div class="pt-table__col pt-table__col_width_15">
+				<div class="text text_size_m text_view_primary">FEJKA</div>
+			</div>
+			<div class="pt-table__col pt-table__col_width_15">
+				<div class="text text_size_m text_view_primary">$4.99</div>
+			</div>
+			<div class="pt-table__col pt-table__col_width_70">
+				<div class="text text_size_m text_view_primary">Liven up your living space with greenery by decorating your walls with the artificial plant panel.</div>
+			</div>
 		</div>
-		<div class="pt-table__col pt-table__col_width_70">
-			<div class="text text_size_m text_view_primary">Liven up your living space with greenery by decorating your walls with the artificial plant panel.</div>
-		</div>
-	</div>
-	<div class="pt-table__row pt-table__row_border_bottom">
-		<div class="pt-table__col pt-table__col_width_15">
-			<div class="text text_size_m text_view_primary">FEJKA</div>
-		</div>
-		<div class="pt-table__col pt-table__col_width_15">
-			<div class="text text_size_m text_view_primary">$4.99</div>
-		</div>
-		<div class="pt-table__col pt-table__col_width_70">
-			<div class="text text_size_m text_view_primary">Liven up your living space with greenery by decorating your walls with the artificial plant panel.</div>
-		</div>
-	</div>
-	<div class="pt-table__row pt-table__row_border_bottom">
-		<div class="pt-table__col pt-table__col_width_15">
-			<div class="text text_size_m text_view_primary">FEJKA</div>
-		</div>
-		<div class="pt-table__col pt-table__col_width_15">
-			<div class="text text_size_m text_view_primary">$4.99</div>
-		</div>
-		<div class="pt-table__col pt-table__col_width_70">
-			<div class="text text_size_m text_view_primary">Liven up your living space with greenery by decorating your walls with the artificial plant panel.</div>
+		<div class="pt-table__row pt-table__row_border_bottom">
+			<div class="pt-table__col pt-table__col_width_15">
+				<div class="text text_size_m text_view_primary">FEJKA</div>
+			</div>
+			<div class="pt-table__col pt-table__col_width_15">
+				<div class="text text_size_m text_view_primary">$4.99</div>
+			</div>
+			<div class="pt-table__col pt-table__col_width_70">
+				<div class="text text_size_m text_view_primary">Liven up your living space with greenery by decorating your walls with the artificial plant panel.</div>
+			</div>
 		</div>
 	</div>
 </div>
+
 
 `pt-table` — паттерн для создания простых плоских таблиц. Набор модификаторов покрывает максимальное количество как стилистических так и структурных потребностей. Также есть возможность маркеровать строки по статусу.
 
@@ -59,7 +60,7 @@ space-v      | xs / s / m / l  | Внутренние отступы в ячей
 
 ### border:
 
-<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xxxl">
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
 		<div class="text text_size_xl text_view_ghost">не задан</div>
 	</div>
@@ -101,6 +102,7 @@ space-v      | xs / s / m / l  | Внутренние отступы в ячей
 		</div>
 	</div>
 </div>
+
 <div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
 		<div class="text text_size_xl text_view_ghost">all</div>
@@ -146,7 +148,7 @@ space-v      | xs / s / m / l  | Внутренние отступы в ячей
 
 ### stripe:
 
-<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xxxl">
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
 		<div class="text text_size_xl text_view_ghost">не задан</div>
 	</div>
@@ -188,6 +190,7 @@ space-v      | xs / s / m / l  | Внутренние отступы в ячей
 		</div>
 	</div>
 </div>
+
 <div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
 		<div class="text text_size_xl text_view_ghost">even</div>
@@ -230,6 +233,7 @@ space-v      | xs / s / m / l  | Внутренние отступы в ячей
 		</div>
 	</div>
 </div>
+
 <div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
 		<div class="text text_size_xl text_view_ghost">odd</div>
@@ -289,7 +293,7 @@ ___
 
 #### border:
 
-<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xxxl">
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
 		<div class="text text_size_xl text_view_ghost">не задан</div>
 	</div>
@@ -420,7 +424,7 @@ ___
 
 #### status:
 
-<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xxxl">
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
 		<div class="text text_size_xl text_view_ghost">не задан</div>
 	</div>
@@ -637,7 +641,7 @@ ___
 
 #### view:
 
-<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xxxl">
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
 		<div class="text text_size_xl text_view_ghost">head</div>
 	</div>
@@ -692,7 +696,7 @@ width                        | 5 / 10 / 15 / 20 / 25 / 30 / 35 / 40 / 45 / 50 / 
 
 #### align
 
-<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xxxl">
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
 		<div class="text text_size_xl text_view_ghost">не задан</div>
 	</div>

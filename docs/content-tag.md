@@ -1,7 +1,9 @@
 # Тэг
 
-<div class="tag tag_view_link tag_size_m">
-	<div class="tag__text">some tag</div>
+<div class="preview">
+	<div class="tag tag_view_link tag_size_m">
+		<div class="tag__text">some tag</div>
+	</div>
 </div>
 
 Идентификатор для категоризации, описания, поиска данных и задания внутренней структуры.
@@ -23,40 +25,49 @@ ___
 
 ### view:
 
-<div class="demo__row">
-	<div class="doc-view">
-		<div class="doc-view__mod-name">
-			<div class="text text_size_xl text_view_ghost">default</div>
-		</div>
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">default</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<div class="tag tag_view_default tag_size_m">default</div>
 	</div>
-	<div class="doc-view">
-		<div class="doc-view__mod-name">
-			<div class="text text_size_xl text_view_ghost">link</div>
-		</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">link</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<div class="tag tag_view_link tag_size_m">link</div>
 	</div>
-	<div class="doc-view">
-		<div class="doc-view__mod-name">
-			<div class="text text_size_xl text_view_ghost">disable</div>
-		</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">disable</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<div class="tag tag_view_disable tag_size_m">disable</div>
 	</div>
 </div>
 
 ### size:
 
-<div class="demo__row">
-	<div class="doc-view">
-		<div class="doc-view__mod-name">
-			<div class="text text_size_xl text_view_ghost">s</div>
-		</div>
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">s</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<div class="tag tag_view_default tag_size_s">default</div>
 	</div>
-	<div class="doc-view">
-		<div class="doc-view__mod-name">
-			<div class="text text_size_xl text_view_ghost">m</div>
-		</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xxxl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">m</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<div class="tag tag_view_default tag_size_m">default</div>
 	</div>
 </div>

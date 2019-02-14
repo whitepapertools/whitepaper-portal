@@ -1,5 +1,9 @@
 # Текст
 
+<div class="preview">
+	<div class="text text_size_xxxl text_view_secondary text_weight_bold">Some nice text</div>
+</div>
+
 В основе любого интерфейса лежит типографика. В вебе у текстовых блоков есть много разных свойств, влияющих на отображение.
 
 Для манипуляции всеми этими свойствами у нас есть блок `text`. С его помощью каждый текстовый блок можно обернуть и применять модификаторы.
@@ -27,235 +31,323 @@ type | h1 / h2 / h3 / p / blockquote                  | Стиль текста
 [weight](#view) | black / bold / semibold / regular / light / thin | Жирность шрифта
 
 ### decoration:
-<div class="demo__row">
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">default</div>
-        </div>
-        <div class="text text_size_xl">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">underline</div>
-        </div>
-        <div class="text text_size_xl text_decoration_underline">Typography</div>
-    </div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl ">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">не указан</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">underline</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_decoration_underline">Typography</div>
+	</div>
 </div>
 
 ### size:
-<div class="demo__row">
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">xxxxl</div>
-        </div>
-        <div class="text text_size_xxxxl">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">xxxl</div>
-        </div>
-        <div class="text text_size_xxxl">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">xxl</div>
-        </div>
-        <div class="text text_size_xxl">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">xl</div>
-        </div>
-        <div class="text text_size_xl">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">l</div>
-        </div>
-        <div class="text text_size_l">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">m</div>
-        </div>
-        <div class="text text_size_m">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">s</div>
-        </div>
-        <div class="text text_size_s">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">xs</div>
-        </div>
-        <div class="text text_size_xs">Typography</div>
-    </div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl ">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">xxxxl</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xxxxl">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">xxxl</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xxxl">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">xxl</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xxl">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">xl</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">l</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_l">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">m</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_m">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">s</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_s">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">xs</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xs">Typography</div>
+	</div>
 </div>
 
 ### spacing:
-<div class="demo__row">
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">xl</div>
-        </div>
-        <div class="text text_size_xl text_transform_uppercase text_spacing_xs">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">s</div>
-        </div>
-        <div class="text text_size_xl text_transform_uppercase text_spacing_s">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">m</div>
-        </div>
-        <div class="text text_size_xl text_transform_uppercase text_spacing_m">Typography</div>
-    </div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl ">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">xs</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_transform_uppercase text_spacing_xs">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">s</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_transform_uppercase text_spacing_s">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">m</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_transform_uppercase text_spacing_m">Typography</div>
+	</div>
 </div>
 
 ### style:
-<div class="demo__row">
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">default</div>
-        </div>
-        <div class="text text_size_xl">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">italic</div>
-        </div>
-        <div class="text text_size_xl text_style_italic">Typography</div>
-    </div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl ">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">не указан</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">italic</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_style_italic">Typography</div>
+	</div>
 </div>
 
 ### transform:
-<div class="demo__row">
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">default</div>
-        </div>
-        <div class="text text_size_xl">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">uppercase</div>
-        </div>
-        <div class="text text_size_xl text_transform_uppercase">Typography</div>
-    </div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl ">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">не указан</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">uppercase</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_transform_uppercase">Typography</div>
+	</div>
 </div>
 
 ### view:
-<div class="demo__row">
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">primary</div>
-        </div>
-        <div class="text text_size_xl">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">secondary</div>
-        </div>
-        <div class="text text_size_xl text_view_secondary">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">ghost</div>
-        </div>
-        <div class="text text_size_xl text_view_ghost">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">disable</div>
-        </div>
-        <div class="text text_size_xl text_view_disable">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">success</div>
-        </div>
-        <div class="text text_size_xl text_view_success">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">warning</div>
-        </div>
-        <div class="text text_size_xl text_view_warning">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">alert</div>
-        </div>
-        <div class="text text_size_xl text_view_alert">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">link</div>
-        </div>
-        <div class="text text_size_xl text_view_link">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">link-minor</div>
-        </div>
-        <div class="text text_size_xl text_view_link-minor">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">brand</div>
-        </div>
-        <div class="text text_size_xl text_view_brand">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">promo</div>
-        </div>
-        <div class="text text_size_xl text_view_promo">Typography</div>
-    </div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl ">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">primary</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_primary">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">secondary</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_secondary">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">ghost</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_ghost">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">disable</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_disable">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">success</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_success">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">warning</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_warning">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">alert</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_alert">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">link</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_link">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">link-minor</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_link-minor">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">brand</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_brand">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">promo</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_view_promo">Typography</div>
+	</div>
 </div>
 
 ### weight:
-<div class="demo__row">
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">thin</div>
-        </div>
-        <div class="text text_size_xl text_weight_thin">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">light</div>
-        </div>
-        <div class="text text_size_xl text_weight_light">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">regular</div>
-        </div>
-        <div class="text text_size_xl text_weight_regular">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">semibold</div>
-        </div>
-        <div class="text text_size_xl text_weight_semibold">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">bold</div>
-        </div>
-        <div class="text text_size_xl text_weight_bold">Typography</div>
-    </div>
-    <div class="doc-view">
-        <div class="doc-view__mod-name">
-            <div class="text text_size_xl text_view_ghost">black</div>
-        </div>
-        <div class="text text_size_xl text_weight_black">Typography</div>
-    </div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl ">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">thin</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_weight_thin">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">light</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_weight_light">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">regular</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_weight_regular">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">semibold</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_weight_semibold">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">bold</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_weight_bold">Typography</div>
+	</div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-b_xl">
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+		<div class="text text_size_xl text_view_ghost">black</div>
+	</div>
+	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+		<div class="text text_size_xl text_weight_black">Typography</div>
+	</div>
 </div>
 
 ___
