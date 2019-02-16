@@ -1,51 +1,108 @@
 block('footer')(
 	content()(function() {
 		return 	{
-			elem: 'container',
-			mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', align: 'center' }},
+			block: 'tpl-layout',
 			content: [
 				{
-					block: 'text',
-					mods: { size: 'l', view: 'secondary' },
-					content: '© 2018 whitepaper'
-				},
-				{
-					elem: 'social',
+					elem: 'content',
 					content: [
 						{
-							block: 'social-icon',
-							mods: { name: 'github', size: 'l', view: 'primary' },
-							mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-							tag: 'a',
-							attrs: { href: 'https://github.com/whitepapertools', target: '_blank' }
-						},
-						{
-							block: 'social-icon',
-							mods: { name: 'telegram', size: 'l', view: 'primary' },
-							mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-							tag: 'a',
-							attrs: { href: 'https://t.me/whitepapertools', target: '_blank' }
-						},
-						{
-							block: 'social-icon',
-							mods: { name: 'twitter', size: 'l', view: 'primary' },
-							mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-							tag: 'a',
-							attrs: { href: 'https://twitter.com/whitepapertools', target: '_blank' }
-						},
-						{
-							block: 'social-icon',
-							mods: { name: 'codepen', size: 'l', view: 'primary' },
-							mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-							tag: 'a',
-							attrs: { href: 'https://codepen.io/whitepapertools', target: '_blank' }
-						},
-						{
-							block: 'social-icon',
-							mods: { name: 'dribbble', size: 'l', view: 'primary' },
-							mix: { block: 'decorator', mods: { 'indent-l': 'xs' }},
-							tag: 'a',
-							attrs: { href: 'https://dribbble.com/whitepapertools', target: '_blank' }
+							elem: 'content',
+							content: [
+								{
+									block: 'tpl-grid',
+									mods: { ratio: '1-1-1-1', 'col-gap': 'full' },
+									content: [
+										{
+											elem: 'fraction',
+											content: [
+												{
+													block: 'text',
+													mods: { size: 'l', view: 'secondary' },
+													content: '© 2018 whitepaper'
+												}
+											]
+										},
+										{
+											elem: 'fraction',
+											content: [
+												{
+													block: 'text',
+													mods: { size: 'l', view: 'secondary' },
+													mix: { block: 'decaorator', mods: {'indent-b': 'l' }},
+													content: ' About'
+												},
+												{
+													block: 'text',
+													mods: { size: 'l', view: 'secondary' },
+													mix: { block: 'decaorator', mods: {'indent-b': 'l' }},
+													content: 'Contributors'
+												},
+												{
+													block: 'text',
+													mods: { size: 'l', view: 'secondary' },
+													content: 'PressKit'
+												}
+											]
+										},
+										{
+											elem: 'fraction',
+											content: [
+												{
+													block: 'text',
+													mods: { size: 'l', view: 'secondary' },
+													content: ' Documentation'
+												},
+												{
+													block: 'text',
+													mods: { size: 'l', view: 'secondary' },
+													mix: { block: 'decaorator', mods: {'indent-b': 'l' }},
+													content: 'Github'
+												},
+												{
+													block: 'text',
+													mods: { size: 'l', view: 'secondary' },
+													mix: { block: 'decaorator', mods: {'indent-b': 'l' }},
+													content: 'Telegram'
+												},
+												{
+													block: 'text',
+													mods: { size: 'l', view: 'secondary' },
+													mix: { block: 'decaorator', mods: {'indent-b': 'l' }},
+													content: 'Medium'
+												},
+												{
+													block: 'text',
+													mods: { size: 'l', view: 'secondary' },
+													content: 'CodePen'
+												}	 
+											]
+										},
+										{
+											elem: 'fraction',
+											content: [
+												{
+													block: 'text',
+													mods: { size: 'l', view: 'secondary' },
+													mix: { block: 'decaorator', mods: {'indent-b': 'l' }},
+													content: 'Community'
+												},
+												{
+													block: 'text',
+													mods: { size: 'l', view: 'secondary' },
+													mix: { block: 'decaorator', mods: {'indent-b': 'l' }},
+													content: 'Events'
+												},
+												{
+													block: 'text',
+													mods: { size: 'l', view: 'secondary' },
+													content: 'Kit'
+												}
+											]
+										}
+									]
+								}
+							]
 						}
 					]
 				}
@@ -53,3 +110,4 @@ block('footer')(
 		}
 	})
 );
+

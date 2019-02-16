@@ -11,14 +11,16 @@
 				mods: { size: 'm', align: 'center' }
 			},
 			{
+				block: 'tpl-grid',
+				mods: { ratio: '1-1-1-1', 'col-gap': 'full' },
+			},
+			{
 				block: 'social-icon',
 				mods: { size: 'l', view: 'primary', name: ['github','telegram', 'twitter', 'codepen', 'dribbble' ]}
 			},
 			{
 				block: 'decorator',
-				mods : {
-					'indent-l': [ 'xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl', 'xxxxl', 'xxxxxl', 'xxxxxl', 'xxxxxxl' ],
-				}
+				mods : { 'indent-b': [ 'xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl', 'xxxxl', 'xxxxxl', 'xxxxxl', 'xxxxxxl' ] }
 			}
 		]
 	}

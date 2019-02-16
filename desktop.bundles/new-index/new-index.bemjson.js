@@ -533,6 +533,11 @@ module.exports = {
 																elem: 'photo',
 																elemMods: { size: 's' },
 																content: [
+																	{
+																		block: 'image',
+																		url: '/assets/team/kirill.jpg',
+																		width: 40
+																	}
 																]
 															}
 														]
@@ -544,6 +549,17 @@ module.exports = {
 																elem: 'photo',
 																elemMods: { size: 's' },
 																content: [
+																	{
+																		elem: 'photo',
+																		elemMods: { size: 's' },
+																		content: [
+																			{
+																				block: 'image',
+																				url: '/assets/team/ksusha.jpg',
+																				width: 40
+																			}
+																		]
+																	}
 																]
 															}
 														]
@@ -555,6 +571,17 @@ module.exports = {
 																elem: 'photo',
 																elemMods: { size: 's' },
 																content: [
+																	{
+																		elem: 'photo',
+																		elemMods: { size: 's' },
+																		content: [
+																			{
+																				block: 'image',
+																				url: '/assets/team/ilya.png',
+																				width: 40
+																			}
+																		]
+																	}
 																]
 															}
 														]
@@ -566,6 +593,17 @@ module.exports = {
 																elem: 'photo',
 																elemMods: { size: 's' },
 																content: [
+																	{
+																		elem: 'photo',
+																		elemMods: { size: 's' },
+																		content: [
+																			{
+																				block: 'image',
+																				url: '/assets/team/nikita.png',
+																				width: 40
+																			}
+																		]
+																	}
 																]
 															}
 														]
@@ -577,6 +615,17 @@ module.exports = {
 																elem: 'photo',
 																elemMods: { size: 's' },
 																content: [
+																	{
+																		elem: 'photo',
+																		elemMods: { size: 's' },
+																		content: [
+																			{
+																				block: 'image',
+																				url: '/assets/team/misha.png',
+																				width: 40
+																			}
+																		]
+																	}
 																]
 															}
 														]
@@ -588,6 +637,17 @@ module.exports = {
 																elem: 'photo',
 																elemMods: { size: 's' },
 																content: [
+																	{
+																		elem: 'photo',
+																		elemMods: { size: 's' },
+																		content: [
+																			{
+																				block: 'image',
+																				url: '/assets/team/serega.png',
+																				width: 40
+																			}
+																		]
+																	}
 																]
 															}
 														]
@@ -599,6 +659,11 @@ module.exports = {
 																elem: 'photo',
 																elemMods: { size: 's' },
 																content: [
+																	{
+																		block: 'image',
+																		url: '/assets/team/julya.jpg',
+																		width: 40
+																	}
 																]
 															}
 														]
@@ -610,6 +675,11 @@ module.exports = {
 																elem: 'photo',
 																elemMods: { size: 's' },
 																content: [
+																	{
+																		block: 'image',
+																		url: '/assets/team/sava.jpg',
+																		width: 40
+																	}
 																]
 															}
 														]
@@ -621,6 +691,11 @@ module.exports = {
 																elem: 'photo',
 																elemMods: { size: 's' },
 																content: [
+																	{
+																		block: 'image',
+																		url: '/assets/team/vadik.jpg',
+																		width: 40
+																	}
 																]
 															}
 														]
@@ -677,8 +752,77 @@ module.exports = {
 								block: 'text',
 								mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
 								mods: { size: 'xxxl', view: 'primary', weight: 'bold', },
-								content: 'Старт'
+								content: 'Как это работает'
 							},
+							{
+								block: 'text',
+								mods: { size: 'l', view: 'secondary', },
+								mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' } },
+								content: 'Продакшн рэди лоджик из паблик эвйлибл андер эн оупэн сорс лайсэнс.'
+							},
+							{
+								block: 'pt-list',
+								elem: 'item',
+								elemMods: { distribute: 'default', 'vertical-align': 'center' },
+								content: [
+									{
+										block: 'steps',
+										content: [
+											{
+												block: 'step-badge',
+												mods: { view: 'other' },
+												content: 'git clone'
+											},
+											{
+												block: 'step-badge',
+												mods: { view: 'other' },
+												content: 'cd my-whitepaper-project'
+											},
+											{
+												block: 'step-badge',
+												mods: { view: 'other' },
+												content: 'npm install'
+											},
+											{
+												block: 'step-badge',
+												mods: { view: 'other' },
+												content: '0.0.0.0:8080/'
+											}
+										]
+									}
+								]
+							},
+							{
+								block: 'pt-list',
+								mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+								elem: 'item',
+								elemMods: { distribute: 'default', 'vertical-align': 'center' },
+								content: [
+									{
+										block: 'text',
+										attrs: { style: 'width: 240px; margin-right: 20px;' },
+										mods: { size: 'l', view: 'secondary' },
+										content: 'In done project:'
+									},
+									{
+										block: 'steps',
+										content: [
+											{
+												block: 'step-badge',
+												mix: { block: 'theme', mods: { color: 'whitepaper-brand' } },
+												mods: { view: 'wp' },
+												content: '<link rel="stylesheet"'
+											},
+											{
+												block: 'step-badge',
+												mix: { block: 'theme', mods: { color: 'whitepaper-brand' } },
+												mods: { view: 'wp' },
+												content: 'npm install whitepaper-bem'
+											}
+										]
+									}
+								]
+							}
 						]
 					}
 				},
