@@ -36,7 +36,7 @@ module.exports = {
 					elem: 'content',
 					content: {
 						elem: 'container',
-						elemMods: { align: 'center', size: 'full' },
+						elemMods: { align: 'center', size: 'm' },
 						content: [
 							{
 								block: 'intro',
@@ -294,7 +294,7 @@ module.exports = {
 								block: 'text',
 								mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
 								mods: { size: 'xxxl', view: 'primary', weight: 'bold', },
-								content: 'Faq'
+								content: 'FAQ'
 							},
 							{
 								block: 'tpl-grid',
@@ -447,49 +447,69 @@ module.exports = {
 									},
 									{
 										block: 'events',
-										mix: { block: 'theme', mods: { color: 'whitepaper-brand' } },
+										mix: [
+											{ block: 'theme', mods: { color: 'whitepaper-brand' }},
+											{ block: 'pt-card' }
+										],
 										content: [
 											{
-												block: 'text',
-												mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-												mods: { size: 'xxxl', view: 'primary', weight: 'bold', },
-												content: 'События'
-											},
-											{
-												block: 'pt-list',
+												elem: 'content',
+												mix: { block: 'pt-card', elem: 'content' },
 												content: [
 													{
-														elem: 'item',
-														elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
-														content: [
-															{
-																block: 'text',
-																mods: { size: 'l', view: 'primary' },
-																content: 'Dribbble Meetup, 2018'
-															},
-															{
-																block: 'text',
-																mods: { size: 'l', view: 'primary' },
-																content: 'Санкт-Петербург'
-															}
-														]
+														block: 'text',
+														mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
+														mods: { size: 'xxxl', view: 'primary', weight: 'bold', },
+														content: 'События'
 													},
 													{
-														elem: 'item',
-														elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
+														block: 'pt-list',
 														content: [
 															{
-																block: 'text',
-																mods: { size: 'l', view: 'primary' },
-																content: 'Web Standarts, 2018'
+																elem: 'item',
+																elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
+																content: [
+																	{
+																		block: 'text',
+																		mods: { size: 'l', view: 'primary' },
+																		content: 'Dribbble Meetup, 2018'
+																	},
+																	{
+																		block: 'text',
+																		mods: { size: 'l', view: 'primary' },
+																		content: 'Санкт-Петербург'
+																	}
+																]
 															},
 															{
-																block: 'text',
-																mods: { size: 'l', view: 'primary' },
-																content: 'Москва'
+																elem: 'item',
+																elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
+																content: [
+																	{
+																		block: 'text',
+																		mods: { size: 'l', view: 'primary' },
+																		content: 'Web Standarts, 2018'
+																	},
+																	{
+																		block: 'text',
+																		mods: { size: 'l', view: 'primary' },
+																		content: 'Москва'
+																	}
+																]
 															}
 														]
-													},
+													}
+												]
+											},
+											{
+												elem: 'footer',
+												mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
+												content: [
+													{
+														block: 'text',
+														mods: { size: 'l', view: 'secondary' },
+														content: 'WHTPR is publicly available under an open source license. This means that the software library and its source code will be publicly available, for free, forever, and that the library can be used without restrictions.'
+													}
 												]
 											}
 										]
@@ -532,6 +552,11 @@ module.exports = {
 															{
 																elem: 'photo',
 																elemMods: { size: 's' },
+																tag: 'a',
+																attrs: {
+																	href: 'http://whitepaper.tools',
+																	style: 'display: block'
+																},
 																content: [
 																	{
 																		block: 'image',
@@ -552,6 +577,11 @@ module.exports = {
 																	{
 																		elem: 'photo',
 																		elemMods: { size: 's' },
+																		tag: 'a',
+																		attrs: {
+																			href: 'http://whitepaper.tools',
+																			style: 'display: block'
+																		},
 																		content: [
 																			{
 																				block: 'image',
@@ -574,6 +604,11 @@ module.exports = {
 																	{
 																		elem: 'photo',
 																		elemMods: { size: 's' },
+																		tag: 'a',
+																		attrs: {
+																			href: 'http://whitepaper.tools',
+																			style: 'display: block'
+																		},
 																		content: [
 																			{
 																				block: 'image',
@@ -596,6 +631,11 @@ module.exports = {
 																	{
 																		elem: 'photo',
 																		elemMods: { size: 's' },
+																		tag: 'a',
+																		attrs: {
+																			href: 'http://whitepaper.tools',
+																			style: 'display: block'
+																		},
 																		content: [
 																			{
 																				block: 'image',
@@ -618,6 +658,11 @@ module.exports = {
 																	{
 																		elem: 'photo',
 																		elemMods: { size: 's' },
+																		tag: 'a',
+																		attrs: {
+																			href: 'http://whitepaper.tools',
+																			style: 'display: block'
+																		},
 																		content: [
 																			{
 																				block: 'image',
@@ -640,6 +685,11 @@ module.exports = {
 																	{
 																		elem: 'photo',
 																		elemMods: { size: 's' },
+																		tag: 'a',
+																		attrs: {
+																			href: 'http://whitepaper.tools',
+																			style: 'display: block'
+																		},
 																		content: [
 																			{
 																				block: 'image',
@@ -658,6 +708,11 @@ module.exports = {
 															{
 																elem: 'photo',
 																elemMods: { size: 's' },
+																tag: 'a',
+																attrs: {
+																	href: 'http://whitepaper.tools',
+																	style: 'display: block'
+																},
 																content: [
 																	{
 																		block: 'image',
@@ -674,6 +729,11 @@ module.exports = {
 															{
 																elem: 'photo',
 																elemMods: { size: 's' },
+																tag: 'a',
+																attrs: {
+																	href: 'http://whitepaper.tools',
+																	style: 'display: block'
+																},
 																content: [
 																	{
 																		block: 'image',
@@ -690,6 +750,11 @@ module.exports = {
 															{
 																elem: 'photo',
 																elemMods: { size: 's' },
+																tag: 'a',
+																attrs: {
+																	href: 'http://whitepaper.tools',
+																	style: 'display: block'
+																},
 																content: [
 																	{
 																		block: 'image',
@@ -838,10 +903,41 @@ module.exports = {
 						content: [
 							{
 								block: 'text',
-								mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
+								mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' } },
 								mods: { size: 'xxxl', view: 'primary', weight: 'bold', },
-								content: 'Партнеры'
+								content: 'Будущие партнеры'
 							},
+							{
+								block: 'tpl-grid',
+								mods: { ratio: '1-1-1-1-1' },
+								content: [
+									{
+										block: 'image',
+										url: '/assets/partners/spotify-logo.svg',
+										width: 150
+									},
+									{
+										block: 'image',
+										url: '/assets/partners/airbnb-logo.svg',
+										width: 150
+									},
+									{
+										block: 'image',
+										url: '/assets/partners/youtube-logo.svg',
+										width: 150
+									},
+									{
+										block: 'image',
+										url: '/assets/partners/microsoft-logo.svg',
+										width: 150
+									},
+									{
+										block: 'image',
+										url: '/assets/partners/dropbox-logo.svg',
+										width: 150
+									}
+								]
+							}
 						]
 					}
 				},

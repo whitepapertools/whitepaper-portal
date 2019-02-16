@@ -7,21 +7,25 @@ block('footer')(
 					elem: 'content',
 					content: [
 						{
-							elem: 'content',
+							elem: 'container',
+							elemMods: { align: 'center', size: 'm' },
 							content: [
 								{
 									block: 'tpl-grid',
-									mods: { ratio: '1-1-1-1', 'col-gap': 'full' },
+									mods: { ratio: '1-1-1-1-1', 'col-gap': 'full' },
 									content: [
 										{
 											elem: 'fraction',
 											content: [
 												{
-													block: 'text',
-													mods: { size: 'l', view: 'secondary' },
-													content: '© 2018 whitepaper'
+													block: 'image',
+													url: '/assets/partners/whitepaper.svg',
+													width: 230
 												}
 											]
+										},
+										{
+											elem: 'fraction',
 										},
 										{
 											elem: 'fraction',
@@ -29,18 +33,34 @@ block('footer')(
 												{
 													block: 'text',
 													mods: { size: 'l', view: 'secondary' },
-													mix: { block: 'decaorator', mods: {'indent-b': 'l' }},
+													mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+													tag: 'a',
+													attrs: { 
+														href: 'http://whitepaper.tools',
+														style: 'text-decoration: none; display: block'
+													},
 													content: ' About'
 												},
 												{
 													block: 'text',
 													mods: { size: 'l', view: 'secondary' },
-													mix: { block: 'decaorator', mods: {'indent-b': 'l' }},
+													mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+													tag: 'a',
+													attrs: { 
+														href: 'http://whitepaper.tools',
+														style: 'text-decoration: none; display: block'
+													},
 													content: 'Contributors'
 												},
 												{
 													block: 'text',
 													mods: { size: 'l', view: 'secondary' },
+													mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+													tag: 'a',
+													attrs: { 
+														href: 'http://whitepaper.tools',
+														style: 'text-decoration: none; display: block'
+													},
 													content: 'PressKit'
 												}
 											]
@@ -51,29 +71,56 @@ block('footer')(
 												{
 													block: 'text',
 													mods: { size: 'l', view: 'secondary' },
-													content: ' Documentation'
+													mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+													tag: 'a',
+													attrs: { 
+														href: 'http://whitepaper.tools',
+														style: 'text-decoration: none; display: block'
+													},
+													content: 'Documentation'
 												},
 												{
 													block: 'text',
 													mods: { size: 'l', view: 'secondary' },
-													mix: { block: 'decaorator', mods: {'indent-b': 'l' }},
+													mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+													tag: 'a',
+													attrs: { 
+														href: 'http://whitepaper.tools',
+														style: 'text-decoration: none; display: block'
+													},
 													content: 'Github'
 												},
 												{
 													block: 'text',
 													mods: { size: 'l', view: 'secondary' },
-													mix: { block: 'decaorator', mods: {'indent-b': 'l' }},
+													mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+													tag: 'a',
+													attrs: { 
+														href: 'http://whitepaper.tools',
+														style: 'text-decoration: none; display: block'
+													},
 													content: 'Telegram'
 												},
 												{
 													block: 'text',
 													mods: { size: 'l', view: 'secondary' },
-													mix: { block: 'decaorator', mods: {'indent-b': 'l' }},
+													mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+													tag: 'a',
+													attrs: { 
+														href: 'http://whitepaper.tools',
+														style: 'text-decoration: none; display: block'
+													},
 													content: 'Medium'
 												},
 												{
 													block: 'text',
 													mods: { size: 'l', view: 'secondary' },
+													mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+													tag: 'a',
+													attrs: { 
+														href: 'http://whitepaper.tools',
+														style: 'text-decoration: none; display: block'
+													},
 													content: 'CodePen'
 												}	 
 											]
@@ -84,18 +131,34 @@ block('footer')(
 												{
 													block: 'text',
 													mods: { size: 'l', view: 'secondary' },
-													mix: { block: 'decaorator', mods: {'indent-b': 'l' }},
+													mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+													tag: 'a',
+													attrs: { 
+														href: 'http://whitepaper.tools',
+														style: 'text-decoration: none; display: block'
+													},
 													content: 'Community'
 												},
 												{
 													block: 'text',
 													mods: { size: 'l', view: 'secondary' },
-													mix: { block: 'decaorator', mods: {'indent-b': 'l' }},
+													mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+													tag: 'a',
+													attrs: { 
+														href: 'http://whitepaper.tools',
+														style: 'text-decoration: none; display: block'
+													},
 													content: 'Events'
 												},
 												{
 													block: 'text',
 													mods: { size: 'l', view: 'secondary' },
+													mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+													tag: 'a',
+													attrs: { 
+														href: 'http://whitepaper.tools',
+														style: 'text-decoration: none; display: block'
+													},
 													content: 'Kit'
 												}
 											]
