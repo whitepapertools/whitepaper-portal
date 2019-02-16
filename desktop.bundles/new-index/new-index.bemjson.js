@@ -200,50 +200,15 @@ module.exports = {
 							},
 							{
 								block: 'pt-list',
-								mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
 								elem: 'item',
 								elemMods: { distribute: 'default', 'vertical-align': 'center' },
+								mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 								content: [
 									{
 										block: 'text',
 										attrs: { style: 'width: 240px; margin-right: 20px;' },
 										mods: { size: 'l', view: 'secondary' },
-										content: 'whitepaper.tools'
-									},
-									{
-										block: 'steps',
-										content: [
-											{
-												block: 'step-badge',
-												mix: { block: 'theme', mods: { color: 'whitepaper-brand' } },
-												mods: { view: 'wp' },
-												content: 'Дизайн-система'
-											},
-											{
-												block: 'step-badge',
-												mix: { block: 'theme', mods: { color: 'whitepaper-brand' } },
-												mods: { view: 'wp' },
-												content: 'Фронтенд фреймворк'
-											}
-										]
-									},
-									{
-										block: 'text',
-										mods: { size: 'l', view: 'secondary' },
-										content: 'Готово'
-									}
-								]
-							},
-							{
-								block: 'pt-list',
-								elem: 'item',
-								elemMods: { distribute: 'default', 'vertical-align': 'center' },
-								content: [
-									{
-										block: 'text',
-										attrs: { style: 'width: 240px; margin-right: 20px;' },
-										mods: { size: 'l', view: 'secondary' },
-										content: 'Если стирать обычным порошком'
+										content: 'Классический процесс'
 									},
 									{
 										block: 'steps',
@@ -276,7 +241,42 @@ module.exports = {
 										content: 'Готово'
 									}
 								]
-							}
+							},
+							{
+								block: 'pt-list',
+								elem: 'item',
+								elemMods: { distribute: 'default', 'vertical-align': 'center' },
+								content: [
+									{
+										block: 'text',
+										attrs: { style: 'width: 240px; margin-right: 20px;' },
+										mods: { size: 'l', view: 'secondary' },
+										content: 'Процесс по whitepaper'
+									},
+									{
+										block: 'steps',
+										content: [
+											{
+												block: 'step-badge',
+												mix: { block: 'theme', mods: { color: 'whitepaper-brand' } },
+												mods: { view: 'wp' },
+												content: 'Дизайн-система'
+											},
+											{
+												block: 'step-badge',
+												mix: { block: 'theme', mods: { color: 'whitepaper-brand' } },
+												mods: { view: 'wp' },
+												content: 'Фронтенд фреймворк'
+											}
+										]
+									},
+									{
+										block: 'text',
+										mods: { size: 'l', view: 'secondary' },
+										content: 'Готово'
+									}
+								]
+							},
 						]
 					}
 				},
@@ -294,7 +294,7 @@ module.exports = {
 								block: 'text',
 								mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
 								mods: { size: 'xxxl', view: 'primary', weight: 'bold', },
-								content: 'FAQ'
+								content: 'Ответы на частые вопросы'
 							},
 							{
 								block: 'tpl-grid',
@@ -303,32 +303,32 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'l', view: 'secondary' },
-										content: '- I am new to coding,is WPT for me?'
+										content: '- Можно ли попробовать в песочнице?'
 									},
 									{
 										block: 'text',
 										mods: { size: 'l', view: 'secondary' },
-										content: '- I am new to coding,is WPT for me?'
+										content: '- Можно ли добавить в готовый проект?'
 									},
 									{
 										block: 'text',
 										mods: { size: 'l', view: 'secondary' },
-										content: '- I am new to coding,is WPT for me?'
+										content: '- Как передавать UI в разработку?'
 									},
 									{
 										block: 'text',
 										mods: { size: 'l', view: 'secondary' },
-										content: '- I am new to coding,is WPT for me?'
+										content: '- Можно ли использовать с Реактом?'
 									},
 									{
 										block: 'text',
 										mods: { size: 'l', view: 'secondary' },
-										content: '- I am new to coding,is WPT for me?'
+										content: '- Можно ли переопределить блоки?'
 									},
 									{
 										block: 'text',
 										mods: { size: 'l', view: 'secondary' },
-										content: '- I am new to coding,is WPT for me?'
+										content: '- В чём отличиет от Bootstrap?'
 									}
 								]
 							}
@@ -540,7 +540,7 @@ module.exports = {
 												block: 'text',
 												mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
 												mods: { size: 'xxxl', view: 'primary', weight: 'bold', },
-												content: 'Контребьютеры'
+												content: 'Контрибьюторы'
 											},
 											{
 												block: 'avatars',
@@ -817,7 +817,7 @@ module.exports = {
 								block: 'text',
 								mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
 								mods: { size: 'xxxl', view: 'primary', weight: 'bold', },
-								content: 'Как это работает'
+								content: 'Как начать использовать'
 							},
 							{
 								block: 'text',
