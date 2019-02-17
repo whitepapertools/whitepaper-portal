@@ -39,7 +39,7 @@ block('footer')(
 														href: 'http://whitepaper.tools',
 														style: 'text-decoration: none; display: block'
 													},
-													content: ' About'
+													content: 'О дизайн-системе'
 												},
 												{
 													block: 'text',
@@ -50,7 +50,7 @@ block('footer')(
 														href: 'http://whitepaper.tools',
 														style: 'text-decoration: none; display: block'
 													},
-													content: 'Contributors'
+													content: 'Контрибьюторы'
 												},
 												{
 													block: 'text',
@@ -61,7 +61,7 @@ block('footer')(
 														href: 'http://whitepaper.tools',
 														style: 'text-decoration: none; display: block'
 													},
-													content: 'PressKit'
+													content: 'ПрессКит'
 												}
 											]
 										},
@@ -77,7 +77,7 @@ block('footer')(
 														href: 'http://whitepaper.tools',
 														style: 'text-decoration: none; display: block'
 													},
-													content: 'Documentation'
+													content: 'Документация'
 												},
 												{
 													block: 'text',
@@ -137,7 +137,7 @@ block('footer')(
 														href: 'http://whitepaper.tools',
 														style: 'text-decoration: none; display: block'
 													},
-													content: 'Community'
+													content: 'Сообщество'
 												},
 												{
 													block: 'text',
@@ -148,7 +148,7 @@ block('footer')(
 														href: 'http://whitepaper.tools',
 														style: 'text-decoration: none; display: block'
 													},
-													content: 'Events'
+													content: 'События'
 												},
 												{
 													block: 'text',
@@ -159,7 +159,7 @@ block('footer')(
 														href: 'http://whitepaper.tools',
 														style: 'text-decoration: none; display: block'
 													},
-													content: 'Kit'
+													content: 'Кит'
 												}
 											]
 										}

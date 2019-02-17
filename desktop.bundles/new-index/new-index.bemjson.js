@@ -130,7 +130,7 @@ module.exports = {
 											{
 												block: 'text',
 												mods: { size: 'l', view: 'secondary', font: 'mono' },
-												content: 'Списки, карточки, таблицы и т.д.'
+												content: 'Списки, карточки, таблицы, формы и т.д.'
 											}
 										]
 									},
@@ -153,7 +153,7 @@ module.exports = {
 											{
 												block: 'text',
 												mods: { size: 'l', view: 'secondary', font: 'mono' },
-												content: 'Графика, типографика, контролы'
+												content: 'Типографика, бэйджи, аватарки'
 											}
 										]
 									}
@@ -196,7 +196,7 @@ module.exports = {
 								block: 'text',
 								mods: { size: 'l', view: 'secondary', },
 								mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' } },
-								content: 'Продакшн рэди лоджик из паблик эвйлибл андер эн оупэн сорс лайсэнс.'
+								content: 'Дизайн-система whitepaper помогает сократить количество этапов и участников, для того чтобы сформировать интерфейс готовый к продакшну'
 							},
 							{
 								block: 'pt-list',
@@ -303,32 +303,32 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'l', view: 'secondary' },
-										content: '- Можно ли попробовать в песочнице?'
+										content: '— Можно ли попробовать в песочнице?'
 									},
 									{
 										block: 'text',
 										mods: { size: 'l', view: 'secondary' },
-										content: '- Можно ли добавить в готовый проект?'
+										content: '— Можно ли добавить в готовый проект?'
 									},
 									{
 										block: 'text',
 										mods: { size: 'l', view: 'secondary' },
-										content: '- Как передавать UI в разработку?'
+										content: '— Как передавать UI в разработку?'
 									},
 									{
 										block: 'text',
 										mods: { size: 'l', view: 'secondary' },
-										content: '- Можно ли использовать с Реактом?'
+										content: '— Можно ли использовать с Реактом?'
 									},
 									{
 										block: 'text',
 										mods: { size: 'l', view: 'secondary' },
-										content: '- Можно ли переопределить блоки?'
+										content: '— Можно ли переопределить блоки?'
 									},
 									{
 										block: 'text',
 										mods: { size: 'l', view: 'secondary' },
-										content: '- В чём отличиет от Bootstrap?'
+										content: '— В чём отличиет от Bootstrap?'
 									}
 								]
 							}
@@ -368,7 +368,7 @@ module.exports = {
 															{
 																block: 'text',
 																mods: { size: 'l', view: 'secondary' },
-																content: 'Blog'
+																content: 'Блог'
 															},
 															{
 																block: 'text',
@@ -384,12 +384,12 @@ module.exports = {
 															{
 																block: 'text',
 																mods: { size: 'l', view: 'secondary' },
-																content: 'GitHub Tasks'
+																content: 'Борд с задачами'
 															},
 															{
 																block: 'text',
 																mods: { size: 'l', view: 'secondary' },
-																content: '26 Tasks'
+																content: '26 открытых'
 															}
 														]
 													},
@@ -421,7 +421,7 @@ module.exports = {
 															{
 																block: 'text',
 																mods: { size: 'l', view: 'secondary' },
-																content: '60 examples '
+																content: '60 примеров'
 															}
 														]
 													},
@@ -508,7 +508,7 @@ module.exports = {
 													{
 														block: 'text',
 														mods: { size: 'l', view: 'secondary' },
-														content: 'WHTPR is publicly available under an open source license. This means that the software library and its source code will be publicly available, for free, forever, and that the library can be used without restrictions.'
+														content: 'Если у вашей продуктовой команды есть потребность в персональной консультации, вы всегда можете святься с нами и договориться о частной лекции. Просто напишите нам на почту whatsup@whitepaper.tools'
 													}
 												]
 											}
@@ -770,7 +770,7 @@ module.exports = {
 											{
 												block: 'text',
 												mods: { size: 'l', view: 'primary', },
-												content: 'Production ready logic is publicly available under an open source license. This means that the software library and its '
+												content: 'Вся работа над дизайн системой ведётся открыто. Всегда есть несколько задач разного уровня сложности, поэтому любой человек может внести свой вклад'
 											},
 											{
 												block: 'doc',
@@ -790,7 +790,7 @@ module.exports = {
 											{
 												block: 'text',
 												mods: { size: 'l', view: 'primary', },
-												content: 'Production ready logic is publicly available under an open source license. This means that the software library and its '
+												content: 'Для того, чтобы более уверено чувствовать себя в процессе сборки интерфейсов на whitepaper, мы рекоммендуем: 1. Укрепить ваши знания по вёрстке. 2. Ознакомится с БЭМ-методологией 3. Разобраться с принципами пост-обработки стилей'
 											},
 											{
 												block: 'doc',
@@ -823,7 +823,7 @@ module.exports = {
 								block: 'text',
 								mods: { size: 'l', view: 'secondary', },
 								mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' } },
-								content: 'Продакшн рэди лоджик из паблик эвйлибл андер эн оупэн сорс лайсэнс.'
+								content: 'Для старта прототипирования с нуля можно установить БЭМ-платформу с предустановленной дизайн-системой и настроенной сборкой. В уже имеющийся проект можно подключить файл со всеми стилями дизайн-системы или установить её как зависимость'
 							},
 							{
 								block: 'pt-list',
@@ -867,7 +867,7 @@ module.exports = {
 										block: 'text',
 										attrs: { style: 'width: 240px; margin-right: 20px;' },
 										mods: { size: 'l', view: 'secondary' },
-										content: 'In done project:'
+										content: 'В работающем проекте:'
 									},
 									{
 										block: 'steps',
