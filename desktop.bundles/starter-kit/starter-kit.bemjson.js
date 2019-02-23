@@ -663,10 +663,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mix: [
-																				{ block: 'pt-card', elem: 'footer', elemMods: { 'space-h': 'xl' }}, 
-																				{ block: 'promo-cards', elem: 'media-video-title' }
-																			],
+																			mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-h': 'xl' }},
 																			mods: { view: 'primary', size: 'xxxl', weight: 'bold' },
 																			content: [
 																				{
