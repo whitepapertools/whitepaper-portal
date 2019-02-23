@@ -14,7 +14,7 @@ module.exports = {
 	mix: [
 		{
 			block: 'theme',
-			mods: { color: 'whitepaper-inverse', space: 'default', breakpoint: 'default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'plex' }
+			mods: { color: 'whitepaper-inverse', space: 'default', breakpoint: 'default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'nitti' }
 		},
 		{
 			block: 'component',
@@ -46,7 +46,7 @@ module.exports = {
 										content: {
 											block: 'text',
 											mods: { size: 'xxxxxl', view: 'primary', font: 'mono' },
-											content: 'Все интерфейсные сложности выражаются через комбинации простых сущностей'
+											content: 'Открытый конструктор дизайн-систем'
 										}
 									}
 								]
@@ -189,12 +189,12 @@ module.exports = {
 							{
 								block: 'text',
 								mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-								mods: { size: 'xxxl', view: 'primary', weight: 'bold', },
+								mods: { size: 'xxxxl', view: 'primary' },
 								content: 'Как это работает'
 							},
 							{
 								block: 'text',
-								mods: { size: 'l', view: 'secondary', },
+								mods: { size: 'xl', view: 'secondary', weight: 'light' },
 								mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' } },
 								content: 'Дизайн-система whitepaper помогает сократить количество этапов и участников, для того чтобы сформировать интерфейс готовый к продакшну'
 							},
@@ -207,7 +207,7 @@ module.exports = {
 									{
 										block: 'text',
 										attrs: { style: 'width: 240px; margin-right: 20px;' },
-										mods: { size: 'l', view: 'secondary' },
+										mods: { size: 'xl', view: 'secondary', weight: 'light' },
 										content: 'Классический процесс'
 									},
 									{
@@ -237,7 +237,7 @@ module.exports = {
 									},
 									{
 										block: 'text',
-										mods: { size: 'l', view: 'secondary' },
+										mods: { size: 'l', view: 'secondary', weight: 'light' },
 										content: 'Готово'
 									}
 								]
@@ -250,7 +250,7 @@ module.exports = {
 									{
 										block: 'text',
 										attrs: { style: 'width: 240px; margin-right: 20px;' },
-										mods: { size: 'l', view: 'secondary' },
+										mods: { size: 'l', view: 'secondary', weight: 'light' },
 										content: 'Процесс по whitepaper'
 									},
 									{
@@ -272,7 +272,7 @@ module.exports = {
 									},
 									{
 										block: 'text',
-										mods: { size: 'l', view: 'secondary' },
+										mods: { size: 'l', view: 'secondary', weight: 'light' },
 										content: 'Готово'
 									}
 								]
