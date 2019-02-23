@@ -2,21 +2,21 @@
 	min-width: 296px;
 	max-width: 350px;
 	min-height: 456px;
-  box-sizing: border-box;
-  &__icon-wrapper {
-	  width: 24px;
-	  height: 24px;
-    margin: var(--space-xxxl) auto var(--space-s);
-    padding: var(--space-xl);
-    border-radius: 50%;
-	  background: var(--color-typo-primary);
-  }
-  &__info {
-    padding: var(--space-m);
-    background: var(--color-bg-ghost);
-    border-radius: 8px;
-  }
-  &__account {
-    width: 100%;
-  }
+	box-sizing: border-box;
+	&__icon-wrapper {
+		width: 24px;
+		height: 24px;
+		margin: var(--space-xxxl) auto var(--space-s);
+		padding: var(--space-xl);
+		border-radius: 50%;
+		background: var(--color-typo-primary);
+	}
+	&__info {
+		padding: var(--space-m);
+		background: var(--color-bg-ghost);
+		border-radius: 8px;
+	}
+	&__account {
+		width: 100%;
+	}
 }

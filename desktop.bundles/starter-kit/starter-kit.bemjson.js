@@ -26,35 +26,9 @@ module.exports = {
 			block: 'tpl-layout',
 			mix: { block: 'decorator',mods: { 'space-v': 'xxxxxxl' }},
 			attrs: {
-				'style': 'background: rgba(0,0,0,0.04);'
+				'style': 'background: var(--color-bg-ghost)'
 			},
 			content: [
-
-				{ block: 'theme', mods: { color: 'mts-default' }},
-				{ block: 'theme', mods: { color: 'mts-inverse' }},
-				{ block: 'theme', mods: { color: 'mts-brand' }},
-
-				{ block: 'theme', mods: { color: 'megafon-default' }},
-				{ block: 'theme', mods: { color: 'megafon-inverse' }},
-				{ block: 'theme', mods: { color: 'megafon-brand' }},
-
-				{ block: 'theme', mods: { color: 'whitepaper-default' }},
-				{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-				{ block: 'theme', mods: { color: 'whitepaper-brand' }},
-
-
-				{ block: 'component', mods: { megafon: 'default' }},
-				{ block: 'component', mods: { megafon: 'inverse' }},
-				{ block: 'component', mods: { megafon: 'brand' }},
-				
-				{ block: 'component', mods: { mts: 'default' }},
-				{ block: 'component', mods: { mts: 'inverse' }},
-				{ block: 'component', mods: { mts: 'brand' }},
-
-				{ block: 'component', mods: { whitepaper: 'default' }},
-				{ block: 'component', mods: { whitepaper: 'brand' }},
-				{ block: 'component', mods: { whitepaper: 'inverse' }},
-				
 				{
 					elem: 'content',
 					content: [
@@ -113,7 +87,7 @@ module.exports = {
 								},
 								/* /Heading */
 
-								/* Тариф */
+								/* Tarif */
 								{
 									elem: 'section',
 									mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' }},
@@ -615,9 +589,9 @@ module.exports = {
 										}
 									]
 								},
-								/* /Тариф */
+								/* /Tarif */
 
-								/* Медиа */
+								/* Media */
 								{
 									elem: 'section',
 									mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' }},
@@ -657,7 +631,7 @@ module.exports = {
 																		{
 																			elem: 'play',
 																			mix: [
-																				{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
+																				{ block: 'theme', mods: { color: 'whitepaper-default' }},
 																				{ block: 'pt-card', elem: 'play' }
 																			]
 																		},
@@ -1015,9 +989,9 @@ module.exports = {
 										}
 									]
 								},
-								/* /Медиа */
+								/* /Media */
 
-								/* Авторизация */
+								/* Auth */
 								{
 									elem: 'section',
 									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
@@ -1277,9 +1251,9 @@ module.exports = {
 										}
 									]
 								},
-								/* /Авторизация */
+								/* /Auth */
 
-								/* Коммерческая */
+								/* Product */
 								{
 									elem: 'section',
 									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
@@ -1483,7 +1457,7 @@ module.exports = {
 										}
 									]
 								},
-								/* /Коммерческая */
+								/* /Product */
 
 								/* APP */
 								{
@@ -1821,7 +1795,7 @@ module.exports = {
 								},
 								/* /APP */
 
-								/* Информер */
+								/* Informer */
 								{
 									elem: 'section',
 									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
@@ -2104,9 +2078,9 @@ module.exports = {
 										}
 									]
 								},
-								/* /Информер */
+								/* /Informer */
 
-								/* Офферы */
+								/* Offer */
 								{
 									elem: 'section',
 									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
@@ -2321,9 +2295,9 @@ module.exports = {
 										}
 									]
 								},
-								/* /Офферы */
+								/* /Offer */
 
-								/* Статьи */
+								/* Publication */
 								{
 									elem: 'section',
 									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
@@ -2622,9 +2596,9 @@ module.exports = {
 										}
 									]
 								},
-								/* /Статьи */
+								/* /Publication */
 
-								/* Событие */
+								/* Event */
 								{
 									elem: 'section',
 									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
@@ -2638,7 +2612,7 @@ module.exports = {
 													elemMods: { 's-col': '3', 'm-col': '2' },
 													content: [
 														{
-															block: 'meetup',
+															block: 'event',
 															mix: [
 																{ block: 'pt-list' },
 																{ block: 'pt-card', mods: { view: 'default' }},
@@ -2822,7 +2796,7 @@ module.exports = {
 													elemMods: { 's-col': '3', 'm-col': '2' },
 													content: [
 														{
-															block: 'meetup',
+															block: 'event',
 															mix: [
 																{ block: 'pt-list' },
 																{ block: 'pt-card', mods: { view: 'default' }},
@@ -2975,7 +2949,7 @@ module.exports = {
 													elemMods: { 's-col': '3', 'm-col': '2' },
 													content: [
 														{
-															block: 'meetup',
+															block: 'event',
 															mix: [
 																{ block: 'theme', mods: { color: 'whitepaper-brand' }},
 																{ block: 'component', mods: { whitepaper: 'brand' }},
@@ -3060,9 +3034,9 @@ module.exports = {
 										}
 									]
 								},
-								/* /Событие */
+								/* /Event */
 
-								/* Донаты */
+								/* Donate */
 								{
 									elem: 'section',
 									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
@@ -3432,7 +3406,7 @@ module.exports = {
 										}
 									]
 								}
-								/* /Донаты */
+								/* /Donate */
 
 							]
 						}
