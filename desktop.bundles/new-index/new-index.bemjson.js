@@ -910,7 +910,7 @@ module.exports = {
 							},
 							{
 								block: 'tpl-grid',
-								mods: { 'xs-ratio': '1-1', 's-ratio': '1-1', 'm-ratio': '1-1-1-1-1', 'col-gap': 'full' },
+								mods: { 'xs-ratio': '1', 's-ratio': '1-1', 'm-ratio': '1-1-1-1-1', 'col-gap': 'full' },
 								content: [
 									{
 										block: 'partner',
