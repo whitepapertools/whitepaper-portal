@@ -25,10 +25,28 @@ module.exports = {
 		{
 			block: 'tpl-layout',
 			content: [
+				{
+					block: 'grid-decoration',
+					mix: { block: 'tpl-grid', mods: { ratio: '1-1-1-1', 'col-gap': 'full' } },
+					content: [
+						{
+							elem: 'column'
+						},
+						{
+							elem: 'column'
+						},
+						{
+							elem: 'column'
+						},
+						{
+							elem: 'column'
+						}
+					]
+				},
 				/* Menu */
-				// {
-				// 	block: 'new-menu',
-				// },
+				{
+					block: 'menu'
+				},
 				/* Menu */
 
 				/* Intro */
@@ -91,7 +109,7 @@ module.exports = {
 									{
 										block: 'layer-card',
 										attrs: { 'data-scroll-speed': '60' },
-										mods: { view: 'red' },
+										mods: { view: 'gray-monochrome' },
 										content: [
 											{
 												block: 'text',
@@ -206,7 +224,7 @@ module.exports = {
 								content: [
 									{
 										block: 'text',
-										attrs: { style: 'width: 240px; margin-right: 20px;' },
+										attrs: { style: 'width: 252px; margin-right: 20px;' },
 										mods: { size: 'xl', view: 'secondary', weight: 'light' },
 										content: 'Классический процесс'
 									},
@@ -237,7 +255,7 @@ module.exports = {
 									},
 									{
 										block: 'text',
-										mods: { size: 'l', view: 'secondary', weight: 'light' },
+										mods: { size: 'xl', view: 'secondary', weight: 'light' },
 										content: 'Готово'
 									}
 								]
@@ -249,8 +267,8 @@ module.exports = {
 								content: [
 									{
 										block: 'text',
-										attrs: { style: 'width: 240px; margin-right: 20px;' },
-										mods: { size: 'l', view: 'secondary', weight: 'light' },
+										attrs: { style: 'width: 252px; margin-right: 20px;' },
+										mods: { size: 'xl', view: 'secondary', weight: 'light' },
 										content: 'Процесс по whitepaper'
 									},
 									{
@@ -272,7 +290,7 @@ module.exports = {
 									},
 									{
 										block: 'text',
-										mods: { size: 'l', view: 'secondary', weight: 'light' },
+										mods: { size: 'xl', view: 'secondary', weight: 'light' },
 										content: 'Готово'
 									}
 								]
@@ -293,7 +311,7 @@ module.exports = {
 							{
 								block: 'text',
 								mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-								mods: { size: 'xxxl', view: 'primary', weight: 'bold', },
+								mods: { size: 'xxxxl', view: 'primary' },
 								content: 'Ответы на частые вопросы'
 							},
 							{
@@ -302,33 +320,33 @@ module.exports = {
 								content: [
 									{
 										block: 'text',
-										mods: { size: 'l', view: 'secondary' },
-										content: '— Можно ли попробовать в песочнице?'
+										mods: { size: 'xl', view: 'secondary', weight: 'light' },
+										content: '— Можно ли попробовать в песочнице?'
 									},
 									{
 										block: 'text',
-										mods: { size: 'l', view: 'secondary' },
-										content: '— Можно ли добавить в готовый проект?'
+										mods: { size: 'xl', view: 'secondary', weight: 'light' },
+										content: '— Можно ли добавить в готовый проект?'
 									},
 									{
 										block: 'text',
-										mods: { size: 'l', view: 'secondary' },
-										content: '— Как передавать UI в разработку?'
+										mods: { size: 'xl', view: 'secondary', weight: 'light' },
+										content: '— Как передавать UI в разработку?'
 									},
 									{
 										block: 'text',
-										mods: { size: 'l', view: 'secondary' },
-										content: '— Можно ли использовать с Реактом?'
+										mods: { size: 'xl', view: 'secondary', weight: 'light' },
+										content: '— Можно ли использовать с Реактом?'
 									},
 									{
 										block: 'text',
-										mods: { size: 'l', view: 'secondary' },
+										mods: { size: 'xl', view: 'secondary', weight: 'light' },
 										content: '— Можно ли переопределить блоки?'
 									},
 									{
 										block: 'text',
-										mods: { size: 'l', view: 'secondary' },
-										content: '— В чём отличиет от Bootstrap?'
+										mods: { size: 'xl', view: 'secondary', weight: 'light' },
+										content: '— В чём отличиет от Bootstrap?'
 									}
 								]
 							}
@@ -355,7 +373,7 @@ module.exports = {
 											{
 												block: 'text',
 												mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-												mods: { size: 'xxxl', view: 'primary', weight: 'bold', },
+												mods: { size: 'xxxl', view: 'primary' },
 												content: 'Сообщество'
 											},
 											{
@@ -367,12 +385,12 @@ module.exports = {
 														content: [
 															{
 																block: 'text',
-																mods: { size: 'l', view: 'secondary' },
+																mods: { size: 'l', view: 'secondary', weight: 'light' },
 																content: 'Блог'
 															},
 															{
 																block: 'text',
-																mods: { size: 'l', view: 'secondary' },
+																mods: { size: 'l', view: 'secondary', weight: 'light' },
 																content: 'Medium'
 															}
 														]
@@ -383,12 +401,12 @@ module.exports = {
 														content: [
 															{
 																block: 'text',
-																mods: { size: 'l', view: 'secondary' },
+																mods: { size: 'l', view: 'secondary', weight: 'light' },
 																content: 'Борд с задачами'
 															},
 															{
 																block: 'text',
-																mods: { size: 'l', view: 'secondary' },
+																mods: { size: 'l', view: 'secondary', weight: 'light' },
 																content: '26 открытых'
 															}
 														]
@@ -399,12 +417,12 @@ module.exports = {
 														content: [
 															{
 																block: 'text',
-																mods: { size: 'l', view: 'secondary' },
+																mods: { size: 'l', view: 'secondary', weight: 'light' },
 																content: 'Telegram'
 															},
 															{
 																block: 'text',
-																mods: { size: 'l', view: 'secondary' },
+																mods: { size: 'l', view: 'secondary', weight: 'light' },
 																content: '@whitepapertools'
 															}
 														]
@@ -415,12 +433,12 @@ module.exports = {
 														content: [
 															{
 																block: 'text',
-																mods: { size: 'l', view: 'secondary' },
+																mods: { size: 'l', view: 'secondary', weight: 'light' },
 																content: 'Codepen'
 															},
 															{
 																block: 'text',
-																mods: { size: 'l', view: 'secondary' },
+																mods: { size: 'l', view: 'secondary', weight: 'light' },
 																content: '60 примеров'
 															}
 														]
@@ -431,12 +449,12 @@ module.exports = {
 														content: [
 															{
 																block: 'text',
-																mods: { size: 'l', view: 'secondary' },
+																mods: { size: 'l', view: 'secondary', weight: 'light' },
 																content: 'Twitter'
 															},
 															{
 																block: 'text',
-																mods: { size: 'l', view: 'secondary' },
+																mods: { size: 'l', view: 'secondary', weight: 'light' },
 																content: '@whitepapertools'
 															}
 														]
@@ -459,7 +477,7 @@ module.exports = {
 													{
 														block: 'text',
 														mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-														mods: { size: 'xxxl', view: 'primary', weight: 'bold', },
+														mods: { size: 'xxxl', view: 'primary' },
 														content: 'События'
 													},
 													{
@@ -471,12 +489,12 @@ module.exports = {
 																content: [
 																	{
 																		block: 'text',
-																		mods: { size: 'l', view: 'primary' },
+																		mods: { size: 'l', view: 'primary', weight: 'light' },
 																		content: 'Dribbble Meetup, 2018'
 																	},
 																	{
 																		block: 'text',
-																		mods: { size: 'l', view: 'primary' },
+																		mods: { size: 'l', view: 'primary', weight: 'light' },
 																		content: 'Санкт-Петербург'
 																	}
 																]
@@ -487,12 +505,12 @@ module.exports = {
 																content: [
 																	{
 																		block: 'text',
-																		mods: { size: 'l', view: 'primary' },
+																		mods: { size: 'l', view: 'primary', weight: 'light' },
 																		content: 'Web Standarts, 2018'
 																	},
 																	{
 																		block: 'text',
-																		mods: { size: 'l', view: 'primary' },
+																		mods: { size: 'l', view: 'primary', weight: 'light' },
 																		content: 'Москва'
 																	}
 																]
@@ -507,8 +525,8 @@ module.exports = {
 												content: [
 													{
 														block: 'text',
-														mods: { size: 'l', view: 'secondary' },
-														content: 'Если у вашей продуктовой команды есть потребность в персональной консультации, вы всегда можете святься с нами и договориться о частной лекции. Просто напишите нам на почту whatsup@whitepaper.tools'
+														mods: { size: 'l', view: 'secondary', weight: 'light' },
+														content: 'Если у вашей продуктовой команды есть потребность в персональной консультации, вы всегда можете святься с нами и договориться о частной лекции. Просто напишите нам на почту whatsup@whitepaper.tools'
 													}
 												]
 											}
@@ -539,7 +557,7 @@ module.exports = {
 											{
 												block: 'text',
 												mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-												mods: { size: 'xxxl', view: 'primary', weight: 'bold', },
+												mods: { size: 'xxxl', view: 'primary' },
 												content: 'Контрибьюторы'
 											},
 											{
@@ -769,11 +787,17 @@ module.exports = {
 											},
 											{
 												block: 'text',
-												mods: { size: 'l', view: 'primary', },
+												mods: { size: 'xl', view: 'secondary', weight: 'light' },
 												content: 'Вся работа над дизайн системой ведётся открыто. Всегда есть несколько задач разного уровня сложности, поэтому любой человек может внести свой вклад'
 											},
 											{
-												block: 'doc',
+												block: 'figured-button',
+												tag: 'a',
+												attrs: { href: 'https://github.com/whitepapertools' } ,
+												mix: [
+													{ block: 'decorator', mods: { 'indent-t': 'l' } },
+													{ block: 'theme', mods: { color: 'whitepaper-brand' } },
+												],
 												content: 'GitHub'
 											}
 										]
@@ -784,16 +808,20 @@ module.exports = {
 											{
 												block: 'text',
 												mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-												mods: { size: 'xxxl', view: 'primary', weight: 'bold', },
+												mods: { size: 'xxxl', view: 'primary' },
 												content: 'Обучение'
 											},
 											{
 												block: 'text',
-												mods: { size: 'l', view: 'primary', },
+												mods: { size: 'xl', view: 'secondary', weight: 'light' },
 												content: 'Для того, чтобы более уверено чувствовать себя в процессе сборки интерфейсов на whitepaper, мы рекоммендуем: 1. Укрепить ваши знания по вёрстке. 2. Ознакомится с БЭМ-методологией 3. Разобраться с принципами пост-обработки стилей'
 											},
 											{
-												block: 'doc',
+												block: 'figured-button',
+												mix: [
+													{ block: 'decorator', mods: { 'indent-t': 'xxl' } },
+													{ block: 'theme', mods: { color: 'whitepaper-brand' } },
+												],
 												content: 'Документация'
 											}
 										]
@@ -816,12 +844,12 @@ module.exports = {
 							{
 								block: 'text',
 								mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-								mods: { size: 'xxxl', view: 'primary', weight: 'bold', },
+								mods: { size: 'xxxxl', view: 'primary' },
 								content: 'Как начать использовать'
 							},
 							{
 								block: 'text',
-								mods: { size: 'l', view: 'secondary', },
+								mods: { size: 'xl', view: 'secondary', weight: 'light' },
 								mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' } },
 								content: 'Для старта прототипирования с нуля можно установить БЭМ-платформу с предустановленной дизайн-системой и настроенной сборкой. В уже имеющийся проект можно подключить файл со всеми стилями дизайн-системы или установить её как зависимость'
 							},

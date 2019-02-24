@@ -2,10 +2,11 @@
   position: relative;
 	display: inline-block;
 	max-width: 100%;
-  padding:  var(--space-m) var(--space-xxl);
+  padding:  var(--space-m) var(--space-xl);
   font-size: var(--size-typo-xl);
+  font-weight: 300;
   border-radius: 99em;
-  margin-right: 14px;
+  margin-right: 12px;
   &:last-child {
     &:after {
       content: none;
@@ -34,7 +35,7 @@
     position: absolute;
     width: 32px;
     height: 42px;
-    margin-left: 23px;
+    margin-left: 14px;
     margin-top: -9px;
     z-index: 1;
   }
