@@ -1,5 +1,5 @@
 .step-badge {
-  position: relative;
+	position: relative;
 	display: inline-block;
 	max-width: 100%;
   padding:  var(--space-m) var(--space-xl);
@@ -22,7 +22,6 @@
       }
     }
     &_other {
-      /* box-shadow: inset 0px 0px 0px 1px var(--color-bg-ghost); */
       background-color: var(--color-bg-ghost);
       color: var(--color-typo-secondary);
       &:after {
@@ -30,7 +29,23 @@
         background: url('step-badge-other.svg') no-repeat;
       }
     }
-  }
+		&_scratch {
+			background-color: var(--color-bg-stripe);
+			color: var(--color-typo-secondary);
+			&:after {
+				content: '';
+				background: url('step-badge-scratch.svg') no-repeat;
+			}
+		}
+		&_prod {
+			background-color: var(--color-bg-ghost);
+			color: var(--color-typo-secondary);
+			&:after {
+				content: '';
+				background: url('step-badge-prod.svg') no-repeat;
+			}
+		}
+	}
   &:after {
     position: absolute;
     width: 32px;
@@ -38,5 +53,46 @@
     margin-left: 14px;
     margin-top: -9px;
     z-index: 1;
-  }
+	}
+}
+
+
+@media screen and (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+	.step-badge {
+		display: block;
+		margin-bottom: var(--space-s);
+		margin-right: 0px;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+		&:after {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: $screen-s) and (max-width: $screen-s-max) {
+	.step-badge {
+		display: block;
+		margin-bottom: var(--space-s);
+		&:last-child {
+			margin-bottom: 0px;
+		}
+		&:after {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: $screen-m) and (max-width: $screen-m-max) {
+	.step-badge {
+		display: block;
+		margin-bottom: var(--space-s);
+		&:last-child {
+			margin-bottom: 0px;
+		}
+		&:after {
+			display: none;
+		}
+	}
 }

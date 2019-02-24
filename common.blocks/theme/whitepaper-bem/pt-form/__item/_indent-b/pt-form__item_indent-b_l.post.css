@@ -1,0 +1,7 @@
+.pt-form__item_indent-b_l {
+	margin-bottom: var(--space-l);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

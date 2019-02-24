@@ -14,7 +14,7 @@ module.exports = {
 	mix: [
 		{
 			block: 'theme',
-			mods: { color: 'whitepaper-inverse', space: 'default', breakpoint: 'default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'nitti' }
+			mods: { color: 'whitepaper-portal-inverse', space: 'default', breakpoint: 'default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'nitti' }
 		},
 		{
 			block: 'component',
@@ -217,84 +217,84 @@ module.exports = {
 								content: 'Дизайн-система whitepaper помогает сократить количество этапов и участников, для того чтобы сформировать интерфейс готовый к продакшну'
 							},
 							{
-								block: 'pt-list',
-								elem: 'item',
-								elemMods: { distribute: 'default', 'vertical-align': 'center' },
-								mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
+								block: 'process',
 								content: [
 									{
-										block: 'text',
-										attrs: { style: 'width: 252px; margin-right: 20px;' },
-										mods: { size: 'xl', view: 'secondary', weight: 'light' },
-										content: 'Классический процесс'
-									},
-									{
-										block: 'steps',
+										elem: 'item',
 										content: [
 											{
-												block: 'step-badge',
-												mods: { view: 'other' },
-												content: 'Прототип'
+												block: 'text',
+												attrs: { style: 'width: 252px; margin-right: 20px;' },
+												mods: { size: 'xl', view: 'secondary', weight: 'light' },
+												content: 'Классический процесс'
 											},
 											{
-												block: 'step-badge',
-												mods: { view: 'other' },
-												content: 'Дизайн'
+												block: 'steps',
+												content: [
+													{
+														block: 'step-badge',
+														mods: { view: 'other' },
+														content: 'Прототип'
+													},
+													{
+														block: 'step-badge',
+														mods: { view: 'other' },
+														content: 'Дизайн'
+													},
+													{
+														block: 'step-badge',
+														mods: { view: 'other' },
+														content: 'HTML & CSS'
+													},
+													{
+														block: 'step-badge',
+														mods: { view: 'other' },
+														content: 'Фронтенд фреймворк'
+													}
+												]
 											},
 											{
-												block: 'step-badge',
-												mods: { view: 'other' },
-												content: 'HTML & CSS'
-											},
-											{
-												block: 'step-badge',
-												mods: { view: 'other' },
-												content: 'Фронтенд фреймворк'
+												block: 'text',
+												mods: { size: 'l', view: 'secondary', weight: 'light' },
+												content: 'Готово'
 											}
 										]
 									},
 									{
-										block: 'text',
-										mods: { size: 'xl', view: 'secondary', weight: 'light' },
-										content: 'Готово'
-									}
-								]
-							},
-							{
-								block: 'pt-list',
-								elem: 'item',
-								elemMods: { distribute: 'default', 'vertical-align': 'center' },
-								content: [
-									{
-										block: 'text',
-										attrs: { style: 'width: 252px; margin-right: 20px;' },
-										mods: { size: 'xl', view: 'secondary', weight: 'light' },
-										content: 'Процесс по whitepaper'
-									},
-									{
-										block: 'steps',
+										elem: 'item',
 										content: [
 											{
-												block: 'step-badge',
-												mix: { block: 'theme', mods: { color: 'whitepaper-brand' } },
-												mods: { view: 'wp' },
-												content: 'Дизайн-система'
+												block: 'text',
+												attrs: { style: 'width: 252px; margin-right: 20px;' },
+												mods: { size: 'l', view: 'secondary', weight: 'light' },
+												content: 'Процесс по whitepaper'
 											},
 											{
-												block: 'step-badge',
-												mix: { block: 'theme', mods: { color: 'whitepaper-brand' } },
-												mods: { view: 'wp' },
-												content: 'Фронтенд фреймворк'
+												block: 'steps',
+												content: [
+													{
+														block: 'step-badge',
+														mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' } },
+														mods: { view: 'wp' },
+														content: 'Дизайн-система'
+													},
+													{
+														block: 'step-badge',
+														mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' } },
+														mods: { view: 'wp' },
+														content: 'Фронтенд фреймворк'
+													}
+												]
+											},
+											{
+												block: 'text',
+												mods: { size: 'l', view: 'secondary', weight: 'light' },
+												content: 'Готово'
 											}
 										]
-									},
-									{
-										block: 'text',
-										mods: { size: 'xl', view: 'secondary', weight: 'light' },
-										content: 'Готово'
 									}
 								]
-							},
+							}
 						]
 					}
 				},
@@ -316,7 +316,7 @@ module.exports = {
 							},
 							{
 								block: 'tpl-grid',
-								mods: { ratio: '1-1-1', 'col-gap': 'full', 'row-gap': 'half' },
+								mods: { 'xs-ratio': '1', 's-ratio': '1-1', 's-ratio': '1-1-1', 'col-gap': 'full', 'row-gap': 'half' },
 								content: [
 									{
 										block: 'text',
@@ -365,7 +365,7 @@ module.exports = {
 						content: [
 							{
 								block: 'tpl-grid',
-								mods: { ratio: '1-1' },
+								mods: { 'xs-ratio': '1', 's-ratio': '1-1' },
 								content: [
 									{
 										block: 'community',
@@ -466,7 +466,7 @@ module.exports = {
 									{
 										block: 'events',
 										mix: [
-											{ block: 'theme', mods: { color: 'whitepaper-brand' }},
+											{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
 											{ block: 'pt-card' }
 										],
 										content: [
@@ -549,7 +549,7 @@ module.exports = {
 						content: [
 							{
 								block: 'tpl-grid',
-								mods: { ratio: '1-1', 'col-gap': 'full' },
+								mods: { 'xs-ratio': '1', 's-ratio': '1-1', 'col-gap': 'full' },
 								content: [
 									{
 										block: 'contribution',
@@ -853,64 +853,65 @@ module.exports = {
 								mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' } },
 								content: 'Для старта прототипирования с нуля можно установить БЭМ-платформу с предустановленной дизайн-системой и настроенной сборкой. В уже имеющийся проект можно подключить файл со всеми стилями дизайн-системы или установить её как зависимость'
 							},
+
+
+
 							{
-								block: 'pt-list',
-								elem: 'item',
-								elemMods: { distribute: 'default', 'vertical-align': 'center' },
+								block: 'process',
 								content: [
 									{
-										block: 'steps',
+										elem: 'item',
 										content: [
 											{
-												block: 'step-badge',
-												mods: { view: 'other' },
-												content: 'git clone'
-											},
-											{
-												block: 'step-badge',
-												mods: { view: 'other' },
-												content: 'cd my-whitepaper-project'
-											},
-											{
-												block: 'step-badge',
-												mods: { view: 'other' },
-												content: 'npm install'
-											},
-											{
-												block: 'step-badge',
-												mods: { view: 'other' },
-												content: '0.0.0.0:8080/'
+												block: 'steps',
+												content: [
+													{
+														block: 'step-badge',
+														mods: { view: 'scratch' },
+														content: 'git clone'
+													},
+													{
+														block: 'step-badge',
+														mods: { view: 'scratch' },
+														content: 'cd my-whitepaper-project'
+													},
+													{
+														block: 'step-badge',
+														mods: { view: 'scratch' },
+														content: 'npm install'
+													},
+													{
+														block: 'step-badge',
+														mods: { view: 'scratch' },
+														content: '0.0.0.0:8080/'
+													}
+												]
 											}
 										]
-									}
-								]
-							},
-							{
-								block: 'pt-list',
-								mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
-								elem: 'item',
-								elemMods: { distribute: 'default', 'vertical-align': 'center' },
-								content: [
-									{
-										block: 'text',
-										attrs: { style: 'width: 240px; margin-right: 20px;' },
-										mods: { size: 'l', view: 'secondary' },
-										content: 'В работающем проекте:'
 									},
 									{
-										block: 'steps',
+										elem: 'item',
 										content: [
 											{
-												block: 'step-badge',
-												mix: { block: 'theme', mods: { color: 'whitepaper-brand' } },
-												mods: { view: 'wp' },
-												content: '<link rel="stylesheet"'
+												block: 'text',
+												attrs: { style: 'width: 252px; margin-right: 20px;' },
+												mods: { size: 'l', view: 'secondary' },
+												content: 'В работающем проекте:'
 											},
 											{
-												block: 'step-badge',
-												mix: { block: 'theme', mods: { color: 'whitepaper-brand' } },
-												mods: { view: 'wp' },
-												content: 'npm install whitepaper-bem'
+												block: 'steps',
+												content: [
+													{
+														block: 'step-badge',
+														mods: { view: 'prod' },
+														content: '<link rel="stylesheet"'
+													},
+													{
+														block: 'step-badge',
+														mods: { view: 'prod' },
+														content: 'npm install whitepaper-bem'
+													}
+												]
 											}
 										]
 									}
@@ -937,32 +938,57 @@ module.exports = {
 							},
 							{
 								block: 'tpl-grid',
-								mods: { ratio: '1-1-1-1-1' },
+								mods: { 'xs-ratio': '1', 's-ratio': '1-1', 'm-ratio': '1-1-1-1-1', 'col-gap': 'full' },
 								content: [
 									{
-										block: 'image',
-										url: '/assets/partners/spotify-logo.svg',
-										width: 150
+										block: 'partner',
+										content: [
+											{
+												block: 'image',
+												url: '/assets/partners/spotify-logo.svg',
+												width: 150
+											}
+										]
 									},
 									{
-										block: 'image',
-										url: '/assets/partners/airbnb-logo.svg',
-										width: 150
+										block: 'partner',
+										content: [
+											{
+												block: 'image',
+												url: '/assets/partners/airbnb-logo.svg',
+												width: 150
+											}
+										]
 									},
 									{
-										block: 'image',
-										url: '/assets/partners/youtube-logo.svg',
-										width: 150
+										block: 'partner',
+										content: [
+											{
+												block: 'image',
+												url: '/assets/partners/youtube-logo.svg',
+												width: 150
+											}
+										]
 									},
 									{
-										block: 'image',
-										url: '/assets/partners/microsoft-logo.svg',
-										width: 150
+										block: 'partner',
+										content: [
+											{
+												block: 'image',
+												url: '/assets/partners/microsoft-logo.svg',
+												width: 150
+											}
+										]
 									},
 									{
-										block: 'image',
-										url: '/assets/partners/dropbox-logo.svg',
-										width: 150
+										block: 'partner',
+										content: [
+											{
+												block: 'image',
+												url: '/assets/partners/dropbox-logo.svg',
+												width: 150
+											}
+										]
 									}
 								]
 							}
@@ -1009,6 +1035,186 @@ module.exports = {
 				/* Footer */
 				{
 					block: 'footer',
+					mix: { block: 'tpl-layout' },
+					content: [
+						{
+							elem: 'content',
+							mix: { block: 'tpl-layout', elem: 'content' },
+							content: [
+								{
+									elem: 'container',
+									mix: { block: 'tpl-layout', elem: 'container', elemMods: { align: 'center', size: 'm' }},
+									content: [
+										{
+											elem: 'inner',
+											mix: { block: 'tpl-grid', mods: { 's-columns': '12', 'm-columns': '12', 'l-columns': '12', 'col-gap': 'full', 'raw-gap': 'full' }},
+											content: [
+												{
+													elem: 'logo',
+													mix: { block: 'tpl-grid', elem: 'fraction', elemMods: { 'xs-col': '3', 's-col': '3', 'm-col': '4', 'l-col': '4' }},
+													content: [
+														{
+															block: 'image',
+															url: '/assets/partners/whitepaper.svg',
+															width: 230
+														}
+													]
+												},
+												{
+													elem: 'menu',
+													mix: { block: 'tpl-grid', elem: 'fraction', elemMods: { 'xs-col': '3', 's-col': '3', 'm-col': '8', 'l-col': '8' }},
+													content: [
+														{
+															elem: 'menu-list',
+															mix: { block: 'tpl-grid', mods: { 'xs-ratio': '1', 's-ratio': '1-1', 'm-ratio': '1-1-1', 'col-gap': 'half' }},
+															content: [
+																{
+																	elem: 'menu-item',
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'О дизайн-системе'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'Контрибьюторы'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'ПрессКит'
+																		}
+																	]
+																},
+																{
+																	elem: 'menu-item',
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'Документация'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'Github'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'Telegram'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'Medium'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'CodePen'
+																		}
+																	]
+																},
+																{
+																	elem: 'menu-item',
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'Сообщество'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'События'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'Кит'
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
 				}
 				/* /Footer */
 

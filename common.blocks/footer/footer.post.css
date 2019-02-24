@@ -1,13 +1,14 @@
 .footer {
 	padding: var(--space-xxxl) 0;
-	&__container {
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
-		align-items: center;
+	&__logo {
+		margin-bottom: var(--space-xxxl);
 	}
-	&__social {
-		display: flex;
-		flex-flow: row nowrap;
+}
+
+@media screen and (max-width: $screen-xs-max) {
+	.footer {
+		&__menu-item {
+			margin-bottom: var(--space-xl);
+		}
 	}
 }

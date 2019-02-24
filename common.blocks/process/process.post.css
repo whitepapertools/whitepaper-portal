@@ -1,0 +1,30 @@
+@import "../../node_modules/whitepaper-bem/theme/_breakpoint/theme_breakpoint_default.post.css";
+
+.process {
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: var(--space-xxxl);
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+@media screen and (max-width: $screen-xs-max) {
+	.process {
+		&__item {
+			display: block;
+			margin-bottom: var(--space-xxxl);
+		}
+	}
+}
+
+@media screen and (min-width: $screen-s) and (max-width: $screen-s-max) {
+	.process {
+		&__item {
+			display: flex;
+			align-items: center;
+		}
+	}
+}
