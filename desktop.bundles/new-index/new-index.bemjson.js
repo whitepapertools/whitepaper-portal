@@ -796,7 +796,7 @@ module.exports = {
 												attrs: { href: 'https://github.com/whitepapertools' } ,
 												mix: [
 													{ block: 'decorator', mods: { 'indent-t': 'l' } },
-													{ block: 'theme', mods: { color: 'whitepaper-brand' } },
+													{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
 												],
 												content: 'GitHub'
 											}
@@ -820,7 +820,7 @@ module.exports = {
 												block: 'figured-button',
 												mix: [
 													{ block: 'decorator', mods: { 'indent-t': 'xxl' } },
-													{ block: 'theme', mods: { color: 'whitepaper-brand' } },
+													{ block: 'theme', mods: { color: 'whitepaper-portal-brand' } },
 												],
 												content: 'Документация'
 											}
