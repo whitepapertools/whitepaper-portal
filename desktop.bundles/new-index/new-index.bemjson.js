@@ -910,7 +910,7 @@ module.exports = {
 							},
 							{
 								block: 'tpl-grid',
-								mods: { 'xs-ratio': '1', 's-ratio': '1-1', 'm-ratio': '1-1-1-1-1', 'col-gap': 'full' },
+								mods: { 'xs-ratio': '1-1', 's-ratio': '1-1', 'm-ratio': '1-1-1-1-1', 'col-gap': 'full' },
 								content: [
 									{
 										block: 'partner',
@@ -1007,175 +1007,172 @@ module.exports = {
 				/* Footer */
 				{
 					block: 'footer',
+					mix: { block: 'tpl-layout' },
 					content: [
 						{
-							block: 'tpl-layout',
+							elem: 'content',
+							mix: { block: 'tpl-layout', elem: 'content' },
 							content: [
 								{
-									elem: 'content',
+									elem: 'container',
+									mix: { block: 'tpl-layout', elem: 'container', elemMods: { align: 'center', size: 'm' }},
 									content: [
 										{
-											elem: 'container',
-											elemMods: { align: 'center', size: 'm' },
+											elem: 'inner',
+											mix: { block: 'tpl-grid', mods: { 's-columns': '12', 'm-columns': '12', 'l-columns': '12', 'col-gap': 'full', 'raw-gap': 'full' }},
 											content: [
 												{
-													block: 'tpl-grid',
-													mods: { 's-columns': '12', 'm-columns': '12', 'l-columns': '12', 'col-gap': 'full', 'raw-gap': 'full' },
+													elem: 'logo',
+													mix: { block: 'tpl-grid', elem: 'fraction', elemMods: { 'xs-col': '3', 's-col': '3', 'm-col': '4', 'l-col': '4' }},
 													content: [
 														{
-															elem: 'fraction',
-															elemMods: { 'xs-col': '3', 's-col': '3', 'm-col': '6', 'l-col': '4' },
-															content: [
-																{
-																	block: 'image',
-																	url: '/assets/partners/whitepaper.svg',
-																	width: 230
-																}
-															]
-														},
+															block: 'image',
+															url: '/assets/partners/whitepaper.svg',
+															width: 230
+														}
+													]
+												},
+												{
+													elem: 'menu',
+													mix: { block: 'tpl-grid', elem: 'fraction', elemMods: { 'xs-col': '3', 's-col': '3', 'm-col': '8', 'l-col': '8' }},
+													content: [
 														{
-															elem: 'fraction',
-															elemMods: { 'xs-col': '3', 's-col': '3', 'm-col': '6', 'l-col': '8' },
+															elem: 'menu-list',
+															mix: { block: 'tpl-grid', mods: { 'xs-ratio': '1', 's-ratio': '1-1', 'm-ratio': '1-1-1', 'col-gap': 'half' }},
 															content: [
 																{
-																	block: 'tpl-grid',
-																	mods: { 'xs-ratio': '1', 's-ratio': '1-1', 'm-ratio': '1-1-1', 'col-gap': 'half' },
+																	elem: 'menu-item',
 																	content: [
 																		{
-																			elem: 'fraction',
-																			content: [
-																				{
-																					block: 'text',
-																					mods: { size: 'l', view: 'secondary' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																					tag: 'a',
-																					attrs: { 
-																						href: 'http://whitepaper.tools',
-																						style: 'text-decoration: none; display: block'
-																					},
-																					content: 'О дизайн-системе'
-																				},
-																				{
-																					block: 'text',
-																					mods: { size: 'l', view: 'secondary' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																					tag: 'a',
-																					attrs: { 
-																						href: 'http://whitepaper.tools',
-																						style: 'text-decoration: none; display: block'
-																					},
-																					content: 'Контрибьюторы'
-																				},
-																				{
-																					block: 'text',
-																					mods: { size: 'l', view: 'secondary' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																					tag: 'a',
-																					attrs: { 
-																						href: 'http://whitepaper.tools',
-																						style: 'text-decoration: none; display: block'
-																					},
-																					content: 'ПрессКит'
-																				}
-																			]
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'О дизайн-системе'
 																		},
 																		{
-																			elem: 'fraction',
-																			content: [
-																				{
-																					block: 'text',
-																					mods: { size: 'l', view: 'secondary' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																					tag: 'a',
-																					attrs: { 
-																						href: 'http://whitepaper.tools',
-																						style: 'text-decoration: none; display: block'
-																					},
-																					content: 'Документация'
-																				},
-																				{
-																					block: 'text',
-																					mods: { size: 'l', view: 'secondary' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																					tag: 'a',
-																					attrs: { 
-																						href: 'http://whitepaper.tools',
-																						style: 'text-decoration: none; display: block'
-																					},
-																					content: 'Github'
-																				},
-																				{
-																					block: 'text',
-																					mods: { size: 'l', view: 'secondary' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																					tag: 'a',
-																					attrs: { 
-																						href: 'http://whitepaper.tools',
-																						style: 'text-decoration: none; display: block'
-																					},
-																					content: 'Telegram'
-																				},
-																				{
-																					block: 'text',
-																					mods: { size: 'l', view: 'secondary' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																					tag: 'a',
-																					attrs: { 
-																						href: 'http://whitepaper.tools',
-																						style: 'text-decoration: none; display: block'
-																					},
-																					content: 'Medium'
-																				},
-																				{
-																					block: 'text',
-																					mods: { size: 'l', view: 'secondary' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																					tag: 'a',
-																					attrs: { 
-																						href: 'http://whitepaper.tools',
-																						style: 'text-decoration: none; display: block'
-																					},
-																					content: 'CodePen'
-																				}	 
-																			]
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'Контрибьюторы'
 																		},
 																		{
-																			elem: 'fraction',
-																			content: [
-																				{
-																					block: 'text',
-																					mods: { size: 'l', view: 'secondary' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																					tag: 'a',
-																					attrs: { 
-																						href: 'http://whitepaper.tools',
-																						style: 'text-decoration: none; display: block'
-																					},
-																					content: 'Сообщество'
-																				},
-																				{
-																					block: 'text',
-																					mods: { size: 'l', view: 'secondary' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																					tag: 'a',
-																					attrs: { 
-																						href: 'http://whitepaper.tools',
-																						style: 'text-decoration: none; display: block'
-																					},
-																					content: 'События'
-																				},
-																				{
-																					block: 'text',
-																					mods: { size: 'l', view: 'secondary' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																					tag: 'a',
-																					attrs: { 
-																						href: 'http://whitepaper.tools',
-																						style: 'text-decoration: none; display: block'
-																					},
-																					content: 'Кит'
-																				}
-																			]
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'ПрессКит'
+																		}
+																	]
+																},
+																{
+																	elem: 'menu-item',
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'Документация'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'Github'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'Telegram'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'Medium'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'CodePen'
+																		}
+																	]
+																},
+																{
+																	elem: 'menu-item',
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'Сообщество'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'События'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'l', view: 'secondary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			tag: 'a',
+																			attrs: { 
+																				href: 'http://whitepaper.tools',
+																				style: 'text-decoration: none; display: block'
+																			},
+																			content: 'Кит'
 																		}
 																	]
 																}
