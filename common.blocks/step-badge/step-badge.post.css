@@ -28,7 +28,7 @@
 				background: url('step-badge-other.svg') no-repeat;
 			}
 		}
-		/* &_scratch {
+		&_scratch {
 			background-color: var(--color-bg-stripe);
 			color: var(--color-typo-secondary);
 			&:after {
@@ -43,7 +43,7 @@
 				content: '';
 				background: url('step-badge-prod.svg') no-repeat;
 			}
-		} */
+		}
 	}
 	&:after {
 		position: absolute;

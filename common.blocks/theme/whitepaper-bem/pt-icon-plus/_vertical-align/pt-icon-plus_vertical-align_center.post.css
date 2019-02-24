@@ -1,0 +1,7 @@
+.pt-icon-plus_vertical-align_center {
+	align-items: center;
+
+	.pt-icon-plus__icon {
+		margin-top: 0;
+	}
+}

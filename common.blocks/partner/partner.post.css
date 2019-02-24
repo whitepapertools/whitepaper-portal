@@ -1,5 +1,6 @@
 .partner {
 	height: 72px;
 	display: flex;
-	vertical-align: center;
+	justify-content: center;
+	align-items: center;
 }
