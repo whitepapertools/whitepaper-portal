@@ -1,7 +1,6 @@
 .layer-card {
   padding: var(--space-xxl);
   box-sizing: border-box;
-
   &_view {
     &_blue {
       position: -webkit-sticky;
@@ -11,12 +10,12 @@
       background-color: #00C2FF;
       box-shadow: 16px 24px 0 #0051C7;
     }
-    &_red {
+    &_gray-monochrome {
       margin-left: 326px;
       margin-top: 38%;
-      width: 420px;
-      background-color: #EB5757;
-      box-shadow: 16px 24px 0 #CE4141;
+      width: 400px;
+      background-color: #3B3B3B;
+      box-shadow: 16px 24px 0 #6B6B6B;
       z-index: 2;
     }
     &_black-blue {
