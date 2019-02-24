@@ -45,7 +45,74 @@ module.exports = {
 				},
 				/* Menu */
 				{
-					block: 'menu'
+					block: 'menu',
+					content: [
+						{
+							elem: 'content',
+							mix: { block: 'tpl-layout', elem: 'content' },
+							content: [
+								{
+									elem: 'container',
+									mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', align: 'center' }},
+									content: [
+										{
+											elem: 'inner',
+											content: [
+												{
+													elem: 'paper',
+													content: [	
+														{
+															elem: 'logo',
+															tag: 'a',
+															attrs: { href: '/index.html' }
+														},
+														{
+															elem: 'download',
+															content: [
+																{
+																	block: 'figured-button',
+																	tag: 'a',
+																	attrs: { href: 'https://github.com/whitepapertools' } ,
+																	mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
+																	content: 'GitHub'
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'nav',
+													content: [
+														{
+															elem: 'item',
+															mix: { block: 'text', mods: { size: 'xl', view: 'secondary' } },
+															content: 'Документация'
+														},
+														{
+															elem: 'item',
+															mix: { block: 'text', mods: { size: 'xl', view: 'secondary' } },
+															content: 'Сообщество'
+														},
+														{
+															elem: 'item',
+															mix: { block: 'text', mods: { size: 'xl', view: 'secondary' } },
+															content: 'Kit'
+														},
+														{
+															elem: 'item',
+															mix: { block: 'text', mods: { size: 'xl', view: 'secondary' } },
+															content: 'Changelog'
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+
+					]
 				},
 				/* Menu */
 
