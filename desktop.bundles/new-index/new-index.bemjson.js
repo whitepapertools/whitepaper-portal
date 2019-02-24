@@ -27,7 +27,10 @@ module.exports = {
 			content: [
 				{
 					block: 'grid-decoration',
-					mix: { block: 'tpl-grid', mods: { ratio: '1-1-1-1', 'col-gap': 'full' } },
+					mix: [
+						// { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm' } },
+						{ block: 'tpl-grid', mods: { ratio: '1-1-1-1', 'col-gap': 'full' } }
+					],
 					content: [
 						{
 							elem: 'column'
@@ -43,6 +46,7 @@ module.exports = {
 						}
 					]
 				},
+
 				/* Menu */
 				{
 					block: 'menu',
@@ -60,7 +64,7 @@ module.exports = {
 											content: [
 												{
 													elem: 'paper',
-													content: [	
+													content: [
 														{
 															elem: 'logo',
 															tag: 'a',

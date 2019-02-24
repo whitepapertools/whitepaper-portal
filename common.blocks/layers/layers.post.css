@@ -21,3 +21,9 @@
 		display: none;
 	}
 }
+
+@media screen and (min-width: $screen-l) and (max-width: $screen-l-max) {
+	.layers {
+		height: 65vh;
+	}
+}

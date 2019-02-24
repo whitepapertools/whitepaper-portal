@@ -22,7 +22,7 @@
       }
     }
     &_other {
-      background-color: var(--color-bg-ghost);
+      background-image: linear-gradient(var(--color-bg-ghost), var(--color-bg-ghost)), linear-gradient(var(--color-bg-default), var(--color-bg-default));
       color: var(--color-typo-secondary);
       &:after {
         content: '';
@@ -38,7 +38,7 @@
 			}
 		}
 		&_prod {
-			background-color: var(--color-bg-ghost);
+			background-image: linear-gradient(var(--color-bg-ghost), var(--color-bg-ghost)), linear-gradient(var(--color-bg-default), var(--color-bg-default));
 			color: var(--color-typo-secondary);
 			&:after {
 				content: '';
