@@ -4,7 +4,7 @@
   &_view {
     &_blue {
       position: -webkit-sticky;
-      position: sticky;
+      /* position: sticky; */
       top: calc(3*var(--space-xxxl));
       width: 420px;
       background-color: #00C2FF;
@@ -12,7 +12,7 @@
     }
     &_gray-monochrome {
       margin-left: 326px;
-      margin-top: 38%;
+      margin-top: -7%;
       width: 400px;
       background-color: #3B3B3B;
       box-shadow: 16px 24px 0 #6B6B6B;
@@ -20,7 +20,7 @@
     }
     &_black-blue {
       margin-left: 550px;
-      margin-top: 16%;
+      margin-top: -13%;
       width: 380px;
       background-color: var(--color-bg-default);
       box-shadow: 16px 16px 0 #0067FF, 32px 48px 0 #0051C7;
@@ -30,7 +30,7 @@
     &_black-monochrome {
       padding: var(--space-xxxxxxl) var(--space-xxl) var(--space-xxl) var(--space-xxl);
       margin-left: 824px;
-      margin-top: 2%;
+      margin-top: -42%;
       width: 320px;
       height: 360px;
       background-color: var(--color-bg-default);

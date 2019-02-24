@@ -63,8 +63,8 @@ module.exports = {
 										elem: 'title',
 										content: {
 											block: 'text',
-											mods: { size: 'xxxxxl', view: 'primary', font: 'mono' },
-											content: 'Открытый конструктор дизайн-систем'
+											mods: { view: 'primary', font: 'mono', weight: 'light' },
+											content: 'Открытый инструмент для разработки дизайн-системы на основе комбинаций простых сущностей'
 										}
 									}
 								]
@@ -77,6 +77,7 @@ module.exports = {
 				/* Layers */
 				{
 					elem: 'content',
+					mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
 					content: {
 						elem: 'container',
 						elemMods: { align: 'center', size: 'm' },
@@ -108,7 +109,7 @@ module.exports = {
 									},
 									{
 										block: 'layer-card',
-										attrs: { 'data-scroll-speed': '60' },
+										attrs: { 'data-scroll-speed': '3' },
 										mods: { view: 'gray-monochrome' },
 										content: [
 											{
@@ -131,7 +132,7 @@ module.exports = {
 									},
 									{
 										block: 'layer-card',
-										attrs: { 'data-scroll-speed': '3' },
+										attrs: { 'data-scroll-speed': '2' },
 										mods: { view: 'black-blue' },
 										content: [
 											{
@@ -185,12 +186,22 @@ module.exports = {
 				/* Demo */
 				{
 					elem: 'content',
-					attrs: { style: 'height: 400px' },
+					mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
 					content: {
 						elem: 'container',
 						elemMods: { align: 'center', size: 'm' },
 						content: [
-
+							{
+								block: 'text',
+								mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
+								mods: { size: 'xxxxl', view: 'primary' },
+								content: 'Лайв демо'
+							},
+							{
+								block: 'image',
+								attrs: { style: 'width: 100%;' },
+								url: '/assets/demo/demo_screen.png',
+							}
 						]
 					}
 				},
@@ -1076,7 +1087,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'secondary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																			tag: 'a',
-																			attrs: { 
+																			attrs: {
 																				href: 'http://whitepaper.tools',
 																				style: 'text-decoration: none; display: block'
 																			},
@@ -1087,7 +1098,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'secondary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																			tag: 'a',
-																			attrs: { 
+																			attrs: {
 																				href: 'http://whitepaper.tools',
 																				style: 'text-decoration: none; display: block'
 																			},
@@ -1098,7 +1109,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'secondary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																			tag: 'a',
-																			attrs: { 
+																			attrs: {
 																				href: 'http://whitepaper.tools',
 																				style: 'text-decoration: none; display: block'
 																			},
@@ -1114,7 +1125,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'secondary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																			tag: 'a',
-																			attrs: { 
+																			attrs: {
 																				href: 'http://whitepaper.tools',
 																				style: 'text-decoration: none; display: block'
 																			},
@@ -1125,7 +1136,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'secondary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																			tag: 'a',
-																			attrs: { 
+																			attrs: {
 																				href: 'http://whitepaper.tools',
 																				style: 'text-decoration: none; display: block'
 																			},
@@ -1136,7 +1147,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'secondary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																			tag: 'a',
-																			attrs: { 
+																			attrs: {
 																				href: 'http://whitepaper.tools',
 																				style: 'text-decoration: none; display: block'
 																			},
@@ -1147,7 +1158,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'secondary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																			tag: 'a',
-																			attrs: { 
+																			attrs: {
 																				href: 'http://whitepaper.tools',
 																				style: 'text-decoration: none; display: block'
 																			},
@@ -1158,7 +1169,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'secondary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																			tag: 'a',
-																			attrs: { 
+																			attrs: {
 																				href: 'http://whitepaper.tools',
 																				style: 'text-decoration: none; display: block'
 																			},
@@ -1174,7 +1185,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'secondary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																			tag: 'a',
-																			attrs: { 
+																			attrs: {
 																				href: 'http://whitepaper.tools',
 																				style: 'text-decoration: none; display: block'
 																			},
@@ -1185,7 +1196,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'secondary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																			tag: 'a',
-																			attrs: { 
+																			attrs: {
 																				href: 'http://whitepaper.tools',
 																				style: 'text-decoration: none; display: block'
 																			},
@@ -1196,7 +1207,7 @@ module.exports = {
 																			mods: { size: 'l', view: 'secondary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																			tag: 'a',
-																			attrs: { 
+																			attrs: {
 																				href: 'http://whitepaper.tools',
 																				style: 'text-decoration: none; display: block'
 																			},
