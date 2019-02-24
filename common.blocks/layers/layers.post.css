@@ -3,7 +3,7 @@
 	height: calc(100vh +40px);
 }
 
-@media screen and (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+@media screen and (max-width: $screen-xs-max) {
 	.layers {
 		display: none;
 	}
@@ -16,11 +16,6 @@
 }
 
 @media screen and (min-width: $screen-m) and (max-width: $screen-m-max) {
-	.layers {
-		display: none;
-	}
-}
-@media screen and (min-width: $screen-l) and (max-width: $screen-l-max) {
 	.layers {
 		display: none;
 	}

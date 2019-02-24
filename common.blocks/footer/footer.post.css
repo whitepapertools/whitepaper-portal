@@ -5,7 +5,7 @@
 	}
 }
 
-@media screen and (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+@media screen and (max-width: $screen-xs-max) {
 	.footer {
 		&__menu-item {
 			margin-bottom: var(--space-xl);

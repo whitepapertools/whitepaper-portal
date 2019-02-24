@@ -11,7 +11,7 @@
 	}
 }
 
-@media screen and (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+@media screen and (max-width: $screen-xs-max) {
 	.process {
 		&__item {
 			display: block;

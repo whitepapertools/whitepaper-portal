@@ -5,7 +5,7 @@
 	background-color: var(--color-bg-default);
 }
 
-@media screen and (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+@media screen and (max-width: $screen-xs-max) {
 	.events {
 		height: 500px;
 	}

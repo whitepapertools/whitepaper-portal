@@ -6,7 +6,7 @@
 	align-items: center;
 }
 
-@media screen and (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+@media screen and (max-width: $screen-xs-max) {
 	.partner {
 		padding: 0px 0px var(--space-m) 0px;
 		justify-content: flex-start;
