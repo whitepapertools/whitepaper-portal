@@ -1,4 +1,27 @@
 .layers {
-  margin-top: calc(3*var(--space-xxxl));
-  height: calc(100vh +40px);
+	margin-top: calc(3*var(--space-xxxl));
+	height: calc(100vh +40px);
+}
+
+@media screen and (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+	.layers {
+		display: none;
+	}
+}
+
+@media screen and (min-width: $screen-s) and (max-width: $screen-s-max) {
+	.layers {
+		display: none;
+	}
+}
+
+@media screen and (min-width: $screen-m) and (max-width: $screen-m-max) {
+	.layers {
+		display: none;
+	}
+}
+@media screen and (min-width: $screen-l) and (max-width: $screen-l-max) {
+	.layers {
+		display: none;
+	}
 }
