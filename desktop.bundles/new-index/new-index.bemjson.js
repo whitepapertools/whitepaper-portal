@@ -14,7 +14,7 @@ module.exports = {
 	mix: [
 		{
 			block: 'theme',
-			mods: { color: 'whitepaper-inverse', space: 'default', breakpoint: 'default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'nitti' }
+			mods: { color: 'whitepaper-portal-inverse', space: 'default', breakpoint: 'default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'nitti' }
 		},
 		{
 			block: 'component',
@@ -256,13 +256,13 @@ module.exports = {
 												content: [
 													{
 														block: 'step-badge',
-														mix: { block: 'theme', mods: { color: 'whitepaper-brand' } },
+														mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' } },
 														mods: { view: 'wp' },
 														content: 'Дизайн-система'
 													},
 													{
 														block: 'step-badge',
-														mix: { block: 'theme', mods: { color: 'whitepaper-brand' } },
+														mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' } },
 														mods: { view: 'wp' },
 														content: 'Фронтенд фреймворк'
 													}
@@ -448,7 +448,7 @@ module.exports = {
 									{
 										block: 'events',
 										mix: [
-											{ block: 'theme', mods: { color: 'whitepaper-brand' }},
+											{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
 											{ block: 'pt-card' }
 										],
 										content: [

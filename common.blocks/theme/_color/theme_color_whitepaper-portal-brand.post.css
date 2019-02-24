@@ -46,7 +46,7 @@ $color-link-external: $color-base-path; /* Цвет дополнительной
 $color-link-minor: color($color-base-path h(+22) s(-80%) l(+13%)); /* Цвет второстепенной ссылки */
 $color-link-hover: color($color-base-path l(-7%)); /* Цвет ховера ссылки */
 
-.theme_color_whitepaper-brand {
+.theme_color_whitepaper-portal-brand {
 	/* Цвета блоков */
 	--color-bg-brand: $color-bg-brand; /* Цвет фона брендированый */
 	--color-bg-action: $color-bg-action; /* Цвет фона действия */

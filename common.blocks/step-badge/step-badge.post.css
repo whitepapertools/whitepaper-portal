@@ -60,6 +60,7 @@
 	.step-badge {
 		display: block;
 		margin-bottom: var(--space-s);
+		margin-right: 0px;
 		&:last-child {
 			margin-bottom: 0px;
 		}
@@ -85,6 +86,10 @@
 @media screen and (min-width: $screen-m) and (max-width: $screen-m-max) {
 	.step-badge {
 		display: block;
+		margin-bottom: var(--space-s);
+		&:last-child {
+			margin-bottom: 0px;
+		}
 		&:after {
 			display: none;
 		}
