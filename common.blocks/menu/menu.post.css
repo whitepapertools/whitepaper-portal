@@ -1,20 +1,92 @@
 .menu {
-	&__view {
-		height: 240px;
-		background: var(--color-bg-ghost);
-		margin-bottom: var(--space-xs);
+	height: 60px;
+	box-sizing: border-box;
+	width: 100%;
+	z-index: 100;
+	margin-bottom: var(--space-xxxxxxl);
+	&__container {
+		height: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
 	}
-	&__menu-image {
-		height: 240px;
-		background: #1a1a1a;
-		&_size {
-			&_unfold {
-				width: var(--menu-unfold);
+
+	&__logo {
+		display: block;
+		width: 114px;
+	  height: 38px;
+		background-size: 100%;
+		background-image: url('logo.svg');
+		background-repeat: no-repeat;
+	}
+
+	&__nav {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: baseline;
+	}
+
+	&__item {
+		position: relative;
+		margin-left: var(--space-xxxl);
+		padding: 19px 0 20px;
+
+		&_view {
+			&_link {
+				display: block;
+				text-decoration: none;
+				transition: color .15s;
+				&:hover {
+					color: var(--color-link);
+				}
 			}
-			&_fold {
-				width: var(--menu-fold);
+
+			&_active {
+				cursor: default;
+				color: var(--color-link);
+			}
+
+			&_dropdown {
+				cursor: pointer;
+
+				&:hover .new-menu__dropdown {
+					visibility: visible;
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+		}
+	}
+
+	&__dropdown {
+		position: absolute;
+		visibility: hidden;
+		display: flex;
+		opacity: 0;
+		width: 200px;
+		flex-flow: column;
+		background: var(--color-bg-default);
+		box-shadow: 0 0px 2px rgba(0,0,0,0.03), 0 1px 4px rgba(0,0,0,0.12), 0 12px 8px -3px rgba(0,0,0,0.06);
+		left: calc(-1 * var(--space-l));
+		top: 100%;
+		transform: translateY(var(--space-xs));
+		transition: transform .2s, opacity .2s, visibility .2s;
+		&-link {
+			padding: var(--space-m) var(--space-l);
+			text-decoration: none;
+			cursor: pointer;
+			transition: color .15s;
+			border-bottom: 1px solid var(--color-border);
+			&:last-child { border-bottom: none;}
+			&:hover {
+				/* color: var(--color-link); */
+				background: var(--color-bg-selection);
 			}
 		}
 	}
 }
 
+@media screen and (max-width: 1199px) {
+	.new-menu { display: none; }
+}
