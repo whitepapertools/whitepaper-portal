@@ -16,13 +16,7 @@
 	}
 }
 
-@media screen and (min-width: $screen-m) and (max-width: $screen-m-max) {
-	.layers {
-		display: none;
-	}
-}
-
-@media screen and (min-width: $screen-l) and (max-width: $screen-l-max) {
+@media screen and (min-width: $screen-l) {
 	.layers {
 		height: 65vh;
 	}

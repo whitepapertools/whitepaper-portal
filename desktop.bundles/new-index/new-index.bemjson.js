@@ -25,27 +25,38 @@ module.exports = {
 		{
 			block: 'tpl-layout',
 			content: [
+
+				/* Grid-decor */
 				{
-					block: 'grid-decoration',
-					mix: [
-						// { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm' } },
-						{ block: 'tpl-grid', mods: { ratio: '1-1-1-1', 'col-gap': 'full' } }
-					],
-					content: [
-						{
-							elem: 'column'
-						},
-						{
-							elem: 'column'
-						},
-						{
-							elem: 'column'
-						},
-						{
-							elem: 'column'
-						}
-					]
+					elem: 'content',
+					content: {
+						elem: 'container',
+						elemMods: { align: 'center', size: 'm' },
+						content: [
+							{
+								block: 'grid-decoration',
+								mix: [
+									{ block: 'tpl-grid', mods: { ratio: '1-1-1-1', 'col-gap': 'full' } }
+								],
+								content: [
+									{
+										elem: 'column'
+									},
+									{
+										elem: 'column'
+									},
+									{
+										elem: 'column'
+									},
+									{
+										elem: 'column'
+									}
+								]
+							}
+						]
+					}
 				},
+				/* Grid-decor */
 
 				/* Menu */
 				{
@@ -132,11 +143,28 @@ module.exports = {
 								content: [
 									{
 										elem: 'title',
-										content: {
-											block: 'text',
-											mods: { view: 'primary', font: 'mono', weight: 'light' },
-											content: 'Открытый инструмент для разработки дизайн-системы на основе комбинаций простых сущностей'
-										}
+										content: [
+											{
+												block: 'text',
+												mods: { view: 'primary', font: 'mono', weight: 'light', display: 'inline-block' },
+												content: 'Открытый инструмент для разработки дизайн-системы на основе '
+											},
+											{
+												elem: 'combination',
+												mix: { block: 'text', mods: { view: 'primary', weight: 'light', display: 'inline-block' } },
+												content: 'комбинаций'
+											},
+											{
+												elem: 'simple',
+												mix: { block: 'text', mods: { view: 'primary', weight: 'light', display: 'inline-block' } },
+												content: 'простых'
+											},
+											{
+												elem: 'entities',
+												mix: { block: 'text', mods: { view: 'primary', weight: 'light', display: 'inline-block' } },
+												content: 'сущностей'
+											}
+										]
 									}
 								]
 							}
