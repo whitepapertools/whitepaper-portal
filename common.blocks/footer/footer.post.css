@@ -1,13 +1,13 @@
 .footer {
 	padding: var(--space-xxxl) 0;
-	&__logo {
-		margin-bottom: var(--space-xxxl);
-	}
 }
 
 @media screen and (max-width: $screen-xs-max) {
 	.footer {
-		&__menu-item {
+		&__logo {
+			margin-bottom: var(--space-xxxl);
+		}
+		&__unit {
 			margin-bottom: var(--space-xl);
 		}
 	}
