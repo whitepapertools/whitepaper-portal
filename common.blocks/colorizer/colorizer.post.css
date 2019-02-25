@@ -1,0 +1,51 @@
+.colorizer {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	&__color {
+		height: 48px;
+		width: 48px;
+		border-radius: 50%;
+		margin-left: 16px;
+		position: relative;
+		&:hover {
+			cursor: pointer;
+			opacity: 0.9;
+			transition-duration: 0.3s;
+		}
+		&::after { 
+			content: '';
+			border-radius: 50%;
+			position: absolute;
+			top: var(--space-m);
+			left: var(--space-m);
+			right: var(--space-m);
+			bottom: var(--space-m);
+		}
+		&_view {
+			&_whitepaper {
+				background: #0070F0;
+			}
+			&_megafon {
+				background: #00b956;
+			}
+			&_mts {
+				background: #e30613;
+			}
+		}
+		&_state {
+			&_active {
+				&::after { 
+					background: var(--color-bg-default);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $screen-m) {
+	.colorizer {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
