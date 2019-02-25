@@ -6,7 +6,9 @@
   font-size: var(--size-typo-xl);
   font-weight: 300;
   border-radius: 99em;
-  margin-right: 12px;
+	margin-right: 12px;
+	height: 60px;
+	box-sizing: border-box;
   &:last-child {
     &:after {
       content: none;
@@ -50,9 +52,9 @@
     position: absolute;
     width: 32px;
     height: 42px;
-    margin-left: 14px;
-    margin-top: -9px;
-    z-index: 1;
+		z-index: 1;
+		right: -23px;
+		top: 7px;
 	}
 }
 

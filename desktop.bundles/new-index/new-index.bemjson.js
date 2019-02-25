@@ -106,12 +106,12 @@ module.exports = {
 														{
 															elem: 'item',
 															mix: { block: 'text', mods: { size: 'xl', view: 'secondary' } },
-															content: 'Сообщество'
+															content: 'Starter Kit'
 														},
 														{
 															elem: 'item',
 															mix: { block: 'text', mods: { size: 'xl', view: 'secondary' } },
-															content: 'Kit'
+															content: 'Сообщество'
 														},
 														{
 															elem: 'item',
@@ -359,7 +359,7 @@ module.exports = {
 													{
 														block: 'step-badge',
 														mods: { view: 'other' },
-														content: 'Фронтенд фреймворк'
+														content: 'Фронтенд технология'
 													}
 												]
 											},
@@ -636,7 +636,7 @@ module.exports = {
 													{
 														block: 'text',
 														mods: { size: 'l', view: 'secondary', weight: 'light' },
-														content: 'Если у вашей продуктовой команды есть потребность в персональной консультации, вы всегда можете святься с нами и договориться о частной лекции. Просто напишите нам на почту whatsup@whitepaper.tools'
+														content: 'Если у вашей продуктовой команды есть потребность в персональной консультации, вы всегда можете связатьс с нами и договориться о частной лекции. Просто напишите нам на почту whatsup@whitepaper.tools'
 													}
 												]
 											}
@@ -659,7 +659,7 @@ module.exports = {
 						content: [
 							{
 								block: 'tpl-grid',
-								mods: { 'xs-ratio': '1', 's-ratio': '1-1', 'col-gap': 'full' },
+								mods: { 'xs-ratio': '1', 's-ratio': '1-1', 'col-gap': 'full', 'row-gap': 'full' },
 								content: [
 									{
 										block: 'contribution',
@@ -903,9 +903,9 @@ module.exports = {
 											{
 												block: 'figured-button',
 												tag: 'a',
-												attrs: { href: 'https://github.com/whitepapertools' } ,
+												attrs: { href: 'https://github.com/whitepapertools' },
 												mix: [
-													{ block: 'decorator', mods: { 'indent-t': 'l' } },
+													{ block: 'decorator', mods: { 'indent-t': 'xl' } },
 													{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
 												],
 												content: 'GitHub'
@@ -924,13 +924,30 @@ module.exports = {
 											{
 												block: 'text',
 												mods: { size: 'xl', view: 'secondary', weight: 'light' },
-												content: 'Для того, чтобы более уверено чувствовать себя в процессе сборки интерфейсов на whitepaper, мы рекоммендуем: 1. Укрепить ваши знания по вёрстке. 2. Ознакомится с БЭМ-методологией 3. Разобраться с принципами пост-обработки стилей'
+												content: [
+													'Для того, чтобы более уверено чувствовать себя в процессе сборки интерфейсов на whitepaper, мы рекоммендуем:',
+													{
+														block: 'text',
+														content: '1. Укрепить ваши знания по вёрстке;'
+													},
+													{
+														block: 'text',
+														content: '2. Ознакомится с БЭМ-методологией;'
+													},
+													{
+														block: 'text',
+														content: '3. Понять пост-обработку стилей.'
+													}
+												]
+												
+												
+												
 											},
 											{
 												block: 'figured-button',
 												mix: [
-													{ block: 'decorator', mods: { 'indent-t': 'xxl' } },
-													{ block: 'theme', mods: { color: 'whitepaper-portal-brand' } },
+													{ block: 'decorator', mods: { 'indent-t': 'xl' }},
+													{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
 												],
 												content: 'Документация'
 											}
@@ -978,7 +995,27 @@ module.exports = {
 													{
 														block: 'step-badge',
 														mods: { view: 'scratch' },
-														content: 'git clone'
+														content: [
+															{
+																block: 'pt-icon-plus',
+																content: [
+																	{
+																		elem: 'block',
+																		content: 'git clone'
+																	},
+																	{
+																		elem: 'icon',
+																		elemMods: { 'indent-l': 's' },
+																		content: [
+																			{
+																				block: 'icon',
+																				mods: { name: 'pause', size: 's', view: 'secondary' }
+																			}
+																		]
+																	}
+																]
+															}
+														]
 													},
 													{
 														block: 'step-badge',
@@ -1014,7 +1051,27 @@ module.exports = {
 													{
 														block: 'step-badge',
 														mods: { view: 'prod' },
-														content: '<link rel="stylesheet"'
+														content: [
+															{
+																block: 'pt-icon-plus',
+																content: [
+																	{
+																		elem: 'block',
+																		content: '<link rel="stylesheet"'
+																	},
+																	{
+																		elem: 'icon',
+																		elemMods: { 'indent-l': 's' },
+																		content: [
+																			{
+																				block: 'icon',
+																				mods: { name: 'pause', size: 's', view: 'secondary' }
+																			}
+																		]
+																	}
+																]
+															}
+														]
 													},
 													{
 														block: 'step-badge',
@@ -1042,9 +1099,9 @@ module.exports = {
 						content: [
 							{
 								block: 'text',
-								mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' } },
-								mods: { size: 'xxxl', view: 'primary', weight: 'bold', },
-								content: 'Будущие партнеры'
+								mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
+								mods: { size: 'xxxl', view: 'primary' },
+								content: 'Будущие партнёры'
 							},
 							{
 								block: 'tpl-grid',
@@ -1052,6 +1109,11 @@ module.exports = {
 								content: [
 									{
 										block: 'partner',
+										tag: 'a',
+										attrs: {
+											'href': 'https://www.spotify.com',
+											'target': '_blank'
+										},
 										content: [
 											{
 												block: 'image',
@@ -1062,6 +1124,11 @@ module.exports = {
 									},
 									{
 										block: 'partner',
+										tag: 'a',
+										attrs: {
+											'href': 'https://www.airbnb.com',
+											'target': '_blank'
+										},
 										content: [
 											{
 												block: 'image',
@@ -1072,6 +1139,11 @@ module.exports = {
 									},
 									{
 										block: 'partner',
+										tag: 'a',
+										attrs: {
+											'href': 'https://www.youtube.com',
+											'target': '_blank'
+										},
 										content: [
 											{
 												block: 'image',
@@ -1082,6 +1154,11 @@ module.exports = {
 									},
 									{
 										block: 'partner',
+										tag: 'a',
+										attrs: {
+											'href': 'https://www.microsoft.com',
+											'target': '_blank'
+										},
 										content: [
 											{
 												block: 'image',
@@ -1092,6 +1169,11 @@ module.exports = {
 									},
 									{
 										block: 'partner',
+										tag: 'a',
+										attrs: {
+											'href': 'https://www.dropbox.com',
+											'target': '_blank'
+										},
 										content: [
 											{
 												block: 'image',
@@ -1179,138 +1261,237 @@ module.exports = {
 															mix: { block: 'tpl-grid', mods: { 'xs-ratio': '1', 's-ratio': '1-1', 'm-ratio': '1-1-1', 'col-gap': 'half' }},
 															content: [
 																{
-																	elem: 'menu-item',
+																	elem: 'unit',
 																	content: [
 																		{
-																			block: 'text',
-																			mods: { size: 'l', view: 'secondary' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			elem: 'item',
 																			tag: 'a',
 																			attrs: {
-																				href: 'http://whitepaper.tools',
-																				style: 'text-decoration: none; display: block'
+																				href: '#'
 																			},
-																			content: 'О дизайн-системе'
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'l', view: 'primary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																					tag: 'a',
+																					attrs: {
+																						href: 'http://whitepaper.tools',
+																						style: 'text-decoration: none; display: block'
+																					},
+																					content: 'О дизайн-системе'
+																				}
+																			]
 																		},
 																		{
-																			block: 'text',
-																			mods: { size: 'l', view: 'secondary' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			elem: 'item',
 																			tag: 'a',
 																			attrs: {
-																				href: 'http://whitepaper.tools',
-																				style: 'text-decoration: none; display: block'
+																				href: '#'
 																			},
-																			content: 'Контрибьюторы'
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'l', view: 'primary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																					tag: 'a',
+																					attrs: {
+																						href: 'http://whitepaper.tools',
+																						style: 'text-decoration: none; display: block'
+																					},
+																					content: 'Контрибьюторы'
+																				}
+																			]
 																		},
 																		{
-																			block: 'text',
-																			mods: { size: 'l', view: 'secondary' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			elem: 'item',
 																			tag: 'a',
 																			attrs: {
-																				href: 'http://whitepaper.tools',
-																				style: 'text-decoration: none; display: block'
+																				href: '#'
 																			},
-																			content: 'ПрессКит'
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'l', view: 'primary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																					tag: 'a',
+																					attrs: {
+																						href: 'http://whitepaper.tools',
+																						style: 'text-decoration: none; display: block'
+																					},
+																					content: 'ПрессКит'
+																				}
+																			]
 																		}
 																	]
 																},
 																{
-																	elem: 'menu-item',
+																	elem: 'unit',
 																	content: [
 																		{
-																			block: 'text',
-																			mods: { size: 'l', view: 'secondary' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			elem: 'item',
 																			tag: 'a',
 																			attrs: {
-																				href: 'http://whitepaper.tools',
-																				style: 'text-decoration: none; display: block'
+																				href: '#'
 																			},
-																			content: 'Документация'
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'l', view: 'primary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																					tag: 'a',
+																					attrs: {
+																						href: 'http://whitepaper.tools',
+																						style: 'text-decoration: none; display: block'
+																					},
+																					content: 'Документация'
+																				}
+																			]
 																		},
 																		{
-																			block: 'text',
-																			mods: { size: 'l', view: 'secondary' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			elem: 'item',
 																			tag: 'a',
 																			attrs: {
-																				href: 'http://whitepaper.tools',
-																				style: 'text-decoration: none; display: block'
+																				href: '#'
 																			},
-																			content: 'Github'
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'l', view: 'primary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																					tag: 'a',
+																					attrs: {
+																						href: 'http://whitepaper.tools',
+																						style: 'text-decoration: none; display: block'
+																					},
+																					content: 'Github'
+																				}
+																			]
 																		},
 																		{
-																			block: 'text',
-																			mods: { size: 'l', view: 'secondary' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			elem: 'item',
 																			tag: 'a',
 																			attrs: {
-																				href: 'http://whitepaper.tools',
-																				style: 'text-decoration: none; display: block'
+																				href: '#'
 																			},
-																			content: 'Telegram'
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'l', view: 'primary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																					tag: 'a',
+																					attrs: {
+																						href: 'http://whitepaper.tools',
+																						style: 'text-decoration: none; display: block'
+																					},
+																					content: 'Telegram'
+																				}
+																			]
 																		},
 																		{
-																			block: 'text',
-																			mods: { size: 'l', view: 'secondary' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			elem: 'item',
 																			tag: 'a',
 																			attrs: {
-																				href: 'http://whitepaper.tools',
-																				style: 'text-decoration: none; display: block'
+																				href: '#'
 																			},
-																			content: 'Medium'
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'l', view: 'primary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																					tag: 'a',
+																					attrs: {
+																						href: 'http://whitepaper.tools',
+																						style: 'text-decoration: none; display: block'
+																					},
+																					content: 'Medium'
+																				}
+																			]
 																		},
 																		{
-																			block: 'text',
-																			mods: { size: 'l', view: 'secondary' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			elem: 'item',
 																			tag: 'a',
 																			attrs: {
-																				href: 'http://whitepaper.tools',
-																				style: 'text-decoration: none; display: block'
+																				href: '#'
 																			},
-																			content: 'CodePen'
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'l', view: 'primary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																					tag: 'a',
+																					attrs: {
+																						href: 'http://whitepaper.tools',
+																						style: 'text-decoration: none; display: block'
+																					},
+																					content: 'CodePen'
+																				}
+																			]
 																		}
 																	]
 																},
 																{
-																	elem: 'menu-item',
+																	elem: 'unit',
 																	content: [
 																		{
-																			block: 'text',
-																			mods: { size: 'l', view: 'secondary' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			elem: 'item',
 																			tag: 'a',
 																			attrs: {
-																				href: 'http://whitepaper.tools',
-																				style: 'text-decoration: none; display: block'
+																				href: '#'
 																			},
-																			content: 'Сообщество'
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'l', view: 'primary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																					tag: 'a',
+																					attrs: {
+																						href: 'http://whitepaper.tools',
+																						style: 'text-decoration: none; display: block'
+																					},
+																					content: 'Сообщество'
+																				}
+																			]
 																		},
 																		{
-																			block: 'text',
-																			mods: { size: 'l', view: 'secondary' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			elem: 'item',
 																			tag: 'a',
 																			attrs: {
-																				href: 'http://whitepaper.tools',
-																				style: 'text-decoration: none; display: block'
+																				href: '#'
 																			},
-																			content: 'События'
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'l', view: 'primary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																					tag: 'a',
+																					attrs: {
+																						href: 'http://whitepaper.tools',
+																						style: 'text-decoration: none; display: block'
+																					},
+																					content: 'События'
+																				}
+																			]
 																		},
 																		{
-																			block: 'text',
-																			mods: { size: 'l', view: 'secondary' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																			elem: 'item',
 																			tag: 'a',
 																			attrs: {
-																				href: 'http://whitepaper.tools',
-																				style: 'text-decoration: none; display: block'
+																				href: '#'
 																			},
-																			content: 'Кит'
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'l', view: 'primary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+																					tag: 'a',
+																					attrs: {
+																						href: 'http://whitepaper.tools',
+																						style: 'text-decoration: none; display: block'
+																					},
+																					content: 'Кит'
+																				}
+																			]
 																		}
 																	]
 																}
