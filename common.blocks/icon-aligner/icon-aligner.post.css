@@ -1,9 +1,0 @@
-.icon-aligner {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-
-  &__icon {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}

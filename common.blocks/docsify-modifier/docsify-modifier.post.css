@@ -1,5 +1,0 @@
-/* модифаер убирает контрол sidebar-toggle из боковой
-	панели доксифая на странице changelog */
-.sidebar-toggle {
-	visibility: hidden;
-}
