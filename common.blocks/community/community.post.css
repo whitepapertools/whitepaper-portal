@@ -1,0 +1,28 @@
+.community {
+  &_conf-logo::after {
+    /* width: 500px; */
+    /* height: 500px; */
+    /* background-image: url('https://cs8.pikabu.ru/post_img/2016/05/25/4/1464149176112676087.jpg'); */
+    /* background-repeat: no-repeat; */
+    /* position: relative; */
+    /* display: inline-block; */
+    position: relative;
+    /* margin: -50px 0px 0px 50px; */
+    width: 20px;
+    height: 100px;
+    background-color: #ff00d0;
+    margin-right: 20px;
+}
+
+}
+
+
+
+.demo {
+  background-color: #ff00d0;
+}
+
+
+.new-menu {
+  background-color: #ff00d0;
+}
