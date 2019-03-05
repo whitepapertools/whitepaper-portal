@@ -939,9 +939,9 @@ module.exports = {
 														content: '3. Понять пост-обработку стилей.'
 													}
 												]
-												
-												
-												
+
+
+
 											},
 											{
 												block: 'figured-button',

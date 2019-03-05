@@ -1,46 +1,75 @@
 ([
 	{
 		shouldDeps: [
-			{ block: 'tpl-grid', mods: {columns: '12', 'col-gap': 'two-thirds' } },
-      { block: 'tpl-grid', elem: 'fraction', mods: {col: '5'} },
-      { block: 'tpl-grid', elem: 'fraction', mods: {col: '7'} },
-      { block: 'decorator', mods: {'indent-b': 'xxxxxl'} },
-      { block: 'text', mods: {size: 'xxxxl', weight: 'bold'} },
-      { block: 'text', mods: {size: 'l'} },
-      { block: 'decorator', mods: { 'space-t': 'm'} },
-      { block: 'text', mods: {size: 'm', view: 'secondary'} },
-      { block: 'decorator', mods: {'space-t': 'xxs'} },
-      { block: 'decorator', mods: {'indent-l': 'l'} },
-      { block: 'text', mods: {size: 'xl', view: 'primary'} },
-      // { block: 'pt-list', mods: {view: 'default'} },
-      // { block: 'pt-list', elem: 'list', mods: {'space-v': 'l'} },
-      { block: 'pt-list', mods: { border: 'all', view: 'default' } },
-      { block: 'pt-list', elem: 'item', mods: { 'space-a': 'xl' } },
-      // { block: 'textlist', mods: { type: 'bullet' } },
-      // { block: 'textlist', elem: 'item' },
+			// { block: 'tpl-grid', mods: { columns: '12', 'col-gap': 'two-thirds' }},
+      // { block: 'tpl-grid', elem: 'fraction', mods: { col: '5' }},
+      // { block: 'tpl-grid', elem: 'fraction', mods: { col: '7' }},
+			//
+      // { block: 'decorator', mods: {'indent-b': 'xxxxxl'} },
+			// { block: 'decorator', mods: {'indent-t': 'xxxxl' } },
+			// { block: 'decorator', mods: {'indent-t': 'xxxl' } },
+			// { block: 'decorator', mods: {'indent-t': 'xxl' } },
+			// { block: 'decorator', mods: {'indent-t': 'xl' } },
+			// { block: 'decorator', mods: {'indent-t': 'm' } },
+			// { block: 'decorator', mods: {'indent-t': 's' } },
+			// { block: 'decorator', mods: {'indent-t': 'xs' } },
+			//
+			// { block: 'decorator', mods: {'indent-v': 'xxxxxl'} },
+			// { block: 'decorator', mods: {'indent-v': 'xxxxl' } },
+			// { block: 'decorator', mods: {'indent-v': 'xxxl' } },
+			// { block: 'decorator', mods: {'indent-v': 'xxl' } },
+			// { block: 'decorator', mods: {'indent-v': 'xl' } },
+			// { block: 'decorator', mods: {'indent-v': 'm' } },
+			// { block: 'decorator', mods: {'indent-v': 's' } },
+			// { block: 'decorator', mods: {'indent-v': 'xs' } },
+			//
+			// { block: 'decorator', mods: {'indent-b': 'xxxxxl'} },
+			// { block: 'decorator', mods: {'indent-b': 'xxxxl' } },
+			// { block: 'decorator', mods: {'indent-b': 'xxxl' } },
+			// { block: 'decorator', mods: {'indent-b': 'xxl' } },
+			// { block: 'decorator', mods: {'indent-b': 'xl' } },
+			// { block: 'decorator', mods: {'indent-b': 'm' } },
+			// { block: 'decorator', mods: {'indent-b': 's' } },
+			// { block: 'decorator', mods: {'indent-b': 'xs' } },
+			//
+      // { block: 'text', mods: { size: 'xxxxl', weight: 'bold' }},
+			// { block: 'text', mods: { size: 'xxxxl', weight: 'bold', view: 'primary' }},
+      // { block: 'text', mods: { size: 'l' }},
+      // { block: 'decorator', mods: { 'space-t': 'm' }},
+      // { block: 'text', mods: { size: 'm', view: 'secondary' }},
+      // { block: 'decorator', mods: { 'space-t': 'xxs' }},
+      // { block: 'decorator', mods: { 'indent-l': 'l' }},
+      // { block: 'text', mods: { size: 'xl', view: 'primary' }},
+			// { block: 'text', mods: { size: 'l', view: 'secondary' }},
+			// { block: 'text', mods: { size: 'l', view: 'ghost' }},
+			// { block: 'text', mods: { size: 'm', view: 'ghost' }},
+			// { block: 'text', mods: { view:'primary', 'indent-b':'m' }},
+			// { block: 'decorator', mods: { 'space-t': 's' }},
+			// { block:'decorator', mods: { 'space-b': 'l' }},
+			//
+			//
+      // { block: 'pt-list', mods: { border: 'all', view: 'default' }},
+      // { block: 'pt-list', elem: 'item', mods: { 'space-b': 'm' }},
 
+			{ block: 'tpl-grid', mods: { columns: '12', 'col-gap': 'full' }},
+			{ block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+			{ block: 'tpl-grid', elem: 'fraction', mods: { col: '5' }},
+			{ block: 'text', mods: { size: 'xxxxl', weight: 'bold', view: 'primary' }},
+			{ block: 'text', mods: { size: 'l', view: 'secondary' }},
+			{ block: 'decorator', mods: { 'space-t': 'm' }},
+			{ block: 'text', mods: { size: 'm', view: 'ghost' }},
+			{ block: 'decorator', mods: { 'space-t': 's' }},
+			{ block: 'tpl-grid', elem: 'fraction', mods: { col: '7' }},
+			{ block: 'decorator', mods: { 'indent-l': 'xxl', 'indent-t': 'xl' }},
+			{ block:'decorator', mods: { 'space-b': 'l' }},
+			{ block: 'text', mods: { size: 'xl', view: 'primary' }},
+			{ block: 'decorator', mods: { 'indent-t': 'xs' }},
+			{ block: 'decorator', mods: { 'indent-b': 'm' }},
+			{ block: 'pt-list', elem: 'item', mods: { 'space-b': 'm' }},
+			{ block: 'text', mods: { view:'secondary' }},
+			{ block: 'decorator', mods: { 'space-b': 'l' }},
+			{ block: 'text', mods: { size: 'xl', view: 'primary' }},
 
-      // { block: 'demo', elem: 'plug-content' },
-			// { block: 'demo', elem: 'plug-illustration' },
-			// { block: 'demo', elem: 'plug-description' },
-			// { block: 'demo', elem: 'plug-action' },
-			// { block: 'demo', elem: 'plug-button' },
-			// { block: 'demo', elem: 'plug-soclink', mods: { icon: ['telegram', 'twitter'] } },
-
-			// { block: 'pt-card' },
-			// { block: 'pt-card', elem: 'content', mods: { 'space-a': 'xl' } },
-			// { block: 'pt-card', elem: 'image' },
-			// { block: 'pt-card', elem: 'footer', mods: {'space-a': 'xl', 'align': 'between' } },
-      //
-			// { block: 'decorator', mods: {'indent-b': 'xxl'} },
-      //
-			// { block: 'text', mods: { font: 'mono', size: 'xxl', weight: 'bold' } },
-      //
-			// { block: 'button', mods: { theme: 'promo', 'size': 'xl', type: 'link', view: 'action', font: 'mono', weight: 'bold', shadow: 'action' } },
-      //
-			// { block: 'text', mods: { font: 'mono', style: 'italic', display: 'inline'} },
-      //
-			// { block: 'theme', mods: { color: 'whitepaper-inverse' } }
 		]
 	}
 ])
