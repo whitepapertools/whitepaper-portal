@@ -1,34 +1,38 @@
-/*.community {
-  padding: var(--space-xxl);
-  background-image: linear-gradient(var(--color-bg-ghost), var(--color-bg-ghost)), linear-gradient(var(--color-bg-default), var(--color-bg-default));
-}
-*/
-
 .community {
-  &_conf-logo::after {
-    /* width: 500px; */
-    /* height: 500px; */
-    /* background-image: url('https://cs8.pikabu.ru/post_img/2016/05/25/4/1464149176112676087.jpg'); */
-    /* background-repeat: no-repeat; */
-    /* position: relative; */
-    /* display: inline-block; */
-    position: relative;
-    /* margin: -50px 0px 0px 50px; */
-    width: 20px;
-    height: 100px;
-    background-color: #ff00d0;
-    margin-right: 20px;
+  &__social {
+
+  }
 }
 
+.community-events {
+  &__wrapper {
+    background-color: #000;
+    text-align: left;
+  }
+  &__heading {
+    display: flex;
+    align-items:center;
+  }
+  &__conf-logo {
+    margin-left: -5px;
+    width: 40px;
+    height: 40px;
+  }
+  &__conf-name {
+    line-height: var(--line-height-typo-xs) !important;
+  }
+  &__conf-date {
+    line-height: var(--line-height-typo-xs) !important;
+  }
+  &__conf-location {
+    line-height: var(--line-height-typo-xs) !important;
+  }
+  &__source {
+    text-decoration: none;
+  }
 }
 
-
-
-.demo {
-  background-color: #ff00d0;
-}
-
-
-.new-menu {
-  background-color: #ff00d0;
+.avatar {
+  z-index: 9;
+  height:60px;
 }

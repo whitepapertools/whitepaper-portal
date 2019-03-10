@@ -132,186 +132,238 @@ module.exports = {
 				/* Menu */
 
 				/* Page content */
+
 				{
 					elem: 'content',
-					mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
+					mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' }},
 					content: {
 						elem: 'container',
 						elemMods: { align: 'center', size: 'm' },
 						content: [
-				        {
-				          elem: 'social',
-				          mix: { block: 'decorator', mods: { 'space-b': 'xxxxxl' }},
-				          content: [
-				            {
-				              block: 'text',
-				              // mods: { view: 'secondary', size: 'xxxxxl'},
-				              mods: { size: 'xxxl', view: 'secondary' },
-				              content: 'Wanna make a real Design System?'
-				            },
-				            {
-				              block: 'text',
-				              mods: { view: 'primary', size: 'xxxl'},
-				              mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
-				              content: 'Join Us'
-				            },
-				            {
-				              elem: 'social-wrapper',
-				              attrs: { style: 'display:flex; align-items: center;' },
-				              mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
-				              content: [
-				                {
-				                  block: 'brand-logo',
-				                  mods: { 'name': 'telegram-inverse', 'size':'s' }
-				                },
-				                {
-				                  block: 'text',
-				                  tag: 'a',
-				                  attrs: { href: 'https://t.me/whitepapertools' },
-				                  mods: { view: 'primary', size: 'xxxl', view: 'link', display: 'inline' },
-				                  mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
-				                  content: 'Telegram'
-				                },
-				              ]
-				            },
-				            {
-				              elem: 'social-wrapper',
-				              attrs: { style: 'display:flex; align-items: center;' },
-				              mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
-				              content: [
-				                {
-				                  block: 'brand-logo',
-				                  mods: { 'name': 'twitter-inverse', 'size':'s' }
-				                },
-				                {
-				                  block: 'text',
-				                  tag: 'a',
-				                  attrs: { href: 'https://twitter.com/whitepapertools' },
-				                  mods: { view: 'primary', size: 'xxxl', view: 'link', display: 'inline' },
-				                  mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
-				                  content: 'Twitter'
-				                },
-				              ]
-				            },
-				            {
-				              elem: 'social-wrapper',
-				              attrs: { style: 'display:flex; align-items: center;' },
-				              mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
-				              content: [
-				                {
-				                  block: 'brand-logo',
-				                  mods: { 'name': 'github-inverse', 'size':'s' }
-				                },
-				                {
-				                  block: 'text',
-				                  tag: 'a',
-				                  attrs: { href: 'https://github.com/whitepapertools' },
-				                  mods: { view: 'primary', size: 'xxxl', view: 'link', display: 'inline' },
-				                  mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
-				                  content: 'Github'
-				                },
-				              ]
-				            },
-				            {
-				              elem: 'social-wrapper',
-				              attrs: { style: 'display:flex; align-items: center;' },
-				              mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
-				              content: [
-				                {
-				                  block: 'brand-logo',
-				                  mods: { 'name': 'codepen-inverse', 'size':'s' }
-				                },
-				                {
-				                  block: 'text',
-				                  tag: 'a',
-				                  attrs: { href: 'https://codepen.io/whitepapertools/' },
-				                  mods: { view: 'primary', size: 'xxxl', view: 'link', display: 'inline' },
-				                  mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
-				                  content: 'Codepen'
-				                },
-				              ]
-				            },
-				            {
-				              elem: 'social-wrapper',
-				              attrs: { style: 'display:flex; align-items: center;' },
-				              mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
-				              content: [
-				                {
-				                  block: 'brand-logo',
-				                  mods: { 'name': 'dribbble-inverse', 'size':'s' }
-				                },
-				                {
-				                  block: 'text',
-				                  tag: 'a',
-				                  attrs: { href: 'https://dribbble.com/whitepapertools' },
-				                  mods: { view: 'primary', size: 'xxxl', view: 'link', display: 'inline' },
-				                  mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
-				                  content: 'Dribbble'
-				                },
-				              ]
-				            },
-				          ]
-				        },
-				        {
-				          elem: 'right-pic',
-				          mix: { block: 'decorator', mods: { 'space-v': 'xxxxxl' }},
-				          content: [
-				            {
-				              block: 'tpl-grid',
-				              mods: { columns: '12', 'col-gap': 'full', 'row-gap': 'full', 'vertical-align': 'center' },
-				              content: [
-				                {
-				                  elem: 'fraction',
-				                  elemMods: { col: '6' },
-				                  content: [
-				                    {
-				                      block: 'left',
-				                      content: [
-				                        {
-				                          block: 'text',
-				                          mods: { size: 'l', view: 'primary', weight: 'light' },
-				                          mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
-				                          content: 'Kseniya Lushnikova'
-				                        },
-				                        {
-				                          block: 'text',
-				                          mods: { size: 'xxxl', view: 'primary' },
-				                          content: 'Некомпонентная декларативаная открытая дизайн-система, РИТ 2019'
-				                        },
-				                      ]
-				                    }
-				                  ]
-				                },
-				                {
-				                  elem: 'fraction', elemMods: { col: '1' },
-				                },
-				                {
-				                  elem: 'fraction',
-				                  elemMods: { col: '5' },
-				                  content: [
-				                    // {
-				                    // 	block: 'text',
-				                    // 	mods: { size: 'l', view: 'primary' },
-				                    // 	content: 'БЭМ для дизайнеров: прототипирование на продакшн-технологиях'
-				                    // },
-				                    {
-				                      block: 'conf-logo',
-				                      content: [
-				                        {
-				                          block: 'brand-logo',
-				                          mods: { name: 'dribbble', size: 'l' },
-				                        }
-				                      ]
-				                    },
-				                  ]
-				                }
-				              ]
-				            },
-				          ]
-				        }
+							{
+								block: 'community',
+								content: [
+
+									/* Social */
+
+				        	{
+										elem: 'social',
+					          mix: { block: 'decorator', mods: { 'space-b': 'xxxxxl' }},
+					          content: [
+											{
+												block: 'text',
+												// mods: { view: 'secondary', size: 'xxxxxl'},
+												mods: { size: 'xxxl', view: 'secondary' },
+												content: 'Wanna make a real Design System?'
+											},
+											{
+												block: 'text',
+												mods: { view: 'primary', size: 'xxxl'},
+												mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+												content: 'Join Us'
+											},
+											{
+												block: 'tpl-grid', mods: { columns: '12', 'col-gap': 'full', 'row-gap': 'full', 'vertical-align': 'top' },
+												content: [
+													{
+														elem: 'fraction',
+														elemMods: { col: '4' },
+														content: [
+															{
+																elem: 'social-wrapper',
+																attrs: { style: 'display:flex; align-items: center;' },
+																mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
+																content: [
+																	{
+																		block: 'brand-logo',
+																		mods: { 'name': 'telegram-inverse', 'size':'s' }
+																	},
+																	{
+																		block: 'text',
+																		tag: 'a',
+																		attrs: { href: 'https://t.me/whitepapertools' },
+																		mods: { view: 'primary', size: 'xxxl', view: 'link', display: 'inline' },
+																		mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
+																		content: 'Telegram'
+																	},
+																]
+															},
+															{
+																elem: 'social-wrapper',
+																attrs: { style: 'display:flex; align-items: center;' },
+																mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
+																content: [
+																	{
+																		block: 'brand-logo',
+																		mods: { 'name': 'twitter-inverse', 'size':'s' }
+																	},
+																	{
+																		block: 'text',
+																		tag: 'a',
+																		attrs: { href: 'https://twitter.com/whitepapertools' },
+																		mods: { view: 'primary', size: 'xxxl', view: 'link', display: 'inline' },
+																		mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
+																		content: 'Twitter'
+																	},
+																]
+															},
+														]
+													},
+													{
+														elem: 'fraction',
+														elemMods: { col: '4' },
+														content: [
+															{
+																elem: 'social-wrapper',
+																attrs: { style: 'display:flex; align-items: center;' },
+																mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
+																content: [
+																	{
+																		block: 'brand-logo',
+																		mods: { 'name': 'github-inverse', 'size':'s' }
+																	},
+																	{
+																		block: 'text',
+																		tag: 'a',
+																		attrs: { href: 'https://github.com/whitepapertools' },
+																		mods: { view: 'primary', size: 'xxxl', view: 'link', display: 'inline' },
+																		mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
+																		content: 'Github'
+																	},
+																]
+															},
+															{
+																elem: 'social-wrapper',
+																attrs: { style: 'display:flex; align-items: center;' },
+																mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
+																content: [
+																	{
+																		block: 'brand-logo',
+																		mods: { 'name': 'codepen-inverse', 'size':'s' }
+																	},
+																	{
+																		block: 'text',
+																		tag: 'a',
+																		attrs: { href: 'https://codepen.io/whitepapertools/' },
+																		mods: { view: 'primary', size: 'xxxl', view: 'link', display: 'inline' },
+																		mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
+																		content: 'Codepen'
+																	},
+																]
+															},
+														]
+													},
+													{
+														elem: 'fraction',
+														elemMods: { col: '4' },
+														content: [
+															{
+																elem: 'social-wrapper',
+																attrs: { style: 'display:flex; align-items: center;' },
+																mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
+																content: [
+																	{
+																		block: 'brand-logo',
+																		mods: { 'name': 'dribbble-inverse', 'size':'s' }
+																	},
+																	{
+																		block: 'text',
+																		tag: 'a',
+																		attrs: { href: 'https://dribbble.com/whitepapertools' },
+																		mods: { view: 'primary', size: 'xxxl', view: 'link', display: 'inline' },
+																		mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
+																		content: 'Dribbble'
+																	},
+																]
+															},
+														]
+													},
+					          		]
+					        		},
+										]
+									},
+									/* Social */
+
+									/* Events */
+				        	{
+										block: 'tpl-grid', mods: { columns: '12', 'col-gap': 'full', 'row-gap': 'full', 'vertical-align': 'top' },
+										content: [
+											{
+												elem: 'fraction',
+												elemMods: { col: '4' },
+												content: [
+													{
+														block: 'invite',
+														content: [
+															{
+																block: 'text',
+																mods: { view: 'secondary', weight: 'light' },
+																mix: [
+																	{ block: 'decorator', mods: { 'space-v':'xxxl', 'space-h':'xxl' }},
+																	{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
+																],
+																attrs: { style: 'background-color: var(--color-bg-default);'},
+																content: 'Если у вашей продуктовой команды ИЛИ КОНФЕРЕНЦИИ есть потребность в персональной консультации, вы всегда можете связатьс с нами и договориться о частной лекции. Просто напишите нам на почту whatsup@whitepaper.tools'
+															}
+														]
+													}
+												]
+											},
+											{
+												elem: 'fraction',
+												elemMods: { col: '4' },
+												content: [
+													// рит Ксюша
+													{
+														block: 'community-events',
+
+														// ссылка и путь к аватару спикера
+														photoLink: 'http://facebook.com',
+														photoPath: '/assets/team/ksusha.jpg',
+														// данные конференции
+														confLogo: 'rit', // каждую новую конфу необходимо добавить в депсы
+														confName: 'РИТ++',
+														confDate: '28 февраля 2019',
+														confCity: 'Москва',
+														// название и ссылка на выступления
+														speechName: 'Некомпонентная декларативаная открытая дизайн-система',
+														speechSourceText: 'Сайт конференции РИТ++',
+														speechSourceLink: 'https://ritfest.ru/'
+													}
+												]
+											},
+											{
+												elem: 'fraction',
+												elemMods: { col: '4' },
+												content: [
+													// дрибл Юля
+													{
+														block: 'community-events',
+														// mix: { block: 'decorator', mods: { 'space-v':'xxxl', 'space-h':'xl' }},
+														// ссылка и путь к аватару спикера
+														photoLink: 'http://facebook.com',
+														photoPath: '/assets/team/julya.jpg',
+														// данные конференции
+														confLogo: 'dribbble', // каждую новую конфу необходимо добавить в депсы
+														confName: 'Dribbble Meetup',
+														confDate: '14 августа 2018',
+														confCity: 'Санкт-Петербург',
+														// название и ссылка на выступления
+														speechName: 'Декларативный дизайн',
+														speechSourceText: 'Запись выступления',
+														speechSourceLink: 'http://youtu.be/dhHlaiD0NZc?t=7h37m1s'
+													}
+												]
+											}
+										]
+									},
+									/* Events */
+								]
+							}
 				    ]
 				  },
 				},
+
 				/* Page content */
 
 				/* Yandex.Metrika counter */

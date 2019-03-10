@@ -1,0 +1,33 @@
+.future-events {
+  /* background-color: #000; */
+	/* display: block; */
+	/* height: 360px; */
+	/* text-align: center; */
+  /* text-align: left; */
+	/* overflow: hidden; */
+	/* position: relative; */
+	/* &__speaker {
+		height: 60px;
+		width: 110px;
+		position: relative;
+		display: inline-block;
+	}
+	&__persone {
+		width: 60px;
+		height: 60px;
+		border-right: 50%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 99;
+	}
+	&__event {
+		width: 60px;
+		height: 60px;
+		border-right: 50%;
+		position: absolute;
+		top: 0px;
+		right: 00px;
+		z-index: 9;
+	} */
+}

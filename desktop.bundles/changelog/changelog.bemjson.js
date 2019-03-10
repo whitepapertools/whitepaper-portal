@@ -143,14 +143,14 @@ module.exports = {
 						elem: 'container',
 						elemMods: { align: 'center', size: 'm' },
 						content: [
-							{
-								block: 'heading',
-								mix: [
-									{ block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
-									{ block: 'text', mods: { size: 'xxxxl', weight: 'bold', view: 'primary', font: 'sans' }},
-								],
-								content: 'История изменений'
-							},
+							// {
+							// 	block: 'heading',
+							// 	mix: [
+							// 		{ block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+							// 		{ block: 'text', mods: { size: 'xxxxl', weight: 'bold', view: 'primary', font: 'sans' }},
+							// 	],
+							// 	content: 'История изменений'
+							// },
 
 							{
 								// максимум 5 пунктов
