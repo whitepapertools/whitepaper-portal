@@ -14,7 +14,12 @@ block('change-version')(
                 {
                   block: 'version-number',
                   mix: { block: 'text', mods: { size: 'xxxxl', weight: 'bold', view: 'primary' }},
-                  // attrs: { 'href':'#${this.ctx.number}' },
+                  tag: 'a',
+                  attrs: {
+                    href: ctx.versionLink,
+                    id: ctx.versionId,
+                    style: 'text-decoration: none;' 
+                  },
                   content: this.ctx.number
                 },
                 {
@@ -60,7 +65,6 @@ block('change-version')(
                         },
                         {
                           block: 'pt-list',
-                          // mods: { border: 'all', view: 'default' },
                           content: [
                             {
                               elem: 'item',
@@ -137,7 +141,6 @@ block('change-version')(
                         },
                         {
                           block: 'pt-list',
-                          // mods: { border: 'all', view: 'default' },
                           content: [
                             {
                               elem: 'item',
@@ -214,7 +217,6 @@ block('change-version')(
                         },
                         {
                           block: 'pt-list',
-                          // mods: { border: 'all', view: 'default' },
                           content: [
                             {
                               elem: 'item',

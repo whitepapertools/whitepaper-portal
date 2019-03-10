@@ -1,7 +1,11 @@
-.change-item::before {
+/* .change-item::before {
   content: "•";
   display: inline-block;
   width: 1em;
   height: 1em;
   margin-left: -1em;
+} */
+
+.change-item {
+  display: list-item;
 }

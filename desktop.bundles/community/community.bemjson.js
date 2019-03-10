@@ -1,6 +1,6 @@
 module.exports = {
 	block: 'page',
-	title: 'whitepaper',
+	title: 'community',
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
@@ -378,7 +378,7 @@ module.exports = {
 														photoPath: '/assets/team/julya.jpg',
 														// данные конференции
 														confLogo: 'pitercss-meetup', // каждую новую конфу необходимо добавить в депсы
-														confName: 'Dribbble Meetup',
+														confName: 'PiterCSS Meetup',
 														confDate: '14 августа 2018',
 														confCity: 'Санкт-Петербург',
 														// название и ссылка на выступления
