@@ -332,7 +332,7 @@ module.exports = {
 														confDate: '28 февраля 2019',
 														confCity: 'Москва',
 														// название и ссылка на выступления
-														speechName: 'Некомпонентная декларативаная открытая дизайн-система',
+														speechName: 'Production Ready Design',
 														speechSourceText: 'Сайт конференции РИТ++',
 														speechSourceLink: 'https://ritfest.ru/'
 													}
@@ -359,6 +359,63 @@ module.exports = {
 														speechSourceText: 'Запись выступления',
 														speechSourceLink: 'http://youtu.be/dhHlaiD0NZc?t=7h37m1s'
 													}
+												]
+											}
+										]
+									},
+									{
+										block: 'tpl-grid', mods: { columns: '12', 'col-gap': 'full', 'row-gap': 'full', 'vertical-align': 'top' },
+										mix: { block: 'decorator', mods: { 'indent-t': 'xl' }},
+										content: [
+											{
+												elem: 'fraction',
+												elemMods: { col: '4' },
+												content: [
+													{
+														block: 'community-events',
+														// ссылка и путь к аватару спикера
+														photoLink: 'http://facebook.com',
+														photoPath: '/assets/team/julya.jpg',
+														// данные конференции
+														confLogo: 'pitercss-meetup', // каждую новую конфу необходимо добавить в депсы
+														confName: 'Dribbble Meetup',
+														confDate: '14 августа 2018',
+														confCity: 'Санкт-Петербург',
+														// название и ссылка на выступления
+														speechName: 'Production Ready Design. Обкатка',
+														speechSourceText: 'Запись выступления',
+														speechSourceLink: 'http://youtu.be/dhHlaiD0NZc?t=7h37m1s'
+													}
+												]
+											},
+											{
+												elem: 'fraction',
+												elemMods: { col: '4' },
+												content: [
+													// рит Ксюша
+													{
+														block: 'community-events',
+														// ссылка и путь к аватару спикера
+														photoLink: 'http://facebook.com',
+														photoPath: '/assets/team/ksusha.jpg',
+														// данные конференции
+														confLogo: 'rit', // каждую новую конфу необходимо добавить в депсы
+														confName: 'BEM UP',
+														confDate: '28 февраля 2019',
+														confCity: 'Москва',
+														// название и ссылка на выступления
+														speechName: 'BEM UP',
+														speechSourceText: 'Сайт конференции РИТ++',
+														speechSourceLink: 'https://ritfest.ru/'
+													}
+												]
+											},
+											{
+												elem: 'fraction',
+												elemMods: { col: '4' },
+												content: [
+													// дрибл Юля
+
 												]
 											}
 										]

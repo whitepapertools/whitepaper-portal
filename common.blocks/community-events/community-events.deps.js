@@ -8,6 +8,8 @@
 			// брэнд лого может быть много
 			{ block: 'brand-logo', mods: { name: 'rit', size:'s' }},
 			{ block: 'brand-logo', mods: { name: 'dribbble', size:'s' }},
+			{ block: 'brand-logo', mods: { name: 'pitercss-conf', size:'s' }},
+			{ block: 'brand-logo', mods: { name: 'pitercss-meetup', size:'s' }},
 
 			{ block: 'decorator', mods: { 'indent-l':'m' }},
 			{ block: 'text', mods: { size: 's', view: 'primary'  }},
