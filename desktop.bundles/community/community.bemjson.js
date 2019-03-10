@@ -332,7 +332,7 @@ module.exports = {
 														confDate: '28 февраля 2019',
 														confCity: 'Москва',
 														// название и ссылка на выступления
-														speechName: 'Production Ready Design',
+														speechName: 'Прототипирование на продакшн технологиях',
 														speechSourceText: 'Сайт конференции РИТ++',
 														speechSourceLink: 'https://ritfest.ru/'
 													}

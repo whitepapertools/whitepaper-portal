@@ -19,7 +19,11 @@
 			{ block: 'text', mods: { size: 'xl', view: 'primary',  }},
 			{ block: 'decorator', mods: { 'indent-t': 'l' }},
 			{ block: 'text', mods: { size: 'm', view: 'link', weight: 'light' }},
-			{ block: 'decorator', mods: { 'indent-t': 'm' }}
+			{ block: 'decorator', mods: { 'indent-t': 'm', 'space-l': 'xxl', 'space-b': 'xxl' }},
+
+			{ block: 'pt-card' },
+			{ block: 'pt-card', elem: 'content' },
+			{ block: 'pt-card', elem: 'footer', mods: { 'space-v': 'xxxl',  }},
 		]
 	}
 ])
