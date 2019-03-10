@@ -9,7 +9,7 @@
     text-align: left;
     height: 250px;
   }
-  &__heading {
+  &__top {
     display: flex;
     align-items:center;
   }

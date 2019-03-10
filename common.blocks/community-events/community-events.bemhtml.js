@@ -8,11 +8,11 @@ block('community-events')(
         ],
         content: [
           {
-            elem: 'top',
+            elem: 'heading',
             mix: { block: 'pt-card', elem: 'content' },
             content: [
               {
-                elem: 'heading',
+                elem: 'top',
                 content: [
                   {
                     block: 'avatar',
