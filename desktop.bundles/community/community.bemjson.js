@@ -294,16 +294,22 @@ module.exports = {
 												content: [
 													{
 														block: 'invite',
+														mix: [
+															{ block: 'decorator', mods: { 'space-v':'xxxl', 'space-h':'xxl' }},
+															{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
+														],
 														content: [
 															{
 																block: 'text',
 																mods: { view: 'secondary', weight: 'light' },
-																mix: [
-																	{ block: 'decorator', mods: { 'space-v':'xxxl', 'space-h':'xxl' }},
-																	{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
-																],
-																attrs: { style: 'background-color: var(--color-bg-default);'},
-																content: 'Если у вашей продуктовой команды ИЛИ КОНФЕРЕНЦИИ есть потребность в персональной консультации, вы всегда можете связатьс с нами и договориться о частной лекции. Просто напишите нам на почту whatsup@whitepaper.tools'
+																content: 'Если у вашей продуктовой команды ИЛИ КОНФЕРЕНЦИИ есть потребность в персональной консультации, вы всегда можете связатьс с нами и договориться о частной лекции. Просто напишите нам на почту'
+															},
+															{
+																block: 'text',
+																mods: { view: 'primary', weight: 'light' },
+																mix: { block: 'decorator', mods: { 'space-t':'xxs' }},
+																// attrs: { style: 'display: inline;'},
+																content: 'whatsup@whitepaper.tools'
 															}
 														]
 													}

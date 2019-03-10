@@ -1,6 +1,5 @@
 .community {
   &__social {
-
   }
 }
 
@@ -35,4 +34,8 @@
 .avatar {
   z-index: 9;
   height:60px;
+}
+
+.invite {
+  background-color: var(--color-bg-default);
 }

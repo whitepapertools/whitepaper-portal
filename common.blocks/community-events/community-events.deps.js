@@ -16,7 +16,7 @@
 
 			{ block: 'text', mods: { size: 'xl', view: 'primary',  }},
 			{ block: 'decorator', mods: { 'indent-t': 'l' }},
-			{ block: 'text', mods: { size: 'm', view: 'link', }},
+			{ block: 'text', mods: { size: 'm', view: 'link', weight: 'light' }},
 			{ block: 'decorator', mods: { 'indent-t': 'm' }}
 		]
 	}

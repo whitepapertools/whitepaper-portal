@@ -85,7 +85,7 @@ block('community-events')(
               {
                 elem: 'source-text',
                 mix: [
-                  { block: 'text', mods: { size: 'm', view: 'link', }},
+                  { block: 'text', mods: { size: 'm', view: 'link', weight: 'light' }},
                   { block: 'decorator', mods: { 'indent-t': 'm' }}
                 ],
                 content: ctx.speechSourceText
