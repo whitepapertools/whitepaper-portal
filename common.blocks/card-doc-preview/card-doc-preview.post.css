@@ -1,33 +1,76 @@
+$card-doc-preview-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 0px 2px rgba(0, 0, 0, 0.05), 0px 4px 10px rgba(0, 0, 0, 0.1);
+$card-doc-preview-shadow-hover: 0px 4px 20px rgba(0, 0, 0, 0.05), 0px 0px 20px rgba(0, 0, 0, 0.05), 0px 10px 12px rgba(0, 0, 0, 0.05);
+$card-doc-preview-translate: transform 0.2s ease-in-out;
+
 .card-doc-preview {
-	width: 50%;
-	border-radius: 6px;
+	width: 300px;
+	border-radius: 8px;
 	display: block;
-	height: 400px;
-	text-align: center;
+	/* height: 350px; */
 	overflow: hidden;
 	position: relative;
-	&__speaker {
-		height: 60px;
-		width: 110px;
-		position: relative;
-		display: inline-block;
+	transition: box-shadow 0.2s ease-in-out;
+
+	/* &__image {
+		transform: scale(1);
+		transition: $card-doc-preview-translate;
+	} */
+
+	&_shadow {
+		&_soft {
+			box-shadow: $card-doc-preview-shadow;
+			&:hover {
+				box-shadow: $card-doc-preview-shadow-hover;
+				transition: box-shadow 0.2s ease-in-out;
+			}
+		}
 	}
-	&__persone {
-		width: 60px;
-		height: 60px;
-		border-right: 50%;
-		position: absolute;
-		top: 0px;
-		left: 0px;
-		z-index: 99;
+
+	&__header {
+		width: auto;
+		left: var(--space-l);
+		top: -10px;
+		padding: var(--space-xxxs) var(--space-xxs);
+
+		border-radius: 4px;
+		background: var(--color-base-base);
+		box-shadow: $card-doc-preview-shadow;
 	}
-	&__event {
-		width: 60px;
-		height: 60px;
-		border-right: 50%;
-		position: absolute;
-		top: 0px;
-		right: 00px;
-		z-index: 9;
+
+	&__content {
+		top: -4px; /*Под изображением странный отступ в 4 px появляется — это его компенсация, не понимаю в чём дело*/
+		padding-bottom: var(--space-xxxl);
+		background: var(--color-base-essential);
+
+		transform: translate(0, 0);
+		transition: $card-doc-preview-translate;
+	}
+
+	&__action {
+		width: 100%;
+	}
+
+	&__arrow {
+		transform: translate(-10px, 0);
+		transition: $card-doc-preview-translate;
+	}
+
+	&:hover {
+
+		& .card-doc-preview__content {
+			transform: translate(0, -16px);
+			transition: $card-doc-preview-translate;
+		}
+
+		& .card-doc-preview__arrow {
+			transform: translate(0, 0);
+			transition: $card-doc-preview-translate;
+		}
+
+		/* & .card-doc-preview__image {
+			transform: scale(1.05);
+			transition: $card-doc-preview-translate;
+		} */
+
 	}
 }
