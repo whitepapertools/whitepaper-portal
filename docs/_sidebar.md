@@ -1,13 +1,15 @@
 * [Нейминг](naming.md)
 * [BEMJSON](bemjson.md)
 
-* [Основы White Paper](whitepaper.md)
+* [Основы Whitepaper](whitepaper.md)
 
 * [Тема](theme.md)
 	* [Цвета](theme-color.md)
 	* [Отступы](theme-space.md)
 	* [Типографика](theme-text.md)
-	* [Сеточные правила](theme-layout.md)
+	* [Брейкпоинты](theme-breakpoint.md)
+	* [Сеточные правила](theme-gap.md)
+	* [Шрифты](theme-font.md)
 
 * [Сетка](layout.md)
 	* [Обвязки](layout-outer.md)
