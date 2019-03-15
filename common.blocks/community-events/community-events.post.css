@@ -1,33 +1,28 @@
-.future-events {
-  /* background-color: #000; */
-	/* display: block; */
-	/* height: 360px; */
-	/* text-align: center; */
-  /* text-align: left; */
-	/* overflow: hidden; */
-	/* position: relative; */
-	/* &__speaker {
-		height: 60px;
-		width: 110px;
-		position: relative;
-		display: inline-block;
-	}
-	&__persone {
-		width: 60px;
-		height: 60px;
-		border-right: 50%;
-		position: absolute;
-		top: 0px;
-		left: 0px;
-		z-index: 99;
-	}
-	&__event {
-		width: 60px;
-		height: 60px;
-		border-right: 50%;
-		position: absolute;
-		top: 0px;
-		right: 00px;
-		z-index: 9;
-	} */
+.community-events {
+  &__wrapper {
+    background-color: #000;
+    text-align: left;
+    height: 250px;
+  }
+  &__top {
+    display: flex;
+    align-items:center;
+  }
+  &__conf-logo {
+    margin-left: -5px;
+    width: 40px;
+    height: 40px;
+  }
+  &__conf-name {
+    line-height: var(--line-height-typo-xs) !important;
+  }
+  &__conf-date {
+    line-height: var(--line-height-typo-xs) !important;
+  }
+  &__conf-location {
+    line-height: var(--line-height-typo-xs) !important;
+  }
+  &__source {
+    text-decoration: none;
+  }
 }

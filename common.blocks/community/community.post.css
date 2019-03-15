@@ -1,43 +1,4 @@
 .community {
-  &__social {
-  }
-}
-
-.community-events {
-  &__wrapper {
-    background-color: #000;
-    text-align: left;
-    height: 250px;
-  }
-  &__top {
-    display: flex;
-    align-items:center;
-  }
-  &__conf-logo {
-    margin-left: -5px;
-    width: 40px;
-    height: 40px;
-  }
-  &__conf-name {
-    line-height: var(--line-height-typo-xs) !important;
-  }
-  &__conf-date {
-    line-height: var(--line-height-typo-xs) !important;
-  }
-  &__conf-location {
-    line-height: var(--line-height-typo-xs) !important;
-  }
-  &__source {
-    text-decoration: none;
-  }
-}
-
-.avatar {
-  z-index: 9;
-  height:60px;
-}
-
-.invite {
-  background-color: var(--color-bg-default);
-  height: calc(250px - var(--space-xxxl) - var(--space-xxxl));
+  padding: var(--space-xxl);
+  background-image: linear-gradient(var(--color-bg-ghost), var(--color-bg-ghost)), linear-gradient(var(--color-bg-default), var(--color-bg-default));
 }
