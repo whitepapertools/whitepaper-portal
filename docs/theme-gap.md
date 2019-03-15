@@ -7,37 +7,37 @@
 <div class="tpl-grid tpl-grid_s-ratio_1-1 tpl-grid_col-gap_half tpl-grid_row-gap_half decorator decorator_indent-t_xxxl">
 	<div class="tpl-grid__fraction">
 		<div class="gap">
-			<div class="gap__view decorator decorator_indent-b_s"><img src="../../assets/i/col-gap-full.svg" alt="" class="image"></div>
+			<div class="gap__view decorator decorator_indent-b_s"><img src="../../assets/doc/theme-gap/col-gap-full.svg" alt="" class="image"></div>
 			<code>--col-gap_full</code>
 		</div>
 	</div>
 	<div class="tpl-grid__fraction">
 		<div class="gap">
-			<div class="gap__view decorator decorator_indent-b_s"><img src="../../assets/i/col-gap-two-thirds.svg" alt="" class="image"></div>
+			<div class="gap__view decorator decorator_indent-b_s"><img src="../../assets/doc/theme-gap/col-gap-two-thirds.svg" alt="" class="image"></div>
 			<code>--col-gap_two-thirds</code>
 		</div>
 	</div>
 	<div class="tpl-grid__fraction">
 		<div class="gap">
-			<div class="gap__view decorator decorator_indent-b_s"><img src="../../assets/i/col-gap-half.svg" alt="" class="image"></div>
+			<div class="gap__view decorator decorator_indent-b_s"><img src="../../assets/doc/theme-gap/col-gap-half.svg" alt="" class="image"></div>
 			<code>--col-gap_half</code>
 		</div>
 	</div>
 	<div class="tpl-grid__fraction">
 		<div class="gap">
-			<div class="gap__view decorator decorator_indent-b_s"><img src="../../assets/i/col-gap-third.svg" alt="" class="image"></div>
+			<div class="gap__view decorator decorator_indent-b_s"><img src="../../assets/doc/theme-gap/col-gap-third.svg" alt="" class="image"></div>
 			<code>--col-gap_third</code>
 		</div>
 	</div>
 	<div class="tpl-grid__fraction">
 		<div class="gap">
-			<div class="gap__view decorator decorator_indent-b_s"><img src="../../assets/i/col-gap-none.svg" alt="" class="image"></div>
+			<div class="gap__view decorator decorator_indent-b_s"><img src="../../assets/doc/theme-gap/col-gap-none.svg" alt="" class="image"></div>
 			<code>--col-gap_none</code>
 		</div>
 	</div>
 	<div class="tpl-grid__fraction">
 		<div class="gap">
-			<div class="gap__view decorator decorator_indent-b_s"><img src="../../assets/i/col-gap-row-gap.svg" alt="" class="image"></div>
+			<div class="gap__view decorator decorator_indent-b_s"><img src="../../assets/doc/theme-gap/col-gap-row-gap.svg" alt="" class="image"></div>
 			<code>--col-gap_third</code>
 			<code>--row-gap_third</code>
 		</div>
