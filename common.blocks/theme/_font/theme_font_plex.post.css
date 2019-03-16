@@ -536,8 +536,6 @@ $font-mono: "ibm-plex-mono", monospace;
   --font-sans: "ibm-plex-sans", Helvetica, Arial, sans-serif;
   --font-serif: "ibm-plex-serif", Georgia, serif;
   --font-mono: "ibm-plex-mono", monospace;
-}
 
-.theme_font_plex {
   font-family: var(--font-sans);
 }
