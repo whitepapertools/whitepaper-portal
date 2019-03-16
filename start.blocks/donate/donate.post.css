@@ -8,7 +8,7 @@
 	}
 	&__person-avatar {
 		margin-left: var(--space-l);
-		margin-top: 82px;
+		margin-top: 95px;
 		border-radius: 50%;
 	}
 	&__project-image {

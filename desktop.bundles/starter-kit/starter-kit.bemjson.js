@@ -14,7 +14,7 @@ module.exports = {
 	mix: [
 		{
 			block: 'theme',
-			mods: { color: 'whitepaper-default', space: 'default', breakpoint: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
+			mods: { color: 'whitepaper-default', space: 'default', breakpoint: 'default', size: 'default', gap: 'small', menu: 'default', font: 'nitti' }
 		},
 		{
 			block: 'component',
@@ -114,24 +114,24 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'type',
-																			mix: [ 
-																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }}, 
-																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }} 
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }}
 																			],
 																			content: 'Light'
 																		},
 																		{
 																			elem: 'type',
-																			mix: [ 
-																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center' }}, 
-																				{ block: 'decorator', mods: { 'indent-b': 'l' }} 
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', font: 'sans' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
 																			],
 																			content: 'For large companies'
 																		},
 																		{
 																			elem: 'sale',
 																			mix: [
-																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: 'xxxxl' }}, 
+																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: 'xxxxl' }},
 																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
 																			],
 																			content: '$22'
@@ -163,7 +163,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'text',
-																											mods: { size: 'm', view: 'primary', weight: 'light' },
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
 																											content: '50 presentations/month'
 																										}
 																									]
@@ -196,7 +196,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'text',
-																											mods: { size: 'm', view: 'primary', weight: 'light' },
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
 																											content: '5 house of free support'
 																										}
 																									]
@@ -229,7 +229,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'text',
-																											mods: { size: 'm', view: 'primary', weight: 'light',  },
+																											mods: { size: 'm', view: 'primary', font: 'sans'  },
 																											content: '10 campaigns/month'
 																										}
 																									]
@@ -275,17 +275,17 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'type',
-																			mix: [ 
-																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }}, 
-																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }} 
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }}
 																			],
 																			content: 'Standard'
 																		},
 																		{
 																			elem: 'type',
-																			mix: [ 
-																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center' }}, 
-																				{ block: 'decorator', mods: { 'indent-b': 'l' }} 
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', font: 'sans' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
 																			],
 																			content: 'For large companies'
 																		},
@@ -324,7 +324,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'text',
-																											mods: { size: 'm', view: 'primary', weight: 'light' },
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
 																											content: '50 presentations/month'
 																										}
 																									]
@@ -357,7 +357,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'text',
-																											mods: { size: 'm', view: 'primary', weight: 'light' },
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
 																											content: '5 house of free support'
 																										}
 																									]
@@ -390,7 +390,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'text',
-																											mods: { size: 'm', view: 'primary', weight: 'light',  },
+																											mods: { size: 'm', view: 'primary', font: 'sans',  },
 																											content: '10 campaigns/month'
 																										}
 																									]
@@ -442,24 +442,24 @@ module.exports = {
 																	content: [
 																		{
 																			elem: 'type',
-																			mix: [ 
-																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }}, 
-																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }} 
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }}
 																			],
 																			content: 'Premium'
 																		},
 																		{
 																			elem: 'type',
-																			mix: [ 
-																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center' }}, 
-																				{ block: 'decorator', mods: { 'indent-b': 'l' }} 
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', font: 'sans' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
 																			],
 																			content: 'For large companies'
 																		},
 																		{
 																			elem: 'sale',
 																			mix: [
-																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: 'xxxxl' }}, 
+																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: 'xxxxl' }},
 																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
 																			],
 																			content: '$99'
@@ -491,7 +491,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'text',
-																											mods: { size: 'm', view: 'primary', weight: 'light' },
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
 																											content: '50 presentations/month'
 																										}
 																									]
@@ -524,7 +524,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'text',
-																											mods: { size: 'm', view: 'primary', weight: 'light' },
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
 																											content: '5 house of free support'
 																										}
 																									]
@@ -557,7 +557,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'text',
-																											mods: { size: 'm', view: 'primary', weight: 'light' },
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
 																											content: '10 campaigns/month'
 																										}
 																									]
@@ -609,7 +609,7 @@ module.exports = {
 															mix: [
 																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
 																{ block: 'component', mods: { whitepaper: 'inverse' }},
-																{ block: 'pt-card', mods: { view: 'default' }}, 
+																{ block: 'pt-card', mods: { view: 'default' }},
 															],
 															content: [
 																{
@@ -642,20 +642,9 @@ module.exports = {
 																			content: [
 																				{
 																					elem: 'wrap',
-																					content: [
-																						{
-																							elem: 'row',
-																							content: 'Mad Lib'
-																						},
-																						{
-																							elem: 'row',
-																							content: 'Theater with'
-																						},
-																						{
-																							elem: 'row',
-																							content: 'John Cena'
-																						}
-																					]
+																					content: {
+																						html: 'Mad Lib Theater&nbsp;with John&nbsp;Cena'
+																					}
 																				}
 																			]
 																		}
@@ -670,21 +659,16 @@ module.exports = {
 																				mods: { 'vertical-align': 'center' },
 																				content: [
 																				{
-																					elem: 'icon',
-																					elemMods: { 'indent-r': 'xs' },
-																					content: [
-																						{
-																							block: 'brand-logo',
-																							mods: { 'name': 'ustwo', size: 's' }
-																						}
-																					]
+																					block: 'brand-logo',
+																					mods: { 'name': 'ustwo', size: 's' },
+																					mix: { block: 'pt-icon-plus', elem: 'icon', elemMods: { 'indent-r': 'xs' }, },
 																				},
 																				{
 																					elem: 'block',
 																					content: [
 																						{
 																							block: 'text',
-																							mods: { view: 'primary', size: 's' },
+																							mods: { view: 'primary', size: 's', font: 'sans' },
 																							content: 'The Tonight Show…'
 																						}
 																					]
@@ -718,7 +702,7 @@ module.exports = {
 															mix: [
 																{ block: 'theme', mods: { color: 'whitepaper-default' }},
 																{ block: 'component', mods: { whitepaper: 'default' }},
-																{ block: 'pt-card', mods: { view: 'default' } }, 
+																{ block: 'pt-card', mods: { view: 'default' } },
 															],
 															content: [
 																{
@@ -783,13 +767,13 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { view: 'primary', size: 'xxxl', weight: 'bold', font: 'serif' },
+																			mods: { view: 'primary', size: 'xxxl', weight: 'bold' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
-																			content: 'Something is wrong on internet'
+																			content: 'Something is really wrong'
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'primary', size: 'm', font: 'mono'  },
+																			mods: { view: 'primary', size: 'm', font: 'sans'  },
 																			content: 'I’m James Bridle. I’m a writer and artist concerned with…'
 																		}
 																	]
@@ -890,7 +874,7 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'text',
-																									mods: { view: 'primary', size: 's', weight: 'bold' },
+																									mods: { view: 'primary', size: 's', weight: 'bold', font: 'sans' },
 																									mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
 																									content: 'Travis Scott',
 																								},
@@ -908,7 +892,7 @@ module.exports = {
 																						},
 																						{
 																							block: 'text',
-																							mods: { view: 'primary', size: 's', weight: 'bold' },
+																							mods: { view: 'primary', size: 's', weight: 'bold', font: 'sans' },
 																							content: '4:25'
 																						}
 																					]
@@ -922,7 +906,7 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'text',
-																									mods: { view: 'primary', size: 's', weight: 'bold' },
+																									mods: { view: 'primary', size: 's', weight: 'bold', font: 'sans' },
 																									mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
 																									content: 'Sunflower',
 																								},
@@ -940,7 +924,7 @@ module.exports = {
 																						},
 																						{
 																							block: 'text',
-																							mods: { view: 'primary', size: 's', weight: 'bold' },
+																							mods: { view: 'primary', size: 's', weight: 'bold', font: 'sans' },
 																							content: '5:15'
 																						}
 																					]
@@ -954,7 +938,7 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'text',
-																									mods: { view: 'primary', size: 's', weight: 'bold' },
+																									mods: { view: 'primary', size: 's', weight: 'bold', font: 'sans' },
 																									mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
 																									content: 'Drip Too Hard ',
 																								},
@@ -972,7 +956,7 @@ module.exports = {
 																						},
 																						{
 																							block: 'text',
-																							mods: { view: 'primary', size: 's', weight: 'bold' },
+																							mods: { view: 'primary', size: 's', weight: 'bold', font: 'sans' },
 																							content: '3:55'
 																						}
 																					]
@@ -1024,7 +1008,7 @@ module.exports = {
 																				},
 																				{
 																					block: 'text',
-																					mods: { view: 'ghost', size: 's' },
+																					mods: { view: 'ghost', size: 's', font: 'sans' },
 																					content: 'Welcome Back, Andrey Kopeyka'
 																				}
 																			]
@@ -1079,7 +1063,7 @@ module.exports = {
 																					elem: 'item',
 																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'b' }},
 																					content: {
-																						block: 'text', mods: { view: 'link',  size: 'l', align: 'center', width: 'available' },
+																						block: 'text', mods: { view: 'link',  size: 'l', align: 'center', width: 'available', font: 'sans' },
 																						content: 'Signup'
 																					}
 																				}
@@ -1115,7 +1099,7 @@ module.exports = {
 																				},
 																				{
 																					block: 'text',
-																					mods: { view: 'ghost', size: 's' },
+																					mods: { view: 'ghost', size: 's', font: 'sans' },
 																					content: 'Welcome Back, Andrey Kopeyka'
 																				}
 																			]
@@ -1154,7 +1138,7 @@ module.exports = {
 																					content: {
 																						block: 'button',
 																						mods: { theme: 'islands', width: 'full', size: 'l', view: 'action', width: 'available' },
-																						text: 'Sign in'
+																						text: 'Sign up'
 																					}
 																				},
 																				{
@@ -1170,8 +1154,8 @@ module.exports = {
 																					elem: 'item',
 																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'b' }},
 																					content: {
-																						block: 'text', mods: { view: 'link',  size: 'l', align: 'center', width: 'available' },
-																						content: 'Signup'
+																						block: 'text', mods: { view: 'link',  size: 'l', align: 'center', width: 'available', font: 'sans' },
+																						content: 'Login'
 																					}
 																				}
 																			]
@@ -1206,7 +1190,7 @@ module.exports = {
 																				},
 																				{
 																					block: 'text',
-																					mods: { view: 'ghost', size: 's' },
+																					mods: { view: 'ghost', size: 's', font: 'sans' },
 																					content: 'Welcome Back, Andrey Kopeyka'
 																				}
 																			]
@@ -1295,7 +1279,7 @@ module.exports = {
 																				{
 																					block: 'text',
 																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																					mods: { view: 'primary', size: 'm' },
+																					mods: { view: 'primary', size: 'm', font: 'sans' },
 																					content: 'Jeans skinny jacket by Reebok Brand'
 																				},
 																				{
@@ -1356,7 +1340,7 @@ module.exports = {
 																				{
 																					block: 'text',
 																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																					mods: { view: 'secondary', size: 'm' },
+																					mods: { view: 'secondary', size: 'm', font: 'sans' },
 																					content: 'Jeans skinny jacket by Reebok Brand'
 																				},
 																				{
@@ -1421,7 +1405,7 @@ module.exports = {
 																				{
 																					block: 'text',
 																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																					mods: { view: 'primary', size: 'm' },
+																					mods: { view: 'primary', size: 'm', font: 'sans' },
 																					content: 'Jeans skinny jacket by Reebok Brand'
 																				},
 																				{
@@ -1509,8 +1493,8 @@ module.exports = {
 																},
 																{
 																	elem: 'developer-list',
-																	mix: [ 
-																		{ block: 'pt-list' }, 
+																	mix: [
+																		{ block: 'pt-list' },
 																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'between' }}
 																	],
 																	content: [
@@ -1618,7 +1602,7 @@ module.exports = {
 															mix: [
 																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
 																{ block: 'component', mods: { whitepaper: 'inverse' }},
-																{ block: 'pt-card', mods: { view: 'default' }}, 
+																{ block: 'pt-card', mods: { view: 'default' }},
 															],
 															content: [
 																{
@@ -1638,28 +1622,23 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mods: { size: 'm', view: 'secondary' },
+																			mods: { size: 'm', view: 'secondary', font: 'sans' },
 																			content: 'Enjoy beautiful levels filled with illusory, meditative puzzles'
 																		}
 																	]
 																},
 																{
 																	elem: 'item',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'between' }}, 
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'between' }},
 																	content: [
 																		{
 																			block: 'pt-icon-plus',
 																			mods: { 'vertical-align': 'center' },
 																			content: [
 																				{
-																					elem: 'icon',
-																					elemMods: { 'indent-r': 's' },
-																					content: [
-																						{
-																							block: 'brand-logo',
-																							mods: { 'name': 'ustwo', size: 's'}
-																						}
-																					]
+																					block: 'brand-logo',
+																					mods: { 'name': 'ustwo', size: 's'},
+																					mix: { block: 'pt-icon-plus', elem: 'icon', elemMods: { 'indent-r': 's' } },
 																				},
 																				{
 																					elem: 'block',
@@ -1699,7 +1678,7 @@ module.exports = {
 															mix: [
 																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
 																{ block: 'component', mods: { whitepaper: 'inverse' }},
-																{ block: 'pt-card', mods: { view: 'inverse' } }, 
+																{ block: 'pt-card', mods: { view: 'inverse' } },
 															],
 															content: [
 																{
@@ -1733,7 +1712,7 @@ module.exports = {
 																				},
 																				{
 																					block: 'text',
-																					mods: { size: 'm', view: 'secondary', align: 'center' },
+																					mods: { size: 'm', view: 'primary', align: 'center', font: 'sans' },
 																					content: 'Enjoy beautiful meditative puzzle game'
 																				}
 																			]
@@ -1743,7 +1722,7 @@ module.exports = {
 																{
 																	elem: 'item',
 																	mix: [
-																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'between' }},  
+																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'between' }},
 																		{ block: 'pt-card', elem: 'item' }
 																	],
 																	content: [
@@ -1752,14 +1731,9 @@ module.exports = {
 																			mods: { 'vertical-align': 'center' },
 																			content: [
 																				{
-																					elem: 'icon',
-																					elemMods: { 'indent-r': 's' },
-																					content: [
-																						{
-																							block: 'brand-logo',
-																							mods: { 'name': 'monument-valley-2', size: 's', form: 'mask' }
-																						}
-																					]
+																					block: 'brand-logo',
+																					mods: { 'name': 'monument-valley-2', size: 's', form: 'mask'},
+																					mix: { block: 'pt-icon-plus', elem: 'icon', elemMods: { 'indent-r': 's' } },
 																				},
 																				{
 																					elem: 'block',
@@ -1838,7 +1812,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mods: { size: 'm', align: 'center', view: 'primary' },
+																			mods: { size: 'm', align: 'center', view: 'primary', font: 'sans' },
 																			content: 'Currently payments not available'
 																		}
 																	]
@@ -1857,7 +1831,7 @@ module.exports = {
 																						{
 																							block: 'text',
 																							mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-																							mods: { size: 'xs', weight: 'bold', view: 'primary', transform: 'uppercase', spacing: 's' },
+																							mods: { size: 'xs', view: 'primary', transform: 'uppercase', spacing: 's' },
 																							content: 'Information'
 																						},
 																						{
@@ -1936,7 +1910,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mods: { size: 'm', align: 'center', view: 'primary' },
+																			mods: { size: 'm', align: 'center', view: 'primary', font: 'sans' },
 																			content: 'Currently payments not available'
 																		}
 																	]
@@ -1955,7 +1929,7 @@ module.exports = {
 																						{
 																							block: 'text',
 																							mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-																							mods: { size: 'xs', weight: 'bold', view: 'primary', transform: 'uppercase', spacing: 's' },
+																							mods: { size: 'xs', view: 'primary', transform: 'uppercase', spacing: 's' },
 																							content: 'Transfer to card'
 																						},
 																						{
@@ -2032,7 +2006,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mods: { size: 'm', align: 'center', view: 'primary' },
+																			mods: { size: 'm', align: 'center', view: 'primary', font: 'sans' },
 																			content: 'Payment completed'
 																		}
 																	]
@@ -2051,12 +2025,12 @@ module.exports = {
 																						{
 																							block: 'text',
 																							mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-																							mods: { size: 'xs', weight: 'bold', view: 'primary', transform: 'uppercase', spacing: 's' },
+																							mods: { size: 'xs', view: 'primary', transform: 'uppercase', spacing: 's' },
 																							content: 'Information'
 																						},
 																						{
 																							block: 'text',
-																							mods: { size: 's', view: 'primary' },
+																							mods: { size: 's', view: 'primary', font: 'sans' },
 																							content: 'Just visited the best beach for surfing. The waves are awesome.'
 																						}
 																					]
@@ -2190,7 +2164,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'primary', size: 'xxl', align: 'center', transform: 'uppercase', weight: 'bold', spacing: 's' },
+																			mods: { view: 'primary', size: 'xxl', align: 'center', transform: 'uppercase', weight: 'bold' },
 																			mix: { block: 'decorator', mods: { 'indent-t': 's', 'indent-b': 'xs' }},
 																			content: 'Ape shall never kill'
 																		},
@@ -2237,7 +2211,7 @@ module.exports = {
 																		},
 																		{
 																			elem: 'goods-price',
-																			mix: { block: 'text', mods: {font: 'serif', style: 'italic', weight: 'bold' }},
+																			mix: { block: 'text', mods: { style: 'italic', weight: 'bold' }},
 																			content: '$299'
 																		}
 																	]
@@ -2266,12 +2240,12 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
-																			mods: { view: 'primary', font: 'mono', weight: 'black', size: 'xl', align: 'center', transform: 'uppercase', spacing: 's' },
-																			content: 'Nike Gyakusou Gaiter Boot'
+																			mods: { view: 'primary', font: 'mono', weight: 'black', size: 'xl', align: 'center', transform: 'uppercase' },
+																			content: { html: 'Nike Gyakusou<br>Gaiter Boot'}
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'primary', size: 's', align: 'center' },
+																			mods: { view: 'primary', size: 's', align: 'center', font: 'sans' },
 																			content: 'You have the goal. We have a gift'
 																		}
 																	]
@@ -2321,11 +2295,11 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-																			mods: { view: 'link', size: 'xxl' },
+																			mods: { view: 'link', size: 'xxl', font: 'sans' },
 																			content: [
 																				{
 																					block: 'text',
-																					mods: { weight: 'bold' },
+																					mods: { size: 'xl', weight: 'bold', font: 'mono', transform: 'uppercase' },
 																					content: 'This is a slow roll: '
 																				},
 																				'facebook will be the same '
@@ -2360,12 +2334,12 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'text',
-																							mods: { view: 'primary', size: 's', weight: 'semibold' },
+																							mods: { view: 'primary', size: 's', weight: 'semibold', font: 'sans' },
 																							content: 'Aaron Poe'
 																						},
 																						{
 																							block: 'text',
-																							mods: { view: 'secondary', size: 's' },
+																							mods: { view: 'secondary', size: 's', font: 'sans' },
 																							content: '2h ago'
 																						}
 																					]
@@ -2374,20 +2348,20 @@ module.exports = {
 																		},
 																		{
 																			elem: 'article-content',
-																			mix: { block: 'text', mods: { size: 's' }},
+																			mix: { block: 'text', mods: { size: 's', font: 'sans' }},
 																			content: `Late last Friday, Paul Grewal, Facebook’s vice president and deputy general counsel, wrote a seemingly straightforward blog post.`
 																		},
 																		{
 																			block: 'text',
 																			mix: { block: 'decorator', mods: { 'indent-v': 'xxl', 'indent-l': 'l' }},
-																			mods: { view: 'primary', size: 'xl', weight: 'bold', style: 'italic' },
+																			mods: { view: 'primary', size: 'xl', weight: 'bold', style: 'italic', font: 'sans' },
 																			content: [
 																				'We are committed to vigorously enforcing policies to protect people'
 																			]
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'primary', size: 's' },
+																			mods: { view: 'primary', size: 's', font: 'sans' },
 																			content: `As we all now know, of course, Facebook wasn’t offering a bare-chested confessional.`
 																		}
 
@@ -2425,7 +2399,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'link', size: 'xs', weight: 'bold', transform: 'uppercase' },
+																			mods: { view: 'link', size: 'xs', transform: 'uppercase' },
 																			content: 'Technology'
 																		}
 																	]
@@ -2439,12 +2413,12 @@ module.exports = {
 																			content: [
 																				{
 																					block: 'text',
-																					mods: { view: 'primary', size: 'xxl', weight: 'bold' },
+																					mods: { size: 'xl', view: 'primary', weight: 'bold', font: 'mono', transform: 'uppercase' },
 																					content: 'This is a slow roll: '
 																				},
 																				{
 																					block: 'text',
-																					mods: { view: 'primary', size: 'l' },
+																					mods: { view: 'primary', size: 'l', font: 'sans' },
 																					content: 'silicon valley insiders think that facebook will never be the same'
 																				},
 																				{
@@ -2475,12 +2449,12 @@ module.exports = {
 																							content: [
 																								{
 																									block: 'text',
-																									mods: { view: 'primary', size: 'm', weight: 'bold', display: 'inline' },
+																									mods: { view: 'primary', size: 'm', weight: 'bold', display: 'inline', font: 'sans' },
 																									content: 'Nick '
 																								},
 																								{
 																									block: 'text',
-																									mods: { view: 'primary', size: 'm', weight: 'light', display: 'inline' },
+																									mods: { view: 'primary', size: 'm', weight: 'light', display: 'inline', font: 'sans' },
 																									content: 'Bilton'
 																								}
 																							]
@@ -2536,12 +2510,12 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'text',
-																							mods: { view: 'primary', size: 's', weight: 'semibold' },
+																							mods: { view: 'primary', size: 's', weight: 'semibold', font: 'sans' },
 																							content: 'Kyle Caruso'
 																						},
 																						{
 																							block: 'text',
-																							mods: { view: 'secondary', size: 's' },
+																							mods: { view: 'secondary', size: 's', font: 'sans' },
 																							content: '2h ago'
 																						}
 																					]
@@ -2550,7 +2524,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'primary', size: 's' },
+																			mods: { view: 'primary', size: 's', font: 'sans' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																			content: 'Just visited the best beach for surfing. The waves are awesome. Just visited the best beach for surfing. The waves are awesome. Just visited the best beach for surfing. The waves are awesome. How does he do it? 😵😵😵'
 																		},
@@ -2570,20 +2544,20 @@ module.exports = {
 																			content: [
 																				{
 																					block: 'text',
-																					mods: { view: 'link', weight: 'semibold', size: 's', display: 'inline-block' },
+																					mods: { view: 'link', weight: 'semibold', size: 's', display: 'inline-block', font: 'sans' },
 																					mix: { block: 'decorator', mods: { 'indent-r': 'm' }},
 																					content: 'Add comment'
 																				},
 																				{
 																					block: 'text',
-																					mods: { view: 'link', weight: 'semibold', size: 's', display: 'inline-block' },
+																					mods: { view: 'link', weight: 'semibold', size: 's', display: 'inline-block', font: 'sans' },
 																					content: 'Share'
 																				}
 																			]
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'link', weight: 'semibold', size: 's', display: 'inline-block' },
+																			mods: { view: 'link', weight: 'semibold', size: 's', display: 'inline-block', font: 'sans' },
 																			content: 'Like'
 																		}
 																	]
@@ -2651,7 +2625,7 @@ module.exports = {
 																						},
 																						{
 																							block: 'text',
-																							mods: { view: 'primary', size: 'xl', weight: 'bold' },
+																							mods: { view: 'primary', size: 'xl', weight: 'bold', font: 'sans' },
 																							content: '4.5'
 																						}
 																					]
@@ -2662,12 +2636,12 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'text',
-																							mods: { view: 'secondary', size: 'm', weight: 'semibold' },
+																							mods: { view: 'secondary', size: 'm', weight: 'semibold', font: 'sans', font: 'sans' },
 																							content: 'Cafe'
 																						},
 																						{
 																							block: 'text',
-																							mods: { view: 'secondary', size: 'm', weight: 'semibold' },
+																							mods: { view: 'secondary', size: 'm', weight: 'semibold', font: 'sans', font: 'sans' },
 																							content: '324 reviews'
 																						}
 																					]
@@ -2708,7 +2682,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'text',
-																											mods: { size: 'm', display: 'inline' },
+																											mods: { size: 'm', display: 'inline', font: 'sans' },
 																											content: 'Kaigandori, Naka-ku 23 Japan'
 																										}
 																									]
@@ -2741,7 +2715,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'text',
-																											mods: { size: 'm', display: 'inline' },
+																											mods: { size: 'm', display: 'inline', font: 'sans' },
 																											content: '81 45-662-1099'
 																										}
 																									]
@@ -2774,7 +2748,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'text',
-																											mods: { size: 'm', display: 'inline' },
+																											mods: { size: 'm', display: 'inline', font: 'sans' },
 																											content: 'www.subzero.com'
 																										}
 																									]
@@ -2807,7 +2781,7 @@ module.exports = {
 																	mix: [
 																		{ block: 'theme', mods: { color: 'whitepaper-brand' }},
 																		{ block: 'component', mods: { whitepaper: 'brand' }},
-																		{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' }},
+																		{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'xl' }},
 																		{ block: 'pt-card', elem: 'content' }
 																	],
 																	content: [
@@ -2818,17 +2792,17 @@ module.exports = {
 																		},
 																		{
 																			elem: 'type',
-																			mix: [ 
-																				{ block: 'text', mods: { size: 'm', view: 'secondary', weight: 'bold' }},  
-																				{ block: 'decorator', mods: { 'indent-b': 'xs' }} 
+																			mix: [
+																				{ block: 'text', mods: { size: 'm', view: 'secondary', weight: 'bold' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'xs' }}
 																			],
 																			content: 'Event'
 																		},
 																		{
 																			elem: 'event',
-																			mix: [ 
-																				{ block: 'text', mods: { size: 'xxl', view: 'primary', weight: 'bold' }}, 
-																				{ block: 'decorator', mods: { 'indent-b': 's' }} 
+																			mix: [
+																				{ block: 'text', mods: { size: 'xxl', view: 'primary', weight: 'bold', font: 'sans' }},
+																				{ block: 'decorator', mods: { 'indent-b': 's' }}
 																			],
 																			content: '3rd Annual Innate Killer'
 																		},
@@ -2849,7 +2823,7 @@ module.exports = {
 																{
 																	elem: 'info',
 																	mix: [
-																		{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'xxl' }},
+																		{ block: 'pt-list', elem: 'item', elemMods: { 'space-v': 'xxl', 'space-h': 'xl' }},
 																		{ block: 'pt-card', elem: 'footer' }
 																	],
 																	content: [
@@ -2887,7 +2861,7 @@ module.exports = {
 																											content: [
 																												{
 																													block: 'text',
-																													mods: { size: 'm', display: 'inline' },
+																													mods: { size: 'm', display: 'inline', font: 'sans' },
 																													content: 'Kaigandori, Naka-ku 23 Japan'
 																												}
 																											]
@@ -2920,7 +2894,7 @@ module.exports = {
 																											content: [
 																												{
 																													block: 'text',
-																													mods: { size: 'm', display: 'inline' },
+																													mods: { size: 'm', display: 'inline', font: 'sans' },
 																													content: '81 45-662-1099'
 																												}
 																											]
@@ -2989,7 +2963,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'text',
-																							mods: { view: 'primary', size: 's', weight: 'semibold' },
+																							mods: { view: 'primary', size: 'm', weight: 'semibold', font: 'sans' },
 																							content: 'Steph Jeong'
 																						},
 																						{
@@ -3008,7 +2982,7 @@ module.exports = {
 																				'No individual colour making up this wave travels ',
 																				{
 																					block: 'text',
-																					mods: { weight: 'light', display: 'inline' },
+																					mods: { weight: 'light', display: 'inline', font: 'sans' },
 																					content: 'faster than the grid lines, but the sum of all components appears to outrace the grid.  This is how “group velocities” can exceed the speed of light without carrying information.'
 																				}
 																			]
@@ -3021,7 +2995,7 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { view: 'primary', size: 'm', weight: 'semibold' },
+																			mods: { view: 'primary', size: 's', weight: 'semibold' },
 																			content: 'Twitter'
 																		}
 																	]
@@ -3093,17 +3067,15 @@ module.exports = {
 																				'Sam Harris ',
 																				{
 																					block: 'text',
-																					mods: { view: 'primary', size: 'xxl', weight: 'regular', style: 'italic', display: 'inline' },
+																					mods: { view: 'primary', size: 'xxl', weight: 'regular', style: 'italic', display: 'inline', font: 'sans' },
 																					content: 'is creating The Waking Up Podcast'
 																				}
 																			]
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'secondary', size: 'm' },
-																			content: 'I launched Waking Up in 2015, and it regularly ranks among the top 100 podcasts in the US, ' +
-																			'UK, Canada, and Australia. It has been selected by Apple as one of "iTunes Best" and has won a Webby ' +
-																			'…'
+																			mods: { view: 'secondary', size: 'm', font: 'sans' },
+																			content: 'I launched Waking Up in 2015, and it regularly ranks among the top 100 podcasts in the US, UK, Canada, and Australia. It has been selected by Apple as one of "iTunes Best" and has won a Webby…'
 																		}
 																	]
 																},
@@ -3169,7 +3141,7 @@ module.exports = {
 																				},
 																				{
 																					block: 'text',
-																					mods: { view: 'primary', size: 'xxxl', weight: 'bold', style: 'italic', align: 'center', transform: 'uppercase' },
+																					mods: { view: 'primary', size: 'xxxl', weight: 'bold', align: 'center', transform: 'uppercase' },
 																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
 																					content: 'Inna’s B-day'
 																				},
@@ -3180,12 +3152,12 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'text',
-																							mods: { view: 'primary', size: 's', weight: 'bold', display: 'inline' },
+																							mods: { view: 'primary', size: 'm', weight: 'bold', display: 'inline', font: 'sans' },
 																							content: '25:12:08:43 '
 																						},
 																						{
 																							block: 'text',
-																							mods: { view: 'primary', size: 's', display: 'inline' },
+																							mods: { view: 'primary', size: 'm', display: 'inline', font: 'sans' },
 																							content: 'until the end'
 																						}
 																					]
@@ -3308,6 +3280,7 @@ module.exports = {
 																		{
 																			block: 'image',
 																			mix: { block: 'pt-card', elem: 'image' },
+																			attrs: { style: 'display: block' },
 																			url: '/assets/starter-kit/donate-project-image.png'
 																		},
 																		{
@@ -3324,7 +3297,7 @@ module.exports = {
 																		{ block: 'theme', mods: { color: 'whitepaper-default' }},
 																		{ block: 'component', mods: { whitepaper: 'default' }},
 																		{ block: 'pt-card', elem: 'content', elemMods: { 'space-h': 'xl' }}
-																	],	
+																	],
 																	content: [
 																		{
 																			elem: 'project-countdowns',
@@ -3341,7 +3314,7 @@ module.exports = {
 																						},
 																						{
 																							block: 'text',
-																							mods: { view: 'secondary', size: 'xs' },
+																							mods: { view: 'secondary', size: 's', font: 'sans' },
 																							content: 'pledged of 6,217 goal'
 																						}
 																					]
@@ -3356,7 +3329,7 @@ module.exports = {
 																						},
 																						{
 																							block: 'text',
-																							mods: { view: 'secondary', size: 'xs' },
+																							mods: { view: 'secondary', size: 's', font: 'sans' },
 																							content: 'days to go'
 																						}
 																					]
@@ -3377,7 +3350,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'secondary', size: 'm' },
+																			mods: { view: 'secondary', size: 'm', font: 'sans' },
 																			content: 'A high-quality, hand-built tap tempo delay pedal with ' +
 																			'modulated filtering, plenty of delay time, and a handful …'
 																		}
