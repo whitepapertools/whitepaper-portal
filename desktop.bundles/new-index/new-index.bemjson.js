@@ -14,7 +14,7 @@ module.exports = {
 	mix: [
 		{
 			block: 'theme',
-			mods: { color: 'whitepaper-portal-inverse', space: 'default', breakpoint: 'default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'nitti' }
+			mods: { color: 'whitepaper-portal-inverse', space: 'default', breakpoint: 'default', space: 'default', size: 'default', gap: 'medium', menu: 'default', font: 'nitti' }
 		},
 		{
 			block: 'component',
@@ -147,7 +147,7 @@ module.exports = {
 											{
 												block: 'text',
 												mods: { view: 'primary', font: 'mono', weight: 'light', display: 'inline-block' },
-												content: 'Открытый инструмент для разработки дизайн-системы на основе '
+												content: 'Открытый инструмент для разработки дизайн-системы на основе '
 											},
 											{
 												elem: 'combination',
@@ -293,7 +293,7 @@ module.exports = {
 							{
 								block: 'text',
 								mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-								mods: { size: 'xxxxl', view: 'primary' },
+								mods: { size: 'xxxl', view: 'primary' },
 								content: 'Лайв демо'
 							},
 							{
@@ -317,7 +317,7 @@ module.exports = {
 							{
 								block: 'text',
 								mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-								mods: { size: 'xxxxl', view: 'primary' },
+								mods: { size: 'xxxl', view: 'primary' },
 								content: 'Как это работает'
 							},
 							{
@@ -421,7 +421,7 @@ module.exports = {
 							{
 								block: 'text',
 								mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-								mods: { size: 'xxxxl', view: 'primary' },
+								mods: { size: 'xxxl', view: 'primary' },
 								content: 'Ответы на частые вопросы'
 							},
 							{
@@ -971,7 +971,7 @@ module.exports = {
 							{
 								block: 'text',
 								mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-								mods: { size: 'xxxxl', view: 'primary' },
+								mods: { size: 'xxxl', view: 'primary' },
 								content: 'Как начать использовать'
 							},
 							{
