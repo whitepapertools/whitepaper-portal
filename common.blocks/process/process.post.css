@@ -4,9 +4,14 @@
 	&__item {
 		display: flex;
 		align-items: center;
+		margin-bottom: var(--space-xs);
 		&:last-child {
 			margin-bottom: 0px;
 		}
+	}
+	&__label {
+		width: 252px; 
+		margin-right: var(--space-m);
 	}
 }
 
@@ -19,18 +24,15 @@
 	}
 }
 
-@media screen and (min-width: $screen-s) and (max-width: $screen-s-max) {
+@media screen and (min-width: $screen-s) and (max-width: $screen-m-max) {
 	.process {
+		display: flex;
 		&__item {
+			display: block;
 			margin-bottom: var(--space-xxxxl);
 		}
-	}
-}
-
-@media screen and (min-width: $screen-m) and (max-width: $screen-m-max) {
-	.process {
-		&__item {
-			margin-bottom: var(--space-xxxxl);
+		&__label {
+			margin-bottom: var(--space-m);
 		}
 	}
 }
