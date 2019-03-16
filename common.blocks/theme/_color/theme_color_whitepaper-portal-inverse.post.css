@@ -12,7 +12,7 @@ $color-base-system: #778a9b; /* Цвет системнный */
 
 /* Цвета фона */
 $color-bg-brand: $color-base-project; /* Цвет фона брендированый */
-$color-bg-action: color($color-base-project l(+15%)); /* Цвет фона действия */
+$color-bg-action: color($color-base-project l(+20%)); /* Цвет фона действия */
 $color-bg-selection: color($color-base-project h(-1) l(+31%)); /* Цвет фона выделения */
 $color-bg-hover: color($color-base-base a(15%)); /* Цвет фона при наведении */
 $color-bg-border: color($color-base-phantom a(10%)); /* Цвет границ */

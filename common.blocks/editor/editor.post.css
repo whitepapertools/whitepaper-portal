@@ -195,9 +195,49 @@
         }
 
         &__color_size_m {
+            position: relative;
             border-radius: 50%;
             width: 20px;
             height: 20px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 100%;
+                width: 100%;
+                height: 100%;
+                background: black;
+            }
+        }
+        &_color_view_primary {
+            background-color: var(--color-typo-primary);
+
+            &:before {
+                opacity: 0;
+            }
+        }
+        &_color_view_secondary {
+            background-color: var(--color-typo-secondary);
+
+            &:before {
+                opacity: 0.4;
+            }
+        }
+        &_color_view_ghost {
+            background-color: var(--color-typo-ghost);
+
+            &:before {
+                opacity: 0.6;
+            }
+        }
+        &_color_view_brand {
+            background-color: var(--color-typo-brand);
+
+            &:before {
+                opacity: 0;
+            }
         }
         &__color_size_s {
             border-radius: 50%;
