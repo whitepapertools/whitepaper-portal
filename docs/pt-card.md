@@ -2,7 +2,7 @@
 
 <div class="preview">
 	<a class="pt-card pt-card_view_default card-doc-preview card-doc-preview_shadow_soft" href="#">
-		<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/doc-card-preview.jpg"/>
+		<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/patterns/pt-card/doc-card-preview.jpg"/>
 		<div class="pt-card__content pt-card__content_space-h_l pt-card__content_space-t_l card-doc-preview__content">
 			<div class="pt-card__header card-doc-preview__header">
 				<div class="text text_view_primary text_size_xs text_transform_uppercase text_spacing_xs text_weight_bold theme theme_color_whitepaper-brand">Melbourne, 14–17 March</div>
@@ -49,7 +49,7 @@ view                              | default                          | Фон п
 	</div>
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<a class="pt-card pt-card_border_all pt-card_view_default card-doc-preview" href="#">
-			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/doc-card-preview.jpg"/>
+			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/patterns/pt-card/doc-card-preview.jpg"/>
 			<div class="pt-card__content pt-card__content_space-h_l pt-card__content_space-t_l card-doc-preview__content">
 				<div class="pt-card__header card-doc-preview__header">
 					<div class="text text_view_primary text_size_xs text_transform_uppercase text_spacing_xs text_weight_bold theme theme_color_whitepaper-brand">Melbourne, 14–17 March</div>
@@ -81,7 +81,7 @@ view                              | default                          | Фон п
 	</div>
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<a class="pt-card pt-card_shadow_cloud pt-card_view_default card-doc-preview" href="#">
-			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/doc-card-preview.jpg"/>
+			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/patterns/pt-card/doc-card-preview.jpg"/>
 			<div class="pt-card__content pt-card__content_space-h_l pt-card__content_space-t_l card-doc-preview__content">
 				<div class="pt-card__header card-doc-preview__header">
 					<div class="text text_view_primary text_size_xs text_transform_uppercase text_spacing_xs text_weight_bold theme theme_color_whitepaper-brand">Melbourne, 14–17 March</div>
@@ -136,7 +136,7 @@ space-v                        | xs / s / m / l / xl / xxl | Внутренни�
 	</div>
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<a class="pt-card pt-card_view_default card-doc-preview card-doc-preview_shadow_soft" href="#">
-			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/doc-card-preview.jpg"/>
+			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/patterns/pt-card/doc-card-preview.jpg"/>
 			<div class="pt-card__content pt-card__content_space-h_l pt-card__content_space-t_l card-doc-preview__content">
 				<div class="pt-card__header card-doc-preview__header">
 					<div class="text text_view_primary text_size_xs text_transform_uppercase text_spacing_xs text_weight_bold theme theme_color_whitepaper-brand">Melbourne, 14–17 March</div>
@@ -166,7 +166,7 @@ space-v                        | xs / s / m / l / xl / xxl | Внутренни�
 	</div>
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<a class="pt-card pt-card_view_default card-doc-preview card-doc-preview_shadow_soft" href="#">
-			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/doc-card-preview.jpg"/>
+			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/patterns/pt-card/doc-card-preview.jpg"/>
 			<div class="pt-card__content pt-card__content_space-h_l pt-card__content_space-t_l card-doc-preview__content">
 				<div class="pt-card__header pt-card__header_distribute_center">
 					<div class="card-doc-preview__header" style="left: 0; position: relative;">
@@ -198,7 +198,7 @@ space-v                        | xs / s / m / l / xl / xxl | Внутренни�
 	</div>
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<a class="pt-card pt-card_view_default card-doc-preview card-doc-preview_shadow_soft" href="#">
-			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/doc-card-preview.jpg"/>
+			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/patterns/pt-card/doc-card-preview.jpg"/>
 			<div class="pt-card__content pt-card__content_space-h_l pt-card__content_space-t_l card-doc-preview__content">
 				<div class="pt-card__header pt-card__header_distribute_right">
 					<div class="card-doc-preview__header" style="right: var(--space-l); left: auto; position: relative;">
@@ -248,7 +248,7 @@ space-l                         | xs / s / m / l / xl / xxl | Внутренни
 	</div>
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<a class="pt-card pt-card_view_default card-doc-preview card-doc-preview_shadow_soft" href="#">
-			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/doc-card-preview.jpg"/>
+			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/patterns/pt-card/doc-card-preview.jpg"/>
 			<div class="pt-card__content pt-card__content_distribute_center pt-card__content_space-h_l pt-card__content_space-t_l card-doc-preview__content">
 				<div class="pt-card__header pt-card__header_distribute_center">
 					<div class="card-doc-preview__header" style="left: 0; position: relative;">
@@ -295,7 +295,7 @@ space-v                         | xs / s / m / l / xl / xxl | Внутренни
 	</div>
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<a class="pt-card pt-card_view_default card-doc-preview card-doc-preview_shadow_soft" href="#">
-			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/doc-card-preview.jpg"/>
+			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/patterns/pt-card/doc-card-preview.jpg"/>
 			<div class="pt-card__content pt-card__content_space-h_l pt-card__content_space-t_l card-doc-preview__content">
 				<div class="pt-card__header">
 					<div class="card-doc-preview__header" style="position: relative;">
@@ -321,7 +321,7 @@ space-v                         | xs / s / m / l / xl / xxl | Внутренни
 	</div>
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<a class="pt-card pt-card_view_default card-doc-preview card-doc-preview_shadow_soft" href="#">
-			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/doc-card-preview.jpg"/>
+			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/patterns/pt-card/doc-card-preview.jpg"/>
 			<div class="pt-card__content pt-card__content_space-h_l pt-card__content_space-t_l card-doc-preview__content">
 				<div class="pt-card__header">
 					<div class="card-doc-preview__header" style="position: relative;">
@@ -347,7 +347,7 @@ space-v                         | xs / s / m / l / xl / xxl | Внутренни
 	</div>
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<a class="pt-card pt-card_view_default card-doc-preview card-doc-preview_shadow_soft" href="#">
-			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/doc-card-preview.jpg"/>
+			<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/patterns/pt-card/doc-card-preview.jpg"/>
 			<div class="pt-card__content pt-card__content_space-h_l pt-card__content_space-t_l card-doc-preview__content">
 				<div class="pt-card__header">
 					<div class="card-doc-preview__header" style="position: relative;">
@@ -386,7 +386,7 @@ ___
 ## Пример
 
 <a class="pt-card pt-card_view_default card-doc-preview card-doc-preview_shadow_soft" href="#">
-	<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/doc-card-preview.jpg"/>
+	<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/patterns/pt-card/doc-card-preview.jpg"/>
 	<div class="pt-card__content pt-card__content_space-h_l pt-card__content_space-t_l card-doc-preview__content">
 		<div class="pt-card__header">
 			<div class="card-doc-preview__header" style="position: relative;">
@@ -406,7 +406,7 @@ ___
 
 ```
 <a class="pt-card pt-card_view_default card-doc-preview card-doc-preview_shadow_soft" href="#">
-	<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/doc-card-preview.jpg"/>
+	<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/patterns/pt-card/doc-card-preview.jpg"/>
 	<div class="pt-card__content pt-card__content_space-h_l pt-card__content_space-t_l card-doc-preview__content">
 		<div class="pt-card__header">
 			<div class="card-doc-preview__header" style="position: relative;">

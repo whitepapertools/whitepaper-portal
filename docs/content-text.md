@@ -354,11 +354,13 @@ ___
 
 ## Пример
 
-<div class="text text_size_xxl text_view_brand text_weight_bold text_type_h2 text_align_center">
-  Заголовок второго уровня
-</div>
-<div class="text text_size_l text_view_primary text_type_p text_align_center">
-  Пример текста для первого параграфа, следующего после заголовка, изображающий возможные стили текста, а вот кстати <div class="text text_display_inline text_view_link">ссылка</div>
+<div>
+	<div class="text text_size_xxl text_type_h2 text_view_brand text_weight_bold text_align_center">
+	  Заголовок второго уровня
+	</div>
+	<div class="text text_size_l text_view_primary text_type_p text_align_center">
+	  Пример текста для первого параграфа, следующего после заголовка, изображающий возможные стили текста, а вот кстати <div class="text text_display_inline text_view_link">ссылка</div>
+	</div>
 </div>
 
 
