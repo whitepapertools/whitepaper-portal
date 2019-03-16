@@ -1,11 +1,28 @@
 module.exports = {
 	block: 'page',
-	title: 'Changelog',
+	title: 'whitepaper',
 	favicon: '/favicon.ico',
 	lang: 'ru',
+	prefix: 'og: http://ogp.me/ns#', // для отображения карточек ссылки vk и fb
 	head: [
-		{ elem: 'meta', attrs: { name: 'description', content: '' } },
+		// { elem: 'meta', attrs: { name: 'description', content: '' } },
 		{ elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
+		/* twitter meta */
+		{ elem: 'meta', attrs: { name: 'twitter:card', content: 'summary_large_image' } },
+		{ elem: 'meta', attrs: { name: 'twitter:site', content: '@whitepapertools' } },
+		{ elem: 'meta', attrs: { name: 'twitter:creator', content: '@whitepapertools' } },
+		{ elem: 'meta', attrs: { name: 'twitter:title', content: 'Новая версия whitepape' } },
+		{ elem: 'meta', attrs: { name: 'twitter:description', content: 'whitepaper. Некомпонентная декларативаная открытая дизайн-система' } },
+		{ elem: 'meta', attrs: { name: 'twitter:image:src', content: '../../assets/social-cards/changelog-twitter.jpg' } },
+		/* twitter meta */
+		/* facebook & vk meta */
+		{ elem: 'meta', attrs: { property: 'og:title', content: 'Новая версия whitepaper' } }, // НАЗВАНИЕ СТРАНИЦЫ
+		{ elem: 'meta', attrs: { property: 'og:type', content: 'article' } },
+		{ elem: 'meta', attrs: { property: 'og:url', content: 'http://whitepaper.tools/changelog' } },
+		{ elem: 'meta', attrs: { property: 'og:image', content: '../../assets/social-cards/changelog-fb-vk.jpg' } }, // ССЫЛКА НА КАРТИНКУ‑ОБЛОЖКУ СТРАНИЦЫ
+		{ elem: 'meta', attrs: { property: 'og:description', content: 'whitepaper. Некомпонентная декларативаная открытая дизайн-система' } }, // ОПИСАНИЕ СТРАНИЦЫ, ПОЯВЛЯЕТСЯ ПОД НАЗВАНИЕМ В КАРТОЧКЕ
+		{ elem: 'meta', attrs: { property: 'og:site_name', content: 'whitepaper' } },
+		/* facebook & vk meta */
 		{ elem: 'css', url: 'changelog.min.css' },
 		{ elem: 'css', url: '/assets/bem-grid/bem-grid-l.css' },
 		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
@@ -13,12 +30,9 @@ module.exports = {
 	scripts: [
 		{ elem: 'js', url: 'changelog.min.js' },
 	],
-	// mods: { theme: 'islands' },
-	// attrs: { style: 'background: var(--color-bg-default)' },
 	mix: [
 		{
 			block: 'theme',
-			// mods: { color: 'whitepaper-default', space: 'default', breakpoint: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
 			mods: { color: 'whitepaper-portal-inverse', space: 'default', breakpoint: 'default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'nitti' }
 		},
 		{
@@ -144,37 +158,6 @@ module.exports = {
 						elemMods: { align: 'center', size: 'm' },
 						content: [
 							{
-								// максимум 5 пунктов
-								block: 'change-version',
-								versionLink: '#22_22_22', // href для якоря, # обязательна
-								versionId: '22_22_22', // id для якоря
-								number: 'Версия 22.22.22',
-								description: 'This release brings a refreshed components panel, a new store publishing experience and more.',
-								date: '1 января 2019',
-
-								major: 'Важные изменения', // eng: Notable changes, с тчк.зр. версий – мажор
-								major1: 'MAJOR version when you make incompatible API changes',
-								major2: 'Перед тем, как начать этот курс, тебе надо иметь базовые знания HTML и CSS. Можешь пройти онлайн-курсы, например, в htmlacademy',
-								major3: 'Для отображения логотипов используется блок brand-logo. Через модификации указывается вид и размер логотипа',
-								major4: 'Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married Anne Hathaway, with whom he had three children: Susanna and twins Hamnet and Judith',
-								major5: '',
-
-								minor: 'Изменения', // eng: Changes, с тчк.зр. версий – минор
-								minor1: 'MINOR version when you add functionality in a backwards-compatible manner',
-								minor2: 'Once a versioned package has been released, the contents of that version MUST NOT be modified. Any modifications MUST be released as a new version',
-								minor3: 'Minor version Y (x.Y.z | x > 0) MUST be incremented if new, backwards compatible functionality is introduced to the public API. It MUST be incremented if any public API functionality is marked as deprecated. It MAY be incremented if substantial new functionality or improvements are introduced within the private code. It MAY include patch level changes. Patch version MUST be reset to 0 when minor version is incremented',
-								minor4: 'It is not known definitively when Shakespeare began writing, but contemporary allusions and records of performances show that several of his plays were on the London stage by 1592',
-								minor5: "Scholars differ on the exact meaning of Greene's words, but most agree that Greene was accusing Shakespeare of reaching above his rank in trying to match such university-educated writers as Christopher Marlowe, Thomas Nashe, and Greene himself (the so-called 'University Wits').",
-
-								patch: 'Исправлены ошибки', // eng: Bug fixes, с тчк.зр. версий – патч
-								patch1: 'PATCH version when you make backwards-compatible bug fixes',
-								patch2: 'Patch version Z (x.y.Z | x > 0) MUST be incremented if only backwards compatible bug fixes are introduced. A bug fix is defined as an internal change that fixes incorrect behavior',
-								patch3: 'Мы быстро решили куда ехать хакатонить: в лес или не в лес',
-								patch4: '',
-								patch5: '',
-							},
-							{
-								// максимум 5 пунктов
 								block: 'change-version',
 								versionLink: '#1_0_0', // href для якоря, # обязательна
 								versionId: '1_0_0', // id для якоря
@@ -183,25 +166,22 @@ module.exports = {
 								date: '1 января 2019',
 
 								major: 'Важные изменения', // eng: Notable changes, с тчк.зр. версий – мажор
-								major1: 'MAJOR version when you make incompatible API changes',
-								major2: 'Перед тем, как начать этот курс, тебе надо иметь базовые знания HTML и CSS. Можешь пройти онлайн-курсы, например, в htmlacademy',
-								major3: 'Для отображения логотипов используется блок brand-logo. Через модификации указывается вид и размер логотипа',
-								major4: 'Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married Anne Hathaway, with whom he had three children: Susanna and twins Hamnet and Judith',
-								// major5: '',
+								majorList: [
+									'MAJOR version when you make incompatible API changes',
+									'Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married Anne Hathaway, with whom he had three children: Susanna and twins Hamnet and Judith',
+								],
 
 								minor: 'Изменения', // eng: Changes, с тчк.зр. версий – минор
-								minor1: 'MINOR version when you add functionality in a backwards-compatible manner',
-								minor2: 'Once a versioned package has been released, the contents of that version MUST NOT be modified. Any modifications MUST be released as a new version',
-								minor3: 'Minor version Y (x.Y.z | x > 0) MUST be incremented if new, backwards compatible functionality is introduced to the public API. It MUST be incremented if any public API functionality is marked as deprecated. It MAY be incremented if substantial new functionality or improvements are introduced within the private code. It MAY include patch level changes. Patch version MUST be reset to 0 when minor version is incremented',
-								minor4: 'It is not known definitively when Shakespeare began writing, but contemporary allusions and records of performances show that several of his plays were on the London stage by 1592',
-								minor5: "Scholars differ on the exact meaning of Greene's words, but most agree that Greene was accusing Shakespeare of reaching above his rank in trying to match such university-educated writers as Christopher Marlowe, Thomas Nashe, and Greene himself (the so-called 'University Wits').",
+								minorList: [
+									'MINOR version when you add functionality in a backwards-compatible manner',
+									'Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married Anne Hathaway, with whom he had three children: Susanna and twins Hamnet and Judith',
+								],
 
 								patch: 'Исправлены ошибки', // eng: Bug fixes, с тчк.зр. версий – патч
-								patch1: 'PATCH version when you make backwards-compatible bug fixes',
-								patch2: 'Patch version Z (x.y.Z | x > 0) MUST be incremented if only backwards compatible bug fixes are introduced. A bug fix is defined as an internal change that fixes incorrect behavior',
-								patch3: 'Мы быстро решили куда ехать хакатонить: в лес или нет',
-								// patch4: '',
-								// patch5: '',
+								patchList: [
+									'PATCH version when you make backwards-compatible bug fixes',
+									'Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married Anne Hathaway, with whom he had three children: Susanna and twins Hamnet and Judith',
+								]
 							},
 						]
 					}
