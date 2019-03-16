@@ -12,7 +12,7 @@ $color-base-system: #778a9b; /* Цвет системнный */
 
 /* Цвета фона */
 $color-bg-brand: $color-base-project; /* Цвет фона брендированый */
-$color-bg-action: color($color-base-project l(+15%)); /* Цвет фона действия */
+$color-bg-action: color($color-base-project l(+20%)); /* Цвет фона действия */
 $color-bg-selection: color($color-base-project h(-1) l(+31%)); /* Цвет фона выделения */
 $color-bg-hover: color($color-base-base a(15%)); /* Цвет фона при наведении */
 $color-bg-border: color($color-base-phantom a(5%)); /* Цвет границ */
@@ -46,7 +46,7 @@ $color-link-external: $color-base-path; /* Цвет дополнительной
 $color-link-minor: color($color-base-path h(+22) s(-80%) l(+13%)); /* Цвет второстепенной ссылки */
 $color-link-hover: color($color-base-path l(-7%)); /* Цвет ховера ссылки */
 
-.theme_color_whitepaper-inverse {
+.theme_color_portal-2 {
 	/* Цвета блоков */
 	--color-bg-brand: $color-bg-brand; /* Цвет фона брендированый */
 	--color-bg-action: $color-bg-action; /* Цвет фона действия */

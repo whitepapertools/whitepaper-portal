@@ -353,7 +353,7 @@
 	</div>
 </div>
 
-Postcss-переменные присваиваются как значение в <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/--*'>custom properties</a>. Чтобы применить цвет к своему локальном блоку используй custom properties. 
+Postcss-переменные присваиваются как значение в <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/--*'>custom properties</a>. Чтобы применить цвет к своему локальном блоку используй custom properties.
 
 ```css
 background: var(--color-bg-brand);

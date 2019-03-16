@@ -554,11 +554,11 @@ module.exports = {
                                                     content: [
                                                     {
                                                         block: 'img',
-                                                        attrs: { style: 'background-color: #00C2FF' },
+                                                        attrs: { style: 'background-color: var(--color-bg-brand)' },
                                                         mix: { block: 'decorator', mods: { 'indent-b': 's' } },
                                                         content: [
                                                         {
-                                                            html: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="#1B1B1B" d="M49.5 31l20.5 35h-41z"/></svg>`
+                                                            html: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="var(--color-bg-default)" d="M49.5 31l20.5 35h-41z"/></svg>`
                                                         }]
                                                     },
                                                     {
@@ -578,11 +578,11 @@ module.exports = {
                                                     content: [
                                                     {
                                                         block: 'img',
-                                                        attrs: { style: 'background-color: #2F80ED;' },
+                                                        attrs: { style: 'background-color: var(--color-bg-action);' },
                                                         mix: { block: 'decorator', mods: { 'indent-b': 's' } },
                                                         content: [
                                                         {
-                                                            html: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="#1B1B1B" d="M50 10l4.84 25.486 19.263-17.842-11.431 23.396 26.328-3.382-23.337 12.369 23.337 12.369-26.328-3.383 11.431 23.396-19.263-17.842-4.84 25.486-4.84-25.486-19.263 17.842 11.431-23.396-26.328 3.383 23.337-12.369-23.337-12.369 26.328 3.382-11.431-23.396 19.263 17.842z"/></svg>`
+                                                            html: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="var(--color-bg-default)" d="M50 10l4.84 25.486 19.263-17.842-11.431 23.396 26.328-3.382-23.337 12.369 23.337 12.369-26.328-3.383 11.431 23.396-19.263-17.842-4.84 25.486-4.84-25.486-19.263 17.842 11.431-23.396-26.328 3.383 23.337-12.369-23.337-12.369 26.328 3.382-11.431-23.396 19.263 17.842z"/></svg>`
                                                         }]
                                                     },
                                                     {
@@ -602,11 +602,11 @@ module.exports = {
                                                     content: [
                                                     {
                                                         block: 'img',
-                                                        attrs: { style: 'background-color: #00C2FF;' },
+                                                        attrs: { style: 'background-color: var(--color-bg-brand);' },
                                                         mix: { block: 'decorator', mods: { 'indent-b': 's' } },
                                                         content: [
                                                         {
-                                                            html: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="#1B1B1B" d="M50.5 28l6.077 16.423 16.423 6.077-16.423 6.077-6.077 16.423-6.077-16.423-16.423-6.077 16.423-6.077z"/></svg>`
+                                                            html: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="var(--color-bg-default)" d="M50.5 28l6.077 16.423 16.423 6.077-16.423 6.077-6.077 16.423-6.077-16.423-16.423-6.077 16.423-6.077z"/></svg>`
                                                         }]
                                                     },
                                                     {
@@ -626,11 +626,11 @@ module.exports = {
                                                     content: [
                                                     {
                                                         block: 'img',
-                                                        attrs: { style: 'background-color: #2F80ED;' },
+                                                        attrs: { style: 'background-color: var(--color-bg-action);' },
                                                         mix: { block: 'decorator', mods: { 'indent-b': 's' } },
                                                         content: [
                                                         {
-                                                            html: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="#1B1B1B" d="M50.472 7l1.665 27.123 7.011-26.282-3.745 26.922 12.088-24.432-9.011 25.686 16.7-21.642-13.931 23.462 20.67-18.021-18.316 20.337 23.847-13.707-21.996 16.431 26.106-8.866-24.832 11.893 27.362-3.685-26.713 6.898 27.567 1.638-27.567 1.638 26.713 6.898-27.362-3.685 24.832 11.893-26.106-8.866 21.996 16.431-23.847-13.707 18.316 20.337-20.67-18.021 13.931 23.462-16.7-21.642 9.011 25.686-12.088-24.432 3.745 26.922-7.011-26.283-1.665 27.123-1.665-27.123-7.011 26.283 3.745-26.922-12.088 24.432 9.011-25.686-16.7 21.642 13.931-23.462-20.67 18.021 18.316-20.337-23.846 13.707 21.996-16.431-26.106 8.866 24.832-11.893-27.362 3.685 26.713-6.898-27.567-1.638 27.567-1.638-26.713-6.898 27.362 3.685-24.832-11.893 26.106 8.866-21.996-16.431 23.846 13.707-18.316-20.337 20.67 18.021-13.931-23.462 16.7 21.642-9.011-25.686 12.088 24.432-3.745-26.922 7.011 26.282z"/></svg>`
+                                                            html: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="var(--color-bg-default)" d="M50.472 7l1.665 27.123 7.011-26.282-3.745 26.922 12.088-24.432-9.011 25.686 16.7-21.642-13.931 23.462 20.67-18.021-18.316 20.337 23.847-13.707-21.996 16.431 26.106-8.866-24.832 11.893 27.362-3.685-26.713 6.898 27.567 1.638-27.567 1.638 26.713 6.898-27.362-3.685 24.832 11.893-26.106-8.866 21.996 16.431-23.847-13.707 18.316 20.337-20.67-18.021 13.931 23.462-16.7-21.642 9.011 25.686-12.088-24.432 3.745 26.922-7.011-26.283-1.665 27.123-1.665-27.123-7.011 26.283 3.745-26.922-12.088 24.432 9.011-25.686-16.7 21.642 13.931-23.462-20.67 18.021 18.316-20.337-23.846 13.707 21.996-16.431-26.106 8.866 24.832-11.893-27.362 3.685 26.713-6.898-27.567-1.638 27.567-1.638-26.713-6.898 27.362 3.685-24.832-11.893 26.106 8.866-21.996-16.431 23.846 13.707-18.316-20.337 20.67 18.021-13.931-23.462 16.7 21.642-9.011-25.686 12.088 24.432-3.745-26.922 7.011 26.282z"/></svg>`
                                                         }]
                                                     },
                                                     {
@@ -671,10 +671,10 @@ module.exports = {
                                                             content: [
                                                             {
                                                                 block: 'img',
-                                                                attrs: { style: 'background-color: #2F80ED;' },
+                                                                attrs: { style: 'background-color: var(--color-bg-action);' },
                                                                 content: [
                                                                 {
-                                                                    html: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="#1B1B1B" d="M50.5 28l6.077 16.423 16.423 6.077-16.423 6.077-6.077 16.423-6.077-16.423-16.423-6.077 16.423-6.077z"/></svg>`
+                                                                    html: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="var(--color-bg-default)" d="M50.5 28l6.077 16.423 16.423 6.077-16.423 6.077-6.077 16.423-6.077-16.423-16.423-6.077 16.423-6.077z"/></svg>`
                                                                 }]
                                                             }]
                                                         },
@@ -725,11 +725,11 @@ module.exports = {
                                                             content: [
                                                             {
                                                                 block: 'img',
-                                                                attrs: { style: 'background-color: #00C2FF' },
+                                                                attrs: { style: 'background-color: var(--color-bg-brand)' },
                                                                 mix: { block: 'decorator', mods: { 'indent-b': 's' } },
                                                                 content: [
                                                                 {
-                                                                    html: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="#1B1B1B" d="M49.5 31l20.5 35h-41z"/></svg>`
+                                                                    html: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="var(--color-bg-default)" d="M49.5 31l20.5 35h-41z"/></svg>`
                                                                 }]
                                                             }]
                                                         },
@@ -796,10 +796,10 @@ module.exports = {
                                                             content: [
                                                             {
                                                                 block: 'img',
-                                                                attrs: { style: 'background-color: #00C2FF' },
+                                                                attrs: { style: 'background-color: var(--color-bg-brand)' },
                                                                 content: [
                                                                 {
-                                                                    html: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="#1B1B1B" d="M49.5 31l20.5 35h-41z"/></svg>`
+                                                                    html: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="var(--color-bg-default)" d="M49.5 31l20.5 35h-41z"/></svg>`
                                                                 }]
                                                             }]
                                                         },
@@ -850,10 +850,10 @@ module.exports = {
                                                             content: [
                                                             {
                                                                 block: 'img',
-                                                                attrs: { style: 'background-color: #2F80ED;' },
+                                                                attrs: { style: 'background-color: var(--color-bg-action);' },
                                                                 content: [
                                                                 {
-                                                                    html: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="#1B1B1B" d="M50 10l4.84 25.486 19.263-17.842-11.431 23.396 26.328-3.382-23.337 12.369 23.337 12.369-26.328-3.383 11.431 23.396-19.263-17.842-4.84 25.486-4.84-25.486-19.263 17.842 11.431-23.396-26.328 3.383 23.337-12.369-23.337-12.369 26.328 3.382-11.431-23.396 19.263 17.842z"/></svg>`
+                                                                    html: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="var(--color-bg-default)" d="M50 10l4.84 25.486 19.263-17.842-11.431 23.396 26.328-3.382-23.337 12.369 23.337 12.369-26.328-3.383 11.431 23.396-19.263-17.842-4.84 25.486-4.84-25.486-19.263 17.842 11.431-23.396-26.328 3.383 23.337-12.369-23.337-12.369 26.328 3.382-11.431-23.396 19.263 17.842z"/></svg>`
                                                                 }]
                                                             }]
                                                         },
@@ -1050,8 +1050,7 @@ module.exports = {
                                             mix: { block: 'theme', mods: { color: 'whitepaper-portal-inverse' } },
                                             content: {
                                                 elem: 'color',
-                                                elemMods: { size: 'm' },
-                                                attrs: { style: 'background-color: var(--color-typo-primary);' }
+                                                elemMods: { size: 'm', view: 'primary' }
                                             }
                                         }]
                                     },
@@ -1067,8 +1066,7 @@ module.exports = {
                                             mix: { block: 'theme', mods: { color: 'whitepaper-portal-inverse' } },
                                             content: {
                                                 elem: 'color',
-                                                elemMods: { size: 'm' },
-                                                attrs: { style: 'background-color: var(--color-typo-secondary);' }
+                                                elemMods: { size: 'm', view: 'secondary' }
                                             }
                                         }]
                                     },
@@ -1084,8 +1082,7 @@ module.exports = {
                                             mix: { block: 'theme', mods: { color: 'whitepaper-portal-inverse' } },
                                             content: {
                                                 elem: 'color',
-                                                elemMods: { size: 'm' },
-                                                attrs: { style: 'background-color: var(--color-typo-ghost);' }
+                                                elemMods: { size: 'm', view: 'ghost' }
                                             }
                                         }]
                                     },
@@ -1101,8 +1098,7 @@ module.exports = {
                                             mix: { block: 'theme', mods: { color: 'whitepaper-portal-inverse' } },
                                             content: {
                                                 elem: 'color',
-                                                elemMods: { size: 'm' },
-                                                attrs: { style: 'background-color: var(--color-typo-brand);' }
+                                                elemMods: { size: 'm', view: 'brand' }
                                             }
                                         }]
                                     }]
@@ -1227,8 +1223,8 @@ module.exports = {
                                         {
                                             block: 'control',
                                             mods: { type: 'palette' },
-                                            attrs: { palette: 'whitepaper-portal-2' },
-                                            mix: { block: 'theme', mods: { color: 'whitepaper-portal-2' } },
+                                            attrs: { palette: 'portal-2' },
+                                            mix: { block: 'theme', mods: { color: 'portal-2' } },
                                             content: [
                                             {
                                                 elem: 'color',
@@ -1255,8 +1251,8 @@ module.exports = {
                                         {
                                             block: 'control',
                                             mods: { type: 'palette' },
-                                            attrs: { palette: 'whitepaper-portal-3' },
-                                            mix: { block: 'theme', mods: { color: 'whitepaper-portal-3' } },
+                                            attrs: { palette: 'portal-3' },
+                                            mix: { block: 'theme', mods: { color: 'portal-3' } },
                                             content: [
                                             {
                                                 elem: 'color',
@@ -1283,8 +1279,8 @@ module.exports = {
                                         {
                                             block: 'control',
                                             mods: { type: 'palette' },
-                                            attrs: { palette: 'whitepaper-portal-4' },
-                                            mix: { block: 'theme', mods: { color: 'whitepaper-portal-4' } },
+                                            attrs: { palette: 'portal-4' },
+                                            mix: { block: 'theme', mods: { color: 'portal-4' } },
                                             content: [
                                             {
                                                 elem: 'color',
@@ -1311,8 +1307,8 @@ module.exports = {
                                         {
                                             block: 'control',
                                             mods: { type: 'palette' },
-                                            attrs: { palette: 'whitepaper-portal-5' },
-                                            mix: { block: 'theme', mods: { color: 'whitepaper-portal-5' } },
+                                            attrs: { palette: 'portal-5' },
+                                            mix: { block: 'theme', mods: { color: 'portal-5' } },
                                             content: [
                                             {
                                                 elem: 'color',
