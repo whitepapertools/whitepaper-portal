@@ -425,38 +425,146 @@ module.exports = {
 								content: 'Ответы на частые вопросы'
 							},
 							{
-								block: 'tpl-grid',
-								mods: { 'xs-ratio': '1', 's-ratio': '1-1', 's-ratio': '1-1-1', 'col-gap': 'full', 'row-gap': 'half' },
+								block: 'faq',
+								mix: { block: 'tpl-grid', mods: { 'xs-ratio': '1', 's-ratio': '1-1', 's-ratio': '1-1-1', 'col-gap': 'full', 'row-gap': 'full' } },
 								content: [
 									{
-										block: 'text',
-										mods: { size: 'xl', view: 'secondary', weight: 'light' },
-										content: '— Можно ли попробовать в песочнице?'
+										elem: 'item',
+										mix: { block: 'e-accordion', elem: 'item' },
+										content: [
+											{
+												elem: 'question',
+												mix: [
+													{ block: 'e-accordion', elem: 'short' },
+													{ block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light', display: 'inline' } },
+												],
+												content: '— Можно ли попробовать в песочнице?'
+											},
+											{
+												elem: 'answer',
+												mix: { block: 'e-accordion', elem: 'more' },
+												content: {
+													block: 'text',
+													mods: { size: 'xl', view: 'secondary', weight: 'light' },
+													content: '— Да можно!'
+												}
+											}
+										]
 									},
 									{
-										block: 'text',
-										mods: { size: 'xl', view: 'secondary', weight: 'light' },
-										content: '— Можно ли добавить в готовый проект?'
+										elem: 'item',
+										mix: { block: 'e-accordion', elem: 'item' },
+										content: [
+											{
+												elem: 'question',
+												mix: [
+													{ block: 'e-accordion', elem: 'short' },
+													{ block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light', display: 'inline' } },
+												],
+												content: '— Можно ли добавить в готовый проект?'
+											},
+											{
+												elem: 'answer',
+												mix: { block: 'e-accordion', elem: 'more' },
+												content: {
+													block: 'text',
+													mods: { size: 'xl', view: 'secondary', weight: 'light' },
+													content: '— Да можно!'
+												}
+											}
+										]
 									},
 									{
-										block: 'text',
-										mods: { size: 'xl', view: 'secondary', weight: 'light' },
-										content: '— Как передавать UI в разработку?'
+										elem: 'item',
+										mix: { block: 'e-accordion', elem: 'item' },
+										content: [
+											{
+												elem: 'question',
+												mix: [
+													{ block: 'e-accordion', elem: 'short' },
+													{ block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light', display: 'inline' } },
+												],
+												content: '— Как передавать UI в разработку?'
+											},
+											{
+												elem: 'answer',
+												mix: { block: 'e-accordion', elem: 'more' },
+												content: {
+													block: 'text',
+													mods: { size: 'xl', view: 'secondary', weight: 'light' },
+													content: '— Да можно!'
+												}
+											}
+										]
 									},
 									{
-										block: 'text',
-										mods: { size: 'xl', view: 'secondary', weight: 'light' },
-										content: '— Можно ли использовать с Реактом?'
+										elem: 'item',
+										mix: { block: 'e-accordion', elem: 'item' },
+										content: [
+											{
+												elem: 'question',
+												mix: [
+													{ block: 'e-accordion', elem: 'short' },
+													{ block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light', display: 'inline' } },
+												],
+												content: '— Можно ли использовать с Реактом?'
+											},
+											{
+												elem: 'answer',
+												mix: { block: 'e-accordion', elem: 'more' },
+												content: {
+													block: 'text',
+													mods: { size: 'xl', view: 'secondary', weight: 'light' },
+													content: '— Да можно!'
+												}
+											}
+										]
 									},
 									{
-										block: 'text',
-										mods: { size: 'xl', view: 'secondary', weight: 'light' },
-										content: '— Можно ли переопределить блоки?'
+										elem: 'item',
+										mix: { block: 'e-accordion', elem: 'item' },
+										content: [
+											{
+												elem: 'question',
+												mix: [
+													{ block: 'e-accordion', elem: 'short' },
+													{ block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light', display: 'inline' } },
+												],
+												content: '— Можно ли переопределить блоки?'
+											},
+											{
+												elem: 'answer',
+												mix: { block: 'e-accordion', elem: 'more' },
+												content: {
+													block: 'text',
+													mods: { size: 'xl', view: 'secondary', weight: 'light' },
+													content: '— Да можно!'
+												}
+											}
+										]
 									},
 									{
-										block: 'text',
-										mods: { size: 'xl', view: 'secondary', weight: 'light' },
-										content: '— В чём отличиет от Bootstrap?'
+										elem: 'item',
+										mix: { block: 'e-accordion', elem: 'item' },
+										content: [
+											{
+												elem: 'question',
+												mix: [
+													{ block: 'e-accordion', elem: 'short' },
+													{ block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light', display: 'inline' } },
+												],
+												content: '— В чём отличиет от Bootstrap?'
+											},
+											{
+												elem: 'answer',
+												mix: { block: 'e-accordion', elem: 'more' },
+												content: {
+													block: 'text',
+													mods: { size: 'xl', view: 'secondary', weight: 'light' },
+													content: '— Да можно!'
+												}
+											}
+										]
 									}
 								]
 							}
@@ -467,185 +575,182 @@ module.exports = {
 
 				/* Community / Events */
 				{
-					elem: 'content',
-					mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
-					content: {
-						elem: 'container',
-						elemMods: { align: 'center', size: 'm' },
-						content: [
-							{
-								block: 'tpl-grid',
-								mods: { 'xs-ratio': '1', 's-ratio': '1-1' },
-								content: [
-									{
-										block: 'community',
-										content: [
-											{
-												block: 'text',
-												mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-												mods: { size: 'xxxl', view: 'primary' },
-												content: 'Сообщество'
-											},
-											{
-												block: 'pt-list',
-												content: [
-													{
-														elem: 'item',
-														elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
-														content: [
-															{
-																block: 'text',
-																mods: { size: 'l', view: 'secondary', weight: 'light' },
-																content: 'Блог'
-															},
-															{
-																block: 'text',
-																mods: { size: 'l', view: 'secondary', weight: 'light' },
-																content: 'Medium'
-															}
-														]
-													},
-													{
-														elem: 'item',
-														elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
-														content: [
-															{
-																block: 'text',
-																mods: { size: 'l', view: 'secondary', weight: 'light' },
-																content: 'Борд с задачами'
-															},
-															{
-																block: 'text',
-																mods: { size: 'l', view: 'secondary', weight: 'light' },
-																content: '26 открытых'
-															}
-														]
-													},
-													{
-														elem: 'item',
-														elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
-														content: [
-															{
-																block: 'text',
-																mods: { size: 'l', view: 'secondary', weight: 'light' },
-																content: 'Telegram'
-															},
-															{
-																block: 'text',
-																mods: { size: 'l', view: 'secondary', weight: 'light' },
-																content: '@whitepapertools'
-															}
-														]
-													},
-													{
-														elem: 'item',
-														elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
-														content: [
-															{
-																block: 'text',
-																mods: { size: 'l', view: 'secondary', weight: 'light' },
-																content: 'Codepen'
-															},
-															{
-																block: 'text',
-																mods: { size: 'l', view: 'secondary', weight: 'light' },
-																content: '60 примеров'
-															}
-														]
-													},
-													{
-														elem: 'item',
-														elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
-														content: [
-															{
-																block: 'text',
-																mods: { size: 'l', view: 'secondary', weight: 'light' },
-																content: 'Twitter'
-															},
-															{
-																block: 'text',
-																mods: { size: 'l', view: 'secondary', weight: 'light' },
-																content: '@whitepapertools'
-															}
-														]
-													}
-												]
-											}
-										]
-									},
-									{
-										block: 'events',
-										mix: [
-											{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
-											{ block: 'pt-card' }
-										],
-										content: [
-											{
-												elem: 'content',
-												mix: { block: 'pt-card', elem: 'content' },
-												content: [
-													{
-														block: 'text',
-														mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-														mods: { size: 'xxxl', view: 'primary' },
-														content: 'События'
-													},
-													{
-														block: 'pt-list',
-														content: [
-															{
-																elem: 'item',
-																elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
-																content: [
-																	{
-																		block: 'text',
-																		mods: { size: 'l', view: 'primary', weight: 'light' },
-																		content: 'Dribbble Meetup, 2018'
-																	},
-																	{
-																		block: 'text',
-																		mods: { size: 'l', view: 'primary', weight: 'light' },
-																		content: 'Санкт-Петербург'
-																	}
-																]
-															},
-															{
-																elem: 'item',
-																elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
-																content: [
-																	{
-																		block: 'text',
-																		mods: { size: 'l', view: 'primary', weight: 'light' },
-																		content: 'Web Standarts, 2018'
-																	},
-																	{
-																		block: 'text',
-																		mods: { size: 'l', view: 'primary', weight: 'light' },
-																		content: 'Москва'
-																	}
-																]
-															}
-														]
-													}
-												]
-											},
-											{
-												elem: 'footer',
-												mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
-												content: [
-													{
-														block: 'text',
-														mods: { size: 'l', view: 'secondary', weight: 'light' },
-														content: 'Если у вашей продуктовой команды есть потребность в персональной консультации, вы всегда можете связатьс с нами и договориться о частной лекции. Просто напишите нам на почту whatsup@whitepaper.tools'
-													}
-												]
-											}
-										]
-									}
-								]
-							}
-						]
-					}
+					elem: 'container',
+					elemMods: { align: 'center', size: 'm' },
+					content: [
+						{
+							block: 'tpl-grid',
+							mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
+							mods: { 'xs-ratio': '1', 's-ratio': '1-1' },
+							content: [
+								{
+									block: 'community',
+									content: [
+										{
+											block: 'text',
+											mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
+											mods: { size: 'xxxl', view: 'primary' },
+											content: 'Сообщество'
+										},
+										{
+											block: 'pt-list',
+											content: [
+												{
+													elem: 'item',
+													elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'l', view: 'secondary', weight: 'light' },
+															content: 'Блог'
+														},
+														{
+															block: 'text',
+															mods: { size: 'l', view: 'secondary', weight: 'light' },
+															content: 'Medium'
+														}
+													]
+												},
+												{
+													elem: 'item',
+													elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'l', view: 'secondary', weight: 'light' },
+															content: 'Борд с задачами'
+														},
+														{
+															block: 'text',
+															mods: { size: 'l', view: 'secondary', weight: 'light' },
+															content: '26 открытых'
+														}
+													]
+												},
+												{
+													elem: 'item',
+													elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'l', view: 'secondary', weight: 'light' },
+															content: 'Telegram'
+														},
+														{
+															block: 'text',
+															mods: { size: 'l', view: 'secondary', weight: 'light' },
+															content: '@whitepapertools'
+														}
+													]
+												},
+												{
+													elem: 'item',
+													elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'l', view: 'secondary', weight: 'light' },
+															content: 'Codepen'
+														},
+														{
+															block: 'text',
+															mods: { size: 'l', view: 'secondary', weight: 'light' },
+															content: '60 примеров'
+														}
+													]
+												},
+												{
+													elem: 'item',
+													elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'l', view: 'secondary', weight: 'light' },
+															content: 'Twitter'
+														},
+														{
+															block: 'text',
+															mods: { size: 'l', view: 'secondary', weight: 'light' },
+															content: '@whitepapertools'
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									block: 'events',
+									mix: [
+										{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
+										{ block: 'pt-card' }
+									],
+									content: [
+										{
+											elem: 'content',
+											mix: { block: 'pt-card', elem: 'content' },
+											content: [
+												{
+													block: 'text',
+													mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
+													mods: { size: 'xxxl', view: 'primary' },
+													content: 'События'
+												},
+												{
+													block: 'pt-list',
+													content: [
+														{
+															elem: 'item',
+															elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
+															content: [
+																{
+																	block: 'text',
+																	mods: { size: 'l', view: 'primary', weight: 'light' },
+																	content: 'Dribbble Meetup, 2018'
+																},
+																{
+																	block: 'text',
+																	mods: { size: 'l', view: 'primary', weight: 'light' },
+																	content: 'Санкт-Петербург'
+																}
+															]
+														},
+														{
+															elem: 'item',
+															elemMods: { distribute: 'between', 'vertical-align': 'center', border: 'bottom', 'space-v': 'xl' },
+															content: [
+																{
+																	block: 'text',
+																	mods: { size: 'l', view: 'primary', weight: 'light' },
+																	content: 'Web Standarts, 2018'
+																},
+																{
+																	block: 'text',
+																	mods: { size: 'l', view: 'primary', weight: 'light' },
+																	content: 'Москва'
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											elem: 'footer',
+											mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
+											content: [
+												{
+													block: 'text',
+													mods: { size: 'l', view: 'secondary', weight: 'light' },
+													content: 'Если у вашей продуктовой команды есть потребность в персональной консультации, вы всегда можете связатьс с нами и договориться о частной лекции. Просто напишите нам на почту whatsup@whitepaper.tools'
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
 				},
 				/* Community / Events */
 
@@ -659,7 +764,7 @@ module.exports = {
 						content: [
 							{
 								block: 'tpl-grid',
-								mods: { 'xs-ratio': '1', 's-ratio': '1-1', 'col-gap': 'full', 'row-gap': 'full' },
+								mods: { 'xs-ratio': '1', 'm-ratio': '1-1', 'col-gap': 'full', 'row-gap': 'full' },
 								content: [
 									{
 										block: 'contribution',
@@ -1039,10 +1144,9 @@ module.exports = {
 									{
 										elem: 'item',
 										content: [
-											{
-												block: 'text',
-												attrs: { style: 'width: 252px; margin-right: 20px;' },
-												mods: { size: 'l', view: 'secondary' },
+											{	
+												elem: 'label',
+												mix: { block: 'text', mods: { size: 'l', view: 'secondary' } },
 												content: 'В работающем проекте:'
 											},
 											{

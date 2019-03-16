@@ -10,7 +10,7 @@
 	}
 }
 
-@media screen and (min-width: $screen-s) and (max-width: $screen-s-max) {
+@media screen and (min-width: $screen-s) and (max-width: $screen-m-max) {
 	.layers {
 		display: none;
 	}
