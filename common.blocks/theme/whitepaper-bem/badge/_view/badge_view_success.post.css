@@ -1,8 +1,0 @@
-.badge_view_success {
-	color: var(--color-typo-success);
-
-	&::before {
-		background: var(--color-bg-success);
-		opacity: 0.15;
-	}
-}

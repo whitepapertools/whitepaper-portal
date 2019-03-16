@@ -3,7 +3,7 @@
 <div class="preview">
 	<div class="pt-form pt-form_shadow_cloud pt-form_view_default decorator decorator_space-a_l component component_whitepaper_default" style="width: 300px">
 		<div class="pt-form__item pt-form__item_space-v_xs pt-form__item_distribute_default pt-form__item_vertical-align_center">
-			<div class="pt-form__label text text_size_m text_view_secondary">First name</div>
+			<div class="pt-form__label text text_size_m text_view_secondary">Name</div>
 			<div class="pt-form__control">
 				<span class="input input_theme_islands input_size_m i-bem input_js_inited" data-bem="{&quot;input&quot;:{}}">
 					<span class="input__box">
@@ -65,7 +65,7 @@ view                  | default  | Фон
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<div class="pt-form pt-form_border_all pt-form_view_default decorator decorator_space-a_l component component_whitepaper_default" style="width: 300px">
 			<div class="pt-form__item pt-form__item_space-v_xs pt-form__item_distribute_default pt-form__item_vertical-align_center">
-				<div class="pt-form__label text text_size_m text_view_secondary">First name</div>
+				<div class="pt-form__label text text_size_m text_view_secondary">Name</div>
 				<div class="pt-form__control">
 					<span class="input input_theme_islands input_size_m i-bem input_js_inited" data-bem="{&quot;input&quot;:{}}">
 						<span class="input__box">
@@ -91,7 +91,7 @@ ___
 ------------------------------------ | ---------------------------------------------------
 [item](#Элемент-item)                | Структурная единица паттерна, обычно строчка формы
 [label](#Элементы-label-и-control)   | Лейбл для инпута или другого контрола
-[control](#Элементы-label-и-control) | Контейнер для инпута или другого контрола 
+[control](#Элементы-label-и-control) | Контейнер для инпута или другого контрола
 
 ### Элемент item
 
@@ -126,7 +126,7 @@ space-l                      | xs / s / m / l / xl / xxl / xxxl | Внутрен
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<div class="pt-form pt-form_border_all pt-form_view_default decorator decorator_space-a_l component component_whitepaper_default" style="width: 300px">
 			<div class="pt-form__item pt-form__item_space-v_xs pt-form__item_distribute_default pt-form__item_vertical-align_center">
-				<div class="pt-form__label text text_size_m text_view_secondary">First name</div>
+				<div class="pt-form__label text text_size_m text_view_secondary">Name</div>
 				<div class="pt-form__control">
 					<span class="input input_theme_islands input_size_m i-bem input_js_inited" data-bem="{&quot;input&quot;:{}}">
 						<span class="input__box">
@@ -161,7 +161,7 @@ space-l                      | xs / s / m / l / xl / xxl / xxxl | Внутрен
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<div class="pt-form pt-form_border_all pt-form_view_default decorator decorator_space-a_l component component_whitepaper_default" style="width: 300px">
 			<div class="pt-form__item pt-form__item_space-v_xs pt-form__item_distribute_default pt-form__item_vertical-align_center">
-				<div class="pt-form__label text text_size_m text_view_secondary">First name</div>
+				<div class="pt-form__label text text_size_m text_view_secondary">Name</div>
 				<div class="pt-form__control">
 					<span class="input input_theme_islands input_size_m i-bem input_js_inited" data-bem="{&quot;input&quot;:{}}">
 						<span class="input__box">
@@ -198,7 +198,7 @@ space-l                      | xs / s / m / l / xl / xxl / xxxl | Внутрен
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<div class="pt-form pt-form_border_all pt-form_view_default decorator decorator_space-a_l component component_whitepaper_default" style="width: 300px">
 			<div class="pt-form__item pt-form__item_space-v_xs pt-form__item_distribute_default pt-form__item_vertical-align_center">
-				<div class="pt-form__label text text_size_m text_view_secondary">First name</div>
+				<div class="pt-form__label text text_size_m text_view_secondary">Name</div>
 				<div class="pt-form__control">
 					<span class="input input_theme_islands input_size_m i-bem input_js_inited" data-bem="{&quot;input&quot;:{}}">
 						<span class="input__box">
@@ -233,7 +233,7 @@ space-l                      | xs / s / m / l / xl / xxl / xxxl | Внутрен
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<div class="pt-form pt-form_border_all pt-form_view_default decorator decorator_space-a_l component component_whitepaper_default" style="width: 300px">
 			<div class="pt-form__item pt-form__item_space-v_xs pt-form__item_distribute_default pt-form__item_vertical-align_default">
-				<div class="pt-form__label text text_size_m text_view_secondary">First name</div>
+				<div class="pt-form__label text text_size_m text_view_secondary">Name</div>
 				<div class="pt-form__control">
 					<span class="input input_theme_islands input_size_m i-bem input_js_inited" data-bem="{&quot;input&quot;:{}}">
 						<span class="input__box">
@@ -268,7 +268,7 @@ space-l                      | xs / s / m / l / xl / xxl / xxxl | Внутрен
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
 		<div class="pt-form pt-form_border_all pt-form_view_default decorator decorator_space-a_l component component_whitepaper_default" style="width: 300px">
 			<div class="pt-form__item pt-form__item_space-v_xs pt-form__item_distribute_default pt-form__item_vertical-align_baseline">
-				<div class="pt-form__label text text_size_m text_view_secondary">First name</div>
+				<div class="pt-form__label text text_size_m text_view_secondary">Name</div>
 				<div class="pt-form__control">
 					<span class="input input_theme_islands input_size_m i-bem input_js_inited" data-bem="{&quot;input&quot;:{}}">
 						<span class="input__box">
@@ -310,7 +310,7 @@ ___
 
 <div class="pt-form pt-form_border_all pt-form_view_default decorator decorator_space-a_l component component_whitepaper_default" style="width: 300px">
 	<div class="pt-form__item pt-form__item_space-v_xs pt-form__item_distribute_default pt-form__item_vertical-align_center">
-		<div class="pt-form__label text text_size_m text_view_secondary">First name</div>
+		<div class="pt-form__label text text_size_m text_view_secondary">Name</div>
 		<div class="pt-form__control">
 			<span class="input input_theme_islands input_size_m i-bem input_js_inited" data-bem="{&quot;input&quot;:{}}">
 				<span class="input__box">
@@ -350,7 +350,7 @@ ___
 <div class="preview">
 	<div class="pt-form pt-form_border_all pt-form_view_default decorator decorator_space-a_l component component_whitepaper_default" style="width: 300px">
 		<div class="pt-form__item pt-form__item_space-v_xs pt-form__item_distribute_default pt-form__item_vertical-align_center">
-			<div class="pt-form__label text text_size_m text_view_secondary">First name</div>
+			<div class="pt-form__label text text_size_m text_view_secondary">Name</div>
 			<div class="pt-form__control">
 				<span class="input input_theme_islands input_size_m i-bem input_js_inited" data-bem="{&quot;input&quot;:{}}">
 					<span class="input__box">
