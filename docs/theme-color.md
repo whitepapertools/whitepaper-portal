@@ -2,7 +2,7 @@
 
 Переменные цветов используются в модификациях блоков и типографики, подчёркивая их смысл или состояние. Все переменные для цветов называются по смыслу, месту их использования. Они не обозначают значение цвета.
 
-?> Для математики изменений цветов мы используем плагин [postcss-color-function](https://github.com/postcss/postcss), но также подойдёт любой другой популярный препроцессор.
+?> Для математики изменений цветов используется плагин [postcss-color-function](https://github.com/postcss/postcss), но также подойдёт любой другой популярный препроцессор.
 
 Цвета делятся на несколько частей:
 ## Базовые цвета
@@ -51,7 +51,7 @@
 </div>
 
 ## Статусные цвета
-5 цветов для статусов. Они не наследуются от основной палитры, но влияют на цвета статусные текста и фонов блоков. С префиксом `color-base-`
+Их всего 5. Они не наследуются от основной палитры, но влияют на цвета текста и фонов блоков. С префиксом `color-base-`
 
 <div class="tpl-grid tpl-grid_s-ratio_1-1 tpl-grid_col-gap_two-thirds tpl-grid_row-gap_third decorator decorator_indent-b_xxxxl" style="padding-top: 0px; grid-row-gap: var(--col-gap-third);">
 	<div class="pt-icon-plus pt-icon-plus_vertical-align_center">
@@ -353,7 +353,7 @@
 	</div>
 </div>
 
-Postcss-переменные присваиваются как значение в <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/--*'>custom properties</a>. Чтобы применить цвет к своему локальном блоку используй custom properties.
+Postcss-переменные присваиваются как значение в <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/--*'>custom properties</a>. Чтобы применить цвет к своему локальном блоку нужно использовать custom properties.
 
 ```css
 background: var(--color-bg-brand);
