@@ -1,8 +1,0 @@
-.badge_view_warning {
-	color: var(--color-typo-warning);
-
-	&::before {
-		background: var(--color-bg-warning);
-		opacity: 0.15;
-	}
-}

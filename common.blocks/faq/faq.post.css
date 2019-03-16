@@ -1,0 +1,11 @@
+.faq {
+    &__question {
+        &:hover {
+            border-bottom: 1px dashed var(--color-typo-secondary);
+        }
+    }
+    &__answer {
+        margin-top: 8px;
+        padding-top: 8px;
+    }
+}

@@ -1,6 +1,6 @@
 module.exports = {
 	block: 'page',
-	title: 'BEM DESIGN',
+	title: 'whitepaper documentation',
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
@@ -16,7 +16,7 @@ module.exports = {
 	],
 	mix: {
 		block: 'theme',
-		mods: { color: 'whitepaper-default', space: 'default', size: 'default', gap: 'medium', breakpoint: 'default' }
+		mods: { color: 'whitepaper-default', space: 'default', size: 'default', gap: 'medium', breakpoint: 'default', font: 'nitti' }
 	},
 	content: [
 	{

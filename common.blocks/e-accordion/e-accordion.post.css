@@ -1,0 +1,69 @@
+.e-accordion {
+	&__arrow {
+		transition-duration: .3s;
+	}
+
+	/* view: default */
+	&_view_default &__item_view_active &__short,
+	&_view_default &__item_view_active &__short:hover {
+		background: none !important;
+	}
+	&_view_default &__more {
+		background: none !important;
+	}
+
+	/* view: ghost */
+	&_view_ghost &__item_view_active &__short,
+	&_view_ghost &__short:hover {
+		background: rgba(0, 0, 0, 0.05) !important;
+	}
+	&_view_ghost &__more {
+		background: rgba(0, 0, 0, .02);
+	}
+
+	/* view: stipe */
+	&_view_stripe &__short,
+	&_view_stripe &__short:hover {
+		background: rgba(0, 0, 0, 0.05) !important;
+	}
+	&_view_stripe &__more {
+		background: none !important;
+	}
+
+
+	&__item {
+		cursor: pointer;
+
+		&_view {
+			&_active {
+				.e-accordion__short,
+				.e-accordion__short:hover {
+					background: rgba(0, 0, 0, 0.05) !important;
+				}
+
+				.e-accordion__arrow {
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+
+	&__short {
+		cursor: pointer;
+		transition: .3s ease;
+	}
+
+	&__more {
+		display: none;
+		box-sizing: border-box;
+		background: rgba(0, 0, 0, .02);
+		cursor: default;
+		/*transition: .3s ease;*/
+
+		&_state {
+			&_open {
+				/* Для раскрытия через CSS */
+			}
+		}
+	}
+}
