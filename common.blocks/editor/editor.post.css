@@ -211,28 +211,29 @@
                 background: black;
             }
         }
-        &_color_view_primary {
+        &__color_view_primary {
             background-color: var(--color-typo-primary);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
 
             &:before {
                 opacity: 0;
             }
         }
-        &_color_view_secondary {
+        &__color_view_secondary {
             background-color: var(--color-typo-secondary);
 
             &:before {
                 opacity: 0.4;
             }
         }
-        &_color_view_ghost {
+        &__color_view_ghost {
             background-color: var(--color-typo-ghost);
 
             &:before {
                 opacity: 0.6;
             }
         }
-        &_color_view_brand {
+        &__color_view_brand {
             background-color: var(--color-typo-brand);
 
             &:before {
