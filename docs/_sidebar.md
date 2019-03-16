@@ -34,8 +34,6 @@
 	* [Бейдж](content-badge.md)
 	* [Тэг](content-tag.md)
 
-* [Локальная среда, whitepaper-stub](whitepaper-stub.md)
-
 * [Сборщик](sborshik.md)
 
 * [BEMJSON](bemjson.md)
@@ -49,3 +47,5 @@
 <!-- * [i-bem (или JS)](js.md) -->
 
 * [Установка в своем проекте](install.md)
+
+* [Локальная среда, whitepaper-stub](whitepaper-stub.md)
