@@ -784,7 +784,7 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { view: 'secondary', size: 's', font: 'mono'  },
+																			mods: { view: 'secondary', size: 's', font: 'sans'  },
 																			content: 'Nov 6 / 21 min read'
 																		},
 																		{
