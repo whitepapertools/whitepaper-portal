@@ -1,8 +1,4 @@
 .product {
-	min-width: 296px;
-	max-width: 350px;
-	height: 456px;
-	overflow: hidden;
 	&__footer {
 		width: auto;
 		margin: var(--space-xl);

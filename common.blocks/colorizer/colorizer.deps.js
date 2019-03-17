@@ -1,18 +1,22 @@
 ([
 	{
 		mustDeps: [
-			{ 
-				block: 'theme', 
+			{
+				block: 'theme',
 				mods: {
-					'color': [ 'mts-default', 'mts-inverse', 'mts-default', 'mts-brand', 'megafon-default', 'megafon-inverse', 'megafon-brand', 'whitepaper-default', 'whitepaper-inverse', 'whitepaper-brand' ]
+					'color': [
+						'mts-inverse', 'mts-default', 'mts-brand', 'megafon-default', 'megafon-inverse', 'megafon-brand', 'whitepaper-portal-default', 'whitepaper-portal-inverse', 'whitepaper-portal-brand' ],
+					'control': [
+						'mts-inverse', 'mts-default', 'mts-brand', 'megafon-default', 'megafon-inverse', 'megafon-brand', 'whitepaper-default', 'whitepaper-inverse', 'whitepaper-brand' ]
 				}
 			},
-			{ 
-				block: 'component', 
+			{
+				block: 'theme',
 				mods: {
-					'mts': [ 'default', 'brand', 'inverse' ],
-					'megafon': [ 'default', 'brand', 'inverse' ],
-					'whitepaper': [ 'default', 'brand', 'inverse' ]
+					// 'mts': [ 'default', 'brand', 'inverse' ],
+					// 'megafon': [ 'default', 'brand', 'inverse' ],
+					'control': [ 'whitepaper-default' ]
+					// , 'whitepaper-brand', 'whitepaper-inverse' ]
 				}
 			}
 		]

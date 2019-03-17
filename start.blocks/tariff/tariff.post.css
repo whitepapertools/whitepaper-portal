@@ -1,7 +1,4 @@
-.tariff { 
-	min-width: 296px;
-	max-width: 350px;
-	min-height: 456px;
+.tariff {
 	box-sizing: border-box;
 	background: var(--color-bg-default);
 	overflow: hidden;

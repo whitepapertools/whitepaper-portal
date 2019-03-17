@@ -1,8 +1,8 @@
-/* @import "../_color/theme_color_whitepaper-portal-default.post.css"; */
+/* @import "../_color/theme_color_megafon-default.post.css"; */
 
 $color-base-base: #000; /* Базовый цвет содержимого, от которого выстраиваются цвета текста, иконок, ... */
 $color-base-essential: #fff; /* Базовый цвет поверхностей */
-$color-base-project: #0056b3; /* Проектный цвет, от которого выстраивают акцентные состояния */
+$color-base-project: #028A56; /* Проектный цвет, от которого выстраивают акцентные состояния */
 $color-base-phantom: #000; /* Тонирующий цвет, от которого выстраиватся бордеры, паранджа, ... */
 $color-base-path: #0070f0; /* Ссылочный цвет, от которого выстраиваются все их состояния */
 $color-base-success: #00985f; /* Цвет успеха */
@@ -74,7 +74,7 @@ $color-control-typo-placeholder-disable:   color($color-base-phantom l(+50%)); /
 
 
 
-.theme_control_whitepaper-default {
+.theme_control_megafon-default {
 	/* Default */
 	--color-control-bg-default: $color-control-bg-default; /* Цвет фона контрола */
 	--color-control-bg-default-hover: $color-control-bg-default-hover; /* Цвет фона контрола по ховеру */

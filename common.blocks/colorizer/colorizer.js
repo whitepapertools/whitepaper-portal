@@ -4,31 +4,31 @@ $('.colorizer__color_view_mts').click(function(){
 	$(this).addClass('colorizer__color_state_active');
 
 	/* Сбросить whitepaper */
-	$('.theme_color_whitepaper-default')
-		.removeClass('theme_color_whitepaper-default')
+	$('.theme_color_whitepaper-portal-default')
+		.removeClass('theme_color_whitepaper-portal-default')
 		.addClass('theme_color_mts-default');
 
-	$('.component_whitepaper_default')
-		.removeClass('component_whitepaper_default')
-		.addClass('component_mts_default');
+	$('.theme_control_whitepaper-default')
+		.removeClass('theme_control_whitepaper-default')
+		.addClass('theme_control_mts-default');
 
 
-	$('.theme_color_whitepaper-brand')
-		.removeClass('theme_color_whitepaper-brand')
+	$('.theme_color_whitepaper-portal-brand')
+		.removeClass('theme_color_whitepaper-portal-brand')
 		.addClass('theme_color_mts-brand');
 
-	$('.component_whitepaper_brand')
-		.removeClass('component_whitepaper_brand')
-		.addClass('component_mts_brand');
+	$('.theme_control_whitepaper-brand')
+		.removeClass('theme_control_whitepaper-brand')
+		.addClass('theme_control_mts-brand');
 
 
-	$('.theme_color_whitepaper-inverse')
-		.removeClass('theme_color_whitepaper-inverse')
+	$('.theme_color_whitepaper-portal-inverse')
+		.removeClass('theme_color_whitepaper-portal-inverse')
 		.addClass('theme_color_mts-inverse');
 
-	$('.component_whitepaper_inverse')
-		.removeClass('component_whitepaper_inverse')
-		.addClass('component_mts_inverse');
+	$('.theme_control_whitepaper-inverse')
+		.removeClass('theme_control_whitepaper-inverse')
+		.addClass('theme_control_mts-inverse');
 	/* /Сбросить whitepaper */
 
 
@@ -38,27 +38,27 @@ $('.colorizer__color_view_mts').click(function(){
 		.removeClass('theme_color_megafon-default')
 		.addClass('theme_color_mts-default');
 
-	$('.component_megafon_default')
-		.removeClass('component_megafon_default')
-		.addClass('component_mts_default');
+	$('.theme_control_megafon-default')
+		.removeClass('theme_control_megafon-default')
+		.addClass('theme_control_mts-default');
 
 
 	$('.theme_color_megafon-brand')
 		.removeClass('theme_color_megafon-brand')
 		.addClass('theme_color_mts-brand');
 
-	$('.component_megafon_brand')
-		.removeClass('component_megafon_brand')
-		.addClass('component_mts_brand');
+	$('.theme_control_megafon-brand')
+		.removeClass('theme_control_megafon-brand')
+		.addClass('theme_control_mts-brand');
 
 
 	$('.theme_color_megafon-inverse')
 		.removeClass('theme_color_megafon-inverse')
 		.addClass('theme_color_mts-inverse');
 
-	$('.component_megafon_inverse')
-		.removeClass('component_megafon_inverse')
-		.addClass('component_mts_inverse');
+	$('.theme_control_megafon-inverse')
+		.removeClass('theme_control_megafon-inverse')
+		.addClass('theme_control_mts-inverse');
 	/* /Сбросить megafon */
 
 });
@@ -75,56 +75,56 @@ $('.colorizer__color_view_megafon').click(function(){
 		.removeClass('theme_color_mts-default')
 		.addClass('theme_color_megafon-default');
 
-	$('.component_mts_default')
-		.removeClass('component_mts_default')
-		.addClass('component_megafon_default');
+	$('.theme_control_mts-default')
+		.removeClass('theme_control_mts-default')
+		.addClass('theme_control_megafon-default');
 
 
 	$('.theme_color_mts-brand')
 		.removeClass('theme_color_mts-brand')
 		.addClass('theme_color_megafon-brand');
 
-	$('.component_mts_brand')
-		.removeClass('component_mts_brand')
-		.addClass('component_megafon_brand');
+	$('.theme_control_mts-brand')
+		.removeClass('theme_control_mts-brand')
+		.addClass('theme_control_megafon-brand');
 
 
 	$('.theme_color_mts-inverse')
 		.removeClass('theme_color_mts-inverse')
 		.addClass('theme_color_megafon-inverse');
 
-	$('.component_mts_inverse')
-		.removeClass('component_mts_inverse')
-		.addClass('component_megafon_inverse');
+	$('.theme_control_mts-inverse')
+		.removeClass('theme_control_mts-inverse')
+		.addClass('theme_control_megafon-inverse');
 	/* /Сбросить mts */
 
 
 	/* Сбросить whitepaper */
-	$('.theme_color_whitepaper-default')
-		.removeClass('theme_color_whitepaper-default')
+	$('.theme_color_whitepaper-portal-default')
+		.removeClass('theme_color_whitepaper-portal-default')
 		.addClass('theme_color_megafon-default');
 
-	$('.component_whitepaper_default')
-		.removeClass('component_whitepaper_default')
-		.addClass('component_megafon_default');
+	$('.theme_control_whitepaper-default')
+		.removeClass('theme_control_whitepaper-default')
+		.addClass('theme_control_megafon-default');
 
 
-	$('.theme_color_whitepaper-brand')
-		.removeClass('theme_color_whitepaper-brand')
+	$('.theme_color_whitepaper-portal-brand')
+		.removeClass('theme_color_whitepaper-portal-brand')
 		.addClass('theme_color_megafon-brand');
 
-	$('.component_whitepaper_brand')
-		.removeClass('component_whitepaper_brand')
-		.addClass('component_megafon_brand');
+	$('.theme_control_whitepaper-brand')
+		.removeClass('theme_control_whitepaper-brand')
+		.addClass('theme_control_megafon-brand');
 
 
-	$('.theme_color_whitepaper-inverse')
-		.removeClass('theme_color_whitepaper-inverse')
+	$('.theme_color_whitepaper-portal-inverse')
+		.removeClass('theme_color_whitepaper-portal-inverse')
 		.addClass('theme_color_megafon-inverse');
 
-	$('.component_whitepaper_inverse')
-		.removeClass('component_whitepaper_inverse')
-		.addClass('component_megafon_inverse');
+	$('.theme_control_whitepaper-inverse')
+		.removeClass('theme_control_whitepaper-inverse')
+		.addClass('theme_control_megafon-inverse');
 	/* /Сбросить whitepaper */
 });
 /* /Влючить на megafon */
@@ -137,29 +137,29 @@ $('.colorizer__color_view_whitepaper').click(function(){
 	/* Сбросить mts */
 	$('.theme_color_mts-default')
 		.removeClass('theme_color_mts-default')
-		.addClass('theme_color_whitepaper-default');
+		.addClass('theme_color_whitepaper-portal-default');
 
-	$('.component_mts_default')
-		.removeClass('component_mts_default')
-		.addClass('component_whitepaper_default');
+	$('.theme_control_mts-default')
+		.removeClass('theme_control_mts-default')
+		.addClass('theme_control_whitepaper-default');
 
 
 	$('.theme_color_mts-brand')
 		.removeClass('theme_color_mts-brand')
-		.addClass('theme_color_whitepaper-brand');
+		.addClass('theme_color_whitepaper-portal-brand');
 
-	$('.component_mts_brand')
-		.removeClass('component_mts_brand')
-		.addClass('component_whitepaper_brand');
+	$('.theme_control_mts-brand')
+		.removeClass('theme_control_mts-brand')
+		.addClass('theme_control_whitepaper-brand');
 
 
 	$('.theme_color_mts-inverse')
 		.removeClass('theme_color_mts-inverse')
-		.addClass('theme_color_whitepaper-inverse');
+		.addClass('theme_color_whitepaper-portal-inverse');
 
-	$('.component_mts_inverse')
-		.removeClass('component_mts_inverse')
-		.addClass('component_whitepaper_inverse');
+	$('.theme_control_mts-inverse')
+		.removeClass('theme_control_mts-inverse')
+		.addClass('theme_control_whitepaper-inverse');
 	/* /Сбросить mts */
 
 
@@ -167,33 +167,30 @@ $('.colorizer__color_view_whitepaper').click(function(){
 	/* Сбросить megafon */
 	$('.theme_color_megafon-default')
 		.removeClass('theme_color_megafon-default')
-		.addClass('theme_color_whitepaper-default');
+		.addClass('theme_color_whitepaper-portal-default');
 
-	$('.component_megafon_default')
-		.removeClass('component_megafon_default')
-		.addClass('component_whitepaper_default');
+	$('.theme_control_megafon-default')
+		.removeClass('theme_control_megafon-default')
+		.addClass('theme_control_whitepaper-default');
 
 
 	$('.theme_color_megafon-brand')
 		.removeClass('theme_color_megafon-brand')
-		.addClass('theme_color_whitepaper-brand');
+		.addClass('theme_color_whitepaper-portal-brand');
 
-	$('.component_megafon_brand')
-		.removeClass('component_megafon_brand')
-		.addClass('component_whitepaper_brand');
+	$('.theme_control_megafon-brand')
+		.removeClass('theme_control_megafon-brand')
+		.addClass('theme_control_whitepaper-brand');
 
 
 	$('.theme_color_megafon-inverse')
 		.removeClass('theme_color_megafon-inverse')
-		.addClass('theme_color_whitepaper-inverse');
+		.addClass('theme_color_whitepaper-portal-inverse');
 
-	$('.component_megafon_inverse')
-		.removeClass('component_megafon_inverse')
-		.addClass('component_whitepaper_inverse');
+	$('.theme_control_megafon-inverse')
+		.removeClass('theme_control_megafon-inverse')
+		.addClass('theme_control_whitepaper-inverse');
 	/* /Сбросить megafon */
 
 });
 /* /Влючить на whitepaper */
-
-
-

@@ -1,8 +1,4 @@
 .donate {
-	min-width: 296px;
-	max-width: 350px;
-	min-height: 456px;
-	overflow: hidden;
 	&__person-image {
 		height: 114px;
 	}
@@ -23,8 +19,8 @@
 			content: '';
 			position: absolute;
 			width: 80px;
-			height: 2px;
-			margin-top: 5px;
+			height: 3px;
+			margin-top: 4px;
 			background-color: var(--color-bg-brand);
 		}
 	}

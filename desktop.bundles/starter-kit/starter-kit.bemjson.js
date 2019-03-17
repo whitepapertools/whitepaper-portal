@@ -14,12 +14,9 @@ module.exports = {
 	mix: [
 		{
 			block: 'theme',
-			mods: { color: 'whitepaper-default', space: 'default', breakpoint: 'default', size: 'default', gap: 'small', menu: 'default', font: 'nitti' }
+			mods: { color: 'whitepaper-portal-default', space: 'default', breakpoint: 'default', size: 'default', gap: 'small', menu: 'default', control: 'whitepaper-default', font: 'nitti' }
 		},
-		{
-			block: 'component',
-			mods: { whitepaper: 'default' }
-		}
+		{ block: 'kit' }
 	],
 	content: [
 		{
@@ -99,12 +96,12 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'tariff',
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-default' }},
-																{ block: 'component', mods: { whitepaper: 'default' }},
+																{ block: 'theme', mods: { color: 'whitepaper-portal-default', control: 'whitepaper-default' }},
 																{ block: 'pt-card' }
 															],
 															content: [
@@ -154,7 +151,7 @@ module.exports = {
 																										{
 																											block: 'icon',
 																											mods: { name: 'part', size: 's', view: 'primary', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
 																										}
 																									]
 																								},
@@ -187,7 +184,7 @@ module.exports = {
 																										{
 																											block: 'icon',
 																											mods: { name: 'wait-2', size: 's', view: 'primary', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
 																										}
 																									]
 																								},
@@ -220,7 +217,7 @@ module.exports = {
 																										{
 																											block: 'icon',
 																											mods: { name: 'statistic', size: 's', view: 'primary', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
 																										}
 																									]
 																								},
@@ -248,8 +245,9 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'button',
-																			mods: { theme: 'islands', size: 'l', width: 'available', view: 'action' },
-																			text: 'Choose month plan'
+																			tag: 'button',
+																			mods: { size: 'l', view: 'primary', width: 'full' },
+																			content: 'Choose month plan'
 																		}
 																	]
 																}
@@ -260,12 +258,12 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'tariff',
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-brand' }},
-																{ block: 'component', mods: { whitepaper: 'brand' }},
+																{ block: 'theme', mods: { color: 'whitepaper-portal-brand', control: 'whitepaper-brand' }},
 																{ block: 'pt-card' }
 															],
 															content: [
@@ -315,7 +313,7 @@ module.exports = {
 																										{
 																											block: 'icon',
 																											mods: { name: 'part', size: 's', view: 'brand', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-default' }}
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
 																										}
 																									]
 																								},
@@ -348,7 +346,7 @@ module.exports = {
 																										{
 																											block: 'icon',
 																											mods: { name: 'wait-2', size: 's', view: 'brand', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-default' }}
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
 																										}
 																									]
 																								},
@@ -381,7 +379,7 @@ module.exports = {
 																										{
 																											block: 'icon',
 																											mods: { name: 'statistic', size: 's', view: 'brand', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-default' }}
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
 																										}
 																									]
 																								},
@@ -409,8 +407,9 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'button',
-																			mods: { theme: 'islands', size: 'l', width: 'available', view: 'action' },
-																			text: 'Choose month plan'
+																			tag: 'button',
+																			mods: { size: 'l', view: 'primary', width: 'full' },
+																			content: 'Choose month plan'
 																		}
 																	]
 																}
@@ -421,20 +420,20 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'tariff',
 															mods: { view: 'image' },
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-																{ block: 'component', mods: { whitepaper: 'inverse' }},
+																{ block: 'theme', mods: { color: 'whitepaper-portal-brand', control: 'whitepaper-inverse' }},
 																{ block: 'pt-card' }
 															],
 															content: [
 																{
 																	block: 'image',
+																	url: '/assets/starter-kit/premium.png',
 																	mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
-																	url: '/assets/starter-kit/premium.png'
 																},
 																{
 																	elem: 'content',
@@ -482,7 +481,7 @@ module.exports = {
 																										{
 																											block: 'icon',
 																											mods: { name: 'part', size: 's', view: 'primary', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-default' }}
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
 																										}
 																									]
 																								},
@@ -515,7 +514,7 @@ module.exports = {
 																										{
 																											block: 'icon',
 																											mods: { name: 'wait-2', size: 's', view: 'primary', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-default' }}
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
 																										}
 																									]
 																								},
@@ -548,7 +547,7 @@ module.exports = {
 																										{
 																											block: 'icon',
 																											mods: { name: 'statistic', size: 's', view: 'primary', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-default' }}
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
 																										}
 																									]
 																								},
@@ -576,8 +575,9 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'button',
-																			mods: { theme: 'islands', size: 'l', width: 'available', view: 'action' },
-																			text: 'Choose month plan'
+																			tag: 'button',
+																			mods: { size: 'l', view: 'primary', width: 'full' },
+																			content: 'Choose month plan'
 																		}
 																	]
 																}
@@ -603,12 +603,12 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'media',
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-																{ block: 'component', mods: { whitepaper: 'inverse' }},
+																{ block: 'theme', mods: { color: 'whitepaper-portal-inverse', control: 'whitepaper-inverse' }},
 																{ block: 'pt-card', mods: { view: 'default' }},
 															],
 															content: [
@@ -630,10 +630,7 @@ module.exports = {
 																		},
 																		{
 																			elem: 'play',
-																			mix: [
-																				{ block: 'theme', mods: { color: 'whitepaper-default' }},
-																				{ block: 'pt-card', elem: 'play' }
-																			]
+																			mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
 																		},
 																		{
 																			block: 'text',
@@ -696,20 +693,19 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'media',
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-default' }},
-																{ block: 'component', mods: { whitepaper: 'default' }},
+																{ block: 'theme', mods: { color: 'whitepaper-portal-default' }},
 																{ block: 'pt-card', mods: { view: 'default' } },
 															],
 															content: [
 																{
 																	elem: 'article-author',
 																	mix: [
-																		{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-																		{ block: 'component', mods: { whitepaper: 'inverse' }},
+																		{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
 																		{ block: 'pt-card', elem: 'header', elemMods: { 'space-a': 'xl' }}
 																	],
 																	content: [
@@ -808,12 +804,12 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'media',
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-																{ block: 'component', mods: { whitepaper: 'inverse' }},
+																{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
 																{ block: 'pt-card', mods: { view: 'default' }}
 															],
 															content: [
@@ -987,6 +983,7 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'auth',
@@ -1015,24 +1012,24 @@ module.exports = {
 																		},
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'l' }},
 																			content: [
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'l' }},
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 's' }},
 																					content: {
 																						block: 'input',
-																						mods: { theme: 'islands', width: 'available', size: 'l'},
-																						placeholder: 'Username'
+																						tag: 'input', attrs: { type: 'text', placeholder: 'Username' },
+																						mods: { width: 'full', size: 'l'},
 																					}
 																				},
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'l' }},
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 's' }},
 																					content: {
 																						block: 'input',
-																						mods: { theme: 'islands', width: 'available', size: 'l'},
-																						placeholder: 'Password'
+																						tag: 'input', attrs: { type: 'text', placeholder: 'Password' },
+																						mods: { width: 'full', size: 'l'},
 																					}
 																				}
 																			]
@@ -1043,27 +1040,31 @@ module.exports = {
 																			content: [
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 's' }},
 																					content: {
 																						block: 'button',
-																						mods: { theme: 'islands', width: 'full', size: 'l', view: 'action', width: 'available' },
-																						text: 'Sign in'
+																						tag: 'button',
+																						mods: { width: 'full', size: 'l', view: 'primary' },
+																						content: 'Sign in'
 																					}
 																				},
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 's' }},
 																					content: {
 																						block: 'button',
-																						mods: { theme: 'islands', width: 'full',  size: 'l', width: 'available' },
-																						text: 'Facebook'
+																						tag: 'button',
+																						mods: { width: 'full', size: 'l', view: 'secondary' },
+																						content: 'Facebook'
 																					}
 																				},
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'b' }},
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 's' }},
 																					content: {
-																						block: 'text', mods: { view: 'link',  size: 'l', align: 'center', width: 'available', font: 'sans' },
+																						block: 'button',
+																						tag: 'a', attrs: { href: '#' },
+																						mods: { width: 'full', size: 'l', view: 'clear' },
 																						content: 'Signup'
 																					}
 																				}
@@ -1078,6 +1079,7 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'auth',
@@ -1106,24 +1108,24 @@ module.exports = {
 																		},
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'l' }},
 																			content: [
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'l' }},
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 's' }},
 																					content: {
 																						block: 'input',
-																						mods: { theme: 'islands', width: 'available', size: 'l'},
-																						placeholder: 'Username'
+																						tag: 'input', attrs: { type: 'text', placeholder: 'Username' },
+																						mods: { width: 'full', size: 'l'},
 																					}
 																				},
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'l' }},
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 's' }},
 																					content: {
 																						block: 'input',
-																						mods: { theme: 'islands', width: 'available', size: 'l' },
-																						placeholder: 'Password'
+																						tag: 'input', attrs: { type: 'text', placeholder: 'Password' },
+																						mods: { width: 'full', size: 'l'},
 																					}
 																				}
 																			]
@@ -1134,27 +1136,31 @@ module.exports = {
 																			content: [
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 's' }},
 																					content: {
 																						block: 'button',
-																						mods: { theme: 'islands', width: 'full', size: 'l', view: 'action', width: 'available' },
-																						text: 'Sign up'
+																						tag: 'button',
+																						mods: { width: 'full', size: 'l', view: 'primary' },
+																						content: 'Sign in'
 																					}
 																				},
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 's' }},
 																					content: {
 																						block: 'button',
-																						mods: { theme: 'islands', width: 'full',  size: 'l', width: 'available' },
-																						text: 'Facebook'
+																						tag: 'button',
+																						mods: { width: 'full', size: 'l', view: 'secondary' },
+																						content: 'Facebook'
 																					}
 																				},
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'b' }},
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 's' }},
 																					content: {
-																						block: 'text', mods: { view: 'link',  size: 'l', align: 'center', width: 'available', font: 'sans' },
+																						block: 'button',
+																						tag: 'a', attrs: { href: '#' },
+																						mods: { width: 'full', size: 'l', view: 'clear' },
 																						content: 'Login'
 																					}
 																				}
@@ -1169,6 +1175,7 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'auth',
@@ -1197,15 +1204,15 @@ module.exports = {
 																		},
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'l' }},
 																			content: [
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'l' }},
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 's' }},
 																					content: {
 																						block: 'input',
-																						mods: { theme: 'islands', width: 'available', size: 'l' },
-																						placeholder: 'Username'
+																						tag: 'input', attrs: { type: 'text', placeholder: 'Your Email' },
+																						mods: { width: 'full', size: 'l'},
 																					}
 																				}
 																			]
@@ -1216,11 +1223,22 @@ module.exports = {
 																			content: [
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 's' }},
 																					content: {
 																						block: 'button',
-																						mods: { theme: 'islands', width: 'full', size: 'l', view: 'action', width: 'available' },
-																						text: 'Reset'
+																						tag: 'button',
+																						mods: { width: 'full', size: 'l', view: 'primary' },
+																						content: 'Reset password'
+																					}
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 's' }},
+																					content: {
+																						block: 'button',
+																						tag: 'a', attrs: { href: '#' },
+																						mods: { width: 'full', size: 'l', view: 'clear' },
+																						content: 'Login'
 																					}
 																				}
 																			]
@@ -1249,6 +1267,7 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'product',
@@ -1257,8 +1276,7 @@ module.exports = {
 																{
 																	elem: 'footer',
 																	mix: [
-																		{ block: 'theme', mods: { color: 'whitepaper-brand' }},
-																		{ block: 'component', mods: { whitepaper: 'brand' }},
+																		{ block: 'theme', mods: { color: 'whitepaper-portal-brand', control: 'whitepaper-brand' }},
 																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl', align: 'between', 'vertical-align': 'bottom' }}
 																	],
 																	elemMods: { state: 'unfold' },
@@ -1284,8 +1302,9 @@ module.exports = {
 																				},
 																				{
 																					block: 'button',
-																					mods: { theme: 'islands', size: 'l' },
-																					text: 'Pre-Order'
+																					tag: 'button',
+																					mods: { size: 'm', view: 'primary' },
+																					content: 'Pre-order'
 																				}
 																			]
 																		},
@@ -1294,9 +1313,14 @@ module.exports = {
 																			elemMods: { 'indent-r': 's' },
 																			content: [
 																				{
-																					block: 'icon',
-																					mods: { name: 'fave-1', size: 's', view: 'brand', round: 'default' },
-																					mix: { block: 'theme', mods: { color: 'whitepaper-default' }}
+																					block: 'button',
+																					tag: 'button',
+																					mods: { size: 'm', view: 'primary', 'with-icon': true, form: 'round' },
+																					content: {
+																						block: 'icon',
+																						mods: { name: 'fave-1', size: 's', view: 'brand' },
+																						mix: { block: 'theme', mods: { color: 'whitepaper-portal-inverse' }}
+																					}
 																				}
 																			]
 																		}
@@ -1304,6 +1328,7 @@ module.exports = {
 																},
 																{
 																	block: 'image',
+																	mods: { width: 'full' },
 																	mix: { block: 'pt-card', elem: 'image' },
 																	url: '/assets/starter-kit/fung-1.jpg'
 																}
@@ -1314,6 +1339,7 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'product',
@@ -1345,8 +1371,9 @@ module.exports = {
 																				},
 																				{
 																					block: 'button',
-																					mods: { theme: 'islands', size: 'l' },
-																					text: 'Add to Cart'
+																					tag: 'button',
+																					mods: { size: 'm', view: 'primary' },
+																					content: 'Add to cart'
 																				}
 																			]
 																		},
@@ -1355,9 +1382,14 @@ module.exports = {
 																			elemMods: { 'indent-r': 's' },
 																			content: [
 																				{
-																					block: 'icon',
-																					mods: { name: 'fave-1', size: 's', view: 'primary', round: 'default' },
-																					mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																					block: 'button',
+																					tag: 'button',
+																					mods: { size: 'm', view: 'primary', 'with-icon': true, form: 'round' },
+																					content: {
+																						block: 'icon',
+																						mods: { name: 'fave-1', size: 's', view: 'brand' },
+																						mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
+																					}
 																				}
 																			]
 																		}
@@ -1365,6 +1397,7 @@ module.exports = {
 																},
 																{
 																	block: 'image',
+																	mods: { width: 'full' },
 																	mix: { block: 'pt-card', elem: 'image' },
 																	url: '/assets/starter-kit/fung-2.jpg'
 																}
@@ -1375,6 +1408,7 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'product',
@@ -1383,8 +1417,7 @@ module.exports = {
 																{
 																	elem: 'footer',
 																	mix: [
-																		{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-																		{ block: 'component', mods: { whitepaper: 'inverse' }},
+																		{ block: 'theme', mods: { color: 'whitepaper-portal-brand', control: 'whitepaper-brand' }},
 																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl', align: 'between', 'vertical-align': 'bottom' }}
 																	],
 																	elemMods: { state: 'unfold' },
@@ -1410,8 +1443,9 @@ module.exports = {
 																				},
 																				{
 																					block: 'button',
-																					mods: { theme: 'islands', size: 'l' },
-																					text: 'Choose size'
+																					tag: 'button',
+																					mods: { size: 'm', view: 'primary' },
+																					content: 'Choose size'
 																				}
 																			]
 																		},
@@ -1420,9 +1454,14 @@ module.exports = {
 																			elemMods: { 'indent-r': 's' },
 																			content: [
 																				{
-																					block: 'icon',
-																					mods: { name: 'fave-1', size: 's', view: 'primary', round: 'default' },
-																					mix: { block: 'theme', mods: { color: 'whitepaper-default' }}
+																					block: 'button',
+																					tag: 'button',
+																					mods: { size: 'm', view: 'primary', 'with-icon': true, form: 'round' },
+																					content: {
+																						block: 'icon',
+																						mods: { name: 'fave-1', size: 's', view: 'brand' },
+																						mix: { block: 'theme', mods: { color: 'whitepaper-portal-inverse' }}
+																					}
 																				}
 																			]
 																		}
@@ -1430,6 +1469,7 @@ module.exports = {
 																},
 																{
 																	block: 'image',
+																	mods: { width: 'full' },
 																	mix: { block: 'pt-card', elem: 'image' },
 																	url: '/assets/starter-kit/fung-3.jpg'
 																}
@@ -1455,13 +1495,13 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'app',
 															mods: { view: 'monument-hypnotic' },
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-																{ block: 'component', mods: { whitepaper: 'inverse' }},
+																{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
 																{ block: 'pt-card', mods: { view: 'inverse' }}
 															],
 															content: [
@@ -1596,12 +1636,12 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'app',
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-																{ block: 'component', mods: { whitepaper: 'inverse' }},
+																{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
 																{ block: 'pt-card', mods: { view: 'default' }},
 															],
 															content: [
@@ -1671,13 +1711,13 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'app',
 															mods: { view: 'monument' },
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-																{ block: 'component', mods: { whitepaper: 'inverse' }},
+																{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
 																{ block: 'pt-card', mods: { view: 'inverse' } },
 															],
 															content: [
@@ -1781,13 +1821,13 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'informer',
 															mods: { view: 'alert' },
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-alert' }},
-																{ block: 'component', mods: { whitepaper: 'alert' }},
+																{ block: 'theme', mods: { color: 'whitepaper-alert', control: 'whitepaper-inverse' }},
 																{ block: 'pt-card' },
 																{ block: 'pt-informer', mods: { view: 'alert' }}
 															],
@@ -1865,8 +1905,9 @@ module.exports = {
 																				},
 																				{
 																					block: 'button',
-																					mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
-																					text: 'Done'
+																					tag: 'button',
+																					mods: { width: 'full', size: 'l', view: 'secondary' },
+																					content: 'Done'
 																				}
 																			]
 																		}
@@ -1879,13 +1920,13 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'informer',
 															mods: { view: 'warning' },
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-warning' }},
-																{ block: 'component', mods: { whitepaper: 'warning' }},
+																{ block: 'theme', mods: { color: 'whitepaper-warning', control: 'whitepaper-inverse' }},
 																{ block: 'pt-card' },
 																{ block: 'pt-informer', mods: { view: 'warning' }}
 															],
@@ -1961,8 +2002,9 @@ module.exports = {
 																				},
 																				{
 																					block: 'button',
-																					mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
-																					text: 'Done'
+																					tag: 'button',
+																					mods: { width: 'full', size: 'l', view: 'secondary' },
+																					content: 'Done'
 																				}
 																			]
 																		}
@@ -1975,13 +2017,13 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'informer',
 															mods: { view: 'success' },
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-success' }},
-																{ block: 'component', mods: { whitepaper: 'success' }},
+																{ block: 'theme', mods: { color: 'whitepaper-success', control: 'whitepaper-inverse' }},
 																{ block: 'pt-card' },
 																{ block: 'pt-informer', mods: { view: 'success' }}
 															],
@@ -2037,8 +2079,9 @@ module.exports = {
 																				},
 																				{
 																					block: 'button',
-																					mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
-																					text: 'Done'
+																					tag: 'button',
+																					mods: { width: 'full', size: 'l', view: 'secondary' },
+																					content: 'Done'
 																				}
 																			]
 																		}
@@ -2066,12 +2109,12 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'offer',
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-																{ block: 'component', mods: { whitepaper: 'inverse' }},
+																{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
 																{ block: 'pt-card', mods: { view: 'default' }},
 															],
 															content: [
@@ -2136,6 +2179,7 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'offer',
@@ -2198,6 +2242,7 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'offer',
@@ -2283,6 +2328,7 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'publication',
@@ -2374,12 +2420,12 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'publication',
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-inverse' }},
-																{ block: 'component', mods: { whitepaper: 'inverse' }},
+																{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
 																{ block: 'pt-card' }
 															],
 															content: [
@@ -2472,6 +2518,7 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'publication',
@@ -2584,6 +2631,7 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'event',
@@ -2609,8 +2657,7 @@ module.exports = {
 																		{
 																			elem: 'description',
 																			mix: [
-																				{ block: 'theme', mods: { color: 'whitepaper-brand' }},
-																				{ block: 'component', mods: { whitepaper: 'brand' }},
+																				{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
 																				{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' }},
 																			],
 																			content: [
@@ -2673,7 +2720,7 @@ module.exports = {
 																										{
 																											block: 'icon',
 																											mods: { name: 'marker', size: 's', view: 'primary', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
 																										}
 																									]
 																								},
@@ -2706,7 +2753,7 @@ module.exports = {
 																										{
 																											block: 'icon',
 																											mods: { name: 'phone-1', size: 's', view: 'primary', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
 																										}
 																									]
 																								},
@@ -2739,7 +2786,7 @@ module.exports = {
 																										{
 																											block: 'icon',
 																											mods: { name: 'comment', size: 's', view: 'primary', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
 																										}
 																									]
 																								},
@@ -2768,6 +2815,7 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'event',
@@ -2779,8 +2827,7 @@ module.exports = {
 																{
 																	elem: 'announce',
 																	mix: [
-																		{ block: 'theme', mods: { color: 'whitepaper-brand' }},
-																		{ block: 'component', mods: { whitepaper: 'brand' }},
+																		{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
 																		{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'xl' }},
 																		{ block: 'pt-card', elem: 'content' }
 																	],
@@ -2852,7 +2899,7 @@ module.exports = {
 																												{
 																													block: 'icon',
 																													mods: { name: 'marker', size: 's', view: 'primary', round: 'default' },
-																													mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																													mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
 																												}
 																											]
 																										},
@@ -2885,7 +2932,7 @@ module.exports = {
 																												{
 																													block: 'icon',
 																													mods: { name: 'phone-1', size: 's', view: 'primary', round: 'default' },
-																													mix: { block: 'theme', mods: { color: 'whitepaper-brand' }}
+																													mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
 																												}
 																											]
 																										},
@@ -2921,12 +2968,12 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'event',
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-brand' }},
-																{ block: 'component', mods: { whitepaper: 'brand' }},
+																{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
 																{ block: 'pt-card', mods: { view: 'default' }}
 															],
 															content: [
@@ -3022,6 +3069,7 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'donate',
@@ -3085,8 +3133,9 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'button',
-																			mods: { theme: 'islands', size: 'l', width: 'available', view: 'action' },
-																			text: 'Send $10'
+																			tag: 'button',
+																			mods: { size: 'l', width: 'full', view: 'primary' },
+																			content: 'Send $10'
 																		}
 																	]
 																}
@@ -3097,6 +3146,7 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'donate',
@@ -3256,8 +3306,9 @@ module.exports = {
 																		},
 																		{
 																			block: 'button',
-																			mods: { theme: 'islands', view: 'action', size: 'l' },
-																			text: 'Make a party'
+																			tag: 'button',
+																			mods: { view: 'primary', size: 'l' },
+																			content: 'Make a party'
 																		}
 																	]
 																}
@@ -3268,6 +3319,7 @@ module.exports = {
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
 															block: 'donate',
@@ -3294,8 +3346,7 @@ module.exports = {
 																{
 																	elem: 'project-info',
 																	mix: [
-																		{ block: 'theme', mods: { color: 'whitepaper-default' }},
-																		{ block: 'component', mods: { whitepaper: 'default' }},
+																		{ block: 'theme', mods: { color: 'whitepaper-portal-default' }},
 																		{ block: 'pt-card', elem: 'content', elemMods: { 'space-h': 'xl' }}
 																	],
 																	content: [
@@ -3359,15 +3410,15 @@ module.exports = {
 																{
 																	elem: 'project-action',
 																	mix: [
-																		{ block: 'theme', mods: { color: 'whitepaper-default' }},
-																		{ block: 'component', mods: { whitepaper: 'default' }},
+																		{ block: 'theme', mods: { color: 'whitepaper-portal-default' }},
 																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-h': 'xl', 'space-v': 'xl' }},
 																	],
 																	content: [
 																		{
 																			block: 'button',
-																			mods: { theme: 'islands', size: 'l', width: 'available', view: 'action' },
-																			text: 'Back this project'
+																			tag: 'button',
+																			mods: { size: 'l', width: 'full', view: 'primary' },
+																			content: 'Back this project'
 																		}
 																	]
 																}

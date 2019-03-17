@@ -1,8 +1,4 @@
 .informer {
-	min-width: 296px;
-	max-width: 350px;
-	min-height: 456px;
-	box-sizing: border-box;
 	&__icon-wrapper {
 		width: 24px;
 		height: 24px;

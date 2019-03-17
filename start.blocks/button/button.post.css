@@ -1,0 +1,24 @@
+.button {
+	display: inline-block;
+  width: auto;
+	border: none;
+	appearance: none;
+  margin: initial;
+  box-sizing: border-box;
+  font-weight: normal;
+  text-align: center;
+	max-width: 100%;
+  font-family: var(--font-sans);
+  text-decoration: none;
+  border-radius: var(--control-radius);
+  transition: background 0.15s ease, box-shadow 0.15s ease, color 0.15s ease, fill 0.15s ease;
+  cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+	&:focus {
+		outline-offset: 2px;
+		outline: 2px solid var(--color-control-bg-border-focus);
+	}
+}
