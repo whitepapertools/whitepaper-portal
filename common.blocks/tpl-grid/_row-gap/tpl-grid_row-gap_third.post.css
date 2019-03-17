@@ -1,7 +1,3 @@
 .tpl-grid_row-gap_third {
-<<<<<<< HEAD
-  grid-row-gap: var(--col-gap-third) !important;
-=======
 	grid-row-gap: var(--col-gap-third) !important;
->>>>>>> 0fa5898... pt-informer, pt-table
 }

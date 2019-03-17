@@ -7,10 +7,10 @@ module.exports = {
 		{ elem: 'meta', attrs: { name: 'description', content: '' } },
 		{ elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
 		{ elem: 'css', url: '//cdn-images.mailchimp.com/embedcode/classic-10_7.css' },
-		{ elem: 'css', url: 'new-index.min.css' },
+		{ elem: 'css', url: 'index.min.css' },
 		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
 	],
-	scripts: [{ elem: 'js', url: 'new-index.min.js' }],
+	scripts: [{ elem: 'js', url: 'index.min.js' }],
 	mix: [
 		{
 			block: 'theme',
@@ -2251,7 +2251,7 @@ module.exports = {
 																	{
 																		elem: 'icon',
 																		tag: 'a',
-																		attrs: { href: 'x-github-client://openRepo/https://github.com/whitepapertools/whitepaper-stub' }, 
+																		attrs: { href: 'x-github-client://openRepo/https://github.com/whitepapertools/whitepaper-stub' },
 																		elemMods: { 'indent-l': 's' },
 																		content: [
 																			{
@@ -2309,7 +2309,7 @@ module.exports = {
 																	{
 																		elem: 'icon',
 																		tag: 'a',
-																		attrs: { href: 'https://whitepaper.tools/cdn/whitepaper-1.0.0.min.css', target: '_blank' }, 
+																		attrs: { href: 'https://whitepaper.tools/cdn/whitepaper-1.0.0.min.css', target: '_blank' },
 																		elemMods: { 'indent-l': 's' },
 																		content: [
 																			{
@@ -2563,7 +2563,7 @@ module.exports = {
 																{
 																	elem: 'unit',
 																	content: [
-																		
+
 																		{
 																			elem: 'item',
 																			content: [

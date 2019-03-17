@@ -536,12 +536,6 @@ $font-mono: "ibm-plex-mono", monospace;
   --font-sans: "ibm-plex-sans", Helvetica, Arial, sans-serif;
   --font-serif: "ibm-plex-serif", Georgia, serif;
   --font-mono: "ibm-plex-mono", monospace;
-<<<<<<< HEAD
 
-=======
-}
-
-.theme_font_plex {
->>>>>>> cd67414... Block "theme" files added
   font-family: var(--font-sans);
 }

@@ -1,11 +1,5 @@
 # pt-card
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<!-- ![pt-card](_images/pt-card.png) -->
-
-=======
->>>>>>> a1aa1ac... fix small bag
 <div class="preview">
 	<a class="pt-card pt-card_view_default card-doc-preview card-doc-preview_shadow_soft" href="#">
 		<img class="pt-card__image image card-doc-preview__image" src="../../assets/doc/patterns/pt-card/doc-card-preview.jpg"/>
@@ -81,34 +75,6 @@ view                              | default                          | Фон п
 
 ### shadow:
 
-<<<<<<< HEAD
-```html
-=======
-![pt-card](_images/pt-card.png)
-
-
-Способ представления информации в маленьком формате.
-
-```js
->>>>>>> 4d1d01b... pt-form
-{
-	block: 'pt-card',
-	content: [
-	{
-		elem: 'image'
-	},
-	{
-		elem: 'header'
-	},
-	{
-		elem: 'content'
-	},
-	{
-		elem: 'footer'
-	}]
-}
-```
-=======
 <div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl">
 	<div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
 		<div class="text text_size_xl text_view_ghost">cloud</div>
@@ -140,7 +106,6 @@ view                              | default                          | Фон п
 </div>
 
 ___
->>>>>>> 8277f56... добавлят pt-card в доку
 
 ## Элементы
 
