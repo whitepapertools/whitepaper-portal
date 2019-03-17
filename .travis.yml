@@ -9,7 +9,7 @@ script:
 before_deploy:
   - mkdir deploy
   - find desktop.bundles/ \( -name '*.min.css' -or -name '*.html' -or -name '*.min.js' \) -exec mv {} deploy/ \;
-  - mv assets docs static cdn .nojekyll CNAME favicon.ico deploy/
+  - mv assets docs static cdn .nojekyll CNAME favicon.ico yandex_6b66759f12cf90b6.html deploy/
 
 deploy:
   provider: pages
