@@ -1,0 +1,9 @@
+.kit {
+	.pt-card, .pt-form {
+		min-width: 350px;
+		max-width: 350px;
+		min-height: 456px;
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+}

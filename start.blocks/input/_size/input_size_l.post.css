@@ -1,0 +1,5 @@
+.input_size_l {
+	font-size: var(--control-size-l);
+	height: var(--control-button-size-l);
+	padding: 0 var(--control-space-m);
+}

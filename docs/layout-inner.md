@@ -1,48 +1,141 @@
-# Сетки
+<style>
+    .example .tpl-grid__fraction {
+        background: var(--color-bg-brand);
+        min-height: 100px;
+    }
+</style>
 
-`tpl-grid` – Сетка для контентный блоков. "Дети" такой сетки подчиняются ее правилам, им не надо дополнительно указывать размеры.
+`tpl-grid` – адаптивная сетка для контентный блоков. Есть два сценария использования: [сетка с равными секциями](#Сетка-с-равными-секциями) для равнозначных блоков и [колоночная сетка](#Колоночная-сетка) для блоков разной ширины.
 
-```js 
-{
-	block: 'tpl-grid',
-	content: [
-	{ elem: 'fraction' },
-	{ elem: 'fraction' },
-	{ elem: 'fraction' }]
-}
-```
+?> Помните, что все адаптивные правила перестроения и изменения свойств наследуются от меньшего брейкпоинта к большему.
 
-## Сетка с равными секциями
-
-Для такой сетки понадобится указать только количество секций в строке.
+## Отступы
+Для управления отступами используй модификаторы на расстояние между колонками и между строками. В них используются переменные с префиксом `--col-gap-`, `--row-gap-`, которые находятся в теме, где их можно при необходимости переопределить. Перед началом использования сеток, советуем прочитать про [отступы в теме](http://whitepaper.tools/doc.html#/theme-gap).
 
 Модификатор | Значение                                        | Описание
 ----------- | ----------------------------------------------- | --------------------------
-ratio       | 1-1 / 1-1-1 / 1-1-1-1 / 1-1-1-1-1 / 1-1-1-1-1-1 | Колличество секций в сетке
+col-gap     | full / two-thirds / half / third / none         | Отступ между колонками: полный / две-трети / половина / треть / без отступа
+row-gap     | full / two-thirds / half / third / none         | Отступ между строками: полный / две-трети / половина / треть / без отступа
 
-<iframe height='500' scrolling='no' title='tpl-grid. ratio' src='//codepen.io/whitepapertools/embed/5dc797f4ecf179d175ac940ceb11f893/?height=500&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/whitepapertools/pen/5dc797f4ecf179d175ac940ceb11f893/'>tpl-grid. ratio</a> by whitepaper (<a href='https://codepen.io/whitepapertools'>@whitepapertools</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+## Сетка с равными секциями
+Достаточно указать только количество секций в строке, расстояние между колонками и расстояние между строками. Все прямые «дети» такой секции сами подстроятся по указанным правилам.
+
+Для каждого брейкпоинта из [указанных в теме](http://whitepaper.tools/doc.html#/theme-breakpoint)  можно указывать свой модификатор `ratio`, но это необязательно.
+
+Модификатор | Значение                                          | Описание
+----------- | ------------------------------------------------- | --------------------------
+xs-ratio    | 1-1 / 1-1-1                                       | Колличество секций в одном ряду сетки при ширине экрана `screen-xs`
+s-ratio     | 1-1 / 1-1-1 / 1-1-1-1 / 1-1-1-1-1 / 1-1-1-1-1-1   | Колличество секций в одном ряду сетки при ширине экрана `screen-s`
+m-ratio     | 1-1 / 1-1-1 / 1-1-1-1 / 1-1-1-1-1 / 1-1-1-1-1-1   | Колличество секций в одном ряду сетки при ширине экрана `screen-m`
+l-ratio     | 1-1 / 1-1-1 / 1.1-1-1 / 1-1-1-1-1 / 1-1-1-1-1-1   | Колличество секций в одном ряду сетки при ширине экрана `screen-l`
+xl-ratio    | 1-1 / 1-1-1 / 1-1-1-1 / 1-1-1-1-1 / 1-1-1-1-1-1   | Колличество секций в одном ряду сетки при ширине экрана `screen-xl`
+
+### Пример
+Поизменяйте размер экрана браузера, чтобы увидеть адаптивное перестроение сетки.
+
+<div class="example">
+    <div class="tpl-grid tpl-grid_s-ratio_1-1 tpl-grid_m-ratio_1-1-1 tpl-grid_l-ratio_1-1-1-1 tpl-grid_col-gap_third tpl-grid_row-gap_third">
+        <div class="tpl-grid__fraction"></div>
+        <div class="tpl-grid__fraction"></div>
+        <div class="tpl-grid__fraction"></div>
+        <div class="tpl-grid__fraction"></div>
+    </div>
+</div>
+
+```html
+<div class="tpl-grid tpl-grid_s-ratio_1-1 tpl-grid_m-ratio_1-1-1 tpl-grid_l-ratio_1-1-1-1 tpl-grid_col-gap_third tpl-grid_row-gap_third">
+    <div class="tpl-grid__fraction">
+        ...
+    </div>
+</div>
+```
 
 ## Колоночная сетка
 
-Чтобы описать колоночную сетку, нужно указать несколько модификаторов: количество колонок, расстояние между колонками и расстояние между строками. Расстояния регулируются [темой](theme.md).
+Чтобы описать колоночную сетку, нужно указать несколько модификаторов: количество колонок `columns`, расстояние между колонками и расстояние между строками. Каждому элементу `fraction` надо отдельно указывать размеры. Колоночная сетка хорошо подходит, если внутренние секции не равнозначны и могут быть разной ширины или высоты.
+
+Для каждого брейкпоинта из [указанных в теме](http://whitepaper.tools/doc.html#/theme-breakpoint) при необходимости можно указывать свой модификатор `columns`.
 
 Если на твоем проекте сетка с другим количеством колонок, создай нужное значение модификатора на [уровне проекта](whitepaper-stub.md).
 
-Модификатор | Значение                                | Описание
------------ | --------------------------------------- | --------------------------------------
-columns     | 10 / 12                                 | Количество возможных колонок в сетке
-col-gap     | none / third / half / two-thirds / full | Относительная ширина межколонника
-row-gap     | none / third / half / two-thirds / full | Относительная высота межстрочника
+Модификатор  | Значение               | Описание
+-----------  | ---------------------- | --------------------------------------
+xs-columns   | 2 / 3                  | Колличество возможных колонок при ширине экрана `screen-xs`
+s-columns    | 5 / 6 / 8              | Колличество возможных колонок при ширине экрана `screen-s`
+m-columns    | 6 / 10 / 12            | Колличество возможных колонок при ширине экрана `screen-m`
+l-columns    | 6 / 10 / 12            | Колличество возможных колонок при ширине экрана `screen-l`
+xl-columns   | 6 / 10 / 12            | Колличество возможных колонок при ширине экрана `screen-xl`
+
+### Примеры
+Поизменяйте размер экрана браузера, чтобы увидеть адаптивное перестроение сетки.
+
+<div class="example">
+    <div class="tpl-grid tpl-grid_s-columns_6 tpl-grid_m-columns_10 tpl-grid_l-columns_12 tpl-grid_col-gap_third tpl-grid_row-gap_third">
+        <div class="tpl-grid__fraction tpl-grid__fraction_s-col_3 tpl-grid__fraction_m-col_6 tpl-grid__fraction_l-col_8"></div>
+        <div class="tpl-grid__fraction tpl-grid__fraction_s-col_3 tpl-grid__fraction_m-col_4"></div>
+        <div class="tpl-grid__fraction tpl-grid__fraction_s-col_3 tpl-grid__fraction_m-col_4"></div>
+        <div class="tpl-grid__fraction tpl-grid__fraction_s-col_3 tpl-grid__fraction_m-col_6 tpl-grid__fraction_l-col_8"></div>
+    </div>
+</div>
+
+```html
+<div class="tpl-grid tpl-grid_s-columns_6 tpl-grid_m-columns_10 tpl-grid_l-columns_12 tpl-grid_col-gap_third tpl-grid_row-gap_third">
+    <div class="tpl-grid__fraction tpl-grid__fraction_s-col_3 tpl-grid__fraction_m-col_6 tpl-grid__fraction_l-col_8">
+        ...
+    </div>
+    <div class="tpl-grid__fraction tpl-grid__fraction_s-col_3 tpl-grid__fraction_m-col_4">
+        ...
+    </div>
+    <div class="tpl-grid__fraction tpl-grid__fraction_s-col_3 tpl-grid__fraction_m-col_4">
+        ...
+    </div>
+    <div class="tpl-grid__fraction tpl-grid__fraction_s-col_3 tpl-grid__fraction_m-col_6 tpl-grid__fraction_l-col_8">
+        ...
+    </div>
+</div>
+```
+
+
+<div class="example">
+    <div class="tpl-grid tpl-grid_s-columns_6 tpl-grid_l-columns_12 tpl-grid_col-gap_third tpl-grid_row-gap_third">
+        <div class="tpl-grid__fraction tpl-grid__fraction_s-col_6 tpl-grid__fraction_l-col_8 tpl-grid__fraction_l-row_2"></div>
+        <div class="tpl-grid__fraction tpl-grid__fraction_s-col_3 tpl-grid__fraction_l-col_4"></div>
+        <div class="tpl-grid__fraction tpl-grid__fraction_s-col_3 tpl-grid__fraction_l-col_4"></div>
+    </div>
+</div>
+
+```html
+<div class="tpl-grid tpl-grid_s-columns_6 tpl-grid_l-columns_12 tpl-grid_col-gap_third tpl-grid_row-gap_third">
+    <div class="tpl-grid__fraction tpl-grid__fraction_s-col_6 tpl-grid__fraction_l-col_8 tpl-grid__fraction_l-row_2">
+        ...
+    </div>
+    <div class="tpl-grid__fraction tpl-grid__fraction_s-col_3 tpl-grid__fraction_l-col_4">
+        ...
+    </div>
+    <div class="tpl-grid__fraction tpl-grid__fraction_s-col_3 tpl-grid__fraction_l-col_4">
+        ...
+    </div>
+</div>
+```
 
 ## Элемент fraction
 
-В колоночной сетке элементы `fraction` имеют модификатор на ширину в колонках
+В колоночной сетке элементы `fraction` имеют модификаторы на ширину в колонках `col` и опциональный на высоту в строках `row`. Также с помощью модификатора `order` можно переопределять порядок элемента в общем потоке с помощью.
 
 Модификатор | Значение                                         | Описание
 ----------- | ------------------------------------------------ | --------------------------
-col         | 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8 / 9 / 10 / 11 / 12 | Ширина элемента в колонках
-
-
-<iframe height='500' scrolling='no' title='tpl-grid. columns' src='//codepen.io/whitepapertools/embed/1b5f9e70fdae42bf89878e5a3694d34e/?height=500&theme-id=0&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/whitepapertools/pen/1b5f9e70fdae42bf89878e5a3694d34e/'>tpl-grid. columns</a> by whitepaper (<a href='https://codepen.io/whitepapertools'>@whitepapertools</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+xs-col      | 1 / 2 / 3                                        | Ширина элемента в колонках при ширине экрана `screen-xs`
+s-col       | 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8 / 9 / 10 / 11 / 12 | Ширина элемента в колонках при ширине экрана `screen-s`
+m-col       | 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8 / 9 / 10 / 11 / 12 | Ширина элемента в колонках при ширине экрана `screen-m`
+l-col       | 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8 / 9 / 10 / 11 / 12 | Ширина элемента в колонках при ширине экрана `screen-l`
+xl-col      | 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8 / 9 / 10 / 11 / 12 | Ширина элемента в колонках при ширине экрана `screen-xl`
+xs-row      | 1 / 2 / 3                                        | Высота элемента в колонках при ширине экрана `screen-xs`
+s-row       | 1 / 2 / 3                                        | Высота элемента в колонках при ширине экрана `screen-s`
+m-row       | 1 / 2 / 3                                        | Высота элемента в колонках при ширине экрана `screen-m`
+l-row       | 1 / 2 / 3                                        | Высота элемента в колонках при ширине экрана `screen-l`
+xl-row      | 1 / 2 / 3                                        | Высота элемента в колонках при ширине экрана `screen-xl`
+xs-order    | -1 / 0 / 1                                       | Порядок элемента в общем потоке при ширине экрана `screen-xs`
+s-order     | -1 / 0 / 1                                       | Порядок элемента в общем потоке при ширине экрана `screen-s`
+m-order     | -1 / 0 / 1                                       | Порядок элемента в общем потоке при ширине экрана `screen-m`
+l-order     | -1 / 0 / 1                                       | Порядок элемента в общем потоке при ширине экрана `screen-l`
+xl-order    | -1 / 0 / 1                                       | Порядок элемента в общем потоке при ширине экрана `screen-xl`

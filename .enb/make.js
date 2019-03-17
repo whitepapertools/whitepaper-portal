@@ -40,12 +40,11 @@ levels = [
 	{ path: 'node_modules/bem-core/desktop.blocks', check: false },
 	'common.blocks',
 	'start.blocks',
-	'bill.blocks',
 	'desktop.blocks',
-	{ path: 'node_modules/bem-components-custom/common.blocks', check: false },
-	{ path: 'node_modules/bem-components-custom/desktop.blocks', check: false },
-	{ path: 'node_modules/bem-components-custom/design/common.blocks', check: false },
-	{ path: 'node_modules/bem-components-custom/design/desktop.blocks', check: false },
+	// { path: 'node_modules/bem-components-custom/common.blocks', check: false },
+	// { path: 'node_modules/bem-components-custom/desktop.blocks', check: false },
+	// { path: 'node_modules/bem-components-custom/design/common.blocks', check: false },
+	// { path: 'node_modules/bem-components-custom/design/desktop.blocks', check: false },
 	{ path: 'node_modules/whitepaper-bem', check: false },
 ];
 

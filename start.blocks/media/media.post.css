@@ -1,0 +1,58 @@
+.media {
+	&__cover {
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 35%, var(--color-bg-default) 75%);
+		}
+	}
+	&__video {
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 35%, var(--color-bg-default) 75%);
+		}
+	}
+	&__sound {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__playlist {
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0px;
+			height: 80px;
+			width: 100%;
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, var(--color-bg-default) 80%);
+		}
+	}
+	&__play {
+		position: absolute;
+		z-index: 99;
+		top: 35%;
+		left: 50%;
+		margin-left: calc(-1 * var(--space-s));
+		margin-top: calc(-1 * var(--space-l));
+		border-top: var(--space-l) solid transparent;
+		border-bottom: var(--space-l) solid transparent;
+		border-left: var(--space-xxl) solid var(--color-bg-default);
+		cursor: pointer;
+		transition: all .15s;
+	}
+	&:hover {
+		.media__play {
+			border-left: var(--space-xxl) solid var(--color-bg-action);
+			transform: scale(1.2);
+		}
+	}
+}

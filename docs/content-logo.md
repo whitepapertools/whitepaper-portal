@@ -1,18 +1,116 @@
 # Логотипы
 
-<!-- ![Логотипы](_images/logo.png) -->
+<div class="preview">
+    <div class="brand-logo brand-logo_form_round brand-logo_name_preview brand-logo_size_m" style="background-image: url('../../assets/doc/content/content-logo/brand-logo_name_preview.svg');">
+    </div>
+</div>
 
-Служит для отображения логотипов, вписанных в разные формы. Визуально модификации текста можно посмотреть в разделе [Типографика](http://whitepaper.tools/brand-logo.html).
+Служит для отображения логотипов брендов, вписанных в разные формы. Открытая библиотека с логотипами доступна [тут](#).
 
-```js
-{
-    block: 'brand-logo',
-    mods: { form: 'round', name: 'company-name', size: 'm' }
-}
+* [Модификаторы блока](#Модификаторы-блока)
+* [Пример](#Пример)
+
+___
+
+## Модификаторы блока
+
+Модификатор     | Значение                   | Описание
+--------------- | -------------------------- | -----------
+[form](#form)   | mask / round               | Форма логотипа
+[size](#size)   | xxs / xs / s / m / l       | Размер логотипа
+
+### form
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl">
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+        <div class="text text_size_xl text_view_ghost">не задан</div>
+    </div>
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+        <div class="brand-logo brand-logo_name_preview brand-logo_size_l" style="background-image: url('../../assets/doc/content/content-logo/brand-logo_name_preview.svg');">
+        </div>
+    </div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl">
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+        <div class="text text_size_xl text_view_ghost">mask</div>
+    </div>
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+        <div class="brand-logo brand-logo_form_mask brand-logo_name_preview brand-logo_size_l" style="background-image: url('../../assets/doc/content/content-logo/brand-logo_name_preview.svg');">
+        </div>
+    </div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl">
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+        <div class="text text_size_xl text_view_ghost">round</div>
+    </div>
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+        <div class="brand-logo brand-logo_form_round brand-logo_name_preview brand-logo_size_l" style="background-image: url('../../assets/doc/content/content-logo/brand-logo_name_preview.svg');">
+        </div>
+    </div>
+</div>
+
+### size
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl">
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+        <div class="text text_size_xl text_view_ghost">xxs</div>
+    </div>
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+        <div class="brand-logo brand-logo_form_round brand-logo_name_preview brand-logo_size_xxs" style="background-image: url('../../assets/doc/content/content-logo/brand-logo_name_preview.svg');">
+        </div>
+    </div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl">
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+        <div class="text text_size_xl text_view_ghost">xs</div>
+    </div>
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+        <div class="brand-logo brand-logo_form_round brand-logo_name_preview brand-logo_size_xs" style="background-image: url('../../assets/doc/content/content-logo/brand-logo_name_preview.svg');">
+        </div>
+    </div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl">
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+        <div class="text text_size_xl text_view_ghost">s</div>
+    </div>
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+        <div class="brand-logo brand-logo_form_round brand-logo_name_preview brand-logo_size_s" style="background-image: url('../../assets/doc/content/content-logo/brand-logo_name_preview.svg');">
+        </div>
+    </div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl">
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+        <div class="text text_size_xl text_view_ghost">m</div>
+    </div>
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+        <div class="brand-logo brand-logo_form_round brand-logo_name_preview brand-logo_size_m" style="background-image: url('../../assets/doc/content/content-logo/brand-logo_name_preview.svg');">
+        </div>
+    </div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl">
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+        <div class="text text_size_xl text_view_ghost">l</div>
+    </div>
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+        <div class="brand-logo brand-logo_form_round brand-logo_name_preview brand-logo_size_l" style="background-image: url('../../assets/doc/content/content-logo/brand-logo_name_preview.svg');">
+        </div>
+    </div>
+</div>
+
+___
+
+## Пример
+
+<div class="brand-logo brand-logo_form_round brand-logo_name_preview brand-logo_size_m" style="background-image: url('../../assets/doc/content/content-logo/brand-logo_name_preview.svg');">
+</div>
+
+``` html
+<div class="brand-logo brand-logo_form_round brand-logo_name_preview brand-logo_size_m" style="background-image: url('../../assets/doc/content/content-logo/brand-logo_name_preview.svg');">
+</div>
 ```
-
-Модификатор | Значение    
------------ | -------------------------
-form        | mask / round
-size        | xxs / xs / s / m / l / xl
-name        | activ / bape / beeline / blizzard / fallon / forgame / itunes / kcell / megafon / monument-valley / monument-valley-2 / mts / no-logo / ok / pitercss / regru / ru-center / skype / steam / tele2 / ustwo / vk / warface / wargaming / warthunder / wsd / yotarns

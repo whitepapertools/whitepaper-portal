@@ -1,0 +1,11 @@
+.community {
+  padding: var(--space-xxl);
+  background-image: linear-gradient(var(--color-bg-ghost), var(--color-bg-ghost)), linear-gradient(var(--color-bg-default), var(--color-bg-default));
+
+  &__item {
+    text-decoration: none;
+    &:hover {
+      background-color: var(--color-bg-border);
+    }
+  }
+}

@@ -1,13 +1,14 @@
 * [Нейминг](naming.md)
-* [BEMJSON](bemjson.md)
 
-* [Основы White Paper](whitepaper.md)
+* [Основы whitepaper](whitepaper.md)
 
 * [Тема](theme.md)
 	* [Цвета](theme-color.md)
 	* [Отступы](theme-space.md)
 	* [Типографика](theme-text.md)
-	* [Сеточные правила](theme-layout.md)
+	* [Брейкпоинты](theme-breakpoint.md)
+	* [Сеточные правила](theme-gap.md)
+	* [Шрифты](theme-font.md)
 
 * [Сетка](layout.md)
 	* [Обвязки](layout-outer.md)
@@ -23,10 +24,9 @@
 	* [pt-surface](pt-surface.md)
 	<!-- * [Как создать новый паттерн](patterns-new.md) -->
 
-* Контент
+* [Контент](content.md)
 	* [Текст](content-text.md)
 	* [Иконки](content-icons.md)
-	* [Иконки. Гайд](content-icon-guide.md)
 	* [Векторы](content-vectors.md)
 	<!-- * [Векторы. Гайд](content-vectors-guide.md) -->
     * [Аватар](content-avatar.md)
@@ -37,6 +37,8 @@
 * [Локальная среда, whitepaper-stub](whitepaper-stub.md)
 
 * [Сборщик](sborshik.md)
+
+* [BEMJSON](bemjson.md)
 
 * [BEMHTML](bemhtml.md)
 

@@ -1,0 +1,71 @@
+.layer-card {
+  padding: var(--space-xxl);
+  box-sizing: border-box;
+  &_view {
+    &_blue {
+      top: calc(3*var(--space-xxxl));
+      width: 420px;
+      background-color: #00C2FF;
+      box-shadow: 16px 24px 0 #0051C7;
+    }
+    &_gray-monochrome {
+      margin-left: 326px;
+      margin-top: -7%;
+      width: 400px;
+      background-color: #3B3B3B;
+      box-shadow: 16px 24px 0 #6B6B6B;
+      z-index: 2;
+    }
+    &_black-blue {
+      margin-left: 547px;
+      margin-top: -13%;
+      width: 380px;
+      background-color: var(--color-bg-default);
+      box-shadow: 16px 16px 0 #0067FF, 32px 48px 0 #0051C7;
+      border: 2px solid var(--color-bg-border);
+      z-index: 3;
+    }
+    &_black-monochrome {
+      padding: var(--space-xxxxxxl) var(--space-xxl) var(--space-xxl) var(--space-xxl);
+      margin-left: 824px;
+      margin-top: -42%;
+      width: 320px;
+      height: 360px;
+      background-color: var(--color-bg-default);
+      box-shadow: 16px 16px 0 #3B3B3B, 32px 48px 0 #6B6B6B;
+      border: 2px solid var(--color-bg-border);
+      z-index: 4;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-xs-max) {
+	.layer-card {
+    &_view {
+      &_black-monochrome {
+        margin-left: 65%;
+      } 
+    }
+	}
+}
+
+@media screen and (max-width: $screen-s-max) {
+
+}
+
+@media screen and (min-width: $screen-m) and (max-width: $screen-m-max) {
+  .layer-card {
+    &_view {
+      &_gray-monochrome {
+        margin-left: 16%;
+        margin-top: -5%;
+      }
+      &_black-blue {
+        margin-left: 42%;
+      }
+      &_black-monochrome {
+        margin-left: 65%;
+      }
+    }
+	}
+}

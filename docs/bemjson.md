@@ -1,9 +1,6 @@
 # BEMJSON
 
-BEMJSON – формат, в котором описывается разметка в БЭМ-терминах. 
-
-<iframe height='500' scrolling='no' title='BEMJSON' src='//codepen.io/whitepapertools/embed/67a82ac26b21dcfd27d0af62fdbb7f0b/?height=500&theme-id=0&default-tab=css,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/whitepapertools/pen/67a82ac26b21dcfd27d0af62fdbb7f0b/'>BEMJSON</a> by whitepaper (<a href='https://codepen.io/whitepapertools'>@whitepapertools</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+BEMJSON – формат, который мы используем для описания разметки в БЭМ-терминах.
 
 ## Блок
 
@@ -25,11 +22,11 @@ BEMJSON – формат, в котором описывается размет�
 
 ```js
 {
-	block: 'page',
-	content: [
-	{
-		elem: 'header'
-	}]
+    block: 'page',
+    content: [
+    {
+        elem: 'header'
+    }]
 }
 ```
 
@@ -37,16 +34,16 @@ BEMJSON – формат, в котором описывается размет�
 
 ```js
 {
-	block: 'page',
-	content: [
-	{
-		block: 'layout',
-		content: [
-		{
-			block: 'page',
-			elem: 'header'
-		}]
-	}]
+    block: 'page',
+    content: [
+    {
+        block: 'layout',
+        content: [
+        {
+            block: 'page',
+            elem: 'header'
+        }]
+    }]
 }
 ```
 
@@ -54,9 +51,9 @@ BEMJSON – формат, в котором описывается размет�
 
 ```html
 <div class="page">
-	<div class="layout">
-		<div class="page__header"></div>
-	</div>
+    <div class="layout">
+        <div class="page__header"></div>
+    </div>
 </div>
 ```
 
@@ -66,19 +63,19 @@ BEMJSON – формат, в котором описывается размет�
 
 ```js
 {
-	block: 'tab',
-	mods: { name: 'index', visible: true },
-	content: [
-	{
-		elem: 'item',
-		elemMods: { status: 'active' }
-	}]
+    block: 'tab',
+    mods: { name: 'index', visible: true },
+    content: [
+    {
+        elem: 'item',
+        elemMods: { status: 'active' }
+    }]
 }
 ```
 
 ```html
 <div class="tab tab_name_index tab_visible">
-	<div class="tab__item tab__item_status_active"></div>
+    <div class="tab__item tab__item_status_active"></div>
 </div>
 ```
 
@@ -88,20 +85,20 @@ BEMJSON – формат, в котором описывается размет�
 
 ```js
 {
-	block: 'page',
-	content: [
-		{ block: 'header'},
-		{ block: 'article', content: '…' },
-		'© 2017'
-	]
+    block: 'page',
+    content: [
+        { block: 'header'},
+        { block: 'article', content: '…' },
+        '© 2017'
+    ]
 }
 ```
 
 ```html
 <div class="page">
-	<div class="header"></div>
-	<div class="article">...</div>
-	© 2017
+    <div class="header"></div>
+    <div class="article">...</div>
+    © 2017
 </div>
 ```
 
@@ -111,8 +108,8 @@ BEMJSON – формат, в котором описывается размет�
 
 ```js
 {
-	block: 'link',
-	mix: { block: 'controller' }
+    block: 'link',
+    mix: { block: 'controller' }
 }
 ```
 
@@ -126,11 +123,11 @@ BEMJSON – формат, в котором описывается размет�
 
 ```js
 {
-	attrs: {
-		id: 'anchor',
-		name: 'Мультфильм "Tom & Jerry"',
-		style: 'color: red; background: green;'
-	}
+    attrs: {
+        id: 'anchor',
+        name: 'Мультфильм "Tom & Jerry"',
+        style: 'color: red; background: green;'
+    }
 }
 ```
 
@@ -144,10 +141,10 @@ BEMJSON – формат, в котором описывается размет�
 
 ```js
 {
-	tag: 'a',
-	block: 'link',
-	attrs: { href: 'bem.design' },
-	content: 'Click me!'
+    tag: 'a',
+    block: 'link',
+    attrs: { href: 'bem.design' },
+    content: 'Click me!'
 }
 ```
 

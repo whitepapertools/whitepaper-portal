@@ -1,13 +1,24 @@
 .footer {
 	padding: var(--space-xxxl) 0;
-	&__container {
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
-		align-items: center;
+	&__item {
+		a {
+			opacity: 0.6;
+			text-decoration: none;
+			display: block;
+			&:hover {
+				opacity: 1;
+			}
+		}
 	}
-	&__social {
-		display: flex;
-		flex-flow: row nowrap;
+}
+
+@media screen and (max-width: $screen-xs-max) {
+	.footer {
+		&__logo {
+			margin-bottom: var(--space-xxxl);
+		}
+		&__unit {
+			margin-bottom: var(--space-xl);
+		}
 	}
 }

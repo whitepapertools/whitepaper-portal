@@ -1,0 +1,31 @@
+.figured-button {
+	padding: var(--space-xs) var(--space-s);
+	background-color: var(--color-bg-default);
+	font-size: var(--size-l);
+	font-weight: 300;
+	color: var(--color-typo-primary);
+	display: inline-block;
+	margin-left: 14px;
+	text-decoration: none;
+	&:before {
+		content: '';
+		position: absolute;
+		border-top: 17px solid transparent;
+		border-right: 14px solid var(--color-bg-default);
+		border-bottom: 18px solid transparent;
+		margin-top: -8px;
+		margin-left: -26px;
+	}
+	&:after {
+		content: ' ';
+		position: absolute;
+		border-top: 17px solid transparent;
+		border-left: 14px solid var(--color-bg-default);
+		border-bottom: 18px solid transparent;
+		margin-top: -8px;
+		margin-left: 12px;
+	}
+	&:hover {
+		opacity: 0.7;
+	}
+}

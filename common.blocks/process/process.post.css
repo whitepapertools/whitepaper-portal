@@ -1,0 +1,38 @@
+@import "../../node_modules/whitepaper-bem/theme/_breakpoint/theme_breakpoint_default.post.css";
+
+.process {
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: var(--space-xs);
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+	&__label {
+		width: 252px; 
+		margin-right: var(--space-m);
+	}
+}
+
+@media screen and (max-width: $screen-xs-max) {
+	.process {
+		&__item {
+			display: block;
+			margin-bottom: var(--space-xxxl);
+		}
+	}
+}
+
+@media screen and (min-width: $screen-s) and (max-width: $screen-m-max) {
+	.process {
+		display: flex;
+		&__item {
+			display: block;
+			margin-bottom: var(--space-xxxxl);
+		}
+		&__label {
+			margin-bottom: var(--space-m);
+		}
+	}
+}

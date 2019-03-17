@@ -1,0 +1,100 @@
+.step-badge {
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+  padding:  var(--space-m) var(--space-xl);
+  font-size: var(--size-typo-xl);
+  font-weight: 300;
+  border-radius: 99em;
+	margin-right: 14px;
+	height: 60px;
+	box-sizing: border-box;
+  &:last-child {
+    &:after {
+      content: none;
+    }
+  }
+  &_view {
+    &_wp {
+      background-color: var(--color-bg-default);
+      color: var(--color-typo-primary);
+      &:after {
+        content: '';
+        background: url('step-badge-wp.svg');
+      }
+    }
+    &_other {
+      background-image: linear-gradient(var(--color-bg-ghost), var(--color-bg-ghost)), linear-gradient(var(--color-bg-default), var(--color-bg-default));
+      color: var(--color-typo-secondary);
+      &:after {
+        content: '';
+        background: url('step-badge-other.svg') no-repeat;
+      }
+    }
+		&_scratch {
+			background-color: var(--color-bg-stripe);
+			color: var(--color-typo-secondary);
+			&:after {
+				content: '';
+				background: url('step-badge-scratch.svg') no-repeat;
+			}
+		}
+		&_prod {
+			background-image: linear-gradient(var(--color-bg-ghost), var(--color-bg-ghost)), linear-gradient(var(--color-bg-default), var(--color-bg-default));
+			color: var(--color-typo-secondary);
+			&:after {
+				content: '';
+				background: url('step-badge-prod.svg') no-repeat;
+			}
+		}
+	}
+  &:after {
+    position: absolute;
+    width: 32px;
+    height: 42px;
+    z-index: 1;
+    right: -23px;
+    top: 9px;
+	}
+}
+
+
+@media screen and (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+	.step-badge {
+		display: block;
+		margin-bottom: var(--space-s);
+		margin-right: 0px;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+		&:after {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: $screen-s) and (max-width: $screen-s-max) {
+	.step-badge {
+		display: block;
+		margin-bottom: var(--space-s);
+		&:last-child {
+			margin-bottom: 0px;
+		}
+		&:after {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: $screen-m) and (max-width: $screen-m-max) {
+	.step-badge {
+		display: block;
+		margin-bottom: var(--space-s);
+		&:last-child {
+			margin-bottom: 0px;
+		}
+		&:after {
+			display: none;
+		}
+	}
+}
