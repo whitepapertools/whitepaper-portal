@@ -1572,7 +1572,7 @@ module.exports = {
                                                 content: {
                                                     block: 'text',
                                                     mods: { size: 'xl', view: 'secondary', weight: 'light' },
-                                                    content: '— В любую песочницу можно подключить CSS-файл со всеми собраными стилями дизайн-системы'
+                                                    content: '— В любую песочницу можно подключить CSS-файл со всеми собранными стилями дизайн-системы'
                                                 }
                                             }
                                         ]
@@ -1641,7 +1641,7 @@ module.exports = {
                                                 content: {
                                                     block: 'text',
                                                     mods: { size: 'xl', view: 'secondary', weight: 'light' },
-                                                    content: '— Можно использовать с любой технологией, которая умеет оперировать CSS-классамии'
+                                                    content: '— Можно использовать с любой технологией, которая умеет оперировать CSS-классами'
                                                 }
                                             }
                                         ]
@@ -1679,7 +1679,7 @@ module.exports = {
                                                     { block: 'e-accordion', elem: 'short' },
                                                     { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light', display: 'inline' } },
                                                 ],
-                                                content: '— В чём отличиет от Bootstrap?'
+                                                content: '— В чём отличие от Bootstrap?'
                                             },
                                             {
                                                 elem: 'answer',
@@ -1687,7 +1687,7 @@ module.exports = {
                                                 content: {
                                                     block: 'text',
                                                     mods: { size: 'xl', view: 'secondary', weight: 'light' },
-                                                    content: '— Дизайн-система предоставляет весть необходимый набор инструментов, позволяющий реализовать и гибко настроить интерфейсы любого уровня сложности и масштаба'
+                                                    content: '— Дизайн-система предоставляет весь необходимый набор инструментов, позволяющий реализовать и гибко настроить интерфейсы любого уровня сложности и масштаба'
                                                 }
                                             }
                                         ]
