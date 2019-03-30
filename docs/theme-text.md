@@ -33,4 +33,4 @@
 }
 ```
 
-Стили модфикаторов на блоке текст можно посмотреть [здесь](http://whitepaper.tools/doc.html#/content-text).
+Стили модификаторов на блоке текст можно посмотреть [здесь](http://whitepaper.tools/doc.html#/content-text).

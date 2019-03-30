@@ -6,7 +6,7 @@
 ```js
 {
 	block: 'page',
-	mix: { 
+	mix: {
 		block: 'theme',
 		mods: { color: 'default',	// цвета
 				space: 'default',	// отступы
