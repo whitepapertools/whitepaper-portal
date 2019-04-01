@@ -179,19 +179,11 @@ module.exports = {
 									'файлы тематизации: color, breakpoint, font, gap, menu, size, space'
 								],
 
-
 								minor: '', // рус.: Изменения, eng: Changes, с тчк.зр. версий – минор
-								minorList: [
-									// 'MINOR version when you add functionality in a backwards-compatible manner',
-									// 'Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married Anne Hathaway, with whom he had three children: Susanna and twins Hamnet and Judith',
-								],
-
+								minorList: [],
 
 								patch: '', // рус.: Исправлены ошибки, eng: Bug fixes, с тчк.зр. версий – патч
-								patchList: [
-									// 'PATCH version when you make backwards-compatible bug fixes',
-									// 'Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married Anne Hathaway, with whom he had three children: Susanna and twins Hamnet and Judith',
-								]
+								patchList: []
 							},
 						]
 					}
