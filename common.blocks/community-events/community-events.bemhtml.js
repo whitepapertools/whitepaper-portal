@@ -1,5 +1,3 @@
-community events шаблон
-
 block('community-events')(
   content()(function(n, ctx) {
       return {
@@ -17,7 +15,7 @@ block('community-events')(
             content: [
               {
                 block: 'image',
-                url: '/assets/PICNAME.png'
+                url: '/assets/starter-kit/monument.png'
               }
             ]
           },
