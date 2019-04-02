@@ -1,3 +1,5 @@
+community events шаблон
+
 block('community-events')(
   content()(function(n, ctx) {
       return {
@@ -6,12 +8,17 @@ block('community-events')(
           { block: 'pt-card', mods: { view: 'brand' }},
           { block: 'decorator', mods: { 'indent-b': 'xxl'}}
         ],
-        attrs: { style: 'background:#000; min-width: 320px;'},
+        // attrs: { style: 'background:#000; min-width: 320px;'},
+        attrs: { style: 'min-width: 320px;'},
         content: [
           {
-            elem: 'bg',
+            elem: 'cover',
             mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
             content: [
+              {
+                block: 'image',
+                url: '/assets/PICNAME.png'
+              }
             ]
           },
           {
