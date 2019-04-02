@@ -41,90 +41,9 @@ module.exports = {
 		}
 	],
 	content: [
-		/* Menu */
-		{
-			block: 'menu',
-			content: [
-				{
-					elem: 'content',
-					mix: { block: 'tpl-layout', elem: 'content' },
-					content: [
-						{
-							elem: 'container',
-							mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', align: 'center' }},
-							content: [
-								{
-									elem: 'inner',
-									content: [
-										{
-											elem: 'paper',
-											content: [
-												{
-													elem: 'logo',
-													tag: 'a',
-													attrs: { href: '/index.html' }
-												},
-												{
-													elem: 'download',
-													content: [
-														{
-															block: 'figured-button',
-															tag: 'a',
-															attrs: { href: 'https://github.com/whitepapertools' } ,
-															mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
-															content: 'GitHub'
-														}
-													]
-												}
-											]
-										},
-										{
-											elem: 'nav',
-											content: [
-												{
-													elem: 'item',
-													tag: 'a',
-													attrs: { href: '/doc.html' },
-													mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
-													content: 'Документация'
-												},
-												{
-													elem: 'item',
-													tag: 'a',
-													attrs: { href: '/starter-kit.html' },
-													mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
-													content: 'Starter Kit'
-												},
-												{
-													elem: 'item',
-													tag: 'a',
-													attrs: { href: '/community.html' },
-													mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
-													content: 'Сообщество'
-												},
-												{
-													elem: 'item',
-													tag: 'a',
-													attrs: { href: '/changelog.html' },
-													mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
-													content: 'Changelog'
-												}
-											]
-										}
-									]
-								}
-							]
-						}
-					]
-				}
-
-			]
-		},
-		/* Menu */
 		{
 			block: 'tpl-layout',
 			content: [
-
 				/* Grid-decor */
 				{
 					elem: 'content',
@@ -156,6 +75,88 @@ module.exports = {
 					}
 				},
 				/* Grid-decor */
+
+				/* Menu */
+				{
+					block: 'menu',
+					content: [
+						{
+							elem: 'content',
+							mix: { block: 'tpl-layout', elem: 'content' },
+							content: [
+								{
+									elem: 'container',
+									mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', align: 'center' }},
+									content: [
+										{
+											elem: 'inner',
+											content: [
+												{
+													elem: 'paper',
+													content: [
+														{
+															elem: 'logo',
+															tag: 'a',
+															attrs: { href: '/index.html' }
+														},
+														{
+															elem: 'download',
+															content: [
+																{
+																	block: 'figured-button',
+																	tag: 'a',
+																	attrs: { href: 'https://github.com/whitepapertools' } ,
+																	mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
+																	content: 'GitHub'
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'nav',
+													content: [
+														{
+															elem: 'item',
+															tag: 'a',
+															attrs: { href: '/doc.html' },
+															mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
+															content: 'Документация'
+														},
+														{
+															elem: 'item',
+															tag: 'a',
+															attrs: { href: '/starter-kit.html' },
+															mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
+															content: 'Starter Kit'
+														},
+														{
+															elem: 'item',
+															tag: 'a',
+															attrs: { href: '/community.html' },
+															mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
+															content: 'Сообщество'
+														},
+														{
+															elem: 'item',
+															tag: 'a',
+															attrs: { href: '/changelog.html' },
+															mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
+															content: 'Changelog'
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+
+					]
+				},
+				/* Menu */
+
 				{
 					elem: 'content',
 					content: {
@@ -167,26 +168,22 @@ module.exports = {
 								versionLink: '#1_0_0', // href для якоря, # обязательна
 								versionId: '1_0_0', // id для якоря
 								number: 'Версия 1.0.0',
-								description: 'This release brings a refreshed components panel, a new store publishing experience and more.',
-								date: '1 января 2019',
+								description: 'Релиз содержит переменные размеров и цветов, основные компоненты дизайн-системы whitepaper tools',
+								date: '6 октября 2018',
 
-								major: 'Важные изменения', // eng: Notable changes, с тчк.зр. версий – мажор
+								major: 'Важные изменения, добавлены:', // eng: Notable changes, с тчк.зр. версий – мажор
 								majorList: [
-									'MAJOR version when you make incompatible API changes',
-									'Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married Anne Hathaway, with whom he had three children: Susanna and twins Hamnet and Judith',
+									'шаблоны сеток: tpl-grid, tpl-layout',
+									'паттерны: pt-card, pt-form, pt-list, pt-icon-plus, pt-informer, pt-surface',
+									'контентные блоки: text, icon, social-icon, brand-logo, tag, badge, avatar',
+									'файлы тематизации: color, breakpoint, font, gap, menu, size, space'
 								],
 
-								minor: 'Изменения', // eng: Changes, с тчк.зр. версий – минор
-								minorList: [
-									'MINOR version when you add functionality in a backwards-compatible manner',
-									'Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married Anne Hathaway, with whom he had three children: Susanna and twins Hamnet and Judith',
-								],
+								minor: '', // рус.: Изменения, eng: Changes, с тчк.зр. версий – минор
+								minorList: [],
 
-								patch: 'Исправлены ошибки', // eng: Bug fixes, с тчк.зр. версий – патч
-								patchList: [
-									'PATCH version when you make backwards-compatible bug fixes',
-									'Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married Anne Hathaway, with whom he had three children: Susanna and twins Hamnet and Judith',
-								]
+								patch: '', // рус.: Исправлены ошибки, eng: Bug fixes, с тчк.зр. версий – патч
+								patchList: []
 							},
 						]
 					}
@@ -297,7 +294,6 @@ module.exports = {
 																{
 																	elem: 'unit',
 																	content: [
-																		
 																		{
 																			elem: 'item',
 																			content: [

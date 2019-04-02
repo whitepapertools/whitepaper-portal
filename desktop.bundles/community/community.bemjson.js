@@ -22,86 +22,7 @@ module.exports = {
 		}
 	],
 	content: [
-		/* Menu */
-		{
-			block: 'menu',
-			content: [
-				{
-					elem: 'content',
-					mix: { block: 'tpl-layout', elem: 'content' },
-					content: [
-						{
-							elem: 'container',
-							mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', align: 'center' }},
-							content: [
-								{
-									elem: 'inner',
-									content: [
-										{
-											elem: 'paper',
-											content: [
-												{
-													elem: 'logo',
-													tag: 'a',
-													attrs: { href: '/index.html' }
-												},
-												{
-													elem: 'download',
-													content: [
-														{
-															block: 'figured-button',
-															tag: 'a',
-															attrs: { href: 'https://github.com/whitepapertools' } ,
-															mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
-															content: 'GitHub'
-														}
-													]
-												}
-											]
-										},
-										{
-											elem: 'nav',
-											content: [
-												{
-													elem: 'item',
-													tag: 'a',
-													attrs: { href: '/doc.html' },
-													mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
-													content: 'Документация'
-												},
-												{
-													elem: 'item',
-													tag: 'a',
-													attrs: { href: '/starter-kit.html' },
-													mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
-													content: 'Starter Kit'
-												},
-												{
-													elem: 'item',
-													tag: 'a',
-													attrs: { href: '/community.html' },
-													mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
-													content: 'Сообщество'
-												},
-												{
-													elem: 'item',
-													tag: 'a',
-													attrs: { href: '/changelog.html' },
-													mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
-													content: 'Changelog'
-												}
-											]
-										}
-									]
-								}
-							]
-						}
-					]
-				}
 
-			]
-		},
-		/* Menu */
 		{
 			block: 'tpl-layout',
 			content: [
@@ -138,8 +59,88 @@ module.exports = {
 				},
 				/* Grid-decor */
 
-				/* Page content */
+				/* Menu */
+				{
+					block: 'menu',
+					content: [
+						{
+							elem: 'content',
+							mix: { block: 'tpl-layout', elem: 'content' },
+							content: [
+								{
+									elem: 'container',
+									mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', align: 'center' }},
+									content: [
+										{
+											elem: 'inner',
+											content: [
+												{
+													elem: 'paper',
+													content: [
+														{
+															elem: 'logo',
+															tag: 'a',
+															attrs: { href: '/index.html' }
+														},
+														{
+															elem: 'download',
+															content: [
+																{
+																	block: 'figured-button',
+																	tag: 'a',
+																	attrs: { href: 'https://github.com/whitepapertools' } ,
+																	mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
+																	content: 'GitHub'
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'nav',
+													content: [
+														{
+															elem: 'item',
+															tag: 'a',
+															attrs: { href: '/doc.html' },
+															mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
+															content: 'Документация'
+														},
+														{
+															elem: 'item',
+															tag: 'a',
+															attrs: { href: '/starter-kit.html' },
+															mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
+															content: 'Starter Kit'
+														},
+														{
+															elem: 'item',
+															tag: 'a',
+															attrs: { href: '/community.html' },
+															mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
+															content: 'Сообщество'
+														},
+														{
+															elem: 'item',
+															tag: 'a',
+															attrs: { href: '/changelog.html' },
+															mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
+															content: 'Changelog'
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
 
+					]
+				},
+				/* Menu */
+
+				/* Page content */
 				{
 					elem: 'content',
 					mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' }},
@@ -150,7 +151,6 @@ module.exports = {
 							{
 								block: 'community-page',
 								content: [
-
 									/* Social */
 				        	{
 										elem: 'social',
@@ -532,7 +532,7 @@ module.exports = {
 																{
 																	elem: 'unit',
 																	content: [
-																		
+
 																		{
 																			elem: 'item',
 																			content: [
