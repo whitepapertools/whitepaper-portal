@@ -210,7 +210,7 @@ module.exports = {
                                             {
                                                 block: 'text',
                                                 mods: { size: 'l', view: 'secondary', font: 'mono' },
-                                                content: 'Цвета, отступы, размеры, брейкпоиты'
+                                                content: 'Цвета, отступы, размеры, брейкпоинты'
                                             }
                                         ]
                                     },
