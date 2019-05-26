@@ -1,0 +1,6 @@
+.checkbox_state_disabled {
+	cursor: default;
+	.checkbox__text {
+		opacity: .5;
+	}
+}

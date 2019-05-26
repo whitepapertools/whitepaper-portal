@@ -151,6 +151,9 @@ $color-control-typo-placeholder-disable:   color($color-base-phantom l(+50%)); /
 	--control-button-size-m: var(--space-xxxl);
 	--control-button-size-s: var(--space-xxl);
 
+	--control-checkbox-size-m: var(--space-m);
+	--control-checkbox-size-l: var(--space-l);
+
 	--control-space-xl: var(--space-xxl);
 	--control-space-l: var(--space-l);
 	--control-space-m: var(--space-m);

@@ -35,9 +35,9 @@ $color-control-input-default:              $color-base-essential; /* Цвет а
 
 
 /* Action / Focus / Check / Progress */
-$color-control-bg-action:                  color($color-base-project l(+15%)); /* Цвет фона активного контрола */
-$color-control-bg-action-hover:            color($color-base-project l(-5%)); /* Цвет фона активного контрола по ховеру */
-$color-control-bg-action-press:            $color-base-project; /* Цвет фон активного контрола по нажатию */
+$color-control-bg-action:                  color($color-base-project a(94%)); /* Цвет фона активного контрола */
+$color-control-bg-action-hover:            color($color-base-project); /* Цвет фона активного контрола по ховеру */
+$color-control-bg-action-press:            color($color-base-project a(86%)); /* Цвет фон активного контрола по нажатию */
 $color-control-bg-action-progress:         color($color-base-project a(30%)); /* Цвет фон активного контрола в прогрессе */
 $color-control-bg-action-progressing:      color($color-base-project a(30%)); /* Цвет фон активного контрола в прогрессе выполнения */
 
@@ -151,6 +151,9 @@ $color-control-typo-placeholder-disable:   color($color-base-phantom l(+50%)); /
 	--control-button-size-l: var(--space-xxxxl);
 	--control-button-size-m: var(--space-xxxl);
 	--control-button-size-s: var(--space-xxl);
+
+	--control-checkbox-size-m: var(--space-m);
+	--control-checkbox-size-l: var(--space-l);
 
 	--control-space-xl: var(--space-xxl);
 	--control-space-l: var(--space-l);

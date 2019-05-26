@@ -8,7 +8,7 @@ block('ui-preview')({
 				content: [
 					{
 						block: 'text',
-						mods: { size: 'xxxl', weight: 'bold', view: 'primary' },
+						mods: { size: 'xxxxl', weight: 'bold', view: 'primary' },
 						mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 						content: 'Buttons'
 					},
@@ -220,9 +220,9 @@ block('ui-preview')({
 				content: [
 					{
 						block: 'text',
-						mods: { size: 'xxxl', weight: 'bold', view: 'primary' },
+						mods: { size: 'xxxxl', weight: 'bold', view: 'primary' },
 						mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-						content: 'Inputs'
+						content: 'Inputs and textarea'
 					},
 					{
 						content: [
@@ -234,13 +234,24 @@ block('ui-preview')({
 							},
 							{
 								block: 'decorator',
+								content: [
+									{
+										block: 'input',
+										tag: 'input', attrs: { type: 'text', placeholder: 'Single-line input' },
+										mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+										mods: { view: 'default', size: 's'},
+									},
+								]
+							},
+							{
+								block: 'decorator',
 								mods: { 'indent-b': 'xl' },
 								content: [
 									{
 										block: 'input',
-										tag: 'input', attrs: { type: 'text', placeholder: 'Username' },
+										tag: 'textarea', attrs: { type: 'text', placeholder: 'Multi-line input' },
 										mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-										mods: { view: 'default', size: 's'},
+										mods: { view: 'default', size: 's', type: 'textarea'},
 									},
 								]
 							},
@@ -256,13 +267,24 @@ block('ui-preview')({
 							},
 							{
 								block: 'decorator',
-								mods: { 'indent-b': 'xl' },
 								content: [
 									{
 										block: 'input',
 										tag: 'input', attrs: { type: 'text', placeholder: 'Username' },
 										mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 										mods: { view: 'default', size: 'm'},
+									},
+								]
+							},
+							{
+								block: 'decorator',
+								mods: { 'indent-b': 'xl' },
+								content: [
+									{
+										block: 'input',
+										tag: 'textarea', attrs: { type: 'text', placeholder: 'Multi-line input' },
+										mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+										mods: { view: 'default', size: 'm', type: 'textarea'},
 									},
 								]
 							},
@@ -278,13 +300,24 @@ block('ui-preview')({
 							},
 							{
 								block: 'decorator',
-								mods: { 'indent-b': 'xl' },
 								content: [
 									{
 										block: 'input',
 										tag: 'input', attrs: { type: 'text', placeholder: 'Username' },
 										mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 										mods: { view: 'default', size: 'l'},
+									},
+								]
+							},
+							{
+								block: 'decorator',
+								mods: { 'indent-b': 'xl' },
+								content: [
+									{
+										block: 'input',
+										tag: 'textarea', attrs: { type: 'text', placeholder: 'Multi-line input' },
+										mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+										mods: { view: 'default', size: 'l', type: 'textarea'},
 									},
 								]
 							},
@@ -300,7 +333,6 @@ block('ui-preview')({
 							},
 							{
 								block: 'decorator',
-								mods: { 'indent-b': 'xl' },
 								content: [
 									{
 										block: 'input',
@@ -310,11 +342,281 @@ block('ui-preview')({
 									},
 								]
 							},
+							{
+								block: 'decorator',
+								mods: { 'indent-b': 'xl' },
+								content: [
+									{
+										block: 'input',
+										tag: 'textarea', attrs: { type: 'text', placeholder: 'Multi-line input' },
+										mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+										mods: { view: 'default', size: 'l', type: 'textarea', width: 'full'},
+									},
+								]
+							},
 						]
 					},
 				]
 			},
 			// Инпуты
+
+
+			// Радио
+			{
+				block: 'section',
+				mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+				content: [
+					{
+						block: 'text',
+						mods: { size: 'xxxxl', weight: 'bold', view: 'primary' },
+						mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+						content: 'Radio'
+					},
+					{
+						content: [
+							{
+								block: 'decorator',
+								mods: { 'indent-b': 'xl' },
+								content: [
+									{
+										block: 'text',
+										mods: { size: 'xl', view: 'primary' },
+										mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
+										content: 'Size M'
+									},
+									{
+										block: 'radio',
+										mods: { size: 'm' },
+										tag: 'label',
+										content: [
+											{
+												elem: 'input',
+												tag: 'input', attrs: { type: 'radio' },
+											},
+											{
+												elem: 'box',
+											},
+											{
+												elem: 'text',
+												content: 'Radio'
+											},
+										]
+									},
+								]
+							},
+							{
+								block: 'decorator',
+								mods: { 'indent-b': 'xl' },
+								content: [
+									{
+										block: 'text',
+										mods: { size: 'xl', view: 'primary' },
+										mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
+										content: 'Size L'
+									},
+									{
+										block: 'radio',
+										mods: { size: 'l' },
+										tag: 'label',
+										content: [
+											{
+												elem: 'input',
+												tag: 'input', attrs: { type: 'radio' },
+											},
+											{
+												elem: 'box',
+											},
+											{
+												elem: 'text',
+												content: 'Radio'
+											},
+										]
+									},
+								]
+							},
+							{
+								block: 'decorator',
+								mods: { 'indent-b': 'xl' },
+								content: [
+									{
+										block: 'text',
+										mods: { size: 'xl', view: 'primary' },
+										mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
+										content: 'Disabled'
+									},
+									{
+										block: 'radio',
+										mods: { size: 'l', state: 'disabled' },
+										tag: 'label',
+										mix: { block: 'decorator', mods: { 'indent-r': 'xxl' }},
+										content: [
+											{
+												elem: 'input',
+												tag: 'input', attrs: { type: 'radio', checked: true, disabled: true },
+											},
+											{
+												elem: 'box',
+											},
+											{
+												elem: 'text',
+												content: 'Radio'
+											},
+										]
+									},
+									{
+										block: 'radio',
+										mods: { size: 'l', state: 'disabled' },
+										tag: 'label',
+										content: [
+											{
+												elem: 'input',
+												tag: 'input', attrs: { type: 'radio', disabled: true },
+											},
+											{
+												elem: 'box',
+											},
+											{
+												elem: 'text',
+												content: 'Radio'
+											},
+										]
+									},
+								]
+							},
+						]
+					},
+				]
+			},
+			// Радио
+
+
+			// Радио
+			{
+				block: 'section',
+				mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+				content: [
+					{
+						block: 'text',
+						mods: { size: 'xxxxl', weight: 'bold', view: 'primary' },
+						mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+						content: 'Checkbox'
+					},
+					{
+						content: [
+							{
+								block: 'decorator',
+								mods: { 'indent-b': 'xl' },
+								content: [
+									{
+										block: 'text',
+										mods: { size: 'xl', view: 'primary' },
+										mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
+										content: 'Size M'
+									},
+									{
+										block: 'checkbox',
+										mods: { size: 'm' },
+										tag: 'label',
+										content: [
+											{
+												elem: 'input',
+												tag: 'input', attrs: { type: 'checkbox' },
+											},
+											{
+												elem: 'box',
+											},
+											{
+												elem: 'text',
+												content: 'checkbox'
+											},
+										]
+									},
+								]
+							},
+							{
+								block: 'decorator',
+								mods: { 'indent-b': 'xl' },
+								content: [
+									{
+										block: 'text',
+										mods: { size: 'xl', view: 'primary' },
+										mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
+										content: 'Size L'
+									},
+									{
+										block: 'checkbox',
+										mods: { size: 'l' },
+										tag: 'label',
+										content: [
+											{
+												elem: 'input',
+												tag: 'input', attrs: { type: 'checkbox' },
+											},
+											{
+												elem: 'box',
+											},
+											{
+												elem: 'text',
+												content: 'checkbox'
+											},
+										]
+									},
+								]
+							},
+							{
+								block: 'decorator',
+								mods: { 'indent-b': 'xl' },
+								content: [
+									{
+										block: 'text',
+										mods: { size: 'xl', view: 'primary' },
+										mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
+										content: 'Disabled'
+									},
+									{
+										block: 'checkbox',
+										mods: { size: 'l', state: 'disabled' },
+										tag: 'label',
+										mix: { block: 'decorator', mods: { 'indent-r': 'xxl' }},
+										content: [
+											{
+												elem: 'input',
+												tag: 'input', attrs: { type: 'checkbox', checked: true, disabled: true },
+											},
+											{
+												elem: 'box',
+											},
+											{
+												elem: 'text',
+												content: 'checkbox'
+											},
+										]
+									},
+									{
+										block: 'checkbox',
+										mods: { size: 'l', state: 'disabled' },
+										tag: 'label',
+										content: [
+											{
+												elem: 'input',
+												tag: 'input', attrs: { type: 'checkbox', disabled: true },
+											},
+											{
+												elem: 'box',
+											},
+											{
+												elem: 'text',
+												content: 'checkbox'
+											},
+										]
+									},
+								]
+							},
+						]
+					},
+				]
+			}
+			// Радио
 		]
 	}
 });

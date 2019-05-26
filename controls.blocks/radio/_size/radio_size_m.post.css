@@ -1,0 +1,19 @@
+.radio_size_m {
+	height: var(--control-button-size-m);
+
+	.radio__box {
+		width: var(--control-checkbox-size-m);
+		height: var(--control-checkbox-size-m);
+
+		&::before {
+			width: calc(var(--control-checkbox-size-m) / 2);
+			height: calc(var(--control-checkbox-size-m) / 2);
+			top: 2px;
+			left: 2px;
+		}
+	}
+
+	.radio__text {
+		font-size: var(--control-size-m);
+	}
+}

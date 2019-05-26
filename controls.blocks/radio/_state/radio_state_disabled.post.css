@@ -1,0 +1,6 @@
+.radio_state_disabled {
+	cursor: default;
+	.radio__text {
+		opacity: .5;
+	}
+}

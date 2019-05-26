@@ -2,4 +2,10 @@
 	font-size: var(--control-size-m);
 	height: var(--control-button-size-m);
 	padding: 0 var(--control-space-s);
+
+	&.input_type_textarea {
+		height: initial;
+		padding-top: calc((var(--control-button-size-m) - var(--control-size-m)) / 2 - var(--control-border-width));
+		padding-bottom: var(--control-space-s);
+	}
 }
