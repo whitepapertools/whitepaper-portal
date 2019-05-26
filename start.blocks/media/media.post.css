@@ -25,6 +25,9 @@
 		display: flex;
 		justify-content: space-between;
 	}
+	&__collection {
+		width: 100%;
+	}
 	&__playlist {
 		&:after {
 			content: '';
