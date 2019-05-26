@@ -42,6 +42,44 @@ let colorBaseBase = '#ffffff', /* Базовый цвет содержимого
 		colorBaseNormal = '#dde3e5', /* Цвет нейтральный */
 		colorBaseSystem = '#778a9b'; /* Цвет cистемы */
 
+let copyArea = document.querySelector('.theme-generator__copy-area');
+function updateTheme() {
+	copyArea.value = '.theme_color_theme-generator {' + '\n' +
+		'	/* Цвета блоков */' + '\n' +
+		'	--color-bg-brand: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-brand') + '; /* Цвет фона брендированый */' + '\n' +
+		'	--color-bg-action: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-action') + '; /* Цвет фона действия */' + '\n' +
+		'	--color-bg-selection: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-selection') + '; /* Цвет фона выделения */' + '\n' +
+		'	--color-bg-hover: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-hover') + '; /* Цвет фона при наведении */' + '\n' +
+		'	--color-bg-border: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-border') + '; /* Цвет границ */' + '\n' +
+		'	--color-bg-stripe: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-stripe') + '; /* Цвет зебры */' + '\n' +
+		'	--color-bg-ghost: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-ghostd') + '; /* Цвет затенения */' + '\n' +
+		'	--color-bg-default: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-default') + '; /* Цвет дефолта */' + '\n' +
+		'	--color-bg-tone: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-tone') + '; /* Цвет паранджи */' + '\n' +
+		'	--color-bg-soft: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-soft') + '; /* Цвет молока */' + '\n' +
+		'	--color-bg-success: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-success') + '; /* Цвет успеха */' + '\n' +
+		'	--color-bg-alert: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-alert') + '; /* Цвет ошибки */' + '\n' +
+		'	--color-bg-warning: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-warning') + '; /* Цвет предупреждения */' + '\n' +
+		'	--color-bg-normal: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-normal') + '; /* Цвет нейтральный */' + '\n' +
+		'	--color-bg-system: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-system') + '; /* Цвет системнный */' + '\n' +
+		'	--color-bg-link: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-link') + '; /* Цвет фона ссылки */' + '\n' +
+		'	/* Цвета текста */' + '\n' +
+		'	--color-typo-brand: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-brand') + '; /* Цвет брендового текста */' + '\n' +
+		'	--color-typo-primary: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-primary') + '; /* Цвет основного текста */' + '\n' +
+		'	--color-typo-promo: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-promo') + '; /* Цвет промо текста */' + '\n' +
+		'	--color-typo-secondary: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-secondary') + '; /* Цвет второстепенного текста */' + '\n' +
+		'	--color-typo-ghost: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-ghost') + '; /* Цвет дополнительного текста */' + '\n' +
+		'	--color-typo-disable: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-disabled') + '; /* Цвет неактивного текста */' + '\n' +
+		'	--color-typo-success: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-success') + '; /* Цвет текста успеха */' + '\n' +
+		'	--color-typo-warning: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-warning') + '; /* Цвет текста предупреждения */' + '\n' +
+		'	--color-typo-alert: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-alert') + '; /* Цвет текста ошибки */' + '\n' +
+		'/* Цвета ссылок */' + '\n' +
+		'	--color-link: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-link') + '; /* Цвет основной ссылки */' + '\n' +
+		'	--color-link-external: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-link-external') + '; /* Цвет дополнительной ссылки */' + '\n' +
+		'	--color-link-minor: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-link-minor') + '; /* Цвет второстепенной ссылки */' + '\n' +
+		'	--color-link-hover: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-link-hover') + '; /* Цвет ховера ссылки */'
+}
+updateTheme();
+
 // Функция повторяет математику цветов в postcss, на вход принимает hex код базовых цветов
 function wpColorMath(colorBaseBase, colorBaseEssential, colorBaseProject, colorBasePhantom, colorBasePath, colorBaseSuccess, colorBaseAlert, colorBaseWarning, colorBaseNormal, colorBaseSystem) {
 	// Цвета текстов
@@ -77,6 +115,7 @@ function wpColorMath(colorBaseBase, colorBaseEssential, colorBaseProject, colorB
 	themeColorThemeGenerator.style.setProperty('--color-link-external', colorBasePath); /* Цвет дополнительной ссылки */
 	themeColorThemeGenerator.style.setProperty('--color-link-minor', transformColor('color(' + colorBasePath + ' h(+22) s(-80%) l(+13%))')); /* Цвет второстепенной ссылки */
 	themeColorThemeGenerator.style.setProperty('--color-link-hover', transformColor('color(' + colorBasePath + ' l(-7%))')); /* Цвет ховера ссылки */
+	updateTheme();
 }
 
 // Изменение базового цвета
@@ -102,42 +141,6 @@ colorControlBasePhantom.addEventListener('input', () => {
 });
 
 // Вывод темы в css в инпут
-let copyArea = document.querySelector('.theme-generator__copy-area');
-copyArea.value = '.theme_color_theme-generator {' + '\n' +
-	'	/* Цвета блоков */' + '\n' +
-	'	--color-bg-brand: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-brand') + '; /* Цвет фона брендированый */' + '\n' +
-	'	--color-bg-action: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-action') + '; /* Цвет фона действия */' + '\n' +
-	'	--color-bg-selection: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-selection') + '; /* Цвет фона выделения */' + '\n' +
-	'	--color-bg-hover: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-hover') + '; /* Цвет фона при наведении */' + '\n' +
-	'	--color-bg-border: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-border') + '; /* Цвет границ */' + '\n' +
-	'	--color-bg-stripe: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-stripe') + '; /* Цвет зебры */' + '\n' +
-	'	--color-bg-ghost: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-ghostd') + '; /* Цвет затенения */' + '\n' +
-	'	--color-bg-default: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-default') + '; /* Цвет дефолта */' + '\n' +
-	'	--color-bg-tone: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-tone') + '; /* Цвет паранджи */' + '\n' +
-	'	--color-bg-soft: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-soft') + '; /* Цвет молока */' + '\n' +
-	'	--color-bg-success: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-success') + '; /* Цвет успеха */' + '\n' +
-	'	--color-bg-alert: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-alert') + '; /* Цвет ошибки */' + '\n' +
-	'	--color-bg-warning: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-warning') + '; /* Цвет предупреждения */' + '\n' +
-	'	--color-bg-normal: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-normal') + '; /* Цвет нейтральный */' + '\n' +
-	'	--color-bg-system: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-system') + '; /* Цвет системнный */' + '\n' +
-	'	--color-bg-link: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-link') + '; /* Цвет фона ссылки */' + '\n' +
-	'	/* Цвета текста */' + '\n' +
-	'	--color-typo-brand: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-brand') + '; /* Цвет брендового текста */' + '\n' +
-	'	--color-typo-primary: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-primary') + '; /* Цвет основного текста */' + '\n' +
-	'	--color-typo-promo: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-promo') + '; /* Цвет промо текста */' + '\n' +
-	'	--color-typo-secondary: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-secondary') + '; /* Цвет второстепенного текста */' + '\n' +
-	'	--color-typo-ghost: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-ghost') + '; /* Цвет дополнительного текста */' + '\n' +
-	'	--color-typo-disable: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-disabled') + '; /* Цвет неактивного текста */' + '\n' +
-	'	--color-typo-success: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-success') + '; /* Цвет текста успеха */' + '\n' +
-	'	--color-typo-warning: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-warning') + '; /* Цвет текста предупреждения */' + '\n' +
-	'	--color-typo-alert: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-typo-alert') + '; /* Цвет текста ошибки */' + '\n' +
-	'/* Цвета ссылок */' + '\n' +
-	'	--color-link: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-link') + '; /* Цвет основной ссылки */' + '\n' +
-	'	--color-link-external: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-link-external') + '; /* Цвет дополнительной ссылки */' + '\n' +
-	'	--color-link-minor: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-link-minor') + '; /* Цвет второстепенной ссылки */' + '\n' +
-	'	--color-link-hover: ' + getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-link-hover') + '; /* Цвет ховера ссылки */'
-
-console.log(getComputedStyle(themeColorThemeGenerator).getPropertyValue('--color-bg-brand'));
 
 //
 // ДАЛЬШЕ УЖЕ НЕ ТРОГАЙ

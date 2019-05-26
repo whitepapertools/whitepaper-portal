@@ -461,12 +461,12 @@ module.exports = {
 									// Инпут для копирования кода
 									{
 										block: 'input',
-										attrs: { style: 'height: 400px;' },
 										mix: [
 											{ block: 'theme-generator', elem: 'copy-area' },
 											{ block: 'tpl-grid', elem: 'fraction', elemMods: { col: '3' } },
 										],
-										tag: 'textarea', attrs: { rows: '10', placeholder: 'Username' },
+										tag: 'textarea',
+										attrs: { rows: '10', placeholder: 'Username', style: 'height: 400px;' },
 										mods: { width: 'full', size: 'l'},
 									}
 									// Инпут для копирования кода
