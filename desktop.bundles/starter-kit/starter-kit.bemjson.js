@@ -166,57 +166,242 @@ module.exports = {
 								},
 								/* /Heading */
 
-								/* Tarif */
+								/* Event */
 								{
 									elem: 'section',
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' }},
+									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
 									content: [
 										{
 											block: 'tpl-grid',
 											mods: { 'col-gap': 'full', 'row-gap': 'full', 's-columns': '6' },
 											content: [
+
 												{
 													elem: 'fraction',
 													elemMods: { 's-col': '3', 'm-col': '2' },
 													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
-															block: 'tariff',
+															block: 'event',
+															mix: { block: 'pt-card', mods: { view: 'default' }},
+															content: [
+																{
+																	elem: 'announce',
+																	mix: [
+																		{ block: 'theme', mods: { color: 'whitepaper-portal-brand', control: 'whitepaper-default' }},
+																		{ block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' }},
+																	],
+																	content: [
+																		{
+																			elem: 'date',
+																			mix: { block: 'text', mods: { size: 's', view: 'primary' }},
+																			content: 'May'
+																		},
+																		{
+																			elem: 'type',
+																			mix: [
+																				{ block: 'text', mods: { size: 'm', view: 'secondary', weight: 'bold' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'xs' }}
+																			],
+																			content: 'Event'
+																		},
+																		{
+																			elem: 'event',
+																			mix: [
+																				{ block: 'text', mods: { size: 'xxl', view: 'primary', weight: 'bold', font: 'sans' }},
+																				{ block: 'decorator', mods: { 'indent-b': 's' }}
+																			],
+																			content: '3rd Annual Innate Killer'
+																		},
+																		{
+																			block: 'avatar',
+																			elem: 'photo',
+																			elemMods: { size: 's'},
+																			content: [
+																				{
+																					block: 'image',
+																					width: 40,
+																					url: '/assets/starter-kit/Carolyn Z.jpg'
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	elem: 'info',
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' }},
+																	content: [
+																		{
+																			elem: 'wrap',
+																			content: [
+																				{
+																					elem: 'contacts',
+																					mix: { block: 'pt-list' },
+																					content: [
+																						{
+																							elem: 'item',
+																							mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																							content: [
+																								{
+																									block: 'pt-icon-plus',
+																									mods: { 'vertical-align': 'center' },
+																									content: [
+																										{
+																											elem: 'icon',
+																											elemMods: { 'indent-r': 's' },
+																											content: [
+																												{
+																													block: 'icon',
+																													mods: { name: 'marker', size: 's', view: 'primary', round: 'default' },
+																													mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
+																												}
+																											]
+																										},
+																										{
+																											block: 'content',
+																											content: [
+																												{
+																													block: 'text',
+																													mods: { size: 'm', display: 'inline', font: 'sans' },
+																													content: 'Kaigandori, Naka-ku 23 Japan'
+																												}
+																											]
+																										}
+																									]
+																								}
+																							]
+																						},
+																						{
+																							elem: 'item',
+																							mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																							content: [
+																								{
+																									block: 'pt-icon-plus',
+																									mods: { 'vertical-align': 'center' },
+																									content: [
+																										{
+																											elem: 'icon',
+																											elemMods: { 'indent-r': 's' },
+																											content: [
+																												{
+																													block: 'icon',
+																													mods: { name: 'phone-1', size: 's', view: 'primary', round: 'default' },
+																													mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
+																												}
+																											]
+																										},
+																										{
+																											block: 'content',
+																											content: [
+																												{
+																													block: 'text',
+																													mods: { size: 'm', display: 'inline', font: 'sans' },
+																													content: '81 45-662-1099'
+																												}
+																											]
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	elem: 'action',
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl' }},
+																	content: [
+																		{
+																			block: 'button',
+																			tag: 'button',
+																			mods: { size: 'l', view: 'primary', width: 'full' },
+																			content: 'Reserved'
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'fraction',
+													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
+													content: [
+														{
+															block: 'event',
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-portal-default', control: 'whitepaper-default' }},
-																{ block: 'pt-card' }
+																{ block: 'pt-list' },
+																{ block: 'pt-card', mods: { view: 'default' }},
 															],
 															content: [
 																{
 																	elem: 'content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'content' },
 																	content: [
 																		{
-																			elem: 'type',
-																			mix: [
-																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }}
-																			],
-																			content: 'Light'
+																			elem: 'photo',
+																			content: [
+																				{
+																					block: 'image',
+																					attrs: { 'style': 'width: 100%' },
+																					url: '../../../../assets/starter-kit/subzero-cover.png'
+																				}
+																			]
 																		},
 																		{
-																			elem: 'type',
+																			elem: 'description',
 																			mix: [
-																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', font: 'sans' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
+																				{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
+																				{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' }},
 																			],
-																			content: 'For large companies'
-																		},
+																			content: [
+																				{
+																					elem: 'name',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'xxs', distribute: 'between' }},
+																					content: [
+																						{
+																							block: 'text',
+																							mods: { view: 'primary', size: 'xl', weight: 'bold' },
+																							content: 'Subzero!'
+																						},
+																						{
+																							block: 'text',
+																							mods: { view: 'primary', size: 'xl', weight: 'bold', font: 'sans' },
+																							content: '4.5'
+																						}
+																					]
+																				},
+																				{
+																					elem: 'rating',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'l', distribute: 'between' }},
+																					content: [
+																						{
+																							block: 'text',
+																							mods: { view: 'secondary', size: 'm', weight: 'semibold', font: 'sans', font: 'sans' },
+																							content: 'Cafe'
+																						},
+																						{
+																							block: 'text',
+																							mods: { view: 'secondary', size: 'm', weight: 'semibold', font: 'sans', font: 'sans' },
+																							content: '324 reviews'
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	elem: 'footer',
+																	mix: { block: 'pt-card', elem: 'footer' },
+																	content: [
 																		{
-																			elem: 'sale',
-																			mix: [
-																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: 'xxxxl' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
-																			],
-																			content: '$22'
-																		},
-																		{
-																			elem: 'assets',
+																			elem: 'info',
+																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-h': 'xl', 'space-v': 'xl', 'indent-b': 's' }},
 																			content: [
 																				{
 																					elem: 'item',
@@ -232,7 +417,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'icon',
-																											mods: { name: 'part', size: 's', view: 'primary', round: 'default' },
+																											mods: { name: 'marker', size: 's', view: 'primary', round: 'default' },
 																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
 																										}
 																									]
@@ -242,8 +427,8 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'text',
-																											mods: { size: 'm', view: 'primary', font: 'sans' },
-																											content: '50 presentations/month'
+																											mods: { size: 'm', display: 'inline', font: 'sans' },
+																											content: 'Kaigandori, Naka-ku 23 Japan'
 																										}
 																									]
 																								}
@@ -265,7 +450,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'icon',
-																											mods: { name: 'wait-2', size: 's', view: 'primary', round: 'default' },
+																											mods: { name: 'phone-1', size: 's', view: 'primary', round: 'default' },
 																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
 																										}
 																									]
@@ -275,8 +460,8 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'text',
-																											mods: { size: 'm', view: 'primary', font: 'sans' },
-																											content: '5 house of free support'
+																											mods: { size: 'm', display: 'inline', font: 'sans' },
+																											content: '81 45-662-1099'
 																										}
 																									]
 																								}
@@ -298,7 +483,7 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'icon',
-																											mods: { name: 'statistic', size: 's', view: 'primary', round: 'default' },
+																											mods: { name: 'comment', size: 's', view: 'primary', round: 'default' },
 																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
 																										}
 																									]
@@ -308,8 +493,8 @@ module.exports = {
 																									content: [
 																										{
 																											block: 'text',
-																											mods: { size: 'm', view: 'primary', font: 'sans'  },
-																											content: '10 campaigns/month'
+																											mods: { size: 'm', display: 'inline', font: 'sans' },
+																											content: 'www.subzero.com'
 																										}
 																									]
 																								}
@@ -318,18 +503,6 @@ module.exports = {
 																					]
 																				}
 																			]
-																		}
-																	]
-																},
-																{
-																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
-																	content: [
-																		{
-																			block: 'button',
-																			tag: 'button',
-																			mods: { size: 'l', view: 'primary', width: 'full' },
-																			content: 'Choose month plan'
 																		}
 																	]
 																}
@@ -343,323 +516,80 @@ module.exports = {
 													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
 													content: [
 														{
-															block: 'tariff',
+															block: 'event',
 															mix: [
 																{ block: 'theme', mods: { color: 'whitepaper-portal-brand', control: 'whitepaper-brand' }},
-																{ block: 'pt-card' }
+																{ block: 'pt-card', mods: { view: 'default' }}
 															],
 															content: [
 																{
 																	elem: 'content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl' }},
 																	content: [
 																		{
-																			elem: 'type',
-																			mix: [
-																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }}
-																			],
-																			content: 'Standard'
-																		},
-																		{
-																			elem: 'type',
-																			mix: [
-																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', font: 'sans' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
-																			],
-																			content: 'For large companies'
-																		},
-																		{
-																			elem: 'sale',
-																			mix: [
-																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: 'xxxxl' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
-																			],
-																			content: '$66'
-																		},
-																		{
-																			elem: 'assets',
+																			block: 'pt-icon-plus',
+																			mods: { 'vertical-align': 'center' },
+																			mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																			content: [
 																				{
-																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					elem: 'icon',
+																					elemMods: { 'indent-r': 's' },
+																					mix: { block: 'avatar' },
 																					content: [
 																						{
-																							block: 'pt-icon-plus',
-																							mods: { 'vertical-align': 'center' },
+																							block: 'avatar',
+																							elem: 'photo',
+																							elemMods: { size: 's' },
 																							content: [
 																								{
-																									elem: 'icon',
-																									elemMods: { 'indent-r': 's' },
-																									content: [
-																										{
-																											block: 'icon',
-																											mods: { name: 'part', size: 's', view: 'brand', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
-																										}
-																									]
-																								},
-																								{
-																									block: 'content',
-																									content: [
-																										{
-																											block: 'text',
-																											mods: { size: 'm', view: 'primary', font: 'sans' },
-																											content: '50 presentations/month'
-																										}
-																									]
+																									block: 'image',
+																									width: 40,
+																									url: '/assets/starter-kit/Steph Jeong.jpg'
 																								}
 																							]
 																						}
 																					]
 																				},
 																				{
-																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					elem: 'block',
 																					content: [
 																						{
-																							block: 'pt-icon-plus',
-																							mods: { 'vertical-align': 'center' },
-																							content: [
-																								{
-																									elem: 'icon',
-																									elemMods: { 'indent-r': 's' },
-																									content: [
-																										{
-																											block: 'icon',
-																											mods: { name: 'wait-2', size: 's', view: 'brand', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
-																										}
-																									]
-																								},
-																								{
-																									block: 'content',
-																									content: [
-																										{
-																											block: 'text',
-																											mods: { size: 'm', view: 'primary', font: 'sans' },
-																											content: '5 house of free support'
-																										}
-																									]
-																								}
-																							]
+																							block: 'text',
+																							mods: { view: 'primary', size: 'm', weight: 'semibold', font: 'sans' },
+																							content: 'Steph Jeong'
+																						},
+																						{
+																							block: 'text',
+																							mods: { view: 'secondary', size: 's' },
+																							content: '@jeongsteph'
 																						}
 																					]
-																				},
+																				}
+																			]
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'xl', view: 'primary', weight: 'bold' },
+																			content: [
+																				'No individual colour making up this wave travels ',
 																				{
-																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
-																					content: [
-																						{
-																							block: 'pt-icon-plus',
-																							mods: { 'vertical-align': 'center' },
-																							content: [
-																								{
-																									elem: 'icon',
-																									elemMods: { 'indent-r': 's' },
-																									content: [
-																										{
-																											block: 'icon',
-																											mods: { name: 'statistic', size: 's', view: 'brand', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
-																										}
-																									]
-																								},
-																								{
-																									block: 'content',
-																									content: [
-																										{
-																											block: 'text',
-																											mods: { size: 'm', view: 'primary', font: 'sans',  },
-																											content: '10 campaigns/month'
-																										}
-																									]
-																								}
-																							]
-																						}
-																					]
+																					block: 'text',
+																					mods: { weight: 'light', display: 'inline', font: 'sans' },
+																					content: 'faster than the grid lines, but the sum of all components appears to outrace the grid.  This is how “group velocities” can exceed the speed of light without carrying information.'
 																				}
 																			]
 																		}
 																	]
 																},
 																{
-																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
+																	elem: 'logo',
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl' }},
 																	content: [
 																		{
 																			block: 'button',
 																			tag: 'button',
 																			mods: { size: 'l', view: 'primary', width: 'full' },
-																			content: 'Choose month plan'
-																		}
-																	]
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'fraction',
-													elemMods: { 's-col': '3', 'm-col': '2' },
-													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
-													content: [
-														{
-															block: 'tariff',
-															mods: { view: 'image' },
-															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-portal-brand', control: 'whitepaper-inverse' }},
-																{ block: 'pt-card' }
-															],
-															content: [
-																{
-																	block: 'image',
-																	url: '/assets/starter-kit/premium.png',
-																	mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
-																},
-																{
-																	elem: 'content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
-																	content: [
-																		{
-																			elem: 'type',
-																			mix: [
-																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }}
-																			],
-																			content: 'Premium'
-																		},
-																		{
-																			elem: 'type',
-																			mix: [
-																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', font: 'sans' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
-																			],
-																			content: 'For large companies'
-																		},
-																		{
-																			elem: 'sale',
-																			mix: [
-																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: 'xxxxl' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
-																			],
-																			content: '$99'
-																		},
-																		{
-																			elem: 'assets',
-																			content: [
-																				{
-																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
-																					content: [
-																						{
-																							block: 'pt-icon-plus',
-																							mods: { 'vertical-align': 'center' },
-																							content: [
-																								{
-																									elem: 'icon',
-																									elemMods: { 'indent-r': 's' },
-																									content: [
-																										{
-																											block: 'icon',
-																											mods: { name: 'part', size: 's', view: 'primary', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
-																										}
-																									]
-																								},
-																								{
-																									block: 'content',
-																									content: [
-																										{
-																											block: 'text',
-																											mods: { size: 'm', view: 'primary', font: 'sans' },
-																											content: '50 presentations/month'
-																										}
-																									]
-																								}
-																							]
-																						}
-																					]
-																				},
-																				{
-																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
-																					content: [
-																						{
-																							block: 'pt-icon-plus',
-																							mods: { 'vertical-align': 'center' },
-																							content: [
-																								{
-																									elem: 'icon',
-																									elemMods: { 'indent-r': 's' },
-																									content: [
-																										{
-																											block: 'icon',
-																											mods: { name: 'wait-2', size: 's', view: 'primary', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
-																										}
-																									]
-																								},
-																								{
-																									block: 'content',
-																									content: [
-																										{
-																											block: 'text',
-																											mods: { size: 'm', view: 'primary', font: 'sans' },
-																											content: '5 house of free support'
-																										}
-																									]
-																								}
-																							]
-																						}
-																					]
-																				},
-																				{
-																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
-																					content: [
-																						{
-																							block: 'pt-icon-plus',
-																							mods: { 'vertical-align': 'center' },
-																							content: [
-																								{
-																									elem: 'icon',
-																									elemMods: { 'indent-r': 's' },
-																									content: [
-																										{
-																											block: 'icon',
-																											mods: { name: 'statistic', size: 's', view: 'primary', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
-																										}
-																									]
-																								},
-																								{
-																									block: 'content',
-																									content: [
-																										{
-																											block: 'text',
-																											mods: { size: 'm', view: 'primary', font: 'sans' },
-																											content: '10 campaigns/month'
-																										}
-																									]
-																								}
-																							]
-																						}
-																					]
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
-																	content: [
-																		{
-																			block: 'button',
-																			tag: 'button',
-																			mods: { size: 'l', view: 'primary', width: 'full' },
-																			content: 'Choose month plan'
+																			content: 'Follow'
 																		}
 																	]
 																}
@@ -671,7 +601,7 @@ module.exports = {
 										}
 									]
 								},
-								/* /Tarif */
+								/* /Event */
 
 								/* Media */
 								{
@@ -847,7 +777,7 @@ module.exports = {
 																			block: 'text',
 																			mods: { view: 'primary', size: 'xxxl', weight: 'bold' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
-																			content: 'Something is really wrong'
+																			content: 'Thoughtful'
 																		},
 																		{
 																			block: 'text',
@@ -891,7 +821,7 @@ module.exports = {
 														{
 															block: 'media',
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
+																{ block: 'theme', mods: { color: 'whitepaper-portal-inverse' }},
 																{ block: 'pt-card', mods: { view: 'default' }}
 															],
 															content: [
@@ -1400,8 +1330,8 @@ module.exports = {
 																					mods: { size: 'm', view: 'primary', 'with-icon': true, form: 'round' },
 																					content: {
 																						block: 'icon',
-																						mods: { name: 'fave-1', size: 's', view: 'brand' },
-																						mix: { block: 'theme', mods: { color: 'whitepaper-portal-inverse' }}
+																						mods: { name: 'fave-1', size: 's', view: 'brand', round: 'default' },
+																						mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
 																					}
 																				}
 																			]
@@ -1541,8 +1471,8 @@ module.exports = {
 																					mods: { size: 'm', view: 'primary', 'with-icon': true, form: 'round' },
 																					content: {
 																						block: 'icon',
-																						mods: { name: 'fave-1', size: 's', view: 'brand' },
-																						mix: { block: 'theme', mods: { color: 'whitepaper-portal-inverse' }}
+																						mods: { name: 'fave-1', size: 's', view: 'brand', round: 'default' },
+																						mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
 																					}
 																				}
 																			]
@@ -1564,6 +1494,513 @@ module.exports = {
 									]
 								},
 								/* /Product */
+
+								/* Tarif */
+								{
+									elem: 'section',
+									mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' }},
+									content: [
+										{
+											block: 'tpl-grid',
+											mods: { 'col-gap': 'full', 'row-gap': 'full', 's-columns': '6' },
+											content: [
+												{
+													elem: 'fraction',
+													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
+													content: [
+														{
+															block: 'tariff',
+															mix: [
+																{ block: 'theme', mods: { color: 'whitepaper-portal-default', control: 'whitepaper-default' }},
+																{ block: 'pt-card' }
+															],
+															content: [
+																{
+																	elem: 'content',
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
+																	content: [
+																		{
+																			elem: 'type',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }}
+																			],
+																			content: 'Light'
+																		},
+																		{
+																			elem: 'type',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', font: 'sans' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
+																			],
+																			content: 'For large companies'
+																		},
+																		{
+																			elem: 'sale',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: 'xxxxl' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
+																			],
+																			content: '$22'
+																		},
+																		{
+																			elem: 'assets',
+																			content: [
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'part', size: 's', view: 'primary', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
+																											content: '50 presentations/month'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'wait-2', size: 's', view: 'primary', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
+																											content: '5 house of free support'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'statistic', size: 's', view: 'primary', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans'  },
+																											content: '10 campaigns/month'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	elem: 'footer',
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
+																	content: [
+																		{
+																			block: 'button',
+																			tag: 'button',
+																			mods: { size: 'l', view: 'primary', width: 'full' },
+																			content: 'Choose month plan'
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'fraction',
+													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
+													content: [
+														{
+															block: 'tariff',
+															mix: [
+																{ block: 'theme', mods: { color: 'whitepaper-portal-brand', control: 'whitepaper-brand' }},
+																{ block: 'pt-card' }
+															],
+															content: [
+																{
+																	elem: 'content',
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
+																	content: [
+																		{
+																			elem: 'type',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }}
+																			],
+																			content: 'Standard'
+																		},
+																		{
+																			elem: 'type',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', font: 'sans' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
+																			],
+																			content: 'For large companies'
+																		},
+																		{
+																			elem: 'sale',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: 'xxxxl' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
+																			],
+																			content: '$66'
+																		},
+																		{
+																			elem: 'assets',
+																			content: [
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'part', size: 's', view: 'brand', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
+																											content: '50 presentations/month'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'wait-2', size: 's', view: 'brand', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
+																											content: '5 house of free support'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'statistic', size: 's', view: 'brand', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans',  },
+																											content: '10 campaigns/month'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	elem: 'footer',
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
+																	content: [
+																		{
+																			block: 'button',
+																			tag: 'button',
+																			mods: { size: 'l', view: 'primary', width: 'full' },
+																			content: 'Choose month plan'
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'fraction',
+													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
+													content: [
+														{
+															block: 'tariff',
+															mods: { view: 'image' },
+															mix: [
+																{ block: 'theme', mods: { color: 'whitepaper-portal-brand', control: 'whitepaper-inverse' }},
+																{ block: 'pt-card' }
+															],
+															content: [
+																{
+																	block: 'image',
+																	url: '/assets/starter-kit/premium.png',
+																	mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
+																},
+																{
+																	elem: 'content',
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
+																	content: [
+																		{
+																			elem: 'type',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }}
+																			],
+																			content: 'Premium'
+																		},
+																		{
+																			elem: 'type',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', font: 'sans' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
+																			],
+																			content: 'For large companies'
+																		},
+																		{
+																			elem: 'sale',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: 'xxxxl' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
+																			],
+																			content: '$99'
+																		},
+																		{
+																			elem: 'assets',
+																			content: [
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'part', size: 's', view: 'primary', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
+																											content: '50 presentations/month'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'wait-2', size: 's', view: 'primary', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
+																											content: '5 house of free support'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'statistic', size: 's', view: 'primary', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
+																											content: '10 campaigns/month'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	elem: 'footer',
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
+																	content: [
+																		{
+																			block: 'button',
+																			tag: 'button',
+																			mods: { size: 'l', view: 'primary', width: 'full' },
+																			content: 'Choose month plan'
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								/* /Tarif */
 
 								/* APP */
 								{
@@ -1723,7 +2160,7 @@ module.exports = {
 														{
 															block: 'app',
 															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
+																{ block: 'theme', mods: { color: 'whitepaper-portal-inverse' }},
 																{ block: 'pt-card', mods: { view: 'default' }},
 															],
 															content: [
@@ -2481,7 +2918,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mix: { block: 'decorator', mods: { 'indent-v': 'xxl', 'indent-l': 'l' }},
+																			mix: { block: 'decorator', mods: { 'indent-v': 'xxl' }},
 																			mods: { view: 'primary', size: 'xl', weight: 'bold', style: 'italic', font: 'sans' },
 																			content: [
 																				'We are committed to vigorously enforcing policies to protect people'
@@ -2700,444 +3137,6 @@ module.exports = {
 									]
 								},
 								/* /Publication */
-
-								/* Event */
-								{
-									elem: 'section',
-									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
-									content: [
-										{
-											block: 'tpl-grid',
-											mods: { 'col-gap': 'full', 'row-gap': 'full', 's-columns': '6' },
-											content: [
-												{
-													elem: 'fraction',
-													elemMods: { 's-col': '3', 'm-col': '2' },
-													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
-													content: [
-														{
-															block: 'event',
-															mix: [
-																{ block: 'pt-list' },
-																{ block: 'pt-card', mods: { view: 'default' }},
-															],
-															content: [
-																{
-																	elem: 'content',
-																	mix: { block: 'pt-card', elem: 'content' },
-																	content: [
-																		{
-																			elem: 'photo',
-																			content: [
-																				{
-																					block: 'image',
-																					attrs: { 'style': 'width: 100%' },
-																					url: '../../../../assets/starter-kit/subzero-cover.png'
-																				}
-																			]
-																		},
-																		{
-																			elem: 'description',
-																			mix: [
-																				{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
-																				{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' }},
-																			],
-																			content: [
-																				{
-																					elem: 'name',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'xxs', distribute: 'between' }},
-																					content: [
-																						{
-																							block: 'text',
-																							mods: { view: 'primary', size: 'xl', weight: 'bold' },
-																							content: 'Subzero!'
-																						},
-																						{
-																							block: 'text',
-																							mods: { view: 'primary', size: 'xl', weight: 'bold', font: 'sans' },
-																							content: '4.5'
-																						}
-																					]
-																				},
-																				{
-																					elem: 'rating',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'l', distribute: 'between' }},
-																					content: [
-																						{
-																							block: 'text',
-																							mods: { view: 'secondary', size: 'm', weight: 'semibold', font: 'sans', font: 'sans' },
-																							content: 'Cafe'
-																						},
-																						{
-																							block: 'text',
-																							mods: { view: 'secondary', size: 'm', weight: 'semibold', font: 'sans', font: 'sans' },
-																							content: '324 reviews'
-																						}
-																					]
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer' },
-																	content: [
-																		{
-																			elem: 'info',
-																			mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-h': 'l', 'space-v': 'xxl', 'indent-b': 's' }},
-																			content: [
-																				{
-																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
-																					content: [
-																						{
-																							block: 'pt-icon-plus',
-																							mods: { 'vertical-align': 'center' },
-																							content: [
-																								{
-																									elem: 'icon',
-																									elemMods: { 'indent-r': 's' },
-																									content: [
-																										{
-																											block: 'icon',
-																											mods: { name: 'marker', size: 's', view: 'primary', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
-																										}
-																									]
-																								},
-																								{
-																									block: 'content',
-																									content: [
-																										{
-																											block: 'text',
-																											mods: { size: 'm', display: 'inline', font: 'sans' },
-																											content: 'Kaigandori, Naka-ku 23 Japan'
-																										}
-																									]
-																								}
-																							]
-																						}
-																					]
-																				},
-																				{
-																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
-																					content: [
-																						{
-																							block: 'pt-icon-plus',
-																							mods: { 'vertical-align': 'center' },
-																							content: [
-																								{
-																									elem: 'icon',
-																									elemMods: { 'indent-r': 's' },
-																									content: [
-																										{
-																											block: 'icon',
-																											mods: { name: 'phone-1', size: 's', view: 'primary', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
-																										}
-																									]
-																								},
-																								{
-																									block: 'content',
-																									content: [
-																										{
-																											block: 'text',
-																											mods: { size: 'm', display: 'inline', font: 'sans' },
-																											content: '81 45-662-1099'
-																										}
-																									]
-																								}
-																							]
-																						}
-																					]
-																				},
-																				{
-																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
-																					content: [
-																						{
-																							block: 'pt-icon-plus',
-																							mods: { 'vertical-align': 'center' },
-																							content: [
-																								{
-																									elem: 'icon',
-																									elemMods: { 'indent-r': 's' },
-																									content: [
-																										{
-																											block: 'icon',
-																											mods: { name: 'comment', size: 's', view: 'primary', round: 'default' },
-																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
-																										}
-																									]
-																								},
-																								{
-																									block: 'content',
-																									content: [
-																										{
-																											block: 'text',
-																											mods: { size: 'm', display: 'inline', font: 'sans' },
-																											content: 'www.subzero.com'
-																										}
-																									]
-																								}
-																							]
-																						}
-																					]
-																				}
-																			]
-																		}
-																	]
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'fraction',
-													elemMods: { 's-col': '3', 'm-col': '2' },
-													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
-													content: [
-														{
-															block: 'event',
-															mix: [
-																{ block: 'pt-list' },
-																{ block: 'pt-card', mods: { view: 'default' }},
-															],
-															content: [
-																{
-																	elem: 'announce',
-																	mix: [
-																		{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
-																		{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'xl' }},
-																		{ block: 'pt-card', elem: 'content' }
-																	],
-																	content: [
-																		{
-																			elem: 'date',
-																			mix: { block: 'text', mods: { size: 's', view: 'primary' }},
-																			content: 'May'
-																		},
-																		{
-																			elem: 'type',
-																			mix: [
-																				{ block: 'text', mods: { size: 'm', view: 'secondary', weight: 'bold' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'xs' }}
-																			],
-																			content: 'Event'
-																		},
-																		{
-																			elem: 'event',
-																			mix: [
-																				{ block: 'text', mods: { size: 'xxl', view: 'primary', weight: 'bold', font: 'sans' }},
-																				{ block: 'decorator', mods: { 'indent-b': 's' }}
-																			],
-																			content: '3rd Annual Innate Killer'
-																		},
-																		{
-																			block: 'avatar',
-																			elem: 'photo',
-																			elemMods: { size: 's'},
-																			content: [
-																				{
-																					block: 'image',
-																					width: 40,
-																					url: '/assets/starter-kit/Carolyn Z.jpg'
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	elem: 'info',
-																	mix: [
-																		{ block: 'pt-list', elem: 'item', elemMods: { 'space-v': 'xxl', 'space-h': 'xl' }},
-																		{ block: 'pt-card', elem: 'footer' }
-																	],
-																	content: [
-																		{
-																			elem: 'wrap',
-																			content: [
-																				{
-																					elem: 'contacts',
-																					mix: [
-																						{ block: 'pt-list' },
-																						{ block: 'decorator', mods: { 'indent-b': 'xxl' }}
-																					],
-																					content: [
-																						{
-																							elem: 'item',
-																							mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
-																							content: [
-																								{
-																									block: 'pt-icon-plus',
-																									mods: { 'vertical-align': 'center' },
-																									content: [
-																										{
-																											elem: 'icon',
-																											elemMods: { 'indent-r': 's' },
-																											content: [
-																												{
-																													block: 'icon',
-																													mods: { name: 'marker', size: 's', view: 'primary', round: 'default' },
-																													mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
-																												}
-																											]
-																										},
-																										{
-																											block: 'content',
-																											content: [
-																												{
-																													block: 'text',
-																													mods: { size: 'm', display: 'inline', font: 'sans' },
-																													content: 'Kaigandori, Naka-ku 23 Japan'
-																												}
-																											]
-																										}
-																									]
-																								}
-																							]
-																						},
-																						{
-																							elem: 'item',
-																							mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
-																							content: [
-																								{
-																									block: 'pt-icon-plus',
-																									mods: { 'vertical-align': 'center' },
-																									content: [
-																										{
-																											elem: 'icon',
-																											elemMods: { 'indent-r': 's' },
-																											content: [
-																												{
-																													block: 'icon',
-																													mods: { name: 'phone-1', size: 's', view: 'primary', round: 'default' },
-																													mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
-																												}
-																											]
-																										},
-																										{
-																											block: 'content',
-																											content: [
-																												{
-																													block: 'text',
-																													mods: { size: 'm', display: 'inline', font: 'sans' },
-																													content: '81 45-662-1099'
-																												}
-																											]
-																										}
-																									]
-																								}
-																							]
-																						}
-																					]
-																				},
-																				{
-																					block: 'button',
-																					mods: { theme: 'islands', size: 'l', view: 'action', width: 'available' },
-																					text: 'Choose month plan'
-																				}
-																			]
-																		}
-																	]
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'fraction',
-													elemMods: { 's-col': '3', 'm-col': '2' },
-													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
-													content: [
-														{
-															block: 'event',
-															mix: [
-																{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
-																{ block: 'pt-card', mods: { view: 'default' }}
-															],
-															content: [
-																{
-																	elem: 'content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
-																	content: [
-																		{
-																			block: 'pt-icon-plus',
-																			mods: { 'vertical-align': 'center' },
-																			mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-																			content: [
-																				{
-																					elem: 'icon',
-																					elemMods: { 'indent-r': 's' },
-																					mix: { block: 'avatar' },
-																					content: [
-																						{
-																							block: 'avatar',
-																							elem: 'photo',
-																							elemMods: { size: 's' },
-																							content: [
-																								{
-																									block: 'image',
-																									width: 40,
-																									url: '/assets/starter-kit/Steph Jeong.jpg'
-																								}
-																							]
-																						}
-																					]
-																				},
-																				{
-																					elem: 'block',
-																					content: [
-																						{
-																							block: 'text',
-																							mods: { view: 'primary', size: 'm', weight: 'semibold', font: 'sans' },
-																							content: 'Steph Jeong'
-																						},
-																						{
-																							block: 'text',
-																							mods: { view: 'secondary', size: 's' },
-																							content: '@jeongsteph'
-																						}
-																					]
-																				}
-																			]
-																		},
-																		{
-																			block: 'text',
-																			mods: { size: 'xl', view: 'primary', weight: 'bold' },
-																			content: [
-																				'No individual colour making up this wave travels ',
-																				{
-																					block: 'text',
-																					mods: { weight: 'light', display: 'inline', font: 'sans' },
-																					content: 'faster than the grid lines, but the sum of all components appears to outrace the grid.  This is how “group velocities” can exceed the speed of light without carrying information.'
-																				}
-																			]
-																		}
-																	]
-																},
-																{
-																	elem: 'logo',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
-																	content: [
-																		{
-																			block: 'text',
-																			mods: { view: 'primary', size: 's', weight: 'semibold' },
-																			content: 'Twitter'
-																		}
-																	]
-																}
-															]
-														}
-													]
-												}
-											]
-										}
-									]
-								},
-								/* /Event */
 
 								/* Donate */
 								{
@@ -3429,16 +3428,16 @@ module.exports = {
 																	elem: 'project-info',
 																	mix: [
 																		{ block: 'theme', mods: { color: 'whitepaper-portal-default' }},
-																		{ block: 'pt-card', elem: 'content', elemMods: { 'space-h': 'xl' }}
+																		{ block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' }}
 																	],
 																	content: [
 																		{
 																			elem: 'project-countdowns',
-																			mix: { block: 'decorator', mods: { 'indent-v': 'xs' }},
+																			mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
 																			content: [
 																				{
 																					elem: 'amount-wrapper',
-																					mix: { block: 'decorator', mods: { 'indent-r': 'xxxxl' }},
+																					mix: { block: 'decorator', mods: { 'indent-r': 'xl' }},
 																					content: [
 																						{
 																							block: 'text',
@@ -3477,7 +3476,7 @@ module.exports = {
 																					block: 'text',
 																					mods: { view: 'primary', size: 'xl', weight: 'bold' },
 																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
-																					content: 'Feature-Packed Delay Pedal by RedShift Effects'
+																					content: 'Packed Delay Pedal'
 																				}
 																			]
 																		},
@@ -3485,7 +3484,7 @@ module.exports = {
 																			block: 'text',
 																			mods: { view: 'secondary', size: 'm', font: 'sans' },
 																			content: 'A high-quality, hand-built tap tempo delay pedal with ' +
-																			'modulated filtering, plenty of delay time, and a handful …'
+																			'modulated filtering, plenty of delay time …'
 																		}
 																	]
 																},

@@ -6,6 +6,10 @@
 	&__description {
 		background-color: var(--color-bg-default);
 	}
+	&__info {
+		width: 100%;
+		box-sizing: border-box;
+	}
 	&__date {
 		height: 64px;
 		width: 64px;
