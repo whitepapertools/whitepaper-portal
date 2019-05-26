@@ -1,0 +1,12 @@
+.theme-generator {
+	&__display {
+		background: var(--color-bg-ghost);
+		padding: var(--gap);
+	}
+	&__inspector {
+		background: var(--color-bg-default);
+	}
+	&__color-control {
+		cursor: pointer;
+	}
+}

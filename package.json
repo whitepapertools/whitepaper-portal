@@ -16,6 +16,7 @@
     "node": ">=4"
   },
   "devDependencies": {
+    "browserify": "latest",
     "autoprefixer": "^7.2.6",
     "bem": "^2.0.0",
     "bem-components-custom": "3.0.4",
