@@ -10,9 +10,11 @@ module.exports = {
 		{ elem: 'css', url: 'doc.min.css' }
 	],
 	scripts: [
-		{ elem: 'js', url: '//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js' },
+		// { elem: 'js', url: '//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js' },
 		{ elem: 'js', url: '//unpkg.com/docsify/lib/plugins/search.min.js' },
-		{ elem: 'js', url: 'doc.min.js' }
+		// { elem: 'js', url: '//cdnjs.cloudflare.com/ajax/libs/markdown-it/8.4.2/markdown-it.min.js' }, //либа для работы с MD файлами
+		{ elem: 'js', type: 'text/javascript' , url: '//cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js' },
+		{ elem: 'js', url: 'doc.min.js' },
 	],
 	mix: {
 		block: 'theme',
