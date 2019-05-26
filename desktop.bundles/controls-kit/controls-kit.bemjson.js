@@ -14,26 +14,62 @@ module.exports = {
 	mix: [
 		{
 			block: 'theme',
-			mods: { color: 'whitepaper-portal-default', space: 'default', breakpoint: 'default', size: 'default', gap: 'small', menu: 'default', control: 'whitepaper-default', font: 'nitti' }
+			mods: { space: 'default', breakpoint: 'default', size: 'default', gap: 'small', menu: 'default', font: 'nitti' }
 		},
 		{ block: 'kit' }
 	],
 	content: [
 		{
 			block: 'tpl-layout',
-			mix: { block: 'decorator',mods: { 'space-v': 'xxxxxxl' }},
-			attrs: {
-				'style': 'background: var(--color-bg-ghost)'
-			},
+			mods: { structure: '33-33-33' },
 			content: [
 				{
 					elem: 'content',
+					mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand', control: 'whitepaper-brand' }},
+					attrs: { style: 'background: var(--color-bg-default' },
 					content: [
 						{
 							elem: 'container',
-							elemMods: { 'size': 'm', 'align': 'center' },
+							elemMods: { 'size': 'full', 'align': 'center' },
+							mix: { block: 'decorator', mods: { 'space-v': 'xxxl' }},
 							content: [
-
+								{
+									block: 'ui-preview',
+								},
+							]
+						}
+					]
+				},
+				{
+					elem: 'content',
+					mix: { block: 'theme', mods: { color: 'whitepaper-portal-default', control: 'whitepaper-default' }},
+					attrs: { style: 'background: var(--color-bg-default' },
+					content: [
+						{
+							elem: 'container',
+							elemMods: { 'size': 'full', 'align': 'center' },
+							mix: { block: 'decorator', mods: { 'space-v': 'xxxl' }},
+							content: [
+								{
+									block: 'ui-preview',
+								},
+							]
+						}
+					]
+				},
+				{
+					elem: 'content',
+					mix: { block: 'theme', mods: { color: 'whitepaper-portal-inverse', control: 'whitepaper-inverse' }},
+					attrs: { style: 'background: var(--color-bg-default' },
+					content: [
+						{
+							elem: 'container',
+							elemMods: { 'size': 'full', 'align': 'center' },
+							mix: { block: 'decorator', mods: { 'space-v': 'xxxl' }},
+							content: [
+								{
+									block: 'ui-preview',
+								},
 							]
 						}
 					]

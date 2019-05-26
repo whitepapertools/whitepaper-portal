@@ -1,4 +1,4 @@
-.button_view_secondary {
+.button_view_ghost {
 	background-color: var(--color-control-bg-default);
 	color: var(--color-control-typo-primary);
 	transition: background-color .15s;

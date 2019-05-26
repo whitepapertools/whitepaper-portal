@@ -1,6 +1,6 @@
 .button_view_clear {
 	background-color: var(--color-control-bg-clear);
-	color: var(--color-control-typo-action);
+	color: var(--color-control-typo-primary);
 	transition: background-color .15s;
 
 	&:hover {

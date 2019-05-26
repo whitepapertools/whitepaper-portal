@@ -1,0 +1,15 @@
+.button_view_secondary {
+	box-shadow: inset 0 0 0 var(--control-border-width) var(--color-control-bg-border-action);
+	color: var(--color-control-typo-action);
+	background-color: var(--color-control-bg-default-affect);
+	transition: box-shadow .15s, background-color .15s, color .15s;
+
+	&:hover {
+		box-shadow: inset 0 0 0 var(--control-border-width) var(--color-control-bg-border-action-hover);
+		background-color: var(--color-control-bg-default-affect);
+		color: var(--color-control-typo-action-hover);
+	}
+	&:active {
+		box-shadow: inset 0 0 0 var(--control-border-width) var(--color-control-bg-border-action-press);
+	}
+}

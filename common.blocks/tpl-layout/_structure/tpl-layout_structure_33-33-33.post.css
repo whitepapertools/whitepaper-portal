@@ -1,0 +1,4 @@
+.tpl-layout_structure_33-33-33 {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: minmax(100vh, auto);
+}
