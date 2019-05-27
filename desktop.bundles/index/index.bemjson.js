@@ -1859,7 +1859,7 @@ module.exports = {
                                                                 {
                                                                     block: 'text',
                                                                     mods: { size: 'l', view: 'primary', weight: 'light' },
-                                                                    content: 'BEMapp, май 2019'
+                                                                    content: 'BEMup, май 2019'
                                                                 },
                                                                 {
                                                                     block: 'text',
