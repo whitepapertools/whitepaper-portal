@@ -1,4 +1,44 @@
-/* :root {
+table, th, td {
+	border: 1px solid black;
+	padding: 5px;
+  }
+
+code {
+	background-color: rgb(226, 224, 224);
+	font-size: 14px;
+	padding: 3px 5px;
+	border-radius: 3px;
+}
+
+ pre {
+	line-height: 1.5rem;
+	/* padding: 0 1.4rem; */
+	position: relative;
+	/* word-wrap: normal; */
+	margin: 1.2em 0;
+	overflow: auto;
+	background-color: rgb(226, 224, 224);
+} 
+
+ pre:after {
+	/* color: #ccc; */
+	content: attr(data-lang);
+	font-size: .6rem;
+	font-weight: 600;
+	height: 15px;
+	line-height: 15px;
+	padding: 5px 10px 0;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	top: 0;
+} 
+
+/* code > pre {
+	background-color: rgb(226, 224, 224);
+} */
+/* 
+:root {
 	--border-radius: 3px;
 	--font-family-mono: 'ibm-plex-mono', Monaco, courier, monospace;
 	--font-family-sans: 'ibm-plex-sans', Helvetica Neue, Arial, sans-serif;
@@ -22,11 +62,11 @@ body:not(.ready) { overflow: hidden }
 body:not(.ready) .app-nav, body:not(.ready) > nav, body:not(.ready) [data-cloak] { display: none }
 
 #app {
-	margin: 40vh auto;
-	font-size: var(--size-typo-xl);
+	 margin: 40vh auto; 
+	 font-size: var(--size-typo-xl); 
 	font-family: var(--font-family-sans);
-	font-weight: lighter;
-	text-align: center;
+	 font-weight: lighter; 
+	 text-align: center; 
 
 	&:empty:before { content: "Загружается..." }
 }
@@ -221,7 +261,7 @@ main.hidden {
 	text-decoration: none;
 }
 
-.sidebar {
+ .sidebar {
 	border-right: 1px solid rgba(0, 0, 0, .07);
 	overflow-y: auto;
 	padding: 40px 0 0;
@@ -324,7 +364,7 @@ main.hidden {
 	margin-bottom: var(--space-xxs);
 	width: 16px;
 	height: 2px;
-}
+} 
 
 body.sticky .sidebar, body.sticky .sidebar-toggle {
 	position: fixed
@@ -367,6 +407,7 @@ body.sticky .sidebar, body.sticky .sidebar-toggle {
 }
 
 .markdown-section table {
+	border: 1px solid black;
 	border-collapse: collapse;
 	border-spacing: 0;
 	display: block;
@@ -433,25 +474,25 @@ body.sticky .sidebar, body.sticky .sidebar-toggle {
 	padding: 1rem;
 }
 
-body.close .sidebar {
+ body.close .sidebar {
 	transform: translateX(-300px);
-}
+} 
 
-body.close .sidebar-toggle {
+ body.close .sidebar-toggle {
 	width: auto
-}
+} 
 
 body.close .content {
 	left: 0;
 }
 
-@media print {
+ @media print {
 	.app-nav, .github-corner, .sidebar, .sidebar-toggle {
 		display: none
 	}
-}
+} 
 
-@media screen and (max-width:768px) {
+ @media screen and (max-width:768px) {
 	.github-corner, .sidebar, .sidebar-toggle {
 		position: fixed
 	}
@@ -532,7 +573,7 @@ body.close .content {
 	40%, 80% {
 		transform: rotate(10deg)
 	}
-}
+} 
 
 section.cover {
 	-ms-flex-align: center;
@@ -783,6 +824,7 @@ section.cover blockquote > p > a:hover {
 	line-height: 1.5rem;
 	margin: 1.2em 0;
 	overflow: auto;
+	 overflow: scroll; 
 	padding: 0 1.4rem;
 	position: relative;
 	word-wrap: normal

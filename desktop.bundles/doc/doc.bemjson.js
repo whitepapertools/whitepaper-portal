@@ -106,39 +106,42 @@ module.exports = {
 		{
 			block: 'demo',
 			content: [
-			{
-				block: 'tpl-layout',
-				content: [
 				{
-					block: 'new-menu',
-				},
-				{
-					block: 'docsify',
-					mix: { block: 'doc-styles' },
-					attrs: { id: 'app' }
-				},
-				{
-					elem: 'section',
+					block: 'tpl-layout',
 					content: [
-					{
-						tag: 'script',
-						content: 'window.$docsify = { '+
-									'auto2top: true, '+
-									'autoHeader: true, '+
-									'loadSidebar: true, '+
-									'autoHeader: true, '+
-									'mergeNavbar: true, '+
-									'basePath: \'/docs/\', '+
+						{
+							block: 'new-menu',
+						},
+						{
+							block: 'docsify',
+							mix: { block: 'doc-styles' },
+							attrs: { id: 'app', style: 'width: 700px;' }
+						},
+						{
+							elem: 'section',
+							content: [
+								{
+									// tag: 'script',
+									// content: 'window.$docsify = { '+
+									// 			'auto2top: true, '+
+									// 			'autoHeader: true, '+
+									// 			'loadSidebar: true, '+
+									// 			'autoHeader: true, '+
+									// 			'mergeNavbar: true, '+
+									// 			'basePath: \'/docs/\', '+
 
-									'search: { '+
-										'paths: \'auto\', '+
-										'placeholder: \'Тут можно поискать\', '+
-										'noData: \'Не нашлось!\', '+
-									'}'+
-								'}'
-					}]
-				}]
-			}]
+									// 			'search: { '+
+									// 				'paths: \'auto\', '+
+									// 				'placeholder: \'Тут можно поискать\', '+
+									// 				'noData: \'Не нашлось!\', '+
+									// 			'}'+
+									// 		'}'
+								}
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 };
