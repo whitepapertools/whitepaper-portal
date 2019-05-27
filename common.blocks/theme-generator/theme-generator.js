@@ -42,6 +42,7 @@ let colorBaseBase = '#ffffff', /* Базовый цвет содержимого
 		colorBaseNormal = '#dde3e5', /* Цвет нейтральный */
 		colorBaseSystem = '#778a9b'; /* Цвет cистемы */
 
+// Функция вывода текущих css переменных темы в textarea
 let copyArea = document.querySelector('.theme-generator__copy-area');
 function updateTheme() {
 	copyArea.value = '.theme_color_theme-generator {' + '\n' +
@@ -139,8 +140,6 @@ colorControlBasePhantom.addEventListener('input', () => {
 	colorBasePhantom = colorControlBasePhantom.value;
 	wpColorMath(colorBaseBase, colorBaseEssential, colorBaseProject, colorBasePhantom, colorBasePath, colorBaseSuccess, colorBaseAlert, colorBaseWarning, colorBaseNormal, colorBaseSystem)
 });
-
-// Вывод темы в css в инпут
 
 //
 // ДАЛЬШЕ УЖЕ НЕ ТРОГАЙ
