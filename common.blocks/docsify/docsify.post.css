@@ -1,10 +1,16 @@
 table, th, td {
-	border: 1px solid black;
-	padding: 5px;
+	border-collapse: collapse;
+	border: 1px solid #eee;
+	padding: 10px;
   }
 
+th {
+	text-align: left;
+}
+
 code {
-	background-color: rgb(226, 224, 224);
+	/* background-color: rgb(226, 224, 224); */
+	background-color: #eee;
 	font-size: 14px;
 	padding: 3px 5px;
 	border-radius: 3px;
@@ -17,7 +23,8 @@ code {
 	/* word-wrap: normal; */
 	margin: 1.2em 0;
 	overflow: auto;
-	background-color: rgb(226, 224, 224);
+	background-color: #eee;
+	padding: 20px;
 } 
 
  pre:after {
@@ -33,6 +40,18 @@ code {
 	text-align: right;
 	top: 0;
 } 
+
+a {
+	color: var(--color-link);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+hr {
+	border: none;
+	border-bottom: 1px solid #eee;
+	margin: 2em 0;
+}
 
 /* code > pre {
 	background-color: rgb(226, 224, 224);

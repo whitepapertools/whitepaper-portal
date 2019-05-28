@@ -10,11 +10,11 @@ module.exports = {
 		{ elem: 'css', url: 'doc.min.css' }
 	],
 	scripts: [
-		// { elem: 'js', url: '//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js' },
-		{ elem: 'js', url: '//unpkg.com/docsify/lib/plugins/search.min.js' },
-		// { elem: 'js', url: '//cdnjs.cloudflare.com/ajax/libs/markdown-it/8.4.2/markdown-it.min.js' }, //либа для работы с MD файлами
-		{ elem: 'js', type: 'text/javascript' , url: '//cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js' },
-		{ elem: 'js', url: 'doc.min.js' },
+		{ elem: 'js', type: 'text/javascript', url: '//cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js' },
+		{ elem: 'js', url: '//unpkg.com/react@16/umd/react.production.min.js' },
+		{ elem: 'js', url: '//unpkg.com/react-dom@16/umd/react-dom.production.min.js' },
+		{ elem: 'js', url: '//unpkg.com/html-react-parser@latest/dist/html-react-parser.min.js' },
+		{ elem: 'js', type: 'text/javascript', url: 'doc.min.js' },
 	],
 	mix: {
 		block: 'theme',
@@ -25,6 +25,7 @@ module.exports = {
 		{
 			block: 'menu',
 			mix: { block: 'theme', mods: { color: 'whitepaper-portal-inverse'} },
+			attrs: { style: 'margin-bottom: 50px;' },
 			content: [
 				{
 					elem: 'content',
@@ -108,19 +109,42 @@ module.exports = {
 			content: [
 				{
 					block: 'tpl-layout',
+					mods: { structure: '20-80' },
 					content: [
 						{
-							block: 'new-menu',
-						},
-						{
-							block: 'docsify',
-							mix: { block: 'doc-styles' },
-							attrs: { id: 'app', style: 'width: 700px;' }
+							elem: 'section',
+							mix: { block: 'decorator', mods: { 'indent-l': 'xl' }},
+							attrs: { id: 'sidebar' },
+							content: [
+								// {
+								// 	block: 'text',
+								// 	attrs: { id: 'b1' },
+								// 	mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
+								// 	content: 'button1'
+								// },
+								// {
+								// 	block: 'text',
+								// 	attrs: { id: 'b2' },
+								// 	mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
+								// 	content: 'button2'
+								// }
+							]
 						},
 						{
 							elem: 'section',
+							mix: { block: 'decorator', mods: { 'indent-h': 'xxxxxxl' }},
 							content: [
 								{
+									block: 'docsify',
+									mix: { block: 'doc-styles' },
+									attrs: { id: 'app' }
+								},
+							]
+						}
+						// {
+						// 	elem: 'section',
+						// 	content: [
+						// 		{
 									// tag: 'script',
 									// content: 'window.$docsify = { '+
 									// 			'auto2top: true, '+
@@ -136,9 +160,9 @@ module.exports = {
 									// 				'noData: \'Не нашлось!\', '+
 									// 			'}'+
 									// 		'}'
-								}
-							]
-						}
+								// }
+							// ]
+						// }
 					]
 				}
 			]

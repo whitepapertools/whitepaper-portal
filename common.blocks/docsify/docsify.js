@@ -1,41 +1,69 @@
-// let url = 'https://raw.githubusercontent.com/whitepapertools/whitepaper-bem/master/pt-surface/pt-surface.md';
-// let url = 'https://raw.githubusercontent.com/whitepapertools/whitepaper-portal/master/docs/pt-card.md';
-let url = 'https://raw.githubusercontent.com/whitepapertools/whitepaper-portal/master/docs/pt-list.md';
-
-
 let storedText, html;
-// var defaultOptions = showdown.getOption('omitExtraWLInCodeBlocks: true');
-showdown.setFlavor('github');
-// showdown.setFlavor('vanilla');
-// showdown.setFlavor('original');
-// var defaultOptions = showdown.getOption.omitExtraWLInCodeBlocks('true');
-// console.log(defaultOptions)
 
-fetch(url)
+// id - имя MD файла латиницей (т.к. имя уникально)
+const mdData = [
+  { 
+    itemName:'pt-surface',
+    section: true,
+    id: 'pt-surface',
+    url:'https://raw.githubusercontent.com/whitepapertools/whitepaper-bem/master/pt-surface/pt-surface.md'
+  },
+  { 
+    itemName:'pt-card',
+    section: false,
+    id: 'pt-card',
+    url:'https://raw.githubusercontent.com/whitepapertools/whitepaper-portal/master/docs/pt-card.md'
+  },
+  { 
+    itemName:'pt-list',
+    section: false,
+    id: 'pt-list',
+    url:'https://raw.githubusercontent.com/whitepapertools/whitepaper-portal/master/docs/pt-list.md'
+  }
+];
+
+let items = document.createDocumentFragment();
+for (let i = 0; i <= mdData.length-1; i++) {
+  let sideBarItem = document.createElement('div');
+  sideBarItem.classList.add('text', 'decorator', 'decorator_indent-b_xl');
+  sideBarItem.textContent = mdData[i].itemName;
+  sideBarItem.addEventListener('click', function (event) {
+    parseMd(mdData[i].url);
+  });
+  if (mdData[i].section != true) {
+    sideBarItem.classList.add('decorator_indent-l_l');
+  }
+  items.appendChild(sideBarItem);
+}
+
+document.getElementById('sidebar').appendChild(items);
+
+
+// function done(x) {
+//     document.getElementById('app').innerHTML = '';
+//     document.getElementById('app').innerHTML += x;
+// }
+
+function parseMd(link) {
+  fetch(link)
   .then(function(response) {
     response.text().then(function(text) {
-      storedText = text;
-      // console.log(storedText);
       var converter = new showdown.Converter();
+      converter.setFlavor('github');
       converter.setOption('omitExtraWLInCodeBlocks', 'true');
-      // console.log(converter);
+      converter.setOption('backslashEscapesHTMLTags', 'true');
+      storedText = text;
       var html = converter.makeHtml(storedText);
+      // let x = window.HTMLReactParser(html);
+      // console.log(x);
+      // let h1 = React.createElement('div', null, html);
+      ReactDOM.render(window.HTMLReactParser(html), document.getElementById('app'));
+
       // console.log(html);
-      done(html);
+      // done(html);
     })
   .catch(function(error) {
       console.log('err');
     })
   });
-
-function done(x) {
-//   document.getElementById('app').textContent =
-//     "Here's what I got! \n" + storedText;
-    document.getElementById('app').innerHTML += x;
 }
-
-// console.log(storedText)
-
-// var converter = new showdown.Converter(),
-//     text      = '# hello, markdown!',
-//     html      = converter.makeHtml(text);
