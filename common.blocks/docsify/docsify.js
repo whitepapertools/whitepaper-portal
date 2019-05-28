@@ -22,6 +22,7 @@ const mdData = [
   }
 ];
 
+// рисуем боковое меню из объекта
 let items = document.createDocumentFragment();
 for (let i = 0; i <= mdData.length-1; i++) {
   let sideBarItem = document.createElement('div');
@@ -44,6 +45,7 @@ document.getElementById('sidebar').appendChild(items);
 //     document.getElementById('app').innerHTML += x;
 // }
 
+// парсит МД по ссылке и заворачивает хтмл в реакт
 function parseMd(link) {
   fetch(link)
   .then(function(response) {
