@@ -21,7 +21,7 @@ $color-control-bg-default-affect:          color($color-base-essential); /* Цв
 $color-control-bg-border-default:          color($color-base-phantom l(82%)); /* Цвет фона бордеров котрола */
 $color-control-bg-border-default-hover:    color($color-base-phantom l(76%)); /* Цвет фона бордеров контрола по ховеру */
 $color-control-bg-border-default-press:    color($color-base-phantom l(72%)); /* Цвет фона бордеров контрола по нажатию */
-$color-control-bg-border-focus:            color($color-base-project l(+15%)); /* Цвет аутлайна контролов при фокусе */
+$color-control-bg-border-focus:            color($color-base-project l(+36%)); /* Цвет аутлайна контролов при фокусе */
 
 $color-control-typo-primary:               $color-base-base; /* Цвет основного текста контрола */
 $color-control-typo-secondary:             color($color-base-base a(60%)); /* Цвет второстепеного текста контрола */

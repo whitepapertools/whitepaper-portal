@@ -35,6 +35,7 @@ module.exports = {
 							content: [
 								{
 									block: 'ui-preview',
+									section: 'brand'
 								},
 							]
 						}
@@ -52,6 +53,7 @@ module.exports = {
 							content: [
 								{
 									block: 'ui-preview',
+									section: 'default'
 								},
 							]
 						}
@@ -69,11 +71,12 @@ module.exports = {
 							content: [
 								{
 									block: 'ui-preview',
+									section: 'inverse'
 								},
 							]
 						}
 					]
-				}
+				},
 			]
 		}
 	]

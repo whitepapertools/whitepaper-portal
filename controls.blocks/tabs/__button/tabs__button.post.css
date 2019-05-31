@@ -1,0 +1,14 @@
+.tabs__button {
+	position: relative;
+	z-index: 0;
+	box-sizing: border-box;
+	color: var(--color-control-typo-primary);
+	transition: color .1s, box-shadow .1s;
+	overflow: visible;
+
+	&::before {
+		transform: scale(.8);
+		background-color: rgba(0,0,0,0);
+		transition: background-color .15s, transform .15s;
+	}
+}

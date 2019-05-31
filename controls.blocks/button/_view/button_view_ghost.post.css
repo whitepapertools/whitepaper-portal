@@ -1,12 +1,15 @@
 .button_view_ghost {
-	background-color: var(--color-control-bg-default);
 	color: var(--color-control-typo-primary);
-	transition: background-color .15s;
 
-	&:hover {
+	&::before {
+		background-color: var(--color-control-bg-default);
+		transition: background-color .15s;
+	}
+
+	&:hover&::before{
 		background-color: var(--color-control-bg-default-hover);
 	}
-	&:active {
+	&:active&::before{
 		background-color: var(--color-control-bg-default-press);
 	}
 }
