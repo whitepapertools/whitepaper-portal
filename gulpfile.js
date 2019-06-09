@@ -7,12 +7,51 @@ const postcssCalc = require('postcss-calc');
 const postcssNested = require('postcss-nested');
 const postcssReporter = require('postcss-reporter');
 const autoprefixer = require('autoprefixer');
+const csso = require('gulp-csso');
+const rename = require('gulp-rename');
+const replace = require("gulp-string-replace");
+const del = require('del');
 
-const srcPath = './node_modules/whitepaper-bem/**/*.css';
+const srcPath = './node_modules/whitepaper-bem';
+const srcLevels = [
+	srcPath + '/theme/**/*.css', // Тема
+	srcPath + '/tpl-*/**/*.css', // Каркас
+	srcPath + '/pt-*/**/*.css', // Паттерны
+
+	srcPath + '/text/**/*.css',  // Контент
+	srcPath + '/avatar/**/*.css', // Контент
+	srcPath + '/badge/**/*.css', // Контент
+	srcPath + '/icon/**/*.css', // Контент
+	srcPath + '/social-icon/**/*.css', // Контент
+	srcPath + '/tag/**/*.css', // Контент
+	srcPath + '/vector/**/*.css', // Контент
+
+	srcPath + '/decorator/**/*.css' // Декоратор
+];
 const destPath = './cdn/';
-const name = 'whitepaper-test';
+const name = 'whitepaper';
 
-gulp.task('css', function () {
+let version = '';
+
+const replaceVersion = rawString => {
+	const newString = rawString.replace(/"version":\s*/g, '');
+	const withoutQuotes = newString.substring(1, newString.length - 1);
+	version = withoutQuotes;
+
+	return rawString;
+};
+
+
+gulp.task('clean', () => {
+	del(destPath);
+});
+
+gulp.task('get-version', () => {
+	return gulp.src(srcPath + '/package.json')
+		.pipe(replace(/"version".*$/gm, replaceVersion))
+});
+
+gulp.task('css', () =>  {
 	let plugins = [
 		postcssImport(),
 		postcssSimpleVars(),
@@ -21,8 +60,21 @@ gulp.task('css', function () {
 		autoprefixer(),
 		postcssReporter()
 	];
-	return gulp.src(srcPath)
+	return gulp.src(srcLevels)
 		.pipe(postcss(plugins))
-		.pipe(concat(name + '.css'))
+		.pipe(concat(name + '-' + version + '.css'))
+		// .pipe(rmComments())
+		.pipe(gulp.dest(destPath))
+		.pipe(csso())
+		.pipe(rename({ suffix: '.min' }))
 		.pipe(gulp.dest(destPath));
 });
+
+gulp.task(
+	'build',
+	gulp.series(
+		// "clean",
+		'get-version',
+		'css'
+	)
+);
