@@ -6,10 +6,10 @@
 	&__description {
 		background-color: var(--color-bg-default);
 	}
-	&__info {
+	/*&__info {
 		width: 100%;
 		box-sizing: border-box;
-	}
+	}*/
 	&__date {
 		height: 64px;
 		width: 64px;
@@ -25,7 +25,7 @@
 		padding-top: 87px !important;
 		background: var(--color-bg-default);
 	}
-	&__wrap {
+	/*&__wrap {
 		width: 100%;
-	}
+	}*/
 }
