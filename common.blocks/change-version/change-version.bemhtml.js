@@ -9,7 +9,6 @@ block('change-version')(
       var majorComponents = majorArray.map(item => {
         return {
             elem: 'item',
-            elemMods: { 'space-b': 'm' },
             content: [
               {
                 block: 'change-item',
@@ -22,7 +21,6 @@ block('change-version')(
       var minorComponents = minorArray.map(item => {
         return {
             elem: 'item',
-            elemMods: { 'space-b': 'm' },
             content: [
               {
                 block: 'change-item',
@@ -35,7 +33,6 @@ block('change-version')(
       var patchComponents = patchArray.map(item => {
         return {
             elem: 'item',
-            elemMods: { 'space-b': 'm' },
             content: [
               {
                 block: 'change-item',
@@ -107,6 +104,7 @@ block('change-version')(
                         },
                         {
                           block: 'pt-list',
+                          mods: { 'space-v': 'xs' },
                           content: [
                             majorComponents
                           ]
@@ -128,6 +126,7 @@ block('change-version')(
                         },
                         {
                           block: 'pt-list',
+                          mods: { 'space-v': 'xs' },
                           content: [
                             minorComponents
                           ]
@@ -147,6 +146,7 @@ block('change-version')(
                         },
                         {
                           block: 'pt-list',
+                          mods: { 'space-v': 'xs' },
                           content: [
                             patchComponents
                           ]
