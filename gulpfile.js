@@ -35,7 +35,7 @@ let version = '';
 
 const replaceVersion = rawString => {
 	const newString = rawString.replace(/"version":\s*/g, '');
-	const withoutQuotes = newString.substring(1, newString.length - 1);
+	const withoutQuotes = newString.substring(1, newString.length - 1).replace('"', '');
 	version = withoutQuotes;
 
 	return rawString;
@@ -71,7 +71,7 @@ gulp.task('css', () =>  {
 });
 
 gulp.task(
-	'build',
+	'default',
 	gulp.series(
 		// "clean",
 		'get-version',
