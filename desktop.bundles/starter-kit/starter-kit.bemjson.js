@@ -31,7 +31,7 @@ module.exports = {
 					content: [
 						{
 							elem: 'container',
-							mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', align: 'center' }},
+							mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', distribute: 'center' }},
 							content: [
 								{
 									elem: 'inner',
@@ -113,7 +113,7 @@ module.exports = {
 					content: [
 						{
 							elem: 'container',
-							elemMods: { 'size': 'm', 'align': 'center' },
+							elemMods: { 'size': 'm', 'distribute': 'center' },
 							content: [
 
 								/* Heading */
@@ -1540,16 +1540,17 @@ module.exports = {
 																			elem: 'sale',
 																			mix: [
 																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: '4xl' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
+																				{ block: 'decorator', mods: { 'indent-b': 's' }}
 																			],
 																			content: '$22'
 																		},
 																		{
 																			elem: 'assets',
+																			mix: { block: 'pt-list', mods: { 'space-v': '2xs' }, },
 																			content: [
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					mix: { block: 'pt-list', elem: 'item' },
 																					content: [
 																						{
 																							block: 'pt-icon-plus',
@@ -1582,7 +1583,7 @@ module.exports = {
 																				},
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					mix: { block: 'pt-list', elem: 'item' },
 																					content: [
 																						{
 																							block: 'pt-icon-plus',
@@ -1615,7 +1616,7 @@ module.exports = {
 																				},
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					mix: { block: 'pt-list', elem: 'item' },
 																					content: [
 																						{
 																							block: 'pt-icon-plus',
@@ -1702,16 +1703,17 @@ module.exports = {
 																			elem: 'sale',
 																			mix: [
 																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: '4xl' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
+																				{ block: 'decorator', mods: { 'indent-b': 's' }}
 																			],
 																			content: '$66'
 																		},
 																		{
 																			elem: 'assets',
+																			mix: { block: 'pt-list', mods: { 'space-v': '2xs' }, },
 																			content: [
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					mix: { block: 'pt-list', elem: 'item' },
 																					content: [
 																						{
 																							block: 'pt-icon-plus',
@@ -1744,7 +1746,7 @@ module.exports = {
 																				},
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					mix: { block: 'pt-list', elem: 'item' },
 																					content: [
 																						{
 																							block: 'pt-icon-plus',
@@ -1777,7 +1779,7 @@ module.exports = {
 																				},
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					mix: { block: 'pt-list', elem: 'item' },
 																					content: [
 																						{
 																							block: 'pt-icon-plus',
@@ -1870,16 +1872,17 @@ module.exports = {
 																			elem: 'sale',
 																			mix: [
 																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: '4xl' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
+																				{ block: 'decorator', mods: { 'indent-b': 's' }}
 																			],
 																			content: '$99'
 																		},
 																		{
 																			elem: 'assets',
+																			mix: { block: 'pt-list', mods: { 'space-v': '2xs' }, },
 																			content: [
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					mix: { block: 'pt-list', elem: 'item' },
 																					content: [
 																						{
 																							block: 'pt-icon-plus',
@@ -1912,7 +1915,7 @@ module.exports = {
 																				},
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					mix: { block: 'pt-list', elem: 'item' },
 																					content: [
 																						{
 																							block: 'pt-icon-plus',
@@ -1945,7 +1948,7 @@ module.exports = {
 																				},
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'm' }},
+																					mix: { block: 'pt-list', elem: 'item' },
 																					content: [
 																						{
 																							block: 'pt-icon-plus',
@@ -2053,7 +2056,7 @@ module.exports = {
 																{
 																	elem: 'developer-list',
 																	mix: [
-																		{ block: 'pt-list' },
+																		{ block: 'pt-list', mods: { 'space-v': 'xs', distribute: 'between', 'vertical-align': 'center' }, },
 																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', distribute: 'between' }}
 																	],
 																	content: [
@@ -2062,7 +2065,7 @@ module.exports = {
 																			content: [
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', distribute: 'between', 'vertical-align': 'center' }},
+																					mix: { block: 'pt-list', elem: 'item' },
 																					content: [
 																						{
 																							block: 'pt-icon-plus',
@@ -2084,7 +2087,7 @@ module.exports = {
 																										{
 																											block: 'text',
 																											mods: { size: 's', view: 'primary' },
-																											content: 'Monument Vallet'
+																											content: 'Monument Valley'
 																										},
 																										{
 																											block: 'text',
@@ -2104,7 +2107,7 @@ module.exports = {
 																				},
 																				{
 																					elem: 'item',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', distribute: 'between', 'vertical-align': 'center' }},
+																					mix: { block: 'pt-list', elem: 'item' },
 																					content: [
 																						{
 																							block: 'pt-icon-plus',
