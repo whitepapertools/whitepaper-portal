@@ -1,120 +1,120 @@
 module.exports = {
-  block: 'page',
-  title: 'Starter Kit',
-  favicon: '/favicon.ico',
-  lang: 'ru',
-  head: [
-    { elem: 'meta', attrs: { name: 'description', content: '' }},
-    { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' }},
-    { elem: 'css', url: 'starter-kit.min.css' },
-    { elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
-  ],
-  scripts: [{ elem: 'js', url: 'starter-kit.min.js' }],
-  mods: { theme: 'islands' },
-  mix: [
-    {
-      block: 'theme',
-      mods: { color: 'whitepaper-portal-default', space: 'default', breakpoint: 'default', size: 'default', gap: 'small', menu: 'default', control: 'whitepaper-default', font: 'nitti' }
-    },
-    { block: 'kit' }
-  ],
-  content: [
-    /* Menu */
-    {
-      block: 'menu',
-      mix: { block: 'theme', mods: { color: 'whitepaper-portal-inverse' } },
-      attrs: { style: 'margin-bottom: 0;' },
-      content: [
-        {
-          elem: 'content',
-          mix: { block: 'tpl-layout', elem: 'content' },
-          content: [
-            {
-              elem: 'container',
-              mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', align: 'center' }},
-              content: [
-                {
-                  elem: 'inner',
-                  content: [
-                    {
-                      elem: 'paper',
-                      content: [
-                        {
-                          elem: 'logo',
-                          tag: 'a',
-                          attrs: { href: '/index.html' }
-                        },
-                        {
-                          elem: 'download',
-                          content: [
-                            {
-                              block: 'figured-button',
-                              tag: 'a',
-                              attrs: { href: 'https://github.com/whitepapertools' } ,
-                              mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
-                              content: 'GitHub'
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      elem: 'nav',
-                      content: [
-                        {
-                          elem: 'item',
-                          tag: 'a',
-                          attrs: { href: '/doc.html' },
-                          mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
-                          content: 'Документация'
-                        },
-                        {
-                          elem: 'item',
-                          tag: 'a',
-                          attrs: { href: '/starter-kit.html' },
-                          mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
-                          content: 'Starter Kit'
-                        },
-                        {
-                          elem: 'item',
-                          tag: 'a',
-                          attrs: { href: '/community.html' },
-                          mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
-                          content: 'Сообщество'
-                        },
-                        {
-                          elem: 'item',
-                          tag: 'a',
-                          attrs: { href: '/changelog.html' },
-                          mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
-                          content: 'Changelog'
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
+	block: 'page',
+	title: 'Starter Kit',
+	favicon: '/favicon.ico',
+	lang: 'ru',
+	head: [
+		{ elem: 'meta', attrs: { name: 'description', content: '' }},
+		{ elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' }},
+		{ elem: 'css', url: 'starter-kit.min.css' },
+		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
+	],
+	scripts: [{ elem: 'js', url: 'starter-kit.min.js' }],
+	mods: { theme: 'islands' },
+	mix: [
+		{
+			block: 'theme',
+			mods: { color: 'whitepaper-portal-default', space: 'default', breakpoint: 'default', size: 'default', gap: 'small', menu: 'default', control: 'whitepaper-default', font: 'nitti' }
+		},
+		{ block: 'kit' }
+	],
+	content: [
+		/* Menu */
+		{
+			block: 'menu',
+			mix: { block: 'theme', mods: { color: 'whitepaper-portal-inverse' } },
+			attrs: { style: 'margin-bottom: 0;' },
+			content: [
+				{
+					elem: 'content',
+					mix: { block: 'tpl-layout', elem: 'content' },
+					content: [
+						{
+							elem: 'container',
+							mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', distribute: 'center' }},
+							content: [
+								{
+									elem: 'inner',
+									content: [
+										{
+											elem: 'paper',
+											content: [
+												{
+													elem: 'logo',
+													tag: 'a',
+													attrs: { href: '/index.html' }
+												},
+												{
+													elem: 'download',
+													content: [
+														{
+															block: 'figured-button',
+															tag: 'a',
+															attrs: { href: 'https://github.com/whitepapertools' } ,
+															mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
+															content: 'GitHub'
+														}
+													]
+												}
+											]
+										},
+										{
+											elem: 'nav',
+											content: [
+												{
+													elem: 'item',
+													tag: 'a',
+													attrs: { href: '/doc.html' },
+													mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
+													content: 'Документация'
+												},
+												{
+													elem: 'item',
+													tag: 'a',
+													attrs: { href: '/starter-kit.html' },
+													mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
+													content: 'Starter Kit'
+												},
+												{
+													elem: 'item',
+													tag: 'a',
+													attrs: { href: '/community.html' },
+													mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
+													content: 'Сообщество'
+												},
+												{
+													elem: 'item',
+													tag: 'a',
+													attrs: { href: '/changelog.html' },
+													mix: { block: 'text', mods: { size: 'xl', view: 'primary', weight: 'light' } },
+													content: 'Changelog'
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
 
-      ]
-    },
-    /* Menu */
-    {
-      block: 'tpl-layout',
-      mix: { block: 'decorator',mods: { 'space-v': '6xl' }},
-      attrs: {
-        'style': 'background: var(--color-bg-ghost)'
-      },
-      content: [
-        {
-          elem: 'content',
-          content: [
-            {
-              elem: 'container',
-              elemMods: { 'size': 'm', 'align': 'center' },
-              content: [
+			]
+		},
+		/* Menu */
+		{
+			block: 'tpl-layout',
+			mix: { block: 'decorator',mods: { 'space-v': '6xl' }},
+			attrs: {
+				'style': 'background: var(--color-bg-ghost)'
+			},
+			content: [
+				{
+					elem: 'content',
+					content: [
+						{
+							elem: 'container',
+							elemMods: { 'size': 'm', 'distribute': 'center' },
+							content: [
 
                 /* Heading */
                 {
@@ -1884,619 +1884,841 @@ module.exports = {
                 },
                 /* /Tarif */
 
-                /* APP */
-                {
-                  elem: 'section',
-                  mix: { block: 'decorator',mods: { 'indent-b': '6xl' }},
-                  content: [
-                    {
-                      block: 'tpl-grid',
-                      mods: { 'col-gap': 'full', 'row-gap': 'full', 's-columns': '6' },
-                      content: [
-                        {
-                          elem: 'fraction',
-                          elemMods: { 's-col': '3', 'm-col': '2' },
-                          mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
-                          content: [
-                            {
-                              block: 'app',
-                              mods: { view: 'monument-hypnotic' },
-                              mix: [
-                                { block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
-                                { block: 'pt-card', mods: { view: 'inverse' }}
-                              ],
-                              content: [
-                                {
-                                  elem: 'cover',
-                                  mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
-                                  content: [
-                                    {
-                                      block: 'image',
-                                      url: '/assets/starter-kit/monument2.png',
-                                    }
-                                  ]
-                                },
-                                {
-                                  elem: 'info',
-                                  mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl', distribute: 'center' }},
-                                  content: [
-                                    {
-                                      block: 'text',
-                                      mix: { block: 'decorator', mods: { 'indent-b': '2xl' }},
-                                      mods: { size: '2xl', weight: 'bold', align: 'center', view: 'primary' },
-                                      content: 'Holiday Bundle'
-                                    },
-                                    {
-                                      block: 'image',
-                                      url: '/assets/starter-kit/group.png'
-                                    }
-                                  ]
-                                },
-                                {
-                                  elem: 'developer-list',
-                                  mix: [
-                                    { block: 'pt-list' },
-                                    { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', distribute: 'between' }}
-                                  ],
-                                  content: [
-                                    {
-                                      elem: 'wrap',
-                                      content: [
-                                        {
-                                          elem: 'item',
-                                          mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', distribute: 'between', 'vertical-align': 'center' }},
-                                          content: [
-                                            {
-                                              block: 'pt-icon-plus',
-                                              mods: { 'vertical-align': 'center' },
-                                              content: [
-                                                {
-                                                  elem: 'icon',
-                                                  elemMods: { 'indent-r': 's' },
-                                                  content: [
-                                                    {
-                                                      block: 'brand-logo',
-                                                      mods: { 'name': 'monument-valley', size: 's', form: 'mask' }
-                                                    }
-                                                  ]
-                                                },
-                                                {
-                                                  elem: 'block',
-                                                  content: [
-                                                    {
-                                                      block: 'text',
-                                                      mods: { size: 's', view: 'primary' },
-                                                      content: 'Monument Vallet'
-                                                    },
-                                                    {
-                                                      block: 'text',
-                                                      mods: { size: 's', view: 'ghost' },
-                                                      content: 'by ustwo games'
-                                                    }
-                                                  ]
-                                                }
-                                              ]
-                                            },
-                                            {
-                                              block: 'badge',
-                                              mods: { view: 'default' },
-                                              content: '$99'
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          elem: 'item',
-                                          mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-b': 'l', distribute: 'between', 'vertical-align': 'center' }},
-                                          content: [
-                                            {
-                                              block: 'pt-icon-plus',
-                                              mods: { 'vertical-align': 'center' },
-                                              content: [
-                                                {
-                                                  elem: 'icon',
-                                                  elemMods: { 'indent-r': 's' },
-                                                  content: [
-                                                    {
-                                                      block: 'brand-logo',
-                                                      mods: { 'name': 'monument-valley-2', size: 's', form: 'mask'}
-                                                    }
-                                                  ]
-                                                },
-                                                {
-                                                  elem: 'block',
-                                                  content: [
-                                                    {
-                                                      block: 'text',
-                                                      mods: { size: 's', view: 'primary' },
-                                                      content: 'Monument Valley 2'
-                                                    },
-                                                    {
-                                                      block: 'text',
-                                                      mods: { size: 's', view: 'ghost' },
-                                                      content: 'by ustwo games'
-                                                    }
-                                                  ]
-                                                }
-                                              ]
-                                            },
-                                            {
-                                              block: 'badge',
-                                              mods: { view: 'default' },
-                                              content: '$99'
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          elem: 'fraction',
-                          elemMods: { 's-col': '3', 'm-col': '2' },
-                          mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
-                          content: [
-                            {
-                              block: 'app',
-                              mix: [
-                                { block: 'theme', mods: { color: 'whitepaper-portal-inverse' }},
-                                { block: 'pt-card', mods: { view: 'default' }},
-                              ],
-                              content: [
-                                {
-                                  elem: 'good-info',
-                                  mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
-                                  content: [
-                                    {
-                                      block: 'image',
-                                      mix: { block: 'decorator', mods: { 'indent-b': '2xl' }},
-                                      url: '/assets/starter-kit/good-cover.png'
-                                    },
-                                    {
-                                      block: 'text',
-                                      mods: { size: '3xl', view: 'primary', weight: 'bold' },
-                                      mix: { block: 'decorator', mods: { 'space-b': 'l' }},
-                                      content: 'From our Bafta award winning hit'
-                                    },
-                                    {
-                                      block: 'text',
-                                      mods: { size: 'm', view: 'secondary', font: 'sans' },
-                                      content: 'Enjoy beautiful levels filled with illusory, meditative puzzles'
-                                    }
-                                  ]
-                                },
-                                {
-                                  elem: 'item',
-                                  mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', distribute: 'between' }},
-                                  content: [
-                                    {
-                                      block: 'pt-icon-plus',
-                                      mods: { 'vertical-align': 'center' },
-                                      content: [
-                                        {
-                                          block: 'brand-logo',
-                                          mods: { 'name': 'ustwo', size: 's'},
-                                          mix: { block: 'pt-icon-plus', elem: 'icon', elemMods: { 'indent-r': 's' } },
-                                        },
-                                        {
-                                          elem: 'block',
-                                          content: [
-                                            {
-                                              block: 'text',
-                                              mods: { view: 'primary', size: 'm' },
-                                              content: 'Monument Valley'
-                                            },
-                                            {
-                                              block: 'text',
-                                              mods: { size: 's', view: 'ghost' },
-                                              content: 'by ustwo games'
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      block: 'badge',
-                                      mods: { view: 'default' },
-                                      content: '$99'
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          elem: 'fraction',
-                          elemMods: { 's-col': '3', 'm-col': '2' },
-                          mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
-                          content: [
-                            {
-                              block: 'app',
-                              mods: { view: 'monument' },
-                              mix: [
-                                { block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
-                                { block: 'pt-card', mods: { view: 'inverse' } },
-                              ],
-                              content: [
-                                {
-                                  elem: 'cover',
-                                  mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
-                                  content: [
-                                    {
-                                      block: 'image',
-                                      url: '/assets/starter-kit/monument.png'
-                                    }
-                                  ]
-                                },
-                                {
-                                  elem: 'preview',
-                                  mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl', 'distribute': 'center' }},
-                                  content: [
-                                    {
-                                      block: 'image',
-                                      mix: { block: 'decorator', mods: { 'indent-b': '5xl' }},
-                                      url: '/assets/starter-kit/ustwo.svg'
-                                    },
-                                    {
-                                      elem: 'about',
-                                      mix: { block: 'pt-card', elem: 'content', elemMods: {distribute: 'center' }},
-                                      content: [
-                                        {
-                                          block: 'text',
-                                          mods: { size: '3xl', view: 'primary', align: 'center', weight: 'bold' },
-                                          mix: { block: 'decorator', mods: { 'space-b': 's' }},
-                                          content: 'From our Bafta award winning hit!'
-                                        },
-                                        {
-                                          block: 'text',
-                                          mods: { size: 'm', view: 'primary', align: 'center', font: 'sans' },
-                                          content: 'Enjoy beautiful meditative puzzle game'
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  elem: 'item',
-                                  mix: [
-                                    { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', distribute: 'between' }},
-                                    { block: 'pt-card', elem: 'item' }
-                                  ],
-                                  content: [
-                                    {
-                                      block: 'pt-icon-plus',
-                                      mods: { 'vertical-align': 'center' },
-                                      content: [
-                                        {
-                                          block: 'brand-logo',
-                                          mods: { 'name': 'monument-valley-2', size: 's', form: 'mask'},
-                                          mix: { block: 'pt-icon-plus', elem: 'icon', elemMods: { 'indent-r': 's' } },
-                                        },
-                                        {
-                                          elem: 'block',
-                                          content: [
-                                            {
-                                              block: 'text',
-                                              mods: { size: 's', view: 'primary' },
-                                              content: 'Monument Valley'
-                                            },
-                                            {
-                                              block: 'text',
-                                              mods: { size: 's', view: 'ghost' },
-                                              content: 'by ustwo games'
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      block: 'badge',
-                                      mods: { view: 'default' },
-                                      content: '$99'
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                /* /APP */
+								/* Tarif */
+								{
+									elem: 'section',
+									mix: { block: 'decorator', mods: { 'indent-b': '6xl' }},
+									content: [
+										{
+											block: 'tpl-grid',
+											mods: { 'col-gap': 'full', 'row-gap': 'full', 's-columns': '6' },
+											content: [
+												{
+													elem: 'fraction',
+													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
+													content: [
+														{
+															block: 'tariff',
+															mix: [
+																{ block: 'theme', mods: { color: 'whitepaper-portal-default', control: 'whitepaper-default' }},
+																{ block: 'pt-card' }
+															],
+															content: [
+																{
+																	elem: 'content',
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
+																	content: [
+																		{
+																			elem: 'type',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: '2xl', weight: 'bold', align: 'center' }},
+																				{ block: 'decorator', mods: { 'indent-b': '2xs' }}
+																			],
+																			content: 'Light'
+																		},
+																		{
+																			elem: 'type',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', font: 'sans' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
+																			],
+																			content: 'For large companies'
+																		},
+																		{
+																			elem: 'sale',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: '4xl' }},
+																				{ block: 'decorator', mods: { 'indent-b': 's' }}
+																			],
+																			content: '$22'
+																		},
+																		{
+																			elem: 'assets',
+																			mix: { block: 'pt-list', mods: { 'space-v': '2xs' }, },
+																			content: [
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item' },
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'part', size: 's', view: 'primary', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
+																											content: '50 presentations/month'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item' },
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'wait-2', size: 's', view: 'primary', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
+																											content: '5 house of free support'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item' },
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'statistic', size: 's', view: 'primary', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-brand' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans'  },
+																											content: '10 campaigns/month'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	elem: 'footer',
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl' }},
+																	content: [
+																		{
+																			block: 'button',
+																			tag: 'button',
+																			mods: { size: 'l', view: 'primary', width: 'full' },
+																			content: 'Choose month plan'
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'fraction',
+													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
+													content: [
+														{
+															block: 'tariff',
+															mix: [
+																{ block: 'theme', mods: { color: 'whitepaper-portal-brand', control: 'whitepaper-brand' }},
+																{ block: 'pt-card' }
+															],
+															content: [
+																{
+																	elem: 'content',
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
+																	content: [
+																		{
+																			elem: 'type',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: '2xl', weight: 'bold', align: 'center' }},
+																				{ block: 'decorator', mods: { 'indent-b': '2xs' }}
+																			],
+																			content: 'Standard'
+																		},
+																		{
+																			elem: 'type',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', font: 'sans' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
+																			],
+																			content: 'For large companies'
+																		},
+																		{
+																			elem: 'sale',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: '4xl' }},
+																				{ block: 'decorator', mods: { 'indent-b': 's' }}
+																			],
+																			content: '$66'
+																		},
+																		{
+																			elem: 'assets',
+																			mix: { block: 'pt-list', mods: { 'space-v': '2xs' }, },
+																			content: [
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item' },
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'part', size: 's', view: 'brand', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
+																											content: '50 presentations/month'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item' },
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'wait-2', size: 's', view: 'brand', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
+																											content: '5 house of free support'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item' },
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'statistic', size: 's', view: 'brand', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans',  },
+																											content: '10 campaigns/month'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	elem: 'footer',
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl' }},
+																	content: [
+																		{
+																			block: 'button',
+																			tag: 'button',
+																			mods: { size: 'l', view: 'primary', width: 'full' },
+																			content: 'Choose month plan'
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'fraction',
+													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
+													content: [
+														{
+															block: 'tariff',
+															mods: { view: 'image' },
+															mix: [
+																{ block: 'theme', mods: { color: 'whitepaper-portal-brand', control: 'whitepaper-inverse' }},
+																{ block: 'pt-card' }
+															],
+															content: [
+																{
+																	block: 'image',
+																	url: '/assets/starter-kit/premium.png',
+																	mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
+																},
+																{
+																	elem: 'content',
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
+																	content: [
+																		{
+																			elem: 'type',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: '2xl', weight: 'bold', align: 'center' }},
+																				{ block: 'decorator', mods: { 'indent-b': '2xs' }}
+																			],
+																			content: 'Premium'
+																		},
+																		{
+																			elem: 'type',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', size: 'm', align: 'center', font: 'sans' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
+																			],
+																			content: 'For large companies'
+																		},
+																		{
+																			elem: 'sale',
+																			mix: [
+																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: '4xl' }},
+																				{ block: 'decorator', mods: { 'indent-b': 's' }}
+																			],
+																			content: '$99'
+																		},
+																		{
+																			elem: 'assets',
+																			mix: { block: 'pt-list', mods: { 'space-v': '2xs' }, },
+																			content: [
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item' },
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'part', size: 's', view: 'primary', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
+																											content: '50 presentations/month'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item' },
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'wait-2', size: 's', view: 'primary', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
+																											content: '5 house of free support'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item' },
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'icon',
+																											mods: { name: 'statistic', size: 's', view: 'primary', round: 'default' },
+																											mix: { block: 'theme', mods: { color: 'whitepaper-portal-default' }}
+																										}
+																									]
+																								},
+																								{
+																									block: 'content',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 'm', view: 'primary', font: 'sans' },
+																											content: '10 campaigns/month'
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	elem: 'footer',
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl' }},
+																	content: [
+																		{
+																			block: 'button',
+																			tag: 'button',
+																			mods: { size: 'l', view: 'primary', width: 'full' },
+																			content: 'Choose month plan'
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								/* /Tarif */
 
-                /* Informer */
-                {
-                  elem: 'section',
-                  mix: { block: 'decorator',mods: { 'indent-b': '6xl' }},
-                  content: [
-                    {
-                      block: 'tpl-grid',
-                      mods: { 'col-gap': 'full', 'row-gap': 'full', 's-columns': '6' },
-                      content: [
-                        {
-                          elem: 'fraction',
-                          elemMods: { 's-col': '3', 'm-col': '2' },
-                          mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
-                          content: [
-                            {
-                              block: 'informer',
-                              mods: { view: 'alert' },
-                              mix: [
-                                { block: 'theme', mods: { color: 'whitepaper-alert', control: 'whitepaper-inverse' }},
-                                { block: 'pt-card' },
-                                { block: 'pt-informer', mods: { view: 'alert' }}
-                              ],
-                              content: [
-                                {
-                                  elem: 'content',
-                                  mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
-                                  content: [
-                                    {
-                                      elem: 'icon-wrapper',
-                                      content: [
-                                        {
-                                          block: 'icon',
-                                          mods: { name: 'minus', size: 'm', view: 'alert' }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      block: 'text',
-                                      mods: { size: '2xl', weight: 'bold', align: 'center', view: 'primary' },
-                                      content: 'Error'
-                                    },
-                                    {
-                                      block: 'text',
-                                      mods: { size: 'm', align: 'center', view: 'primary', font: 'sans' },
-                                      content: 'Currently payments not available'
-                                    }
-                                  ]
-                                },
-                                {
-                                  elem: 'footer',
-                                  mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', align: 'center' }},
-                                  content: [
-                                    {
-                                      elem: 'account',
-                                      content: [
-                                        {
-                                          elem: 'info',
-                                          mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-                                          content: [
-                                            {
-                                              block: 'text',
-                                              mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-                                              mods: { size: 'xs', view: 'primary', transform: 'uppercase', spacing: 's' },
-                                              content: 'Information'
-                                            },
-                                            {
-                                              block: 'pt-icon-plus',
-                                              mods: { 'vertical-align': 'center' },
-                                              content: [
-                                                {
-                                                  elem: 'icon',
-                                                  elemMods: { 'indent-r': 'l' },
-                                                  content: [
-                                                    {
-                                                      block: 'image',
-                                                      url: '/assets/starter-kit/mastercard.svg',
-                                                      width: 36
-                                                    }
-                                                  ]
-                                                },
-                                                {
-                                                  elem: 'block',
-                                                  content: [
-                                                    {
-                                                      block: 'text',
-                                                      mods: { mods: 'm', view: 'primary' },
-                                                      content: '4276 55•• •••• 5371'
-                                                    }
-                                                  ]
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          block: 'button',
-                                          tag: 'button',
-                                          mods: { width: 'full', size: 'l', view: 'secondary' },
-                                          content: 'Done'
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          elem: 'fraction',
-                          elemMods: { 's-col': '3', 'm-col': '2' },
-                          mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
-                          content: [
-                            {
-                              block: 'informer',
-                              mods: { view: 'warning' },
-                              mix: [
-                                { block: 'theme', mods: { color: 'whitepaper-warning', control: 'whitepaper-inverse' }},
-                                { block: 'pt-card' },
-                                { block: 'pt-informer', mods: { view: 'warning' }}
-                              ],
-                              content: [
-                                {
-                                  elem: 'content',
-                                  mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
-                                  content: [
-                                    {
-                                      elem: 'icon-wrapper',
-                                      content: [
-                                        {
-                                          block: 'icon',
-                                          mods: { name: 'attention', size: 'm', view: 'warning' }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      block: 'text',
-                                      mods: { size: '2xl', weight: 'bold', align: 'center', view: 'primary' },
-                                      content: 'Warning'
-                                    },
-                                    {
-                                      block: 'text',
-                                      mods: { size: 'm', align: 'center', view: 'primary', font: 'sans' },
-                                      content: 'Currently payments not available'
-                                    }
-                                  ]
-                                },
-                                {
-                                  elem: 'footer',
-                                  mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', align: 'center' }},
-                                  content: [
-                                    {
-                                      elem: 'account',
-                                      content: [
-                                        {
-                                          elem: 'info',
-                                          mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-                                          content: [
-                                            {
-                                              block: 'text',
-                                              mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-                                              mods: { size: 'xs', view: 'primary', transform: 'uppercase', spacing: 's' },
-                                              content: 'Transfer to card'
-                                            },
-                                            {
-                                              block: 'pt-icon-plus',
-                                              mods: { 'vertical-align': 'center' },
-                                              content: [
-                                                {
-                                                  elem: 'icon',
-                                                  elemMods: { 'indent-r': 'l' },
-                                                  content: [
-                                                    {
-                                                      block: 'image',
-                                                      url: '/assets/starter-kit/mastercard.svg',
-                                                      width: 36
-                                                    }
-                                                  ]
-                                                },
-                                                {
-                                                  elem: 'block',
-                                                  content: {
-                                                    block: 'text',
-                                                    mods: { mods: 'm', view: 'primary' },
-                                                    content: '4276 55•• •••• 5371'
-                                                  }
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          block: 'button',
-                                          tag: 'button',
-                                          mods: { width: 'full', size: 'l', view: 'secondary' },
-                                          content: 'Done'
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          elem: 'fraction',
-                          elemMods: { 's-col': '3', 'm-col': '2' },
-                          mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
-                          content: [
-                            {
-                              block: 'informer',
-                              mods: { view: 'success' },
-                              mix: [
-                                { block: 'theme', mods: { color: 'whitepaper-success', control: 'whitepaper-inverse' }},
-                                { block: 'pt-card' },
-                                { block: 'pt-informer', mods: { view: 'success' }}
-                              ],
-                              content: [
-                                {
-                                  elem: 'content',
-                                  mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
-                                  content: [
-                                    {
-                                      elem: 'icon-wrapper',
-                                      content: [
-                                        {
-                                          block: 'icon',
-                                          mods: { name: 'check', size: 'm', view: 'success' }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      block: 'text',
-                                      mods: { size: '2xl', weight: 'bold', align: 'center', view: 'primary' },
-                                      content: 'Success'
-                                    },
-                                    {
-                                      block: 'text',
-                                      mods: { size: 'm', align: 'center', view: 'primary', font: 'sans' },
-                                      content: 'Payment completed'
-                                    }
-                                  ]
-                                },
-                                {
-                                  elem: 'footer',
-                                  mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', align: 'center' }},
-                                  content: [
-                                    {
-                                      elem: 'acoount',
-                                      content: [
-                                        {
-                                          elem: 'info',
-                                          mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-                                          content: [
-                                            {
-                                              block: 'text',
-                                              mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-                                              mods: { size: 'xs', view: 'primary', transform: 'uppercase', spacing: 's' },
-                                              content: 'Information'
-                                            },
-                                            {
-                                              block: 'text',
-                                              mods: { size: 's', view: 'primary', font: 'sans' },
-                                              content: 'Just visited the best beach for surfing. The waves are awesome.'
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          block: 'button',
-                                          tag: 'button',
-                                          mods: { width: 'full', size: 'l', view: 'secondary' },
-                                          content: 'Done'
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                /* /Informer */
+								/* APP */
+								{
+									elem: 'section',
+									mix: { block: 'decorator',mods: { 'indent-b': '6xl' }},
+									content: [
+										{
+											block: 'tpl-grid',
+											mods: { 'col-gap': 'full', 'row-gap': 'full', 's-columns': '6' },
+											content: [
+												{
+													elem: 'fraction',
+													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
+													content: [
+														{
+															block: 'app',
+															mods: { view: 'monument-hypnotic' },
+															mix: [
+																{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
+																{ block: 'pt-card', mods: { view: 'inverse' }}
+															],
+															content: [
+																{
+																	elem: 'cover',
+																	mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
+																	content: [
+																		{
+																			block: 'image',
+																			url: '/assets/starter-kit/monument2.png',
+																		}
+																	]
+																},
+																{
+																	elem: 'info',
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl', distribute: 'center' }},
+																	content: [
+																		{
+																			block: 'text',
+																			mix: { block: 'decorator', mods: { 'indent-b': '2xl' }},
+																			mods: { size: '2xl', weight: 'bold', align: 'center', view: 'primary' },
+																			content: 'Holiday Bundle'
+																		},
+																		{
+																			block: 'image',
+																			url: '/assets/starter-kit/group.png'
+																		}
+																	]
+																},
+																{
+																	elem: 'developer-list',
+																	mix: [
+																		{ block: 'pt-list', mods: { 'space-v': 'xs', distribute: 'between', 'vertical-align': 'center' }, },
+																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', distribute: 'between' }}
+																	],
+																	content: [
+																		{
+																			elem: 'wrap',
+																			content: [
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item' },
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'brand-logo',
+																											mods: { 'name': 'monument-valley', size: 's', form: 'mask' }
+																										}
+																									]
+																								},
+																								{
+																									elem: 'block',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 's', view: 'primary' },
+																											content: 'Monument Valley'
+																										},
+																										{
+																											block: 'text',
+																											mods: { size: 's', view: 'ghost' },
+																											content: 'by ustwo games'
+																										}
+																									]
+																								}
+																							]
+																						},
+																						{
+																							block: 'badge',
+																							mods: { view: 'default' },
+																							content: '$99'
+																						}
+																					]
+																				},
+																				{
+																					elem: 'item',
+																					mix: { block: 'pt-list', elem: 'item' },
+																					content: [
+																						{
+																							block: 'pt-icon-plus',
+																							mods: { 'vertical-align': 'center' },
+																							content: [
+																								{
+																									elem: 'icon',
+																									elemMods: { 'indent-r': 's' },
+																									content: [
+																										{
+																											block: 'brand-logo',
+																											mods: { 'name': 'monument-valley-2', size: 's', form: 'mask'}
+																										}
+																									]
+																								},
+																								{
+																									elem: 'block',
+																									content: [
+																										{
+																											block: 'text',
+																											mods: { size: 's', view: 'primary' },
+																											content: 'Monument Valley 2'
+																										},
+																										{
+																											block: 'text',
+																											mods: { size: 's', view: 'ghost' },
+																											content: 'by ustwo games'
+																										}
+																									]
+																								}
+																							]
+																						},
+																						{
+																							block: 'badge',
+																							mods: { view: 'default' },
+																							content: '$99'
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'fraction',
+													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
+													content: [
+														{
+															block: 'app',
+															mix: [
+																{ block: 'theme', mods: { color: 'whitepaper-portal-inverse' }},
+																{ block: 'pt-card', mods: { view: 'default' }},
+															],
+															content: [
+																{
+																	elem: 'good-info',
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
+																	content: [
+																		{
+																			block: 'image',
+																			mix: { block: 'decorator', mods: { 'indent-b': '2xl' }},
+																			url: '/assets/starter-kit/good-cover.png'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: '3xl', view: 'primary', weight: 'bold' },
+																			mix: { block: 'decorator', mods: { 'space-b': 'l' }},
+																			content: 'From our Bafta award winning hit'
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'm', view: 'secondary', font: 'sans' },
+																			content: 'Enjoy beautiful levels filled with illusory, meditative puzzles'
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', distribute: 'between' }},
+																	content: [
+																		{
+																			block: 'pt-icon-plus',
+																			mods: { 'vertical-align': 'center' },
+																			content: [
+																				{
+																					block: 'brand-logo',
+																					mods: { 'name': 'ustwo', size: 's'},
+																					mix: { block: 'pt-icon-plus', elem: 'icon', elemMods: { 'indent-r': 's' } },
+																				},
+																				{
+																					elem: 'block',
+																					content: [
+																						{
+																							block: 'text',
+																							mods: { view: 'primary', size: 'm' },
+																							content: 'Monument Valley'
+																						},
+																						{
+																							block: 'text',
+																							mods: { size: 's', view: 'ghost' },
+																							content: 'by ustwo games'
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			block: 'badge',
+																			mods: { view: 'default' },
+																			content: '$99'
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													elem: 'fraction',
+													elemMods: { 's-col': '3', 'm-col': '2' },
+													mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
+													content: [
+														{
+															block: 'app',
+															mods: { view: 'monument' },
+															mix: [
+																{ block: 'theme', mods: { color: 'whitepaper-portal-brand' }},
+																{ block: 'pt-card', mods: { view: 'inverse' } },
+															],
+															content: [
+																{
+																	elem: 'cover',
+																	mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' }},
+																	content: [
+																		{
+																			block: 'image',
+																			url: '/assets/starter-kit/monument.png'
+																		}
+																	]
+																},
+																{
+																	elem: 'preview',
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xl', 'distribute': 'center' }},
+																	content: [
+																		{
+																			block: 'image',
+																			mix: { block: 'decorator', mods: { 'indent-b': '5xl' }},
+																			url: '/assets/starter-kit/ustwo.svg'
+																		},
+																		{
+																			elem: 'about',
+																			mix: { block: 'pt-card', elem: 'content', elemMods: {distribute: 'center' }},
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: '3xl', view: 'primary', align: 'center', weight: 'bold' },
+																					mix: { block: 'decorator', mods: { 'space-b': 's' }},
+																					content: 'From our Bafta award winning hit!'
+																				},
+																				{
+																					block: 'text',
+																					mods: { size: 'm', view: 'primary', align: 'center', font: 'sans' },
+																					content: 'Enjoy beautiful meditative puzzle game'
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	elem: 'item',
+																	mix: [
+																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', distribute: 'between' }},
+																		{ block: 'pt-card', elem: 'item' }
+																	],
+																	content: [
+																		{
+																			block: 'pt-icon-plus',
+																			mods: { 'vertical-align': 'center' },
+																			content: [
+																				{
+																					block: 'brand-logo',
+																					mods: { 'name': 'monument-valley-2', size: 's', form: 'mask'},
+																					mix: { block: 'pt-icon-plus', elem: 'icon', elemMods: { 'indent-r': 's' } },
+																				},
+																				{
+																					elem: 'block',
+																					content: [
+																						{
+																							block: 'text',
+																							mods: { size: 's', view: 'primary' },
+																							content: 'Monument Valley'
+																						},
+																						{
+																							block: 'text',
+																							mods: { size: 's', view: 'ghost' },
+																							content: 'by ustwo games'
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			block: 'badge',
+																			mods: { view: 'default' },
+																			content: '$99'
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								/* /APP */
 
                 /* Offer */
                 {
