@@ -25,7 +25,8 @@ $screen-xxl-max: 1920px;
 ?> Мы храним значения брейкпоинтов в postcss-переменных, для лёгкого применениях их в любых блоках проекта.
 
 ```css
-@import "your/path/to/theme_breakpoint_default.post.css";
+@import 'path/to/your/theme_breakpoint_default.post.css';
+
 .block {
 	width: 200px;
 	...

@@ -49,7 +49,7 @@
 В значение переменной `--gap` указывается любая переменная из [отступов](http://whitepaper.tools/doc.html#/theme-space).
 
 ```css
-:root {
+.theme_gap_medium {
 	/* Размеры отступа у контента */
 	--gap: var(--space-l);
 

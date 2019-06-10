@@ -7,7 +7,7 @@
 	* [Отступы](theme-space.md)
 	* [Типографика](theme-text.md)
 	* [Брейкпоинты](theme-breakpoint.md)
-	* [Сеточные правила](theme-gap.md)
+	* [Расстояния](theme-gap.md)
 	* [Шрифты](theme-font.md)
 
 * [Сетка](layout.md)
