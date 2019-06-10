@@ -143,7 +143,7 @@ module.exports = {
 				/* Page content */
 				{
 					elem: 'content',
-					mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' }},
+					mix: { block: 'decorator', mods: { 'indent-b': '6xl' }},
 					content: {
 						elem: 'container',
 						elemMods: { align: 'center', size: 'm' },
@@ -157,8 +157,8 @@ module.exports = {
 					          content: [
 											{
 												block: 'text',
-												mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
-												mods: { size: 'xxxl', view: 'secondary' },
+												mix: { block: 'decorator', mods: { 'indent-b': '2xl' }},
+												mods: { size: '3xl', view: 'secondary' },
 												content: 'Сообщество и материалы whitepaper'
 											},
 											{
@@ -182,7 +182,7 @@ module.exports = {
 																		block: 'text',
 																		tag: 'a',
 																		attrs: { href: 'https://t.me/whitepapertools', style: 'text-decoration: none' },
-																		mods: { view: 'primary', size: 'xxxl', view: 'primary', display: 'inline' },
+																		mods: { view: 'primary', size: '3xl', view: 'primary', display: 'inline' },
 																		mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
 																		content: 'Telegram'
 																	},
@@ -201,7 +201,7 @@ module.exports = {
 																		block: 'text',
 																		tag: 'a',
 																		attrs: { href: 'https://twitter.com/whitepapertools', style: 'text-decoration: none' },
-																		mods: { view: 'primary', size: 'xxxl', view: 'primary', display: 'inline' },
+																		mods: { view: 'primary', size: '3xl', view: 'primary', display: 'inline' },
 																		mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
 																		content: 'Twitter'
 																	},
@@ -226,7 +226,7 @@ module.exports = {
 																		block: 'text',
 																		tag: 'a',
 																		attrs: { href: 'https://github.com/whitepapertools', style: 'text-decoration: none' },
-																		mods: { view: 'primary', size: 'xxxl', view: 'primary', display: 'inline' },
+																		mods: { view: 'primary', size: '3xl', view: 'primary', display: 'inline' },
 																		mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
 																		content: 'Github'
 																	},
@@ -245,7 +245,7 @@ module.exports = {
 																		block: 'text',
 																		tag: 'a',
 																		attrs: { href: 'https://codepen.io/whitepapertools/', style: 'text-decoration: none' },
-																		mods: { view: 'primary', size: 'xxxl', view: 'primary', display: 'inline' },
+																		mods: { view: 'primary', size: '3xl', view: 'primary', display: 'inline' },
 																		mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
 																		content: 'Codepen'
 																	},
@@ -270,7 +270,7 @@ module.exports = {
 																		block: 'text',
 																		tag: 'a',
 																		attrs: { href: 'https://dribbble.com/whitepapertools', style: 'text-decoration: none' },
-																		mods: { view: 'primary', size: 'xxxl', view: 'primary', display: 'inline' },
+																		mods: { view: 'primary', size: '3xl', view: 'primary', display: 'inline' },
 																		mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
 																		content: 'Dribbble'
 																	},
@@ -288,7 +288,7 @@ module.exports = {
 									{
 										block: 'text',
 										mods: { size: 'xl', view: 'secondary', weight: 'light' },
-										mix: { block: 'decorator', mods: { 'indent-v': 'xxxxl' } },
+										mix: { block: 'decorator', mods: { 'indent-v': '4xl' } },
 										content: 'Если у вашей продуктовой команды есть потребность в персональной консультации, вы всегда можете связатьс с нами и договориться о частной лекции. Просто напишите нам на почту whatsup@whitepaper.tools'
 									},
 									/* Banner */

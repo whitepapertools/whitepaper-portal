@@ -1,5 +1,5 @@
 @media screen and (max-width: $screen-xs-max) {
 	.contribution {
-		margin-bottom: var(--space-xxxxxl);
+		margin-bottom: var(--space-5xl);
 	}
 }

@@ -1,9 +1,9 @@
 .layer-card {
-  padding: var(--space-xxl);
+  padding: var(--space-2xl);
   box-sizing: border-box;
   &_view {
     &_blue {
-      top: calc(3*var(--space-xxxl));
+      top: calc(3*var(--space-3xl));
       width: 420px;
       background-color: #00C2FF;
       box-shadow: 16px 24px 0 #0051C7;
@@ -26,7 +26,7 @@
       z-index: 3;
     }
     &_black-monochrome {
-      padding: var(--space-xxxxxxl) var(--space-xxl) var(--space-xxl) var(--space-xxl);
+      padding: var(--space-6xl) var(--space-2xl) var(--space-2xl) var(--space-2xl);
       margin-left: 824px;
       margin-top: -42%;
       width: 320px;
@@ -44,7 +44,7 @@
     &_view {
       &_black-monochrome {
         margin-left: 65%;
-      } 
+      }
     }
 	}
 }

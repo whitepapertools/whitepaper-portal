@@ -1,5 +1,5 @@
 .footer {
-	padding: var(--space-xxxl) 0;
+	padding: var(--space-3xl) 0;
 	&__item {
 		a {
 			opacity: 0.6;
@@ -15,7 +15,7 @@
 @media screen and (max-width: $screen-xs-max) {
 	.footer {
 		&__logo {
-			margin-bottom: var(--space-xxxl);
+			margin-bottom: var(--space-3xl);
 		}
 		&__unit {
 			margin-bottom: var(--space-xl);

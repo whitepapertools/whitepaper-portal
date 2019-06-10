@@ -52,7 +52,7 @@
 		border-radius: 0%;
 		transform: rotate(45deg);
 		overflow: hidden;
-		margin: calc(18px + var(--space-xxl)) auto calc(18px + var(--space-l));
+		margin: calc(18px + var(--space-2xl)) auto calc(18px + var(--space-l));
 		box-shadow: -2px 2px 14px 0 rgba(25,28,26,0.31);
 		&::after {
 			content: '';

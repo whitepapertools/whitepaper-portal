@@ -4,7 +4,7 @@ block('community-events')(
         elem: 'wrapper',
         mix: [
           { block: 'pt-card', mods: { view: 'brand' }},
-          { block: 'decorator', mods: { 'indent-b': 'xxl'}}
+          { block: 'decorator', mods: { 'indent-b': '2xl'}}
         ],
         attrs: { style: 'background:#000; min-width: 320px;'},
         content: [
@@ -59,7 +59,7 @@ block('community-events')(
                   },
                   {
                     block: 'text',
-                    mods: { size: 'xxl', view: 'primary', align: 'center', weight: 'light' },
+                    mods: { size: '2xl', view: 'primary', align: 'center', weight: 'light' },
                     attrs: { style: 'line-height: var(--line-height-typo-xl);' },
                     mix: { block: 'decorator', mods: { 'indent-b': 's' }},
                     content: ctx.speechName

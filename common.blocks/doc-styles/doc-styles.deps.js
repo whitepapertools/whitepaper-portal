@@ -22,7 +22,7 @@
 			{ block: 'avatar', elem: 'photo', mods: { size: ['l', 'm', 's', 'xs'] } },
 			{ block: 'theme', mods: { color: ['whitepaper-default', 'whitepaper-portal-brand', 'whitepaper-portal-inverse', 'whitepaper-portal-default'] } },
 			{ block: 'brand-logo' },
-			{ block: 'brand-logo', mods: { form: ['round', 'mask' ], size: ['xxs', 'xs', 's', 'm', 'l'] } },
+			{ block: 'brand-logo', mods: { form: ['round', 'mask' ], size: ['2xs', 'xs', 's', 'm', 'l'] } },
 
 		]
 	}

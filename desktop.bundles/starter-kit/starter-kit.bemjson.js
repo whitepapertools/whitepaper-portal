@@ -103,7 +103,7 @@ module.exports = {
 		/* Menu */
 		{
 			block: 'tpl-layout',
-			mix: { block: 'decorator',mods: { 'space-v': 'xxxxxxl' }},
+			mix: { block: 'decorator',mods: { 'space-v': '6xl' }},
 			attrs: {
 				'style': 'background: var(--color-bg-ghost)'
 			},
@@ -119,7 +119,7 @@ module.exports = {
 								/* Heading */
 								{
 									elem: 'section',
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' }},
+									mix: { block: 'decorator', mods: { 'indent-b': '6xl' }},
 									content: [
 										{
 											block: 'tpl-grid',
@@ -169,7 +169,7 @@ module.exports = {
 								/* Event */
 								{
 									elem: 'section',
-									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
+									mix: { block: 'decorator',mods: { 'indent-b': '6xl' }},
 									content: [
 										{
 											block: 'tpl-grid',
@@ -208,7 +208,7 @@ module.exports = {
 																		{
 																			elem: 'event',
 																			mix: [
-																				{ block: 'text', mods: { size: 'xxl', view: 'primary', weight: 'bold', font: 'sans' }},
+																				{ block: 'text', mods: { size: '2xl', view: 'primary', weight: 'bold', font: 'sans' }},
 																				{ block: 'decorator', mods: { 'indent-b': 's' }}
 																			],
 																			content: '3rd Annual Innate Killer'
@@ -361,7 +361,7 @@ module.exports = {
 																			content: [
 																				{
 																					elem: 'name',
-																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': 'xxs', distribute: 'between' }},
+																					mix: { block: 'pt-list', elem: 'item', elemMods: { 'indent-b': '2xs', distribute: 'between' }},
 																					content: [
 																						{
 																							block: 'text',
@@ -606,7 +606,7 @@ module.exports = {
 								/* Media */
 								{
 									elem: 'section',
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' }},
+									mix: { block: 'decorator', mods: { 'indent-b': '6xl' }},
 									content: [
 										{
 											block: 'tpl-grid',
@@ -647,7 +647,7 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-h': 'xl' }},
-																			mods: { view: 'primary', size: 'xxxl', weight: 'bold' },
+																			mods: { view: 'primary', size: '3xl', weight: 'bold' },
 																			content: [
 																				{
 																					elem: 'wrap',
@@ -775,7 +775,7 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'text',
-																			mods: { view: 'primary', size: 'xxxl', weight: 'bold' },
+																			mods: { view: 'primary', size: '3xl', weight: 'bold' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
 																			content: 'Thoughtful'
 																		},
@@ -850,7 +850,7 @@ module.exports = {
 																					content: [
 																						{
 																							block: 'text',
-																							mods: { view: 'primary', size: 'xxxl', align: 'center', weight: 'bold' },
+																							mods: { view: 'primary', size: '3xl', align: 'center', weight: 'bold' },
 																							mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																							content: 'Pitchfork\'s Best New Music'
 																						},
@@ -883,7 +883,7 @@ module.exports = {
 																								{
 																									block: 'text',
 																									mods: { view: 'primary', size: 's', weight: 'bold', font: 'sans' },
-																									mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
+																									mix: { block: 'decorator', mods: { 'indent-b': '2xs' }},
 																									content: 'Travis Scott',
 																								},
 																								{
@@ -915,7 +915,7 @@ module.exports = {
 																								{
 																									block: 'text',
 																									mods: { view: 'primary', size: 's', weight: 'bold', font: 'sans' },
-																									mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
+																									mix: { block: 'decorator', mods: { 'indent-b': '2xs' } },
 																									content: 'Sunflower',
 																								},
 																								{
@@ -947,7 +947,7 @@ module.exports = {
 																								{
 																									block: 'text',
 																									mods: { view: 'primary', size: 's', weight: 'bold', font: 'sans' },
-																									mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
+																									mix: { block: 'decorator', mods: { 'indent-b': '2xs' } },
 																									content: 'Drip Too Hard ',
 																								},
 																								{
@@ -986,7 +986,7 @@ module.exports = {
 								/* Auth */
 								{
 									elem: 'section',
-									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
+									mix: { block: 'decorator',mods: { 'indent-b': '6xl' }},
 									content: [
 										{
 											block: 'tpl-grid',
@@ -1003,15 +1003,15 @@ module.exports = {
 															content: [
 																{
 																	elem: 'content',
-																	mix: { block: 'pt-form', elem: 'item', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-form', elem: 'item', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': '2xl' }},
 																			content: [
 																				{
 																					block: 'text',
-																					mods: { view: 'primary', size: 'xxxxl', weight: 'black' },
+																					mods: { view: 'primary', size: '4xl', weight: 'black' },
 																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																					content: 'Log in'
 																				},
@@ -1048,7 +1048,7 @@ module.exports = {
 																		},
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': '2xl' }},
 																			content: [
 																				{
 																					elem: 'item',
@@ -1099,15 +1099,15 @@ module.exports = {
 															content: [
 																{
 																	elem: 'content',
-																	mix: { block: 'pt-form', elem: 'item', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-form', elem: 'item', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': '2xl' }},
 																			content: [
 																				{
 																					block: 'text',
-																					mods: { view: 'primary', size: 'xxxxl', weight: 'black' },
+																					mods: { view: 'primary', size: '4xl', weight: 'black' },
 																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																					content: 'Sign in'
 																				},
@@ -1144,7 +1144,7 @@ module.exports = {
 																		},
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': '2xl' }},
 																			content: [
 																				{
 																					elem: 'item',
@@ -1195,15 +1195,15 @@ module.exports = {
 															content: [
 																{
 																	elem: 'content',
-																	mix: { block: 'pt-form', elem: 'item', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-form', elem: 'item', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': '2xl' }},
 																			content: [
 																				{
 																					block: 'text',
-																					mods: { view: 'primary', size: 'xxxxl', weight: 'black' },
+																					mods: { view: 'primary', size: '4xl', weight: 'black' },
 																					mix: { block: 'decorator', mods: { 'indent-b': 's' }},
 																					content: 'Forgot Password'
 																				},
@@ -1231,7 +1231,7 @@ module.exports = {
 																		},
 																		{
 																			elem: 'item',
-																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': 'xxl' }},
+																			mix: { block: 'pt-form', elem: 'item', elemMods: { 'indent-b': '2xl' }},
 																			content: [
 																				{
 																					elem: 'item',
@@ -1270,7 +1270,7 @@ module.exports = {
 								/* Product */
 								{
 									elem: 'section',
-									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
+									mix: { block: 'decorator',mods: { 'indent-b': '6xl' }},
 									content: [
 										{
 											block: 'tpl-grid',
@@ -1303,7 +1303,7 @@ module.exports = {
 																				},
 																				{
 																					block: 'text',
-																					mods: { view: 'primary', size: 'xxxxl' ,weight: 'black', display: 'inline-block' },
+																					mods: { view: 'primary', size: '4xl' ,weight: 'black', display: 'inline-block' },
 																					content: '2.99'
 																				},
 																				{
@@ -1372,7 +1372,7 @@ module.exports = {
 																				},
 																				{
 																					block: 'text',
-																					mods: { view: 'primary', size: 'xxxxl' ,weight: 'black', display: 'inline-block' },
+																					mods: { view: 'primary', size: '4xl' ,weight: 'black', display: 'inline-block' },
 																					content: '6.99'
 																				},
 																				{
@@ -1444,7 +1444,7 @@ module.exports = {
 																				},
 																				{
 																					block: 'text',
-																					mods: { view: 'primary', size: 'xxxxl' ,weight: 'black', display: 'inline-block' },
+																					mods: { view: 'primary', size: '4xl' ,weight: 'black', display: 'inline-block' },
 																					content: '8.99'
 																				},
 																				{
@@ -1498,7 +1498,7 @@ module.exports = {
 								/* Tarif */
 								{
 									elem: 'section',
-									mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' }},
+									mix: { block: 'decorator', mods: { 'indent-b': '6xl' }},
 									content: [
 										{
 											block: 'tpl-grid',
@@ -1518,13 +1518,13 @@ module.exports = {
 															content: [
 																{
 																	elem: 'content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			elem: 'type',
 																			mix: [
-																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }}
+																				{ block: 'text', mods: { view: 'primary', size: '2xl', weight: 'bold', align: 'center' }},
+																				{ block: 'decorator', mods: { 'indent-b': '2xs' }}
 																			],
 																			content: 'Light'
 																		},
@@ -1539,7 +1539,7 @@ module.exports = {
 																		{
 																			elem: 'sale',
 																			mix: [
-																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: 'xxxxl' }},
+																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: '4xl' }},
 																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
 																			],
 																			content: '$22'
@@ -1652,7 +1652,7 @@ module.exports = {
 																},
 																{
 																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			block: 'button',
@@ -1680,13 +1680,13 @@ module.exports = {
 															content: [
 																{
 																	elem: 'content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			elem: 'type',
 																			mix: [
-																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }}
+																				{ block: 'text', mods: { view: 'primary', size: '2xl', weight: 'bold', align: 'center' }},
+																				{ block: 'decorator', mods: { 'indent-b': '2xs' }}
 																			],
 																			content: 'Standard'
 																		},
@@ -1701,7 +1701,7 @@ module.exports = {
 																		{
 																			elem: 'sale',
 																			mix: [
-																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: 'xxxxl' }},
+																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: '4xl' }},
 																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
 																			],
 																			content: '$66'
@@ -1814,7 +1814,7 @@ module.exports = {
 																},
 																{
 																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			block: 'button',
@@ -1848,13 +1848,13 @@ module.exports = {
 																},
 																{
 																	elem: 'content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			elem: 'type',
 																			mix: [
-																				{ block: 'text', mods: { view: 'primary', size: 'xxl', weight: 'bold', align: 'center' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'xxs' }}
+																				{ block: 'text', mods: { view: 'primary', size: '2xl', weight: 'bold', align: 'center' }},
+																				{ block: 'decorator', mods: { 'indent-b': '2xs' }}
 																			],
 																			content: 'Premium'
 																		},
@@ -1869,7 +1869,7 @@ module.exports = {
 																		{
 																			elem: 'sale',
 																			mix: [
-																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: 'xxxxl' }},
+																				{ block: 'text', mods: { view: 'primary', align: 'center', weight: 'black', size: '4xl' }},
 																				{ block: 'decorator', mods: { 'indent-b': 'l' }}
 																			],
 																			content: '$99'
@@ -1982,7 +1982,7 @@ module.exports = {
 																},
 																{
 																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			block: 'button',
@@ -2005,7 +2005,7 @@ module.exports = {
 								/* APP */
 								{
 									elem: 'section',
-									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
+									mix: { block: 'decorator',mods: { 'indent-b': '6xl' }},
 									content: [
 										{
 											block: 'tpl-grid',
@@ -2036,12 +2036,12 @@ module.exports = {
 																},
 																{
 																	elem: 'info',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl', distribute: 'center' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl', distribute: 'center' }},
 																	content: [
 																		{
 																			block: 'text',
-																			mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
-																			mods: { size: 'xxl', weight: 'bold', align: 'center', view: 'primary' },
+																			mix: { block: 'decorator', mods: { 'indent-b': '2xl' }},
+																			mods: { size: '2xl', weight: 'bold', align: 'center', view: 'primary' },
 																			content: 'Holiday Bundle'
 																		},
 																		{
@@ -2054,7 +2054,7 @@ module.exports = {
 																	elem: 'developer-list',
 																	mix: [
 																		{ block: 'pt-list' },
-																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'between' }}
+																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', distribute: 'between' }}
 																	],
 																	content: [
 																		{
@@ -2166,16 +2166,16 @@ module.exports = {
 															content: [
 																{
 																	elem: 'good-info',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			block: 'image',
-																			mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+																			mix: { block: 'decorator', mods: { 'indent-b': '2xl' }},
 																			url: '/assets/starter-kit/good-cover.png'
 																		},
 																		{
 																			block: 'text',
-																			mods: { size: 'xxxl', view: 'primary', weight: 'bold' },
+																			mods: { size: '3xl', view: 'primary', weight: 'bold' },
 																			mix: { block: 'decorator', mods: { 'space-b': 'l' }},
 																			content: 'From our Bafta award winning hit'
 																		},
@@ -2188,7 +2188,7 @@ module.exports = {
 																},
 																{
 																	elem: 'item',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'between' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', distribute: 'between' }},
 																	content: [
 																		{
 																			block: 'pt-icon-plus',
@@ -2256,7 +2256,7 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'image',
-																			mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+																			mix: { block: 'decorator', mods: { 'indent-b': '5xl' }},
 																			url: '/assets/starter-kit/ustwo.svg'
 																		},
 																		{
@@ -2265,7 +2265,7 @@ module.exports = {
 																			content: [
 																				{
 																					block: 'text',
-																					mods: { size: 'xxxl', view: 'primary', align: 'center', weight: 'bold' },
+																					mods: { size: '3xl', view: 'primary', align: 'center', weight: 'bold' },
 																					mix: { block: 'decorator', mods: { 'space-b': 's' }},
 																					content: 'From our Bafta award winning hit!'
 																				},
@@ -2281,7 +2281,7 @@ module.exports = {
 																{
 																	elem: 'item',
 																	mix: [
-																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'between' }},
+																		{ block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', distribute: 'between' }},
 																		{ block: 'pt-card', elem: 'item' }
 																	],
 																	content: [
@@ -2331,7 +2331,7 @@ module.exports = {
 								/* Informer */
 								{
 									elem: 'section',
-									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
+									mix: { block: 'decorator',mods: { 'indent-b': '6xl' }},
 									content: [
 										{
 											block: 'tpl-grid',
@@ -2353,7 +2353,7 @@ module.exports = {
 															content: [
 																{
 																	elem: 'content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			elem: 'icon-wrapper',
@@ -2366,7 +2366,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mods: { size: 'xxl', weight: 'bold', align: 'center', view: 'primary' },
+																			mods: { size: '2xl', weight: 'bold', align: 'center', view: 'primary' },
 																			content: 'Error'
 																		},
 																		{
@@ -2378,7 +2378,7 @@ module.exports = {
 																},
 																{
 																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', align: 'center' }},
 																	content: [
 																		{
 																			elem: 'account',
@@ -2452,7 +2452,7 @@ module.exports = {
 															content: [
 																{
 																	elem: 'content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			elem: 'icon-wrapper',
@@ -2465,7 +2465,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mods: { size: 'xxl', weight: 'bold', align: 'center', view: 'primary' },
+																			mods: { size: '2xl', weight: 'bold', align: 'center', view: 'primary' },
 																			content: 'Warning'
 																		},
 																		{
@@ -2477,7 +2477,7 @@ module.exports = {
 																},
 																{
 																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', align: 'center' }},
 																	content: [
 																		{
 																			elem: 'account',
@@ -2549,7 +2549,7 @@ module.exports = {
 															content: [
 																{
 																	elem: 'content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			elem: 'icon-wrapper',
@@ -2562,7 +2562,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mods: { size: 'xxl', weight: 'bold', align: 'center', view: 'primary' },
+																			mods: { size: '2xl', weight: 'bold', align: 'center', view: 'primary' },
 																			content: 'Success'
 																		},
 																		{
@@ -2574,7 +2574,7 @@ module.exports = {
 																},
 																{
 																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', align: 'center' }},
 																	content: [
 																		{
 																			elem: 'acoount',
@@ -2619,7 +2619,7 @@ module.exports = {
 								/* Offer */
 								{
 									elem: 'section',
-									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
+									mix: { block: 'decorator',mods: { 'indent-b': '6xl' }},
 									content: [
 										{
 											block: 'tpl-grid',
@@ -2650,7 +2650,7 @@ module.exports = {
 																},
 																{
 																	elem: 'title',
-																	mix: { block: 'pt-card', elem: 'header', elemMods: { 'space-v': 'xxl', distribute: 'center' }},
+																	mix: { block: 'pt-card', elem: 'header', elemMods: { 'space-v': '2xl', distribute: 'center' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -2661,7 +2661,7 @@ module.exports = {
 																},
 																{
 																	elem: 'service-info',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			elem: 'wrap',
@@ -2682,7 +2682,7 @@ module.exports = {
 																						},
 																						{
 																							block: 'text',
-																							mods: { view: 'primary', size: 'xxxl', weight: 'semibold' },
+																							mods: { view: 'primary', size: '3xl', weight: 'semibold' },
 																							content: '$1200'
 																						}
 																					]
@@ -2727,7 +2727,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'primary', size: 'xxl', align: 'center', transform: 'uppercase', weight: 'bold' },
+																			mods: { view: 'primary', size: '2xl', align: 'center', transform: 'uppercase', weight: 'bold' },
 																			mix: { block: 'decorator', mods: { 'indent-t': 's', 'indent-b': 'xs' }},
 																			content: 'Ape shall never kill'
 																		},
@@ -2745,7 +2745,7 @@ module.exports = {
 																},
 																{
 																	elem: 'brand-action',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-v': 'xxl', distribute: 'center' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-v': '2xl', distribute: 'center' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -2799,7 +2799,7 @@ module.exports = {
 																},
 																{
 																	elem: 'goods-info',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-h': 'xxl', 'space-h': 'l', 'space-t': 'xxs' } },
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-h': '2xl', 'space-h': 'l', 'space-t': '2xs' } },
 																	content: [
 																		{
 																			block: 'text',
@@ -2816,7 +2816,7 @@ module.exports = {
 																},
 																{
 																	elem: 'action',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-v': 'xxl', distribute: 'center' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-v': '2xl', distribute: 'center' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -2838,7 +2838,7 @@ module.exports = {
 								/* Publication */
 								{
 									elem: 'section',
-									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
+									mix: { block: 'decorator',mods: { 'indent-b': '6xl' }},
 									content: [
 										{
 											block: 'tpl-grid',
@@ -2855,12 +2855,12 @@ module.exports = {
 															content: [
 																{
 																	elem: 'content',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			block: 'text',
 																			mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-																			mods: { view: 'link', size: 'xxl', font: 'sans' },
+																			mods: { view: 'link', size: '2xl', font: 'sans' },
 																			content: [
 																				{
 																					block: 'text',
@@ -2918,7 +2918,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mix: { block: 'decorator', mods: { 'indent-v': 'xxl' }},
+																			mix: { block: 'decorator', mods: { 'indent-v': '2xl' }},
 																			mods: { view: 'primary', size: 'xl', weight: 'bold', style: 'italic', font: 'sans' },
 																			content: [
 																				'We are committed to vigorously enforcing policies to protect people'
@@ -2955,7 +2955,7 @@ module.exports = {
 																},
 																{
 																	block: 'header',
-																	mix: { block: 'pt-card', elem: 'header', elemMods: { 'space-a': 'xxl', 'distribute': 'between' }},
+																	mix: { block: 'pt-card', elem: 'header', elemMods: { 'space-a': '2xl', 'distribute': 'between' }},
 																	content: [
 																		{
 																			block: 'text',
@@ -2971,7 +2971,7 @@ module.exports = {
 																},
 																{
 																	elem: 'footer',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			elem: 'footer-inner',
@@ -3045,7 +3045,7 @@ module.exports = {
 															content: [
 																{
 																	elem: 'item',
-																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'xxl' }},
+																	mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': '2xl' }},
 																	content: [
 																		{
 																			block: 'pt-icon-plus',
@@ -3103,7 +3103,7 @@ module.exports = {
 																},
 																{
 																	elem: 'item',
-																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', distribute: 'between' }},
+																	mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl', distribute: 'between' }},
 																	content: [
 																		{
 																			elem: 'actiion',
@@ -3141,7 +3141,7 @@ module.exports = {
 								/* Donate */
 								{
 									elem: 'section',
-									mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' }},
+									mix: { block: 'decorator',mods: { 'indent-b': '6xl' }},
 									content: [
 										{
 											block: 'tpl-grid',
@@ -3191,12 +3191,12 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-																			mods: { view: 'primary', size: 'xxl', weight: 'bold' },
+																			mods: { view: 'primary', size: '2xl', weight: 'bold' },
 																			content: [
 																				'Sam Harris ',
 																				{
 																					block: 'text',
-																					mods: { view: 'primary', size: 'xxl', weight: 'regular', style: 'italic', display: 'inline', font: 'sans' },
+																					mods: { view: 'primary', size: '2xl', weight: 'regular', style: 'italic', display: 'inline', font: 'sans' },
 																					content: 'is creating The Waking Up Podcast'
 																				}
 																			]
@@ -3272,8 +3272,8 @@ module.exports = {
 																				},
 																				{
 																					block: 'text',
-																					mods: { view: 'primary', size: 'xxxl', weight: 'bold', align: 'center', transform: 'uppercase' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
+																					mods: { view: 'primary', size: '3xl', weight: 'bold', align: 'center', transform: 'uppercase' },
+																					mix: { block: 'decorator', mods: { 'indent-b': '2xs' }},
 																					content: 'Inna’s B-day'
 																				},
 																				{
@@ -3295,7 +3295,7 @@ module.exports = {
 																				},
 																				{
 																					block: 'text',
-																					mods: { view: 'primary', size: 'xxxxl', weight: 'semibold', align: 'center' },
+																					mods: { view: 'primary', size: '4xl', weight: 'semibold', align: 'center' },
 																					content: '$10.00'
 																				}
 																			]
@@ -3379,7 +3379,7 @@ module.exports = {
 																				},
 																				{
 																					block: 'text',
-																					mix: { block: 'decorator', mods: { 'indent-l': 'xxs' } },
+																					mix: { block: 'decorator', mods: { 'indent-l': '2xs' } },
 																					mods: { view: 'primary', size: 'm', weight: 'semibold' },
 																					content: '+6'
 																				}
@@ -3470,12 +3470,12 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'primary', size: 'xxl', weight: 'bold' },
+																			mods: { view: 'primary', size: '2xl', weight: 'bold' },
 																			content: [
 																				{
 																					block: 'text',
 																					mods: { view: 'primary', size: 'xl', weight: 'bold' },
-																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
+																					mix: { block: 'decorator', mods: { 'indent-b': '2xs' }},
 																					content: 'Packed Delay Pedal'
 																				}
 																			]

@@ -184,7 +184,7 @@ module.exports = {
                 /* Layers */
                 {
                     elem: 'content',
-                    mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
+                    mix: { block: 'decorator', mods: { 'indent-b': '6xl' } },
                     content: {
                         elem: 'container',
                         elemMods: { align: 'center', size: 'm' },
@@ -198,13 +198,13 @@ module.exports = {
                                         content: [
                                             {
                                                 block: 'text',
-                                                mods: { size: 'xxxxxxl', view: 'primary', font: 'mono' },
+                                                mods: { size: '6xl', view: 'primary', font: 'mono' },
                                                 content: '1.'
                                             },
                                             {
                                                 block: 'text',
                                                 mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
-                                                mods: { size: 'xxxl', view: 'primary', font: 'mono' },
+                                                mods: { size: '3xl', view: 'primary', font: 'mono' },
                                                 content: 'Тема'
                                             },
                                             {
@@ -221,13 +221,13 @@ module.exports = {
                                         content: [
                                             {
                                                 block: 'text',
-                                                mods: { size: 'xxxxxxl', view: 'primary', font: 'mono' },
+                                                mods: { size: '6xl', view: 'primary', font: 'mono' },
                                                 content: '2.'
                                             },
                                             {
                                                 block: 'text',
                                                 mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
-                                                mods: { size: 'xxxl', view: 'primary', font: 'mono' },
+                                                mods: { size: '3xl', view: 'primary', font: 'mono' },
                                                 content: 'Каркас'
                                             },
                                             {
@@ -244,13 +244,13 @@ module.exports = {
                                         content: [
                                             {
                                                 block: 'text',
-                                                mods: { size: 'xxxxxxl', view: 'primary', font: 'mono' },
+                                                mods: { size: '6xl', view: 'primary', font: 'mono' },
                                                 content: '3.'
                                             },
                                             {
                                                 block: 'text',
                                                 mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
-                                                mods: { size: 'xxxl', view: 'primary', font: 'mono' },
+                                                mods: { size: '3xl', view: 'primary', font: 'mono' },
                                                 content: 'Паттерны'
                                             },
                                             {
@@ -267,13 +267,13 @@ module.exports = {
                                         content: [
                                             {
                                                 block: 'text',
-                                                mods: { size: 'xxxxxxl', view: 'primary', font: 'mono' },
+                                                mods: { size: '6xl', view: 'primary', font: 'mono' },
                                                 content: '4.'
                                             },
                                             {
                                                 block: 'text',
                                                 mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
-                                                mods: { size: 'xxxl', view: 'primary', font: 'mono' },
+                                                mods: { size: '3xl', view: 'primary', font: 'mono' },
                                                 content: 'Контент'
                                             },
                                             {
@@ -293,7 +293,7 @@ module.exports = {
                 /* Demo */
                 {
                     elem: 'content',
-                    mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
+                    mix: { block: 'decorator', mods: { 'indent-b': '6xl' } },
                     content: {
                         elem: 'container',
                         elemMods: { align: 'center', size: 'm' },
@@ -318,7 +318,7 @@ module.exports = {
                                         {
                                             block: 'pt-list',
                                             elem: 'item',
-                                            elemMods: { 'indent-t': 'xxxl' },
+                                            elemMods: { 'indent-t': '3xl' },
                                             content: [
                                             {
                                                 elem: 'item',
@@ -408,7 +408,7 @@ module.exports = {
                                         {
                                             block: 'pt-list',
                                             elem: 'item',
-                                            elemMods: { 'indent-t': 'xxxl' },
+                                            elemMods: { 'indent-t': '3xl' },
                                             content: [
                                             {
                                                 elem: 'item',
@@ -450,7 +450,7 @@ module.exports = {
                                         {
                                             block: 'pt-list',
                                             elem: 'item',
-                                            elemMods: { 'indent-t': 'xxxl' },
+                                            elemMods: { 'indent-t': '3xl' },
                                             content: [
                                             {
                                                 elem: 'item',
@@ -504,11 +504,11 @@ module.exports = {
                                     },
                                     {
                                         elem: 'section',
-                                        mix: [{ block: 'decorator', mods: { 'space-h': 'xxxl', 'space-v': 'xxxxl' } }],
+                                        mix: [{ block: 'decorator', mods: { 'space-h': '3xl', 'space-v': '4xl' } }],
                                         content: [
                                         {
                                             block: 'text',
-                                            mods: { size: 'xxxxl', view: 'primary', align: 'left', weight: 'regular' },
+                                            mods: { size: '4xl', view: 'primary', align: 'left', weight: 'regular' },
                                             mix: { block: 'editor', elem: 'editable-text' },
                                             attrs: { 'data-name': 'main-title' },
                                             content: 'Music'
@@ -540,7 +540,7 @@ module.exports = {
                                         },
                                         {
                                             block: 'decorator',
-                                            mods: { 'indent-t': 'xxxxl', 'indent-b': 's' },
+                                            mods: { 'indent-t': '4xl', 'indent-b': 's' },
                                             content: [
                                             {
                                                 block: 'text',
@@ -936,7 +936,7 @@ module.exports = {
                                             },
                                             {
                                                 block: 'text',
-                                                mods: { size: 'xxxxl', view: 'primary', display: 'inline-block' },
+                                                mods: { size: '4xl', view: 'primary', display: 'inline-block' },
                                                 mix: { block: 'text-size', elem: 'number' },
                                                 content: '24'
                                             },
@@ -951,7 +951,7 @@ module.exports = {
                                             block: 'text',
                                             mods: { size: 'xs', view: 'ghost', align: 'center' },
                                             mix: { block: 'text-size', elem: 'name' },
-                                            content: 'xxxl'
+                                            content: '3xl'
                                         }]
                                     },
 
@@ -1136,18 +1136,18 @@ module.exports = {
                                             },
                                             {
                                                 block: 'text',
-                                                mods: { size: 'xxxxl', view: 'primary', display: 'inline-block' },
+                                                mods: { size: '4xl', view: 'primary', display: 'inline-block' },
                                                 content: '2'
                                             },
                                             {
                                                 block: 'text',
-                                                mods: { size: 'xxxxl', view: 'secondary', display: 'inline-block' },
+                                                mods: { size: '4xl', view: 'secondary', display: 'inline-block' },
                                                 mix: { block: 'decorator', mods: { 'indent-h': 'xs' } },
                                                 content: '∥'
                                             },
                                             {
                                                 block: 'text',
-                                                mods: { size: 'xxxxl', view: 'primary', display: 'inline-block' },
+                                                mods: { size: '4xl', view: 'primary', display: 'inline-block' },
                                                 content: '8'
                                             },
                                             {
@@ -1179,7 +1179,7 @@ module.exports = {
                                             },
                                             {
                                                 block: 'text',
-                                                mods: { size: 'xxxxl', view: 'primary', display: 'inline-block' },
+                                                mods: { size: '4xl', view: 'primary', display: 'inline-block' },
                                                 content: '4'
                                             },
                                             {
@@ -1435,7 +1435,7 @@ module.exports = {
                 /* Comparing */
                 {
                     elem: 'content',
-                    mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
+                    mix: { block: 'decorator', mods: { 'indent-b': '6xl' } },
                     content: {
                         elem: 'container',
                         elemMods: { align: 'center', size: 'm' },
@@ -1443,13 +1443,13 @@ module.exports = {
                             {
                                 block: 'text',
                                 mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-                                mods: { size: 'xxxl', view: 'primary' },
+                                mods: { size: '3xl', view: 'primary' },
                                 content: 'Как это работает'
                             },
                             {
                                 block: 'text',
                                 mods: { size: 'xl', view: 'secondary', weight: 'light' },
-                                mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' } },
+                                mix: { block: 'decorator', mods: { 'indent-b': '4xl' } },
                                 content: 'Дизайн-система whitepaper помогает сократить количество этапов и участников, для того чтобы сформировать интерфейс готовый к продакшну'
                             },
                             {
@@ -1539,7 +1539,7 @@ module.exports = {
                 /* FAQ */
                 {
                     elem: 'content',
-                    mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
+                    mix: { block: 'decorator', mods: { 'indent-b': '6xl' } },
                     content: {
                         elem: 'container',
                         elemMods: { align: 'center', size: 'm' },
@@ -1547,7 +1547,7 @@ module.exports = {
                             {
                                 block: 'text',
                                 mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-                                mods: { size: 'xxxl', view: 'primary' },
+                                mods: { size: '3xl', view: 'primary' },
                                 content: 'Ответы на частые вопросы'
                             },
                             {
@@ -1706,7 +1706,7 @@ module.exports = {
                     content: [
                         {
                             block: 'tpl-grid',
-                            mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
+                            mix: { block: 'decorator', mods: { 'indent-b': '6xl' } },
                             mods: { 'xs-ratio': '1', 's-ratio': '1-1' },
                             content: [
                                 {
@@ -1715,7 +1715,7 @@ module.exports = {
                                         {
                                             block: 'text',
                                             mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-                                            mods: { size: 'xxxl', view: 'primary' },
+                                            mods: { size: '3xl', view: 'primary' },
                                             content: 'Сообщество'
                                         },
                                         {
@@ -1830,7 +1830,7 @@ module.exports = {
                                                 {
                                                     block: 'text',
                                                     mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-                                                    mods: { size: 'xxxl', view: 'primary' },
+                                                    mods: { size: '3xl', view: 'primary' },
                                                     content: 'События'
                                                 },
                                                 {
@@ -1874,7 +1874,7 @@ module.exports = {
                                         },
                                         {
                                             elem: 'footer',
-                                            mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl' }},
+                                            mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': '2xl' }},
                                             content: [
                                                 {
                                                     block: 'text',
@@ -1894,7 +1894,7 @@ module.exports = {
                 /* Contribution / Learning */
                 {
                     elem: 'content',
-                    mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
+                    mix: { block: 'decorator', mods: { 'indent-b': '6xl' } },
                     content: {
                         elem: 'container',
                         elemMods: { align: 'center', size: 'm' },
@@ -1909,7 +1909,7 @@ module.exports = {
                                             {
                                                 block: 'text',
                                                 mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-                                                mods: { size: 'xxxl', view: 'primary' },
+                                                mods: { size: '3xl', view: 'primary' },
                                                 content: 'Контрибьюторы'
                                             },
                                             {
@@ -2160,7 +2160,7 @@ module.exports = {
                                             {
                                                 block: 'text',
                                                 mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-                                                mods: { size: 'xxxl', view: 'primary' },
+                                                mods: { size: '3xl', view: 'primary' },
                                                 content: 'Обучение'
                                             },
                                             {
@@ -2207,7 +2207,7 @@ module.exports = {
                 /* Start */
                 {
                     elem: 'content',
-                    mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
+                    mix: { block: 'decorator', mods: { 'indent-b': '6xl' } },
                     content: {
                         elem: 'container',
                         elemMods: { align: 'center', size: 'm' },
@@ -2215,13 +2215,13 @@ module.exports = {
                             {
                                 block: 'text',
                                 mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-                                mods: { size: 'xxxl', view: 'primary' },
+                                mods: { size: '3xl', view: 'primary' },
                                 content: 'Как начать использовать'
                             },
                             {
                                 block: 'text',
                                 mods: { size: 'xl', view: 'secondary', weight: 'light' },
-                                mix: { block: 'decorator', mods: { 'indent-b': 'xxxxl' } },
+                                mix: { block: 'decorator', mods: { 'indent-b': '4xl' } },
                                 content: 'Для старта прототипирования с нуля можно установить БЭМ-платформу с предустановленной дизайн-системой и настроенной сборкой. В уже имеющийся проект можно подключить файл со всеми стилями дизайн-системы или установить её как зависимость'
                             },
 
@@ -2341,7 +2341,7 @@ module.exports = {
                 /* Partners */
                 {
                     elem: 'content',
-                    mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
+                    mix: { block: 'decorator', mods: { 'indent-b': '6xl' } },
                     content: {
                         elem: 'container',
                         elemMods: { align: 'center', size: 'm' },
@@ -2349,7 +2349,7 @@ module.exports = {
                             {
                                 block: 'text',
                                 mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
-                                mods: { size: 'xxxl', view: 'primary' },
+                                mods: { size: '3xl', view: 'primary' },
                                 content: 'Партнеры и друзья'
                             },
                             {
