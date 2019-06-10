@@ -31,7 +31,7 @@ module.exports = {
                     elem: 'content',
                     content: {
                         elem: 'container',
-                        elemMods: { align: 'center', size: 'm' },
+                        elemMods: { distribute: 'center', size: 'm' },
                         content: [
                             {
                                 block: 'grid-decoration',
@@ -68,7 +68,7 @@ module.exports = {
                             content: [
                                 {
                                     elem: 'container',
-                                    mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', align: 'center' }},
+                                    mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', distribute: 'center' }},
                                     content: [
                                         {
                                             elem: 'inner',
@@ -144,7 +144,7 @@ module.exports = {
                     elem: 'content',
                     content: {
                         elem: 'container',
-                        elemMods: { align: 'center', size: 'm' },
+                        elemMods: { distribute: 'center', size: 'm' },
                         content: [
                             {
                                 block: 'intro',
@@ -187,7 +187,7 @@ module.exports = {
                     mix: { block: 'decorator', mods: { 'indent-b': '6xl' } },
                     content: {
                         elem: 'container',
-                        elemMods: { align: 'center', size: 'm' },
+                        elemMods: { distribute: 'center', size: 'm' },
                         content: [
                             {
                                 block: 'layers',
@@ -296,7 +296,7 @@ module.exports = {
                     mix: { block: 'decorator', mods: { 'indent-b': '6xl' } },
                     content: {
                         elem: 'container',
-                        elemMods: { align: 'center', size: 'm' },
+                        elemMods: { distribute: 'center', size: 'm' },
                         content: [
                         {
                             block: 'editor',
@@ -1444,7 +1444,7 @@ module.exports = {
                     mix: { block: 'decorator', mods: { 'indent-b': '6xl' } },
                     content: {
                         elem: 'container',
-                        elemMods: { align: 'center', size: 'm' },
+                        elemMods: { distribute: 'center', size: 'm' },
                         content: [
                             {
                                 block: 'text',
@@ -1548,7 +1548,7 @@ module.exports = {
                     mix: { block: 'decorator', mods: { 'indent-b': '6xl' } },
                     content: {
                         elem: 'container',
-                        elemMods: { align: 'center', size: 'm' },
+                        elemMods: { distribute: 'center', size: 'm' },
                         content: [
                             {
                                 block: 'text',
@@ -1708,7 +1708,7 @@ module.exports = {
                 /* Community / Events */
                 {
                     elem: 'container',
-                    elemMods: { align: 'center', size: 'm' },
+                    elemMods: { distribute: 'center', size: 'm' },
                     content: [
                         {
                             block: 'tpl-grid',
@@ -1903,7 +1903,7 @@ module.exports = {
                     mix: { block: 'decorator', mods: { 'indent-b': '6xl' } },
                     content: {
                         elem: 'container',
-                        elemMods: { align: 'center', size: 'm' },
+                        elemMods: { distribute: 'center', size: 'm' },
                         content: [
                             {
                                 block: 'tpl-grid',
@@ -2216,7 +2216,7 @@ module.exports = {
                     mix: { block: 'decorator', mods: { 'indent-b': '6xl' } },
                     content: {
                         elem: 'container',
-                        elemMods: { align: 'center', size: 'm' },
+                        elemMods: { distribute: 'center', size: 'm' },
                         content: [
                             {
                                 block: 'text',
@@ -2350,7 +2350,7 @@ module.exports = {
                     mix: { block: 'decorator', mods: { 'indent-b': '6xl' } },
                     content: {
                         elem: 'container',
-                        elemMods: { align: 'center', size: 'm' },
+                        elemMods: { distribute: 'center', size: 'm' },
                         content: [
                             {
                                 block: 'text',
@@ -2476,7 +2476,7 @@ module.exports = {
                             content: [
                                 {
                                     elem: 'container',
-                                    mix: { block: 'tpl-layout', elem: 'container', elemMods: { align: 'center', size: 'm' }},
+                                    mix: { block: 'tpl-layout', elem: 'container', elemMods: { distribute: 'center', size: 'm' }},
                                     content: [
                                         {
                                             elem: 'inner',

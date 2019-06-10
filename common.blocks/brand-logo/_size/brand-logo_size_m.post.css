@@ -1,0 +1,5 @@
+.brand-logo_size_m {
+  width: var(--graphics-size-2xl);
+  height: var(--graphics-size-2xl);
+  background-size: var(--graphics-size-2xl);
+}
