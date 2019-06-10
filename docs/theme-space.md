@@ -7,31 +7,31 @@
         <div class="space__image">
             <div class="space-image space-image_size_xxxxxxl"></div>
         </div>
-        <code>--space-xxxxxxl</code>
+        <code>--space-6xl</code>
     </div>
     <div class="space">
         <div class="space__image">
             <div class="space-image space-image_size_xxxxxl"></div>
         </div>
-        <code>--space-xxxxxl</code>
+        <code>--space-5xl</code>
     </div>
     <div class="space">
         <div class="space__image">
             <div class="space-image space-image_size_xxxxl"></div>
         </div>
-        <code>--space-xxxxl</code>
+        <code>--space-4xl</code>
     </div>
     <div class="space">
         <div class="space__image">
             <div class="space-image space-image_size_xxxl"></div>
         </div>
-        <code>--space-xxxl</code>
+        <code>--space-3xl</code>
     </div>
     <div class="space">
         <div class="space__image">
             <div class="space-image space-image_size_xxl"></div>
         </div>
-        <code>--space-xxl</code>
+        <code>--space-2xl</code>
     </div>
     <div class="space">
         <div class="space__image">
@@ -67,13 +67,13 @@
         <div class="space__image">
             <div class="space-image space-image_size_xxs"></div>
         </div>
-        <code>--space-xxs</code>
+        <code>--space-2xs</code>
     </div>
     <div class="space">
         <div class="space__image">
             <div class="space-image space-image_size_xxxs"></div>
         </div>
-        <code>--space-xxxs</code>
+        <code>--space-3xs</code>
     </div>
 </div>
 

@@ -17,18 +17,18 @@ ___
 
 ## Модификаторы блока
 
-Модификатор | Значение                                         | Описание
------------ | ------------------------------------------------ | ------------------------------------
-align | center / left / right                        | Горизонтальное выравнивание текста
-[decoration](#decoration) | underline                          | Подчеркивание
-display | block / inline-block / inline            | Способ отображения блока на странице
-[size](#size) | xs / s / m / l / xl / xxl / xxxl / xxxxl       | Размер
-[spacing](#spacing) | xs / s / m                               | Межбуквенное расстояние
-[style](#style) | italic                                       | Курсив
-[transform](#transform) | uppercase                            | Верхний регистр
-type | h1 / h2 / h3 / p / blockquote                  | Стиль текста
-[view](#view) | alert / brand / disable / ghost / link-minor / link / primary / promo / secondary / success / warning | Цвет
-[weight](#view) | black / bold / semibold / regular / light / thin | Жирность шрифта
+Модификатор  | Значение                                           | Описание
+------------ | -------------------------------------------------- | ------------------------------------
+`align`      | `center``left``right`                              | Горизонтальное выравнивание текста
+`decoration` | `underline`                                        | Подчеркивание
+`display`    | `block` `inline-block` `inline`                    | Способ отображения блока на странице
+`size`       | `xs` `s` `m` `l` `xl` `xxl` `xxxl` `xxxxl`         | Размер
+`spacing`    | `xs` `s` `m`                                       | Межбуквенное расстояние
+`style`      | `italic`                                           | Курсив
+`transform`  | `uppercase`                                        | Верхний регистр
+`type`       | `h1` `h2` `h3` `p` `blockquote`                    | Стиль текста
+`view`       | `alert` `brand` `disable` `ghost` `link-minor` `link` `primary` `promo` `secondary` `success` `warning`  | Цвет
+`weight`     | `black` `bold` `semibold` `regular` `light` `thin` | Жирность шрифта
 
 ### decoration:
 
