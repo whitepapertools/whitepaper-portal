@@ -59,7 +59,7 @@
   "scripts": {
     "test": "enb make && enb make clean && gulp",
     "start": "enb server",
-    "build": "enb make"
+    "build": "enb make && gulp"
   },
   "private": true,
   "dependencies": {
