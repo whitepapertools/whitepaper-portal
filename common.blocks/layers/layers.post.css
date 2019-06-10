@@ -1,5 +1,5 @@
 .layers {
-	margin-top: calc(3*var(--space-xxxl));
+	margin-top: calc(3*var(--space-3xl));
 	height: 56vh;
 }
 
@@ -11,7 +11,7 @@
 
 @media screen and (min-width: $screen-m) and (max-width: $screen-m-max) {
 	.layers {
-		margin-top: calc(2*var(--space-xxxl));
+		margin-top: calc(2*var(--space-3xl));
 	}
 }
 

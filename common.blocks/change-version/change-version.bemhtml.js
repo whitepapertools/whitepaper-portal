@@ -9,7 +9,6 @@ block('change-version')(
       var majorComponents = majorArray.map(item => {
         return {
             elem: 'item',
-            elemMods: { 'space-b': 'm' },
             content: [
               {
                 block: 'change-item',
@@ -22,7 +21,6 @@ block('change-version')(
       var minorComponents = minorArray.map(item => {
         return {
             elem: 'item',
-            elemMods: { 'space-b': 'm' },
             content: [
               {
                 block: 'change-item',
@@ -35,7 +33,6 @@ block('change-version')(
       var patchComponents = patchArray.map(item => {
         return {
             elem: 'item',
-            elemMods: { 'space-b': 'm' },
             content: [
               {
                 block: 'change-item',
@@ -48,7 +45,7 @@ block('change-version')(
       return {
           block: 'tpl-grid',
           mods: { 'xs-ratio': '1', 'm-ratio': '1-1', 'col-gap': 'full', 'row-gap': 'full' },
-          mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+          mix: { block: 'decorator', mods: { 'indent-b': '5xl' }},
           content: [
             // левая колонка
             {
@@ -58,7 +55,7 @@ block('change-version')(
               content: [
                 {
                   block: 'version-number',
-                  mix: { block: 'text', mods: { size: 'xxxxl', weight: 'bold', view: 'primary' }},
+                  mix: { block: 'text', mods: { size: '4xl', weight: 'bold', view: 'primary' }},
                   tag: 'a',
                   attrs: {
                     href: ctx.versionLink,
@@ -92,7 +89,7 @@ block('change-version')(
               content: [
                 {
                   block: 'changes-description',
-                  mix: { block: 'decorator', mods: { /*'indent-l': 'xxl',*/ 'indent-t': 'l' }},
+                  mix: { block: 'decorator', mods: { /*'indent-l': '2xl',*/ 'indent-t': 'l' }},
                   content: [
                     // мажоры: Важные изменения
                     {
@@ -101,12 +98,13 @@ block('change-version')(
                       content: [
                         {
                           block: 'text',
-                          mods: { size: 'xxl', view: 'primary' },
+                          mods: { size: '2xl', view: 'primary' },
                           mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
                           content: this.ctx.major
                         },
                         {
                           block: 'pt-list',
+                          mods: { 'space-v': 'xs' },
                           content: [
                             majorComponents
                           ]
@@ -120,7 +118,7 @@ block('change-version')(
                       content: [
                         {
                           block: 'text',
-                          mods: { size: 'xxl', view: 'primary' },
+                          mods: { size: '2xl', view: 'primary' },
                           mix: [
                             { block: 'decorator', mods: { 'indent-b': 'm' }},
                           ],
@@ -128,6 +126,7 @@ block('change-version')(
                         },
                         {
                           block: 'pt-list',
+                          mods: { 'space-v': 'xs' },
                           content: [
                             minorComponents
                           ]
@@ -141,12 +140,13 @@ block('change-version')(
                       content: [
                         {
                           block: 'text',
-                          mods: { size: 'xxl', view: 'primary' },
+                          mods: { size: '2xl', view: 'primary' },
                           mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
                           content: this.ctx.patch
                         },
                         {
                           block: 'pt-list',
+                          mods: { 'space-v': 'xs' },
                           content: [
                             patchComponents
                           ]

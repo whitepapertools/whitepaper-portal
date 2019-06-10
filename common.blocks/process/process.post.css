@@ -10,7 +10,7 @@
 		}
 	}
 	&__label {
-		width: 252px; 
+		width: 252px;
 		margin-right: var(--space-m);
 	}
 }
@@ -19,7 +19,7 @@
 	.process {
 		&__item {
 			display: block;
-			margin-bottom: var(--space-xxxl);
+			margin-bottom: var(--space-3xl);
 		}
 	}
 }
@@ -29,7 +29,7 @@
 		display: flex;
 		&__item {
 			display: block;
-			margin-bottom: var(--space-xxxxl);
+			margin-bottom: var(--space-4xl);
 		}
 		&__label {
 			margin-bottom: var(--space-m);

@@ -7,31 +7,31 @@
         <div class="space__image">
             <div class="space-image space-image_size_xxxxxxl"></div>
         </div>
-        <code>--space-xxxxxxl</code>
+        <code>--space-6xl</code>
     </div>
     <div class="space">
         <div class="space__image">
             <div class="space-image space-image_size_xxxxxl"></div>
         </div>
-        <code>--space-xxxxxl</code>
+        <code>--space-5xl</code>
     </div>
     <div class="space">
         <div class="space__image">
             <div class="space-image space-image_size_xxxxl"></div>
         </div>
-        <code>--space-xxxxl</code>
+        <code>--space-4xl</code>
     </div>
     <div class="space">
         <div class="space__image">
             <div class="space-image space-image_size_xxxl"></div>
         </div>
-        <code>--space-xxxl</code>
+        <code>--space-3xl</code>
     </div>
     <div class="space">
         <div class="space__image">
             <div class="space-image space-image_size_xxl"></div>
         </div>
-        <code>--space-xxl</code>
+        <code>--space-2xl</code>
     </div>
     <div class="space">
         <div class="space__image">
@@ -67,13 +67,13 @@
         <div class="space__image">
             <div class="space-image space-image_size_xxs"></div>
         </div>
-        <code>--space-xxs</code>
+        <code>--space-2xs</code>
     </div>
     <div class="space">
         <div class="space__image">
             <div class="space-image space-image_size_xxxs"></div>
         </div>
-        <code>--space-xxxs</code>
+        <code>--space-3xs</code>
     </div>
 </div>
 
@@ -87,28 +87,25 @@
     padding: var(--space-m);
 }
 ```
-```js
-{
-    block: 'your-block',
-    mix: { block: 'decorator', mods: { 'indent-a': 'l', 'space-a': 'l' } }
-}
+```html
+<div class="your-block decorator decorator_indent-a_l decorator_space-a_l"></div>
 ```
 ## Decorator
 
-Модификаторы decorator | Значение                                                                 | Описание
----------------------- | ------------------------------------------------------------------------ | ----------------
-space-a                | xxxs / xxs / xs / s / m / l / xl / xxl / xxxl / xxxxl                    | Внутренний отступ со всех сторон
-space-v                | xxxs / xxs / xs / s / m / l / xl / xxl / xxxl / xxxxl / xxxxxl / xxxxxxl | Внутренний отступ по вертикали
-space-h                | xxxs / xxs / xs / s / m / l / xl / xxl / xxxl / xxxxl / xxxxxl / xxxxxxl | Внутренний отступ по горизонтали
-space-t                | xxxs / xxs / xs / s / m / l / xl / xxl / xxxl / xxxxl / xxxxxl / xxxxxxl | Внутренний отступ сверху
-space-r                | xxxs / xxs / xs / s / m / l / xl / xxl / xxxl / xxxxl / xxxxxl / xxxxxxl | Внутренний отступ справа
-space-b                | xxxs / xxs / xs / s / m / l / xl / xxl / xxxl / xxxxl / xxxxxl / xxxxxxl | Внутренний отступ снизу
-space-l                | xxxs / xxs / xs / s / m / l / xl / xxl / xxxl / xxxxl / xxxxxl / xxxxxxl | Внутренний отступ слева
-indent-a               | xxxs / xxs / xs / s / m / l / xl / xxl / xxxl / xxxxl / xxxxxl / xxxxxxl | Внешний отступ со всех сторон
-indent-v               | xxxs / xxs / xs / s / m / l / xl / xxl / xxxl / xxxxl / xxxxxl / xxxxxxl | Внешний отступ по вертикали
-indent-h               | auto                                                                     | Центрирование блока по горизонтали
-indent-h               | xxxs / xxs / xs / s / m / l / xl / xxl / xxxl / xxxxl / xxxxxl / xxxxxxl | Внешний отступ по горизонтали
-indent-t               | xxxs / xxs / xs / s / m / l / xl / xxl / xxxl / xxxxl / xxxxxl / xxxxxxl | Внешний отступ сверху
-indent-r               | xxxs / xxs / xs / s / m / l / xl / xxl / xxxl / xxxxl / xxxxxl / xxxxxxl | Внешний отступ справа
-indent-b               | xxxs / xxs / xs / s / m / l / xl / xxl / xxxl / xxxxl / xxxxxl / xxxxxxl | Внешний отступ снизу
-indent-l               | xxxs / xxs / xs / s / m / l / xl / xxl / xxxl / xxxxl / xxxxxl / xxxxxxl | Внешний отступ слева
+Модификаторы decorator | Значение                                                               | Описание
+---------------------- | ---------------------------------------------------------------------- | ----------------
+`space-a`              | `3xs` `2xs` `xs` `s` `m` `l` `xl` `2xl` `3xl` `4xl` `5xl` `6xl` `none` | Внутренний отступ со всех сторон
+`space-v`              | `3xs` `2xs` `xs` `s` `m` `l` `xl` `2xl` `3xl` `4xl` `5xl` `6xl` `none` | Внутренний отступ по вертикали
+`space-h`              | `3xs` `2xs` `xs` `s` `m` `l` `xl` `2xl` `3xl` `4xl` `5xl` `6xl` `none` | Внутренний отступ по горизонтали
+`space-t`              | `3xs` `2xs` `xs` `s` `m` `l` `xl` `2xl` `3xl` `4xl` `5xl` `6xl` `none` | Внутренний отступ сверху
+`space-r`              | `3xs` `2xs` `xs` `s` `m` `l` `xl` `2xl` `3xl` `4xl` `5xl` `6xl` `none` | Внутренний отступ справа
+`space-b`              | `3xs` `2xs` `xs` `s` `m` `l` `xl` `2xl` `3xl` `4xl` `5xl` `6xl` `none` | Внутренний отступ снизу
+`space-l`              | `3xs` `2xs` `xs` `s` `m` `l` `xl` `2xl` `3xl` `4xl` `5xl` `6xl` `none` | Внутренний отступ слева
+`indent-a`             | `3xs` `2xs` `xs` `s` `m` `l` `xl` `2xl` `3xl` `4xl` `5xl` `6xl` `none` | Внешний отступ со всех сторон
+`indent-v`             | `3xs` `2xs` `xs` `s` `m` `l` `xl` `2xl` `3xl` `4xl` `5xl` `6xl` `none` | Внешний отступ по вертикали
+`indent-h`             | `auto`                                                                 | Центрирование блока по горизонтали
+`indent-h`             | `3xs` `2xs` `xs` `s` `m` `l` `xl` `2xl` `3xl` `4xl` `5xl` `6xl` `none` | Внешний отступ по горизонтали
+`indent-t`             | `3xs` `2xs` `xs` `s` `m` `l` `xl` `2xl` `3xl` `4xl` `5xl` `6xl` `none` | Внешний отступ сверху
+`indent-r`             | `3xs` `2xs` `xs` `s` `m` `l` `xl` `2xl` `3xl` `4xl` `5xl` `6xl` `none` | Внешний отступ справа
+`indent-b`             | `3xs` `2xs` `xs` `s` `m` `l` `xl` `2xl` `3xl` `4xl` `5xl` `6xl` `none` | Внешний отступ снизу
+`indent-l`             | `3xs` `2xs` `xs` `s` `m` `l` `xl` `2xl` `3xl` `4xl` `5xl` `6xl` `none` | Внешний отступ слева

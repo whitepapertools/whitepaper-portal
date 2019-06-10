@@ -78,7 +78,7 @@ a[disabled] {
 kbd {
 	display: inline-block;
 	margin-bottom: 3px;
-	padding: var(--space-xxxs) var(--space-xxs);
+	padding: var(--space-3xs) var(--space-2xs);
 	font-size: var(--size-typo-xs) !important;
 	line-height: var(--size-typo-xs);
 	vertical-align: middle;
@@ -107,7 +107,7 @@ li input[type=checkbox] {
 
 .app-nav > a {
 	margin: 0 1rem;
-	padding: var(--space-xxs) 0;
+	padding: var(--space-2xs) 0;
 }
 
 .app-nav li, .app-nav ul {
@@ -130,7 +130,7 @@ li input[type=checkbox] {
 .app-nav li {
 	display: inline-block;
 	margin: 0 1rem;
-	padding: var(--space-xxs) 0;
+	padding: var(--space-2xs) 0;
 	position: relative;
 }
 
@@ -283,7 +283,7 @@ main.hidden {
 }
 
 .sidebar::-webkit-scrollbar {
-	width: var(--space-xxs)
+	width: var(--space-2xs)
 }
 
 .sidebar::-webkit-scrollbar-thumb {
@@ -321,7 +321,7 @@ main.hidden {
 .sidebar-toggle span {
 	background-color: var(--color-bg-brand);
 	display: block;
-	margin-bottom: var(--space-xxs);
+	margin-bottom: var(--space-2xs);
 	width: 16px;
 	height: 2px;
 }
@@ -395,7 +395,7 @@ body.sticky .sidebar, body.sticky .sidebar-toggle {
 
 .markdown-section p.tip {
 	border-bottom-right-radius: 2px;
-	border-left: var(--space-xxs) solid #f66;
+	border-left: var(--space-2xs) solid #f66;
 	border-top-right-radius: 2px;
 	margin: 2em 0;
 	padding: 12px 24px 12px 30px;
@@ -686,7 +686,7 @@ section.cover blockquote > p > a:hover {
 
 .app-sub-sidebar li:before {
 	content: "-";
-	padding-right: var(--space-xxs);
+	padding-right: var(--space-2xs);
 	float: left;
 }
 
@@ -744,7 +744,7 @@ section.cover blockquote > p > a:hover {
 }
 
 .markdown-section blockquote {
-	border-left: var(--space-xxs) solid var(--color-bg-warning);
+	border-left: var(--space-2xs) solid var(--color-bg-warning);
 	color: var(--color-typo-secondary);
 	margin: 2em 0;
 	padding-left: var(--space-l);

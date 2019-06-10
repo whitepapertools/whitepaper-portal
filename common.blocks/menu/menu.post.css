@@ -3,7 +3,7 @@
 	width: 100%;
 	z-index: 100;
 	background-color: var(--color-bg-default);
-	margin-bottom: var(--space-xxxxxxl);
+	margin-bottom: var(--space-6xl);
 	&__logo {
 		display: block;
 		width: 180px;
@@ -14,7 +14,7 @@
 	}
 	&__item {
 		position: relative;
-		padding-left: var(--space-xxxl);
+		padding-left: var(--space-3xl);
 		text-decoration: none;
 		opacity: 0.6;
 		&:hover {
@@ -38,7 +38,7 @@
 		align-items: center;
 	}
 	&__download {
-		padding-left: var(--space-xxxl);
+		padding-left: var(--space-3xl);
 		margin-right: 14px;
 	}
 }
@@ -50,14 +50,14 @@
 		}
 		&__paper {
 			padding-top: var(--space-xl);
-			margin-bottom: var(--space-xl); 
+			margin-bottom: var(--space-xl);
 		}
 		&__inner {
 			display: block;
 		}
 		&__item {
 			box-sizing: border-box;
-			padding: var(--space-s) 0px; 
+			padding: var(--space-s) 0px;
 			width: 50%;
 		}
 	}
@@ -67,7 +67,7 @@
 	.menu {
 		&__paper {
 			padding-top: var(--space-l);
-			margin-bottom: var(--space-l); 
+			margin-bottom: var(--space-l);
 		}
 		&__inner {
 			display: block;
@@ -75,7 +75,7 @@
 		&__item {
 			position: relative;
 			padding-left: 0px;
-			padding-right: var(--space-xxxl);
+			padding-right: var(--space-3xl);
 		}
 	}
 }
@@ -84,7 +84,7 @@
 	.menu {
 		&__paper {
 			padding-top: var(--space-l);
-			margin-bottom: var(--space-l); 
+			margin-bottom: var(--space-l);
 		}
 		&__inner {
 			display: block;
@@ -92,7 +92,7 @@
 		&__item {
 			position: relative;
 			padding-left: 0px;
-			padding-right: var(--space-xxxl);
+			padding-right: var(--space-3xl);
 		}
 	}
 }

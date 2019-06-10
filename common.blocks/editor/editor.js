@@ -5,9 +5,9 @@ class Editor {
             { name: 'm', size: 10 },
             { name: 'l', size: 13 },
             { name: 'xl', size: 15 },
-            { name: 'xxl', size: 24 },
-            { name: 'xxxl', size: 32 },
-            { name: 'xxxxl', size: 38}
+            { name: '2xl', size: 24 },
+            { name: '3xl', size: 32 },
+            { name: '4xl', size: 38}
         ];
 
         this.EDITOR_INTERFACE = document.querySelector('.editor__interface');

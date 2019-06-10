@@ -30,7 +30,7 @@ $card-doc-preview-translate: transform 0.2s ease-in-out;
 		width: auto;
 		left: var(--space-l);
 		top: -10px;
-		padding: var(--space-xxxs) var(--space-xxs);
+		padding: var(--space-3xs) var(--space-2xs);
 
 		border-radius: 4px;
 		background: var(--color-base-base);
@@ -39,7 +39,7 @@ $card-doc-preview-translate: transform 0.2s ease-in-out;
 
 	&__content {
 		top: -4px; /*Под изображением странный отступ в 4 px появляется — это его компенсация, не понимаю в чём дело*/
-		padding-bottom: var(--space-xxxl);
+		padding-bottom: var(--space-3xl);
 		background: var(--color-base-essential);
 
 		transform: translate(0, 0);

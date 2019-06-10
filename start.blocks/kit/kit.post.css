@@ -1,5 +1,6 @@
 .kit {
-	.pt-card, .pt-form {
+	/*.pt-card, .pt-form {*/
+    .pt-card {
 		min-width: 350px;
 		max-width: 350px;
 		min-height: 456px;

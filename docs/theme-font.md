@@ -5,7 +5,7 @@
 ## Пример использования
 
 ```html
-<article class="theme_font_ibm">
+<article class="theme_font_default">
 	<h2 class="text text_size_xxl text_font_sans">...</h2>
 	<p class="text text_size_m text_font_serif">...</p>
 	<button class="button theme_font_default">...</button>

@@ -1,5 +1,5 @@
 .community {
-  padding: var(--space-xxl);
+  padding: var(--space-2xl);
   background-image: linear-gradient(var(--color-bg-ghost), var(--color-bg-ghost)), linear-gradient(var(--color-bg-default), var(--color-bg-default));
 
   &__item {

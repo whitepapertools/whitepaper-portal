@@ -15,11 +15,11 @@
   }
   &__description {
     width: 530px;
-    margin: var(--space-xxxl) auto 0;
+    margin: var(--space-3xl) auto 0;
   }
   &__contacts {
     margin-bottom: var(--space-xl);
-    margin-top: var(--space-xxxl);
+    margin-top: var(--space-3xl);
     align-self: center;
   }
 

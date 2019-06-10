@@ -51,7 +51,7 @@
         cursor: pointer;
 
         &_type_play {
-            padding: 0 var(--space-xxl);
+            padding: 0 var(--space-2xl);
         }
 
         &_type_favourites {
@@ -108,7 +108,7 @@
         }
     }
 
-    .text_size_xxxxl {
+    .text_size_4xl {
         line-height: 30px;
     }
     .pt-table__row {
@@ -324,7 +324,7 @@
 
 .theme_gap_editor-default {
     /* Размеры отступа у контента */
-    --gap: var(--space-xxxl);
+    --gap: var(--space-3xl);
 
     /* Размеры отступов в колонках */
     --col-gap-third: calc(var(--gap) / 3);
@@ -339,33 +339,33 @@
     --size-typo-m: 10px;
     --size-typo-l: 13px; /*!!!*/
     --size-typo-xl: 15px;
-    --size-typo-xxl: 24px; /*!!!*/
-    --size-typo-xxxl: 32px; /*!!!*/
-    --size-typo-xxxxl: 38px;
+    --size-typo-2xl: 24px; /*!!!*/
+    --size-typo-3xl: 32px; /*!!!*/
+    --size-typo-4xl: 38px;
 
     /* Межстрочный интервал */
     --line-height-typo-s: 1em; /*!!!*/
     --line-height-typo-m: 1em;
     --line-height-typo-l: 1em; /*!!!*/
     --line-height-typo-xl: 1.6em;
-    --line-height-typo-xxl: 1em; /*!!!*/
-    --line-height-typo-xxxl: 1em; /*!!!*/
-    --line-height-typo-xxxxl: 1em;
+    --line-height-typo-2xl: 1em; /*!!!*/
+    --line-height-typo-3xl: 1em; /*!!!*/
+    --line-height-typo-4xl: 1em;
 }
 
 .theme_space_editor-default {
     --space-module: 4px;
     /* Отступы */
-    --space-xxxs: calc(var(--space-module) / 2);
-    --space-xxs: var(--space-module);
+    --space-3xs: calc(var(--space-module) / 2);
+    --space-2xs: var(--space-module);
     --space-xs: calc(var(--space-module) * 2);
     --space-s: calc(var(--space-module) * 3);
     --space-m: calc(var(--space-module) * 4);
     --space-l: calc(var(--space-module) * 5);
     --space-xl: calc(var(--space-module) * 6);
-    --space-xxl: calc(var(--space-module) * 8);
-    --space-xxxl: calc(var(--space-module) * 10);
-    --space-xxxxl: calc(var(--space-module) * 12);
-    --space-xxxxxl: calc(var(--space-module) * 18);
-    --space-xxxxxxl: calc(var(--space-module) * 24);
+    --space-2xl: calc(var(--space-module) * 8);
+    --space-3xl: calc(var(--space-module) * 10);
+    --space-4xl: calc(var(--space-module) * 12);
+    --space-5xl: calc(var(--space-module) * 18);
+    --space-6xl: calc(var(--space-module) * 24);
 }

@@ -2,7 +2,7 @@
     &__icon-wrapper {
         width: 24px;
         height: 24px;
-        margin: var(--space-xxxl) auto var(--space-s);
+        margin: var(--space-3xl) auto var(--space-s);
         padding: var(--space-xl);
         border-radius: 50%;
         background: var(--color-typo-primary);

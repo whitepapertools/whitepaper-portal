@@ -3,65 +3,52 @@
 Блок, отвечающий за глобальные переменные цветов, типографики и отступов.
 Миксуется к самому внешнему блоку, например `body`. Это обязательное условие для работы системы.
 
-```js
-{
-	block: 'page',
-	mix: {
-		block: 'theme',
-		mods: { color: 'default',	// цвета
-				space: 'default',	// отступы
-				menu: 'default',	// размер меню
-				size: 'default',	// типографика
-				gap: 'medium' } 	// отступы в сетках
-	}
-}
+```html
+<body class="page
+  theme
+  theme_color_default
+  theme_space_default
+  theme_size_default
+  theme_gap_medium
+  ">
+  ...
+</body>
 ```
 
 Получается, что слой темы состоит из нескольких маленьких тем. Их можно менять независимо друг от друга. Т.е. можно поменять цвет, не трогая типографику и отступы.
 
 На странице можно использовать несколько тем.
 
-```js
-{
-	block: 'page',
-	mix: { // этот микс нужен обязательно
-		block: 'theme',
-		mods: { color: 'default',
-				space: 'default',
-				menu: 'default',
-				size: 'default',
-				gap: 'medium' }
-	},
-	content: [
-	{
-		block: 'section' // обычная секция
-	},
-	{
-		block: 'section',
-		mix: { // секция с инверсией цветов
-			block: 'theme',
-			mods: { color: 'inverse' }
-		}
-	},
-	{
-		block: 'section',
-		mix: { // цветная секция
-			block: 'theme',
-			mods: { color: 'green' }
-		}
-	}]
-}
+```html
+<body class="page
+  theme
+  theme_color_default
+  theme_space_default
+  theme_size_default
+  theme_gap_medium
+  ">
+
+  <section class="section theme theme_color_inverse">
+    <!-- секция с инверсией цветов -->
+    ...
+  </section>
+
+  <section class="section theme theme_color_brand">
+    <!-- секция с цветами бренда -->
+    ...
+  </section>
+</body>
 ```
 
-Модификаторы       | Значение                                                   | Описание
------------------- | ---------------------------------------------------------- | ----------------------------------
-breakpoint         | default                                                    | точки изменения интерфейса при адаптиве
-color              | whitepaper-brand / whitepaper-default / whitepaper-inverse | цветовая схема
-font               | ibm / museo                                                | используемый шрифт
-gap                | large / medium / small                                     | размер расстояния между колонками сетки
-menu               | default                                                    | размер бокового меню
-size               | default                                                    | размеры и высоты строк типографики
-space              | default                                                    | размеры отступов
+Модификаторы       | Значение                                                     | Описание
+------------------ | ------------------------------------------------------------ | ----------------------------------
+`color`            | `whitepaper-brand` `whitepaper-default` `whitepaper-inverse` | Цветовая схема
+`size`             | `default`                                                    | Размеры и высоты строк типографики
+`space`            | `default`                                                    | Размеры отступов
+`breakpoint`       | `default`                                                    | Точки изменения интерфейса при адаптиве
+`font`             | `default`                                                    | Используемый шрифт
+`gap`              | `large` `medium` `small`                                     | Размер расстояния между колонками сетки
+`menu`             | `default`                                                    | Размер бокового меню
 
 ## Новая тема
 
@@ -69,16 +56,16 @@ space              | default                                                    
 
 ```
 theme/
-	color/
-		default.css 	// по аналогии создай файл с названием своей темы
-	space/
-		default.css 	// по аналогии создай файл с названием своей темы
-	size/
-		default.css 	// по аналогии создай файл с названием своей темы
-	menu/
-		default.css 	// по аналогии создай файл с названием своей темы
-	gap/
-		large.css 		// эти значения зависят от значений модификатора space
-		medium.css
-		small.css
+  color/
+  default.css 	// по аналогии создай файл с названием своей темы
+  space/
+  default.css 	// по аналогии создай файл с названием своей темы
+  size/
+  default.css 	// по аналогии создай файл с названием своей темы
+  menu/
+  default.css 	// по аналогии создай файл с названием своей темы
+  gap/
+  large.css 		// эти значения зависят от значений модификатора space
+  medium.css
+  small.css
 ```

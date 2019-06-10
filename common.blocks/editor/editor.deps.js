@@ -8,7 +8,7 @@
             { block: 'control', elem: 'color', mods: { size: 'm', view: 'primary' } },
             { block: 'control', mods: { type: ['align', 'palette', 'text-style', 'view', 'weight'], active: true } },
 
-            { block: 'decorator', mods: { 'indent-b': ['l', 'm', 's', 'xl', 'xs'], 'indent-h': 'xs', 'indent-l': ['s', 'xs'], 'indent-r': 'xs', 'indent-t': ['m', 'xl', 'xs', 'xxxxl'], 'space-a': 'xl', 'space-h': ['l', 'xxxl'], 'space-v': ['xl', 'xxxxl'], 'space-t': 'l' } },
+            { block: 'decorator', mods: { 'indent-b': ['l', 'm', 's', 'xl', 'xs'], 'indent-h': 'xs', 'indent-l': ['s', 'xs'], 'indent-r': 'xs', 'indent-t': ['m', 'xl', 'xs', '4xl'], 'space-a': 'xl', 'space-h': ['l', '3xl'], 'space-v': ['xl', '4xl'], 'space-t': 'l' } },
 
             { block: 'editor', elem: 'button', mods: { type: ['favourites', 'play'] } },
             { block: 'editor', elem: 'editable-text' },
@@ -28,13 +28,13 @@
             { block: 'pt-card', elem: 'content' },
 
             { block: 'pt-list' },
-            { block: 'pt-list', elem: 'item', mods: { 'indent-t': ['m', 'xxxl'] } },
+            { block: 'pt-list', elem: 'item', mods: { 'indent-t': ['m', '3xl'] } },
 
             { block: 'pt-table' },
             { block: 'pt-table', elem: 'col', mods: { width: ['10', '15', '55'], align: 'right' } },
             { block: 'pt-table', elem: 'row' },
 
-            { block: 'text', mods: { size: ['s', 'm', 'l', 'xl', 'xs', 'xxl', 'xxxl', 'xxxxl'], view: ['primary', 'secondary', 'ghost', 'brand'], align: ['left', 'center', 'right'], weight: ['bold', 'semibold', 'regular'], display: 'inline-block' } },
+            { block: 'text', mods: { size: ['s', 'm', 'l', 'xl', 'xs', '2xl', '3xl', '4xl'], view: ['primary', 'secondary', 'ghost', 'brand'], align: ['left', 'center', 'right'], weight: ['bold', 'semibold', 'regular'], display: 'inline-block' } },
 
             { block: 'text-size' },
             { block: 'text-size', elem: 'minus' },

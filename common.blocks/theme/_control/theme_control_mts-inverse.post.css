@@ -136,9 +136,9 @@ $color-control-typo-placeholder-disable:   color($color-base-phantom l(+50%)); /
 	--control-radius: 4px; /* Основной радиус скругления контроллов */
 	--control-border-width: 2px; /* Основная толщина контроллов */
 
-	--control-button-size-l: var(--space-xxxxl);
-	--control-button-size-m: var(--space-xxxl);
-	--control-button-size-s: var(--space-xxl);
+	--control-button-size-l: var(--space-4xl);
+	--control-button-size-m: var(--space-3xl);
+	--control-button-size-s: var(--space-2xl);
 
 	--control-space-xl: var(--space-xl);
 	--control-space-l: var(--space-l);

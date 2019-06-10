@@ -1,7 +1,7 @@
 .promo-cards {
 	position: relative;
 	min-height: 100vh;
-	padding: var(--space-xxxl);
+	padding: var(--space-3xl);
 	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
@@ -80,7 +80,7 @@
 			background: var(--color-bg-ghost);
 		}
 		&_inverse {
-			background: #2E3033;	
+			background: #2E3033;
 		}
 	}
 	&__team-member {
@@ -180,8 +180,8 @@
 		top: 0px;
 		width: 296px;
 		height: 456px;
-		margin-left: var(--space-xxl);
-		margin-right: var(--space-xxxxxxl);
+		margin-left: var(--space-2xl);
+		margin-right: var(--space-6xl);
 		border-radius: var(--space-s);
 		z-index: 1;
 		transition: transform .4s .3s;

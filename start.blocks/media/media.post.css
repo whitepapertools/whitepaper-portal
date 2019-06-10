@@ -48,13 +48,13 @@
 		margin-top: calc(-1 * var(--space-l));
 		border-top: var(--space-l) solid transparent;
 		border-bottom: var(--space-l) solid transparent;
-		border-left: var(--space-xxl) solid var(--color-bg-default);
+		border-left: var(--space-2xl) solid var(--color-bg-default);
 		cursor: pointer;
 		transition: all .15s;
 	}
 	&:hover {
 		.media__play {
-			border-left: var(--space-xxl) solid var(--color-bg-action);
+			border-left: var(--space-2xl) solid var(--color-bg-action);
 			transform: scale(1.2);
 		}
 	}
