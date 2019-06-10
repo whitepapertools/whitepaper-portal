@@ -52,7 +52,7 @@
     "postcss-simple-vars": "^4.0.0",
     "postcss-url": "^8.0.0",
     "through2-filter": "^2.0.0",
-    "whitepaper-bem": "^1.0.2",
+    "whitepaper-bem": "^2.0.0",
     "whitepaper-logos": "^0.0.2",
     "ym": "^0.1.2"
   },
