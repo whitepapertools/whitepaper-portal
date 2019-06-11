@@ -32,7 +32,7 @@ module.exports = {
 					elem: 'content',
 					content: {
 						elem: 'container',
-						elemMods: { align: 'center', size: 'm' },
+						elemMods: { distribute: 'center', size: 'm' },
 						content: [
 							{
 								block: 'grid-decoration',
@@ -69,7 +69,7 @@ module.exports = {
 							content: [
 								{
 									elem: 'container',
-									mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', align: 'center' }},
+									mix: { block: 'tpl-layout', elem: 'container', elemMods: { size: 'm', distribute: 'center' }},
 									content: [
 										{
 											elem: 'inner',
@@ -146,7 +146,7 @@ module.exports = {
 					mix: { block: 'decorator', mods: { 'indent-b': '6xl' }},
 					content: {
 						elem: 'container',
-						elemMods: { align: 'center', size: 'm' },
+						elemMods: { distribute: 'center', size: 'm' },
 						content: [
 							{
 								block: 'community-page',
@@ -439,7 +439,7 @@ module.exports = {
 							content: [
 								{
 									elem: 'container',
-									mix: { block: 'tpl-layout', elem: 'container', elemMods: { align: 'center', size: 'm' }},
+									mix: { block: 'tpl-layout', elem: 'container', elemMods: { distribute: 'center', size: 'm' }},
 									content: [
 										{
 											elem: 'inner',
