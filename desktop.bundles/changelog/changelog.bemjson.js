@@ -231,7 +231,7 @@ module.exports = {
 							content: [
 								{
 									elem: 'container',
-									mix: { block: 'tpl-layout', elem: 'container', elemMods: { align: 'center', size: 'm' }},
+									mix: { block: 'tpl-layout', elem: 'container', elemMods: { distribute: 'center', size: 'm' }},
 									content: [
 										{
 											elem: 'inner',
