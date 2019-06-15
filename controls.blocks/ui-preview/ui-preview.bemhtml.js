@@ -5,11 +5,11 @@ block('ui-preview').content()(function() {
 		// Кнопки
 		{
 			block: 'section',
-			mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+			mix: { block: 'decorator', mods: { 'indent-b': '5xl' }},
 			content: [
 				{
 					block: 'text',
-					mods: { size: 'xxxxl', weight: 'bold', view: 'primary' },
+					mods: { size: '4xl', weight: 'bold', view: 'primary' },
 					mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 					content: 'Buttons'
 				},
@@ -217,11 +217,11 @@ block('ui-preview').content()(function() {
 		// Инпуты
 		{
 			block: 'section',
-			mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+			mix: { block: 'decorator', mods: { 'indent-b': 'x4xl' }},
 			content: [
 				{
 					block: 'text',
-					mods: { size: 'xxxxl', weight: 'bold', view: 'primary' },
+					mods: { size: '4xl', weight: 'bold', view: 'primary' },
 					mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 					content: 'Inputs and textarea'
 				},
@@ -365,11 +365,11 @@ block('ui-preview').content()(function() {
 		// Радио
 		{
 			block: 'section',
-			mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+			mix: { block: 'decorator', mods: { 'indent-b': '5xl' }},
 			content: [
 				{
 					block: 'text',
-					mods: { size: 'xxxxl', weight: 'bold', view: 'primary' },
+					mods: { size: '4xl', weight: 'bold', view: 'primary' },
 					mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 					content: 'Radio'
 				},
@@ -449,7 +449,7 @@ block('ui-preview').content()(function() {
 									block: 'radio',
 									mods: { size: 'l', state: 'disabled' },
 									tag: 'label',
-									mix: { block: 'decorator', mods: { 'indent-r': 'xxl' }},
+									mix: { block: 'decorator', mods: { 'indent-r': '2xl' }},
 									content: [
 										{
 											elem: 'input',
@@ -494,11 +494,11 @@ block('ui-preview').content()(function() {
 		// Радио
 		{
 			block: 'section',
-			mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+			mix: { block: 'decorator', mods: { 'indent-b': '5xl' }},
 			content: [
 				{
 					block: 'text',
-					mods: { size: 'xxxxl', weight: 'bold', view: 'primary' },
+					mods: { size: '4xl', weight: 'bold', view: 'primary' },
 					mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 					content: 'Checkbox'
 				},
@@ -578,7 +578,7 @@ block('ui-preview').content()(function() {
 									block: 'checkbox',
 									mods: { size: 'l', state: 'disabled' },
 									tag: 'label',
-									mix: { block: 'decorator', mods: { 'indent-r': 'xxl' }},
+									mix: { block: 'decorator', mods: { 'indent-r': '2xl' }},
 									content: [
 										{
 											elem: 'input',
@@ -623,11 +623,11 @@ block('ui-preview').content()(function() {
 		// Табики
 		{
 			block: 'section',
-			mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxl' }},
+			mix: { block: 'decorator', mods: { 'indent-b': '5xl' }},
 			content: [
 				{
 					block: 'text',
-					mods: { size: 'xxxxl', weight: 'bold', view: 'primary' },
+					mods: { size: '4xl', weight: 'bold', view: 'primary' },
 					mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
 					content: 'Tabs'
 				},
