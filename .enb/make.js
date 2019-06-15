@@ -38,6 +38,7 @@ levels = [
 	{ path: 'node_modules/bem-core/common.blocks', check: false },
 	{ path: 'node_modules/bem-core/desktop.blocks', check: false },
 	'common.blocks',
+	'controls.blocks',
 	'start.blocks',
 	'desktop.blocks',
 	// { path: 'node_modules/bem-components-custom/common.blocks', check: false },
