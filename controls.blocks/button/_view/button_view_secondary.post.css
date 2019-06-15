@@ -1,0 +1,18 @@
+.button_view_secondary {
+	color: var(--color-control-typo-action);
+
+	&::before {
+		background-color: var(--color-control-bg-default-affect);
+		border: var(--control-border-width) solid var(--color-control-bg-border-action);
+		transition: box-shadow .15s, background-color .15s, color .15s;
+	}
+
+	&:hover&::before {
+		border: var(--control-border-width) solid var(--color-control-bg-border-action-hover);
+		background-color: var(--color-control-bg-default-affect);
+		color: var(--color-control-typo-action-hover);
+	}
+	&:active&::before {
+		border: var(--control-border-width) solid var(--color-control-bg-border-action-press);
+	}
+}

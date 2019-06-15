@@ -1,0 +1,11 @@
+.input_size_s {
+	font-size: var(--control-size-s);
+	height: var(--control-button-size-s);
+	padding: 0 var(--control-space-s);
+
+	&.input_type_textarea {
+		height: initial;
+		padding-top: calc((var(--control-button-size-s) - var(--control-size-s)) / 2 - var(--control-border-width));
+		padding-bottom: var(--control-space-xs);
+	}
+}

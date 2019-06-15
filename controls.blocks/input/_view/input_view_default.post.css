@@ -1,0 +1,19 @@
+.input_view_default {
+	background: var(--color-control-input-default);
+	border: 2px solid var(--color-control-bg-border-default);
+	border-radius: var(--control-radius);
+	color: var(--color-control-typo-primary);
+	transition: border-color .15s;
+
+	&::placeholder {
+		color: var(--color-control-typo-ghost);
+	}
+
+	&:hover {
+		border-color: var(--color-control-bg-border-default-hover);
+	}
+	&:focus {
+		outline: none;
+		border-color: var(--color-control-bg-border-focus);
+	}
+}

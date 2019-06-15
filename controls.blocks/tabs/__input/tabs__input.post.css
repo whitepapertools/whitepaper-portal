@@ -1,0 +1,29 @@
+.tabs__input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	position: absolute;
+
+	&:checked {
+		+ .tabs__button {
+			color: var(--color-control-typo-affect);
+
+			&::before {
+				transform: scale(1);
+				background-color: var(--color-control-bg-action);
+			}
+
+			&::after {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	}
+
+	&:focus {
+		+ .tabs__button::before {
+			transition: color .1s, box-shadow .1s .1s;
+			box-shadow: 0 0 3px 2px var(--color-control-bg-border-focus);
+		}
+	}
+}

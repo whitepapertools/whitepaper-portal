@@ -1,0 +1,7 @@
+.input {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	font-family: var(--font-sans);
+	font-weight: normal;
+}

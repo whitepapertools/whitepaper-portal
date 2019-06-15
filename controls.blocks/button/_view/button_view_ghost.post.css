@@ -1,0 +1,15 @@
+.button_view_ghost {
+	color: var(--color-control-typo-primary);
+
+	&::before {
+		background-color: var(--color-control-bg-default);
+		transition: background-color .15s;
+	}
+
+	&:hover&::before{
+		background-color: var(--color-control-bg-default-hover);
+	}
+	&:active&::before{
+		background-color: var(--color-control-bg-default-press);
+	}
+}

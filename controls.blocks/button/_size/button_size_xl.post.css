@@ -1,0 +1,6 @@
+.button_size_xl {
+	font-size: var(--control-size-xl);
+	line-height: var(--control-button-size-xl);
+	height: var(--control-button-size-xl);
+	padding: 0 var(--control-space-xl);
+}

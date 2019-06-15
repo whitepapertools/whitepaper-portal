@@ -1,0 +1,15 @@
+.button_view_primary {
+	color: var(--color-control-typo-affect);
+
+	&::before {
+		background-color: var(--color-control-bg-action);
+		transition: background-color .15s;
+	}
+
+	&:hover&::before{
+		background-color: var(--color-control-bg-action-hover);
+	}
+	&:active&::before{
+		background-color: var(--color-control-bg-action-press);
+	}
+}

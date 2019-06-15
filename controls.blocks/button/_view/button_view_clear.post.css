@@ -1,0 +1,15 @@
+.button_view_clear {
+	color: var(--color-control-typo-primary);
+
+	&::before {
+		background-color: var(--color-control-bg-clear);
+		transition: background-color .15s;
+	}
+
+	&:hover&::before {
+		background-color: var(--color-control-bg-clear-hover);
+	}
+	&:active&::before {
+		background-color: var(--color-control-bg-clear-press);
+	}
+}

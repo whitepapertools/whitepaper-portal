@@ -1,0 +1,40 @@
+.button {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	width: auto;
+	border: none;
+	appearance: none;
+	margin: initial;
+	box-sizing: border-box;
+	font-weight: normal;
+	text-align: center;
+	max-width: 100%;
+	font-family: var(--font-sans);
+	text-decoration: none;
+	border-radius: var(--control-radius);
+	transition: background 0.15s ease, box-shadow 0.15s ease, color 0.15s ease, fill 0.15s ease;
+	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background: transparent;
+
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		border-radius: var(--control-radius);
+	}
+
+	&:focus{
+		/* outline-offset: 2px; */
+		/* outline: 2px solid var(--color-control-bg-border-focus); */
+		outline: none;
+		box-shadow: 0 0 3px 2px var(--color-control-bg-border-focus);
+	}
+}

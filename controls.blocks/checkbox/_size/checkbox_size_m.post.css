@@ -1,0 +1,19 @@
+.checkbox_size_m {
+	height: var(--control-button-size-m);
+
+	.checkbox__box {
+		width: var(--control-checkbox-size-m);
+		height: var(--control-checkbox-size-m);
+
+		&::before {
+			width: calc(var(--control-checkbox-size-m) * .6);
+			height: calc(var(--control-checkbox-size-m) * .35);
+			top: 6px;
+			left: 1px;
+		}
+	}
+
+	.checkbox__text {
+		font-size: var(--control-size-m);
+	}
+}

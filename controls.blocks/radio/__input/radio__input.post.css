@@ -1,0 +1,33 @@
+.radio__input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	position: absolute;
+
+	&:checked {
+		+ .radio__box {
+			border-color: var(--color-control-bg-border-action);
+
+			&::before {
+				opacity: 1;
+				transform: scale(1, 1);
+			}
+		}
+	}
+
+	&:focus {
+		+ .radio__box {
+			box-shadow: 0 0 2px 1px var(--color-control-bg-border-focus);
+		}
+	}
+
+	&:disabled {
+		+ .radio__box {
+			opacity: .66;
+			border-color: var(--color-control-bg-border-default);
+			&::before {
+				background-color: var(--color-control-bg-border-default);
+			}
+		}
+	}
+}
