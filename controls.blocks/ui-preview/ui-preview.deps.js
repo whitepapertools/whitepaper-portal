@@ -32,6 +32,10 @@
 			{ block: 'tabs', elem: 'button' },
 			{ block: 'tabs', elem: 'item' },
 
+			{ block: 'switch' },
+			{ block: 'switch', elem: 'input' },
+			{ block: 'switch', elem: 'box' },
+
 			{ block: 'text', mods: { view: 'primary', size: [ '4xl', '3xl', '2xl', 'xl', 'l', 'm', 's', 'xs'], weight: 'bold' }, },
 			{ block: 'decorator',
 				mods: {

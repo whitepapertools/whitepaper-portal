@@ -1118,7 +1118,7 @@ block('ui-preview').content()(function() {
 													elem: 'button',
 													mix: {
 														block: 'button',
-														mods: { size: 'l', form: 'round' },
+														mods: { size: 'l' },
 													},
 													content: 'Tab 4'
 												}
@@ -1133,5 +1133,52 @@ block('ui-preview').content()(function() {
 			]
 		},
 		// Табики
+
+
+		{
+			block: 'section',
+			mix: { block: 'decorator', mods: { 'indent-b': '5xl' }},
+			content: [
+				{
+					block: 'text',
+					mods: { size: '4xl', weight: 'bold', view: 'primary' },
+					mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+					content: 'Switch'
+				},
+				{
+					content: [
+						{
+							block: 'decorator',
+							mods: { 'indent-b': 'xl' },
+							content: [
+								{
+									block: 'text',
+									mods: { size: 'xl', view: 'primary' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
+									content: 'Size S'
+								},
+								{
+									block: 'switch',
+									mods: { size: 's', state: 'off' },
+									content: [
+										{
+											elem: 'input',
+											tag: 'input', attrs: { type: 'checkbox' },
+										},
+										{
+											elem: 'box',
+										},
+										{
+											elem: 'text',
+											content: 'Apply switch'
+										},
+									]
+								},
+							]
+						}
+					]
+				}
+			]
+		}
 	]
 });

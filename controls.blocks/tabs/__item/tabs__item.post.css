@@ -1,9 +1,7 @@
 .tabs__item {
 	display: inline-block;
-	margin-right: 2px;
-	/* box-shadow: inset calc(var(--control-border-width) * -1) 0 0 0 var(--color-control-bg-border-default);
 
-	&:last-child {
-		box-shadow: none;
-	} */
+	&:not(:last-child) {
+		margin-right: 2px;
+	}
 }
