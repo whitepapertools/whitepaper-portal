@@ -1,0 +1,18 @@
+.switch__box {
+	display: inline-block;
+	position: relative;
+	border-radius: 99rem;
+	background-color: var(--color-control-bg-system);
+	margin-right: var(--space-xs);
+
+	&::before {
+		content: '';
+		box-sizing: border-box;
+		position: absolute;
+		right: 0;
+		border-radius: 99rem;
+		background-color: var(--color-control-bg-default-affect);
+		border: 1px solid var(--color-control-bg-border-default);
+		transition: transform .15s, background-color .15s, border .15s;
+	}
+}

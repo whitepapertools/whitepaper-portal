@@ -1,0 +1,8 @@
+.switch {
+	position: relative;
+	cursor: pointer;
+	display: inline-flex;
+	-ms-align-items: center;
+	align-items: center;
+	font-family: var(--font-sans);
+}

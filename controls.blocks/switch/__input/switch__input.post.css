@@ -1,0 +1,18 @@
+.switch__input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	position: absolute;
+
+	&:checked {
+		+ .switch__box {
+			background-color: var(--color-control-bg-action-hover);
+
+			&::before {
+				background-color: var(--color-control-bg-action);
+				border-color: var(--color-control-bg-border-action-hover);
+				transform: translateX(0);
+			}
+		}
+	}
+}

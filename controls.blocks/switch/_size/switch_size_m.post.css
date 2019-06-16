@@ -1,0 +1,19 @@
+.switch_size_m {
+	height: var(--space-3xl);
+
+	.switch__box {
+		width: var(--space-3xl);
+		height: var(--space-m);
+
+		&::before {
+			height: var(--space-xl);
+			width: var(--space-xl);
+			top: calc((var(--space-xl) - var(--space-m)) / -2);
+			transform: translateX( calc(-1 * var(--space-3xl) - var(--space-xl) * -1) );
+			box-shadow:
+				/* inset 0 0 0 1px var(--color-control-bg-border-default), */
+				0 0 2px rgba(0,0,0,.25),
+				0 2px 4px rgba(0,0,0,.18);
+		}
+	}
+}

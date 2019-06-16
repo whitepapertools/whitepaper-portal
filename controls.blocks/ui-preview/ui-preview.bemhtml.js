@@ -1159,7 +1159,38 @@ block('ui-preview').content()(function() {
 								},
 								{
 									block: 'switch',
+									tag: 'label',
 									mods: { size: 's', state: 'off' },
+									content: [
+										{
+											elem: 'input',
+											tag: 'input', attrs: { type: 'checkbox' },
+										},
+										{
+											elem: 'box',
+										},
+										{
+											elem: 'text',
+											content: 'Apply switch'
+										},
+									]
+								},
+							]
+						},
+						{
+							block: 'decorator',
+							mods: { 'indent-b': 'xl' },
+							content: [
+								{
+									block: 'text',
+									mods: { size: 'xl', view: 'primary' },
+									mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
+									content: 'Size M'
+								},
+								{
+									block: 'switch',
+									tag: 'label',
+									mods: { size: 'm', state: 'off' },
 									content: [
 										{
 											elem: 'input',
