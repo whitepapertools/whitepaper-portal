@@ -45,6 +45,9 @@ $color-control-bg-border-action:          color($color-base-base a(74%)); /* Ц�
 $color-control-bg-border-action-hover:    $color-base-base; /* Цвет фона бордеров контрола по ховеру */
 $color-control-bg-border-action-press:    color($color-base-base l(+10%)); /* Цвет фона бордеров контрола по нажатию */
 
+/* System */
+$color-control-bg-system:                 $color-control-bg-border-default;
+
 /* Clear / Focus / Check / Progress */
 $color-control-bg-clear:                  color($color-base-phantom a(0%)); /* Цвет фона чистого контрола */
 $color-control-bg-clear-hover:            color($color-base-phantom a(7%)); /* Цвет фона чистого контрола по ховеру */
@@ -111,6 +114,9 @@ $color-control-typo-placeholder-disable:   color($color-base-phantom l(+50%)); /
 	--color-control-bg-border-action-hover: $color-control-bg-border-action-hover; /* Цвет фона бордеров контрола по ховеру */
 	--color-control-bg-border-action-press: $color-control-bg-border-action-press; /* Цвет фона бордеров контрола по нажатию */
 
+	/* System */
+	--color-control-bg-system: $color-control-bg-system;
+	
 	/* Clear / Focus / Check / Progress */
 	--color-control-bg-clear: $color-control-bg-clear; /* Цвет фона чистого контрола */
 	--color-control-bg-clear-hover: $color-control-bg-clear-hover; /* Цвет фона чистого контрола по ховеру */

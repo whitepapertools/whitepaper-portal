@@ -3,17 +3,24 @@
 
 	.switch__box {
 		width: var(--space-3xl);
-		height: var(--space-m);
+		height: var(--space-l);
 
 		&::before {
-			height: var(--space-xl);
-			width: var(--space-xl);
-			top: calc((var(--space-xl) - var(--space-m)) / -2);
-			transform: translateX( calc(-1 * var(--space-3xl) - var(--space-xl) * -1) );
+			height: var(--space-l);
+			width: var(--space-l);
+			top: 0;
+			transform: translateX( calc(-1 * var(--space-3xl) + var(--space-l) ) );
 			box-shadow:
 				/* inset 0 0 0 1px var(--color-control-bg-border-default), */
 				0 0 2px rgba(0,0,0,.25),
 				0 2px 4px rgba(0,0,0,.18);
+		}
+
+		&::after {
+			width: calc(var(--control-checkbox-size-l) * .6);
+			height: calc(var(--control-checkbox-size-l) * .35);
+			top: 0;
+			left: 0;
 		}
 	}
 }
