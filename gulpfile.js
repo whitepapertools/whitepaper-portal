@@ -55,11 +55,11 @@ gulp.task('get-version', () => {
 gulp.task('css', () =>  {
 	let plugins = [
 		postcssImport(),
-		postcssColorFunction(),
 		postcssSimpleVars(),
 		postcssCalc(),
 		postcssNested,
 		autoprefixer(),
+		postcssColorFunction(),
 		postcssReporter()
 	];
 	return gulp.src(srcLevels)
