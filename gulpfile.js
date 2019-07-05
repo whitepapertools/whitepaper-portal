@@ -6,6 +6,7 @@ const postcssSimpleVars = require('postcss-simple-vars');
 const postcssCalc = require('postcss-calc');
 const postcssNested = require('postcss-nested');
 const postcssReporter = require('postcss-reporter');
+const postcssColorFunction = require('postcss-color-function');
 const autoprefixer = require('autoprefixer');
 const csso = require('gulp-csso');
 const rename = require('gulp-rename');
@@ -54,6 +55,7 @@ gulp.task('get-version', () => {
 gulp.task('css', () =>  {
 	let plugins = [
 		postcssImport(),
+		postcssColorFunction(),
 		postcssSimpleVars(),
 		postcssCalc(),
 		postcssNested,
