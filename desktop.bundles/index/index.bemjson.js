@@ -1357,7 +1357,7 @@ module.exports = {
 
                                     {
                                         elem: 'fraction',
-                                        elemMods: { col: '2' },
+                                        elemMods: { col: '3' },
                                         content: [
                                         {
                                             block: 'control',
@@ -1365,19 +1365,6 @@ module.exports = {
                                             attrs: { 'text-style': 'theme_font_nitti' },
                                             mix: [{ block: 'text' },
                                                   { block: 'theme', mods: { font: 'nitti' } }],
-                                            content: 'Aa'
-                                        }]
-                                    },
-                                    {
-                                        elem: 'fraction',
-                                        elemMods: { col: '2' },
-                                        content: [
-                                        {
-                                            block: 'control',
-                                            mods: { type: 'text-style' },
-                                            attrs: { 'text-style': 'theme_font_plex' },
-                                            mix: [{ block: 'text' },
-                                                  { block: 'theme', mods: { font: 'plex' } }],
                                             content: 'Aa'
                                         }]
                                     },
@@ -1409,7 +1396,7 @@ module.exports = {
                                     },
                                     {
                                         elem: 'fraction',
-                                        elemMods: { col: '2' },
+                                        elemMods: { col: '3' },
                                         content: [
                                         {
                                             block: 'control',
