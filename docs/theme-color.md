@@ -112,30 +112,6 @@
     </div>
     <div class="pt-icon-plus pt-icon-plus_vertical-align_center">
         <div class="pt-icon-plus__icon pt-icon-plus__icon_indent-r_s">
-            <div class="color color_view_action"></div>
-        </div>
-        <div class="pt-icon-plus__block">
-            <code>$color-bg-action: color($color-base-project l(+15%));</code>
-        </div>
-    </div>
-    <div class="pt-icon-plus pt-icon-plus_vertical-align_center">
-        <div class="pt-icon-plus__icon pt-icon-plus__icon_indent-r_s">
-            <div class="color color_view_selection"></div>
-        </div>
-        <div class="pt-icon-plus__block">
-            <code>$color-bg-selection: color($color-base-project h(-1) l(+31%));</code>
-        </div>
-    </div>
-    <div class="pt-icon-plus pt-icon-plus_vertical-align_center">
-        <div class="pt-icon-plus__icon pt-icon-plus__icon_indent-r_s">
-            <div class="color color_view_hover"></div>
-        </div>
-        <div class="pt-icon-plus__block">
-            <code>$color-bg-hover: color($color-base-base a(15%));</code>
-        </div>
-    </div>
-    <div class="pt-icon-plus pt-icon-plus_vertical-align_center">
-        <div class="pt-icon-plus__icon pt-icon-plus__icon_indent-r_s">
             <div class="color color_view_border"></div>
         </div>
         <div class="pt-icon-plus__block">
@@ -258,14 +234,6 @@
     </div>
     <div class="pt-icon-plus pt-icon-plus_vertical-align_center">
         <div class="pt-icon-plus__icon pt-icon-plus__icon_indent-r_s">
-            <div class="color color_view_typo-promo"></div>
-        </div>
-        <div class="pt-icon-plus__block">
-            <code>$color-typo-promo: color($color-base-base a(80%));</code>
-        </div>
-    </div>
-    <div class="pt-icon-plus pt-icon-plus_vertical-align_center">
-        <div class="pt-icon-plus__icon pt-icon-plus__icon_indent-r_s">
             <div class="color color_view_typo-secondary"></div>
         </div>
         <div class="pt-icon-plus__block">
@@ -321,7 +289,7 @@
 <div class="tpl-grid tpl-grid_row-gap_third decorator decorator_indent-b_xxxxl" style="padding-top: 0px; grid-row-gap: var(--col-gap-third);">
     <div class="pt-icon-plus pt-icon-plus_vertical-align_center">
         <div class="pt-icon-plus__icon pt-icon-plus__icon_indent-r_s">
-            <div class="color color_view_typo-brand"></div>
+            <div class="color color_view_link"></div>
         </div>
         <div class="pt-icon-plus__block">
             <code>$color-link: $color-base-path;</code>
@@ -329,7 +297,7 @@
     </div>
     <div class="pt-icon-plus pt-icon-plus_vertical-align_center">
         <div class="pt-icon-plus__icon pt-icon-plus__icon_indent-r_s">
-            <div class="color color_view_typo-primary"></div>
+            <div class="color color_view_link-external"></div>
         </div>
         <div class="pt-icon-plus__block">
             <code>$color-link-external: $color-base-path;</code>
@@ -337,7 +305,7 @@
     </div>
     <div class="pt-icon-plus pt-icon-plus_vertical-align_center">
         <div class="pt-icon-plus__icon pt-icon-plus__icon_indent-r_s">
-            <div class="color color_view_typo-promo"></div>
+            <div class="color color_view_link-minor"></div>
         </div>
         <div class="pt-icon-plus__block">
             <code>$color-link-minor: color($color-base-path h(+22) s(-80%) l(+13%));</code>
@@ -345,7 +313,7 @@
     </div>
     <div class="pt-icon-plus pt-icon-plus_vertical-align_center">
         <div class="pt-icon-plus__icon pt-icon-plus__icon_indent-r_s">
-            <div class="color color_view_typo-secondary"></div>
+            <div class="color color_view_link-hover"></div>
         </div>
         <div class="pt-icon-plus__block">
             <code>$color-link-hover: color($color-base-path l(-7%));</code>
