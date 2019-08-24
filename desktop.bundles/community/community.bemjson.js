@@ -135,7 +135,6 @@ module.exports = {
 								}
 							]
 						}
-
 					]
 				},
 				/* Menu */
@@ -152,9 +151,9 @@ module.exports = {
 								block: 'community-page',
 								content: [
 									/* Social */
-				        	{
+									{
 										elem: 'social',
-					          content: [
+										content: [
 											{
 												block: 'text',
 												mix: { block: 'decorator', mods: { 'indent-b': '2xl' }},
@@ -171,7 +170,8 @@ module.exports = {
 														content: [
 															{
 																elem: 'social-wrapper',
-																attrs: { style: 'display:flex; align-items: center;' },
+																tag: 'a',
+																attrs: { href: 'https://t.me/whitepapertools', style: 'text-decoration: none; display:flex; align-items: center;' },
 																mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 																content: [
 																	{
@@ -180,17 +180,16 @@ module.exports = {
 																	},
 																	{
 																		block: 'text',
-																		tag: 'a',
-																		attrs: { href: 'https://t.me/whitepapertools', style: 'text-decoration: none' },
 																		mods: { view: 'primary', size: '3xl', view: 'primary', display: 'inline' },
 																		mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
 																		content: 'Telegram'
-																	},
+																	}
 																]
 															},
 															{
 																elem: 'social-wrapper',
-																attrs: { style: 'display:flex; align-items: center;' },
+																tag: 'a',
+																attrs: { href: 'https://twitter.com/whitepapertools', style: 'text-decoration: none; display:flex; align-items: center;' },
 																mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 																content: [
 																	{
@@ -199,14 +198,12 @@ module.exports = {
 																	},
 																	{
 																		block: 'text',
-																		tag: 'a',
-																		attrs: { href: 'https://twitter.com/whitepapertools', style: 'text-decoration: none' },
 																		mods: { view: 'primary', size: '3xl', view: 'primary', display: 'inline' },
 																		mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
 																		content: 'Twitter'
-																	},
+																	}
 																]
-															},
+															}
 														]
 													},
 													{
@@ -215,7 +212,8 @@ module.exports = {
 														content: [
 															{
 																elem: 'social-wrapper',
-																attrs: { style: 'display:flex; align-items: center;' },
+																tag: 'a',
+																attrs: { href: 'https://github.com/whitepapertools', style: 'text-decoration: none; display:flex; align-items: center;' },
 																mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 																content: [
 																	{
@@ -224,17 +222,16 @@ module.exports = {
 																	},
 																	{
 																		block: 'text',
-																		tag: 'a',
-																		attrs: { href: 'https://github.com/whitepapertools', style: 'text-decoration: none' },
 																		mods: { view: 'primary', size: '3xl', view: 'primary', display: 'inline' },
 																		mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
 																		content: 'Github'
-																	},
+																	}
 																]
 															},
 															{
 																elem: 'social-wrapper',
-																attrs: { style: 'display:flex; align-items: center;' },
+																tag: 'a',
+																attrs: { href: 'https://codepen.io/whitepapertools/', style: 'text-decoration: none; display:flex; align-items: center;' },
 																mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 																content: [
 																	{
@@ -243,14 +240,12 @@ module.exports = {
 																	},
 																	{
 																		block: 'text',
-																		tag: 'a',
-																		attrs: { href: 'https://codepen.io/whitepapertools/', style: 'text-decoration: none' },
 																		mods: { view: 'primary', size: '3xl', view: 'primary', display: 'inline' },
 																		mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
 																		content: 'Codepen'
-																	},
+																	}
 																]
-															},
+															}
 														]
 													},
 													{
@@ -259,7 +254,8 @@ module.exports = {
 														content: [
 															{
 																elem: 'social-wrapper',
-																attrs: { style: 'display:flex; align-items: center;' },
+																tag: 'a',
+																attrs: { href: 'https://dribbble.com/whitepapertools', style: 'text-decoration: none; display:flex; align-items: center;' },
 																mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 																content: [
 																	{
@@ -268,18 +264,16 @@ module.exports = {
 																	},
 																	{
 																		block: 'text',
-																		tag: 'a',
-																		attrs: { href: 'https://dribbble.com/whitepapertools', style: 'text-decoration: none' },
 																		mods: { view: 'primary', size: '3xl', view: 'primary', display: 'inline' },
 																		mix: { block: 'decorator', mods: { 'indent-l': 'm' }},
 																		content: 'Dribbble'
-																	},
+																	}
 																]
-															},
+															}
 														]
-													},
-					          		]
-					        		},
+													}
+												]
+					        				}
 										]
 									},
 									/* Social */
@@ -302,13 +296,14 @@ module.exports = {
 												content: [
 													{
 														block: 'community-events',
-														speakerPicUrl: '/assets/team/ksusha.jpg',
-														confName: 'rit', // brand logo
-														speechName: 'Production ready design',
-														additionalInfo: 'Ксения Лушникова. Конференция РИТ++',
-														linkText: 'билеты на РИТ++ 2019',
-														linkUrl: 'https://ritfest.ru'
-													},
+														bgImg: 'pic6.jpg',
+														speakerPicUrl: '/assets/team/vadik.jpg',
+														confName: 'css-minsk-js', // brand logo
+														speechName: 'Yet Another Talk About Design Systems',
+														additionalInfo: 'Вадик Матвеев. CSS MINSK JS',
+														linkText: 'CSS MINSK JS',
+														linkUrl: 'https://css-minsk-js.by/speaker/vadik-matveev'
+													}
 												]
 											},
 											{
@@ -316,15 +311,18 @@ module.exports = {
 												content: [
 													{
 														block: 'community-events',
+														bgImg: 'pic1.jpg',
 														speakerPicUrl: '/assets/team/ksusha.jpg',
 														confName: 'pitercss-meetup', // brand logo
 														speechName: 'Production ready design',
-														additionalInfo: 'Ксения Лушникова. pitercss meetup',
-														linkText: 'анонс выступления',
-														linkUrl: 'https://twitter.com/pitercss_meetup'
+														additionalInfo: 'Ксения Лушникова',
+														linkText: 'pitercss meetup',
+														linkUrl: 'https://twitter.com/pitercss_meetup',
+														linkText2: 'РИТ++ 2019',
+														linkUrl2: 'https://ritfest.ru'
 													}
 												]
-											},
+											}
 										]
 									},
 									{
@@ -335,13 +333,14 @@ module.exports = {
 												content: [
 													{
 														block: 'community-events',
+														bgImg: 'pic2.jpg',
 														speakerPicUrl: '/assets/team/kirill.jpg',
 														confName: 'bemup', // brand logo
 														speechName: 'BEMup',
 														additionalInfo: 'Кирилл Федотов. Yandex',
 														linkText: 'анонс выступления',
 														linkUrl: 'https://events.yandex.ru/events/bemup/'
-													},
+													}
 												]
 											},
 											{
@@ -349,6 +348,7 @@ module.exports = {
 												content: [
 													{
 														block: 'community-events',
+														bgImg: 'pic3.jpg',
 														speakerPicUrl: '/assets/team/julya.jpg',
 														confName: 'dribbble', // brand logo
 														speechName: 'Декларативный дизайн',
@@ -357,7 +357,7 @@ module.exports = {
 														linkUrl: 'https://www.youtube.com/watch?v=dhHlaiD0NZc&feature=youtu.be&t=7h37m1s'
 													}
 												]
-											},
+											}
 										]
 									},
 									{
@@ -368,22 +368,24 @@ module.exports = {
 												content: [
 													{
 														block: 'community-events',
+														bgImg: 'pic4.jpg',
 														speakerPicUrl: '/assets/team/misha.png',
 														confName: 'webstandarts', // brand logo
 														speechName: 'Прототипирование на продакшн технологиях',
 														additionalInfo: 'Михаил Колосков. Веб стандарты',
 														linkText: 'смотреть запись',
 														linkUrl: 'https://www.youtube.com/watch?v=YUKHcQJEELw'
-													},
+													}
 												]
 											},
 											{
 												elem: 'fraction',
 												content: [
+													// заглушечный фрэкшн для сетки
 												]
-											},
+											}
 										]
-									},
+									}
 									/* Events */
 								]
 							}
@@ -657,7 +659,6 @@ module.exports = {
 					]
 				}
 				/* /Footer */
-
 			]
 		}
 	]

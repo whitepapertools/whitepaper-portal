@@ -1,4 +1,9 @@
 .community-events {
+  &__wrapper {
+    min-width: 320px;
+    /* background-image: url(../../assets/community-events/pic1.jpg); */
+    background-size: cover;
+  }
   &__content {
     min-height: 350px;
   }
