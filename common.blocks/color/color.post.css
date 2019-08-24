@@ -36,9 +36,6 @@
 			background-color: var(--color-bg-system);
 		}
 		&_brand { background-color:var(--color-bg-brand); }
-		&_action { background-color: var(--color-bg-action); }
-		&_selection { background-color: var(--color-bg-selection); }
-		&_hover { background-color: var(--color-bg-hover); }
 		&_border { background-color: var(--color-bg-border); }
 		&_stripe { background-color: var(--color-bg-stripe); }
 		&_ghost { background-color: var(--color-bg-ghost); }
@@ -47,7 +44,6 @@
 		&_soft { background-color: var(--color-bg-soft); box-shadow: 0 0 0 1px var(--color-bg-border);}
 		&_typo-brand { background-color: var(--color-typo-brand); }
 		&_typo-primary { background-color: var(--color-typo-primary); }
-		&_typo-promo { background-color: var(--color-typo-promo); }
 		&_typo-secondary { background-color: var(--color-typo-secondary); }
 		&_typo-ghost { background-color: var(--color-typo-ghost); }
 		&_typo-disable { background-color: var(--color-typo-disable); }
