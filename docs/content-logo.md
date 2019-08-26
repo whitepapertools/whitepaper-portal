@@ -55,6 +55,16 @@ ___
 
 <div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl">
     <div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
+        <div class="text text_size_xl text_view_ghost">xs</div>
+    </div>
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
+        <div class="brand-logo brand-logo_form_round brand-logo_name_preview brand-logo_size_xs" style="background-image: url('../../assets/doc/content/content-logo/brand-logo_name_preview.svg');">
+        </div>
+    </div>
+</div>
+
+<div class="tpl-grid tpl-grid_m-columns_6 tpl-grid_col-gap_third tpl-grid_row-gap_third tpl-grid_vertical-align_center decorator decorator_indent-v_xl">
+    <div class="tpl-grid__fraction tpl-grid__fraction_m-col_1">
         <div class="text text_size_xl text_view_ghost">s</div>
     </div>
     <div class="tpl-grid__fraction tpl-grid__fraction_m-col_5">
