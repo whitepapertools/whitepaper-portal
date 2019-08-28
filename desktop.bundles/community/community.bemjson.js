@@ -296,7 +296,7 @@ module.exports = {
 												content: [
 													{
 														block: 'community-events',
-														bgImg: 'pic6.jpg',
+														bgImg: 'pic5.png',
 														speakerPicUrl: '/assets/team/vadik.jpg',
 														confName: 'css-minsk-js', // brand logo
 														speechName: 'Yet Another Talk About Design Systems',
@@ -311,15 +311,15 @@ module.exports = {
 												content: [
 													{
 														block: 'community-events',
-														bgImg: 'pic1.jpg',
+														bgImg: 'pic4.png',
 														speakerPicUrl: '/assets/team/ksusha.jpg',
 														confName: 'pitercss-meetup', // brand logo
 														speechName: 'Production ready design',
 														additionalInfo: 'Ксения Лушникова',
 														linkText: 'pitercss meetup',
-														linkUrl: 'https://twitter.com/pitercss_meetup',
+														linkUrl: 'https://youtu.be/QArmhI33zwY?t=2727',
 														linkText2: 'РИТ++ 2019',
-														linkUrl2: 'https://ritfest.ru'
+														linkUrl2: 'https://youtu.be/AJU9IyIC3cc'
 													}
 												]
 											}
@@ -333,13 +333,13 @@ module.exports = {
 												content: [
 													{
 														block: 'community-events',
-														bgImg: 'pic2.jpg',
+														bgImg: 'pic3.png',
 														speakerPicUrl: '/assets/team/kirill.jpg',
 														confName: 'bemup', // brand logo
 														speechName: 'BEMup',
 														additionalInfo: 'Кирилл Федотов. Yandex',
-														linkText: 'анонс выступления',
-														linkUrl: 'https://events.yandex.ru/events/bemup/'
+														linkText: '',
+														linkUrl: ''
 													}
 												]
 											},
@@ -348,7 +348,7 @@ module.exports = {
 												content: [
 													{
 														block: 'community-events',
-														bgImg: 'pic3.jpg',
+														bgImg: 'pic2.png',
 														speakerPicUrl: '/assets/team/julya.jpg',
 														confName: 'dribbble', // brand logo
 														speechName: 'Декларативный дизайн',
@@ -368,7 +368,7 @@ module.exports = {
 												content: [
 													{
 														block: 'community-events',
-														bgImg: 'pic4.jpg',
+														bgImg: 'pic1.png',
 														speakerPicUrl: '/assets/team/misha.png',
 														confName: 'webstandarts', // brand logo
 														speechName: 'Прототипирование на продакшн технологиях',

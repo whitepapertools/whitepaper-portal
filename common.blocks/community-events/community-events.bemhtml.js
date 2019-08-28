@@ -7,7 +7,7 @@ block('community-events')(
         { block: 'decorator', mods: { 'indent-b': '2xl' } }
       ],
       // attrs: { style: 'background:#000; min-width: 320px;' },
-      attrs: { style: `background-image: url(../../assets/community-events/${ctx.bgImg})` },
+      attrs: { style: `background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 25.45%, rgba(30, 50, 62, 0.444599) 54.31%, #0D0E0F 100%), url(../../assets/community-events/${ctx.bgImg}); background-size: cover;` },
       content: [
         {
           elem: 'bg',
