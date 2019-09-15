@@ -296,7 +296,6 @@ module.exports = {
 												content: [
 													{
 														block: 'community-events',
-														bgImg: 'pic5.png',
 														speakerPicUrl: '/assets/team/vadik.jpg',
 														confName: 'css-minsk-js', // brand logo
 														speechName: 'Yet Another Talk About Design Systems',
@@ -311,7 +310,6 @@ module.exports = {
 												content: [
 													{
 														block: 'community-events',
-														bgImg: 'pic4.png',
 														speakerPicUrl: '/assets/team/ksusha.jpg',
 														confName: 'pitercss-meetup', // brand logo
 														speechName: 'Production ready design',
@@ -333,7 +331,6 @@ module.exports = {
 												content: [
 													{
 														block: 'community-events',
-														bgImg: 'pic3.png',
 														speakerPicUrl: '/assets/team/kirill.jpg',
 														confName: 'bemup', // brand logo
 														speechName: 'BEMup',
@@ -348,7 +345,6 @@ module.exports = {
 												content: [
 													{
 														block: 'community-events',
-														bgImg: 'pic2.png',
 														speakerPicUrl: '/assets/team/julya.jpg',
 														confName: 'dribbble', // brand logo
 														speechName: 'Декларативный дизайн',
@@ -368,7 +364,6 @@ module.exports = {
 												content: [
 													{
 														block: 'community-events',
-														bgImg: 'pic1.png',
 														speakerPicUrl: '/assets/team/misha.png',
 														confName: 'webstandarts', // brand logo
 														speechName: 'Прототипирование на продакшн технологиях',

@@ -3,18 +3,18 @@ block('community-events')(
     return {
       elem: 'wrapper',
       mix: [
-        { block: 'pt-card', mods: { view: 'brand' } },
+        { block: 'pt-card' },
         { block: 'decorator', mods: { 'indent-b': '2xl' } }
       ],
       // attrs: { style: 'background:#000; min-width: 320px;' },
-      attrs: { style: `background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 25.45%, rgba(30, 50, 62, 0.444599) 54.31%, #0D0E0F 100%), url(../../assets/community-events/${ctx.bgImg}); background-size: cover;` },
+      // attrs: { style: `background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 25.45%, rgba(30, 50, 62, 0.444599) 54.31%, #0D0E0F 100%), url(../../assets/community-events/${ctx.bgImg}); background-size: cover;` },
       content: [
         {
           elem: 'bg',
           mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' } },
           // attrs: { style: 'background-image: url(../../assets/community-events/pic1.jpg)' },
           content: [
-            
+
           ]
         },
         {
