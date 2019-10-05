@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/whitepapertools/whitepaper-portal.svg?branch=master)](https://travis-ci.org/whitepapertools/whitepaper-portal)
 
-## Дизайн система
+## Дизайн-система
 
 Whitepaper – открытая некомпонентная декларативная дизайн-система. В ее основе лежит БЭМ-методология.
 
