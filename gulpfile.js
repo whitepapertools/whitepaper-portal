@@ -22,7 +22,7 @@ const srcLevels = [
 	srcPath + '/text/_font/**/*.css',  // Контент / Текст
 	srcPath + '/text/_display/**/*.css',  // Контент / Текст
 	srcPath + '/text/_size/**/*.css',  // Контент / Текст
-	srcPath + '/text/_line-heigth/**/*.css',  // Контент / Текст
+	srcPath + '/text/_line-height/**/*.css',  // Контент / Текст
 	srcPath + '/text/_align/**/*.css',  // Контент / Текст
 	srcPath + '/text/_decoration/**/*.css',  // Контент / Текст
 	srcPath + '/text/_spacing/**/*.css',  // Контент / Текст
