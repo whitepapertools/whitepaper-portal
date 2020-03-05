@@ -19,7 +19,20 @@ const srcLevels = [
 	srcPath + '/tpl-*/**/*.css', // Каркас
 	srcPath + '/pt-*/**/*.css', // Паттерны
 
-	srcPath + '/text/**/*.css',  // Контент
+	srcPath + '/text/_font/**/*.css',  // Контент / Текст
+	srcPath + '/text/_display/**/*.css',  // Контент / Текст
+	srcPath + '/text/_size/**/*.css',  // Контент / Текст
+	srcPath + '/text/_line-height/**/*.css',  // Контент / Текст
+	srcPath + '/text/_align/**/*.css',  // Контент / Текст
+	srcPath + '/text/_decoration/**/*.css',  // Контент / Текст
+	srcPath + '/text/_spacing/**/*.css',  // Контент / Текст
+	srcPath + '/text/_style/**/*.css',  // Контент / Текст
+	srcPath + '/text/_transform/**/*.css',  // Контент / Текст
+	srcPath + '/text/_view/**/*.css',  // Контент / Текст
+	srcPath + '/text/_weight/**/*.css',  // Контент / Текст
+	srcPath + '/text/_width/**/*.css',  // Контент / Текст
+	srcPath + '/text/_type/**/*.css',  // Контент / Текст
+
 	srcPath + '/avatar/**/*.css', // Контент
 	srcPath + '/badge/**/*.css', // Контент
 	srcPath + '/icon/**/*.css', // Контент
